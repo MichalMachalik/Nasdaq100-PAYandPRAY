@@ -19,21 +19,27 @@
       "time": "16. 11. 2026, závěr USA",
       "kind": "continuing",
       "source": "Reuters",
-      "url": "https://www.reuters.com/commentary/reuters-open-interest/global-markets-trading-day-graphic-2026-11-16/"
+      "url": "https://www.reuters.com/commentary/reuters-open-interest/global-markets-trading-day-graphic-2026-11-16/",
+      "publishedAtPrague": null,
+      "publicationTimeVerified": false
     },
     {
       "title": "BIS oznámil interim final rule pro vzdálený přístup k vyspělým AI čipům a serverům.",
       "time": "15. 11. 2026",
       "kind": "continuing",
       "source": "BIS",
-      "url": "https://www.bis.gov/press-release/bis-issues-rule-addressing-remote-access-american-super-intelligence-technology"
+      "url": "https://www.bis.gov/press-release/bis-issues-rule-addressing-remote-access-american-super-intelligence-technology",
+      "publishedAtPrague": null,
+      "publicationTimeVerified": false
     },
     {
       "title": "NVIDIA potvrdila rezignaci Jensena Huanga a dočasné vedení Colette Kress.",
       "time": "12. 11. 2026",
       "kind": "continuing",
       "source": "NVIDIA IR",
-      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-CEO-Transition/default.aspx"
+      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-CEO-Transition/default.aspx",
+      "publishedAtPrague": null,
+      "publicationTimeVerified": false
     }
   ],
   "leaders": [
