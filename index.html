@@ -273,7 +273,7 @@ body{background:#fff;color:#242424;font:17px/1.6 Georgia,"Times New Roman",serif
   <a class="futures-provider" href="https://finance.yahoo.com/quote/NQ=F/" target="_blank" rel="noopener noreferrer">Zdroj futures dat</a>
 </div>
 <section class="section"><h2 class="sectiontitle">Celkový obraz</h2><div class="flowline"><div><div id="sentiment" class="status neutral">Čeká na vyhodnocení</div><p id="sentiment-reason" class="notice">Průběžné hodnocení trhu.</p></div><div><div class="mini-title">Nejvýznamnější hybatel</div><div id="driver" class="text-body empty">Zatím nezveřejněno</div></div></div></section>
-<section class="section"><h2 class="sectiontitle">TOP 5 zpráv <small>Nasdaq-100 · max. 8 hodin</small></h2><div id="news" class="empty">Čeká na první report.</div></section>
+<section class="section"><h2 class="sectiontitle">TOP 5 zpráv <small>Nasdaq-100 · význam × aktuálnost · max. 24 h</small></h2><div id="news" class="empty">Čeká na první report.</div></section>
 <section class="section" id="top10-section"><h2 class="sectiontitle">Top 10 Nasdaq-100 <small>podle tržní kapitalizace</small></h2>
 <div class="top10-scroll"><table class="top10-table" aria-label="Deset největších společností Nasdaq-100 podle tržní kapitalizace">
 <thead><tr><th scope="col">#</th><th scope="col">Společnost</th><th scope="col">Market cap</th><th scope="col">Cena</th><th scope="col">Dnes</th></tr></thead>
@@ -331,7 +331,9 @@ function link(url,label){try{let u=new URL(url);if(u.protocol!=='https:')return 
 function rows(id,items,make){let root=$(id);if(!root)return;root.replaceChildren();if(!Array.isArray(items)||items.length===0){root.className='empty';root.textContent='Zatím bez zveřejněných údajů';return}root.className='';items.slice(0,15).forEach(x=>root.append(make(x)))}
 
 // Aktualni TOP 5: pouze poslednich osm hodin, potvrzeny cas publikace a vazba na NDX.
-const NEWS_WINDOW_MS=8*60*60*1000;
+const NEWS_WINDOW_MS=24*60*60*1000;
+const NEWS_HALF_LIFE_MS=12*60*60*1000;
+const newsAdjustedScore=(base,ageMs)=>Math.round(base*Math.pow(0.5,ageMs/NEWS_HALF_LIFE_MS));
 const pragueClock=new Intl.DateTimeFormat('en-GB',{
   timeZone:'Europe/Prague',year:'numeric',month:'2-digit',
   day:'2-digit',hour:'2-digit',minute:'2-digit',hourCycle:'h23'
@@ -367,8 +369,11 @@ function newsImportance(x){
 let latestNews=[];
 function displayTopNews(){
   const now=Date.now(),seen=new Set();
-  const fresh=latestNews.map(x=>({item:x,at:newsTimestamp(x),score:newsImportance(x)}))
-    .filter(x=>Number.isFinite(x.at)&&x.at<=now&&now-x.at<=NEWS_WINDOW_MS&&x.score>=35)
+  const fresh=latestNews.map(x=>{
+    const at=newsTimestamp(x),base=newsImportance(x),ageMs=now-at;
+    return {item:x,at,base,score:newsAdjustedScore(base,ageMs),ageMs};
+  })
+    .filter(x=>Number.isFinite(x.at)&&x.at<=now&&x.ageMs<=NEWS_WINDOW_MS&&x.base>=40)
     .sort((a,b)=>b.score-a.score||b.at-a.at);
   const top=[];
   for(const x of fresh){
@@ -380,7 +385,8 @@ function displayTopNews(){
   rows('news',top,x=>{
     const el=document.createElement('div');el.className='news';
     const stamp=document.createElement('time');
-    stamp.textContent='Publikováno: '+x.item.publishedAtPrague+' Praha';
+    stamp.textContent='Publikováno: '+x.item.publishedAtPrague+' Praha · Skóre '+x.score+'/100';
+    stamp.title='Význam '+x.base+'/100; stáří '+(x.ageMs/3600000).toFixed(1)+' h; poločas skóre 12 h';
     el.append(stamp);
     const content=document.createElement('span');
     content.className='sentence-lines';
@@ -389,7 +395,7 @@ function displayTopNews(){
     if(x.item.url)el.append(document.createTextNode(' · '),link(x.item.url,safe(x.item.source,'Zdroj')));
     return el;
   });
-  if(top.length===0){const el=$('news');el.className='empty';el.textContent='Bez relevantních zpráv za posledních 8 hodin.';}
+  if(top.length===0){const el=$('news');el.className='empty';el.textContent='Bez relevantních zpráv za posledních 24 hodin.';}
 }
 
 function render(d){d=d||{};set('updated',d.updatedAtPrague?safe(d.updatedAtPrague):'Čeká na data');let n=d.ndx||{};// Cash NDX zůstává výhradně ve zdrojovém reportu pro dlouhodobé odhady.
