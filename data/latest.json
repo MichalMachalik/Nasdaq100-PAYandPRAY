@@ -1,0 +1,37 @@
+{
+  "updatedAtPrague": null,
+  "marketStatus": "Čeká na první ověřený report",
+  "ndx": {
+    "value": null,
+    "changePercent": null,
+    "ath": null,
+    "asOf": null
+  },
+  "sentiment": {
+    "label": null,
+    "trend": null,
+    "reason": null
+  },
+  "driver": null,
+  "news": [],
+  "leaders": [],
+  "macro": null,
+  "regulation": null,
+  "technical": {
+    "support": null,
+    "resistance": null
+  },
+  "forecast": {
+    "athReturnPercent": null,
+    "athReason": null,
+    "downside": null,
+    "downsideReason": null
+  },
+  "catalyst": {
+    "event": null,
+    "timePrague": null
+  },
+  "archive": [],
+  "history": [],
+  "sources": []
+}
