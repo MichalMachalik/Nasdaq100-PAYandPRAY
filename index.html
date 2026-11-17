@@ -247,7 +247,7 @@ const set=(id,v)=>{$(id).textContent=safe(v)};
 const pct=v=>typeof v==='number'?fmt(v)+' %':safe(v);
 // Každá nová věta začíná na novém řádku; číselné desetinné tečky se nerozdělují.
 // Dekorativní štítky nejsou součástí článků ani analytických odstavců.
-const cleanText=value=>String(value??'').replace(/^\s*(?:(?:↻|🔄|🆕|📰|🔥|⚠️|📌|⭐|•|·)\s*)+/u,'').trim();
+const cleanText=value=>String(value??'').replace(/^\s*(?:(?:🔴|🟢|⚪|🔵|↻|🔄|🆕|📰|🔥|⚠️|📌|⭐|•|·)\s*)+/u,'').trim();
 // Odděluj jen skutečně ukončené věty. Nepoužívej Intl.Segmenter:
 // ten umí nesprávně rozseknout datum „15.–16. 11.“.
 const sentenceBreaks=value=>cleanText(value)
