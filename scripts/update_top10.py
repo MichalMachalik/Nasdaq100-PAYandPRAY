@@ -1,92 +1,181 @@
 #!/usr/bin/env python3
-"""Refresh Top 10 Nasdaq-100 firms from CompaniesMarketCap by market capitalization."""
+"""Rank verified Nasdaq-100 constituents by company market cap, across all sectors.
+Membership: Nasdaq's current index endpoint, never a hand-maintained ticker list.
+Quotes: CompaniesMarketCap's global ranking, never the technology-only category.
+Fail closed on stale membership, incomplete coverage or ambiguous quote signs.
+"""
 import json
+import math
 import re
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
-from zoneinfo import ZoneInfo
+from urllib.parse import urljoin
 from urllib.request import Request, urlopen
+from zoneinfo import ZoneInfo
 from bs4 import BeautifulSoup
 
-URL = "https://companiesmarketcap.com/tech/largest-tech-companies-by-market-cap/"
-OUT = Path("data/top10.json")
-# Nasdaq-100 constituent whitelist; not all tech firms on CompaniesMarketCap belong to Nasdaq-100.
-# Includes a wider pool than today's top ten for changes to rankings.
-ELIGIBLE = set((
-    "NVDA AAPL MSFT GOOG GOOGL AMZN SPCX AVGO META TSLA MU AMD COST NFLX PLTR "
-    "ASML CSCO AMAT LRCX INTC KLAC ANET CRWD ARM TXN MRVL PANW ADBE "
-    "QCOM ISRG BKNG PDD INTU AMGN GILD SBUX ADP MELI MDLZ CDNS SNPS "
-    "REGN ABNB APP MAR PYPL MSTR ORLY CEG CTAS CSX PCAR ROST FTNT "
-    "ADSK EA DASH WDAY NXPI ODFL IDXX FAST PAYX KDP MNST CHPX "
-    "TEAM DDOG ZS NET TTWO XEL FANG BKR"
-).split())
-ALIASES = {"GOOGL": "GOOG"}
+MEMBERS_URL = 'https://api.nasdaq.com/api/quote/list-type/nasdaq100'
+SOURCE_URL = 'https://companiesmarketcap.com/'
+OUT = Path('data/top10.json')
+MEMBERS_OUT = Path('data/ndx-constituents.json')
+HEADERS = {'User-Agent': 'Mozilla/5.0', 'Accept-Language': 'en-US,en;q=0.9',
+           'Cache-Control': 'no-cache', 'Pragma': 'no-cache'}
+
+
+def fetch(url, accept='text/html'):
+    request = Request(url, headers={**HEADERS, 'Accept': accept})
+    with urlopen(request, timeout=30) as response:
+        return response.read().decode('utf-8')
+
+
+def parse_date(value):
+    text = str(value or '').strip()
+    for form in ('%b %d, %Y', '%B %d, %Y', '%Y-%m-%d', '%m/%d/%Y'):
+        try:
+            return datetime.strptime(text, form).date()
+        except ValueError:
+            pass
+    raise ValueError('Unrecognized membership date: '+repr(value))
+
+
+def current_members(now):
+    payload = json.loads(fetch(MEMBERS_URL, 'application/json'))
+    data = payload.get('data') or {}
+    rows = (data.get('data') or {}).get('rows') or []
+    symbols = {str(row.get('symbol', '')).strip().upper() for row in rows}
+    if not 99 <= len(symbols) <= 110 or not all(re.fullmatch(r'[A-Z][A-Z0-9.\-]{0,9}', t) for t in symbols):
+        raise ValueError('Nasdaq membership is incomplete or malformed: '+str(len(symbols)))
+    total = data.get('totalrecords')
+    if total is not None and int(total) != len(rows):
+        raise ValueError('Nasdaq membership response is paginated or truncated')
+    source_date = parse_date(data.get('date'))
+    age = (now.astimezone(ZoneInfo('America/New_York')).date()-source_date).days
+    if age < -1 or age > 7:
+        raise ValueError('Stale Nasdaq membership date: '+source_date.isoformat())
+    return symbols, source_date.isoformat()
+
 
 def money(text):
-    cleaned = text.replace(",", "").replace("$", "").replace("\u00a0", " ")
-    m = re.search(r"([-+]?\d+(?:\.\d+)?)\s*([TBM])?\b", cleaned, re.I)
-    if not m:
-        raise ValueError("Unparseable money: " + text[:70])
-    return float(m.group(1)) * {"T": 1e12, "B": 1e9, "M": 1e6, None: 1}[m.group(2).upper() if m.group(2) else None]
+    text = text.replace(',', '').replace('\u00a0', ' ').strip()
+    match = re.fullmatch(r'\$?\s*(\d+(?:\.\d+)?)\s*([TBM])?', text, re.I)
+    if not match:
+        raise ValueError('Unparseable USD value: '+repr(text))
+    unit = (match.group(2) or '').upper()
+    value = float(match.group(1))*{'T': 1e12, 'B': 1e9, 'M': 1e6, '': 1}[unit]
+    if not math.isfinite(value) or value <= 0:
+        raise ValueError('Invalid USD value')
+    return value
 
-def percent(cell):
-    txt = cell.get_text(" ", strip=True).replace(",", ".")
-    m = re.search(r"([-+−]?\d+(?:\.\d+)?)\s*%", txt)
-    if not m:
-        raise ValueError("Unparseable change: " + txt)
-    num = float(m.group(1).replace("−", "-"))
-    classes = " ".join(" ".join(node.get("class", [])) for node in [cell, *cell.find_all(True)])
-    if num > 0 and ("red" in classes or "negative" in classes or "down" in classes or "▼" in txt or "▾" in txt or "↘" in txt):
-        num = -num
-    return num
+
+def daily_change(cell):
+    text = cell.get_text(' ', strip=True).replace('\u2212', '-').replace(',', '.')
+    match = re.search(r'([+\-]?\d+(?:\.\d+)?)\s*%', text)
+    if not match:
+        raise ValueError('Missing daily percentage')
+    value = float(match.group(1))
+    if abs(value) > 100:
+        raise ValueError('Unexpected daily percentage')
+    if value == 0 or match.group(1).startswith(('+', '-')):
+        return value
+    tokens = ' '.join(' '.join(node.get('class', [])) for node in [cell, *cell.find_all(True)]).lower()
+    down = any(word in tokens for word in ('red','negative','down')) or any(c in text for c in ('▼','▾','↘'))
+    up = any(word in tokens for word in ('green','positive','up')) or any(c in text for c in ('▲','▴','↗'))
+    if down == up:
+        raise ValueError('Ambiguous daily percentage sign')
+    return -value if down else value
+
+
+def company_key(ticker):
+    # Company-level market cap counts Alphabet once, not once per share class.
+    return 'ALPHABET' if ticker in ('GOOG', 'GOOGL') else ticker
+
+
+def ranked_page(html, eligible):
+    soup = BeautifulSoup(html, 'html.parser')
+    for table in soup.select('table'):
+        headers = [node.get_text(' ', strip=True).lower() for node in table.select('thead th')]
+        if not {'rank','name','market cap','price','today'}.issubset(headers):
+            continue
+        positions = {key: headers.index(key) for key in ('rank','name','market cap','price','today')}
+        all_rows, included = [], {}
+        for tr in table.select('tbody tr'):
+            cells = tr.find_all('td', recursive=False)
+            if len(cells) < len(headers):
+                continue
+            rank_text = cells[positions['rank']].get_text('', strip=True).replace(',', '')
+            if not rank_text.isdigit():
+                continue
+            rank = int(rank_text)
+            name_cell = cells[positions['name']]
+            ticker_node = name_cell.select_one('.company-code')
+            if ticker_node is None:
+                raise ValueError('Missing exact ticker field at global rank '+str(rank))
+            ticker = ticker_node.get_text('', strip=True).strip()
+            cap = money(cells[positions['market cap']].get_text(' ', strip=True))
+            all_rows.append((rank,cap))
+            if ticker not in eligible:
+                continue
+            price = money(cells[positions['price']].get_text(' ', strip=True))
+            change = daily_change(cells[positions['today']])
+            name_node = name_cell.select_one('.company-name')
+            name = name_node.get_text(' ', strip=True) if name_node else ticker
+            link = name_cell.select_one('a[href]')
+            item = {'ticker':ticker,'name':name,'marketCapUsd':round(cap),
+                    'priceUsd':round(price,2),'changePercent':round(change,2),
+                    'sourceUrl':urljoin(SOURCE_URL,link['href']) if link else SOURCE_URL,
+                    'indexMembershipVerified':True}
+            key = company_key(ticker)
+            # Preserve the displayed class's own price, without adding duplicate company caps.
+            if key not in included or ticker == 'GOOG':
+                included[key] = item
+        all_rows.sort()
+        ranks = [rank for rank,_ in all_rows]
+        if len(ranks) < 50 or ranks != list(range(1,len(ranks)+1)):
+            raise ValueError('Global company ranking coverage is incomplete')
+        caps = [cap for _,cap in all_rows]
+        if any(a < b*0.999 for a,b in zip(caps,caps[1:])):
+            raise ValueError('Global ranking is not sorted by market cap')
+        top = sorted(included.values(),key=lambda item:item['marketCapUsd'],reverse=True)[:10]
+        if len(top) != 10 or top[-1]['marketCapUsd'] <= caps[-1]:
+            raise ValueError('Insufficient global ranking coverage for the full Top 10')
+        return top, len(all_rows), len(included)
+    raise ValueError('CompaniesMarketCap global ranking table was not found')
+
+
+def atomic_json(path, data):
+    path.parent.mkdir(parents=True,exist_ok=True)
+    temp = path.with_suffix('.json.tmp')
+    temp.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    temp.replace(path)
+
 
 def retrieve():
-    req = Request(URL, headers={"User-Agent":"Mozilla/5.0 (compatible; PayAndPrayMarketReport/1.0)","Accept":"text/html"})
-    with urlopen(req, timeout=25) as response:
-        html = response.read().decode("utf-8")
-    soup = BeautifulSoup(html, "html.parser")
-    companies = {}
-    for tr in soup.select("table tbody tr"):
-        cells = tr.find_all("td", recursive=False)
-        if len(cells) < 6:
-            continue
-        label = cells[2].get_text(" ", strip=True)
-        try:
-            ticker = next((t for t in ELIGIBLE if re.search(r"(?<![A-Z])"+re.escape(t)+r"(?![A-Z])", label)), None)
-            if not ticker:
-                continue
-            ticker = ALIASES.get(ticker, ticker)
-            cap, price, change = money(cells[3].get_text(" ", strip=True)), money(cells[4].get_text(" ", strip=True)), percent(cells[5])
-            if cap < 1e9 or price <= 0 or not -80 <= change <= 80:
-                continue
-            link = cells[2].find("a")
-            name = link.get_text(" ", strip=True) if link else label
-            name = re.sub(r"\b(?:GOOG|GOOGL|"+re.escape(ticker)+r")\b\s*$", "", name).strip()
-            obj = {"ticker": ticker, "name": name or ticker, "marketCapUsd": round(cap), "priceUsd": round(price, 2), "changePercent": round(change, 2)}
-            if ticker not in companies or companies[ticker]["marketCapUsd"] < cap:
-                companies[ticker] = obj
-        except (ValueError, IndexError):
-            continue
-    ranked = sorted(companies.values(), key=lambda x: x["marketCapUsd"], reverse=True)[:10]
-    if len(ranked) != 10:
-        raise RuntimeError(f"Expected 10 constituents, found {len(ranked)} — refusing partial update")
     now = datetime.now(timezone.utc)
-    return {"source": "CompaniesMarketCap", "sourceUrl": URL,
-            "fetchedAtUtc": now.isoformat().replace("+00:00", "Z"),
-            "fetchedAtPrague": now.astimezone(ZoneInfo("Europe/Prague")).strftime("%d. %m. %Y %H:%M"),
-            "market": "Nasdaq-100", "currency": "USD", "companies": ranked}
+    eligible, source_date = current_members(now)
+    print('Membership:',len(eligible),'securities, Nasdaq date',source_date)
+    top, coverage, candidates = ranked_page(fetch(SOURCE_URL), eligible)
+    now = datetime.now(timezone.utc)
+    timestamp = now.isoformat().replace('+00:00','Z')
+    output = {'source':'CompaniesMarketCap','sourceUrl':SOURCE_URL,'market':'Nasdaq-100','currency':'USD',
+              'fetchedAtUtc':timestamp,
+              'fetchedAtPrague':now.astimezone(ZoneInfo('Europe/Prague')).strftime('%d. %m. %Y %H:%M'),
+              'timestampKind':'retrieval; quote time not supplied by source',
+              'constituentsSourceUrl':MEMBERS_URL,'constituentsAsOf':source_date,
+              'constituentSecurityCount':len(eligible),'rankingScope':'all sectors; company market cap',
+              'globalCompaniesChecked':coverage,'eligibleCompaniesCompared':candidates,
+              'companies':top}
+    membership = {'index':'NDX','sourceUrl':MEMBERS_URL,'sourceDate':source_date,
+                  'checkedAtUtc':timestamp,'symbols':sorted(eligible)}
+    # Update the check timestamp even if prices are unchanged; it is not a quote timestamp.
+    atomic_json(MEMBERS_OUT,membership)
+    atomic_json(OUT,output)
+    print('Verified Top 10: '+', '.join(item['ticker'] for item in top))
 
-if __name__ == "__main__":
+
+if __name__ == '__main__':
     try:
-        data = retrieve()
-        OUT.parent.mkdir(parents=True, exist_ok=True)
-        old = json.loads(OUT.read_text(encoding="utf-8")) if OUT.exists() else {}
-        if old.get("companies") != data["companies"] or not old.get("companies"):
-            OUT.write_text(json.dumps(data, ensure_ascii=False, indent=2)+"\n", encoding="utf-8")
-            print("Updated ten companies: " + ", ".join(x["ticker"] for x in data["companies"]))
-        else:
-            print("Ranking unchanged; no new price data")
+        retrieve()
     except Exception as exc:
-        print("Top10 update FAILED: " + str(exc), file=sys.stderr)
+        print('Top10 update FAILED; previous snapshot preserved: '+str(exc),file=sys.stderr)
         raise SystemExit(1)
