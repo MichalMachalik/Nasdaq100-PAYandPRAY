@@ -1,19 +1,37 @@
 {
-  "updatedAtPrague": "17. 11. 2026 15:00 CET",
-  "marketStatus": "Cash Nasdaq-100 NDX před otevřením americké seance (15:30 CET). Poslední potvrzený cash závěr 16. 11. 2026 ve 22:00 CET. Hlavní veřejný instrument webu E-mini futures NQ=F aktualizuje oddělený GitHub Actions workflow přes data/futures.json.",
+  "updatedAtPrague": "17. 11. 2026 16:02 CET",
+  "marketStatus": "Cash Nasdaq-100 (NDX) otevřen; poslední ověřený intradenní snímek 17. 11. 2026 v 15:58:06 CET (Google Finance, NDX:INDEXNASDAQ). Hlavní instrument webu Nasdaq-100 E-mini futures NQ=F běží samostatně přes data/futures.json.",
   "ndx": {
-    "value": 27197.15,
-    "changePercent": -2.67,
+    "value": 27191.89,
+    "changePercent": -0.02,
     "ath": 31361.37,
-    "asOf": "Poslední cash závěr Nasdaq-100 NDX, Nasdaq 16. 11. 2026, 22:00 CET; 27 197,15 bodu, denní změna −2,67 %. Historické intradenní maximum 31 361,37 bodu. Nejde o intradenní cenu 17. 11."
+    "asOf": "17. 11. 2026, 15:58:06 CET; intradenní cash NDX, Google Finance (09:58:06 EST), 27 191,89 b., −0,02 % proti 16. 11. závěru. Zpoždění: veřejný snímek, čas zdroje uveden."
   },
   "sentiment": {
-    "label": "Medvědí (hodnocení)",
-    "trend": "→ Beze změny oproti 13:59 CET",
-    "reason": "Dnešní zveřejnění maloobchodních tržeb v USA (+0,2 % meziměsíčně; jádrová složka pro HDP +0,6 %) přineslo smíšený signál. Cash NDX se dosud neotevřel, negativní tlak na polovodiče a AI financování pokračuje. Podle MarketWatch po zveřejnění výnos US10Y vzrostl přibližně na 5,14 %. Subjektivní hodnocení, nikoli měřený index."
+    "label": "Medvědí (subjektivní hodnocení)",
+    "trend": "↗ Zlepšení oproti 15:00 CET",
+    "reason": "Cash NDX 17. 11. v 15:58 CET přibližně stagnuje (−0,02 %) po předchozím propadu. Broadcom +1,67 %; NVIDIA −0,13 % v časovaných intradenních snímcích. Rizikem zůstává tlak exportních omezení, drahého financování AI a překvapivě silných importních cen. Zlepšení oproti poslednímu reportu je hodnocením, nikoli měřeným indexem."
   },
-  "driver": "Vysoká důležitost: pokles cash NDX o 2,67 % v seanci 16. 11. doprovázel výprodej amerických polovodičů (SOX přibližně −5,3 %), nervozita kolem financování AI a vývozních omezení čipů. Dnešní maloobchodní tržby představují nový makrokatalyzátor, nikoliv doloženou příčinu již uzavřené seance.",
+  "driver": "Střední důležitost: cash Nasdaq-100 po otevření 17. 11. přibližně stagnuje (−0,02 % v 15:58 CET) při protichůdném pohybu velkých výrobců čipů (Broadcom +1,67 %, NVIDIA −0,13 %). Opatrnost před večerními výsledky NVIDIA a pokračující rizika exportních omezení a dražšího financování AI jsou doložené souvislosti, nikoli prokázaná jediná příčina dnešní změny.",
   "news": [
+    {
+      "title": "BLS: dovozní ceny v USA v říjnu vzrostly o 1,1 % meziměsíčně, nad tržním odhadem 0,7 %. Ceny dováženého kapitálového vybavení vzrostly o 1,5 %; překvapení podporuje obavy z přetrvávajících cenových tlaků.",
+      "time": "17. 11. 2026, 08:30 EST; plánované originální zveřejnění BLS",
+      "publishedAtPrague": "17. 11. 2026, 14:30",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "source": "U.S. Bureau of Labor Statistics, USDL-26-1711",
+      "url": "https://www.bls.gov/news.release/archives/ximpim_11172026.htm"
+    },
+    {
+      "title": "Čínské ministerstvo obchodu odmítlo nová americká omezení vzdáleného přístupu k AI čipům a pohrozilo protiopatřeními, pokud USA na pravidlech setrvají. Jde o prohlášení, nikoli již přijaté protiopatření.",
+      "time": "17. 11. 2026, 20:20 čínského času (CST, UTC+8) – původní publikace ministerstva; Reuters zprávu zveřejnil 15:44 CET",
+      "publishedAtPrague": "17. 11. 2026, 13:20",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "source": "Ministerstvo obchodu ČLR (MOFCOM), původní prohlášení",
+      "url": "https://www.mofcom.gov.cn/syxwfb/art/2026/art_3a69f2058b724dd39cd8ecddcaa4ab87.html"
+    },
     {
       "title": "Census: říjnové maloobchodní tržby USA vzrostly o 0,2 % meziměsíčně po zářijových 0,8 %. Jde o oficiální předběžný odhad; dopad na cash NDX dosud nelze prokázat.",
       "time": "17. 11. 2026, 08:30 EST – oficiální vydání statistiky Census Bureau",
@@ -89,31 +107,31 @@
   ],
   "leaders": [
     {
-      "ticker": "NVDA",
-      "changePercent": -4.12,
-      "impact": "Závěr 16. 11. 2026, cash akcie. Nikoliv dnešní premarket."
+      "ticker": "AVGO",
+      "changePercent": 1.67,
+      "impact": "17. 11. 2026, 15:51:23 CET; cash akcie, Google Finance, intradenní snímek."
     },
     {
-      "ticker": "AVGO",
-      "changePercent": -3.92,
-      "impact": "Závěr 16. 11. 2026, cash akcie. Nikoliv dnešní premarket."
+      "ticker": "NVDA",
+      "changePercent": -0.13,
+      "impact": "17. 11. 2026, 15:48:56 CET; cash akcie, Google Finance, intradenní snímek."
     }
   ],
-  "macro": "Census Bureau zveřejnil 17. 11. v 14:30 CET předběžné říjnové tržby maloobchodu USA: +0,2 % m/m po +0,8 % v září, meziročně +6,8 %. Reuters uvádí jádrovou kontrolní skupinu +0,6 % proti očekávání +0,4 %. Podle MarketWatch po zveřejnění výnos US10Y vzrostl z přibližně 5,12 % na 5,14 %; jde o tržní snímek bez přesného minutového času. Poslední oficiální Treasury US10Y: 5,12 % k 16. 11. Musalemův jestřábí výhled je názor člena Fed, nikoliv rozhodnutí FOMC.",
-  "regulation": "BIS: prozatímní federální regulační pravidlo o vzdáleném poskytování výpočetního výkonu amerických AI čipů, oznámeno 15.–16. 11.; nejde o zákon Kongresu. Nové federální/státní uzákonění s doloženým bezprostředním dopadem na NDX nebylo potvrzeno.",
+  "macro": "BLS 17. 11. v 14:30 CET: říjnové dovozní ceny USA +1,1 % meziměsíčně oproti očekávání +0,7 % (Reuters); dovoz kapitálového vybavení +1,5 % dle BLS. Census 14:30 CET: maloobchod +0,2 %, kontrolní skupina +0,6 %. Silnější cenové tlaky jsou potenciální riziko pro sazby, nikoli potvrzená příčina intradenního pohybu cash NDX. Poslední oficiálně doložené US10Y 5,12 % k 16. 11. 2026.",
+  "regulation": "U.S. BIS: prozatímní federální pravidlo o vzdáleném přístupu k pokročilým AI čipům přes zahraniční datacentra, oznámeno 15.–16. 11. 2026, není to zákon Kongresu. Čínské ministerstvo obchodu v prohlášení z 17. 11. ve 13:20 CET pohrozilo protiopatřeními, ale jejich přijetí nedoložilo. Nová státní či místní regulace s bezprostředním ověřeným dopadem na NDX nebyla potvrzena.",
   "technical": {
-    "support": "27 149,15 b. (orientační minimum cash NDX seance 16. 11. 2026, Nasdaq)",
-    "resistance": "27 621,64 b. (orientační maximum cash NDX seance 16. 11. 2026, Nasdaq)"
+    "support": "27 115,70 b. – orientační intradenní minimum cash NDX 17. 11. do 15:58 CET (Google Finance)",
+    "resistance": "27 258,84 b. – orientační intradenní maximum cash NDX 17. 11. do 15:58 CET (Google Finance)"
   },
   "forecast": {
     "athReturnPercent": 5,
-    "athReason": "Subjektivní odhad návratu cash NDX na historické intradenní maximum do šesti měsíců: 5 %, beze změny oproti 13:59 CET. Zvýšil by jej silný výhled NVIDIA a důkaz návratnosti investic do AI; dnešní makrodata jsou smíšená.",
+    "athReason": "Subjektivní odhad pravděpodobnosti návratu cash NDX na historické maximum do šesti měsíců: 5 %, beze změny oproti 15:00 CET. Silnější výhled tržeb a marží NVIDIA a vyšší doložená návratnost investic do AI by odhad zvýšily.",
     "downside": "−5 až −10 %",
-    "downsideReason": "Subjektivní rizikový scénář pro 1–3 měsíce z ověřeného cash závěru NDX 27 197,15 bodu: přibližně 25 837 až 24 477 bodů. Interval odvozovat průběžně z aktuální ověřené hodnoty ndx.value. Zhoršily by jej vyšší výnosy, další exportní omezení nebo slabší návratnost AI projektů."
+    "downsideReason": "Subjektivní rizikový scénář na 1–3 měsíce z posledního ověřeného intradenního cash NDX 27 191,89 bodu: přibližně 25 832 až 24 473 bodů (přepočet −5 až −10 %). Riziko by zvýšila další restrikce exportu čipů, růst výnosů a slabší výhled NVIDIA."
   },
   "catalyst": {
-    "event": "NVIDIA: výsledky FY2027 Q3 a následný konferenční hovor",
-    "timePrague": "17. 11. 2026, přibližně 22:20 CET výsledky a 23:00 CET hovor (NVIDIA Investor Relations)"
+    "event": "NVIDIA: výsledky za třetí fiskální čtvrtletí 2027, následně investorský hovor",
+    "timePrague": "17. 11. 2026, přibližně 22:20 CET výsledky, 23:00 CET hovor (NVIDIA Investor Relations)"
   },
   "archive": [
     {
@@ -167,6 +185,10 @@
     {
       "time": "17. 11. 2026 15:00 CET",
       "summary": "Cash NDX 27 197,15 bodu (poslední závěr 16. 11., −2,67 %, −13,28 % od ATH). Nově Census 14:30 CET: říjnové maloobchodní tržby USA +0,2 % m/m po zářijových +0,8 %; Reuters potvrzuje jádrovou kontrolní skupinu +0,6 %. Sentiment medvědí, trend beze změny; výhled ATH 5 % do šesti měsíců, scénář poklesu −5 až −10 %."
+    },
+    {
+      "time": "17. 11. 2026 16:02 CET",
+      "summary": "Intradenní cash NDX 27 191,89 bodu v 15:58:06 CET, −0,02 % dnešek, −13,30 % od maxima. Medvědí hodnocení ↗ zlepšení: AVGO +1,67 %, NVDA −0,13 %. Nově ověřeny BLS importní ceny +1,1 % (14:30 CET) a čínské prohlášení MOFCOM o možných protiopatřeních (13:20 CET). Rizikový interval −5 až −10 %: 25 832 až 24 473 bodů. Futures jsou samostatný instrument webu."
     }
   ],
   "history": [
@@ -343,6 +365,30 @@
     {
       "name": "MarketWatch — výnosy po maloobchodních tržbách",
       "url": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-nasdaq-nvidia-q3-financial-results-retail-sales-import-prices/card/treasury-yields-climb-after-retail-sales-data-while-stocks-dip-K4d3TauOt7c7XIf4UUD3"
+    },
+    {
+      "name": "Google Finance – NDX intradenní cash 17.11. 15:58:06 CET",
+      "url": "https://www.google.com/finance/quote/NDX:INDEXNASDAQ"
+    },
+    {
+      "name": "Google Finance – NVDA 17.11. 15:48:56 CET",
+      "url": "https://www.google.com/finance/quote/NVDA:NASDAQ"
+    },
+    {
+      "name": "Google Finance – AVGO 17.11. 15:51:23 CET",
+      "url": "https://www.google.com/finance/quote/AVGO:NASDAQ"
+    },
+    {
+      "name": "BLS – dovozní ceny, zveřejnění 17.11. 14:30 CET",
+      "url": "https://www.bls.gov/news.release/archives/ximpim_11172026.htm"
+    },
+    {
+      "name": "MOFCOM – reakce na export AI čipů 17.11. 13:20 CET",
+      "url": "https://www.mofcom.gov.cn/syxwfb/art/2026/art_3a69f2058b724dd39cd8ecddcaa4ab87.html"
+    },
+    {
+      "name": "Reuters – čínská reakce 17.11. 15:44 CET",
+      "url": "https://www.reuters.com/world/china/china-says-it-will-take-countermeasures-if-us-imposes-new-chip-curbs-2026-11-17/"
     }
   ]
 }
