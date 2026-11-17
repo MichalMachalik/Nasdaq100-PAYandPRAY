@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - "scripts/update_top10.py"
+      - "scripts/prepare_site.py"
       - ".github/workflows/top10.yml"
   schedule:
     - cron: "11 * * * 1-5"
@@ -20,18 +21,33 @@ jobs:
       - uses: actions/checkout@v4
         with:
           persist-credentials: true
-      - name: Install parser
+          ref: ${{ github.event.repository.default_branch }}
+      - name: Install HTML parser
         run: python -m pip install --disable-pip-version-check beautifulsoup4
-      - name: Fetch company market capitalizations, prices and daily returns
+      - name: Migrate sections and regression-test report rendering
+        run: python scripts/prepare_site.py
+      - name: Fetch verified index membership and all-sector market caps
+        id: market
+        continue-on-error: true
         run: python scripts/update_top10.py
-      - name: Commit verified changes
+      - name: Commit tested site and verified snapshots
         run: |
-          if git diff --quiet -- data/top10.json; then
-            echo "No market data change."
-            exit 0
-          fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/top10.json
-          git commit -m "Refresh Nasdaq-100 top ten market caps"
-          git push
+          git add index.html data/top10.json
+          if [ -f data/ndx-constituents.json ]; then git add data/ndx-constituents.json; fi
+          if git diff --cached --quiet; then
+            echo "No changes to publish."
+            exit 0
+          fi
+          git commit -m "Publish verified Nasdaq-100 ranking and report sections"
+          for attempt in 1 2 3; do
+            git pull --rebase origin "${{ github.event.repository.default_branch }}"
+            if git push; then exit 0; fi
+          done
+          exit 1
+      - name: Fail visibly when market verification failed
+        if: steps.market.outcome == 'failure'
+        run: |
+          echo "Index membership or market data could not be verified; existing snapshot was not relabeled as current."
+          exit 1
