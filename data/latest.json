@@ -15,7 +15,7 @@
   "driver": "🔴 Vysoká důležitost: závěrečný pokles NDX cash −2,67 % dne 16. 11. provázel výprodej polovodičů (SOX přibližně −5,3 %). Reuters spojuje tlak s obavami o udržitelnost AI investic, financování infrastruktury, změnou vedení NVIDIA a novými kontrolami exportu. Jednotlivé kauzální váhy nejsou prokázané.",
   "news": [
     {
-      "title": "🆕 BofA: správci fondů snížili čistou nadváhu technologických akcií z 37 % na 12 %; 52 % respondentů čeká omezení investic do AI infrastruktury během 6 měsíců. Zjištění z průzkumu, nikoli dnešní pohyb cash NDX.",
+      "title": "BofA: správci fondů snížili čistou nadváhu technologických akcií z 37 % na 12 %; 52 % respondentů čeká omezení investic do AI infrastruktury během 6 měsíců. Zjištění z průzkumu, nikoli dnešní pohyb cash NDX.",
       "time": "17. 11. 2026, 11:29 UTC – původní zveřejnění Reuters; průzkum BofA za listopad 2026",
       "publishedAtPrague": "17. 11. 2026, 12:29",
       "publicationTimeVerified": true,
@@ -24,7 +24,7 @@
       "url": "https://www.reuters.com/business/global-markets-bofa-survey-2026-11-17/"
     },
     {
-      "title": "🆕 Reuters: dražší financování neocloud firem, výnos dluhopisů CoreWeave nyní téměř 15 %. Riziko oslabení AI financování při změně vedení NVIDIA; dopad na NDX zatím nedoložen.",
+      "title": "Reuters: dražší financování neocloud firem, výnos dluhopisů CoreWeave nyní téměř 15 %. Riziko oslabení AI financování při změně vedení NVIDIA; dopad na NDX zatím nedoložen.",
       "time": "17. 11. 2026, 11:12 UTC – zveřejnění Reuters",
       "publishedAtPrague": "17. 11. 2026, 12:12",
       "publicationTimeVerified": true,
@@ -33,7 +33,7 @@
       "url": "https://www.reuters.com/business/nvidia-turmoil-marks-end-easy-money-ai-trade-2026-11-17/"
     },
     {
-      "title": "↻ Reuters: SOX oslabil o 34 % od pozdního června; výsledky NVIDIA a IPO Anthropic mají prověřit sentiment vůči čipům. Historický kontext, ne nová cena NDX.",
+      "title": "Reuters: SOX oslabil o 34 % od pozdního června; výsledky NVIDIA a IPO Anthropic mají prověřit sentiment vůči čipům. Historický kontext, ne nová cena NDX.",
       "time": "17. 11. 2026, 11:06 UTC – zveřejnění Reuters",
       "publishedAtPrague": "17. 11. 2026, 12:06",
       "publicationTimeVerified": true,
@@ -42,7 +42,7 @@
       "url": "https://www.reuters.com/business/shaky-semiconductor-trade-faces-big-week-investors-look-bottom-2026-11-17/"
     },
     {
-      "title": "↻ NVIDIA před otevřením USA oslabovala; report Reuters popisuje opatrnost před výsledky, ale údaje jsou z premarketu, nikoli z cash indexu.",
+      "title": "NVIDIA před otevřením USA oslabovala; report Reuters popisuje opatrnost před výsledky, ale údaje jsou z premarketu, nikoli z cash indexu.",
       "time": "17. 11. 2026, 10:51 UTC – zveřejnění Reuters",
       "publishedAtPrague": "17. 11. 2026, 11:51",
       "publicationTimeVerified": true,
@@ -51,7 +51,7 @@
       "url": "https://www.reuters.com/business/us-stock-futures-slip-ahead-nvidia-results-fed-speakers-focus-2026-11-17/"
     },
     {
-      "title": "↻ NVIDIA zřídila interní výbor představenstva pro národní bezpečnost a exportní kontroly; firemní opatření, nikoliv nový zákon.",
+      "title": "NVIDIA zřídila interní výbor představenstva pro národní bezpečnost a exportní kontroly; firemní opatření, nikoliv nový zákon.",
       "time": "17. 11. 2026, 05:00 EST (11:00 CET) – firemní oznámení",
       "publishedAtPrague": "17. 11. 2026, 11:00",
       "publicationTimeVerified": true,
@@ -60,7 +60,7 @@
       "url": "https://nvidianews.nvidia.com/news/nvidia-board-of-directors-establishes-national-security-and-export-control-oversight-committee"
     },
     {
-      "title": "↻ BIS zveřejnil prozatímní federální regulační pravidlo o vzdáleném přístupu k americkým AI čipům přes zahraniční datacentra; nejde o legislativu Kongresu.",
+      "title": "BIS zveřejnil prozatímní federální regulační pravidlo o vzdáleném přístupu k americkým AI čipům přes zahraniční datacentra; nejde o legislativu Kongresu.",
       "time": "15.–16. 11. 2026; přesná hodina primárního zveřejnění nepotvrzena",
       "publishedAtPrague": null,
       "publicationTimeVerified": false,
