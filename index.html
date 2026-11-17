@@ -71,6 +71,36 @@ body{font-size:13px;line-height:1.55}
 .menu-divider{border-top:1px solid var(--border);margin:18px 0}
 .history-panel .news{overflow-wrap:anywhere}
 @media(max-width:650px){.topright{flex-direction:row;align-items:center;gap:12px}.history-menu{order:0}.history-panel{right:-4px}.topright .pill{max-width:140px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}}
+
+/* Unified continuous, tightly composed report */
+.wrap{width:min(100% - 36px,620px);max-width:620px;padding:22px 0 28px}
+.header{border:0;padding-bottom:0;margin-bottom:22px}
+.metrics{border:0;padding-bottom:10px}
+.section{border:0;padding:11px 0}
+.sectiontitle{margin:0 0 6px;font-size:11px;letter-spacing:.25px;color:#4d535d}
+.sectiontitle small{font-size:10px}
+.flowline,.meta-group{gap:9px}
+.news{border:0;padding:6px 0}
+.news:first-child{padding-top:0}
+.news time{margin-bottom:1px}
+.forecastgrid{gap:16px}
+.forecast strong{font-size:22px;margin:4px 0}
+.notice{margin:3px 0 0}
+.mini-title{margin:0 0 3px;letter-spacing:.25px}
+.section .row{border:0;padding:3px 0}
+.section .line{display:none}
+.section #driver,.section #macro,.section #regulation{max-width:none}
+#catalyst{margin-top:0}
+.history-panel .menu-divider{margin:10px 0}
+.history-panel .news{border:0;padding:5px 0}
+@media(max-width:650px){
+.wrap{width:min(100% - 26px,620px);padding:16px 0 25px}
+.header{margin-bottom:17px}
+.metrics{padding-bottom:9px}
+.section{padding:10px 0}
+.flowline,.meta-group{gap:8px}
+.forecastgrid{gap:10px}
+}
 </style></head>
 <body><div class="wrap">
 <header class="header"><div class="brand"><div class="mascot" aria-hidden="true">N</div><div><h1 class="pixel">PAY &amp; PRAY</h1><p class="sub">Nasdaq-100 / market intelligence</p></div></div><div class="topright"><details class="history-menu"><summary aria-label="Otevřít historii a zdroje">Historie a zdroje</summary><div class="history-panel"><div class="mini-title">Poslední reporty</div><div id="archive" class="empty">Zatím bez záznamů.</div><div class="menu-divider"></div><div class="mini-title">Ověřené zdroje</div><div id="sources" class="empty">Bez zdrojů.</div></div></details><span id="updated" class="pill">Čeká na data</span><button id="refresh" class="btn" type="button">↻ Obnovit</button></div></header>
@@ -85,11 +115,11 @@ body{font-size:13px;line-height:1.55}
 </div></div>
 <div class="detail"><span id="ndx-time">Ověřený údaj zatím není publikován</span> · <span id="ath-value">ATH zatím nedostupné</span></div>
 </div>
-<section class="section"><h2 class="sectiontitle">01 / Celkový obraz</h2><div class="flowline"><div><div id="sentiment" class="status neutral">Čeká na vyhodnocení</div><p id="sentiment-reason" class="notice">Průběžné hodnocení trhu.</p></div><div><div class="mini-title">Nejvýznamnější hybatel</div><div id="driver" class="text-body empty">Zatím nezveřejněno</div></div></div></section>
-<section class="section"><h2 class="sectiontitle">02 / Aktuální zprávy <small>ověřené události</small></h2><div id="news" class="empty">Čeká na první report.</div></section>
-<section class="section"><h2 class="sectiontitle">03 / Tržní vývoj</h2><div class="flowline"><div><div class="mini-title">Hlavní společnosti</div><div id="leaders" class="empty">Zatím bez ověřených údajů</div></div><div><div class="mini-title">Makroekonomika</div><div id="macro" class="empty">Nejsou zveřejněna data</div></div></div></section>
-<section class="section"><h2 class="sectiontitle">04 / Výhled</h2><div class="forecastgrid"><div class="forecast"><div class="label">Návrat na ATH / 6 měsíců</div><strong id="forecast-ath" class="green">—</strong><div id="forecast-ath-reason" class="detail">Čeká na aktualizaci</div></div><div class="forecast"><div class="label">Další možný propad / 1–3 měsíce</div><strong id="forecast-down" class="red">—</strong><div id="forecast-down-reason" class="detail">Čeká na aktualizaci</div></div></div><div style="margin-top:22px"><div class="mini-title">Nejbližší katalyzátor</div><div id="catalyst" class="empty">Zatím nezveřejněno</div></div></section>
-<section class="section"><h2 class="sectiontitle">05 / AI regulace</h2><div id="regulation" class="empty">Bez zveřejněné aktualizace</div></section>
+<section class="section"><h2 class="sectiontitle">Celkový obraz</h2><div class="flowline"><div><div id="sentiment" class="status neutral">Čeká na vyhodnocení</div><p id="sentiment-reason" class="notice">Průběžné hodnocení trhu.</p></div><div><div class="mini-title">Nejvýznamnější hybatel</div><div id="driver" class="text-body empty">Zatím nezveřejněno</div></div></div></section>
+<section class="section"><h2 class="sectiontitle">Aktuální zprávy <small>ověřené události</small></h2><div id="news" class="empty">Čeká na první report.</div></section>
+<section class="section"><h2 class="sectiontitle">Tržní vývoj</h2><div class="flowline"><div><div class="mini-title">Hlavní společnosti</div><div id="leaders" class="empty">Zatím bez ověřených údajů</div></div><div><div class="mini-title">Makroekonomika</div><div id="macro" class="empty">Nejsou zveřejněna data</div></div></div></section>
+<section class="section"><h2 class="sectiontitle">Výhled</h2><div class="forecastgrid"><div class="forecast"><div class="label">Návrat na ATH / 6 měsíců</div><strong id="forecast-ath" class="green">—</strong><div id="forecast-ath-reason" class="detail">Čeká na aktualizaci</div></div><div class="forecast"><div class="label">Další možný propad / 1–3 měsíce</div><strong id="forecast-down" class="red">—</strong><div id="forecast-down-reason" class="detail">Čeká na aktualizaci</div></div></div><div style="margin-top:22px"><div class="mini-title">Nejbližší katalyzátor</div><div id="catalyst" class="empty">Zatím nezveřejněno</div></div></section>
+<section class="section"><h2 class="sectiontitle">AI regulace</h2><div id="regulation" class="empty">Bez zveřejněné aktualizace</div></section>
 
 </main>
 </div>
