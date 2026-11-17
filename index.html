@@ -301,8 +301,8 @@ const sentenceBreaks=value=>cleanText(value).replace(
   (whole,mark,index,full)=>{
     const match=full.slice(0,index+1).match(/([^\s()]+)$/u);
     const last=(match?.[1]||'').replace(/\.$/,'');
-    // Neodděluj zkratky a názvy institucí (St. Louis Fed, U.S. Treasury).
-    if(/^(?:St|Dr|Mr|Mrs|Ms|Prof|Sv|Ing|Bc|Mgr|PhDr|JUDr|např|tj|tzv|atd|apod)$/iu.test(last)
+    // Neodděluj zkratky a jednotky (St. Louis Fed, mld. USD, mil. USD, b. NDX).
+    if(/^(?:St|Dr|Mr|Mrs|Ms|Prof|Sv|Ing|Bc|Mgr|PhDr|JUDr|např|tj|tzv|atd|apod|mld|mil|bil|tis|b|str|č|čl|odst)$/iu.test(last)
        ||/^[A-Za-zÁ-Ž]$/u.test(last)
        ||/^(?:[A-Za-z]\.)+[A-Za-z]?$/u.test(last))return whole;
     return mark+'\n';
