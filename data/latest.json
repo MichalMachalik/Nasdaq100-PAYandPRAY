@@ -1,25 +1,34 @@
 {
-  "updatedAtPrague": "17. 11. 2026 13:59 CET",
-  "marketStatus": "Nasdaq-100 cash NDX před otevřením (15:30 CET). Poslední ověřený cash závěr 16. 11. 2026, 22:00 CET. Kontrola Nasdaq index feed, Reuters, U.S. Treasury, Census a NVIDIA IR k 17. 11. 2026, 13:59 CET; futures NQ=F na webu aktualizuje samostatný workflow.",
+  "updatedAtPrague": "17. 11. 2026 15:00 CET",
+  "marketStatus": "Cash Nasdaq-100 NDX před otevřením americké seance (15:30 CET). Poslední potvrzený cash závěr 16. 11. 2026 ve 22:00 CET. Hlavní veřejný instrument webu E-mini futures NQ=F aktualizuje oddělený GitHub Actions workflow přes data/futures.json.",
   "ndx": {
     "value": 27197.15,
     "changePercent": -2.67,
     "ath": 31361.37,
-    "asOf": "Cash Nasdaq-100 NDX, oficiální závěr Nasdaq 16. 11. 2026, 22:00 CET: 27 197,15 bodu, −2,67 %. Poslední ověřený cash závěr, nikoli cena z 17. 11.; historické intradenní ATH 31 361,37 bodu."
+    "asOf": "Poslední cash závěr Nasdaq-100 NDX, Nasdaq 16. 11. 2026, 22:00 CET; 27 197,15 bodu, denní změna −2,67 %. Historické intradenní maximum 31 361,37 bodu. Nejde o intradenní cenu 17. 11."
   },
   "sentiment": {
     "label": "Medvědí (hodnocení)",
-    "trend": "Beze změny oproti 13:05 CET",
-    "reason": "Cash NDX je bez nové obchodní seance. Přes mírné zotavení Nasdaq-100 E-mini futures (+0,39 % k 13:09 CET podle Reuters) přetrvává negativní tlak na čipy a AI; nově zveřejněný jestřábí výhled Musalema (Reuters 13:32 CET) tlumí obrat. Hodnocení, nikoli měřený index."
+    "trend": "→ Beze změny oproti 13:59 CET",
+    "reason": "Dnešní zveřejnění maloobchodních tržeb v USA (+0,2 % meziměsíčně; jádrová složka pro HDP +0,6 %) přineslo smíšený signál. Cash NDX se dosud neotevřel, negativní tlak na polovodiče a AI financování pokračuje. Podle MarketWatch po zveřejnění výnos US10Y vzrostl přibližně na 5,14 %. Subjektivní hodnocení, nikoli měřený index."
   },
-  "driver": "Vysoká důležitost: cash Nasdaq-100 poklesl 16. 11. o 2,67 %. Reuters popisuje tlak výprodeje polovodičů (SOX přibližně −5,3 %), obav o návratnost a financování AI, omezení vývozu čipů a nejistotu kolem vedení NVIDIA. Jednotlivé příčinné podíly nelze přesně kvantifikovat.",
+  "driver": "Vysoká důležitost: pokles cash NDX o 2,67 % v seanci 16. 11. doprovázel výprodej amerických polovodičů (SOX přibližně −5,3 %), nervozita kolem financování AI a vývozních omezení čipů. Dnešní maloobchodní tržby představují nový makrokatalyzátor, nikoliv doloženou příčinu již uzavřené seance.",
   "news": [
+    {
+      "title": "Census: říjnové maloobchodní tržby USA vzrostly o 0,2 % meziměsíčně po zářijových 0,8 %. Jde o oficiální předběžný odhad; dopad na cash NDX dosud nelze prokázat.",
+      "time": "17. 11. 2026, 08:30 EST – oficiální vydání statistiky Census Bureau",
+      "publishedAtPrague": "17. 11. 2026, 14:30",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "source": "U.S. Census Bureau, vydání CB26-181",
+      "url": "https://www.census.gov/retail/marts/www/marts_current.pdf"
+    },
     {
       "title": "St. Louis Fed: Alberto Musalem očekává nutnost několika zvýšení úrokových sazeb do jara 2027 kvůli inflaci nad 3 %. Jde o názor nevotujícího člena Fed, nikoli rozhodnutí FOMC.",
       "time": "17. 11. 2026, 12:32 UTC – původní článek Reuters; čas projevu samostatně neověřen",
       "publishedAtPrague": "17. 11. 2026, 13:32",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "source": "Reuters – Musalem/Fed",
       "url": "https://www.reuters.com/business/feds-musalem-us-likely-needs-several-rate-hikes-by-spring-control-inflation-2026-11-17/"
     },
@@ -28,7 +37,7 @@
       "time": "17. 11. 2026, 11:29 UTC – původní zveřejnění Reuters; průzkum BofA za listopad 2026",
       "publishedAtPrague": "17. 11. 2026, 12:29",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "source": "Reuters / průzkum BofA Global Research",
       "url": "https://www.reuters.com/business/global-markets-bofa-survey-2026-11-17/"
     },
@@ -37,7 +46,7 @@
       "time": "17. 11. 2026, 11:12 UTC – zveřejnění Reuters",
       "publishedAtPrague": "17. 11. 2026, 12:12",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "source": "Reuters – AI financování",
       "url": "https://www.reuters.com/business/nvidia-turmoil-marks-end-easy-money-ai-trade-2026-11-17/"
     },
@@ -90,21 +99,21 @@
       "impact": "Závěr 16. 11. 2026, cash akcie. Nikoliv dnešní premarket."
     }
   ],
-  "macro": "Nově: Musalem (St. Louis Fed) očekává nutnost několika zvýšení sazeb do jara 2027 kvůli inflaci nad 3 % (Reuters poprvé 13:32 CET); letos nemá hlas ve FOMC. US10Y 5,12 % je oficiální výnos U.S. Treasury k 16. 11. 2026, nikoli intradenní hodnota 17. 11. Census plánuje maloobchodní tržby USA za říjen na 17. 11. ve 14:30 CET.",
+  "macro": "Census Bureau zveřejnil 17. 11. v 14:30 CET předběžné říjnové tržby maloobchodu USA: +0,2 % m/m po +0,8 % v září, meziročně +6,8 %. Reuters uvádí jádrovou kontrolní skupinu +0,6 % proti očekávání +0,4 %. Podle MarketWatch po zveřejnění výnos US10Y vzrostl z přibližně 5,12 % na 5,14 %; jde o tržní snímek bez přesného minutového času. Poslední oficiální Treasury US10Y: 5,12 % k 16. 11. Musalemův jestřábí výhled je názor člena Fed, nikoliv rozhodnutí FOMC.",
   "regulation": "BIS: prozatímní federální regulační pravidlo o vzdáleném poskytování výpočetního výkonu amerických AI čipů, oznámeno 15.–16. 11.; nejde o zákon Kongresu. Nové federální/státní uzákonění s doloženým bezprostředním dopadem na NDX nebylo potvrzeno.",
   "technical": {
-    "support": "27 149,15 b. (S orientačně, minimum cash NDX seance 16. 11. 2026, Nasdaq)",
-    "resistance": "27 621,64 b. (R orientačně, maximum cash NDX seance 16. 11. 2026, Nasdaq)"
+    "support": "27 149,15 b. (orientační minimum cash NDX seance 16. 11. 2026, Nasdaq)",
+    "resistance": "27 621,64 b. (orientační maximum cash NDX seance 16. 11. 2026, Nasdaq)"
   },
   "forecast": {
     "athReturnPercent": 5,
-    "athReason": "Subjektivní odhad dosažení intradenního cash ATH do 6 měsíců 5 %, beze změny oproti 13:05 CET. Zlepšily by jej silné výsledky a výhled NVIDIA spolu s důkazy o návratnosti AI investic; jestřábí výhled Fed je protiváhou.",
+    "athReason": "Subjektivní odhad návratu cash NDX na historické intradenní maximum do šesti měsíců: 5 %, beze změny oproti 13:59 CET. Zvýšil by jej silný výhled NVIDIA a důkaz návratnosti investic do AI; dnešní makrodata jsou smíšená.",
     "downside": "−5 až −10 %",
-    "downsideReason": "Subjektivní scénář na 1–3 měsíce z posledního cash závěru 27 197,15 bodu: přibližně 25 837–24 477 bodů (−5 až −10 %); automatický výpočet na webu z ndx.value je rozhodující. Odhad by prohloubily další exportní restrikce, vyšší výnosy či slabší návratnost AI capexu."
+    "downsideReason": "Subjektivní rizikový scénář pro 1–3 měsíce z ověřeného cash závěru NDX 27 197,15 bodu: přibližně 25 837 až 24 477 bodů. Interval odvozovat průběžně z aktuální ověřené hodnoty ndx.value. Zhoršily by jej vyšší výnosy, další exportní omezení nebo slabší návratnost AI projektů."
   },
   "catalyst": {
-    "event": "Census: předběžné maloobchodní tržby USA za říjen; NVIDIA výsledky FY2027 Q3 a konferenční hovor",
-    "timePrague": "17. 11. 2026, 14:30 CET (Census), přibližně 22:20 CET výsledky a 23:00 CET konferenční hovor NVIDIA (firemní IR)"
+    "event": "NVIDIA: výsledky FY2027 Q3 a následný konferenční hovor",
+    "timePrague": "17. 11. 2026, přibližně 22:20 CET výsledky a 23:00 CET hovor (NVIDIA Investor Relations)"
   },
   "archive": [
     {
@@ -154,6 +163,10 @@
     {
       "time": "17. 11. 2026 13:59 CET",
       "summary": "Cash NDX 27 197,15 bodu (závěr 16. 11.), −2,67 % a −13,28 % od ATH. Medvědí hodnocení beze změny od 13:05; Nasdaq-100 E-mini futures při snímku 13:09 CET +0,39 %, nikoli cash index. Nově Reuters 13:32 CET: Musalem očekává několik zvýšení sazeb do jara 2027. Výhled návratu na ATH 5 %, rizikový scénář −5 až −10 % (25 837–24 477 b.)."
+    },
+    {
+      "time": "17. 11. 2026 15:00 CET",
+      "summary": "Cash NDX 27 197,15 bodu (poslední závěr 16. 11., −2,67 %, −13,28 % od ATH). Nově Census 14:30 CET: říjnové maloobchodní tržby USA +0,2 % m/m po zářijových +0,8 %; Reuters potvrzuje jádrovou kontrolní skupinu +0,6 %. Sentiment medvědí, trend beze změny; výhled ATH 5 % do šesti měsíců, scénář poklesu −5 až −10 %."
     }
   ],
   "history": [
@@ -318,6 +331,18 @@
     {
       "name": "Reuters – NQ E-mini futures 17.11.2026, 13:09 CET",
       "url": "https://www.reuters.com/business/us-stock-futures-slip-ahead-nvidia-results-fed-speakers-focus-2026-11-17/"
+    },
+    {
+      "name": "Census Bureau — maloobchodní tržby říjen 2026, 14:30 CET",
+      "url": "https://www.census.gov/retail/marts/www/marts_current.pdf"
+    },
+    {
+      "name": "Reuters — maloobchodní tržby USA 17. 11. 2026",
+      "url": "https://www.reuters.com/world/us/us-retail-sales-increase-moderately-october-2026-11-17/"
+    },
+    {
+      "name": "MarketWatch — výnosy po maloobchodních tržbách",
+      "url": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-nasdaq-nvidia-q3-financial-results-retail-sales-import-prices/card/treasury-yields-climb-after-retail-sales-data-while-stocks-dip-K4d3TauOt7c7XIf4UUD3"
     }
   ]
 }
