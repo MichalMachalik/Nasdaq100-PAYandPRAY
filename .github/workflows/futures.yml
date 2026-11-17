@@ -1,6 +1,10 @@
 name: Futures quote update
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/futures.yml"
+      - "scripts/update_futures.py"
   schedule:
     - cron: "*/5 * * * 1-5"
 permissions:
