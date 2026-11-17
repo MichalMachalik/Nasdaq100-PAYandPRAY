@@ -1,21 +1,48 @@
 {
-  "updatedAtPrague": "17. 11. 2026 05:56 CET",
-  "marketStatus": "Cash trh USA uzavřen; poslední ověřený závěr 16. 11. 2026 ve 22:00 CET.",
+  "updatedAtPrague": "17. 11. 2026 06:56 CET",
+  "marketStatus": "Cash trh USA uzavřen. Poslední ověřený závěr NDX 16. 11. 2026, 22:00 CET (16:00 EST).",
   "ndx": {
     "value": 27197.15,
     "changePercent": -2.67,
     "ath": 31361.37,
-    "asOf": "Cash NDX; závěr 16. 11. 2026 ve 22:00 CET. ATH 31 361,37 (intradenní, 6. 10. 2026)."
+    "asOf": "Cash NDX; závěr 16. 11. 2026, 22:00 CET (oficiální Nasdaq; denní -2,67 %). ATH 31 361,37 b., intradenní 6. 10. 2026."
   },
   "sentiment": {
     "label": "Medvědí (hodnocení)",
-    "trend": "→ Beze změny proti 04:55 CET",
-    "reason": "NDX 16. 11. pokles −2,67 %, SOX −5,3 %; slabost AI/čipů a tlak na technologie; srovnatelný cash trh od minulé kontroly neobchodoval."
+    "trend": "→ Beze změny proti 05:56 CET",
+    "reason": "Poslední cash NDX −2,67 %, SOX −5,3 %; nové zprávy potvrzují tlak na AI/čipy, ale cash NDX od minulé kontroly neobchodoval."
   },
-  "driver": "🔴 Vysoká důležitost: pondělní výprodej polovodičů (SOX −5,3 %) provázely obavy po odchodu vedení NVIDIA, před výsledky a po zpřísnění pravidel BIS (Reuters 16.–17. 11.). Nejde o prokázanou jedinou příčinu pohybu NDX.",
+  "driver": "🔴 Vysoká důležitost: výprodej polovodičů (SOX −5,3 %) a pokles NVDA −4,12 % během pondělního oslabení NDX souvisejí s nejistotou po změně vedení NVIDIA a exportními pravidly BIS. Reuters popisuje rizikový sentiment, nikoli doloženou jedinou příčinu.",
   "news": [
     {
-      "title": "↻ Pokračuje globální oslabení technologických akcií v Asii v návaznosti na americký výprodej a pravidlo BIS; nejde o novou hotovostní cenu NDX.",
+      "title": "🆕 Nově doložené informace: Commerce a DOJ popsaly vyšetřování Megaspeed zahájené 2024; NVIDIA firmu zařadila na zákaz prodeje v červnu 2025. Tisková zpráva 16. 11.; žádný prokázaný finanční dopad.",
+      "time": "16. 11. 2026, tisková zpráva Commerce/DOJ; Reuters publikováno 17. 11. 06:18 CET",
+      "publishedAtPrague": null,
+      "publicationTimeVerified": false,
+      "kind": "new",
+      "source": "Commerce/DOJ (distribuce tiskové zprávy)",
+      "url": "https://www.publicnow.com/view/4AEF65F0E8E3B91F7483D7FF3A82E9A6A3AF0A65"
+    },
+    {
+      "title": "↻ Reuters: USA–Čína, vývozní restrikce AI čipů a slabé technologie zůstávají hlavním rizikovým tématem; nová ranní analýza nepředstavuje nový pohyb cash NDX.",
+      "time": "17. 11. 2026, 06:33 CET",
+      "publishedAtPrague": "17. 11. 2026, 06:33",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/china/global-markets-view-europe-2026-11-17/"
+    },
+    {
+      "title": "↻ Reuters upřesnil informace o předchozím vyšetřování Megaspeed; oznámení amerických úřadů pochází ze 16. 11.",
+      "time": "17. 11. 2026, 06:18 CET",
+      "publishedAtPrague": "17. 11. 2026, 06:18",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/asia-pacific/us-releases-details-of-megaspeed-probe-says-investigation-began-2024-2026-11-17/"
+    },
+    {
+      "title": "↻ Slabost asijských technologických akcií po americkém výprodeji a zpřísnění pravidel pro AI čipy.",
       "time": "17. 11. 2026, 02:22 CET",
       "publishedAtPrague": "17. 11. 2026, 02:22",
       "publicationTimeVerified": true,
@@ -24,8 +51,8 @@
       "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-17/"
     },
     {
-      "title": "Výprodej amerických AI a polovodičových akcií; cash NDX v pondělí −2,67 %.",
-      "time": "16. 11. 2026, závěr USA",
+      "title": "↻ Pondělní výprodej amerických AI a čipových titulů; cash NDX −2,67 %, SOX −5,3 %.",
+      "time": "16. 11. 2026, závěr trhu",
       "publishedAtPrague": null,
       "publicationTimeVerified": false,
       "kind": "continuing",
@@ -33,51 +60,42 @@
       "url": "https://www.reuters.com/business/sp-500-nasdaq-futures-slide-nvidia-earnings-anthropic-debut-loom-2026-11-16/"
     },
     {
-      "title": "BIS zveřejnil interim final rule k dálkovému přístupu k výkonným čipům a serverům; oznámení není doložením okamžité účinnosti.",
-      "time": "16. 11. 2026",
+      "title": "↻ BIS vydal interim final rule k vzdálenému přístupu k výkonným AI čipům přes zahraniční datacentra.",
+      "time": "15. 11. 2026",
       "publishedAtPrague": null,
       "publicationTimeVerified": false,
       "kind": "continuing",
       "source": "BIS",
       "url": "https://www.bis.gov/press-release/bis-issues-rule-addressing-remote-access-american-super-intelligence-technology"
-    },
-    {
-      "title": "NVIDIA 12. 11. oznámila odchod Jensena Huanga a pověření Colette Kress funkcí dočasné CEO.",
-      "time": "12. 11. 2026",
-      "publishedAtPrague": null,
-      "publicationTimeVerified": false,
-      "kind": "continuing",
-      "source": "NVIDIA IR",
-      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-CEO-Transition/default.aspx"
     }
   ],
   "leaders": [
     {
       "ticker": "NVDA",
       "changePercent": -4.12,
-      "impact": "Cash akcie, závěr 16. 11. 2026; Reuters/MarketWatch."
+      "impact": "Hotovostní akcie, závěr 16. 11. 2026; Reuters/MarketWatch"
     },
     {
       "ticker": "AVGO",
       "changePercent": -3.92,
-      "impact": "Cash akcie, závěr 16. 11. 2026; StockAnalysis/MarketWatch."
+      "impact": "Hotovostní akcie, závěr 16. 11. 2026; MarketWatch"
     }
   ],
-  "macro": "US10Y: 5,12 % k 16. 11. 2026 (U.S. Treasury; 13. 11. 5,15 %); pokles výnosů nenahradil slabost AI/čipů.",
-  "regulation": "↻ BIS: prozatímní konečné pravidlo (interim final rule) oznámeno 16. 11. 2026 pro vzdálený přístup k pokročilým AI čipům/serverům; neoznačovat za zákon Kongresu, datum účinnosti a konkrétní finanční dopady z tiskové zprávy neurčeny.",
+  "macro": "US10Y 5,12 % (U.S. Treasury, 16. 11.; předchozí 13. 11. 5,15 %). Dnes 17. 11. v 14:30 CET vyjdou říjnové maloobchodní tržby USA (Census).",
+  "regulation": "↻ BIS: tisková zpráva 15. 11. 2026 k interim final rule pro vzdálený přístup k pokročilým AI čipům. Nově zveřejněné detaily vyšetřování Megaspeed ve společném prohlášení Commerce/DOJ ze 16. 11.; vyšetřování není dokladem viny ani nové kongresové legislativy.",
   "technical": {
     "support": null,
     "resistance": null
   },
   "forecast": {
     "athReturnPercent": 5,
-    "athReason": "Subjektivní šance návratu na intradenní ATH do 6 měsíců, beze změny; zvýšil by ji silný výhled NVIDIA a stabilizace financování AI.",
+    "athReason": "Subjektivní odhad návratu k intradennímu ATH v 6 měsících beze změny; zvýšily by jej přesvědčivé výsledky/výhled NVIDIA a stabilizace AI financování.",
     "downside": "−5 až −10 %",
-    "downsideReason": "Subjektivní riziko poklesu vůči poslednímu závěru za 1–3 měsíce, beze změny; zvýšilo by je zhoršení výhledu čipů a AI investic."
+    "downsideReason": "Subjektivní scénář pro příští 1–3 měsíce od posledního cash závěru, beze změny; prohloubily by jej slabší AI capex a další zpřísnění exportních kontrol."
   },
   "catalyst": {
-    "event": "NVIDIA FY27 Q3 – výsledky a konferenční hovor (oficiální IR)",
-    "timePrague": "17. 11. 2026 kolem 22:20 CET; konferenční hovor 23:00 CET"
+    "event": "Census – říjnové maloobchodní tržby USA; později NVIDIA FY27 Q3 výsledky a hovor",
+    "timePrague": "17. 11. 2026, 14:30 CET (Census); NVIDIA cca 22:20 CET, hovor 23:00 CET (IR)"
   },
   "archive": [
     {
@@ -95,6 +113,10 @@
     {
       "time": "17. 11. 2026 05:56 CET",
       "summary": "Cash NDX 27 197,15 b. (závěr 16. 11.), −2,67 %, −13,28 % od intradenního ATH. Medvědí hodnocení →; bez zásadních novinek; Reuters potvrzuje pokračování tlaku v Asii."
+    },
+    {
+      "time": "17. 11. 2026 06:56 CET",
+      "summary": "Cash NDX 27 197,15 b. (závěr 16. 11.), −2,67 %, −13,28 % od intradenního ATH; medvědí →. Nově ověřeny detaily zprávy Commerce/DOJ o Megaspeed z 16. 11.; Reuters 06:18 a 06:33 CET potvrzuje přetrvávající tlak na AI. Nejbližší katalyzátor retail sales 14:30 CET."
     }
   ],
   "history": [
@@ -175,6 +197,26 @@
     {
       "name": "StockAnalysis – AVGO 16. 11. 2026",
       "url": "https://stockanalysis.com/stocks/avgo/history/"
+    },
+    {
+      "name": "Nasdaq oficiální historie NDX",
+      "url": "https://indexes.nasdaq.com/index/History/NDX"
+    },
+    {
+      "name": "Reuters 17.11. Megaspeed 06:18 CET",
+      "url": "https://www.reuters.com/world/asia-pacific/us-releases-details-of-megaspeed-probe-says-investigation-began-2024-2026-11-17/"
+    },
+    {
+      "name": "Reuters ranní trhy 17.11. 06:33 CET",
+      "url": "https://www.reuters.com/world/china/global-markets-view-europe-2026-11-17/"
+    },
+    {
+      "name": "Commerce/DOJ – Megaspeed prohlášení 16.11.",
+      "url": "https://www.publicnow.com/view/4AEF65F0E8E3B91F7483D7FF3A82E9A6A3AF0A65"
+    },
+    {
+      "name": "Census – listopadový kalendář vydání",
+      "url": "https://www.census.gov/economic-indicators/calendar-listview.html"
     }
   ]
 }
