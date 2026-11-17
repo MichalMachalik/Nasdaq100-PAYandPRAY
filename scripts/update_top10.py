@@ -50,18 +50,18 @@ def retrieve():
     print("DIAG", "len", len(html), "title", (soup.title.get_text(" ", strip=True) if soup.title else "-")[:110], "tables", len(soup.select("table")), "rows", len(soup.select("table tbody tr")), "tr", str(soup.select_one("tr"))[:600])
     for tr in soup.select("table tbody tr"):
         cells = tr.find_all("td", recursive=False)
-        if len(cells) < 5:
+        if len(cells) < 6:
             continue
-        label = cells[1].get_text(" ", strip=True)
+        label = cells[2].get_text(" ", strip=True)
         try:
             ticker = next((t for t in ELIGIBLE if re.search(r"(?<![A-Z])"+re.escape(t)+r"(?![A-Z])", label)), None)
             if not ticker:
                 continue
             ticker = ALIASES.get(ticker, ticker)
-            cap, price, change = money(cells[2].get_text(" ", strip=True)), money(cells[3].get_text(" ", strip=True)), percent(cells[4])
+            cap, price, change = money(cells[3].get_text(" ", strip=True)), money(cells[4].get_text(" ", strip=True)), percent(cells[5])
             if cap < 1e9 or price <= 0 or not -80 <= change <= 80:
                 continue
-            link = cells[1].find("a")
+            link = cells[2].find("a")
             name = link.get_text(" ", strip=True) if link else label
             name = re.sub(r"\b(?:GOOG|GOOGL|"+re.escape(ticker)+r")\b\s*$", "", name).strip()
             obj = {"ticker": ticker, "name": name or ticker, "marketCapUsd": round(cap), "priceUsd": round(price, 2), "changePercent": round(change, 2)}
