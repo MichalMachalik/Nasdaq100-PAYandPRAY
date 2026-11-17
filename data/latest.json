@@ -1,37 +1,94 @@
 {
-  "updatedAtPrague": null,
-  "marketStatus": "Čeká na první ověřený report",
+  "updatedAtPrague": "17. 11. 2026, 02:55",
+  "marketStatus": "Cash NDX uzavřen • poslední závěr 16. 11. 2026 ve 22:00 Praha; další běh plánován každou hodinu ve všední dny",
   "ndx": {
-    "value": null,
-    "changePercent": null,
-    "ath": null,
-    "asOf": null
+    "value": 27197.15,
+    "changePercent": -2.67,
+    "ath": 31361.37,
+    "asOf": "Závěr 16. 11. 2026, 22:00 Praha (nikoli živá cena)"
   },
   "sentiment": {
-    "label": null,
-    "trend": null,
-    "reason": null
+    "label": "Medvědí",
+    "trend": "↘ zhoršení proti pátečnímu závěru",
+    "reason": "NDX −2,67 %, oslabení polovodičů a předvýsledková nejistota NVDA."
   },
-  "driver": null,
-  "news": [],
-  "leaders": [],
-  "macro": null,
-  "regulation": null,
+  "driver": "🔴 VYSOKÁ: Výprodej AI a čipů; podle Reuters dominují obavy o rizika AI sektoru a vedení NVDA.",
+  "news": [
+    {
+      "title": "Reuters: Americké akcie prudce klesly kvůli obavám z AI; polovodičový index SOX −5,3 %. Nasdaq Composite −2,49 % (nejde o NDX).",
+      "time": "16. 11. 2026, po závěru USA",
+      "kind": "new",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/sp-500-nasdaq-futures-slide-nvidia-earnings-anthropic-debut-loom-2026-11-16/"
+    },
+    {
+      "title": "NVIDIA potvrdila výsledkový hovor 17. 11. ve 23:00 Praha; výsledky přibližně 22:20.",
+      "time": "Oznámení 28. 10. 2026; plánovaná událost",
+      "kind": "continuing",
+      "source": "NVIDIA IR",
+      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Sets-Conference-Call-for-Third-Quarter-Financial-Results/"
+    }
+  ],
+  "leaders": [
+    {
+      "ticker": "NVDA",
+      "changePercent": -4.12,
+      "impact": "Závěr 16. 11. 2026"
+    },
+    {
+      "ticker": "AVGO",
+      "changePercent": -3.92,
+      "impact": "Závěr 16. 11. 2026; z dříve ověřeného reportu"
+    }
+  ],
+  "macro": "US10Y přibližně 5,12 % na konci 16. 11. (−3 bb proti 13. 11.); vyšší výnosy jsou tlakem na valuace.",
+  "regulation": "Americká omezení přístupu k pokročilým AI čipům: pokračující regulatorní riziko; bez nového legislativního milníku potvrzeného při této aktualizaci.",
   "technical": {
     "support": null,
     "resistance": null
   },
   "forecast": {
-    "athReturnPercent": null,
-    "athReason": null,
-    "downside": null,
-    "downsideReason": null
+    "athReturnPercent": 5,
+    "athReason": "Odhad beze změny: slabý trend, riziko návratnosti AI a vysoké výnosy. Změna při lepším výhledu NVDA a stabilizaci výnosů.",
+    "downside": "−5 až −10 %",
+    "downsideReason": "Odhad z 27 197,15 b.: přibližně 25 837–24 477 b.; rozsah přehodnotit po výsledcích NVDA."
   },
   "catalyst": {
-    "event": null,
-    "timePrague": null
+    "event": "Výsledky NVDA (fiskální Q3 2027)",
+    "timePrague": "17. 11. 2026 cca 22:20; hovor 23:00 Praha"
   },
-  "archive": [],
-  "history": [],
-  "sources": []
+  "archive": [
+    {
+      "time": "17. 11. 2026, 02:55 Praha",
+      "summary": "NDX 27 197,15 b. (−2,67 %) při závěru 16.11.; rizika AI, před výsledky NVDA."
+    }
+  ],
+  "history": [
+    {
+      "time": "2026-11-13",
+      "ndx": 27943.74
+    },
+    {
+      "time": "2026-11-16",
+      "ndx": 27197.15
+    }
+  ],
+  "sources": [
+    {
+      "name": "Nasdaq — NDX cash",
+      "url": "https://indexes.nasdaqomx.com/Index/Overview/ndx"
+    },
+    {
+      "name": "Reuters — 16. 11. tržní závěr",
+      "url": "https://www.reuters.com/business/sp-500-nasdaq-futures-slide-nvidia-earnings-anthropic-debut-loom-2026-11-16/"
+    },
+    {
+      "name": "NVIDIA IR — výsledkový hovor",
+      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Sets-Conference-Call-for-Third-Quarter-Financial-Results/"
+    },
+    {
+      "name": "Yahoo Finance — historická data NDX",
+      "url": "https://finance.yahoo.com/quote/%5ENDX/history/"
+    }
+  ]
 }
