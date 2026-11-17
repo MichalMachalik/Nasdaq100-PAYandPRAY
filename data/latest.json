@@ -1,6 +1,6 @@
 {
-  "updatedAtPrague": "17. 11. 2026 23:00 CET",
-  "marketStatus": "Cash Nasdaq-100: obchodování uzavřeno 17. 11. 2026 v 22:00 CET. Hodnota 27 001,78 bodu je oficiální denní závěrečný cash NDX dle Nasdaq; futures NQ=F jsou odděleny v data/futures.json.",
+  "updatedAtPrague": "18. 11. 2026 00:29 CET",
+  "marketStatus": "Cash Nasdaq-100 uzavřen. Poslední ověřený závěr: 17. 11. 2026, 22:00 CET; 27 001,78 b. (−0,72 %).",
   "ndx": {
     "value": 27001.78,
     "changePercent": -0.72,
@@ -9,7 +9,7 @@
   },
   "sentiment": {
     "label": "Medvědí (subjektivní hodnocení)",
-    "trend": "Zlepšení oproti 21:59 CET",
+    "trend": "Cash trh uzavřen; nové obchodování začne 18. 11. v 15:30 CET.",
     "reason": "NDX cash: 27 001,78 b. (−0,72 %). SOX +0,34 %, NVDA −0,44 %, AVGO +2,46 %. Po závěru NVDA +1,76 %."
   },
   "driver": "NDX cash −0,72 %. Reuters: výnos dluhopisů CoreWeave téměř 15 %; dražší financování AI infrastruktury.",
@@ -193,8 +193,8 @@
     "downsideReason": "Rizika: náklady financování AI infrastruktury; výhled hrubé marže NVIDIA 71–72 % vs. 74,9 % v Q3."
   },
   "catalyst": {
-    "event": "NVIDIA – komentář vedení a otázky analytiků ke třetímu čtvrtletí fiskálního roku 2027, oficiální investor relations webcast",
-    "timePrague": "17. 11. 2026, 23:00 CET – začátek výsledkového hovoru (17:00 EST)."
+    "event": "Americké akcie: první cash seance po výsledcích NVIDIA Q3",
+    "timePrague": "18. 11. 2026, 15:30 CET"
   },
   "archive": [
     {
@@ -280,6 +280,10 @@
     {
       "time": "17. 11. 2026 23:00 CET",
       "summary": "Cash NDX závěr 27 001,78 b. (−0,72 % za den, −13,90 % od ATH), medvědí hodnocení ↗ proti 21:59. Nově primární NVIDIA Q3 FY27: tržby 115,8 mld. USD, datacentra 107,6 mld. a Q4 prognóza 130 mld. USD ±3 %. Subjektivní ATH šance zvýšena z 5 na 12 %, propad −5 až −10 % (25 652 až 24 302 b.); výsledkový hovor 23:00 CET."
+    },
+    {
+      "time": "18. 11. 2026 00:29 CET",
+      "summary": "Ověřen poslední cash závěr NDX 27 001,78 b. (−0,72 %), 17. 11. 22:00 CET. NVIDIA Q3: tržby 115,8 mld. USD; výhled Q4 130 mld. USD. Bez nového cash obchodování."
     }
   ],
   "history": [
@@ -596,6 +600,10 @@
     {
       "name": "Google Finance – NDX závěr a NVDA/AVGO",
       "url": "https://www.google.com/finance/quote/NDX:INDEXNASDAQ"
+    },
+    {
+      "name": "NVIDIA IR — Q3 FY2027",
+      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/default.aspx"
     }
   ]
 }
