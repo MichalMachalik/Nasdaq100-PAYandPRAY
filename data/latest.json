@@ -1,77 +1,83 @@
 {
-  "updatedAtPrague": "17. 11. 2026 02:55 CET",
-  "marketStatus": "Americký cash trh je zavřený. Poslední ověřený závěr: 16. 11. 2026, 22:00 CET.",
+  "updatedAtPrague": "17. 11. 2026 03:55 CET",
+  "marketStatus": "Cash trh USA zavřený; poslední ověřený závěr 16. 11. 2026 ve 22:00 CET.",
   "ndx": {
     "value": 27197.15,
     "changePercent": -2.67,
     "ath": 31361.37,
-    "asOf": "Závěr pondělí 16. 11. 2026, 22:00 CET; ATH intradenní 6. 10. 2026."
+    "asOf": "Cash NDX, závěr 16. 11. 2026 22:00 CET; intradenní ATH 6. 10. 2026."
   },
   "sentiment": {
-    "label": "Medvědí",
-    "trend": "Srovnání s minulou kontrolou nedostupné",
-    "reason": "NDX −2,67 %; pokles polovodičů a nejistota kolem vedení NVIDIA a nákladů AI infrastruktury."
+    "label": "Medvědí (hodnocení)",
+    "trend": "→ Beze změny proti 02:55 CET",
+    "reason": "NDX −2,67 % při uzavření; slabé AI a polovodiče, trvající nejistota NVIDIA. Od minulé kontroly bez nového cash obchodování."
   },
-  "driver": "🔴 Vysoký dopad: výprodej AI/polovodičů a nejistota po změně vedení NVIDIA; obavy z financování AI infrastruktury.",
+  "driver": "🔴 Vysoký dopad: pokračující výprodej AI/polovodičů (SOX −5,3 %), nejistota po rezignaci šéfa NVIDIA, rizika financování AI. Reuters 16. 11.",
   "news": [
     {
-      "title": "Pondělní výprodej AI táhl americké akcie dolů; NDX uzavřel −2,67 %.",
+      "title": "Výprodej amerických AI a polovodičových akcií; cash NDX v pondělí −2,67 %.",
       "time": "16. 11. 2026, závěr USA",
+      "publishedAtPrague": null,
+      "publicationTimeVerified": false,
       "kind": "continuing",
       "source": "Reuters",
-      "url": "https://www.reuters.com/commentary/reuters-open-interest/global-markets-trading-day-graphic-2026-11-16/",
-      "publishedAtPrague": null,
-      "publicationTimeVerified": false
+      "url": "https://www.reuters.com/business/sp-500-nasdaq-futures-slide-nvidia-earnings-anthropic-debut-loom-2026-11-16/"
     },
     {
-      "title": "BIS oznámil interim final rule pro vzdálený přístup k vyspělým AI čipům a serverům.",
-      "time": "15. 11. 2026",
+      "title": "BIS zveřejnil interim final rule k dálkovému přístupu k výkonným čipům a serverům; oznámení není doložením okamžité účinnosti.",
+      "time": "16. 11. 2026",
+      "publishedAtPrague": null,
+      "publicationTimeVerified": false,
       "kind": "continuing",
       "source": "BIS",
-      "url": "https://www.bis.gov/press-release/bis-issues-rule-addressing-remote-access-american-super-intelligence-technology",
-      "publishedAtPrague": null,
-      "publicationTimeVerified": false
+      "url": "https://www.bis.gov/press-release/bis-issues-rule-addressing-remote-access-american-super-intelligence-technology"
     },
     {
-      "title": "NVIDIA potvrdila rezignaci Jensena Huanga a dočasné vedení Colette Kress.",
+      "title": "NVIDIA 12. 11. oznámila odchod Jensena Huanga a pověření Colette Kress funkcí dočasné CEO.",
       "time": "12. 11. 2026",
+      "publishedAtPrague": null,
+      "publicationTimeVerified": false,
       "kind": "continuing",
       "source": "NVIDIA IR",
-      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-CEO-Transition/default.aspx",
-      "publishedAtPrague": null,
-      "publicationTimeVerified": false
+      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-CEO-Transition/default.aspx"
     }
   ],
   "leaders": [
     {
       "ticker": "NVDA",
-      "changePercent": -4.12
+      "changePercent": -4.12,
+      "impact": "Pokles při závěru 16. 11. 2026, nejistota po změně vedení a před výsledky."
     },
     {
       "ticker": "AVGO",
-      "changePercent": -3.92
+      "changePercent": -3.92,
+      "impact": "Pokles při závěru 16. 11. 2026, širší tlak na AI a čipy."
     }
   ],
-  "macro": "US10Y 5,12 % (16. 11. 2026, závěr; −3 bb denně) — pokles výnosu nezastavil výprodej technologií.",
-  "regulation": "BIS 15. 11. zveřejnil prozatímní konečné pravidlo (IFR) o vzdáleném přístupu k americkým pokročilým AI čipům; odlišné od návrhů zákonů.",
+  "macro": "Výnos US10Y 16. 11. podle U.S. Treasury 5,12 % (13. 11. 5,15 %); riziková averze převážila nad mírným poklesem výnosu.",
+  "regulation": "BIS 16. 11. oznámil interim final rule o vzdáleném přístupu k americkým výkonným čipům; přímý finanční dopad zatím nevyčíslen.",
   "technical": {
     "support": null,
     "resistance": null
   },
   "forecast": {
     "athReturnPercent": 5,
-    "athReason": "Subjektivní odhad; zvýšil by jej přesvědčivý výhled NVIDIA a uklidnění financování AI.",
+    "athReason": "Subjektivní pravděpodobnost do 6 měsíců, beze změny; zvýšily by ji silné výsledky a výhled NVIDIA a stabilizace AI investic.",
     "downside": "−5 až −10 %",
-    "downsideReason": "Subjektivní scénář pro 1–3 měsíce; riziko slabších výsledků a zpřísnění exportu."
+    "downsideReason": "Subjektivní pokles v 1–3 měsících, beze změny; prohloubily by jej slabé výsledky či omezení AI investic."
   },
   "catalyst": {
-    "event": "NVIDIA: výsledky Q3 FY2027, hovor s analytiky",
-    "timePrague": "17. 11. 2026, 23:00 CET (výsledky přibližně 22:20 CET)"
+    "event": "Výsledky NVIDIA FY27 Q3 (očekávané zveřejnění), následně konferenční hovor",
+    "timePrague": "17. 11. 2026 přibl. 22:20 CET; hovor 23:00 CET"
   },
   "archive": [
     {
       "time": "17. 11. 2026 02:55 CET",
       "summary": "NDX 27 197,15 (závěr 16. 11.), −2,67 %; medvědí sentiment, AI a polovodiče."
+    },
+    {
+      "time": "17. 11. 2026 03:55 CET",
+      "summary": "Cash NDX 27 197,15 b. (závěr 16. 11.), −2,67 %, −13,28 % od intradenního ATH; medvědí hodnocení →; bez zásadních novinek."
     }
   ],
   "history": [
@@ -106,7 +112,7 @@
       "url": "https://ycharts.com/indices/%5ENDX/level"
     },
     {
-      "name": "Yahoo Finance – NDX history",
+      "name": "Yahoo Finance — NDX historie",
       "url": "https://finance.yahoo.com/quote/%5ENDX/history/"
     },
     {
@@ -118,24 +124,28 @@
       "url": "https://www.reuters.com/commentary/reuters-open-interest/global-markets-trading-day-graphic-2026-11-16/"
     },
     {
-      "name": "NVIDIA – CEO transition",
+      "name": "NVIDIA IR — CEO transition",
       "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-CEO-Transition/default.aspx"
     },
     {
-      "name": "NVIDIA – výsledkový kalendář",
+      "name": "NVIDIA IR — termín výsledků",
       "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Sets-Conference-Call-for-Third-Quarter-Financial-Results/"
     },
     {
-      "name": "BIS – AI remote access rule",
+      "name": "BIS — pravidlo pro vzdálený přístup k čipům",
       "url": "https://www.bis.gov/press-release/bis-issues-rule-addressing-remote-access-american-super-intelligence-technology"
     },
     {
-      "name": "US Treasury – Treasury yields",
+      "name": "U.S. Treasury — denní výnosová křivka",
       "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value=2026&type=daily_treasury_yield_curve"
     },
     {
       "name": "MarketWatch – AVGO/NVDA",
       "url": "https://www.marketwatch.com/data-news/broadcom-inc-stock-outperforms-competitors-despite-losses-on-the-day-e7942b9c-b77e52d0b8e1"
+    },
+    {
+      "name": "Reuters — americký trh 16. 11. 2026",
+      "url": "https://www.reuters.com/business/sp-500-nasdaq-futures-slide-nvidia-earnings-anthropic-debut-loom-2026-11-16/"
     }
   ]
 }
