@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Public delayed E-mini Nasdaq-100 futures market snapshot.
+Scheduled checks may be deferred by GitHub; also triggered via source edits.
 No credentials, no Plus500 or account data. Fail closed if source unavailable.
 Yahoo Finance chart endpoint is unofficial and may stop working."""
 import json
