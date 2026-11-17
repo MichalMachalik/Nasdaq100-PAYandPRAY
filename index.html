@@ -329,210 +329,55 @@ if(Number.isFinite(n.value)&&n.value>0&&percentages.length>=2&&percentages[0]>0&
 setSentences('forecast-down-reason',f.downsideReason||'Čeká na aktualizaci');let c=d.catalyst||{};set('catalyst',[c.event,c.timePrague].filter(Boolean).join(' • ')||'Zatím nezveřejněno');
 rows('archive',d.archive,x=>{let el=document.createElement('div');el.className='news';el.append(document.createTextNode(safe(x.time)+' · '+safe(x.summary)));return el});
 rows('sources',d.sources,x=>{let el=document.createElement('div');el.className='news';el.append(link(x.url||'',safe(x.name,x.title||'Zdroj')));return el})}
-async function loadTop10(){
+
+async function loadTop10() {
   const body=$('top10-body');
-  if(!body)return;
-  try{
+  if(!body) return;
+  try {
     const res=await fetch('./data/top10.json?t='+Date.now(),{cache:'no-store'});
-    if(!res.ok)throw new Error('top10 data unavailable');
+    if(!res.ok) throw new Error('top10 fetch error');
     const data=await res.json();
-    if(!Array.isArray(data.companies)||!data.companies.length)throw new Error('empty ranking');
-    body.replaceChildren();
-    data.companies.slice(0,10).forEach((c,i)=>{
-      if(!/^[A-Z]{1,6}$/.test(c.ticker)||!Number.isFinite(c.marketCapUsd)||!Number.isFinite(c.priceUsd))return;
-      const row=document.createElement('tr');
-      const rank=document.createElement('td');rank.textContent=String(i+1);
-      const name=document.createElement('td');
-      const group=document.createElement('div');group.className='top10-name';
-      const logo=document.createElement('img');logo.className='top10-logo';logo.loading='lazy';logo.alt='';logo.src='https://companiesmarketcap.com/img/company-logos/64/'+encodeURIComponent(c.ticker)+'.png';
+    if(!Array.isArray(data.companies)||data.companies.length<10) throw new Error('incomplete data');
+    const items=data.companies.slice().sort((a,b)=>b.marketCapUsd-a.marketCapUsd).slice(0,10);
+    const frag=document.createDocumentFragment();
+    for(const [i,c] of items.entries()) {
+      if(!/^[A-Z]{1,6}$/.test(c.ticker)||!Number.isFinite(c.marketCapUsd)||!Number.isFinite(c.priceUsd)) throw new Error('invalid company data');
+      const tr=document.createElement('tr');
+      const tdRank=document.createElement('td');tdRank.textContent=String(i+1);
+      const tdName=document.createElement('td');
+      const wrap=document.createElement('div');wrap.className='top10-name';
+      const img=document.createElement('img');img.className='top10-logo';img.loading='lazy';img.alt='';
+      img.src='https://companiesmarketcap.com/img/company-logos/64/'+encodeURIComponent(c.ticker)+'.png';
       const fallback=document.createElement('span');fallback.className='top10-fallback';fallback.textContent=c.ticker.slice(0,2);
-      logo.onerror=()=>{logo.style.display='none';fallback.style.display='inline-flex'};
+      img.onerror=()=>{img.style.display='none';fallback.style.display='inline-flex';};
       const labels=document.createElement('div');
-      const company=document.createElement('div');company.className='top10-company';company.textContent=String(c.name||c.ticker);
-      const ticker=document.createElement('div');ticker.className='top10-ticker';ticker.textContent=c.ticker;
-      labels.append(company,ticker);group.append(logo,fallback,labels);name.append(group);
-      const cap=document.createElement('td');cap.textContent=c.marketCapUsd>=1e12?'
-  try{
-    const response=await fetch('./data/futures.json?t='+Date.now(),{cache:'no-store'});
-    if(!response.ok)throw new Error('futures feed unavailable');
-    const q=await response.json();
-    if(q.symbol!=='NQ=F'||q.instrumentType!=='FUTURES')throw new Error('invalid futures instrument');
-    const time=Date.parse(q.quotedAtUtc||'');
-    if(!Number.isFinite(time)||!Number.isFinite(q.price)||q.price<=1000)throw new Error('invalid futures quote');
-    const age=Date.now()-time;
-    if(age < -120000 || age > 86400000)throw new Error('stale futures quote');
-    set('futures-price',fmt(q.price));
-    set('futures-change',typeof q.changePercent==='number'?pct(q.changePercent):'—');
-    $('futures-change').className='value '+(q.changePercent<0?'red':q.changePercent>0?'green':'neutral');
-    const lag=age>1800000?' · starší údaj':' · zpožděná data';
-    set('futures-time','Kotace '+String(q.quotedAtPrague||'čas neuveden')+' Praha'+lag);
+      const name=document.createElement('div');name.className='top10-company';name.textContent=c.name||c.ticker;
+      const symbol=document.createElement('div');symbol.className='top10-ticker';symbol.textContent=c.ticker;
+      labels.append(name,symbol);wrap.append(img,fallback,labels);tdName.append(wrap);
+      const cap=document.createElement('td');
+      const capUsd=c.marketCapUsd;
+      cap.textContent=capUsd>=1e12?'$'+(capUsd/1e12).toFixed(3)+' T':'$'+(capUsd/1e9).toFixed(2)+' B';
+      const price=document.createElement('td');
+      price.textContent='$'+c.priceUsd.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});
+      const day=document.createElement('td');
+      if(Number.isFinite(c.changePercent)) {
+        day.textContent=(c.changePercent>0?'▲ ':c.changePercent<0?'▼ ':'')+
+          Math.abs(c.changePercent).toLocaleString('cs-CZ',{minimumFractionDigits:2,maximumFractionDigits:2})+' %';
+        day.className=c.changePercent>0?'up':c.changePercent<0?'down':'';
+      } else {day.textContent='—';}
+      tr.append(tdRank,tdName,cap,price,day);frag.append(tr);
+    }
+    body.replaceChildren(frag);
+    set('top10-time',data.fetchedAtPrague?'Data '+data.fetchedAtPrague+' Praha':'Poslední ověřená data');
+  } catch(err) {
+    if(body.textContent.includes('Načítání')) {
+      const tr=document.createElement('tr');
+      const td=document.createElement('td');td.colSpan=5;td.textContent='Data nejsou dostupná';
+      tr.append(td);body.replaceChildren(tr);
+    }
+  }
+}
 
-  }catch(err){
-    set('futures-price','—');
-    set('futures-change','—');
-    set('futures-time','Aktuální futures kotace není ověřena');
-  }
-}
-async function load(){try{let r=await fetch('./data/latest.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)throw Error('HTTP '+r.status);render(await r.json())}catch(err){set('updated','● Data nedostupná');void 0}}
-// Tlačítko obnovuje celou stránku i data, ne pouze JSON.
-$('refresh').addEventListener('click',()=>{
-  const button=$('refresh');
-  button.disabled=true;
-  button.classList.add('is-loading');
-  const url=new URL(window.location.href);
-  url.searchParams.set('refresh',String(Date.now()));
-  window.location.replace(url.toString());
-});
-// Zavřít otevřené menu při kliknutí mimo něj nebo klávesou Escape.
-const historyMenu=document.querySelector('.history-menu');
-document.addEventListener('pointerdown',event=>{
-  if(historyMenu?.open && !historyMenu.contains(event.target)){
-    historyMenu.open=false;
-  }
-});
-document.addEventListener('keydown',event=>{
-  if(event.key==='Escape' && historyMenu?.open){
-    historyMenu.open=false;
-    historyMenu.querySelector('summary')?.focus();
-  }
-});
-load();loadFutures();loadTop10();
-let lastDataCheck=Date.now();
-setInterval(()=>{
-  if(!document.hidden && Date.now()-lastDataCheck>=180000){
-    lastDataCheck=Date.now();
-    load();loadFutures();loadTop10();
-  }
-},60000);
-document.addEventListener('visibilitychange',()=>{
-  if(!document.hidden){lastDataCheck=Date.now();load();loadFutures();loadTop10();}
-});
-</script>
-</body></html>+(c.marketCapUsd/1e12).toFixed(3)+' T':'
-  try{
-    const response=await fetch('./data/futures.json?t='+Date.now(),{cache:'no-store'});
-    if(!response.ok)throw new Error('futures feed unavailable');
-    const q=await response.json();
-    if(q.symbol!=='NQ=F'||q.instrumentType!=='FUTURES')throw new Error('invalid futures instrument');
-    const time=Date.parse(q.quotedAtUtc||'');
-    if(!Number.isFinite(time)||!Number.isFinite(q.price)||q.price<=1000)throw new Error('invalid futures quote');
-    const age=Date.now()-time;
-    if(age < -120000 || age > 86400000)throw new Error('stale futures quote');
-    set('futures-price',fmt(q.price));
-    set('futures-change',typeof q.changePercent==='number'?pct(q.changePercent):'—');
-    $('futures-change').className='value '+(q.changePercent<0?'red':q.changePercent>0?'green':'neutral');
-    const lag=age>1800000?' · starší údaj':' · zpožděná data';
-    set('futures-time','Kotace '+String(q.quotedAtPrague||'čas neuveden')+' Praha'+lag);
-
-  }catch(err){
-    set('futures-price','—');
-    set('futures-change','—');
-    set('futures-time','Aktuální futures kotace není ověřena');
-  }
-}
-async function load(){try{let r=await fetch('./data/latest.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)throw Error('HTTP '+r.status);render(await r.json())}catch(err){set('updated','● Data nedostupná');void 0}}
-// Tlačítko obnovuje celou stránku i data, ne pouze JSON.
-$('refresh').addEventListener('click',()=>{
-  const button=$('refresh');
-  button.disabled=true;
-  button.classList.add('is-loading');
-  const url=new URL(window.location.href);
-  url.searchParams.set('refresh',String(Date.now()));
-  window.location.replace(url.toString());
-});
-// Zavřít otevřené menu při kliknutí mimo něj nebo klávesou Escape.
-const historyMenu=document.querySelector('.history-menu');
-document.addEventListener('pointerdown',event=>{
-  if(historyMenu?.open && !historyMenu.contains(event.target)){
-    historyMenu.open=false;
-  }
-});
-document.addEventListener('keydown',event=>{
-  if(event.key==='Escape' && historyMenu?.open){
-    historyMenu.open=false;
-    historyMenu.querySelector('summary')?.focus();
-  }
-});
-load();loadFutures();
-let lastDataCheck=Date.now();
-setInterval(()=>{
-  if(!document.hidden && Date.now()-lastDataCheck>=180000){
-    lastDataCheck=Date.now();
-    load();loadFutures();
-  }
-},60000);
-document.addEventListener('visibilitychange',()=>{
-  if(!document.hidden){lastDataCheck=Date.now();load();loadFutures();}
-});
-</script>
-</body></html>+(c.marketCapUsd/1e9).toFixed(2)+' B';
-      const price=document.createElement('td');price.textContent='
-  try{
-    const response=await fetch('./data/futures.json?t='+Date.now(),{cache:'no-store'});
-    if(!response.ok)throw new Error('futures feed unavailable');
-    const q=await response.json();
-    if(q.symbol!=='NQ=F'||q.instrumentType!=='FUTURES')throw new Error('invalid futures instrument');
-    const time=Date.parse(q.quotedAtUtc||'');
-    if(!Number.isFinite(time)||!Number.isFinite(q.price)||q.price<=1000)throw new Error('invalid futures quote');
-    const age=Date.now()-time;
-    if(age < -120000 || age > 86400000)throw new Error('stale futures quote');
-    set('futures-price',fmt(q.price));
-    set('futures-change',typeof q.changePercent==='number'?pct(q.changePercent):'—');
-    $('futures-change').className='value '+(q.changePercent<0?'red':q.changePercent>0?'green':'neutral');
-    const lag=age>1800000?' · starší údaj':' · zpožděná data';
-    set('futures-time','Kotace '+String(q.quotedAtPrague||'čas neuveden')+' Praha'+lag);
-
-  }catch(err){
-    set('futures-price','—');
-    set('futures-change','—');
-    set('futures-time','Aktuální futures kotace není ověřena');
-  }
-}
-async function load(){try{let r=await fetch('./data/latest.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)throw Error('HTTP '+r.status);render(await r.json())}catch(err){set('updated','● Data nedostupná');void 0}}
-// Tlačítko obnovuje celou stránku i data, ne pouze JSON.
-$('refresh').addEventListener('click',()=>{
-  const button=$('refresh');
-  button.disabled=true;
-  button.classList.add('is-loading');
-  const url=new URL(window.location.href);
-  url.searchParams.set('refresh',String(Date.now()));
-  window.location.replace(url.toString());
-});
-// Zavřít otevřené menu při kliknutí mimo něj nebo klávesou Escape.
-const historyMenu=document.querySelector('.history-menu');
-document.addEventListener('pointerdown',event=>{
-  if(historyMenu?.open && !historyMenu.contains(event.target)){
-    historyMenu.open=false;
-  }
-});
-document.addEventListener('keydown',event=>{
-  if(event.key==='Escape' && historyMenu?.open){
-    historyMenu.open=false;
-    historyMenu.querySelector('summary')?.focus();
-  }
-});
-load();loadFutures();
-let lastDataCheck=Date.now();
-setInterval(()=>{
-  if(!document.hidden && Date.now()-lastDataCheck>=180000){
-    lastDataCheck=Date.now();
-    load();loadFutures();
-  }
-},60000);
-document.addEventListener('visibilitychange',()=>{
-  if(!document.hidden){lastDataCheck=Date.now();load();loadFutures();}
-});
-</script>
-</body></html>+c.priceUsd.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});
-      const change=document.createElement('td');change.textContent=Number.isFinite(c.changePercent)?(c.changePercent>0?'▲ ':c.changePercent<0?'▼ ':'')+Math.abs(c.changePercent).toLocaleString('cs-CZ',{minimumFractionDigits:2,maximumFractionDigits:2})+' %':'—';
-      change.className=c.changePercent>0?'up':c.changePercent<0?'down':'';
-      row.append(rank,name,cap,price,change);body.append(row);
-    });
-    set('top10-time',data.fetchedAtPrague?'Data '+data.fetchedAtPrague+' Praha':'Ověřený tržní přehled');
-  }catch(err){
-    if(!body.children.length||body.textContent.includes('Načítání'))body.innerHTML='<tr><td colspan="5">Údaje nejsou dostupné</td></tr>';
-  }
-}
 async function loadFutures(){
   try{
     const response=await fetch('./data/futures.json?t='+Date.now(),{cache:'no-store'});
@@ -548,46 +393,44 @@ async function loadFutures(){
     $('futures-change').className='value '+(q.changePercent<0?'red':q.changePercent>0?'green':'neutral');
     const lag=age>1800000?' · starší údaj':' · zpožděná data';
     set('futures-time','Kotace '+String(q.quotedAtPrague||'čas neuveden')+' Praha'+lag);
-
   }catch(err){
     set('futures-price','—');
     set('futures-change','—');
     set('futures-time','Aktuální futures kotace není ověřena');
   }
 }
-async function load(){try{let r=await fetch('./data/latest.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)throw Error('HTTP '+r.status);render(await r.json())}catch(err){set('updated','● Data nedostupná');void 0}}
-// Tlačítko obnovuje celou stránku i data, ne pouze JSON.
+async function load(){
+  try {
+    const response=await fetch('./data/latest.json?t='+Date.now(),{cache:'no-store'});
+    if(!response.ok)throw new Error('HTTP '+response.status);
+    render(await response.json());
+  }catch(err){set('updated','Data nedostupná');}
+}
 $('refresh').addEventListener('click',()=>{
-  const button=$('refresh');
-  button.disabled=true;
-  button.classList.add('is-loading');
-  const url=new URL(window.location.href);
-  url.searchParams.set('refresh',String(Date.now()));
+  const button=$('refresh');button.disabled=true;button.classList.add('is-loading');
+  const url=new URL(window.location.href);url.searchParams.set('refresh',String(Date.now()));
   window.location.replace(url.toString());
 });
-// Zavřít otevřené menu při kliknutí mimo něj nebo klávesou Escape.
 const historyMenu=document.querySelector('.history-menu');
 document.addEventListener('pointerdown',event=>{
-  if(historyMenu?.open && !historyMenu.contains(event.target)){
-    historyMenu.open=false;
-  }
+  if(historyMenu?.open&&!historyMenu.contains(event.target))historyMenu.open=false;
 });
 document.addEventListener('keydown',event=>{
-  if(event.key==='Escape' && historyMenu?.open){
-    historyMenu.open=false;
-    historyMenu.querySelector('summary')?.focus();
+  if(event.key==='Escape'&&historyMenu?.open) {
+    historyMenu.open=false;historyMenu.querySelector('summary')?.focus();
   }
 });
-load();loadFutures();
+function refreshAll(){load();loadFutures();loadTop10();}
+refreshAll();
 let lastDataCheck=Date.now();
 setInterval(()=>{
-  if(!document.hidden && Date.now()-lastDataCheck>=180000){
-    lastDataCheck=Date.now();
-    load();loadFutures();
+  if(!document.hidden&&Date.now()-lastDataCheck>=180000){
+    lastDataCheck=Date.now();refreshAll();
   }
 },60000);
 document.addEventListener('visibilitychange',()=>{
-  if(!document.hidden){lastDataCheck=Date.now();load();loadFutures();}
+  if(!document.hidden){lastDataCheck=Date.now();refreshAll();}
 });
+
 </script>
 </body></html>
