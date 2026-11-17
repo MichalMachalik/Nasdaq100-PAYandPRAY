@@ -165,9 +165,33 @@ body{background:#fff;color:#242424;font:17px/1.6 Georgia,"Times New Roman",serif
 .forecast-points{font:600 17px/1.5 "Cascadia Code",Consolas,monospace;color:#363636;margin:3px 0 8px;letter-spacing:-.3px;font-variant-numeric:tabular-nums}
 @media(max-width:650px){.headline{grid-template-columns:minmax(0,1.5fr) minmax(0,1fr) minmax(0,.9fr);gap:8px}.headline .value{font-size:clamp(26px,6vw,35px)}.headline .small-stat .value{font-size:clamp(15px,3.7vw,19px)}.forecastgrid{gap:12px}.forecast-points{font-size:15px}}
 @media(max-width:390px){.headline{grid-template-columns:repeat(2,minmax(0,1fr))}.headline>.metric{grid-column:1 / -1}.headline .value{font-size:36px}.forecastgrid{grid-template-columns:1fr}.forecast-points{font-size:17px}}
+
+/* Small, friendly icon-only actions in the top-right toolbar */
+.header .topright{display:flex;align-items:center;flex-wrap:nowrap;justify-content:flex-end;gap:8px}
+.header .history-menu{order:0}
+.header #updated{order:0;margin-right:4px}
+.header #refresh{order:0}
+.header .icon-control,.header .history-menu summary.icon-control{
+  appearance:none;display:inline-flex;align-items:center;justify-content:center;
+  width:34px;height:34px;padding:0;border:1px solid #e9e9ed;border-radius:11px;
+  background:#faf9fc;color:#49434e;cursor:pointer;text-decoration:none;
+  transition:background .15s,border-color .15s,transform .15s;flex:0 0 auto
+}
+.header .icon-control svg{width:18px;height:18px;display:block}
+.header .icon-control:hover,.header .history-menu summary.icon-control:hover,
+.header .history-menu[open] summary.icon-control{background:#f0ebf5;border-color:#d9d0e2;text-decoration:none}
+.header .icon-control:active{transform:scale(.95)}
+.header .icon-control:focus-visible{outline:2px solid #83718f;outline-offset:3px}
+.header #refresh.is-loading svg{animation:softspin .7s linear infinite}
+@keyframes softspin{to{transform:rotate(360deg)}}
+@media(max-width:650px){
+  .header .topright{flex-direction:row;align-items:center;gap:6px;flex-wrap:nowrap}
+  .header .icon-control,.header .history-menu summary.icon-control{width:32px;height:32px}
+  .header #updated{max-width:106px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:10px}
+}
 </style></head>
 <body><div class="wrap">
-<header class="header"><div class="brand"><div class="mascot" aria-hidden="true">N</div><div><h1 class="pixel">Pay &amp; Pray</h1></div></div><div class="topright"><details class="history-menu"><summary aria-label="Otevřít historii a zdroje">Historie a zdroje</summary><div class="history-panel"><div class="mini-title">Poslední reporty</div><div id="archive" class="empty">Zatím bez záznamů.</div><div class="menu-divider"></div><div class="mini-title">Ověřené zdroje</div><div id="sources" class="empty">Bez zdrojů.</div></div></details><span id="updated" class="pill">Čeká na data</span><button id="refresh" class="btn" type="button">↻ Obnovit</button></div></header>
+<header class="header"><div class="brand"><div class="mascot" aria-hidden="true">N</div><div><h1 class="pixel">Pay &amp; Pray</h1></div></div><div class="topright"><details class="history-menu"><summary class="icon-control" title="Historie a zdroje" aria-label="Otevřít historii a zdroje"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.5c-2.6-1.6-5.4-1.9-8.5-1.3v12.5c3.1-.6 5.9-.3 8.5 1.3 2.6-1.6 5.4-1.9 8.5-1.3V5.2c-3.1-.6-5.9-.3-8.5 1.3Z"/><path d="M12 6.5V19"/></svg></summary><div class="history-panel"><div class="mini-title">Poslední reporty</div><div id="archive" class="empty">Zatím bez záznamů.</div><div class="menu-divider"></div><div class="mini-title">Ověřené zdroje</div><div id="sources" class="empty">Bez zdrojů.</div></div></details><span id="updated" class="pill">Čeká na data</span><button id="refresh" class="btn icon-control" type="button" title="Obnovit stránku a data" aria-label="Obnovit stránku a data"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11a8 8 0 1 0-2.4 6"/><path d="M20 4v7h-7"/></svg></button></div></header>
 <main class="grid">
 <div class="metrics">
 <div class="hero-label">Nasdaq-100 · Cash index (NDX)</div>
@@ -216,7 +240,7 @@ async function load(){try{let r=await fetch('./data/latest.json?t='+Date.now(),{
 $('refresh').addEventListener('click',()=>{
   const button=$('refresh');
   button.disabled=true;
-  button.textContent='Obnovuji…';
+  button.classList.add('is-loading');
   const url=new URL(window.location.href);
   url.searchParams.set('refresh',String(Date.now()));
   window.location.replace(url.toString());
