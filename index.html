@@ -101,6 +101,12 @@ body{font-size:13px;line-height:1.55}
 .flowline,.meta-group{gap:8px}
 .forecastgrid{gap:10px}
 }
+
+/* Compact market movers: percentages directly next to tickers */
+#leaders{width:max-content;max-width:100%}
+#leaders .row{display:grid;grid-template-columns:72px minmax(72px,max-content);column-gap:13px;justify-content:start;align-items:center;padding:2px 0;border:0}
+#leaders .row span:last-child{text-align:left;font-variant-numeric:tabular-nums}
+@media(max-width:390px){#leaders .row{grid-template-columns:65px minmax(72px,max-content);gap:10px}}
 </style></head>
 <body><div class="wrap">
 <header class="header"><div class="brand"><div class="mascot" aria-hidden="true">N</div><div><h1 class="pixel">PAY &amp; PRAY</h1><p class="sub">Nasdaq-100 / market intelligence</p></div></div><div class="topright"><details class="history-menu"><summary aria-label="Otevřít historii a zdroje">Historie a zdroje</summary><div class="history-panel"><div class="mini-title">Poslední reporty</div><div id="archive" class="empty">Zatím bez záznamů.</div><div class="menu-divider"></div><div class="mini-title">Ověřené zdroje</div><div id="sources" class="empty">Bez zdrojů.</div></div></details><span id="updated" class="pill">Čeká na data</span><button id="refresh" class="btn" type="button">↻ Obnovit</button></div></header>
