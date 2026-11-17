@@ -1,18 +1,18 @@
 {
-  "updatedAtPrague": "17. 11. 2026 08:59 CET",
-  "marketStatus": "Cash trh USA uzavřen; poslední ověřený závěr NDX 16. 11. 2026, 22:00 CET.",
+  "updatedAtPrague": "17. 11. 2026 09:57 CET",
+  "marketStatus": "Cash NDX uzavřen; poslední ověřený závěr 16. 11. 2026 v 22:00 CET. Kontrola zdrojů 17. 11. 09:57 CET.",
   "ndx": {
     "value": 27197.15,
     "changePercent": -2.67,
     "ath": 31361.37,
-    "asOf": "Cash NDX: závěr 16. 11. 2026, 22:00 CET (Nasdaq Indexes); ATH intradenní 6. 10. 2026 (31 361,37 b., Investing NDX 52-week range)."
+    "asOf": "Cash NDX: oficiální závěr Nasdaq 16. 11. 2026, 22:00 CET. Intradenní ATH cash NDX 6. 10. 2026, 31 361,37 bodu (historická data)."
   },
   "sentiment": {
     "label": "Medvědí (hodnocení)",
-    "trend": "→ Beze změny proti 08:01 CET",
-    "reason": "NDX −2,67 % při cash závěru 16. 11.; SOX −5,28 %; nejistota okolo financování AI a nového pravidla BIS. Bez nové cash seance."
+    "trend": "→ Beze změny proti 08:59 CET",
+    "reason": "Cash NDX 16. 11. −2,67 %, SOX −5,3 %; slabé polovodiče a obavy o AI financování, regulaci vývozu. V 09:57 žádná další cash seance ani nový doložený tržní katalyzátor."
   },
-  "driver": "🔴 Vysoká důležitost: výprodej polovodičů SOX −5,28 % a NVDA −4,12 % provázel obavy o financování AI, přechod vedení NVIDIA a pravidlo BIS k vzdálenému přístupu k AI čipům. Reuters potvrzuje souběh faktorů, nikoli jedinou prokázanou příčinu.",
+  "driver": "🔴 Vysoký dopad: výprodej polovodičů (SOX −5,3 % v USA 16. 11.) a obavy z financování AI, změn vedení NVIDIA a omezení BIS. Reuters uvádí tyto faktory jako souběžné hybatele; příčinný podíl jednotlivých faktorů není přesně změřen.",
   "news": [
     {
       "title": "↻ Pokračuje tlak na asijské technologie kvůli exportním omezením USA a očekávání výsledků NVIDIA; jde o jiné trhy, nikoli nový pohyb cash NDX.",
@@ -46,29 +46,29 @@
     {
       "ticker": "NVDA",
       "changePercent": -4.12,
-      "impact": "Závěr 16. 11. 2026; $156,14 (StockAnalysis)."
+      "impact": "Závěr 16. 11. 2026; 156,14 USD, ověřeno StockAnalysis."
     },
     {
       "ticker": "AVGO",
       "changePercent": -3.92,
-      "impact": "Závěr 16. 11. 2026; $333,40 (MarketWatch)."
+      "impact": "Závěr 16. 11. 2026; 333,40 USD, ověřeno StockAnalysis."
     }
   ],
-  "macro": "US10Y 5,12 % (U.S. Treasury, 16. 11. 2026); Census maloobchodní tržby za říjen 17. 11. v 14:30 CET.",
-  "regulation": "↻ BIS 16. 11. 2026: interim final rule k remote access k AI čipům v zahraničních datacentrech (nové regulační pravidlo, ne zákon Kongresu). V této kontrole bez další potvrzené zásadní relevantní změny.",
+  "macro": "US10Y 5,12 % (U.S. Treasury, denní par yield, 16. 11. 2026; nikoli intradenní údaj). Census: říjnové maloobchodní tržby 17. 11. 14:30 CET.",
+  "regulation": "↻ BIS 16. 11. 2026 oznámil interim final rule k vzdálenému přístupu k pokročilým čipům přes datacentra ve třetích zemích; regulační pravidlo, nikoli zákon Kongresu. Od poslední kontroly žádná potvrzená nová relevantní federální/státní změna.",
   "technical": {
-    "support": null,
-    "resistance": null
+    "support": "27 149,15 b. (orientační: cash NDX minimum 16. 11. 2026)",
+    "resistance": "27 621,64 b. (orientační: cash NDX maximum 16. 11. 2026)"
   },
   "forecast": {
     "athReturnPercent": 5,
-    "athReason": "Subjektivní šance návratu na intradenní ATH do 6 měsíců, beze změny proti 08:01; odhad zvýší silný výhled NVIDIA a potvrzený návrat růstu AI cash-flow.",
+    "athReason": "Subjektivní odhad šance návratu cash NDX na intradenní ATH do 6 měsíců: 5 %, beze změny proti 08:59. Zvýšil by ho silný výhled NVIDIA a důkazy lepší návratnosti AI investic.",
     "downside": "−5 až −10 %",
-    "downsideReason": "Subjektivní scénář dalšího poklesu v horizontu 1–3 měsíců ze závěru NDX 16.11.; beze změny. Zhorší jej další pokles AI capex nebo přísnější exportní pravidla."
+    "downsideReason": "Subjektivní scénář dalšího poklesu za 1–3 měsíce ze závěru cash NDX 16. 11., beze změny; vyšší riziko při utažení financování AI nebo exportních pravidel."
   },
   "catalyst": {
-    "event": "Census — říjnové maloobchodní tržby USA; NVIDIA výsledky a konferenční hovor",
-    "timePrague": "17. 11. 2026 14:30 CET (Census); NVIDIA přibližně 22:20 CET, hovor 23:00 CET (NVIDIA IR)"
+    "event": "Census: maloobchodní tržby USA (říjen); NVIDIA: výsledky a konferenční hovor",
+    "timePrague": "17. 11. 2026, 14:30 CET (Census); přibližně 22:20 CET výsledky a 23:00 CET hovor (NVIDIA IR)"
   },
   "archive": [
     {
@@ -98,6 +98,10 @@
     {
       "time": "17. 11. 2026 08:59 CET",
       "summary": "Cash NDX 27 197,15 (závěr 16.11.), −2,67 % a −13,28 % od intradenního ATH; medvědí →. Bez zásadních novinek od 08:01, pokračuje tlak na AI/čipy; Reuters 02:22 a 06:33 CET. Další katalyzátor Census 14:30 CET."
+    },
+    {
+      "time": "17. 11. 2026 09:57 CET",
+      "summary": "Cash NDX 27 197,15 b., −2,67 % (závěr 16. 11.), −13,28 % od intradenního ATH; medvědí →. 🆕 Bez zásadních novinek od 08:59 CET; pokračuje tlak na polovodiče a AI. S/R orientačně z high/low 16. 11."
     }
   ],
   "history": [
@@ -202,6 +206,18 @@
     {
       "name": "Census — release schedule",
       "url": "https://www.census.gov/retail/release_schedule.html"
+    },
+    {
+      "name": "Nasdaq — oficiální cash NDX",
+      "url": "https://indexes.nasdaq.com/index/Overview/NDX"
+    },
+    {
+      "name": "StockAnalysis — NVIDIA 16. 11. 2026",
+      "url": "https://stockanalysis.com/stocks/nvda/"
+    },
+    {
+      "name": "StockAnalysis — Broadcom 16. 11. 2026",
+      "url": "https://stockanalysis.com/stocks/avgo/"
     }
   ]
 }
