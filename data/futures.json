@@ -1,0 +1,13 @@
+{
+  "symbol": "NQ=F",
+  "name": "E-mini Nasdaq-100 futures",
+  "instrumentType": "FUTURES",
+  "source": "Yahoo Finance chart (unofficial)",
+  "sourceUrl": "https://finance.yahoo.com/quote/NQ=F/",
+  "price": null,
+  "changePercent": null,
+  "quotedAtUtc": null,
+  "quotedAtPrague": null,
+  "fetchedAtUtc": null,
+  "delayed": true
+}
