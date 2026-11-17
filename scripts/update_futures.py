@@ -61,4 +61,4 @@ try:
     print(f"NQ=F {last_px:.2f}, timestamp={last_ts}, age_s={round(age)}")
 except Exception as exc:
     # Keep the last successful source timestamp intact; the site handles staleness.
-    print(f"Quote update unavailable: {exc}")
+    raise SystemExit(f"Quote update FAILED (no new data published): {exc}")
