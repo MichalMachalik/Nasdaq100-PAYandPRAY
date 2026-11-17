@@ -1,8 +1,8 @@
 {
   "source": "CompaniesMarketCap",
   "sourceUrl": "https://companiesmarketcap.com/tech/largest-tech-companies-by-market-cap/",
-  "fetchedAtUtc": "2026-11-17T22:28:49.456336Z",
-  "fetchedAtPrague": "17. 11. 2026 23:28",
+  "fetchedAtUtc": "2026-11-17T22:29:42.869377Z",
+  "fetchedAtPrague": "17. 11. 2026 23:29",
   "market": "Nasdaq-100",
   "currency": "USD",
   "companies": [
@@ -11,28 +11,28 @@
       "name": "Apple",
       "marketCapUsd": 5114000000000,
       "priceUsd": 351.91,
-      "changePercent": 0.25
+      "changePercent": -0.25
     },
     {
       "ticker": "MSFT",
       "name": "Microsoft",
       "marketCapUsd": 3759000000000,
       "priceUsd": 506.24,
-      "changePercent": 2.27
+      "changePercent": -2.27
     },
     {
       "ticker": "NVDA",
       "name": "NVIDIA",
       "marketCapUsd": 3753000000000,
       "priceUsd": 155.46,
-      "changePercent": 0.44
+      "changePercent": -0.44
     },
     {
       "ticker": "GOOG",
       "name": "Alphabet (Google)",
       "marketCapUsd": 3412000000000,
       "priceUsd": 277.6,
-      "changePercent": 1.3
+      "changePercent": -1.3
     },
     {
       "ticker": "AMZN",
@@ -53,7 +53,7 @@
       "name": "Meta Platforms (Facebook)",
       "marketCapUsd": 1581000000000,
       "priceUsd": 618.87,
-      "changePercent": 1.2
+      "changePercent": -1.2
     },
     {
       "ticker": "TSLA",
@@ -67,14 +67,14 @@
       "name": "AMD",
       "marketCapUsd": 833170000000,
       "priceUsd": 503.41,
-      "changePercent": 0.17
+      "changePercent": -0.17
     },
     {
       "ticker": "MU",
       "name": "Micron Technology",
       "marketCapUsd": 806040000000,
       "priceUsd": 712.42,
-      "changePercent": 0.92
+      "changePercent": -0.92
     }
   ]
 }
