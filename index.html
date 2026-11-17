@@ -250,6 +250,7 @@ body{background:#fff;color:#242424;font:17px/1.6 Georgia,"Times New Roman",serif
 .top10-meta{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;color:#777;font:11px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;margin-top:10px}
 .top10-meta a{color:#777;text-decoration:underline;text-underline-offset:3px}
 @media(max-width:600px){.top10-table{font-size:12px}.top10-table td{padding:9px 5px}.top10-name{min-width:125px;gap:7px}.top10-logo,.top10-fallback{width:24px;height:24px;flex-basis:24px}.top10-company{font-size:12px}.top10-table th{padding:7px 5px}}
+.signed-up{color:var(--green);font-weight:600}.signed-down{color:var(--red);font-weight:600}
 </style></head>
 <body><div class="wrap">
 <header class="header"><div class="brand"><svg class="aardvark-mark" viewBox="0 0 100 73" role="img" aria-label="Logo Aardvarkland" xmlns="http://www.w3.org/2000/svg">
@@ -290,7 +291,7 @@ const $=id=>document.getElementById(id);
 const safe=(v,f='—')=>v===null||v===undefined||v===''?f:String(v);
 const fmt=(v,d=2)=>typeof v==='number'?v.toLocaleString('cs-CZ',{minimumFractionDigits:d,maximumFractionDigits:d}):safe(v);
 const set=(id,v)=>{const el=$(id);if(el)el.textContent=safe(v)};
-const pct=v=>typeof v==='number'?fmt(v)+' %':safe(v);
+const pct=v=>typeof v==='number'?fmt(Math.abs(v))+' %':safe(v);
 // Každá nová věta začíná na novém řádku; číselné desetinné tečky se nerozdělují.
 // Dekorativní štítky nejsou součástí článků ani analytických odstavců.
 const cleanText=value=>String(value??'').replace(/^\s*(?:(?:🔴|🟢|⚪|🔵|↻|🔄|🆕|📰|🔥|⚠️|📌|⭐|•|·)\s*)+/u,'').trim();
@@ -308,16 +309,32 @@ const sentenceBreaks=value=>cleanText(value).replace(
     return mark+'\n';
   }
 );
-const setSentences=(id,value)=>{const el=$(id);if(el)el.textContent=sentenceBreaks(value)};
+// Směr změny je vyjádřen pouze barvou, nikoliv znakem + nebo −.
+const signedPercentPattern=/(^|[^\p{L}\d])([+−-])\s*(\d+(?:[.,]\d+)?)(\s*%)/gu;
+const renderSigned=(el,value)=>{
+  const raw=String(value??''),frag=document.createDocumentFragment();
+  let last=0,m;
+  signedPercentPattern.lastIndex=0;
+  while((m=signedPercentPattern.exec(raw))!==null){
+    frag.append(document.createTextNode(raw.slice(last,m.index)+m[1]));
+    const span=document.createElement('span');
+    span.className=m[2]==='+'?'signed-up':'signed-down';
+    span.textContent=m[3]+m[4];frag.append(span);last=signedPercentPattern.lastIndex;
+  }
+  frag.append(document.createTextNode(raw.slice(last)));
+  el.replaceChildren(frag);
+};
+const setSentences=(id,value)=>{const el=$(id);if(el)renderSigned(el,sentenceBreaks(value))};
+const displayScenario=value=>String(value??'—').replace(/(^|[^\p{L}\d])([+−-])(?=\s*\d)/gu,'$1');
 
 function link(url,label){try{let u=new URL(url);if(u.protocol!=='https:')return document.createTextNode(label);let a=document.createElement('a');a.href=u.href;a.textContent=label;a.rel='noopener noreferrer';a.target='_blank';return a}catch{return document.createTextNode(label)}}
 function rows(id,items,make){let root=$(id);if(!root)return;root.replaceChildren();if(!Array.isArray(items)||items.length===0){root.className='empty';root.textContent='Zatím bez zveřejněných údajů';return}root.className='';items.slice(0,15).forEach(x=>root.append(make(x)))}
 function render(d){d=d||{};set('updated',d.updatedAtPrague?safe(d.updatedAtPrague):'Čeká na data');let n=d.ndx||{};// Cash NDX zůstává výhradně ve zdrojovém reportu pro dlouhodobé odhady.
 
 let s=d.sentiment||{};set('sentiment',[s.label,s.trend].filter(Boolean).join(' • ')||'Čeká na vyhodnocení');$('sentiment').className='status '+(/medvěd|bear|zhorš/i.test(s.label||'')?'red':/býč|bull/i.test(s.label||'')?'green':'neutral');setSentences('sentiment-reason',s.reason||'Zatím bez vyhodnocení');setSentences('driver',d.driver||'Zatím nezveřejněno');$('driver').className=d.driver?'':'empty';
-rows('news',d.news,x=>{let el=document.createElement('div');el.className='news';let t=document.createElement('time');t.textContent=x.publicationTimeVerified===true&&x.publishedAtPrague?'Publikováno: '+x.publishedAtPrague+' Praha':'Datum zprávy: '+safe(x.time,'neuvedeno')+' · čas publikace neověřen';el.append(t);const content=document.createElement('span');content.className='sentence-lines';content.textContent=sentenceBreaks(x.title);el.append(content);if(x.url)el.append(document.createTextNode(' · '),link(x.url,safe(x.source,'Zdroj')));return el});
+rows('news',d.news,x=>{let el=document.createElement('div');el.className='news';let t=document.createElement('time');t.textContent=x.publicationTimeVerified===true&&x.publishedAtPrague?'Publikováno: '+x.publishedAtPrague+' Praha':'Datum zprávy: '+safe(x.time,'neuvedeno')+' · čas publikace neověřen';el.append(t);const content=document.createElement('span');content.className='sentence-lines';renderSigned(content,sentenceBreaks(x.title));el.append(content);if(x.url)el.append(document.createTextNode(' · '),link(x.url,safe(x.source,'Zdroj')));return el});
 
-setSentences('macro',d.macro||'Zatím bez údajů');let f=d.forecast||{};set('forecast-ath',typeof f.athReturnPercent==='number'?pct(f.athReturnPercent):'—');setSentences('forecast-ath-reason',f.athReason||'Čeká na aktualizaci');set('forecast-down',f.downside||'—');
+setSentences('macro',d.macro||'Zatím bez údajů');let f=d.forecast||{};set('forecast-ath',typeof f.athReturnPercent==='number'?pct(f.athReturnPercent):'—');setSentences('forecast-ath-reason',f.athReason||'Čeká na aktualizaci');set('forecast-down',displayScenario(f.downside||'—'));
 const percentages=(String(f.downside||'').match(/\d+(?:[.,]\d+)?/g)||[]).map(v=>Number(v.replace(',','.')));
 if(Number.isFinite(n.value)&&n.value>0&&percentages.length>=2&&percentages[0]>0&&percentages[1]>percentages[0]&&percentages[1]<=100){
   const upper=Math.round(n.value*(1-percentages[0]/100));
@@ -326,8 +343,8 @@ if(Number.isFinite(n.value)&&n.value>0&&percentages.length>=2&&percentages[0]>0&
 }else{
   set('forecast-down-points','Bodový rozsah zatím neověřen');
 }
-setSentences('forecast-down-reason',f.downsideReason||'Čeká na aktualizaci');let c=d.catalyst||{};set('catalyst',[c.event,c.timePrague].filter(Boolean).join(' • ')||'Zatím nezveřejněno');
-rows('archive',d.archive,x=>{let el=document.createElement('div');el.className='news';el.append(document.createTextNode(safe(x.time)+' · '+safe(x.summary)));return el});
+setSentences('forecast-down-reason',f.downsideReason||'Čeká na aktualizaci');let c=d.catalyst||{};setSentences('catalyst',[c.event,c.timePrague].filter(Boolean).join(' • ')||'Zatím nezveřejněno');
+rows('archive',d.archive,x=>{let el=document.createElement('div');el.className='news';renderSigned(el,safe(x.time)+' · '+safe(x.summary));return el});
 rows('sources',d.sources,x=>{let el=document.createElement('div');el.className='news';el.append(link(x.url||'',safe(x.name,x.title||'Zdroj')));return el})}
 
 async function loadTop10() {
@@ -361,8 +378,7 @@ async function loadTop10() {
       price.textContent='$'+c.priceUsd.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});
       const day=document.createElement('td');
       if(Number.isFinite(c.changePercent)) {
-        day.textContent=(c.changePercent>0?'▲ ':c.changePercent<0?'▼ ':'')+
-          Math.abs(c.changePercent).toLocaleString('cs-CZ',{minimumFractionDigits:2,maximumFractionDigits:2})+' %';
+        day.textContent=Math.abs(c.changePercent).toLocaleString('cs-CZ',{minimumFractionDigits:2,maximumFractionDigits:2})+' %';
         day.className=c.changePercent>0?'up':c.changePercent<0?'down':'';
       } else {day.textContent='—';}
       tr.append(tdRank,tdName,cap,price,day);frag.append(tr);
