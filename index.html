@@ -240,7 +240,7 @@ body{background:#fff;color:#242424;font:17px/1.6 Georgia,"Times New Roman",serif
     </div>
   </div>
   <div id="futures-time" class="futures-time">Čeká na ověřený údaj futures · může být zpožděný</div>
-  <div id="futures-warning" class="futures-warning" hidden></div>
+
   <a class="futures-provider" href="https://finance.yahoo.com/quote/NQ=F/" target="_blank" rel="noopener noreferrer">Zdroj futures dat</a>
 </div>
 <section class="section"><h2 class="sectiontitle">Celkový obraz</h2><div class="flowline"><div><div id="sentiment" class="status neutral">Čeká na vyhodnocení</div><p id="sentiment-reason" class="notice">Průběžné hodnocení trhu.</p></div><div><div class="mini-title">Nejvýznamnější hybatel</div><div id="driver" class="text-body empty">Zatím nezveřejněno</div></div></div></section>
@@ -310,14 +310,11 @@ async function loadFutures(){
     $('futures-change').className='value '+(q.changePercent<0?'red':q.changePercent>0?'green':'neutral');
     const lag=age>1800000?' · starší údaj':' · zpožděná data';
     set('futures-time','Kotace '+String(q.quotedAtPrague||'čas neuveden')+' Praha'+lag);
-    const warning=$('futures-warning');
-    warning.hidden=age<=1800000;
-    if(!warning.hidden)warning.textContent='Poslední známá cena; aktuální obchodování není ověřené.';
+
   }catch(err){
     set('futures-price','—');
     set('futures-change','—');
     set('futures-time','Aktuální futures kotace není ověřena');
-    $('futures-warning').hidden=true;
   }
 }
 async function load(){try{let r=await fetch('./data/latest.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)throw Error('HTTP '+r.status);render(await r.json())}catch(err){set('updated','● Data nedostupná');void 0}}
