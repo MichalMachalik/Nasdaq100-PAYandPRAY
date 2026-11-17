@@ -250,8 +250,18 @@ const pct=v=>typeof v==='number'?fmt(v)+' %':safe(v);
 const cleanText=value=>String(value??'').replace(/^\s*(?:(?:🔴|🟢|⚪|🔵|↻|🔄|🆕|📰|🔥|⚠️|📌|⭐|•|·)\s*)+/u,'').trim();
 // Odděluj jen skutečně ukončené věty. Nepoužívej Intl.Segmenter:
 // ten umí nesprávně rozseknout datum „15.–16. 11.“.
-const sentenceBreaks=value=>cleanText(value)
-  .replace(/([.!?])\s+(?=[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ])/gu,'$1\n');
+const sentenceBreaks=value=>cleanText(value).replace(
+  /([.!?])\s+(?=[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ])/gu,
+  (whole,mark,index,full)=>{
+    const match=full.slice(0,index+1).match(/([^\s()]+)$/u);
+    const last=(match?.[1]||'').replace(/\.$/,'');
+    // Neodděluj zkratky a názvy institucí (St. Louis Fed, U.S. Treasury).
+    if(/^(?:St|Dr|Mr|Mrs|Ms|Prof|Sv|Ing|Bc|Mgr|PhDr|JUDr|např|tj|tzv|atd|apod)$/iu.test(last)
+       ||/^[A-Za-zÁ-Ž]$/u.test(last)
+       ||/^(?:[A-Za-z]\.)+[A-Za-z]?$/u.test(last))return whole;
+    return mark+'\n';
+  }
+);
 const setSentences=(id,value)=>{const el=$(id);if(el)el.textContent=sentenceBreaks(value)};
 
 function link(url,label){try{let u=new URL(url);if(u.protocol!=='https:')return document.createTextNode(label);let a=document.createElement('a');a.href=u.href;a.textContent=label;a.rel='noopener noreferrer';a.target='_blank';return a}catch{return document.createTextNode(label)}}
