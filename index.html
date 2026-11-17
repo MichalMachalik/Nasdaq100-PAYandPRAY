@@ -109,6 +109,15 @@ set('macro',d.macro||'Zatím bez údajů');set('regulation',d.regulation||'Bez z
 rows('archive',d.archive,x=>{let el=document.createElement('div');el.className='news';el.append(document.createTextNode(safe(x.time)+' · '+safe(x.summary)));return el});
 rows('sources',d.sources,x=>{let el=document.createElement('div');el.className='news';el.append(link(x.url||'',safe(x.name,x.title||'Zdroj')));return el})}
 async function load(){try{let r=await fetch('./data/latest.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)throw Error('HTTP '+r.status);render(await r.json())}catch(err){set('updated','● Data nedostupná');void 0}}
-$('refresh').addEventListener('click',load);load();
+// Tlačítko obnovuje celou stránku i data, ne pouze JSON.
+$('refresh').addEventListener('click',()=>{
+  const button=$('refresh');
+  button.disabled=true;
+  button.textContent='Obnovuji…';
+  const url=new URL(window.location.href);
+  url.searchParams.set('refresh',String(Date.now()));
+  window.location.replace(url.toString());
+});
+load();
 </script>
 </body></html>
