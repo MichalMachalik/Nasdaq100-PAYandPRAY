@@ -1,25 +1,43 @@
 {
-  "updatedAtPrague": "17. 11. 2026 21:59 CET",
-  "marketStatus": "Cash Nasdaq-100 otevřený před závěrem obchodování; poslední časově doložený intradenní snímek je z 21:34:55 CET (zpožděný vůči reportu). Futures NQ=F se zobrazují odděleně v data/futures.json a nejsou zde přepisovány.",
+  "updatedAtPrague": "17. 11. 2026 23:00 CET",
+  "marketStatus": "Cash Nasdaq-100: obchodování uzavřeno 17. 11. 2026 v 22:00 CET. Hodnota 27 001,78 bodu je oficiální denní závěrečný cash NDX dle Nasdaq; futures NQ=F jsou odděleny v data/futures.json.",
   "ndx": {
-    "value": 26904.41,
-    "changePercent": -1.08,
+    "value": 27001.78,
+    "changePercent": -0.72,
     "ath": 31361.37,
-    "asOf": "17. 11. 2026, 21:34:55 CET (15:34:55 EST); Google Finance, intradenní cash Nasdaq-100, časově označený snímek; ATH dle 52týdenního maxima 31 361,37 bodu."
+    "asOf": "17. 11. 2026, závěr cash seance v 22:00 CET; oficiální Nasdaq index overview (DATA AS OF 11/17/2026), shodně Google Finance po uzavření v 22:28:06 CET."
   },
   "sentiment": {
     "label": "Medvědí (subjektivní hodnocení)",
-    "trend": "Zlepšení oproti 21:03 CET",
-    "reason": "Ověřený cash NDX stoupl oproti 20:47:50 CET z 26 853,25 na 26 904,41 bodu v 21:34:55 CET (+51,16 bodu); SOX se z −1,50 % při předchozí kontrole dostal na +0,34 % v 21:49:43 CET, NVIDIA z −2,35 % na −1,65 % v 21:27:55 CET a Broadcom z +0,63 % na +1,67 % v 21:31:57 CET. Trh zůstává denně v záporu, ale krátkodobý souhrnný trend se zlepšil."
+    "trend": "Zlepšení oproti 21:59 CET",
+    "reason": "Cash NDX se zlepšil z předchozího ověřeného intradenního snímku 26 904,41 na oficiální závěr 27 001,78 bodu, ale seance stále skončila −0,72 %. SOX dle Google Finance +0,34 %, NVIDIA v cash závěru −0,44 % a Broadcom +2,46 %. Po závěru NVIDIA oznámila překonání tržních očekávání a vyšší výhled, akcie po trhu +1,76 % dle Google Finance; reakci nelze přenášet na cash NDX."
   },
-  "driver": "Vysoká důležitost: přetrvávající obavy o financování a návratnost AI investic, vedení NVIDIA a vývozní omezení čipů podle Reuters. Cash Nasdaq-100 byl k 21:34:55 CET stále o 1,08 % níže; sektoru polovodičů pomáhá intradenní zotavení SOX na +0,34 % v 21:49:43 CET. Souběh faktorů není průkazem jednoznačné příčiny.",
+  "driver": "Vysoká důležitost: během cash seance přetrvával tlak na technologické a AI akcie kvůli nejistotě financování infrastruktury, exportních omezení a vedení NVIDIA; to se odráží v poklesu NDX o 0,72 %, přímou kauzalitu jednotlivých faktorů však nelze prokázat. Nové výsledky NVIDIA po závěru (tržby 115,8 mld. USD, prognóza Q4 130 mld. USD ±3 %) jsou pozitivní nový katalyzátor pro následující seanci, nikoli příčinou dnešního poklesu.",
   "news": [
+    {
+      "title": "NVIDIA vykázala za třetí čtvrtletí fiskálního roku 2027 tržby 115,8 miliardy USD, meziročně +103 %, z datacenter 107,6 miliardy USD a upravený EPS 2,68 USD. Na další kvartál očekává tržby 130 miliard USD ±3 %. Původní čas zveřejnění podnikové tiskové zprávy nebyl přesně doložen.",
+      "time": "17. 11. 2026 po uzavření cash trhu; tisková zpráva NVIDIA, původní přesná hodina a minuta neuvedena",
+      "publishedAtPrague": null,
+      "publicationTimeVerified": false,
+      "kind": "new",
+      "source": "NVIDIA Newsroom, oficiální výsledková tisková zpráva",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027"
+    },
+    {
+      "title": "Reuters: výsledky NVIDIA překonaly konsenzus, očekávané tržby na čtvrtý kvartál 130 miliard USD ±3 % oproti konsenzu 125,25 miliardy USD; v prodlouženém obchodování akcie reagovaly růstem. Zpráva zachycuje reakci investorů, ne změnu již uzavřeného NDX.",
+      "time": "17. 11. 2026, 21:24 UTC – původní publikace článku Reuters",
+      "publishedAtPrague": "17. 11. 2026, 22:24",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "source": "Reuters – Nvidia delivers strong results",
+      "url": "https://www.reuters.com/business/nvidia-forecasts-quarterly-revenue-above-estimates-first-report-since-huangs-2026-11-17/"
+    },
     {
       "title": "Prezident newyorského Fedu John Williams nadále očekává potřebu zvyšovat sazby kvůli inflaci, ale odmítá potřebu dramatického zpřísňování měnové politiky.",
       "time": "17. 11. 2026, 20:08 UTC – původní vydání Reuters o dnešním vystoupení na Axios BFD Annual Summit",
       "publishedAtPrague": "17. 11. 2026, 21:08",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "source": "Reuters – John Williams, New York Fed",
       "url": "https://www.reuters.com/business/feds-williams-still-favors-tighter-monetary-policy-says-now-is-not-time-dramatic-2026-11-17/"
     },
@@ -153,30 +171,30 @@
   "leaders": [
     {
       "ticker": "NVDA",
-      "changePercent": -1.65,
-      "impact": "17. 11. 2026, 21:27:55 CET; intradenní akcie NVIDIA, Google Finance."
+      "changePercent": -0.44,
+      "impact": "17. 11. 2026, cash závěr 22:00 CET, 155,46 USD; po trhu samostatně +1,76 % na 158,20 USD (Google Finance, zpožděná reakce na výsledky)."
     },
     {
       "ticker": "AVGO",
-      "changePercent": 1.67,
-      "impact": "17. 11. 2026, 21:31:57 CET; intradenní akcie Broadcom, Google Finance."
+      "changePercent": 2.46,
+      "impact": "17. 11. 2026, cash závěr 22:00 CET, 341,60 USD; Google Finance."
     }
   ],
-  "macro": "Nově Reuters v 21:08 CET přinesl vyjádření Johna Williamse (New York Fed): další zvýšení sazeb patrně budou potřebná, avšak nikoli dramatický postup. Dříve dnes BLS dovozní ceny +1,1 %, Census maloobchodní tržby +0,2 %, Fed průmyslová výroba −0,4 %. Poslední uložený snímek US10Y je z 18:14:46 CET (5,100 %), není nynější kotací. Nelze prokázat přesný vliv jednotlivých makrodat na NDX.",
-  "regulation": "Pokračují omezení BIS pro vzdálený přístup k americkým AI čipům prostřednictvím zahraničních datacenter, oznámená 15.–16. 11. 2026. Sněmovní výbory USA oznámily rozhovory s Jensenem Huangem a Timem Teterem na 1.–2. 12.; jedná se o dohled Kongresu, nikoli o přijatou legislativu ani prokázaný delikt. Nový významný státní či místní regulační krok v této hodině nebyl potvrzen.",
+  "macro": "Dnešní inflační a růstové signály zůstávají smíšené: BLS říjnové dovozní ceny +1,1 % m/m (14:30 CET), Census maloobchodní tržby +0,2 % (14:30 CET), Fed průmyslová výroba −0,4 % (15:15 CET). Williams z New York Fed v Reuters 21:08 CET varoval před inflací, nepožaduje však dramatické zpřísnění. Novou hodnotu US10Y k 23:00 CET zde neuvádíme.",
+  "regulation": "Pokračuje regulace BIS pro vzdálený přístup k americkým AI čipům prostřednictvím zahraničních datacenter z 15.–16. 11. 2026. Kongresní výbory oznámily plánované rozhovory s bývalým CEO NVIDIA Jensenem Huangem a právním ředitelem Timem Teterem 1.–2. 12.; jde o dohled, nikoli nový zákon. NVIDIA sama vytvořila výbor pro bezpečnost a exportní kontrolu. Nová potvrzená státní či místní právní změna v této hodině zjištěna nebyla.",
   "technical": {
-    "support": "26 580,86 bodu – orientační support podle intradenního minima cash NDX 17. 11. 2026; Google Finance, snímek k 21:34:55 CET.",
-    "resistance": "27 258,84 bodu – orientační rezistence podle intradenního maxima cash NDX 17. 11. 2026; Google Finance, snímek k 21:34:55 CET."
+    "support": "26 580,86 b. – orientační support, intradenní minimum cash NDX 17. 11. 2026 podle Nasdaq.",
+    "resistance": "27 258,84 b. – orientační rezistence, intradenní maximum cash NDX 17. 11. 2026 podle Nasdaq."
   },
   "forecast": {
-    "athReturnPercent": 5,
-    "athReason": "Subjektivní odhad návratu cash NDX na ATH do 6 měsíců 5 %, beze změny. Zvýšil by jej silný výhled NVIDIA a prokázaná rentabilita AI datacenter.",
+    "athReturnPercent": 12,
+    "athReason": "Subjektivní pravděpodobnost návratu na ATH do šesti měsíců zvýšena z 5 % na 12 % po ověřeném překonání odhadu tržeb a silném Q4 výhledu NVIDIA (115,8 mld. a 130 mld. USD ±3 %). Další růst pravděpodobnosti by vyžadoval potvrzení pokračující poptávky a zotavení trhu; zhoršení by přinesl slabší výhled marží či regulatorní zásahy.",
     "downside": "−5 až −10 %",
-    "downsideReason": "Subjektivní scénář za 1–3 měsíce od ověřeného cash NDX 26 904,41 bodu (17. 11., 21:34:55 CET) odpovídá orientačně 25 559–24 214 bodům. Zvýšení pravděpodobnosti propadu by podporoval slabý výhled NVIDIA a dražší financování AI."
+    "downsideReason": "Subjektivní scénář dalšího propadu za 1–3 měsíce od ověřeného cash závěru NDX 27 001,78 bodu odpovídá orientačně 25 652–24 302 bodům. Scénář beze změny: klíčovým rizikem je drahé financování AI a očekávaná komprese hrubé marže NVIDIA z 74,9 % na 71–72 %. Silné finanční výhledy a nižší výnosy by riziko snížily."
   },
   "catalyst": {
-    "event": "NVIDIA – oznámení výsledků za 3. čtvrtletí fiskálního roku 2027, následně konferenční hovor; oficiální NVIDIA IR",
-    "timePrague": "17. 11. 2026 přibližně 22:20 CET zveřejnění výsledků, 23:00 CET hovor."
+    "event": "NVIDIA – komentář vedení a otázky analytiků ke třetímu čtvrtletí fiskálního roku 2027, oficiální investor relations webcast",
+    "timePrague": "17. 11. 2026, 23:00 CET – začátek výsledkového hovoru (17:00 EST)."
   },
   "archive": [
     {
@@ -258,6 +276,10 @@
     {
       "time": "17. 11. 2026 21:59 CET",
       "summary": "Intradenní cash NDX 26 904,41 b. (21:34:55 CET), −1,08 % denně, -14.21 % od ATH; medvědí hodnocení, ↗ zlepšení proti 21:03 (SOX +0,34 %, NVDA −1,65 %, AVGO +1,67 %). Nově Reuters 21:08 CET: Fed Williams preferuje postupné zpřísnění bez dramatických kroků. Odhad ATH 5 %; riziko dalšího poklesu −5 až −10 % (25559–24214 bodů)."
+    },
+    {
+      "time": "17. 11. 2026 23:00 CET",
+      "summary": "Cash NDX závěr 27 001,78 b. (−0,72 % za den, −13,90 % od ATH), medvědí hodnocení ↗ proti 21:59. Nově primární NVIDIA Q3 FY27: tržby 115,8 mld. USD, datacentra 107,6 mld. a Q4 prognóza 130 mld. USD ±3 %. Subjektivní ATH šance zvýšena z 5 na 12 %, propad −5 až −10 % (25 652 až 24 302 b.); výsledkový hovor 23:00 CET."
     }
   ],
   "history": [
@@ -296,6 +318,10 @@
     {
       "time": "2026-11-17 21:34:55 CET (intradenní cash)",
       "ndx": 26904.41
+    },
+    {
+      "time": "2026-11-17",
+      "ndx": 27001.78
     }
   ],
   "sources": [
@@ -554,6 +580,22 @@
     {
       "name": "Reuters – Fed Williams 17. 11. 2026 21:08 CET",
       "url": "https://www.reuters.com/business/feds-williams-still-favors-tighter-monetary-policy-says-now-is-not-time-dramatic-2026-11-17/"
+    },
+    {
+      "name": "Nasdaq oficiální cash NDX závěr 17.11.",
+      "url": "https://indexes.nasdaq.com/index/Overview/NDX"
+    },
+    {
+      "name": "NVIDIA Newsroom Q3 FY27 – originální výsledky 17.11.",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027"
+    },
+    {
+      "name": "Reuters 17.11. 22:24 CET – výsledky NVIDIA",
+      "url": "https://www.reuters.com/business/nvidia-forecasts-quarterly-revenue-above-estimates-first-report-since-huangs-2026-11-17/"
+    },
+    {
+      "name": "Google Finance – NDX závěr a NVDA/AVGO",
+      "url": "https://www.google.com/finance/quote/NDX:INDEXNASDAQ"
     }
   ]
 }
