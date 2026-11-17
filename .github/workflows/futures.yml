@@ -1,0 +1,31 @@
+name: Futures quote update
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/5 * * * 1-5"
+permissions:
+  contents: write
+concurrency:
+  group: futures-quote
+  cancel-in-progress: false
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Fetch delayed futures quotation
+        run: python scripts/update_futures.py
+      - name: Commit verified quote only if changed
+        run: |
+          if git diff --quiet -- data/futures.json; then
+            echo "No change in source quotation."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/futures.json
+          git commit -m "Refresh Nasdaq-100 futures quote"
+          git push
