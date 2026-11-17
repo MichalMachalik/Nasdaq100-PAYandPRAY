@@ -273,7 +273,7 @@ body{background:#fff;color:#242424;font:17px/1.6 Georgia,"Times New Roman",serif
   <a class="futures-provider" href="https://finance.yahoo.com/quote/NQ=F/" target="_blank" rel="noopener noreferrer">Zdroj futures dat</a>
 </div>
 <section class="section"><h2 class="sectiontitle">Celkový obraz</h2><div class="flowline"><div><div id="sentiment" class="status neutral">Čeká na vyhodnocení</div><p id="sentiment-reason" class="notice">Průběžné hodnocení trhu.</p></div><div><div class="mini-title">Nejvýznamnější hybatel</div><div id="driver" class="text-body empty">Zatím nezveřejněno</div></div></div></section>
-<section class="section"><h2 class="sectiontitle">Aktuální zprávy <small>ověřené události</small></h2><div id="news" class="empty">Čeká na první report.</div></section>
+<section class="section"><h2 class="sectiontitle">TOP 5 zpráv <small>Nasdaq-100 · max. 8 hodin</small></h2><div id="news" class="empty">Čeká na první report.</div></section>
 <section class="section" id="top10-section"><h2 class="sectiontitle">Top 10 Nasdaq-100 <small>podle tržní kapitalizace</small></h2>
 <div class="top10-scroll"><table class="top10-table" aria-label="Deset největších společností Nasdaq-100 podle tržní kapitalizace">
 <thead><tr><th scope="col">#</th><th scope="col">Společnost</th><th scope="col">Market cap</th><th scope="col">Cena</th><th scope="col">Dnes</th></tr></thead>
@@ -329,10 +329,74 @@ const displayScenario=value=>String(value??'—').replace(/(^|[^\p{L}\d])([+−-
 
 function link(url,label){try{let u=new URL(url);if(u.protocol!=='https:')return document.createTextNode(label);let a=document.createElement('a');a.href=u.href;a.textContent=label;a.rel='noopener noreferrer';a.target='_blank';return a}catch{return document.createTextNode(label)}}
 function rows(id,items,make){let root=$(id);if(!root)return;root.replaceChildren();if(!Array.isArray(items)||items.length===0){root.className='empty';root.textContent='Zatím bez zveřejněných údajů';return}root.className='';items.slice(0,15).forEach(x=>root.append(make(x)))}
+
+// Aktualni TOP 5: pouze poslednich osm hodin, potvrzeny cas publikace a vazba na NDX.
+const NEWS_WINDOW_MS=8*60*60*1000;
+const pragueClock=new Intl.DateTimeFormat('en-GB',{
+  timeZone:'Europe/Prague',year:'numeric',month:'2-digit',
+  day:'2-digit',hour:'2-digit',minute:'2-digit',hourCycle:'h23'
+});
+function newsTimestamp(x){
+  if(x?.publicationTimeVerified!==true)return NaN;
+  const m=String(x.publishedAtPrague||'').trim().match(/^(\d{1,2})\.\s*(\d{1,2})\.\s*(\d{4}),?\s+(\d{1,2}):(\d{2})$/u);
+  if(!m)return NaN;
+  const [day,month,year,hour,minute]=m.slice(1).map(Number);
+  if(day<1||day>31||month<1||month>12||hour>23||minute>59)return NaN;
+  const localUtc=Date.UTC(year,month-1,day,hour,minute);
+  for(const hours of [1,2]){
+    const instant=localUtc-hours*3600000;
+    const parts=Object.fromEntries(pragueClock.formatToParts(new Date(instant))
+      .filter(p=>p.type!=='literal').map(p=>[p.type,Number(p.value)]));
+    if(parts.year===year&&parts.month===month&&parts.day===day&&
+       parts.hour===hour&&parts.minute===minute)return instant;
+  }
+  return NaN;
+}
+function newsImportance(x){
+  if(x.ndxRelevant===false)return -1;
+  if(Number.isFinite(x.importanceScore))return Math.max(0,Math.min(100,x.importanceScore));
+  const text=String(x.title||'').toLowerCase();
+  let score=0;
+  if(/\b(?:ndx|nasdaq|sox|nvidia|broadcom|microsoft|apple|alphabet|amazon|meta|tesla)\b|čip|polovodič|datacent|ai infrastr/u.test(text))score+=36;
+  if(/tržb|výsled|eps|zisk|výhled|guidance|marž|prognóz|objednáv|export|náklad|kapitál/u.test(text))score+=25;
+  if(/fed|fomc|sazb|inflac|cpi|pce|výnos|nezaměstnan|měnov/u.test(text))score+=35;
+  if(/reuters|nvidia newsroom|nasdaq|federal reserve/u.test(String(x.source||'').toLowerCase()))score+=8;
+  if(/konsenz|oproti odhadu|meziročně|m\/m/u.test(text))score+=10;
+  return Math.min(100,score);
+}
+let latestNews=[];
+function displayTopNews(){
+  const now=Date.now(),seen=new Set();
+  const fresh=latestNews.map(x=>({item:x,at:newsTimestamp(x),score:newsImportance(x)}))
+    .filter(x=>Number.isFinite(x.at)&&x.at<=now&&now-x.at<=NEWS_WINDOW_MS&&x.score>=35)
+    .sort((a,b)=>b.score-a.score||b.at-a.at);
+  const top=[];
+  for(const x of fresh){
+    const key=x.item.eventKey||x.item.url||x.item.title;
+    if(seen.has(key))continue;
+    seen.add(key);top.push(x);
+    if(top.length===5)break;
+  }
+  rows('news',top,x=>{
+    const el=document.createElement('div');el.className='news';
+    const stamp=document.createElement('time');
+    stamp.textContent='Publikováno: '+x.item.publishedAtPrague+' Praha';
+    el.append(stamp);
+    const content=document.createElement('span');
+    content.className='sentence-lines';
+    renderSigned(content,sentenceBreaks(x.item.title));
+    el.append(content);
+    if(x.item.url)el.append(document.createTextNode(' · '),link(x.item.url,safe(x.item.source,'Zdroj')));
+    return el;
+  });
+  if(top.length===0){const el=$('news');el.className='empty';el.textContent='Bez relevantních zpráv za posledních 8 hodin.';}
+}
+
 function render(d){d=d||{};set('updated',d.updatedAtPrague?safe(d.updatedAtPrague):'Čeká na data');let n=d.ndx||{};// Cash NDX zůstává výhradně ve zdrojovém reportu pro dlouhodobé odhady.
 
 let s=d.sentiment||{};set('sentiment',[s.label,s.trend].filter(Boolean).join(' • ')||'Čeká na vyhodnocení');$('sentiment').className='status '+(/medvěd|bear|zhorš/i.test(s.label||'')?'red':/býč|bull/i.test(s.label||'')?'green':'neutral');setSentences('sentiment-reason',s.reason||'Zatím bez vyhodnocení');setSentences('driver',d.driver||'Zatím nezveřejněno');$('driver').className=d.driver?'':'empty';
-rows('news',d.news,x=>{let el=document.createElement('div');el.className='news';let t=document.createElement('time');t.textContent=x.publicationTimeVerified===true&&x.publishedAtPrague?'Publikováno: '+x.publishedAtPrague+' Praha':'Datum zprávy: '+safe(x.time,'neuvedeno')+' · čas publikace neověřen';el.append(t);const content=document.createElement('span');content.className='sentence-lines';renderSigned(content,sentenceBreaks(x.title));el.append(content);if(x.url)el.append(document.createTextNode(' · '),link(x.url,safe(x.source,'Zdroj')));return el});
+latestNews=Array.isArray(d.news)?d.news:[];
+displayTopNews();
 
 setSentences('macro',d.macro||'Zatím bez údajů');let f=d.forecast||{};set('forecast-ath',typeof f.athReturnPercent==='number'?pct(f.athReturnPercent):'—');setSentences('forecast-ath-reason',f.athReason||'Čeká na aktualizaci');set('forecast-down',displayScenario(f.downside||'—'));
 const percentages=(String(f.downside||'').match(/\d+(?:[.,]\d+)?/g)||[]).map(v=>Number(v.replace(',','.')));
@@ -440,6 +504,7 @@ function refreshAll(){load();loadFutures();loadTop10();}
 refreshAll();
 let lastDataCheck=Date.now();
 setInterval(()=>{
+  displayTopNews();
   if(!document.hidden&&Date.now()-lastDataCheck>=180000){
     lastDataCheck=Date.now();refreshAll();
   }
