@@ -1,70 +1,98 @@
 {
-  "updatedAtPrague": "18. 11. 2026 00:29 CET",
-  "marketStatus": "Cash Nasdaq-100 uzavřen. Poslední ověřený závěr: 17. 11. 2026, 22:00 CET; 27 001,78 b. (−0,72 %).",
+  "updatedAtPrague": "18. 11. 2026 00:59 CET",
+  "marketStatus": "Cash NDX uzavřen. Poslední závěr 17. 11. 2026, 22:00 CET.",
   "ndx": {
     "value": 27001.78,
     "changePercent": -0.72,
     "ath": 31361.37,
-    "asOf": "17. 11. 2026, závěr cash seance v 22:00 CET; oficiální Nasdaq index overview (DATA AS OF 11/17/2026), shodně Google Finance po uzavření v 22:28:06 CET."
+    "asOf": "17. 11. 2026, 22:00 CET – závěr cash NDX; Nasdaq Index Overview."
   },
   "sentiment": {
     "label": "Medvědí (subjektivní hodnocení)",
-    "trend": "Cash trh uzavřen; nové obchodování začne 18. 11. v 15:30 CET.",
-    "reason": "NDX cash: 27 001,78 b. (−0,72 %). SOX +0,34 %, NVDA −0,44 %, AVGO +2,46 %. Po závěru NVDA +1,76 %."
+    "trend": "→ beze změny proti 18. 11. 00:29 CET",
+    "reason": "Cash NDX −0,72 %; silný výhled NVIDIA vyvažuje riziko financování AI a změny vedení."
   },
-  "driver": "NDX cash −0,72 %. Reuters: výnos dluhopisů CoreWeave téměř 15 %; dražší financování AI infrastruktury.",
+  "driver": "Vysoký význam: financování AI infrastruktury zdražuje. Výnos dluhopisů CoreWeave se podle Reuters přiblížil 15 %.",
   "news": [
     {
-      "title": "NVIDIA Q3 FY2027: tržby 115,8 mld. USD, upravený EPS 2,68 USD. Výhled Q4: 130 mld. USD (±3 %) oproti konsenzu 125,25 mld. USD.",
-      "time": "17. 11. 2026, 21:24 UTC – původní publikace článku Reuters",
+      "title": "NVIDIA Q3 FY2027: tržby 115,8 mld. USD; výhled Q4 130 mld. USD (±3 %).",
+      "time": "17. 11. 2026, 21:24 UTC",
       "publishedAtPrague": "17. 11. 2026, 22:24",
       "publicationTimeVerified": true,
-      "kind": "new",
-      "source": "Reuters – Nvidia delivers strong results",
+      "kind": "continuing",
+      "category": "earnings",
+      "source": "Reuters; NVIDIA IR",
       "url": "https://www.reuters.com/business/nvidia-forecasts-quarterly-revenue-above-estimates-first-report-since-huangs-2026-11-17/",
       "importanceScore": 95,
       "ndxRelevant": true,
       "eventKey": "nvidia-q3-fy2027-results"
     },
     {
-      "title": "Prezident newyorského Fedu John Williams nadále očekává potřebu zvyšovat sazby kvůli inflaci, ale odmítá potřebu dramatického zpřísňování měnové politiky.",
-      "time": "17. 11. 2026, 20:08 UTC – původní vydání Reuters o dnešním vystoupení na Axios BFD Annual Summit",
+      "title": "Představenstvo NVIDIA potvrdilo, že Jensena Huanga do funkce CEO nevrátí.",
+      "time": "17. 11. 2026, 22:12 UTC",
+      "publishedAtPrague": "17. 11. 2026, 23:12",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "corporate_governance",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/legal/transactional/nvidia-board-says-it-does-not-intend-reinstate-jensen-huang-ceo-2026-11-17/",
+      "importanceScore": 78,
+      "ndxRelevant": true,
+      "eventKey": "nvidia-board-rejects-ceo-return-20261117"
+    },
+    {
+      "title": "John Williams z newyorského Fedu nadále podporuje vyšší sazby, nikoli dramatické zpřísnění.",
+      "time": "17. 11. 2026, 20:08 UTC",
       "publishedAtPrague": "17. 11. 2026, 21:08",
       "publicationTimeVerified": true,
       "kind": "continuing",
-      "source": "Reuters – John Williams, New York Fed",
+      "category": "fed",
+      "source": "Reuters",
       "url": "https://www.reuters.com/business/feds-williams-still-favors-tighter-monetary-policy-says-now-is-not-time-dramatic-2026-11-17/",
       "importanceScore": 70,
       "ndxRelevant": true,
       "eventKey": "ny-fed-williams-rate-outlook-20261117"
+    },
+    {
+      "title": "Microsoft představil model MAI Code 2 a AI model pro kyberbezpečnost.",
+      "time": "17. 11. 2026, 18:16 UTC",
+      "publishedAtPrague": "17. 11. 2026, 19:16",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "company_ai",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/legal/litigation/microsoft-unveils-ai-models-coding-cybersecurity-it-takes-anthropic-openai-2026-11-17/",
+      "importanceScore": 56,
+      "ndxRelevant": true,
+      "eventKey": "microsoft-ignite-ai-models-20261117"
     }
   ],
   "leaders": [
     {
       "ticker": "NVDA",
       "changePercent": -0.44,
-      "impact": "17. 11. 2026, cash závěr 22:00 CET, 155,46 USD; po trhu samostatně +1,76 % na 158,20 USD (Google Finance, zpožděná reakce na výsledky)."
+      "impact": "Cash závěr 17. 11. 2026: 155,46 USD; po výsledcích Reuters uvádí růst po trhu +4,5 %."
     },
     {
       "ticker": "AVGO",
       "changePercent": 2.46,
-      "impact": "17. 11. 2026, cash závěr 22:00 CET, 341,60 USD; Google Finance."
+      "impact": "Cash závěr 17. 11. 2026; ověřené předchozí závěrečné údaje."
     }
   ],
-  "macro": "BLS: dovozní ceny USA +1,1 % m/m (14:30 CET). Census: maloobchodní tržby +0,2 % m/m (14:30 CET). Fed: průmyslová výroba −0,4 % m/m (15:15 CET).",
-  "regulation": "Pokračuje regulace BIS pro vzdálený přístup k americkým AI čipům prostřednictvím zahraničních datacenter z 15.–16. 11. 2026. Kongresní výbory oznámily plánované rozhovory s bývalým CEO NVIDIA Jensenem Huangem a právním ředitelem Timem Teterem 1.–2. 12.; jde o dohled, nikoli nový zákon. NVIDIA sama vytvořila výbor pro bezpečnost a exportní kontrolu. Nová potvrzená státní či místní právní změna v této hodině zjištěna nebyla.",
+  "macro": "US10Y 5,100 % na závěr 17. 11. 2026; pokles z 5,121 % dne 16. 11.",
+  "regulation": null,
   "technical": {
-    "support": "26 580,86 b. – orientační support, intradenní minimum cash NDX 17. 11. 2026 podle Nasdaq.",
-    "resistance": "27 258,84 b. – orientační rezistence, intradenní maximum cash NDX 17. 11. 2026 podle Nasdaq."
+    "support": null,
+    "resistance": null
   },
   "forecast": {
     "athReturnPercent": 12,
-    "athReason": "Odhad zvýšen z 5 % na 12 % po NVIDIA Q3: tržby 115,8 mld. USD; výhled Q4 130 mld. USD.",
-    "downside": "−5 až −10 %",
-    "downsideReason": "Rizika: náklady financování AI infrastruktury; výhled hrubé marže NVIDIA 71–72 % vs. 74,9 % v Q3."
+    "athReason": "Odhad beze změny: NVIDIA Q3 115,8 mld. USD, Q4 výhled 130 mld. USD; zvýšila by jej stabilizace financování AI.",
+    "downside": "−5 až −10 % (25 652–24 302 b.)",
+    "downsideReason": "Odhad beze změny: náklady financování AI a výhled hrubé marže NVIDIA 71–72 %."
   },
   "catalyst": {
-    "event": "Americké akcie: první cash seance po výsledcích NVIDIA Q3",
+    "event": "První cash seance USA po výsledcích NVIDIA",
     "timePrague": "18. 11. 2026, 15:30 CET"
   },
   "archive": [
@@ -155,6 +183,10 @@
     {
       "time": "18. 11. 2026 00:29 CET",
       "summary": "Ověřen poslední cash závěr NDX 27 001,78 b. (−0,72 %), 17. 11. 22:00 CET. NVIDIA Q3: tržby 115,8 mld. USD; výhled Q4 130 mld. USD. Bez nového cash obchodování."
+    },
+    {
+      "time": "18. 11. 2026 00:59 CET",
+      "summary": "Cash NDX 17. 11. závěr 27 001,78 b. (−0,72 %, −13,90 % pod historickým maximem). Nově Reuters 23:12 CET: představenstvo NVIDIA odmítlo návrat Jensena Huanga do čela firmy. NVIDIA Q3 tržby 115,8 mld. USD, Q4 výhled 130 mld. USD. Odhady 12 % na návrat k maximu do 6 měsíců a −5 až −10 % do 1–3 měsíců zůstávají."
     }
   ],
   "history": [
@@ -475,6 +507,18 @@
     {
       "name": "NVIDIA IR — Q3 FY2027",
       "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/default.aspx"
+    },
+    {
+      "name": "Reuters – NVIDIA představenstvo 23:12 CET",
+      "url": "https://www.reuters.com/legal/transactional/nvidia-board-says-it-does-not-intend-reinstate-jensen-huang-ceo-2026-11-17/"
+    },
+    {
+      "name": "Reuters – Microsoft AI modely 19:16 CET",
+      "url": "https://www.reuters.com/legal/litigation/microsoft-unveils-ai-models-coding-cybersecurity-it-takes-anthropic-openai-2026-11-17/"
+    },
+    {
+      "name": "Nasdaq NDX – závěrečná hodnota 17.11.",
+      "url": "https://indexes.nasdaq.com/Index/Overview/NDX"
     }
   ]
 }
