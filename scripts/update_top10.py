@@ -36,8 +36,8 @@ def percent(cell):
     if not m:
         raise ValueError("Unparseable change: " + txt)
     num = float(m.group(1).replace("−", "-"))
-    classes = " ".join(cell.get("class", []))
-    if num > 0 and ("red" in classes or "negative" in classes or "down" in classes or "▼" in txt or "▾" in txt):
+    classes = " ".join(" ".join(node.get("class", [])) for node in [cell, *cell.find_all(True)])
+    if num > 0 and ("red" in classes or "negative" in classes or "down" in classes or "▼" in txt or "▾" in txt or "↘" in txt):
         num = -num
     return num
 
@@ -47,7 +47,6 @@ def retrieve():
         html = response.read().decode("utf-8")
     soup = BeautifulSoup(html, "html.parser")
     companies = {}
-    print("DIAG", "len", len(html), "title", (soup.title.get_text(" ", strip=True) if soup.title else "-")[:110], "tables", len(soup.select("table")), "rows", len(soup.select("table tbody tr")), "tr", str(soup.select_one("tr"))[:600])
     for tr in soup.select("table tbody tr"):
         cells = tr.find_all("td", recursive=False)
         if len(cells) < 6:
