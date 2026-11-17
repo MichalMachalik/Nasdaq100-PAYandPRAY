@@ -1,0 +1,7 @@
+{
+  "source": "CompaniesMarketCap",
+  "sourceUrl": "https://companiesmarketcap.com/tech/largest-tech-companies-by-market-cap/",
+  "market": "Nasdaq-100",
+  "currency": "USD",
+  "companies": []
+}
