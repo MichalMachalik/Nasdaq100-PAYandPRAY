@@ -1,18 +1,18 @@
 {
-  "updatedAtPrague": "17. 11. 2026 19:01 CET",
-  "marketStatus": "Cash Nasdaq-100 otevřený; zpožděný časově označený intradenní snímek, nikoli denní závěr. Samostatná futures kotace se načítá mimo latest.json.",
+  "updatedAtPrague": "17. 11. 2026 19:57 CET",
+  "marketStatus": "Cash Nasdaq-100 otevřený; časově označená intradenní kotace indexu se zpožděním, nikoli denní závěr. Futures NQ=F jsou samostatný instrument zveřejňovaný výhradně workflow futures.yml.",
   "ndx": {
-    "value": 26868.75,
-    "changePercent": -1.21,
+    "value": 26906.6,
+    "changePercent": -1.07,
     "ath": 31361.37,
-    "asOf": "17. 11. 2026, 18:43:13 CET; intradenní cash NDX, Google Finance (12:43:13 EST), 26 868,75 bodu, −1,21 % oproti závěru 16. 11.; zpožděný snímek."
+    "asOf": "17. 11. 2026, 19:38:16 CET; intradenní cash index Nasdaq-100, Google Finance (13:38:16 EST), zpožděný snímek. Závěr 16. 11. 2026: 27 197,15 bodu."
   },
   "sentiment": {
     "label": "Medvědí (subjektivní hodnocení)",
-    "trend": "Zlepšení oproti kontrole 18:05 CET",
-    "reason": "Cash NDX se ze snímku 17:57:27 CET (26 833,37 bodu) zvýšil na 26 868,75 bodu v 18:43:13 CET. SOX se zhruba z −1,34 % zlepšil na −1,01 %, Broadcom je v 18:31:54 CET +2,06 %, Nvidia v 18:52:05 CET −1,55 %. Výnosy nevykazují nový výrazný tlak. Riziko zůstává převážně negativní; jde o subjektivní hodnocení."
+    "trend": "Beze změny proti kontrole 19:01 CET",
+    "reason": "Cash NDX se ze snímku 18:43:13 CET zvýšil z 26 868,75 na 26 906,60 bodu v 19:38:16 CET (+37,85 bodu). Sektor SOX byl v témž snímku −0,93 % oproti dřívějším −1,01 %, ale NVIDIA 19:50:57 CET −1,87 % a Broadcom +1,00 % signalizují smíšený vývoj. Výnosy mírně ustoupily. Celkové hodnocení zůstává medvědí a trend vůči minulé kontrole je neutrální."
   },
-  "driver": "Vysoká důležitost: cash Nasdaq-100 v 18:43:13 CET ztrácí 1,21 %. Sektor čipů a AI zatěžují nejistota před výsledky NVIDIA, exportní omezení a obavy o návratnost financování AI. Semiconductors SOX −1,01 % ve stejném snímku; Broadcom +2,06 % ukazuje rozdílný vývoj jednotlivých firem. Jde o souběžné ověřené faktory, nikoli prokázanou jedinou příčinu.",
+  "driver": "Vysoká důležitost: cash Nasdaq-100 v 19:38:16 CET ztrácel 1,07 % během seance. Rizikový sentiment před výsledky NVIDIA zatěžují nejistota ohledně vedení firmy, návratnosti AI investic, financování datacenter a omezení vývozu čipů. Sektor SOX k témuž snímku klesal o 0,93 % a NVIDIA k 19:50:57 CET o 1,87 %, zatímco Broadcom rostl o 1,00 %. Jde o relevantní souběžné faktory, nikoliv prokázanou jedinou příčinu.",
   "news": [
     {
       "title": "Sněmovní výbory USA potvrdily dobrovolné přepisy výpovědí bývalého šéfa NVIDIA Jensena Huanga dne 1. prosince a právního ředitele Tima Tetera dne 2. prosince v rámci prověřování možných problémů s exportem AI čipů do Číny. Nejde o přijatý zákon ani o prokázané porušení pravidel.",
@@ -135,30 +135,30 @@
   "leaders": [
     {
       "ticker": "NVDA",
-      "changePercent": -1.55,
-      "impact": "17. 11. 2026, 18:52:05 CET; intradenní akcie, Google Finance; −1,55 %."
+      "changePercent": -1.87,
+      "impact": "17. 11. 2026, 19:50:57 CET; intradenní akcie, Google Finance, −1,87 %."
     },
     {
       "ticker": "AVGO",
-      "changePercent": 2.06,
-      "impact": "17. 11. 2026, 18:31:54 CET; intradenní akcie, Google Finance; +2,06 %."
+      "changePercent": 1,
+      "impact": "17. 11. 2026, 19:50:57 CET; intradenní akcie, Google Finance, +1,00 %."
     }
   ],
-  "macro": "Americké maloobchodní tržby říjen +0,2 % (Census), dovozní ceny +1,1 % (BLS) a průmyslová výroba −0,4 % (Fed), zveřejněno již dříve 17. 11. Výnos US10Y přibližně 5,11 % při ověření 17:06 CET u sekundárního časovaného zdroje. Tyto údaje nelze označit za samostatně prokázanou příčinu výkyvu NDX.",
+  "macro": "Pokračují dříve zveřejněné statistiky USA z 17. 11.: dovozní ceny +1,1 % meziměsíčně (BLS), maloobchod +0,2 % (Census), průmyslová výroba −0,4 % (Fed). Americký desetiletý výnos US10Y 5,100 % ve snímku 18:14:46 CET, Investing.com; novější měření zde nepoužito. Vyšší náklady kapitálu představují riziko pro financování AI, konkrétní podíl na dnešním pohybu NDX není prokázán.",
   "regulation": "Pokračují federální omezení BIS pro vzdálený přístup k výkonným americkým AI čipům, dosud bez nového zákona Kongresu. Sněmovní výbory dne 17. 11. potvrdily rozhovory s Jensenem Huangem 1. 12. a Timem Teterem 2. 12. kvůli možné bezpečnostní kauze exportu čipů; jde o dohled Kongresu, nikoli legislativní změnu ani prokázaný delikt. Nová bezprostředně relevantní státní či místní regulace ověřena nebyla.",
   "technical": {
-    "support": "26 580,86 bodu – orientační support podle dosavadního denního minima cash NDX z 17. 11. 2026, ověřeno ke snímku 18:43:13 CET.",
-    "resistance": "27 258,84 bodu – orientační rezistence podle dosavadního denního maxima cash NDX z 17. 11. 2026, ověřeno ke snímku 18:43:13 CET."
+    "support": "26 580,86 bodu – orientační support podle minima dnešní seance cash NDX 17. 11. 2026, Google Finance k 19:38:16 CET.",
+    "resistance": "27 258,84 bodu – orientační rezistence podle maxima dnešní seance cash NDX 17. 11. 2026, Google Finance k 19:38:16 CET."
   },
   "forecast": {
     "athReturnPercent": 5,
-    "athReason": "Subjektivní pravděpodobnost návratu cash NDX na historické maximum do 6 měsíců 5 %, beze změny proti 18:05 CET. Zvýšil by ji silný výhled NVIDIA podpořený maržemi, růstem cash flow a ověřenou návratností datacenter.",
+    "athReason": "Subjektivní pravděpodobnost návratu cash Nasdaq-100 na historické maximum do šesti měsíců 5 %, beze změny. Zvýšil by ji silný, firemními čísly doložený výhled NVIDIA, zlepšení marží, cash flow a návratnosti AI datacenter.",
     "downside": "−5 až −10 %",
-    "downsideReason": "Subjektivní scénář dalšího poklesu za 1–3 měsíce z intradenního cash NDX 26 868,75 bodu v 18:43:13 CET: přepočtený orientační interval 25 525 až 24 182 bodů. Riziko by zvýšil slabý výhled NVIDIA nebo nové exportní omezení."
+    "downsideReason": "Subjektivní rizikový scénář dalšího propadu za 1–3 měsíce ze snímku cash NDX 26 906,60 bodu (17. 11., 19:38:16 CET), přepočtený orientační interval 25 561–24 216 bodů. Zhoršil by jej slabý výhled NVIDIA, exportní šok nebo další růst nákladů kapitálu."
   },
   "catalyst": {
-    "event": "Zveřejnění výsledků NVIDIA za třetí fiskální čtvrtletí 2027, následně konferenční hovor",
-    "timePrague": "17. 11. 2026, přibližně 22:20 CET výsledky a 23:00 CET hovor; firemní Investor Relations."
+    "event": "NVIDIA – výsledky za třetí čtvrtletí fiskálního roku 2027 a konferenční hovor podle firemního Investor Relations",
+    "timePrague": "17. 11. 2026 přibližně 22:20 CET výsledky; 23:00 CET konferenční hovor."
   },
   "archive": [
     {
@@ -228,6 +228,10 @@
     {
       "time": "17. 11. 2026 19:01 CET",
       "summary": "Cash NDX 26 868,75 b. v 18:43:13 CET, −1,21 % denně, −14,33 % od ATH; medvědí hodnocení ↗ mírné zlepšení vůči 18:05. NVDA −1,55 %, AVGO +2,06 %. Potvrzeny výslechy Huang/Teter v Kongresu 1.–2. 12., primární čas vydání dnešní zprávy neurčen. Prognóza ATH 5 %; rizikový scénář −5 až −10 % (25 525–24 182 b.)."
+    },
+    {
+      "time": "17. 11. 2026 19:57 CET",
+      "summary": "Cash NDX 26 906,60 bodu (intradenní 19:38:16 CET), −1,07 % denně, −14,20 % od ATH; medvědí hodnocení beze změny, obavy před výsledky NVIDIA. Bez zásadních novinek oproti kontrole 19:01 CET."
     }
   ],
   "history": [
@@ -254,6 +258,10 @@
     {
       "time": "2026-11-16",
       "ndx": 27197.15
+    },
+    {
+      "time": "2026-11-17 19:38:16 CET (intradenní cash)",
+      "ndx": 26906.6
     }
   ],
   "sources": [
@@ -464,6 +472,14 @@
     {
       "name": "Reuters – Kongres a Huang, původní článek 17. 11. 16:22 CET",
       "url": "https://www.reuters.com/world/former-nvidia-ceo-huang-appear-before-us-congressional-committees-december-2026-11-17/"
+    },
+    {
+      "name": "Google Finance – cash NDX, 17. 11. 2026 19:38:16 CET",
+      "url": "https://www.google.com/finance/beta/quote/NDX:INDEXNASDAQ"
+    },
+    {
+      "name": "Investing – US10Y 17. 11. 2026",
+      "url": "https://www.investing.com/rates-bonds/u.s.-10-year-bond-yield-historical-data"
     }
   ]
 }
