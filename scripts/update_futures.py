@@ -22,8 +22,9 @@ try:
     meta = result["meta"]
     name = str(meta.get("shortName") or meta.get("longName") or "")
     symbol = str(meta.get("symbol") or "")
-    if symbol != "NQ=F" or "Nasdaq" not in name.lower():
-        raise ValueError("Unexpected instrument name or symbol")
+    # Yahoo metadata name can be abbreviated/localized; the exact futures ticker is decisive.
+    if symbol != "NQ=F":
+        raise ValueError(f"Unexpected ticker {symbol!r}, source name={name!r}")
     ts = result.get("timestamp") or []
     vals = (result["indicators"]["quote"][0].get("close") or [])
     ticks = [(int(t), float(p)) for t, p in zip(ts, vals)
