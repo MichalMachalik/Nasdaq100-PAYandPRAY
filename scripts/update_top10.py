@@ -47,6 +47,7 @@ def retrieve():
         html = response.read().decode("utf-8")
     soup = BeautifulSoup(html, "html.parser")
     companies = {}
+    print("DIAG", "len", len(html), "title", (soup.title.get_text(" ", strip=True) if soup.title else "-")[:110], "tables", len(soup.select("table")), "rows", len(soup.select("table tbody tr")), "tr", str(soup.select_one("tr"))[:600])
     for tr in soup.select("table tbody tr"):
         cells = tr.find_all("td", recursive=False)
         if len(cells) < 5:
