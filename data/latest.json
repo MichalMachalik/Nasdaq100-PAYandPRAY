@@ -1,19 +1,28 @@
 {
-  "updatedAtPrague": "17. 11. 2026 13:05 CET",
-  "marketStatus": "Cash Nasdaq-100 uzavřen před otevřením NYSE/Nasdaq (15:30 CET). Poslední oficiální závěr 16. 11. 2026 22:00 CET. Kontrola Nasdaq, Reuters, BofA průzkumu dle Reuters, BIS, U.S. Treasury, Census, NVIDIA IR 17. 11. 13:05 CET.",
+  "updatedAtPrague": "17. 11. 2026 13:59 CET",
+  "marketStatus": "Nasdaq-100 cash NDX před otevřením (15:30 CET). Poslední ověřený cash závěr 16. 11. 2026, 22:00 CET. Kontrola Nasdaq index feed, Reuters, U.S. Treasury, Census a NVIDIA IR k 17. 11. 2026, 13:59 CET; futures NQ=F na webu aktualizuje samostatný workflow.",
   "ndx": {
     "value": 27197.15,
     "changePercent": -2.67,
     "ath": 31361.37,
-    "asOf": "Cash Nasdaq-100 (NDX), poslední závěr 16. 11. 2026 22:00 CET: 27 197,15 b. (Nasdaq oficiální indexový přehled). ATH intradenní cash 31 361,37 b., 6. 10. 2026 (historická high NDX). Není intradenní údaj 17. 11."
+    "asOf": "Cash Nasdaq-100 NDX, oficiální závěr Nasdaq 16. 11. 2026, 22:00 CET: 27 197,15 bodu, −2,67 %. Poslední ověřený cash závěr, nikoli cena z 17. 11.; historické intradenní ATH 31 361,37 bodu."
   },
   "sentiment": {
     "label": "Medvědí (hodnocení)",
-    "trend": "↘ Mírné zhoršení oproti 11:56 CET",
-    "reason": "Nový průzkum BofA publikovaný v reportáži Reuters 12:29 CET ukazuje výrazné omezení technologické expozice a očekávání snížení AI capexu. Cash NDX zatím nemá novou seanci; nejde o naměřený sentiment NDX."
+    "trend": "Beze změny oproti 13:05 CET",
+    "reason": "Cash NDX je bez nové obchodní seance. Přes mírné zotavení Nasdaq-100 E-mini futures (+0,39 % k 13:09 CET podle Reuters) přetrvává negativní tlak na čipy a AI; nově zveřejněný jestřábí výhled Musalema (Reuters 13:32 CET) tlumí obrat. Hodnocení, nikoli měřený index."
   },
-  "driver": "Vysoká důležitost: závěrečný pokles NDX cash −2,67 % dne 16. 11. provázel výprodej polovodičů (SOX přibližně −5,3 %). Reuters spojuje tlak s obavami o udržitelnost AI investic, financování infrastruktury, změnou vedení NVIDIA a novými kontrolami exportu. Jednotlivé kauzální váhy nejsou prokázané.",
+  "driver": "Vysoká důležitost: cash Nasdaq-100 poklesl 16. 11. o 2,67 %. Reuters popisuje tlak výprodeje polovodičů (SOX přibližně −5,3 %), obav o návratnost a financování AI, omezení vývozu čipů a nejistotu kolem vedení NVIDIA. Jednotlivé příčinné podíly nelze přesně kvantifikovat.",
   "news": [
+    {
+      "title": "St. Louis Fed: Alberto Musalem očekává nutnost několika zvýšení úrokových sazeb do jara 2027 kvůli inflaci nad 3 %. Jde o názor nevotujícího člena Fed, nikoli rozhodnutí FOMC.",
+      "time": "17. 11. 2026, 12:32 UTC – původní článek Reuters; čas projevu samostatně neověřen",
+      "publishedAtPrague": "17. 11. 2026, 13:32",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "source": "Reuters – Musalem/Fed",
+      "url": "https://www.reuters.com/business/feds-musalem-us-likely-needs-several-rate-hikes-by-spring-control-inflation-2026-11-17/"
+    },
     {
       "title": "BofA: správci fondů snížili čistou nadváhu technologických akcií z 37 % na 12 %; 52 % respondentů čeká omezení investic do AI infrastruktury během 6 měsíců. Zjištění z průzkumu, nikoli dnešní pohyb cash NDX.",
       "time": "17. 11. 2026, 11:29 UTC – původní zveřejnění Reuters; průzkum BofA za listopad 2026",
@@ -42,8 +51,8 @@
       "url": "https://www.reuters.com/business/shaky-semiconductor-trade-faces-big-week-investors-look-bottom-2026-11-17/"
     },
     {
-      "title": "NVIDIA před otevřením USA oslabovala; report Reuters popisuje opatrnost před výsledky, ale údaje jsou z premarketu, nikoli z cash indexu.",
-      "time": "17. 11. 2026, 10:51 UTC – zveřejnění Reuters",
+      "title": "Reuters: Nasdaq-100 E-mini futures při snímku 13:09 CET rostly o 0,39 %, NVIDIA v předobchodním trhu o 1 % a Broadcom o 2,8 %. Futures a premarket nejsou cash NDX.",
+      "time": "17. 11. 2026, 10:51 UTC – původní publikace Reuters; futures snímek 07:09 ET (13:09 CET), následná aktualizace článku bez ověřené hodiny",
       "publishedAtPrague": "17. 11. 2026, 11:51",
       "publicationTimeVerified": true,
       "kind": "continuing",
@@ -81,7 +90,7 @@
       "impact": "Závěr 16. 11. 2026, cash akcie. Nikoliv dnešní premarket."
     }
   ],
-  "macro": "US10Y 5,12 %: poslední oficiální denní údaj U.S. Treasury z 16. 11. 2026, nikoliv intradenní výnos 17. 11. Průzkum BofA: technologická převáha správců fondů klesla na +12 % z +37 %; zveřejněno Reuters 12:29 CET. Census: maloobchodní tržby USA 17. 11. 14:30 CET.",
+  "macro": "Nově: Musalem (St. Louis Fed) očekává nutnost několika zvýšení sazeb do jara 2027 kvůli inflaci nad 3 % (Reuters poprvé 13:32 CET); letos nemá hlas ve FOMC. US10Y 5,12 % je oficiální výnos U.S. Treasury k 16. 11. 2026, nikoli intradenní hodnota 17. 11. Census plánuje maloobchodní tržby USA za říjen na 17. 11. ve 14:30 CET.",
   "regulation": "BIS: prozatímní federální regulační pravidlo o vzdáleném poskytování výpočetního výkonu amerických AI čipů, oznámeno 15.–16. 11.; nejde o zákon Kongresu. Nové federální/státní uzákonění s doloženým bezprostředním dopadem na NDX nebylo potvrzeno.",
   "technical": {
     "support": "27 149,15 b. (S orientačně, minimum cash NDX seance 16. 11. 2026, Nasdaq)",
@@ -89,9 +98,9 @@
   },
   "forecast": {
     "athReturnPercent": 5,
-    "athReason": "Subjektivní pravděpodobnost dosažení historického maxima do 6 měsíců: 5 %, beze změny oproti 11:56 CET. BofA potvrzuje oslabení ochoty držet technologie, nikoliv nový pohyb NDX; pravděpodobnost zvýší robustní tržby a výhled NVIDIA a doložená návratnost AI capexu.",
+    "athReason": "Subjektivní odhad dosažení intradenního cash ATH do 6 měsíců 5 %, beze změny oproti 13:05 CET. Zlepšily by jej silné výsledky a výhled NVIDIA spolu s důkazy o návratnosti AI investic; jestřábí výhled Fed je protiváhou.",
     "downside": "−5 až −10 %",
-    "downsideReason": "Subjektivní scénář dalšího poklesu za 1–3 měsíce od ověřeného závěru cash NDX 16. 11., beze změny: slabší poptávka po AI čipech, snížení capexu či další růst finančního rizika; interval bodů se na stránce automaticky počítá z ndx.value."
+    "downsideReason": "Subjektivní scénář na 1–3 měsíce z posledního cash závěru 27 197,15 bodu: přibližně 25 837–24 477 bodů (−5 až −10 %); automatický výpočet na webu z ndx.value je rozhodující. Odhad by prohloubily další exportní restrikce, vyšší výnosy či slabší návratnost AI capexu."
   },
   "catalyst": {
     "event": "Census: předběžné maloobchodní tržby USA za říjen; NVIDIA výsledky FY2027 Q3 a konferenční hovor",
@@ -141,6 +150,10 @@
     {
       "time": "17. 11. 2026 13:05 CET",
       "summary": "Cash NDX 27 197,15 b. (závěr 16. 11.), −2,67 %, −13,28 % od intradenního ATH. Medvědí hodnocení ↘ mírné zhoršení: nový průzkum BofA hlásí ústup z technologických pozic (+12 % z +37 %) a rostoucí obavy z omezení AI capexu. Reuters popisuje riziko financování menších datacenter. S/R z 16. 11. 27 149/27 622, prognózy beze změny."
+    },
+    {
+      "time": "17. 11. 2026 13:59 CET",
+      "summary": "Cash NDX 27 197,15 bodu (závěr 16. 11.), −2,67 % a −13,28 % od ATH. Medvědí hodnocení beze změny od 13:05; Nasdaq-100 E-mini futures při snímku 13:09 CET +0,39 %, nikoli cash index. Nově Reuters 13:32 CET: Musalem očekává několik zvýšení sazeb do jara 2027. Výhled návratu na ATH 5 %, rizikový scénář −5 až −10 % (25 837–24 477 b.)."
     }
   ],
   "history": [
@@ -297,6 +310,14 @@
     {
       "name": "Reuters 17.11. polovodiče 12:06 CET",
       "url": "https://www.reuters.com/business/shaky-semiconductor-trade-faces-big-week-investors-look-bottom-2026-11-17/"
+    },
+    {
+      "name": "Reuters – Musalem, Fed 17.11.2026 13:32 CET",
+      "url": "https://www.reuters.com/business/feds-musalem-us-likely-needs-several-rate-hikes-by-spring-control-inflation-2026-11-17/"
+    },
+    {
+      "name": "Reuters – NQ E-mini futures 17.11.2026, 13:09 CET",
+      "url": "https://www.reuters.com/business/us-stock-futures-slip-ahead-nvidia-results-fed-speakers-focus-2026-11-17/"
     }
   ]
 }
