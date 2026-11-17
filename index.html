@@ -195,6 +195,19 @@ $('refresh').addEventListener('click',()=>{
   url.searchParams.set('refresh',String(Date.now()));
   window.location.replace(url.toString());
 });
+// Zavřít otevřené menu při kliknutí mimo něj nebo klávesou Escape.
+const historyMenu=document.querySelector('.history-menu');
+document.addEventListener('pointerdown',event=>{
+  if(historyMenu?.open && !historyMenu.contains(event.target)){
+    historyMenu.open=false;
+  }
+});
+document.addEventListener('keydown',event=>{
+  if(event.key==='Escape' && historyMenu?.open){
+    historyMenu.open=false;
+    historyMenu.querySelector('summary')?.focus();
+  }
+});
 load();
 </script>
 </body></html>
