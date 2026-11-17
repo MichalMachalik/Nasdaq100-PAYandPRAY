@@ -1,13 +1,13 @@
 {
   "symbol": "NQ=F",
-  "name": "E-mini Nasdaq-100 futures",
+  "name": "E-mini Nasdaq-100 futures (prosinec 2026, NQZ26)",
   "instrumentType": "FUTURES",
-  "source": "Yahoo Finance chart (unofficial)",
-  "sourceUrl": "https://finance.yahoo.com/quote/NQ=F/",
-  "price": 27097.5,
-  "changePercent": -0.68,
-  "quotedAtUtc": "2026-11-17T21:10:56Z",
-  "quotedAtPrague": "17. 11. 2026 22:10",
-  "fetchedAtUtc": "2026-11-17T21:20:59.555134Z",
+  "source": "Google Finance, CME E-mini Nasdaq-100 NQZ26 (ekvivalent Yahoo NQ=F, časově označená zpožděná kotace)",
+  "sourceUrl": "https://www.google.com/finance/quote/NQZ26:CME_EMINIS",
+  "price": 27199,
+  "changePercent": -0.31,
+  "quotedAtUtc": "2026-11-17T21:24:15Z",
+  "quotedAtPrague": "17. 11. 2026 22:24",
+  "fetchedAtUtc": "2026-11-17T22:00:28Z",
   "delayed": true
 }
