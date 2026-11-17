@@ -2,12 +2,12 @@
   "symbol": "NQ=F",
   "name": "E-mini Nasdaq-100 futures",
   "instrumentType": "FUTURES",
-  "source": "Yahoo Finance chart (unofficial)",
-  "sourceUrl": "https://finance.yahoo.com/quote/NQ=F/",
-  "price": 27484.0,
+  "source": "Google Finance – CME E-mini Nasdaq-100 December 2026 (delayed)",
+  "sourceUrl": "https://www.google.com/finance/quote/NQZ26:CME_EMINIS",
+  "price": 27483.5,
   "changePercent": 1.51,
-  "quotedAtUtc": "2026-11-17T23:21:21Z",
-  "quotedAtPrague": "18. 11. 2026 00:21",
-  "fetchedAtUtc": "2026-11-17T23:31:22.310864Z",
+  "quotedAtUtc": "2026-11-17T23:27:34Z",
+  "quotedAtPrague": "18. 11. 2026, 00:27:34 CET",
+  "fetchedAtUtc": "2026-11-17T23:58:13.543Z",
   "delayed": true
 }
