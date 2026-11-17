@@ -1,8 +1,8 @@
 {
   "source": "CompaniesMarketCap",
   "sourceUrl": "https://companiesmarketcap.com/tech/largest-tech-companies-by-market-cap/",
-  "fetchedAtUtc": "2026-11-17T22:29:42.869377Z",
-  "fetchedAtPrague": "17. 11. 2026 23:29",
+  "fetchedAtUtc": "2026-11-17T22:48:06.033848Z",
+  "fetchedAtPrague": "17. 11. 2026 23:48",
   "market": "Nasdaq-100",
   "currency": "USD",
   "companies": [
@@ -42,6 +42,13 @@
       "changePercent": 0.05
     },
     {
+      "ticker": "SPCX",
+      "name": "SpaceX",
+      "marketCapUsd": 1924000000000,
+      "priceUsd": 141.7,
+      "changePercent": 3.16
+    },
+    {
       "ticker": "AVGO",
       "name": "Broadcom",
       "marketCapUsd": 1630000000000,
@@ -68,13 +75,6 @@
       "marketCapUsd": 833170000000,
       "priceUsd": 503.41,
       "changePercent": -0.17
-    },
-    {
-      "ticker": "MU",
-      "name": "Micron Technology",
-      "marketCapUsd": 806040000000,
-      "priceUsd": 712.42,
-      "changePercent": -0.92
     }
   ]
 }
