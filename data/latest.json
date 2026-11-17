@@ -12,7 +12,7 @@
     "trend": "↘ Mírné zhoršení oproti 11:56 CET",
     "reason": "Nový průzkum BofA publikovaný v reportáži Reuters 12:29 CET ukazuje výrazné omezení technologické expozice a očekávání snížení AI capexu. Cash NDX zatím nemá novou seanci; nejde o naměřený sentiment NDX."
   },
-  "driver": "🔴 Vysoká důležitost: závěrečný pokles NDX cash −2,67 % dne 16. 11. provázel výprodej polovodičů (SOX přibližně −5,3 %). Reuters spojuje tlak s obavami o udržitelnost AI investic, financování infrastruktury, změnou vedení NVIDIA a novými kontrolami exportu. Jednotlivé kauzální váhy nejsou prokázané.",
+  "driver": "Vysoká důležitost: závěrečný pokles NDX cash −2,67 % dne 16. 11. provázel výprodej polovodičů (SOX přibližně −5,3 %). Reuters spojuje tlak s obavami o udržitelnost AI investic, financování infrastruktury, změnou vedení NVIDIA a novými kontrolami exportu. Jednotlivé kauzální váhy nejsou prokázané.",
   "news": [
     {
       "title": "BofA: správci fondů snížili čistou nadváhu technologických akcií z 37 % na 12 %; 52 % respondentů čeká omezení investic do AI infrastruktury během 6 měsíců. Zjištění z průzkumu, nikoli dnešní pohyb cash NDX.",
