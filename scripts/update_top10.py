@@ -14,7 +14,7 @@ OUT = Path("data/top10.json")
 # Nasdaq-100 constituent whitelist; not all tech firms on CompaniesMarketCap belong to Nasdaq-100.
 # Includes a wider pool than today's top ten for changes to rankings.
 ELIGIBLE = set((
-    "NVDA AAPL MSFT GOOG GOOGL AMZN AVGO META TSLA MU AMD COST NFLX PLTR "
+    "NVDA AAPL MSFT GOOG GOOGL AMZN SPCX AVGO META TSLA MU AMD COST NFLX PLTR "
     "ASML CSCO AMAT LRCX INTC KLAC ANET CRWD ARM TXN MRVL PANW ADBE "
     "QCOM ISRG BKNG PDD INTU AMGN GILD SBUX ADP MELI MDLZ CDNS SNPS "
     "REGN ABNB APP MAR PYPL MSTR ORLY CEG CTAS CSX PCAR ROST FTNT "
