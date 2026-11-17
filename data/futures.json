@@ -4,10 +4,10 @@
   "instrumentType": "FUTURES",
   "source": "Yahoo Finance chart (unofficial)",
   "sourceUrl": "https://finance.yahoo.com/quote/NQ=F/",
-  "price": 26981.75,
-  "changePercent": -1.11,
-  "quotedAtUtc": "2026-11-17T20:39:33Z",
-  "quotedAtPrague": "17. 11. 2026 21:39",
-  "fetchedAtUtc": "2026-11-17T20:49:34.197019Z",
+  "price": 27097.5,
+  "changePercent": -0.68,
+  "quotedAtUtc": "2026-11-17T21:10:56Z",
+  "quotedAtPrague": "17. 11. 2026 22:10",
+  "fetchedAtUtc": "2026-11-17T21:20:59.555134Z",
   "delayed": true
 }
