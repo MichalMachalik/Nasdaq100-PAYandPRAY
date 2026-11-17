@@ -1,19 +1,28 @@
 {
-  "updatedAtPrague": "17. 11. 2026 03:55 CET",
-  "marketStatus": "Cash trh USA zavřený; poslední ověřený závěr 16. 11. 2026 ve 22:00 CET.",
+  "updatedAtPrague": "17. 11. 2026 04:55 CET",
+  "marketStatus": "Cash trh USA uzavřen; poslední ověřený závěr 16. 11. 2026, 22:00 CET.",
   "ndx": {
     "value": 27197.15,
     "changePercent": -2.67,
     "ath": 31361.37,
-    "asOf": "Cash NDX, závěr 16. 11. 2026 22:00 CET; intradenní ATH 6. 10. 2026."
+    "asOf": "Cash NDX, závěr 16. 11. 2026, 22:00 CET; ATH intradenně 6. 10. 2026."
   },
   "sentiment": {
     "label": "Medvědí (hodnocení)",
-    "trend": "→ Beze změny proti 02:55 CET",
-    "reason": "NDX −2,67 % při uzavření; slabé AI a polovodiče, trvající nejistota NVIDIA. Od minulé kontroly bez nového cash obchodování."
+    "trend": "→ Beze změny proti 03:55 CET",
+    "reason": "Pondělní propad cash NDX −2,67 %, slabé AI/čipy a šíře trhu; během uzavření cash trhu žádné další srovnatelné obchodování. Reuters 16.–17. 11."
   },
-  "driver": "🔴 Vysoký dopad: pokračující výprodej AI/polovodičů (SOX −5,3 %), nejistota po rezignaci šéfa NVIDIA, rizika financování AI. Reuters 16. 11.",
+  "driver": "🔴 Vysoký dopad: pondělní výprodej AI a polovodičů (SOX −5,3 %), nejistota před výsledky NVIDIA a po změně vedení; širší tlak po oznámení nového pravidla BIS (Reuters 16. 11.).",
   "news": [
+    {
+      "title": "↻ Pokračuje globální oslabení technologických akcií v Asii v návaznosti na americký výprodej a pravidlo BIS; nejde o novou hotovostní cenu NDX.",
+      "time": "17. 11. 2026, 02:22 CET",
+      "publishedAtPrague": "17. 11. 2026, 02:22",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-17/"
+    },
     {
       "title": "Výprodej amerických AI a polovodičových akcií; cash NDX v pondělí −2,67 %.",
       "time": "16. 11. 2026, závěr USA",
@@ -54,21 +63,21 @@
       "impact": "Pokles při závěru 16. 11. 2026, širší tlak na AI a čipy."
     }
   ],
-  "macro": "Výnos US10Y 16. 11. podle U.S. Treasury 5,12 % (13. 11. 5,15 %); riziková averze převážila nad mírným poklesem výnosu.",
-  "regulation": "BIS 16. 11. oznámil interim final rule o vzdáleném přístupu k americkým výkonným čipům; přímý finanční dopad zatím nevyčíslen.",
+  "macro": "US10Y 16. 11. 2026 5,12 % (13. 11. 5,15 %; U.S. Treasury). Pokles výnosů neodvrátil tlak na AI a čipy.",
+  "regulation": "BIS vydal 16. 11. interim final rule k vzdálenému přístupu k pokročilým čipům a serverům; právní účinnost a konkrétní finanční dopady nelze ze samotné tiskové zprávy odvozovat.",
   "technical": {
     "support": null,
     "resistance": null
   },
   "forecast": {
     "athReturnPercent": 5,
-    "athReason": "Subjektivní pravděpodobnost do 6 měsíců, beze změny; zvýšily by ji silné výsledky a výhled NVIDIA a stabilizace AI investic.",
+    "athReason": "Subjektivní 6měsíční pravděpodobnost, beze změny; zvýšil by ji silný výhled NVIDIA a stabilizace investic do AI.",
     "downside": "−5 až −10 %",
-    "downsideReason": "Subjektivní pokles v 1–3 měsících, beze změny; prohloubily by jej slabé výsledky či omezení AI investic."
+    "downsideReason": "Subjektivní rozpětí za 1–3 měsíce, beze změny; větší riziko při slabším výhledu a omezení financování AI."
   },
   "catalyst": {
-    "event": "Výsledky NVIDIA FY27 Q3 (očekávané zveřejnění), následně konferenční hovor",
-    "timePrague": "17. 11. 2026 přibl. 22:20 CET; hovor 23:00 CET"
+    "event": "NVIDIA FY27 Q3 – výsledky a konferenční hovor (oficiální IR)",
+    "timePrague": "17. 11. 2026 přibližně 22:20 CET; hovor 23:00 CET"
   },
   "archive": [
     {
@@ -78,6 +87,10 @@
     {
       "time": "17. 11. 2026 03:55 CET",
       "summary": "Cash NDX 27 197,15 b. (závěr 16. 11.), −2,67 %, −13,28 % od intradenního ATH; medvědí hodnocení →; bez zásadních novinek."
+    },
+    {
+      "time": "17. 11. 2026 04:55 CET",
+      "summary": "Cash NDX 27 197,15 b. (závěr 16. 11.), −2,67 %, −13,28 % od intradenního ATH; medvědí hodnocení →; bez zásadních novinek. Reuters 17. 11. potvrzuje pokračující tlak v Asii."
     }
   ],
   "history": [
@@ -146,6 +159,10 @@
     {
       "name": "Reuters — americký trh 16. 11. 2026",
       "url": "https://www.reuters.com/business/sp-500-nasdaq-futures-slide-nvidia-earnings-anthropic-debut-loom-2026-11-16/"
+    },
+    {
+      "name": "Reuters — Asie, technologické akcie 17. 11., 02:22 CET",
+      "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-17/"
     }
   ]
 }
