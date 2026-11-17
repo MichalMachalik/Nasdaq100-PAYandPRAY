@@ -1,18 +1,18 @@
 {
-  "updatedAtPrague": "17. 11. 2026 04:55 CET",
-  "marketStatus": "Cash trh USA uzavřen; poslední ověřený závěr 16. 11. 2026, 22:00 CET.",
+  "updatedAtPrague": "17. 11. 2026 05:56 CET",
+  "marketStatus": "Cash trh USA uzavřen; poslední ověřený závěr 16. 11. 2026 ve 22:00 CET.",
   "ndx": {
     "value": 27197.15,
     "changePercent": -2.67,
     "ath": 31361.37,
-    "asOf": "Cash NDX, závěr 16. 11. 2026, 22:00 CET; ATH intradenně 6. 10. 2026."
+    "asOf": "Cash NDX; závěr 16. 11. 2026 ve 22:00 CET. ATH 31 361,37 (intradenní, 6. 10. 2026)."
   },
   "sentiment": {
     "label": "Medvědí (hodnocení)",
-    "trend": "→ Beze změny proti 03:55 CET",
-    "reason": "Pondělní propad cash NDX −2,67 %, slabé AI/čipy a šíře trhu; během uzavření cash trhu žádné další srovnatelné obchodování. Reuters 16.–17. 11."
+    "trend": "→ Beze změny proti 04:55 CET",
+    "reason": "NDX 16. 11. pokles −2,67 %, SOX −5,3 %; slabost AI/čipů a tlak na technologie; srovnatelný cash trh od minulé kontroly neobchodoval."
   },
-  "driver": "🔴 Vysoký dopad: pondělní výprodej AI a polovodičů (SOX −5,3 %), nejistota před výsledky NVIDIA a po změně vedení; širší tlak po oznámení nového pravidla BIS (Reuters 16. 11.).",
+  "driver": "🔴 Vysoká důležitost: pondělní výprodej polovodičů (SOX −5,3 %) provázely obavy po odchodu vedení NVIDIA, před výsledky a po zpřísnění pravidel BIS (Reuters 16.–17. 11.). Nejde o prokázanou jedinou příčinu pohybu NDX.",
   "news": [
     {
       "title": "↻ Pokračuje globální oslabení technologických akcií v Asii v návaznosti na americký výprodej a pravidlo BIS; nejde o novou hotovostní cenu NDX.",
@@ -55,29 +55,29 @@
     {
       "ticker": "NVDA",
       "changePercent": -4.12,
-      "impact": "Pokles při závěru 16. 11. 2026, nejistota po změně vedení a před výsledky."
+      "impact": "Cash akcie, závěr 16. 11. 2026; Reuters/MarketWatch."
     },
     {
       "ticker": "AVGO",
       "changePercent": -3.92,
-      "impact": "Pokles při závěru 16. 11. 2026, širší tlak na AI a čipy."
+      "impact": "Cash akcie, závěr 16. 11. 2026; StockAnalysis/MarketWatch."
     }
   ],
-  "macro": "US10Y 16. 11. 2026 5,12 % (13. 11. 5,15 %; U.S. Treasury). Pokles výnosů neodvrátil tlak na AI a čipy.",
-  "regulation": "BIS vydal 16. 11. interim final rule k vzdálenému přístupu k pokročilým čipům a serverům; právní účinnost a konkrétní finanční dopady nelze ze samotné tiskové zprávy odvozovat.",
+  "macro": "US10Y: 5,12 % k 16. 11. 2026 (U.S. Treasury; 13. 11. 5,15 %); pokles výnosů nenahradil slabost AI/čipů.",
+  "regulation": "↻ BIS: prozatímní konečné pravidlo (interim final rule) oznámeno 16. 11. 2026 pro vzdálený přístup k pokročilým AI čipům/serverům; neoznačovat za zákon Kongresu, datum účinnosti a konkrétní finanční dopady z tiskové zprávy neurčeny.",
   "technical": {
     "support": null,
     "resistance": null
   },
   "forecast": {
     "athReturnPercent": 5,
-    "athReason": "Subjektivní 6měsíční pravděpodobnost, beze změny; zvýšil by ji silný výhled NVIDIA a stabilizace investic do AI.",
+    "athReason": "Subjektivní šance návratu na intradenní ATH do 6 měsíců, beze změny; zvýšil by ji silný výhled NVIDIA a stabilizace financování AI.",
     "downside": "−5 až −10 %",
-    "downsideReason": "Subjektivní rozpětí za 1–3 měsíce, beze změny; větší riziko při slabším výhledu a omezení financování AI."
+    "downsideReason": "Subjektivní riziko poklesu vůči poslednímu závěru za 1–3 měsíce, beze změny; zvýšilo by je zhoršení výhledu čipů a AI investic."
   },
   "catalyst": {
     "event": "NVIDIA FY27 Q3 – výsledky a konferenční hovor (oficiální IR)",
-    "timePrague": "17. 11. 2026 přibližně 22:20 CET; hovor 23:00 CET"
+    "timePrague": "17. 11. 2026 kolem 22:20 CET; konferenční hovor 23:00 CET"
   },
   "archive": [
     {
@@ -91,6 +91,10 @@
     {
       "time": "17. 11. 2026 04:55 CET",
       "summary": "Cash NDX 27 197,15 b. (závěr 16. 11.), −2,67 %, −13,28 % od intradenního ATH; medvědí hodnocení →; bez zásadních novinek. Reuters 17. 11. potvrzuje pokračující tlak v Asii."
+    },
+    {
+      "time": "17. 11. 2026 05:56 CET",
+      "summary": "Cash NDX 27 197,15 b. (závěr 16. 11.), −2,67 %, −13,28 % od intradenního ATH. Medvědí hodnocení →; bez zásadních novinek; Reuters potvrzuje pokračování tlaku v Asii."
     }
   ],
   "history": [
@@ -163,6 +167,14 @@
     {
       "name": "Reuters — Asie, technologické akcie 17. 11., 02:22 CET",
       "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-17/"
+    },
+    {
+      "name": "Nasdaq – oficiální přehled NDX 16. 11.",
+      "url": "https://indexes.nasdaqomx.com/Index/Overview/ndx"
+    },
+    {
+      "name": "StockAnalysis – AVGO 16. 11. 2026",
+      "url": "https://stockanalysis.com/stocks/avgo/history/"
     }
   ]
 }
