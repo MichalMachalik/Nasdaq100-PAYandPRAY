@@ -1,0 +1,9 @@
+{
+  "source": "Trading Economics",
+  "sourceUrls": {
+    "commodities": "https://tradingeconomics.com/commodities",
+    "currencies": "https://tradingeconomics.com/currencies"
+  },
+  "timestampKind": "retrieval; actual provider trading date shown on each asset",
+  "quotes": []
+}
