@@ -259,6 +259,42 @@ body{background:#fff;color:#242424;font:17px/1.6 Georgia,"Times New Roman",serif
 .history-entry .history-summary{display:inline;overflow-wrap:anywhere}
 .history-entry a{color:#666;font:12px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif;text-decoration:underline;text-underline-offset:3px;text-decoration-color:#aaa}
 .history-entry time{display:block;margin:0 0 3px}
+
+/* Futures hero: centre price and percentage as one balanced group. */
+.futures-hero .headline{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-wrap:nowrap;
+  gap:clamp(14px,3.8vw,34px);
+  width:100%;
+  margin:11px auto 9px;
+}
+.futures-hero .headline>.metric,
+.futures-hero .headline>.side,
+.futures-hero .headline .small-stat{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex:0 0 auto;
+  min-width:0;
+}
+.futures-hero .headline>.side{gap:0}
+.futures-hero #futures-price{
+  font-size:clamp(32px,6.5vw,48px);
+  line-height:1.08;
+  margin:0;
+}
+.futures-hero #futures-change{
+  font-size:clamp(19px,3.7vw,25px);
+  line-height:1.08;
+  margin:0;
+}
+@media(max-width:650px){
+  .futures-hero .headline{gap:clamp(10px,3vw,20px)}
+  .futures-hero #futures-price{font-size:clamp(25px,8vw,38px)}
+  .futures-hero #futures-change{font-size:clamp(16px,5vw,21px)}
+}
 </style></head>
 <body><div class="wrap">
 <header class="header"><div class="brand"><svg class="aardvark-mark" viewBox="0 0 100 73" role="img" aria-label="Logo Aardvarkland" xmlns="http://www.w3.org/2000/svg">
