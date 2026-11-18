@@ -251,6 +251,11 @@ body{background:#fff;color:#242424;font:17px/1.6 Georgia,"Times New Roman",serif
 .top10-meta a{color:#777;text-decoration:underline;text-underline-offset:3px}
 @media(max-width:600px){.top10-table{font-size:12px}.top10-table td{padding:9px 5px}.top10-name{min-width:125px;gap:7px}.top10-logo,.top10-fallback{width:24px;height:24px;flex-basis:24px}.top10-company{font-size:12px}.top10-table th{padding:7px 5px}}
 .signed-up{color:var(--green);font-weight:600}.signed-down{color:var(--red);font-weight:600}
+
+/* Editorial sources: a separate quiet line below each news item. */
+.news-links{display:flex;flex-wrap:wrap;align-items:center;gap:3px 14px;margin-top:5px;font:12px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+.news-links a{display:inline-block;color:#727272;text-decoration:underline;text-underline-offset:3px;text-decoration-color:#b0b0b0}
+.news-links a:hover{color:#242424}
 </style></head>
 <body><div class="wrap">
 <header class="header"><div class="brand"><svg class="aardvark-mark" viewBox="0 0 100 73" role="img" aria-label="Logo Aardvarkland" xmlns="http://www.w3.org/2000/svg">
@@ -334,7 +339,7 @@ function rows(id,items,make){let root=$(id);if(!root)return;root.replaceChildren
 
 // Aktualni TOP 5: pouze poslednich osm hodin, potvrzeny cas publikace a vazba na NDX.
 const NEWS_WINDOW_MS=24*60*60*1000;
-const NEWS_HALF_LIFE_MS=12*60*60*1000;
+const NEWS_HALF_LIFE_MS=24*60*60*1000;
 const newsAdjustedScore=(base,ageMs)=>Math.round(base*Math.pow(0.5,ageMs/NEWS_HALF_LIFE_MS));
 const pragueClock=new Intl.DateTimeFormat('en-GB',{
   timeZone:'Europe/Prague',year:'numeric',month:'2-digit',
@@ -388,13 +393,27 @@ function displayTopNews(){
     const el=document.createElement('div');el.className='news';
     const stamp=document.createElement('time');
     stamp.textContent='Publikováno: '+x.item.publishedAtPrague+' Praha · Skóre '+x.score+'/100';
-    stamp.title='Význam '+x.base+'/100; stáří '+(x.ageMs/3600000).toFixed(1)+' h; poločas skóre 12 h';
+    stamp.title='Význam '+x.base+'/100; stáří '+(x.ageMs/3600000).toFixed(1)+' h; poločas skóre 24 h';
     el.append(stamp);
     const content=document.createElement('span');
     content.className='sentence-lines';
     renderSigned(content,sentenceBreaks(x.item.title));
     el.append(content);
-    if(x.item.url)el.append(document.createTextNode(' · '),link(x.item.url,safe(x.item.source,'Zdroj')));
+    // Zdrojové odkazy jsou na samostatném řádku pod titulkem.
+    const references=Array.isArray(x.item.sourceLinks)&&x.item.sourceLinks.length
+      ?x.item.sourceLinks.slice(0,3)
+      :(x.item.url?[{url:x.item.url,label:String(x.item.source||'Zdroj').split(';')[0].trim()}]:[]);
+    if(references.length){
+      const sources=document.createElement('div');
+      sources.className='news-links';
+      references.forEach(ref=>{
+        if(ref?.url){
+          const a=link(ref.url,safe(ref.label||ref.source||'Zdroj'));
+          sources.append(a);
+        }
+      });
+      if(sources.childNodes.length)el.append(sources);
+    }
     return el;
   });
   if(top.length===0){const el=$('news');el.className='empty';el.textContent='Bez relevantních zpráv za posledních 24 hodin.';}
