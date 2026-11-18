@@ -405,6 +405,28 @@ body :is(h1,h2,h3,p,div,span,small,strong,button,a,table,th,td,time,summary,labe
   .market-icon{flex-basis:26px}
   .market-symbol{gap:7px}
 }
+
+/* Market tables: no date column, timestamps and sources live below each table. */
+.market-meta,.top10-meta{
+  display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;
+  gap:8px;margin-top:10px;color:#777;
+  font:11px/1.5 var(--site-font,system-ui,sans-serif)
+}
+.market-meta a{color:#777;text-decoration:underline;text-underline-offset:3px}
+.market-table td:last-child{font-size:13px}
+.market-table .market-up,.market-table .market-down{font-weight:650}
+.economy-scroll{overflow-x:auto;max-width:100%}
+.economy-table{width:100%;border-collapse:collapse;font:13px/1.45 var(--site-font,system-ui,sans-serif);font-variant-numeric:tabular-nums}
+.economy-table th{font-size:11px;font-weight:600;color:#777;padding:8px 8px 10px;text-align:right;border-bottom:1px solid #e9e9e9;white-space:nowrap}
+.economy-table td{padding:10px 8px;text-align:right;border-bottom:1px solid #f0f0f0;white-space:nowrap}
+.economy-table th:first-child,.economy-table td:first-child{text-align:left}
+.economy-table td:first-child{font-weight:650}
+.economy-table a{color:#282828;text-decoration:none;text-underline-offset:3px}
+.economy-table a:hover{text-decoration:underline}
+.economy-main{font-weight:700}
+.economy-positive{color:var(--green)}.economy-negative{color:var(--red)}
+.economy-caption{font-size:11px;color:#777}
+@media(max-width:580px){.economy-table{font-size:12px}.economy-table td,.economy-table th{padding:9px 5px}}
 </style></head>
 <body><div class="wrap">
 <header class="header"><div class="brand"><svg class="aardvark-mark" viewBox="0 0 100 73" role="img" aria-label="Logo Aardvarkland" xmlns="http://www.w3.org/2000/svg">
@@ -429,6 +451,21 @@ body :is(h1,h2,h3,p,div,span,small,strong,button,a,table,th,td,time,summary,labe
 <section class="section"><h2 class="sectiontitle">Celkový obraz</h2><div class="flowline"><div><div id="sentiment" class="status neutral">Čeká na vyhodnocení</div><p id="sentiment-reason" class="notice">Průběžné hodnocení trhu.</p></div><div><div class="mini-title">Nejvýznamnější hybatel</div><div id="driver" class="text-body empty">Zatím nezveřejněno</div></div></div></section>
 <section class="section"><h2 class="sectiontitle">TOP 5 zpráv <small>Nasdaq-100 · význam × aktuálnost · max. 24 h</small></h2><div id="news" class="empty">Čeká na první report.</div></section>
 <section class="section"><h2 class="sectiontitle">Makroekonomika</h2><div id="macro" class="empty">Nejsou zveřejněna data</div></section>
+
+<section class="section" id="rates-section">
+  <h2 class="sectiontitle">Sazby centrálních bank</h2>
+  <div class="economy-scroll"><table class="economy-table" aria-label="Fed ECB ČNB klíčové úrokové sazby">
+    <thead><tr><th>Banka</th><th>Sazba</th><th>Platí od</th></tr></thead>
+    <tbody id="policy-rates"><tr><td colspan="3">Načítání…</td></tr></tbody>
+  </table></div>
+</section>
+<section class="section" id="gdp-section">
+  <h2 class="sectiontitle">HDP <small>y/y · poslední kvartál</small></h2>
+  <div class="economy-scroll"><table class="economy-table" aria-label="Meziroční reálné HDP posledního dostupného kvartálu">
+    <thead><tr><th>Region</th><th>HDP y/y</th><th>Období</th><th>Publ.</th></tr></thead>
+    <tbody id="quarterly-gdp"><tr><td colspan="4">Načítání…</td></tr></tbody>
+  </table></div>
+</section>
 <section class="section"><h2 class="sectiontitle">Výhled</h2><div class="forecastgrid"><div class="forecast"><div class="label">Návrat na historické maximum / 6 měsíců</div><strong id="forecast-ath" class="green">—</strong><div id="forecast-ath-reason" class="detail">Čeká na aktualizaci</div></div><div class="forecast"><div class="label">Další možný propad / 1–3 měsíce</div><strong id="forecast-down" class="red">—</strong><div id="forecast-down-points" class="forecast-points">—</div><div id="forecast-down-reason" class="detail">Čeká na aktualizaci</div></div></div><div style="margin-top:22px"><div class="mini-title">Nejbližší katalyzátor</div><div id="catalyst" class="empty">Zatím nezveřejněno</div></div></section>
 <section class="section" id="top10-section"><h2 class="sectiontitle">Top 10 Nasdaq-100 <small>podle tržní kapitalizace</small></h2>
 <div class="top10-scroll"><table class="top10-table" aria-label="Deset největších společností Nasdaq-100 podle tržní kapitalizace">
@@ -441,17 +478,18 @@ body :is(h1,h2,h3,p,div,span,small,strong,button,a,table,th,td,time,summary,labe
 <section class="section" id="commodities-section">
   <h2 class="sectiontitle">Komodity</h2>
   <div class="market-scroll"><table class="market-table" aria-label="WTI, Brent, Natural Gas, Gasoline, EU Gas a zlato">
-    <thead><tr><th>Instrument</th><th>Cena</th><th>Dnes</th><th>Datum</th></tr></thead>
-    <tbody id="commodity-rows"><tr><td colspan="4">Načítání kotací…</td></tr></tbody>
+    <thead><tr><th>Instrument</th><th>Cena</th><th>Dnes</th></tr></thead>
+    <tbody id="commodity-rows"><tr><td colspan="3">Načítání kotací…</td></tr></tbody>
   </table></div>
+  <div class="market-meta"><span id="commodities-updated">Čeká na data</span><a href="https://tradingeconomics.com/commodities" target="_blank" rel="noopener noreferrer">Trading Economics</a></div>
 </section>
 <section class="section" id="fx-section">
   <h2 class="sectiontitle">FX</h2>
   <div class="market-scroll"><table class="market-table" aria-label="Měnové páry EUR/USD, EUR/CZK a USD/CZK">
-    <thead><tr><th>Instrument</th><th>Kurz</th><th>Dnes</th><th>Datum</th></tr></thead>
-    <tbody id="fx-rows"><tr><td colspan="4">Načítání kurzu…</td></tr></tbody>
+    <thead><tr><th>Instrument</th><th>Kurz</th><th>Dnes</th></tr></thead>
+    <tbody id="fx-rows"><tr><td colspan="3">Načítání kurzu…</td></tr></tbody>
   </table></div>
-  <div class="market-footer"><a href="https://tradingeconomics.com/commodities" target="_blank" rel="noopener noreferrer">Komodity</a><span>·</span><a href="https://tradingeconomics.com/currencies" target="_blank" rel="noopener noreferrer">Měny</a><span id="market-checked"></span></div>
+  <div class="market-meta"><span id="fx-updated">Čeká na data</span><a href="https://tradingeconomics.com/currencies" target="_blank" rel="noopener noreferrer">Trading Economics</a></div>
 </section>
 
 
@@ -594,7 +632,7 @@ function displayTopNews(){
 
 function render(d){d=d||{};set('updated',d.updatedAtPrague?safe(d.updatedAtPrague):'Čeká na data');let n=d.ndx||{};// Cash NDX zůstává výhradně ve zdrojovém reportu pro dlouhodobé odhady.
 
-let s=d.sentiment||{};set('sentiment',String(s.label||'').replace(/\s*\(subjektivní hodnocení\)/giu,'').trim()||'Čeká na vyhodnocení');$('sentiment').className='status '+(/medvěd|bear|zhorš/i.test(s.label||'')?'red':/býč|bull/i.test(s.label||'')?'green':'neutral');setSentences('sentiment-reason',s.reason||'Zatím bez vyhodnocení');setSentences('driver',d.driver||'Zatím nezveřejněno');$('driver').className=d.driver?'':'empty';
+let s=d.sentiment||{};set('sentiment',String(s.label||'').replace(/\s*\(subjektivní hodnocení\)/giu,'').trim()||'Čeká na vyhodnocení');$('sentiment').className='status '+(/medvěd|bear|zhorš/i.test(s.label||'')?'red':/býč|bull/i.test(s.label||'')?'green':'neutral');setSentences('sentiment-reason',cleanSentimentText(s.reason||'Zatím bez vyhodnocení'));setSentences('driver',d.driver||'Zatím nezveřejněno');$('driver').className=d.driver?'':'empty';
 latestNews=Array.isArray(d.news)?d.news:[];
 displayTopNews();
 
@@ -650,6 +688,79 @@ const MARKET_ICONS={
   "USD/CZK": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 32 32\" aria-hidden=\"true\"><rect width=\"32\" height=\"32\" rx=\"9\" fill=\"#F2F8F5\"/><circle cx=\"12\" cy=\"13.5\" r=\"8.8\" fill=\"#18865B\"/><text x=\"12\" y=\"18.1\" font-family=\"Arial,sans-serif\" font-size=\"14.8\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#FFFFFF\">$</text><circle cx=\"22\" cy=\"20.5\" r=\"8\" fill=\"#FFFFFF\" stroke=\"#F2F8F5\" stroke-width=\"1.3\"/><clipPath id=\"czk-uc\"><circle cx=\"22\" cy=\"20.5\" r=\"7.4\"/></clipPath><g clip-path=\"url(#czk-uc)\"><rect x=\"14\" y=\"12.5\" width=\"16\" height=\"8\" fill=\"#FFFFFF\"/><rect x=\"14\" y=\"20.5\" width=\"16\" height=\"9\" fill=\"#D84250\"/><path d=\"M14 12.5v17l9-8.5Z\" fill=\"#275DA8\"/></g></svg>"
 };
 
+
+const pragueShortClock=new Intl.DateTimeFormat('en-GB',{
+  timeZone:'Europe/Prague',year:'numeric',month:'2-digit',
+  day:'2-digit',hour:'2-digit',minute:'2-digit',hourCycle:'h23'
+});
+function fmtShortPrague(utc){
+  const instant=Date.parse(String(utc||''));
+  if(!Number.isFinite(instant))return '';
+  const parts=Object.fromEntries(pragueShortClock.formatToParts(new Date(instant))
+      .filter(x=>x.type!=='literal').map(x=>[x.type,x.value]));
+  return parts.day+'. '+parts.month+'. '+parts.hour+':'+parts.minute;
+}
+function fmtShortDate(iso){
+  const parts=String(iso||'').match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  return parts?Number(parts[3])+'. '+Number(parts[2])+'. '+parts[1]:'—';
+}
+function cleanSentimentText(reason){
+  return String(reason||'').split(/\s*;\s*/).filter(part=>
+    !/\b(?:NQ(?:=F|[HMUZ]\d{2})|Nasdaq-100 futures|E-mini NQ)\b/i.test(part)
+  ).join('; ');
+}
+function economyLink(value,url){
+  if(typeof url==='string'&&/^https:\/\//.test(url)){
+    const a=document.createElement('a');a.href=url;a.rel='noopener noreferrer';a.target='_blank';a.textContent=value;return a;
+  }
+  return document.createTextNode(value);
+}
+function showEconomyRows(id,items,kind){
+  const target=$(id);if(!target)return;
+  const frag=document.createDocumentFragment();
+  for(const x of items.slice(0,3)){
+    const tr=document.createElement('tr');
+    const name=document.createElement('td');
+    name.append(economyLink(String(x.id||'—'),x.url));
+    const price=document.createElement('td');price.className='economy-main';
+    const period=document.createElement('td');
+    if(kind==='rates'){
+      if(Number.isFinite(x.lowerPercent)&&Number.isFinite(x.upperPercent)){
+        price.textContent=fmt(x.lowerPercent)+'–'+fmt(x.upperPercent)+' %';
+      }else price.textContent=Number.isFinite(x.valuePercent)?fmt(x.valuePercent)+' %':'—';
+      period.textContent=fmtShortDate(x.effectiveDate);
+      tr.append(name,price,period);
+    }else{
+      if(Number.isFinite(x.valuePercent)){
+        price.textContent=fmt(Math.abs(x.valuePercent))+' %';
+        price.classList.add(x.valuePercent>0?'economy-positive':x.valuePercent<0?'economy-negative':'');
+      }else price.textContent='—';
+      period.textContent=String(x.period||'').replace(/^(\d{4})-Q(\d)$/,'Q$2 $1');
+      const pub=document.createElement('td');pub.className='economy-caption';pub.textContent=fmtShortDate(x.releaseDate);
+      tr.append(name,price,period,pub);
+    }
+    frag.append(tr);
+  }
+  if(!frag.childNodes.length){
+    const tr=document.createElement('tr'),td=document.createElement('td');
+    td.colSpan=kind==='rates'?3:4;td.textContent='Data nedostupná';tr.append(td);frag.append(tr);
+  }
+  target.replaceChildren(frag);
+}
+async function loadEconomy(){
+  try{
+    const res=await fetch('./data/economy.json?t='+Date.now(),{cache:'no-store'});
+    if(!res.ok)throw Error('Economy data unavailable');
+    const d=await res.json();
+    if(!Array.isArray(d.rates)||!Array.isArray(d.gdp))throw Error('Incomplete economy data');
+    showEconomyRows('policy-rates',d.rates,'rates');
+    showEconomyRows('quarterly-gdp',d.gdp,'gdp');
+  }catch(err){
+    showEconomyRows('policy-rates',[],'rates');
+    showEconomyRows('quarterly-gdp',[],'gdp');
+  }
+}
+
 function renderMarketRows(rootId,ids,quotes){
   const tbody=$(rootId);if(!tbody)return;
   const frag=document.createDocumentFragment();
@@ -670,20 +781,17 @@ function renderMarketRows(rootId,ids,quotes){
     first.append(symbol);
     const value=document.createElement('td');
     const movement=document.createElement('td');
-    const dated=document.createElement('td');
     if(q&&Number.isFinite(q.price)&&q.price>0&&Number.isFinite(q.changePercent)&&/^\d{4}-\d{2}-\d{2}$/.test(q.quoteDateISO||'')){
       value.textContent=q.price.toLocaleString('cs-CZ',{minimumFractionDigits:decimals,maximumFractionDigits:decimals});
       const unit=document.createElement('span');unit.className='market-unit';unit.textContent=q.unit||'';
       value.append(unit);
       movement.textContent=Math.abs(q.changePercent).toLocaleString('cs-CZ',{minimumFractionDigits:2,maximumFractionDigits:2})+' %';
       movement.className=q.changePercent>0?'market-up':q.changePercent<0?'market-down':'';
-      const parts=q.quoteDateISO.split('-');
-      dated.textContent=parts[2]+'. '+parts[1]+'. '+parts[0];
-      dated.title='Datum kotace u zdroje';
+      tr.title='Trading Economics · datum kotace '+q.quoteDateISO;
     }else{
-      value.textContent='—';movement.textContent='—';dated.textContent='—';
+      value.textContent='—';movement.textContent='—';
     }
-    tr.append(first,value,movement,dated);frag.append(tr);
+    tr.append(first,value,movement);frag.append(tr);
   }
   tbody.replaceChildren(frag);
 }
@@ -695,12 +803,13 @@ async function loadMarkets(){
     if(!Array.isArray(data.quotes))throw Error('Invalid quote data');
     renderMarketRows('commodity-rows',MARKET_ASSETS.slice(0,6).map(x=>x[0]),data.quotes);
     renderMarketRows('fx-rows',['EUR/USD','EUR/CZK','USD/CZK'],data.quotes);
-    const checked=$('market-checked');
-    if(checked)checked.textContent=data.fetchedAtPrague?'Načteno '+data.fetchedAtPrague+' Praha':'';
+    const checked=fmtShortPrague(data.fetchedAtUtc);
+    set('commodities-updated',checked?'Načteno '+checked:'Čas načtení neověřen');
+    set('fx-updated',checked?'Načteno '+checked:'Čas načtení neověřen');
   }catch(err){
     renderMarketRows('commodity-rows',MARKET_ASSETS.slice(0,6).map(x=>x[0]),[]);
     renderMarketRows('fx-rows',['EUR/USD','EUR/CZK','USD/CZK'],[]);
-    const checked=$('market-checked');if(checked)checked.textContent='Data nedostupná';
+    set('commodities-updated','Data nedostupná');set('fx-updated','Data nedostupná');
   }
 }
 
@@ -793,7 +902,7 @@ document.addEventListener('keydown',event=>{
     historyMenu.open=false;historyMenu.querySelector('summary')?.focus();
   }
 });
-function refreshAll(){load();loadFutures();loadTop10();loadMarkets();}
+function refreshAll(){load();loadFutures();loadTop10();loadMarkets();loadEconomy();}
 refreshAll();
 let lastDataCheck=Date.now();
 setInterval(()=>{
