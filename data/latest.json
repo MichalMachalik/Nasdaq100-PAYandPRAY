@@ -1,49 +1,19 @@
 {
-  "updatedAtPrague": "18. 11. 2026 22:04 CET",
-  "marketStatus": "Cash uzavřen; poslední ověřený snímek NDX po 22:00 CET (18. 11. 2026).",
+  "updatedAtPrague": "18. 11. 2026 23:03 CET",
+  "marketStatus": "Cash uzavřen; závěr 18. 11. 2026 v 22:00 CET.",
   "ndx": {
     "value": 27116.26,
     "changePercent": 0.42,
     "ath": 31361.37,
-    "asOf": "18. 11. 2026, 22:02:18 CET – cash NDX, Google Finance (16:02:18 EST); poslední ověřená hodnota po seanci."
+    "asOf": "18. 11. 2026, 22:00 CET – cash NDX, poslední závěr (Google Finance / Reuters)."
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "↗ mírné zlepšení vůči 18. 11. 2026 21:04 CET",
-    "reason": "NDX +0,42 % (22:02 CET) vs. +0,28 % (20:41 CET); SOX +0,10 %; NVDA −2,72 % (21:40 CET)."
+    "trend": "→ beze změny oproti 18. 11. 2026 22:04 CET",
+    "reason": "NDX +0,42 %; SOX +0,10 %; NVDA −2,89 %; AVGO +3,64 %."
   },
-  "driver": "FOMC: většina účastníků upozornila na rychlý růst AI dluhu a neprůhledné financování; NVDA Q4 výhled 130 mld. USD.",
+  "driver": "FOMC: rizika AI dluhu a financování datacenter; Anthropic IPO 83 USD, compute závazky téměř 900 mld. USD s AMZN a GOOGL.",
   "news": [
-    {
-      "title": "NVIDIA Q3 FY2027: tržby 115,8 mld. USD vs. kons. 109,1 (beat 6,1 %). Upravený EPS 2,68 USD vs. kons. 2,47 (beat 8,5 %). Výhled Q4 130 mld. USD vs. kons. 125,25 (beat 3,8 %).",
-      "time": "17. 11. 2026, 21:24 UTC",
-      "publishedAtPrague": "17. 11. 2026, 22:24",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "earnings",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/nvidia-forecasts-quarterly-revenue-above-estimates-first-report-since-huangs-2026-11-17/",
-      "importanceScore": 95,
-      "ndxRelevant": true,
-      "eventKey": "nvidia-q3-fy2027-results",
-      "consensus": {
-        "revenueBillionUsd": 109.1,
-        "adjustedEpsUsd": 2.47,
-        "nextQuarterRevenueBillionUsd": 125.25,
-        "method": "LSEG consensus; Reuters",
-        "checkedAtPrague": "18. 11. 2026"
-      },
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/business/nvidia-forecasts-quarterly-revenue-above-estimates-first-report-since-huangs-2026-11-17/"
-        },
-        {
-          "label": "NVIDIA IR",
-          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027"
-        }
-      ]
-    },
     {
       "title": "FOMC zápis 27.–28. 10.: téměř všichni očekávají další zvýšení sazeb; Fed upozornil na neprůhledné financování AI a datacenter.",
       "time": "18. 11. 2026, 20:00 CET",
@@ -121,6 +91,25 @@
       ]
     },
     {
+      "title": "Anthropic IPO: cena 83 USD vs. původní pásmo 70–78 USD; závazky na výpočetní kapacitu téměř 900 mld. USD zahrnují AMZN a GOOGL.",
+      "time": "18. 11. 2026, 21:26 UTC",
+      "publishedAtPrague": "18. 11. 2026, 22:26",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "ai_infrastructure",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/legal/transactional/anthropic-prices-blockbuster-ipo-83-share-source-says-2026-11-18/",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/legal/transactional/anthropic-prices-blockbuster-ipo-83-share-source-says-2026-11-18/"
+        }
+      ],
+      "eventKey": "anthropic-ipo-priced-83-20261118",
+      "ndxRelevant": true,
+      "importanceScore": 78
+    },
+    {
       "title": "Představenstvo NVIDIA potvrdilo, že Jensena Huanga do funkce CEO nevrátí.",
       "time": "17. 11. 2026, 22:12 UTC",
       "publishedAtPrague": "17. 11. 2026, 23:12",
@@ -151,25 +140,6 @@
       "eventKey": "nasdaq-chip-premarket-nvda-guidance-20261118",
       "ndxRelevant": true,
       "importanceScore": 76
-    },
-    {
-      "title": "WSJ přes Reuters: SEC podle zdrojů prověřuje NVIDIA po odchodu Jensena Huanga.",
-      "time": "17. 11. 2026, 21:08 UTC",
-      "publishedAtPrague": "17. 11. 2026, 22:08",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "corporate_governance",
-      "source": "Reuters (zpráva WSJ)",
-      "url": "https://www.reuters.com/technology/nvidia-facing-sec-probe-after-huangs-resignation-wsj-reports-2026-11-17/",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/technology/nvidia-facing-sec-probe-after-huangs-resignation-wsj-reports-2026-11-17/"
-        }
-      ],
-      "importanceScore": 74,
-      "ndxRelevant": true,
-      "eventKey": "nvidia-sec-wsj-report-20261117"
     },
     {
       "title": "FedWatch: pravděpodobnost prosincového zvýšení sazeb o 25 bb dosahuje 95,7 %; DXY 103,65.",
@@ -251,16 +221,16 @@
   "leaders": [
     {
       "ticker": "NVDA",
-      "changePercent": -2.72,
-      "impact": "Cash 18. 11., Google Finance 21:40:07 CET."
+      "changePercent": -2.89,
+      "impact": "Cash závěr 18. 11., 22:00 CET, Google Finance."
     },
     {
       "ticker": "AVGO",
-      "changePercent": 3.65,
-      "impact": "Cash 18. 11., Google Finance 21:42:24 CET."
+      "changePercent": 3.64,
+      "impact": "Cash závěr 18. 11., 22:00 CET, Google Finance."
     }
   ],
-  "macro": "US10Y | 18. 11. 20:59: 5,066 % | 17. 11.: 5,103 % | −3,7 bb",
+  "macro": "US10Y | 18. 11.: 5,065 % | 17. 11.: 5,103 % | −3,8 bb",
   "regulation": null,
   "technical": {
     "support": null,
@@ -270,7 +240,7 @@
     "athReturnPercent": 12,
     "athReason": "Beze změny: NVDA Q4 výhled 130 mld. USD; podmínka stabilizace AI financování a sazeb.",
     "downside": "−5 až −10 %",
-    "downsideReason": "Fed: růst AI dluhu; NVDA −2,72 %; scénář napětí financování datacenter."
+    "downsideReason": "Fed: rizika AI dluhu; NVDA −2,89 %; scénář omezení financování datacenter."
   },
   "catalyst": {
     "event": "USA: týdenní žádosti o podporu v nezaměstnanosti",
@@ -892,6 +862,24 @@
           "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm"
         }
       ]
+    },
+    {
+      "time": "18. 11. 2026 23:03 CET",
+      "summary": "NDX cash 27 116,26 b. (+0,42 %, závěr 22:00 CET), −13,54 % od historického maxima; NVDA −2,89 %, AVGO +3,64 %. Anthropic IPO 83 USD, compute závazky 900 mld. USD s AMZN a GOOGL.",
+      "sourceLinks": [
+        {
+          "label": "Google Finance NDX",
+          "url": "https://www.google.com/finance/quote/NDX:INDEXNASDAQ?hl=en"
+        },
+        {
+          "label": "Google Finance NVDA",
+          "url": "https://www.google.com/finance/quote/NVDA:NASDAQ?hl=en"
+        },
+        {
+          "label": "Reuters Anthropic",
+          "url": "https://www.reuters.com/legal/transactional/anthropic-prices-blockbuster-ipo-83-share-source-says-2026-11-18/"
+        }
+      ]
     }
   ],
   "history": [
@@ -969,6 +957,10 @@
     },
     {
       "time": "18. 11. 2026 22:04 CET",
+      "ndx": 27116.26
+    },
+    {
+      "time": "18. 11. 2026 23:03 CET",
       "ndx": 27116.26
     }
   ],
@@ -1340,6 +1332,14 @@
     {
       "name": "US jobless claims calendar",
       "url": "https://www.financecalendar.com/event/us-initial-jobless-claims-november-19-2026/"
+    },
+    {
+      "name": "Reuters Anthropic",
+      "url": "https://www.reuters.com/legal/transactional/anthropic-prices-blockbuster-ipo-83-share-source-says-2026-11-18/"
+    },
+    {
+      "name": "Investing US10Y",
+      "url": "https://ph.investing.com/rates-bonds/u.s.-10-year-bond-yield-historical-data"
     }
   ]
 }
