@@ -295,6 +295,51 @@ body{background:#fff;color:#242424;font:17px/1.6 Georgia,"Times New Roman",serif
   .futures-hero #futures-price{font-size:clamp(25px,8vw,38px)}
   .futures-hero #futures-change{font-size:clamp(16px,5vw,21px)}
 }
+
+/* Futures quote: whole block centered, with price and delta forming one optical unit. */
+.futures-hero{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  width:100%;
+}
+.futures-hero .hero-label,
+.futures-hero .futures-time,
+.futures-hero .futures-provider{
+  text-align:center;
+  max-width:100%;
+}
+.futures-hero .headline{
+  display:flex;
+  width:fit-content;
+  max-width:100%;
+  margin:13px auto 10px;
+  align-items:center;
+  justify-content:center;
+  gap:clamp(12px,3vw,26px);
+  flex-wrap:nowrap;
+}
+.futures-hero .headline>.metric,
+.futures-hero .headline>.side,
+.futures-hero .headline .small-stat{
+  align-self:center;
+  align-items:center;
+  justify-content:center;
+  margin:0;
+}
+.futures-hero #futures-price,
+.futures-hero #futures-change{
+  display:block;
+  margin:0;
+  line-height:1.1;
+}
+.futures-hero .futures-provider{margin-top:5px}
+@media(max-width:390px){
+  .futures-hero .headline{gap:10px;margin:11px auto 9px}
+  .futures-hero #futures-price{font-size:clamp(24px,7vw,32px)}
+  .futures-hero #futures-change{font-size:clamp(16px,4.7vw,19px)}
+}
 </style></head>
 <body><div class="wrap">
 <header class="header"><div class="brand"><svg class="aardvark-mark" viewBox="0 0 100 73" role="img" aria-label="Logo Aardvarkland" xmlns="http://www.w3.org/2000/svg">
