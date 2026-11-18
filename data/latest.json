@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "18. 11. 2026 13:09 CET",
+  "updatedAtPrague": "18. 11. 2026 13:59 CET",
   "marketStatus": "Cash NDX uzavřen; poslední závěr 17. 11. 2026, 22:00 CET.",
   "ndx": {
     "value": 27001.78,
@@ -9,10 +9,10 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→ beze změny proti 18. 11. 12:03 CET",
-    "reason": "NDX 17. 11. −0,72 %; NVDA premarket +3,5 %, AVGO +2,9 %."
+    "trend": "→ beze změny proti 18. 11. 13:05 CET",
+    "reason": "NDX 17. 11. −0,72 %; NVDA premarket 18. 11. +2,7 % k 12:47 CET."
   },
-  "driver": "NVDA Q4 výhled 130 mld. USD vs. kons. 125,25 mld. USD (beat 3,8 %); premarket NVDA +3,5 %, AVGO +2,9 %.",
+  "driver": "NVDA Q4 FY2027 výhled tržeb 130 mld. USD vs. kons. 125,25 mld. USD (beat 3,8 %).",
   "news": [
     {
       "title": "NVIDIA Q3 FY2027: tržby 115,8 mld. USD vs. kons. 109,1 (beat 6,1 %). Upravený EPS 2,68 USD vs. kons. 2,47 (beat 8,5 %). Výhled Q4 130 mld. USD vs. kons. 125,25 (beat 3,8 %).",
@@ -147,30 +147,6 @@
       "eventKey": "ny-fed-williams-rate-outlook-20261117"
     },
     {
-      "title": "St. Louis Fed / Musalem: očekává několik zvýšení sazeb do jara 2027 při inflaci nad 3 %.",
-      "time": "17. 11. 2026, 12:32 UTC – původní článek Reuters; čas projevu samostatně neověřen",
-      "publishedAtPrague": "17. 11. 2026, 13:32",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "source": "Reuters – Musalem/Fed",
-      "url": "https://www.reuters.com/business/feds-musalem-us-likely-needs-several-rate-hikes-by-spring-control-inflation-2026-11-17/",
-      "importanceScore": 68,
-      "ndxRelevant": true,
-      "eventKey": "stl-fed-musalem-20261117"
-    },
-    {
-      "title": "Čína (MOFCOM): nesouhlas s americkými omezeními vzdáleného přístupu k AI čipům; hrozba obchodních protiopatření.",
-      "time": "17. 11. 2026, 20:20 čínského času (CST, UTC+8) – původní publikace ministerstva; Reuters zprávu zveřejnil 15:44 CET",
-      "publishedAtPrague": "17. 11. 2026, 13:20",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "source": "Ministerstvo obchodu ČLR (MOFCOM), původní prohlášení",
-      "url": "https://www.mofcom.gov.cn/syxwfb/art/2026/art_3a69f2058b724dd39cd8ecddcaa4ab87.html",
-      "importanceScore": 68,
-      "ndxRelevant": true,
-      "eventKey": "mofcom-ai-remote-access-20261117"
-    },
-    {
       "title": "BLS: dovozní ceny USA +1,1 % m/m oproti tržnímu odhadu +0,7 %; dovážené kapitálové vybavení +1,5 %.",
       "time": "17. 11. 2026, 08:30 EST; plánované originální zveřejnění BLS",
       "publishedAtPrague": "17. 11. 2026, 14:30",
@@ -299,16 +275,16 @@
   "leaders": [
     {
       "ticker": "NVDA",
-      "changePercent": 3.5,
-      "impact": "18. 11. premarket, Reuters publikováno 12:12 CET."
+      "changePercent": 2.7,
+      "impact": "18. 11. premarket, 12:47 CET dle Reuters."
     },
     {
       "ticker": "AVGO",
       "changePercent": 2.9,
-      "impact": "18. 11. premarket, Reuters publikováno 12:12 CET."
+      "impact": "18. 11. premarket, Reuters 12:12 CET."
     }
   ],
-  "macro": "US10Y | 18. 11.: 5,096 % | 17. 11.: 5,12 % | −2,4 bb",
+  "macro": "US10Y | 18. 11.: 5,100 % | 17. 11.: 5,120 % | −2,0 bb",
   "regulation": null,
   "technical": {
     "support": null,
@@ -316,9 +292,9 @@
   },
   "forecast": {
     "athReturnPercent": 12,
-    "athReason": "Beze změny; podmínkou návratu je stabilizace AI financování a růst tržeb NVDA.",
+    "athReason": "Stabilizace financování AI infrastruktury a udržení růstu NVDA; beze změny.",
     "downside": "−5 až −10 %",
-    "downsideReason": "Riziko financování AI infrastruktury, exportu čipů a sazeb."
+    "downsideReason": "AI CAPEX, financování datacenter, export čipů a US10Y."
   },
   "catalyst": {
     "event": "Otevření cash NDX; zápis FOMC",
@@ -790,6 +766,24 @@
           "url": "https://www.reuters.com/world/china/trump-administration-weighs-forcing-us-firms-disclose-chinese-ai-use-2026-11-18/"
         }
       ]
+    },
+    {
+      "time": "18. 11. 2026 13:59 CET",
+      "summary": "Cash NDX 27 001,78 b. (17. 11., −0,72 %), −13,90 % od historického maxima. NVDA Q4 výhled 130 mld. USD vs. kons. 125,25 mld. USD; medvědí →. Bez zásadních novinek.",
+      "sourceLinks": [
+        {
+          "label": "Yahoo NDX",
+          "url": "https://finance.yahoo.com/quote/%5ENDX/history/"
+        },
+        {
+          "label": "NVIDIA IR",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/nasdaq-futures-jump-nvidia-forecast-lifts-ai-trade-ahead-anthropic-pricing-2026-11-18/"
+        }
+      ]
     }
   ],
   "history": [
@@ -831,6 +825,10 @@
     },
     {
       "time": "2026-11-17",
+      "ndx": 27001.78
+    },
+    {
+      "time": "18. 11. 2026 13:59 CET",
       "ndx": 27001.78
     }
   ],
