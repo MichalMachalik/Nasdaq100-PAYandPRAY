@@ -594,7 +594,7 @@ function displayTopNews(){
 
 function render(d){d=d||{};set('updated',d.updatedAtPrague?safe(d.updatedAtPrague):'Čeká na data');let n=d.ndx||{};// Cash NDX zůstává výhradně ve zdrojovém reportu pro dlouhodobé odhady.
 
-let s=d.sentiment||{};set('sentiment',[String(s.label||'').replace(/\s*\(subjektivní hodnocení\)/giu,'').trim(),s.trend].filter(Boolean).join(' • ')||'Čeká na vyhodnocení');$('sentiment').className='status '+(/medvěd|bear|zhorš/i.test(s.label||'')?'red':/býč|bull/i.test(s.label||'')?'green':'neutral');setSentences('sentiment-reason',s.reason||'Zatím bez vyhodnocení');setSentences('driver',d.driver||'Zatím nezveřejněno');$('driver').className=d.driver?'':'empty';
+let s=d.sentiment||{};set('sentiment',String(s.label||'').replace(/\s*\(subjektivní hodnocení\)/giu,'').trim()||'Čeká na vyhodnocení');$('sentiment').className='status '+(/medvěd|bear|zhorš/i.test(s.label||'')?'red':/býč|bull/i.test(s.label||'')?'green':'neutral');setSentences('sentiment-reason',s.reason||'Zatím bez vyhodnocení');setSentences('driver',d.driver||'Zatím nezveřejněno');$('driver').className=d.driver?'':'empty';
 latestNews=Array.isArray(d.news)?d.news:[];
 displayTopNews();
 
