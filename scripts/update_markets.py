@@ -23,7 +23,7 @@ ASSETS = [
     ("Gasoline", "USD/gal", "https://tradingeconomics.com/commodity/gasoline", .05, 40),
     ("EU Gas", "EUR/MWh", "https://tradingeconomics.com/commodity/eu-natural-gas", .1, 1000),
     ("Gold", "USD/oz", "https://tradingeconomics.com/commodity/gold", 100, 20000),
-    ("EUR/USD", "USD/EUR", "https://tradingeconomics.com/euro-area/currency", .4, 2.2),
+    ("EUR/USD", "EUR/USD", "https://tradingeconomics.com/euro-area/currency", .4, 2.2),
 ]
 MONTHS = {name.lower():i for i,name in enumerate(calendar.month_name) if name}
 
