@@ -1,18 +1,18 @@
 {
-  "updatedAtPrague": "19. 11. 2026 00:05 CET",
-  "marketStatus": "Cash uzavřen; závěr 18. 11. 2026 v 22:00 CET.",
+  "updatedAtPrague": "19. 11. 2026 00:58 CET",
+  "marketStatus": "Cash uzavřen; poslední závěr 18. 11. 2026",
   "ndx": {
     "value": 27116.26,
     "changePercent": 0.42,
     "ath": 31361.37,
-    "asOf": "18. 11. 2026, 22:00 CET – cash NDX, poslední závěr (Google Finance)."
+    "asOf": "18. 11. 2026, 22:00 CET – cash NDX, poslední závěr (Nasdaq/Google Finance)"
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→ beze změny oproti 18. 11. 2026 23:03 CET",
+    "trend": "→ beze změny oproti 19. 11. 2026 00:05 CET",
     "reason": "NDX +0,42 %; SOX +0,10 %; NVDA −2,89 %; AVGO +3,64 %."
   },
-  "driver": "FOMC: rizika AI dluhu a financování datacenter; PANW tržby nad konsenzem a akvizice Applied Compute za 4,5 mld. USD.",
+  "driver": "FOMC zápis: rizika financování AI infrastruktury; NVDA −2,89 % při silném výhledu, AVGO +3,64 %.",
   "news": [
     {
       "title": "Anthropic IPO: cena 83 USD vs. původní pásmo 70–78 USD; závazky na výpočetní kapacitu téměř 900 mld. USD zahrnují AMZN a GOOGL.",
@@ -271,9 +271,9 @@
   },
   "forecast": {
     "athReturnPercent": 12,
-    "athReason": "Beze změny: NVDA Q4 výhled 130 mld. USD; podmínka stabilizace AI financování a sazeb.",
+    "athReason": "NVDA Q4 výhled 130 mld. USD; podmínka stabilizace AI financování a sazeb.",
     "downside": "−5 až −10 %",
-    "downsideReason": "Fed: rizika AI dluhu; NVDA −2,89 %; scénář omezení financování datacenter."
+    "downsideReason": "Riziko zpřísnění financování datacenter a vyšších sazeb."
   },
   "catalyst": {
     "event": "USA: týdenní žádosti o podporu v nezaměstnanosti",
@@ -931,6 +931,24 @@
           "url": "https://www.reuters.com/world/china/us-house-panel-seeks-microsoft-briefing-reported-ai-deal-talks-with-chinas-2026-11-18/"
         }
       ]
+    },
+    {
+      "time": "19. 11. 2026 00:58 CET",
+      "summary": "NDX cash 27 116,26 b. (+0,42 %, závěr 18. 11.); PANW FQ1 tržby 3,45 mld. USD vs. kons. 3,31; Anthropic IPO 83 USD.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq NDX",
+          "url": "https://indexes.nasdaq.com/index/Overview/NDX"
+        },
+        {
+          "label": "Reuters PANW",
+          "url": "https://www.reuters.com/technology/palo-alto-buy-ai-startup-applied-compute-45-billion-2026-11-18/"
+        },
+        {
+          "label": "Reuters Anthropic",
+          "url": "https://www.reuters.com/legal/transactional/anthropic-prices-blockbuster-ipo-83-share-source-says-2026-11-18/"
+        }
+      ]
     }
   ],
   "history": [
@@ -1016,6 +1034,10 @@
     },
     {
       "time": "19. 11. 2026 00:05 CET",
+      "ndx": 27116.26
+    },
+    {
+      "time": "19. 11. 2026 00:58 CET",
       "ndx": 27116.26
     }
   ],
