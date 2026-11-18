@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "18. 11. 2026 13:59 CET",
+  "updatedAtPrague": "18. 11. 2026 14:58 CET",
   "marketStatus": "Cash NDX uzavřen; poslední závěr 17. 11. 2026, 22:00 CET.",
   "ndx": {
     "value": 27001.78,
@@ -9,7 +9,7 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→ beze změny proti 18. 11. 13:05 CET",
+    "trend": "→ beze změny proti 18. 11. 13:59 CET",
     "reason": "NDX 17. 11. −0,72 %; NVDA premarket 18. 11. +2,7 % k 12:47 CET."
   },
   "driver": "NVDA Q4 FY2027 výhled tržeb 130 mld. USD vs. kons. 125,25 mld. USD (beat 3,8 %).",
@@ -49,7 +49,7 @@
       "time": "18. 11. 2026, 10:16 CET",
       "publishedAtPrague": "18. 11. 2026, 10:16",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "chip_exports",
       "source": "Reuters",
       "url": "https://www.reuters.com/world/china/nvidia-stops-shipping-us-approved-ai-chips-china-2026-11-18/",
@@ -100,7 +100,7 @@
       "time": "18. 11. 2026, 11:28 CET",
       "publishedAtPrague": "18. 11. 2026, 11:28",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "equities",
       "source": "Reuters",
       "url": "https://www.reuters.com/business/nasdaq-futures-jump-nvidia-forecast-lifts-ai-trade-ahead-anthropic-pricing-2026-11-18/",
@@ -147,18 +147,6 @@
       "eventKey": "ny-fed-williams-rate-outlook-20261117"
     },
     {
-      "title": "BLS: dovozní ceny USA +1,1 % m/m oproti tržnímu odhadu +0,7 %; dovážené kapitálové vybavení +1,5 %.",
-      "time": "17. 11. 2026, 08:30 EST; plánované originální zveřejnění BLS",
-      "publishedAtPrague": "17. 11. 2026, 14:30",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "source": "U.S. Bureau of Labor Statistics, USDL-26-1711",
-      "url": "https://www.bls.gov/news.release/archives/ximpim_11172026.htm",
-      "importanceScore": 65,
-      "ndxRelevant": true,
-      "eventKey": "us-import-prices-202610"
-    },
-    {
       "title": "FedWatch: pravděpodobnost prosincového zvýšení sazeb o 25 bb dosahuje 95,7 %; DXY 103,65.",
       "time": "18. 11. 2026, 01:34 UTC",
       "publishedAtPrague": "18. 11. 2026, 02:34",
@@ -182,7 +170,7 @@
       "time": "18. 11. 2026, 12:02 CET",
       "publishedAtPrague": "18. 11. 2026, 12:02",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "ai_regulation",
       "source": "Reuters",
       "url": "https://www.reuters.com/world/china/trump-administration-weighs-forcing-us-firms-disclose-chinese-ai-use-2026-11-18/",
@@ -239,18 +227,6 @@
       "importanceScore": 55,
       "ndxRelevant": true,
       "eventKey": "fed-industrial-production-202610"
-    },
-    {
-      "title": "Census: říjnové maloobchodní tržby USA +0,2 % m/m po zářijových +0,8 %.",
-      "time": "17. 11. 2026, 08:30 EST – oficiální vydání statistiky Census Bureau",
-      "publishedAtPrague": "17. 11. 2026, 14:30",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "source": "U.S. Census Bureau, vydání CB26-181",
-      "url": "https://www.census.gov/retail/marts/www/marts_current.pdf",
-      "importanceScore": 54,
-      "ndxRelevant": true,
-      "eventKey": "us-retail-sales-202610"
     },
     {
       "title": "ASML.AS +1,8 %; evropský technologický sektor +1,2 % po výsledcích NVDA.",
@@ -784,6 +760,20 @@
           "url": "https://www.reuters.com/business/nasdaq-futures-jump-nvidia-forecast-lifts-ai-trade-ahead-anthropic-pricing-2026-11-18/"
         }
       ]
+    },
+    {
+      "time": "18. 11. 2026 14:58 CET",
+      "summary": "Cash NDX 27 001,78 b. (17. 11., −0,72 %), −13,90 % od historického maxima. NVDA Q4 výhled 130 mld. USD. Medvědí →; bez zásadních novinek.",
+      "sourceLinks": [
+        {
+          "label": "Yahoo NDX",
+          "url": "https://finance.yahoo.com/quote/%5ENDX/history/"
+        },
+        {
+          "label": "NVIDIA IR",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027"
+        }
+      ]
     }
   ],
   "history": [
@@ -829,6 +819,10 @@
     },
     {
       "time": "18. 11. 2026 13:59 CET",
+      "ndx": 27001.78
+    },
+    {
+      "time": "18. 11. 2026 14:58 CET",
       "ndx": 27001.78
     }
   ],
