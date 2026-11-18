@@ -70,7 +70,7 @@
     },
     {
       "id": "EUR/USD",
-      "unit": "USD/EUR",
+      "unit": "EUR/USD",
       "price": 1.09938,
       "changePercent": -0.04,
       "quoteDate": "Nov/18",
