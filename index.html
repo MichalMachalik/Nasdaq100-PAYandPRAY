@@ -343,9 +343,9 @@ function rows(id,items,make){let root=$(id);if(!root)return;root.replaceChildren
 // Aktualni TOP 5: pouze poslednich osm hodin, potvrzeny cas publikace a vazba na NDX.
 const NEWS_WINDOW_MS=24*60*60*1000;
 const NEWS_DECAY_REFERENCE_MS=24*60*60*1000;
-const NEWS_TIME_PENALTY_WEIGHT=0.5;
-// Casova penalizace je presne polovicni oproti puvodnimu exponencialnimu skore.
-// Zakladni dulezitost pro Nasdaq-100 zustava rozhodujici; stari ji za 24 h snizi maximalne o 25 %.
+const NEWS_TIME_PENALTY_WEIGHT=0.625;
+// Casova penalizace zvysena o 25 % proti predchozi vaze 0.5.
+// Zakladni dulezitost pro Nasdaq-100 zustava rozhodujici; stari ji za 24 h snizi maximalne o 31.25 %.
 const newsAdjustedScore=(base,ageMs)=>{
   const normalizedAge=Math.max(0,Math.min(ageMs,NEWS_WINDOW_MS));
   const previousAgeFactor=Math.pow(0.5,normalizedAge/NEWS_DECAY_REFERENCE_MS);
@@ -403,7 +403,7 @@ function displayTopNews(){
     const el=document.createElement('div');el.className='news';
     const stamp=document.createElement('time');
     stamp.textContent='Publikováno: '+x.item.publishedAtPrague+' Praha · Skóre '+x.score+'/100';
-    stamp.title='Význam '+x.base+'/100; stáří '+(x.ageMs/3600000).toFixed(1)+' h; časová penalizace 50 % původní hodnoty';
+    stamp.title='Význam '+x.base+'/100; stáří '+(x.ageMs/3600000).toFixed(1)+' h; časová penalizace 62,5 % původní hodnoty';
     el.append(stamp);
     const content=document.createElement('span');
     content.className='sentence-lines';
