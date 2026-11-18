@@ -28,11 +28,10 @@ def get_page(url):
     soup=BeautifulSoup(html,"html.parser")
     print(f"Retrieved {url}: {len(html)} characters, {len(soup.select('tr'))} table rows",flush=True)
     if not soup.select("tr"):
-        for term in ("Crude Oil","EURUSD","EU Gas","markets/commodities","market/quotes","commodities/data","api.tradingeconomics","lastUpdate"):
-            ix=html.lower().find(term.lower())
-            if ix>=0:print("  PAGE_DIAG",term,"at",ix,repr(html[max(0,ix-150):ix+350]),flush=True)
-        scripts=[v.get("src","") for v in soup.select("script[src]")]
-        print("  SCRIPTS",scripts[-18:],flush=True)
+        for term in ("TELastUpdate", "markets/commodities", "assetQuote", "loader", "Price", "GetMarkets", "json", "ChartData"):
+            at=html.lower().find(term.lower())
+            if at>=0: print("PAGE_DIAG",term,at,repr(html[max(0,at-120):at+270]),flush=True)
+        print("INLINE_JS_COUNT",len(soup.find_all("script")),"TABLES",len(soup.find_all("table")),flush=True)
     return soup
 
 def numeric(text):
@@ -71,9 +70,34 @@ def extract(soup,label,now):
         return {"price":price,"changePercent":change,"quoteDate":raw_date or None,"quoteDateISO":asof,"sample":str(tr)[:700]}
     return None
 
+
+def probe_alternatives():
+    urls=[
+        "https://api.tradingeconomics.com/markets/commodities?c=guest:guest",
+        "https://api.tradingeconomics.com/markets/currency?c=guest:guest",
+        "https://tradingeconomics.com/commodity/crude-oil",
+        "https://tradingeconomics.com/euro-area/currency",
+    ]
+    for url in urls:
+        try:
+            req=Request(url,headers={"User-Agent":"Mozilla/5.0"})
+            with urlopen(req,timeout=10) as r:
+                text=r.read().decode("utf-8",errors="replace")
+                print("ALT_DIAG",url,"length",len(text),"body",repr(text[:160]),flush=True)
+                if "/commodity/" in url or "euro-area" in url:
+                    soup=BeautifulSoup(text,"html.parser")
+                    for name in ("description","og:description"):
+                        tag=soup.find("meta",attrs={"name":name}) or soup.find("meta",attrs={"property":name})
+                        if tag:print("ALT_META",name,repr(tag.get("content","")[:500]),flush=True)
+                    for term in ("Daily Change","Crude Oil - Stats","EUR/USD","101."):
+                        at=text.find(term)
+                        if at>=0:print("ALT_MATCH",term,repr(text[max(0,at-90):at+260]),flush=True)
+        except Exception as e:print("ALT_ERROR",url,type(e).__name__,str(e)[:180],flush=True)
+
 def main():
     now=datetime.now(timezone.utc)
     pages={name:get_page(url) for name,url in PAGES.items()}
+    if all(not soup.select("tr") for soup in pages.values()):probe_alternatives()
     old=json.loads(OUT.read_text(encoding="utf-8")) if OUT.exists() else {}
     previous={q.get("id"):q for q in old.get("quotes",[]) if isinstance(q,dict)}
     quotes=[];missing=[]
