@@ -27,6 +27,12 @@ def get_page(url):
     if len(html)<2000: raise ValueError("Short Trading Economics HTML "+url)
     soup=BeautifulSoup(html,"html.parser")
     print(f"Retrieved {url}: {len(html)} characters, {len(soup.select('tr'))} table rows",flush=True)
+    if not soup.select("tr"):
+        for term in ("Crude Oil","EURUSD","EU Gas","markets/commodities","market/quotes","commodities/data","api.tradingeconomics","lastUpdate"):
+            ix=html.lower().find(term.lower())
+            if ix>=0:print("  PAGE_DIAG",term,"at",ix,repr(html[max(0,ix-150):ix+350]),flush=True)
+        scripts=[v.get("src","") for v in soup.select("script[src]")]
+        print("  SCRIPTS",scripts[-18:],flush=True)
     return soup
 
 def numeric(text):
