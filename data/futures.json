@@ -4,10 +4,10 @@
   "instrumentType": "FUTURES",
   "source": "Google Finance – CME E-mini Nasdaq-100 December 2026 (delayed)",
   "sourceUrl": "https://www.google.com/finance/quote/NQZ26:CME_EMINIS",
-  "price": 27403.5,
-  "changePercent": 1.21,
-  "quotedAtUtc": "2026-11-18T00:58:08Z",
-  "quotedAtPrague": "18. 11. 2026, 01:58:08 CET",
-  "fetchedAtUtc": "2026-11-18T01:19:53Z",
+  "price": 27334.25,
+  "changePercent": 0.96,
+  "quotedAtUtc": "2026-11-18T01:27:30Z",
+  "quotedAtPrague": "18. 11. 2026, 02:27:30 CET",
+  "fetchedAtUtc": "2026-11-18T01:57:11Z",
   "delayed": true
 }
