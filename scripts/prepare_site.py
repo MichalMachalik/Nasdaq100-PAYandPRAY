@@ -45,7 +45,13 @@ def prepare():
         raise ValueError('Missing official central bank reference rates')
     if {x['id'] for x in econ.get('gdp',[])} != {'USA','EU','ČR'}:
         raise ValueError('Missing verified GDP regions')
-    if any(x.get('comparison')!='y/y' or not re.match(r'^\\d{4}-Q[1-4]
+    if any(x.get('comparison') != 'y/y' or
+           not re.fullmatch(r'\d{4}-Q[1-4]', x.get('period', ''))
+           for x in econ['gdp']):
+        raise ValueError('GDP must be y/y growth for a quarterly period, not q/q SAAR')
+    if not all(isinstance(x.get('valuePercent'), (int, float)) for x in econ['gdp']):
+        raise ValueError('GDP values missing')
+    if html.count('</html>') != 1 or html.count('</body>') != 1:
         raise ValueError('Duplicate document endings')
     scripts = [node.get_text() for node in soup.select('script:not([src])')
                if node.get('type', '') not in ('application/json','application/ld+json')]
