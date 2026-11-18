@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "18. 11. 2026 17:59 CET",
+  "updatedAtPrague": "18. 11. 2026 18:01 CET",
   "marketStatus": "Cash otevřen; intradenní NDX 18. 11. 2026, 17:34:44 CET.",
   "ndx": {
     "value": 26975.21,
@@ -10,9 +10,9 @@
   "sentiment": {
     "label": "Medvědí",
     "trend": "↘ zhoršení proti 18. 11. 2026 17:00 CET",
-    "reason": "NDX −0,10 % (17:34 CET) vs. +0,24 % (16:24 CET); NVDA −2,30 %, SOX −0,71 %."
+    "reason": "NDX −0,10 % (17:34 CET) vs. +0,24 % (16:24 CET); NVDA −2,64 % (17:55 CET), SOX −0,71 %."
   },
-  "driver": "NVDA −2,30 % (17:27 CET); Reuters: nejistota kolem vedení, SEC a exportních omezení po výsledcích Q3.",
+  "driver": "NVDA −2,64 % (17:55 CET) po výsledcích Q3; Reuters: nejistota kolem vedení, SEC a exportních omezení.",
   "news": [
     {
       "title": "Fed Waller: v prosinci zvýšení sazeb o 50 bb nebo signalizace dalších zvýšení v roce 2027.",
@@ -258,8 +258,8 @@
   "leaders": [
     {
       "ticker": "NVDA",
-      "changePercent": -2.3,
-      "impact": "Cash 18. 11., Google Finance 17:27:15 CET."
+      "changePercent": -2.64,
+      "impact": "Cash 18. 11., Google Finance 17:55:49 CET."
     },
     {
       "ticker": "AVGO",
@@ -277,7 +277,7 @@
     "athReturnPercent": 12,
     "athReason": "Beze změny: NVDA Q4 výhled 130 mld. USD; podmínkou stabilizace AI financování a sazeb.",
     "downside": "−5 až −10 %",
-    "downsideReason": "NVDA −2,30 %; AI CAPEX, neocloud financování a sazby."
+    "downsideReason": "NVDA −2,64 %; AI CAPEX, neocloud financování a sazby."
   },
   "catalyst": {
     "event": "Zápis FOMC z 27.–28. října 2026",
@@ -815,8 +815,8 @@
       ]
     },
     {
-      "time": "18. 11. 2026 17:59 CET",
-      "summary": "NDX cash 26 975,21 b. (−0,10 %, 17:34 CET), −13,99 % od historického maxima. NVDA −2,30 %, AVGO +2,35 %. Medvědí ↘; bez zásadních novinek od 17:00 CET.",
+      "time": "18. 11. 2026 18:01 CET",
+      "summary": "NDX cash 26 975,21 b. (−0,10 %, 17:34 CET), −13,99 % od historického maxima. NVDA −2,64 % (17:55), AVGO +2,35 % (17:26). Medvědí ↘; bez zásadních novinek od 17:00 CET.",
       "sourceLinks": [
         {
           "label": "Google Finance NDX",
@@ -891,7 +891,7 @@
       "ndx": 27066.61
     },
     {
-      "time": "18. 11. 2026 17:59 CET",
+      "time": "18. 11. 2026 18:01 CET",
       "ndx": 26975.21
     }
   ],
