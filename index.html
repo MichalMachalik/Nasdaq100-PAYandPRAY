@@ -340,6 +340,30 @@ body{background:#fff;color:#242424;font:17px/1.6 Georgia,"Times New Roman",serif
   .futures-hero #futures-price{font-size:clamp(24px,7vw,32px)}
   .futures-hero #futures-change{font-size:clamp(16px,4.7vw,19px)}
 }
+
+/* Trading Economics reference quotes, without ornamentation. */
+.market-scroll{overflow-x:auto;max-width:100%}
+.market-table{width:100%;border-collapse:collapse;font:13px/1.4 system-ui,-apple-system,"Segoe UI",sans-serif;font-variant-numeric:tabular-nums}
+.market-table th{padding:8px 9px 10px;border-bottom:1px solid #e9e9e9;text-align:right;color:#777;font-size:11px;font-weight:600;white-space:nowrap}
+.market-table th:first-child{text-align:left}
+.market-table td{padding:10px 9px;text-align:right;border-bottom:1px solid #f0f0f0;white-space:nowrap}
+.market-table td:first-child{text-align:left;font-weight:600}
+.market-table td:last-child{font-size:11px;color:#777}
+.market-table .market-unit{display:block;font-size:10px;color:#858585;font-weight:400;margin-top:2px}
+.market-table a{color:#282828;text-decoration:none;text-underline-offset:3px}
+.market-table a:hover{text-decoration:underline}
+.market-table .market-up{color:var(--green);font-weight:600}
+.market-table .market-down{color:var(--red);font-weight:600}
+.market-footer{display:flex;gap:9px;align-items:center;flex-wrap:wrap;color:#777;font:11px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;margin-top:10px}
+.market-footer a{color:#777;text-decoration:underline;text-underline-offset:3px}
+.market-footer #market-checked{margin-left:auto}
+@media(max-width:580px){
+ .market-table{font-size:12px}
+ .market-table td,.market-table th{padding:9px 5px}
+ .market-table td:first-child{min-width:105px}
+ .market-unit{font-size:9px}
+ .market-footer #market-checked{margin-left:0}
+}
 </style></head>
 <body><div class="wrap">
 <header class="header"><div class="brand"><svg class="aardvark-mark" viewBox="0 0 100 73" role="img" aria-label="Logo Aardvarkland" xmlns="http://www.w3.org/2000/svg">
@@ -370,6 +394,23 @@ body{background:#fff;color:#242424;font:17px/1.6 Georgia,"Times New Roman",serif
 <thead><tr><th scope="col">#</th><th scope="col">Společnost</th><th scope="col">Market cap</th><th scope="col">Cena</th><th scope="col">Dnes</th></tr></thead>
 <tbody id="top10-body"><tr><td colspan="5">Načítání ověřených dat…</td></tr></tbody></table></div>
 <div class="top10-meta"><span id="top10-time">Čeká na první ověřenou aktualizaci</span><a href="https://companiesmarketcap.com/" target="_blank" rel="noopener noreferrer">CompaniesMarketCap</a></div>
+</section>
+
+
+<section class="section" id="commodities-section">
+  <h2 class="sectiontitle">Komodity</h2>
+  <div class="market-scroll"><table class="market-table" aria-label="WTI, Brent, Natural Gas, Gasoline, EU Gas a zlato">
+    <thead><tr><th>Instrument</th><th>Cena</th><th>Dnes</th><th>Datum</th></tr></thead>
+    <tbody id="commodity-rows"><tr><td colspan="4">Načítání kotací…</td></tr></tbody>
+  </table></div>
+</section>
+<section class="section" id="fx-section">
+  <h2 class="sectiontitle">FX</h2>
+  <div class="market-scroll"><table class="market-table" aria-label="Kurz EUR/USD">
+    <thead><tr><th>Instrument</th><th>Kurz</th><th>Dnes</th><th>Datum</th></tr></thead>
+    <tbody id="fx-rows"><tr><td colspan="4">Načítání kurzu…</td></tr></tbody>
+  </table></div>
+  <div class="market-footer"><a href="https://tradingeconomics.com/commodities" target="_blank" rel="noopener noreferrer">Komodity</a><span>·</span><a href="https://tradingeconomics.com/currencies" target="_blank" rel="noopener noreferrer">Měny</a><span id="market-checked"></span></div>
 </section>
 
 
@@ -545,6 +586,59 @@ rows('archive',Array.isArray(d.archive)?d.archive.slice(-15).reverse():[],x=>{
   return el;
 })}
 
+
+const MARKET_ASSETS=[
+  ["WTI",2],["Brent",2],["Natural Gas",4],["Gasoline",4],
+  ["EU Gas",2],["Gold",2],["EUR/USD",5]
+];
+function renderMarketRows(rootId,ids,quotes){
+  const tbody=$(rootId);if(!tbody)return;
+  const frag=document.createDocumentFragment();
+  const byId=new Map(quotes.map(q=>[q.id,q]));
+  for(const ident of ids){
+    const decimals=MARKET_ASSETS.find(x=>x[0]===ident)?.[1]??2;
+    const q=byId.get(ident);
+    const tr=document.createElement('tr');
+    const first=document.createElement('td');
+    if(q&&typeof q.sourceUrl==='string'&&/^https:\/\/tradingeconomics\.com\//.test(q.sourceUrl)){
+      const a=document.createElement('a');a.href=q.sourceUrl;a.target='_blank';a.rel='noopener noreferrer';a.textContent=ident;first.append(a);
+    } else first.textContent=ident;
+    const value=document.createElement('td');
+    const movement=document.createElement('td');
+    const dated=document.createElement('td');
+    if(q&&Number.isFinite(q.price)&&q.price>0&&Number.isFinite(q.changePercent)&&/^\d{4}-\d{2}-\d{2}$/.test(q.quoteDateISO||'')){
+      value.textContent=q.price.toLocaleString('cs-CZ',{minimumFractionDigits:decimals,maximumFractionDigits:decimals});
+      const unit=document.createElement('span');unit.className='market-unit';unit.textContent=q.unit||'';
+      value.append(unit);
+      movement.textContent=Math.abs(q.changePercent).toLocaleString('cs-CZ',{minimumFractionDigits:2,maximumFractionDigits:2})+' %';
+      movement.className=q.changePercent>0?'market-up':q.changePercent<0?'market-down':'';
+      const parts=q.quoteDateISO.split('-');
+      dated.textContent=parts[2]+'. '+parts[1]+'. '+parts[0];
+      dated.title='Datum kotace u zdroje';
+    }else{
+      value.textContent='—';movement.textContent='—';dated.textContent='—';
+    }
+    tr.append(first,value,movement,dated);frag.append(tr);
+  }
+  tbody.replaceChildren(frag);
+}
+async function loadMarkets(){
+  try{
+    const response=await fetch('./data/markets.json?t='+Date.now(),{cache:'no-store'});
+    if(!response.ok)throw Error('No market data');
+    const data=await response.json();
+    if(!Array.isArray(data.quotes))throw Error('Invalid quote data');
+    renderMarketRows('commodity-rows',MARKET_ASSETS.slice(0,6).map(x=>x[0]),data.quotes);
+    renderMarketRows('fx-rows',['EUR/USD'],data.quotes);
+    const checked=$('market-checked');
+    if(checked)checked.textContent=data.fetchedAtPrague?'Načteno '+data.fetchedAtPrague+' Praha':'';
+  }catch(err){
+    renderMarketRows('commodity-rows',MARKET_ASSETS.slice(0,6).map(x=>x[0]),[]);
+    renderMarketRows('fx-rows',['EUR/USD'],[]);
+    const checked=$('market-checked');if(checked)checked.textContent='Data nedostupná';
+  }
+}
+
 async function loadTop10() {
   const body=$('top10-body');
   if(!body) return;
@@ -634,7 +728,7 @@ document.addEventListener('keydown',event=>{
     historyMenu.open=false;historyMenu.querySelector('summary')?.focus();
   }
 });
-function refreshAll(){load();loadFutures();loadTop10();}
+function refreshAll(){load();loadFutures();loadTop10();loadMarkets();}
 refreshAll();
 let lastDataCheck=Date.now();
 setInterval(()=>{
