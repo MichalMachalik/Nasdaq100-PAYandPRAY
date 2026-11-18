@@ -28,7 +28,7 @@
       "eventKey": "nvidia-board-rejects-ceo-return-20261117"
     },
     {
-      "title": "NVIDIA Q3 FY2027: tržby 115,8 mld. USD; výhled Q4 130 mld. USD (±3 %).",
+      "title": "NVIDIA Q3 FY2027: tržby 115,8 mld. USD vs. kons. 109,1 (beat 6,1 %). Upravený EPS 2,68 USD vs. kons. 2,47 (beat 8,5 %). Výhled Q4 130 mld. USD vs. kons. 125,25 (beat 3,8 %).",
       "time": "17. 11. 2026, 21:24 UTC",
       "publishedAtPrague": "17. 11. 2026, 22:24",
       "publicationTimeVerified": true,
@@ -38,7 +38,14 @@
       "url": "https://www.reuters.com/business/nvidia-forecasts-quarterly-revenue-above-estimates-first-report-since-huangs-2026-11-17/",
       "importanceScore": 95,
       "ndxRelevant": true,
-      "eventKey": "nvidia-q3-fy2027-results"
+      "eventKey": "nvidia-q3-fy2027-results",
+      "consensus": {
+        "revenueBillionUsd": 109.1,
+        "adjustedEpsUsd": 2.47,
+        "nextQuarterRevenueBillionUsd": 125.25,
+        "method": "LSEG consensus; Reuters",
+        "checkedAtPrague": "18. 11. 2026"
+      }
     },
     {
       "title": "John Williams z newyorského Fedu nadále podporuje vyšší sazby, nikoli dramatické zpřísnění.",
