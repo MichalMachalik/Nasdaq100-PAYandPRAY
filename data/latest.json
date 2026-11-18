@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "18. 11. 2026 11:01 CET",
+  "updatedAtPrague": "18. 11. 2026 12:03 CET",
   "marketStatus": "Cash NDX uzavřen; poslední závěr 17. 11. 2026, 22:00 CET.",
   "ndx": {
     "value": 27001.78,
@@ -9,10 +9,10 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "↗ mírné zlepšení proti 18. 11. 10:06 CET",
-    "reason": "NDX 17. 11. −0,72 %; NVDA Q4 výhled 130 mld. USD bez Data Center tržeb z Číny."
+    "trend": "→ bez podstatné změny proti 18. 11. 11:01 CET",
+    "reason": "NDX 17. 11. −0,72 %; NVDA premarket +3,7 %, AVGO +2,5 %."
   },
-  "driver": "Vysoký význam: NVDA zastavila dodávky licencovaných Hopper do Číny; Q3 prodej 2,4 mld. USD, Q4 výhled bez těchto dodávek.",
+  "driver": "NVDA Q4 výhled 130 mld. USD vs. kons. 125,25 mld. USD (beat 3,8 %); NVDA premarket +3,7 %.",
   "news": [
     {
       "title": "NVIDIA Q3 FY2027: tržby 115,8 mld. USD vs. kons. 109,1 (beat 6,1 %). Upravený EPS 2,68 USD vs. kons. 2,47 (beat 8,5 %). Výhled Q4 130 mld. USD vs. kons. 125,25 (beat 3,8 %).",
@@ -96,6 +96,25 @@
       "eventKey": "nvidia-board-rejects-ceo-return-20261117"
     },
     {
+      "title": "NVDA v premarketu +3,7 %, AVGO +2,5 %, AMD +3,0 % po Q4 výhledu NVDA 130 mld. USD.",
+      "time": "18. 11. 2026, 11:28 CET",
+      "publishedAtPrague": "18. 11. 2026, 11:28",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "equities",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/nasdaq-futures-jump-nvidia-forecast-lifts-ai-trade-ahead-anthropic-pricing-2026-11-18/",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/nasdaq-futures-jump-nvidia-forecast-lifts-ai-trade-ahead-anthropic-pricing-2026-11-18/"
+        }
+      ],
+      "eventKey": "nasdaq-chip-premarket-nvda-guidance-20261118",
+      "ndxRelevant": true,
+      "importanceScore": 76
+    },
+    {
       "title": "WSJ přes Reuters: SEC podle zdrojů prověřuje NVIDIA po odchodu Jensena Huanga.",
       "time": "17. 11. 2026, 21:08 UTC",
       "publishedAtPrague": "17. 11. 2026, 22:08",
@@ -164,25 +183,6 @@
       "eventKey": "mofcom-ai-remote-access-20261117"
     },
     {
-      "title": "Návrh FCC: omezení dovozu čínských optických transceiverů pro datacentra; AMZN, GOOGL, META a MSFT namítají dopady na dodávky.",
-      "time": "17. 11. 2026, 11:02 UTC – původní Reuters",
-      "publishedAtPrague": "17. 11. 2026, 12:02",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_regulation",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/trumps-china-data-center-curb-advances-despite-amazon-google-meta-lobbying-2026-11-17/",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/world/trumps-china-data-center-curb-advances-despite-amazon-google-meta-lobbying-2026-11-17/"
-        }
-      ],
-      "importanceScore": 68,
-      "ndxRelevant": true,
-      "eventKey": "fcc-china-optical-transceivers-proposal-20261117"
-    },
-    {
       "title": "BLS: dovozní ceny USA +1,1 % m/m oproti tržnímu odhadu +0,7 %; dovážené kapitálové vybavení +1,5 %.",
       "time": "17. 11. 2026, 08:30 EST; plánované originální zveřejnění BLS",
       "publishedAtPrague": "17. 11. 2026, 14:30",
@@ -236,18 +236,6 @@
       "importanceScore": 63,
       "ndxRelevant": true,
       "eventKey": "sox-chip-sector-20261117"
-    },
-    {
-      "title": "Reuters: technologické akcie před výsledky NVIDIA oslabovaly; trh sledoval návratnost investic do AI a financování datacenter.",
-      "time": "17. 11. 2026, 10:51 UTC – původní vydání Reuters; článek následně aktualizován bez ověřeného přesného času",
-      "publishedAtPrague": "17. 11. 2026, 11:51",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "source": "Reuters – trhy USA",
-      "url": "https://www.reuters.com/business/us-stock-futures-slip-ahead-nvidia-results-fed-speakers-focus-2026-11-17/",
-      "importanceScore": 60,
-      "ndxRelevant": true,
-      "eventKey": "us-tech-selloff-ahead-nvidia-20261117"
     },
     {
       "title": "MSCI Asia ex Japan −0,1 %, Nikkei −0,3 % po výsledcích NVDA; růst asijských akcií se obrátil.",
@@ -337,7 +325,7 @@
       "impact": "17. 11. cash závěr 506,24 USD."
     }
   ],
-  "macro": "US10Y | 17. 11.: 5,100 % | 16. 11.: 5,121 % | −2,1 bb",
+  "macro": "US10Y | 18. 11.: 5,096 % | 17. 11.: 5,12 % | −2,4 bb",
   "regulation": null,
   "technical": {
     "support": null,
@@ -345,9 +333,9 @@
   },
   "forecast": {
     "athReturnPercent": 12,
-    "athReason": "Beze změny; podmínka stabilizace financování AI a zachování růstu NVDA.",
+    "athReason": "Beze změny; návrat vyžaduje stabilizaci AI financování a udržení růstu tržeb NVDA.",
     "downside": "−5 až −10 %",
-    "downsideReason": "Financování AI infrastruktury, čipový export a sazby."
+    "downsideReason": "AI financování, export čipů a úrokové sazby."
   },
   "catalyst": {
     "event": "Otevření cash NDX; zápis FOMC",
@@ -783,6 +771,24 @@
           "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/"
         }
       ]
+    },
+    {
+      "time": "18. 11. 2026 12:03 CET",
+      "summary": "Cash NDX 17. 11. 27 001,78 b. (−0,72 %, −13,90 % od historického maxima). NVDA premarket +3,7 %, AVGO +2,5 %; Q4 výhled NVDA 130 mld. USD. Medvědí →; návrat 12 %, propad −5 až −10 %.",
+      "sourceLinks": [
+        {
+          "label": "Yahoo Finance NDX",
+          "url": "https://finance.yahoo.com/quote/%5ENDX/history/"
+        },
+        {
+          "label": "Reuters – NVDA / čipy",
+          "url": "https://www.reuters.com/business/nasdaq-futures-jump-nvidia-forecast-lifts-ai-trade-ahead-anthropic-pricing-2026-11-18/"
+        },
+        {
+          "label": "NVIDIA IR",
+          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/"
+        }
+      ]
     }
   ],
   "history": [
@@ -1151,6 +1157,14 @@
     {
       "name": "Reuters – NVIDIA / Čína 18. 11. 2026",
       "url": "https://www.reuters.com/world/china/nvidia-stops-shipping-us-approved-ai-chips-china-2026-11-18/"
+    },
+    {
+      "name": "Reuters – NVDA premarket",
+      "url": "https://www.reuters.com/business/nasdaq-futures-jump-nvidia-forecast-lifts-ai-trade-ahead-anthropic-pricing-2026-11-18/"
+    },
+    {
+      "name": "Trading Economics US10Y",
+      "url": "https://tradingeconomics.com/united-states/government-bond-yield"
     }
   ]
 }
