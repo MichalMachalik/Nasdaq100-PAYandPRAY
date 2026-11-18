@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "18. 11. 2026 12:03 CET",
+  "updatedAtPrague": "18. 11. 2026 13:09 CET",
   "marketStatus": "Cash NDX uzavřen; poslední závěr 17. 11. 2026, 22:00 CET.",
   "ndx": {
     "value": 27001.78,
@@ -9,10 +9,10 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→ bez podstatné změny proti 18. 11. 11:01 CET",
-    "reason": "NDX 17. 11. −0,72 %; NVDA premarket +3,7 %, AVGO +2,5 %."
+    "trend": "→ beze změny proti 18. 11. 12:03 CET",
+    "reason": "NDX 17. 11. −0,72 %; NVDA premarket +3,5 %, AVGO +2,9 %."
   },
-  "driver": "NVDA Q4 výhled 130 mld. USD vs. kons. 125,25 mld. USD (beat 3,8 %); NVDA premarket +3,7 %.",
+  "driver": "NVDA Q4 výhled 130 mld. USD vs. kons. 125,25 mld. USD (beat 3,8 %); premarket NVDA +3,5 %, AVGO +2,9 %.",
   "news": [
     {
       "title": "NVIDIA Q3 FY2027: tržby 115,8 mld. USD vs. kons. 109,1 (beat 6,1 %). Upravený EPS 2,68 USD vs. kons. 2,47 (beat 8,5 %). Výhled Q4 130 mld. USD vs. kons. 125,25 (beat 3,8 %).",
@@ -134,18 +134,6 @@
       "eventKey": "nvidia-sec-wsj-report-20261117"
     },
     {
-      "title": "Reuters: výnos dluhopisů CoreWeave téměř 15 %; dražší financování AI infrastruktury.",
-      "time": "17. 11. 2026, 11:12 UTC – zveřejnění Reuters",
-      "publishedAtPrague": "17. 11. 2026, 12:12",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "source": "Reuters – AI financování",
-      "url": "https://www.reuters.com/business/nvidia-turmoil-marks-end-easy-money-ai-trade-2026-11-17/",
-      "importanceScore": 74,
-      "ndxRelevant": true,
-      "eventKey": "coreweave-ai-financing-20261117"
-    },
-    {
       "title": "John Williams z newyorského Fedu nadále podporuje vyšší sazby, nikoli dramatické zpřísnění.",
       "time": "17. 11. 2026, 20:08 UTC",
       "publishedAtPrague": "17. 11. 2026, 21:08",
@@ -195,18 +183,6 @@
       "eventKey": "us-import-prices-202610"
     },
     {
-      "title": "BofA: čistá nadváha technologií u správců fondů klesla z 37 % na 12 %; 52 % očekává omezení investic do AI infrastruktury.",
-      "time": "17. 11. 2026, 11:29 UTC – původní zveřejnění Reuters; průzkum BofA za listopad 2026",
-      "publishedAtPrague": "17. 11. 2026, 12:29",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "source": "Reuters / průzkum BofA Global Research",
-      "url": "https://www.reuters.com/business/global-markets-bofa-survey-2026-11-17/",
-      "importanceScore": 65,
-      "ndxRelevant": true,
-      "eventKey": "bofa-fund-manager-survey-202611"
-    },
-    {
       "title": "FedWatch: pravděpodobnost prosincového zvýšení sazeb o 25 bb dosahuje 95,7 %; DXY 103,65.",
       "time": "18. 11. 2026, 01:34 UTC",
       "publishedAtPrague": "18. 11. 2026, 02:34",
@@ -226,16 +202,23 @@
       "eventKey": "us-dec-fedwatch-25bp-20261118"
     },
     {
-      "title": "Reuters: index SOX oslabil od konce června o 34 % před výsledky NVIDIA.",
-      "time": "17. 11. 2026, 11:06 UTC – zveřejnění Reuters",
-      "publishedAtPrague": "17. 11. 2026, 12:06",
+      "title": "USA zvažují zveřejňování používání čínských AI modelů; ABNB využívá Qwen.",
+      "time": "18. 11. 2026, 12:02 CET",
+      "publishedAtPrague": "18. 11. 2026, 12:02",
       "publicationTimeVerified": true,
-      "kind": "continuing",
-      "source": "Reuters – polovodiče",
-      "url": "https://www.reuters.com/business/shaky-semiconductor-trade-faces-big-week-investors-look-bottom-2026-11-17/",
-      "importanceScore": 63,
+      "kind": "new",
+      "category": "ai_regulation",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/china/trump-administration-weighs-forcing-us-firms-disclose-chinese-ai-use-2026-11-18/",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/china/trump-administration-weighs-forcing-us-firms-disclose-chinese-ai-use-2026-11-18/"
+        }
+      ],
+      "eventKey": "us-chinese-ai-model-disclosure-proposal-20261118",
       "ndxRelevant": true,
-      "eventKey": "sox-chip-sector-20261117"
+      "importanceScore": 58
     },
     {
       "title": "MSCI Asia ex Japan −0,1 %, Nikkei −0,3 % po výsledcích NVDA; růst asijských akcií se obrátil.",
@@ -316,13 +299,13 @@
   "leaders": [
     {
       "ticker": "NVDA",
-      "changePercent": -0.44,
-      "impact": "17. 11. cash závěr 155,46 USD; výsledky Q3 zveřejněny po uzavření."
+      "changePercent": 3.5,
+      "impact": "18. 11. premarket, Reuters publikováno 12:12 CET."
     },
     {
-      "ticker": "MSFT",
-      "changePercent": -2.27,
-      "impact": "17. 11. cash závěr 506,24 USD."
+      "ticker": "AVGO",
+      "changePercent": 2.9,
+      "impact": "18. 11. premarket, Reuters publikováno 12:12 CET."
     }
   ],
   "macro": "US10Y | 18. 11.: 5,096 % | 17. 11.: 5,12 % | −2,4 bb",
@@ -333,9 +316,9 @@
   },
   "forecast": {
     "athReturnPercent": 12,
-    "athReason": "Beze změny; návrat vyžaduje stabilizaci AI financování a udržení růstu tržeb NVDA.",
+    "athReason": "Beze změny; podmínkou návratu je stabilizace AI financování a růst tržeb NVDA.",
     "downside": "−5 až −10 %",
-    "downsideReason": "AI financování, export čipů a úrokové sazby."
+    "downsideReason": "Riziko financování AI infrastruktury, exportu čipů a sazeb."
   },
   "catalyst": {
     "event": "Otevření cash NDX; zápis FOMC",
@@ -789,6 +772,24 @@
           "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/"
         }
       ]
+    },
+    {
+      "time": "18. 11. 2026 13:09 CET",
+      "summary": "Cash NDX 27 001,78 b. (17. 11., −0,72 %). NVDA Q4 výhled 130 mld. USD; USA zvažují zveřejňování používání čínských AI modelů včetně ABNB. Medvědí →; návrat 12 %, propad −5 až −10 %.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq NDX",
+          "url": "https://indexes.nasdaq.com/index/Overview/NDX"
+        },
+        {
+          "label": "NVIDIA IR",
+          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/"
+        },
+        {
+          "label": "Reuters – AI návrh",
+          "url": "https://www.reuters.com/world/china/trump-administration-weighs-forcing-us-firms-disclose-chinese-ai-use-2026-11-18/"
+        }
+      ]
     }
   ],
   "history": [
@@ -1165,6 +1166,10 @@
     {
       "name": "Trading Economics US10Y",
       "url": "https://tradingeconomics.com/united-states/government-bond-yield"
+    },
+    {
+      "name": "Reuters – zveřejňování použití čínských AI modelů",
+      "url": "https://www.reuters.com/world/china/trump-administration-weighs-forcing-us-firms-disclose-chinese-ai-use-2026-11-18/"
     }
   ]
 }
