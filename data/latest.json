@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "18. 11. 2026 09:01 CET",
+  "updatedAtPrague": "18. 11. 2026 10:06 CET",
   "marketStatus": "Cash NDX uzavřen; poslední závěr 17. 11. 2026, 22:00 CET.",
   "ndx": {
     "value": 27001.78,
@@ -9,10 +9,10 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→ beze změny proti 18. 11. 07:57 CET",
-    "reason": "Cash NDX 17. 11. −0,72 %; NVDA Q3 tržby 115,8 mld. USD, upravený EPS 2,68 USD."
+    "trend": "↗ mírné zlepšení proti 18. 11. 09:01 CET",
+    "reason": "Cash NDX 17. 11. −0,72 %; NVDA Q3 tržby 115,8 mld. USD; evropské technologie +1,2 %."
   },
-  "driver": "Vysoký význam: 17. 11. oslabovaly technologické akcie před výsledky NVDA; pozornost na návratnost AI CAPEX a financování datacenter.",
+  "driver": "Vysoký význam: NVDA Q3 tržby 115,8 mld. USD a upravený EPS 2,68 USD; ASML.AS 18. 11. +1,8 %.",
   "news": [
     {
       "title": "NVIDIA Q3 FY2027: tržby 115,8 mld. USD vs. kons. 109,1 (beat 6,1 %). Upravený EPS 2,68 USD vs. kons. 2,47 (beat 8,5 %). Výhled Q4 130 mld. USD vs. kons. 125,25 (beat 3,8 %).",
@@ -287,6 +287,25 @@
       "eventKey": "us-retail-sales-202610"
     },
     {
+      "title": "ASML.AS +1,8 %; evropský technologický sektor +1,2 % po výsledcích NVDA.",
+      "time": "18. 11. 2026, 08:25 UTC",
+      "publishedAtPrague": "18. 11. 2026, 09:25",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "market_reaction",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/markets/europe/european-shares-muted-tech-offsets-mining-weakness-2026-11-18/",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/markets/europe/european-shares-muted-tech-offsets-mining-weakness-2026-11-18/"
+        }
+      ],
+      "importanceScore": 52,
+      "ndxRelevant": true,
+      "eventKey": "asml-europe-ai-chip-rally-20261118"
+    },
+    {
       "title": "NVIDIA: zřídila výbor představenstva pro národní bezpečnost a exportní kontroly.",
       "time": "17. 11. 2026, 05:00 EST (11:00 CET) – firemní oznámení",
       "publishedAtPrague": "17. 11. 2026, 11:00",
@@ -297,25 +316,6 @@
       "importanceScore": 52,
       "ndxRelevant": true,
       "eventKey": "nvidia-security-committee-20261117"
-    },
-    {
-      "title": "Kalifornský prokurátor Bonta prověřuje, zda okolnosti ve vedení NVIDIA odůvodňují další postup.",
-      "time": "17. 11. 2026, 19:14 UTC – Reuters",
-      "publishedAtPrague": "17. 11. 2026, 20:14",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "corporate_governance",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/california-ag-says-nvidia-scandal-has-raised-red-flags-could-lead-probe-2026-11-17/",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/business/california-ag-says-nvidia-scandal-has-raised-red-flags-could-lead-probe-2026-11-17/"
-        }
-      ],
-      "importanceScore": 50,
-      "ndxRelevant": true,
-      "eventKey": "california-ag-nvidia-review-20261117"
     }
   ],
   "leaders": [
@@ -740,6 +740,24 @@
           "url": "https://www.reuters.com/business/us-stock-futures-slip-ahead-nvidia-results-fed-speakers-focus-2026-11-17/"
         }
       ]
+    },
+    {
+      "time": "18. 11. 2026 10:06 CET",
+      "summary": "Cash NDX 17. 11. závěr 27 001,78 b. (−0,72 %, −13,90 % od historického maxima). NVDA Q3 tržby 115,8 mld. USD, upr. EPS 2,68 USD. ASML.AS +1,8 %, evropské technologie +1,2 %. Medvědí ↗; návrat 12 %, propad −5 až −10 %.",
+      "sourceLinks": [
+        {
+          "label": "Yahoo Finance NDX",
+          "url": "https://finance.yahoo.com/quote/%5ENDX/history/"
+        },
+        {
+          "label": "NVIDIA IR",
+          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/"
+        },
+        {
+          "label": "Reuters – evropské technologie",
+          "url": "https://www.reuters.com/markets/europe/european-shares-muted-tech-offsets-mining-weakness-2026-11-18/"
+        }
+      ]
     }
   ],
   "history": [
@@ -1100,6 +1118,10 @@
     {
       "name": "CompaniesMarketCap – NVDA",
       "url": "https://companiesmarketcap.com/nvidia/marketcap/"
+    },
+    {
+      "name": "Reuters – evropské technologie",
+      "url": "https://www.reuters.com/markets/europe/european-shares-muted-tech-offsets-mining-weakness-2026-11-18/"
     }
   ]
 }
