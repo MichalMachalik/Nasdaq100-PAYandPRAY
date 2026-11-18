@@ -1,19 +1,84 @@
 {
-  "updatedAtPrague": "18. 11. 2026 23:03 CET",
+  "updatedAtPrague": "19. 11. 2026 00:05 CET",
   "marketStatus": "Cash uzavřen; závěr 18. 11. 2026 v 22:00 CET.",
   "ndx": {
     "value": 27116.26,
     "changePercent": 0.42,
     "ath": 31361.37,
-    "asOf": "18. 11. 2026, 22:00 CET – cash NDX, poslední závěr (Google Finance / Reuters)."
+    "asOf": "18. 11. 2026, 22:00 CET – cash NDX, poslední závěr (Google Finance)."
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→ beze změny oproti 18. 11. 2026 22:04 CET",
+    "trend": "→ beze změny oproti 18. 11. 2026 23:03 CET",
     "reason": "NDX +0,42 %; SOX +0,10 %; NVDA −2,89 %; AVGO +3,64 %."
   },
-  "driver": "FOMC: rizika AI dluhu a financování datacenter; Anthropic IPO 83 USD, compute závazky téměř 900 mld. USD s AMZN a GOOGL.",
+  "driver": "FOMC: rizika AI dluhu a financování datacenter; PANW tržby nad konsenzem a akvizice Applied Compute za 4,5 mld. USD.",
   "news": [
+    {
+      "title": "Anthropic IPO: cena 83 USD vs. původní pásmo 70–78 USD; závazky na výpočetní kapacitu téměř 900 mld. USD zahrnují AMZN a GOOGL.",
+      "time": "18. 11. 2026, 21:26 UTC",
+      "publishedAtPrague": "18. 11. 2026, 22:26",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "ai_infrastructure",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/legal/transactional/anthropic-prices-blockbuster-ipo-83-share-source-says-2026-11-18/",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/legal/transactional/anthropic-prices-blockbuster-ipo-83-share-source-says-2026-11-18/"
+        }
+      ],
+      "eventKey": "anthropic-ipo-priced-83-20261118",
+      "ndxRelevant": true,
+      "importanceScore": 78
+    },
+    {
+      "title": "PANW FQ1: tržby 3,45 mld. USD vs. kons. 3,31 (beat 4,2 %); upr. EPS 1,05 USD vs. 0,97 (beat 8,2 %). Applied Compute 4,5 mld. USD.",
+      "time": "18. 11. 2026, 22:09 CET",
+      "publishedAtPrague": "18. 11. 2026, 22:09",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "earnings",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/technology/palo-alto-buy-ai-startup-applied-compute-45-billion-2026-11-18/",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/technology/palo-alto-buy-ai-startup-applied-compute-45-billion-2026-11-18/"
+        },
+        {
+          "label": "Palo Alto IR",
+          "url": "https://investors.paloaltonetworks.com/news-releases/news-release-details/palo-alto-networks-reports-fiscal-first-quarter-2027-financial"
+        },
+        {
+          "label": "Barron's",
+          "url": "https://www.barrons.com/articles/palo-alto-networks-earnings-stock-price-6d97b172"
+        }
+      ],
+      "eventKey": "panw-q1-fy2027-results-applied-compute-20261118",
+      "ndxRelevant": true,
+      "importanceScore": 73
+    },
+    {
+      "title": "Sněmovní výbor USA žádá MSFT o briefing ke zvažovanému prodeji Azure AI služeb ByteDance; medializovaný objem 500 mil. USD.",
+      "time": "18. 11. 2026, 21:24 CET",
+      "publishedAtPrague": "18. 11. 2026, 21:24",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "ai_regulation",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/china/us-house-panel-seeks-microsoft-briefing-reported-ai-deal-talks-with-chinas-2026-11-18/",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/china/us-house-panel-seeks-microsoft-briefing-reported-ai-deal-talks-with-chinas-2026-11-18/"
+        }
+      ],
+      "eventKey": "us-house-msft-bytedance-ai-cloud-briefing-20261118",
+      "ndxRelevant": true,
+      "importanceScore": 61
+    },
     {
       "title": "FOMC zápis 27.–28. 10.: téměř všichni očekávají další zvýšení sazeb; Fed upozornil na neprůhledné financování AI a datacenter.",
       "time": "18. 11. 2026, 20:00 CET",
@@ -32,25 +97,6 @@
       "eventKey": "fed-fomc-minutes-oct-27-28-2026-released-20261118",
       "ndxRelevant": true,
       "importanceScore": 92
-    },
-    {
-      "title": "NVDA: zastavila dodávky licencovaných Hopper do Číny; Q3 prodej 2,4 mld. USD, výhled bez dalších dodávek.",
-      "time": "18. 11. 2026, 10:16 CET",
-      "publishedAtPrague": "18. 11. 2026, 10:16",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "chip_exports",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/china/nvidia-stops-shipping-us-approved-ai-chips-china-2026-11-18/",
-      "importanceScore": 83,
-      "ndxRelevant": true,
-      "eventKey": "nvidia-licensed-hopper-china-shipments-halt-20261118",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/world/china/nvidia-stops-shipping-us-approved-ai-chips-china-2026-11-18/"
-        }
-      ]
     },
     {
       "title": "Fed Waller: v prosinci zvýšení sazeb o 50 bb nebo signalizace dalších zvýšení v roce 2027.",
@@ -72,57 +118,6 @@
       "eventKey": "fed-waller-cnbc-50bp-or-guidance-20261118"
     },
     {
-      "title": "NVIDIA Q3: neocloud investice 32 mld. USD vs. 36 mld. USD v Q2. Závazky aktivní po zajištění financování a provozní kapacity.",
-      "time": "18. 11. 2026, 05:22 UTC",
-      "publishedAtPrague": "18. 11. 2026, 06:22",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_infrastructure",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/business-usual-nvidias-kress-passes-first-test-board-slams-door-huang-2026-11-18/",
-      "importanceScore": 79,
-      "ndxRelevant": true,
-      "eventKey": "nvidia-neocloud-financing-conditions-q3-fy2027",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/business/business-usual-nvidias-kress-passes-first-test-board-slams-door-huang-2026-11-18/"
-        }
-      ]
-    },
-    {
-      "title": "Anthropic IPO: cena 83 USD vs. původní pásmo 70–78 USD; závazky na výpočetní kapacitu téměř 900 mld. USD zahrnují AMZN a GOOGL.",
-      "time": "18. 11. 2026, 21:26 UTC",
-      "publishedAtPrague": "18. 11. 2026, 22:26",
-      "publicationTimeVerified": true,
-      "kind": "new",
-      "category": "ai_infrastructure",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/legal/transactional/anthropic-prices-blockbuster-ipo-83-share-source-says-2026-11-18/",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/legal/transactional/anthropic-prices-blockbuster-ipo-83-share-source-says-2026-11-18/"
-        }
-      ],
-      "eventKey": "anthropic-ipo-priced-83-20261118",
-      "ndxRelevant": true,
-      "importanceScore": 78
-    },
-    {
-      "title": "Představenstvo NVIDIA potvrdilo, že Jensena Huanga do funkce CEO nevrátí.",
-      "time": "17. 11. 2026, 22:12 UTC",
-      "publishedAtPrague": "17. 11. 2026, 23:12",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "corporate_governance",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/legal/transactional/nvidia-board-says-it-does-not-intend-reinstate-jensen-huang-ceo-2026-11-17/",
-      "importanceScore": 78,
-      "ndxRelevant": true,
-      "eventKey": "nvidia-board-rejects-ceo-return-20261117"
-    },
-    {
       "title": "NVDA po silném výhledu Q4 obrátila předobchodní růst; investoři sledují vedení a export čipů.",
       "time": "18. 11. 2026, 12:12 CET",
       "publishedAtPrague": "18. 11. 2026, 12:12",
@@ -140,25 +135,6 @@
       "eventKey": "nasdaq-chip-premarket-nvda-guidance-20261118",
       "ndxRelevant": true,
       "importanceScore": 76
-    },
-    {
-      "title": "FedWatch: pravděpodobnost prosincového zvýšení sazeb o 25 bb dosahuje 95,7 %; DXY 103,65.",
-      "time": "18. 11. 2026, 01:34 UTC",
-      "publishedAtPrague": "18. 11. 2026, 02:34",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "macro",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/middle-east/dollar-holds-near-19-month-high-data-supports-case-us-rate-hikes-2026-11-18/",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/world/middle-east/dollar-holds-near-19-month-high-data-supports-case-us-rate-hikes-2026-11-18/"
-        }
-      ],
-      "importanceScore": 63,
-      "ndxRelevant": true,
-      "eventKey": "us-dec-fedwatch-25bp-20261118"
     },
     {
       "title": "USA zvažují zveřejňování používání čínských AI modelů; ABNB využívá Qwen.",
@@ -180,23 +156,23 @@
       "importanceScore": 58
     },
     {
-      "title": "MSCI Asia ex Japan −0,1 %, Nikkei −0,3 % po výsledcích NVDA; růst asijských akcií se obrátil.",
-      "time": "18. 11. 2026, 01:46 UTC – původní zveřejnění Reuters",
-      "publishedAtPrague": "18. 11. 2026, 02:46",
+      "title": "NVDA: zastavila dodávky licencovaných Hopper do Číny; Q3 prodej 2,4 mld. USD, výhled bez dalších dodávek.",
+      "time": "18. 11. 2026, 10:16 CET",
+      "publishedAtPrague": "18. 11. 2026, 10:16",
       "publicationTimeVerified": true,
       "kind": "continuing",
-      "category": "market_reaction",
+      "category": "chip_exports",
       "source": "Reuters",
-      "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-11-18/",
+      "url": "https://www.reuters.com/world/china/nvidia-stops-shipping-us-approved-ai-chips-china-2026-11-18/",
+      "importanceScore": 83,
+      "ndxRelevant": true,
+      "eventKey": "nvidia-licensed-hopper-china-shipments-halt-20261118",
       "sourceLinks": [
         {
           "label": "Reuters",
-          "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-11-18/"
+          "url": "https://www.reuters.com/world/china/nvidia-stops-shipping-us-approved-ai-chips-china-2026-11-18/"
         }
-      ],
-      "importanceScore": 58,
-      "ndxRelevant": true,
-      "eventKey": "asia-chip-rebound-nvidia-earnings-20261118"
+      ]
     },
     {
       "title": "ASML.AS +1,8 %; evropský technologický sektor +1,2 % po výsledcích NVDA.",
@@ -216,6 +192,63 @@
       "importanceScore": 52,
       "ndxRelevant": true,
       "eventKey": "asml-europe-ai-chip-rally-20261118"
+    },
+    {
+      "title": "NVIDIA Q3: neocloud investice 32 mld. USD vs. 36 mld. USD v Q2. Závazky aktivní po zajištění financování a provozní kapacity.",
+      "time": "18. 11. 2026, 05:22 UTC",
+      "publishedAtPrague": "18. 11. 2026, 06:22",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "ai_infrastructure",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/business-usual-nvidias-kress-passes-first-test-board-slams-door-huang-2026-11-18/",
+      "importanceScore": 79,
+      "ndxRelevant": true,
+      "eventKey": "nvidia-neocloud-financing-conditions-q3-fy2027",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/business-usual-nvidias-kress-passes-first-test-board-slams-door-huang-2026-11-18/"
+        }
+      ]
+    },
+    {
+      "title": "MSCI Asia ex Japan −0,1 %, Nikkei −0,3 % po výsledcích NVDA; růst asijských akcií se obrátil.",
+      "time": "18. 11. 2026, 01:46 UTC – původní zveřejnění Reuters",
+      "publishedAtPrague": "18. 11. 2026, 02:46",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "market_reaction",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-11-18/",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-11-18/"
+        }
+      ],
+      "importanceScore": 58,
+      "ndxRelevant": true,
+      "eventKey": "asia-chip-rebound-nvidia-earnings-20261118"
+    },
+    {
+      "title": "FedWatch: pravděpodobnost prosincového zvýšení sazeb o 25 bb dosahuje 95,7 %; DXY 103,65.",
+      "time": "18. 11. 2026, 01:34 UTC",
+      "publishedAtPrague": "18. 11. 2026, 02:34",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "macro",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/middle-east/dollar-holds-near-19-month-high-data-supports-case-us-rate-hikes-2026-11-18/",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/middle-east/dollar-holds-near-19-month-high-data-supports-case-us-rate-hikes-2026-11-18/"
+        }
+      ],
+      "importanceScore": 63,
+      "ndxRelevant": true,
+      "eventKey": "us-dec-fedwatch-25bp-20261118"
     }
   ],
   "leaders": [
@@ -230,7 +263,7 @@
       "impact": "Cash závěr 18. 11., 22:00 CET, Google Finance."
     }
   ],
-  "macro": "US10Y | 18. 11.: 5,065 % | 17. 11.: 5,103 % | −3,8 bb",
+  "macro": "US10Y | 18. 11.: 5,064 % | 17. 11.: 5,103 % | −3,9 bb",
   "regulation": null,
   "technical": {
     "support": null,
@@ -880,6 +913,24 @@
           "url": "https://www.reuters.com/legal/transactional/anthropic-prices-blockbuster-ipo-83-share-source-says-2026-11-18/"
         }
       ]
+    },
+    {
+      "time": "19. 11. 2026 00:05 CET",
+      "summary": "NDX cash závěr 18. 11. 27 116,26 b. (+0,42 %, −13,54 % od historického maxima); PANW FQ1 tržby 3,45 mld. USD vs. kons. 3,31; MSFT: výbor žádá briefing k ByteDance.",
+      "sourceLinks": [
+        {
+          "label": "Google Finance NDX",
+          "url": "https://www.google.com/finance/quote/NDX:INDEXNASDAQ?hl=en"
+        },
+        {
+          "label": "Reuters PANW",
+          "url": "https://www.reuters.com/technology/palo-alto-buy-ai-startup-applied-compute-45-billion-2026-11-18/"
+        },
+        {
+          "label": "Reuters MSFT",
+          "url": "https://www.reuters.com/world/china/us-house-panel-seeks-microsoft-briefing-reported-ai-deal-talks-with-chinas-2026-11-18/"
+        }
+      ]
     }
   ],
   "history": [
@@ -961,6 +1012,10 @@
     },
     {
       "time": "18. 11. 2026 23:03 CET",
+      "ndx": 27116.26
+    },
+    {
+      "time": "19. 11. 2026 00:05 CET",
       "ndx": 27116.26
     }
   ],
@@ -1340,6 +1395,22 @@
     {
       "name": "Investing US10Y",
       "url": "https://ph.investing.com/rates-bonds/u.s.-10-year-bond-yield-historical-data"
+    },
+    {
+      "name": "Reuters PANW",
+      "url": "https://www.reuters.com/technology/palo-alto-buy-ai-startup-applied-compute-45-billion-2026-11-18/"
+    },
+    {
+      "name": "Palo Alto IR",
+      "url": "https://investors.paloaltonetworks.com/news-releases/news-release-details/palo-alto-networks-reports-fiscal-first-quarter-2027-financial"
+    },
+    {
+      "name": "Barron's PANW EPS",
+      "url": "https://www.barrons.com/articles/palo-alto-networks-earnings-stock-price-6d97b172"
+    },
+    {
+      "name": "Reuters MSFT ByteDance",
+      "url": "https://www.reuters.com/world/china/us-house-panel-seeks-microsoft-briefing-reported-ai-deal-talks-with-chinas-2026-11-18/"
     }
   ]
 }
