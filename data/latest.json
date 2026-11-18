@@ -1,19 +1,38 @@
 {
-  "updatedAtPrague": "18. 11. 2026 19:06 CET",
-  "marketStatus": "Cash otevřen; intradenní NDX 18. 11. 2026, 18:37:17 CET.",
+  "updatedAtPrague": "18. 11. 2026 20:08 CET",
+  "marketStatus": "Cash otevřen; intradenní NDX 18. 11. 2026, 19:42:04 CET.",
   "ndx": {
-    "value": 27091.23,
-    "changePercent": 0.33,
+    "value": 27199.9,
+    "changePercent": 0.73,
     "ath": 31361.37,
-    "asOf": "18. 11. 2026, 18:37:17 CET – intradenní cash NDX (Google Finance, 12:37:17 EST)."
+    "asOf": "18. 11. 2026, 19:42:04 CET – cash NDX (Google Finance, 13:42:04 EST)."
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "↗ mírné zlepšení proti 18. 11. 2026 18:01 CET",
-    "reason": "NDX +0,33 % (18:37 CET) vs. −0,10 % (17:34 CET); SOX −0,16 %; NVDA −2,47 % (18:59 CET)."
+    "trend": "↗ mírné zlepšení proti 18. 11. 2026 19:06 CET",
+    "reason": "NDX +0,73 % (19:42 CET) vs. +0,33 % (18:37 CET); SOX +0,13 %; NVDA −2,15 % (20:00 CET)."
   },
-  "driver": "NVDA −2,47 % (18:59 CET) navzdory Q4 výhledu 130 mld. USD; Reuters: rizika vedení, SEC a exportu do Číny.",
+  "driver": "FOMC zápis: téměř všichni počítají s dalším zvýšením sazeb; Fed varuje před dluhy a neprůhledným financováním AI datacenter.",
   "news": [
+    {
+      "title": "FOMC zápis 27.–28. 10.: téměř všichni očekávají další zvýšení sazeb; Fed upozornil na neprůhledné financování AI a datacenter.",
+      "time": "18. 11. 2026, 20:00 CET",
+      "publishedAtPrague": "18. 11. 2026, 20:00",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "fed",
+      "source": "Federal Reserve",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm",
+      "sourceLinks": [
+        {
+          "label": "Fed FOMC",
+          "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm"
+        }
+      ],
+      "eventKey": "fed-fomc-minutes-oct-27-28-2026-released-20261118",
+      "ndxRelevant": true,
+      "importanceScore": 92
+    },
     {
       "title": "Fed Waller: v prosinci zvýšení sazeb o 50 bb nebo signalizace dalších zvýšení v roce 2027.",
       "time": "18. 11. 2026, 13:51 UTC",
@@ -240,34 +259,21 @@
       "importanceScore": 70,
       "ndxRelevant": true,
       "eventKey": "ny-fed-williams-rate-outlook-20261117"
-    },
-    {
-      "title": "Microsoft představil model MAI Code 2 a AI model pro kyberbezpečnost.",
-      "time": "17. 11. 2026, 18:16 UTC",
-      "publishedAtPrague": "17. 11. 2026, 19:16",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "company_ai",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/legal/litigation/microsoft-unveils-ai-models-coding-cybersecurity-it-takes-anthropic-openai-2026-11-17/",
-      "importanceScore": 56,
-      "ndxRelevant": true,
-      "eventKey": "microsoft-ignite-ai-models-20261117"
     }
   ],
   "leaders": [
     {
       "ticker": "NVDA",
-      "changePercent": -2.47,
-      "impact": "Cash 18. 11., Google Finance 18:59:31 CET."
+      "changePercent": -2.15,
+      "impact": "Cash 18. 11., Google Finance 20:00:42 CET."
     },
     {
       "ticker": "AVGO",
-      "changePercent": 2.57,
-      "impact": "Cash 18. 11., Google Finance 18:35:38 CET."
+      "changePercent": 3.35,
+      "impact": "Cash 18. 11., Google Finance 19:29:50 CET."
     }
   ],
-  "macro": "US10Y | 18. 11. 19:06: 5,058 % | 17. 11.: 5,104 % | −4,6 bb",
+  "macro": "US10Y | 18. 11. 19:46: 5,062 % | 17. 11.: 5,103 % | −4,1 bb",
   "regulation": null,
   "technical": {
     "support": null,
@@ -277,11 +283,11 @@
     "athReturnPercent": 12,
     "athReason": "Beze změny: NVDA Q4 výhled 130 mld. USD; podmínkou stabilizace AI financování a sazeb.",
     "downside": "−5 až −10 %",
-    "downsideReason": "NVDA −2,47 %; AI CAPEX, financování datacenter a sazby."
+    "downsideReason": "Fed: rizika dluhu AI infrastruktury; NVDA −2,15 %, očekávané další zvýšení sazeb."
   },
   "catalyst": {
-    "event": "Zápis FOMC z 27.–28. října 2026",
-    "timePrague": "18. 11. 2026, 20:00 CET"
+    "event": "USA: týdenní žádosti o podporu v nezaměstnanosti",
+    "timePrague": "19. 11. 2026, 14:30 CET"
   },
   "archive": [
     {
@@ -849,6 +855,20 @@
           "url": "https://www.google.com/finance/quote/AVGO:NASDAQ?hl=en"
         }
       ]
+    },
+    {
+      "time": "18. 11. 2026 20:08 CET",
+      "summary": "NDX 27 199,90 b. (+0,73 %), −13,27 % od historického maxima; medvědí ↗. FOMC zápis: další zvýšení sazeb a rizika financování AI.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq-100",
+          "url": "https://www.google.com/finance/quote/NDX:INDEXNASDAQ?hl=en"
+        },
+        {
+          "label": "Fed FOMC",
+          "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm"
+        }
+      ]
     }
   ],
   "history": [
@@ -915,6 +935,10 @@
     {
       "time": "18. 11. 2026 19:06 CET",
       "ndx": 27091.23
+    },
+    {
+      "time": "18. 11. 2026 20:08 CET",
+      "ndx": 27199.9
     }
   ],
   "sources": [
@@ -1273,6 +1297,18 @@
     {
       "name": "Reuters / NVDA market",
       "url": "https://www.reuters.com/business/ai-stocks-rally-nvidia-outlook-calms-demand-fears-2026-11-18/"
+    },
+    {
+      "name": "Federal Reserve — Minutes 27.–28. 10. 2026",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm"
+    },
+    {
+      "name": "Google Finance TNX",
+      "url": "https://www.google.com/finance/quote/TNX:INDEXCBOE?hl=en"
+    },
+    {
+      "name": "US jobless claims calendar",
+      "url": "https://www.financecalendar.com/event/us-initial-jobless-claims-november-19-2026/"
     }
   ]
 }
