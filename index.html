@@ -516,7 +516,7 @@ let s=d.sentiment||{};set('sentiment',[s.label,s.trend].filter(Boolean).join(' �
 latestNews=Array.isArray(d.news)?d.news:[];
 displayTopNews();
 
-setSentences('macro',d.macro||'Zatím bez údajů');let f=d.forecast||{};set('forecast-ath',typeof f.athReturnPercent==='number'?pct(f.athReturnPercent):'—');setSentences('forecast-ath-reason',f.athReason||'Čeká na aktualizaci');set('forecast-down',displayScenario(f.downside||'—'));
+setSentences('macro',String(d.macro||'Zatím bez údajů').replace(/Δ\s*(?=[+−-]?\d)/gu,''));let f=d.forecast||{};set('forecast-ath',typeof f.athReturnPercent==='number'?pct(f.athReturnPercent):'—');setSentences('forecast-ath-reason',f.athReason||'Čeká na aktualizaci');set('forecast-down',displayScenario(f.downside||'—'));
 const percentages=(String(f.downside||'').match(/\d+(?:[.,]\d+)?/g)||[]).map(v=>Number(v.replace(',','.')));
 if(Number.isFinite(n.value)&&n.value>0&&percentages.length>=2&&percentages[0]>0&&percentages[1]>percentages[0]&&percentages[1]<=100){
   const upper=Math.round(n.value*(1-percentages[0]/100));
