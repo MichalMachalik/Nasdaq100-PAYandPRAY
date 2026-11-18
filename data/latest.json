@@ -1,51 +1,19 @@
 {
-  "updatedAtPrague": "18. 11. 2026 03:59 CET",
-  "marketStatus": "Cash NDX uzavřen. Poslední závěr 17. 11. 2026, 22:00 CET.",
+  "updatedAtPrague": "18. 11. 2026 05:05 CET",
+  "marketStatus": "Cash NDX uzavřen; poslední závěr 17. 11. 2026, 22:00 CET.",
   "ndx": {
     "value": 27001.78,
     "changePercent": -0.72,
     "ath": 31361.37,
-    "asOf": "17. 11. 2026, 22:00 CET – závěr cash NDX; Nasdaq Index Overview."
+    "asOf": "17. 11. 2026, 22:00 CET – závěr cash NDX (Nasdaq)."
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "↘ mírné zhoršení proti 18. 11. 02:59 CET",
-    "reason": "NDX 17. 11. −0,72 %; SOX +0,34 %; noční růst futures po NVDA Q3 oslabil."
+    "trend": "↗ mírné zlepšení proti 18. 11. 03:59 CET",
+    "reason": "NDX −0,72 % (17. 11.); NVDA Q3 překonala tržní konsenzus; futures po výsledcích mírně rostou."
   },
-  "driver": "Vysoký význam: NVIDIA Q3 tržby 115,8 mld. USD a Q4 výhled 130 mld. USD; poptávka po AI čipech a financování datacenter.",
+  "driver": "Vysoký význam: NVDA Q3 tržby 115,8 mld. USD (beat 6,1 %), upravený EPS 2,68 USD (beat 8,5 %), výhled Q4 130 mld. USD (beat 3,8 %).",
   "news": [
-    {
-      "title": "NVDA +4,7 % po trhu; MSCI Asia ex Japan +0,9 %, KOSPI až +3,3 %.",
-      "time": "18. 11. 2026, 01:46 UTC – původní zveřejnění Reuters",
-      "publishedAtPrague": "18. 11. 2026, 02:46",
-      "publicationTimeVerified": true,
-      "kind": "new",
-      "category": "market_reaction",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-11-18/",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-11-18/"
-        }
-      ],
-      "importanceScore": 58,
-      "ndxRelevant": true,
-      "eventKey": "asia-chip-rebound-nvidia-earnings-20261118"
-    },
-    {
-      "title": "Představenstvo NVIDIA potvrdilo, že Jensena Huanga do funkce CEO nevrátí.",
-      "time": "17. 11. 2026, 22:12 UTC",
-      "publishedAtPrague": "17. 11. 2026, 23:12",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "corporate_governance",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/legal/transactional/nvidia-board-says-it-does-not-intend-reinstate-jensen-huang-ceo-2026-11-17/",
-      "importanceScore": 78,
-      "ndxRelevant": true,
-      "eventKey": "nvidia-board-rejects-ceo-return-20261117"
-    },
     {
       "title": "NVIDIA Q3 FY2027: tržby 115,8 mld. USD vs. kons. 109,1 (beat 6,1 %). Upravený EPS 2,68 USD vs. kons. 2,47 (beat 8,5 %). Výhled Q4 130 mld. USD vs. kons. 125,25 (beat 3,8 %).",
       "time": "17. 11. 2026, 21:24 UTC",
@@ -77,6 +45,31 @@
       ]
     },
     {
+      "title": "Představenstvo NVIDIA potvrdilo, že Jensena Huanga do funkce CEO nevrátí.",
+      "time": "17. 11. 2026, 22:12 UTC",
+      "publishedAtPrague": "17. 11. 2026, 23:12",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "corporate_governance",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/legal/transactional/nvidia-board-says-it-does-not-intend-reinstate-jensen-huang-ceo-2026-11-17/",
+      "importanceScore": 78,
+      "ndxRelevant": true,
+      "eventKey": "nvidia-board-rejects-ceo-return-20261117"
+    },
+    {
+      "title": "Reuters: výnos dluhopisů CoreWeave téměř 15 %; dražší financování AI infrastruktury.",
+      "time": "17. 11. 2026, 11:12 UTC – zveřejnění Reuters",
+      "publishedAtPrague": "17. 11. 2026, 12:12",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "source": "Reuters – AI financování",
+      "url": "https://www.reuters.com/business/nvidia-turmoil-marks-end-easy-money-ai-trade-2026-11-17/",
+      "importanceScore": 74,
+      "ndxRelevant": true,
+      "eventKey": "coreweave-ai-financing-20261117"
+    },
+    {
       "title": "John Williams z newyorského Fedu nadále podporuje vyšší sazby, nikoli dramatické zpřísnění.",
       "time": "17. 11. 2026, 20:08 UTC",
       "publishedAtPrague": "17. 11. 2026, 21:08",
@@ -88,6 +81,116 @@
       "importanceScore": 70,
       "ndxRelevant": true,
       "eventKey": "ny-fed-williams-rate-outlook-20261117"
+    },
+    {
+      "title": "St. Louis Fed / Musalem: očekává několik zvýšení sazeb do jara 2027 při inflaci nad 3 %.",
+      "time": "17. 11. 2026, 12:32 UTC – původní článek Reuters; čas projevu samostatně neověřen",
+      "publishedAtPrague": "17. 11. 2026, 13:32",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "source": "Reuters – Musalem/Fed",
+      "url": "https://www.reuters.com/business/feds-musalem-us-likely-needs-several-rate-hikes-by-spring-control-inflation-2026-11-17/",
+      "importanceScore": 68,
+      "ndxRelevant": true,
+      "eventKey": "stl-fed-musalem-20261117"
+    },
+    {
+      "title": "Čína (MOFCOM): nesouhlas s americkými omezeními vzdáleného přístupu k AI čipům; hrozba obchodních protiopatření.",
+      "time": "17. 11. 2026, 20:20 čínského času (CST, UTC+8) – původní publikace ministerstva; Reuters zprávu zveřejnil 15:44 CET",
+      "publishedAtPrague": "17. 11. 2026, 13:20",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "source": "Ministerstvo obchodu ČLR (MOFCOM), původní prohlášení",
+      "url": "https://www.mofcom.gov.cn/syxwfb/art/2026/art_3a69f2058b724dd39cd8ecddcaa4ab87.html",
+      "importanceScore": 68,
+      "ndxRelevant": true,
+      "eventKey": "mofcom-ai-remote-access-20261117"
+    },
+    {
+      "title": "Návrh FCC: omezení dovozu čínských optických transceiverů pro datacentra; AMZN, GOOGL, META a MSFT namítají dopady na dodávky.",
+      "time": "17. 11. 2026, 11:02 UTC – původní Reuters",
+      "publishedAtPrague": "17. 11. 2026, 12:02",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "ai_regulation",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/trumps-china-data-center-curb-advances-despite-amazon-google-meta-lobbying-2026-11-17/",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/trumps-china-data-center-curb-advances-despite-amazon-google-meta-lobbying-2026-11-17/"
+        }
+      ],
+      "importanceScore": 68,
+      "ndxRelevant": true,
+      "eventKey": "fcc-china-optical-transceivers-proposal-20261117"
+    },
+    {
+      "title": "BLS: dovozní ceny USA +1,1 % m/m oproti tržnímu odhadu +0,7 %; dovážené kapitálové vybavení +1,5 %.",
+      "time": "17. 11. 2026, 08:30 EST; plánované originální zveřejnění BLS",
+      "publishedAtPrague": "17. 11. 2026, 14:30",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "source": "U.S. Bureau of Labor Statistics, USDL-26-1711",
+      "url": "https://www.bls.gov/news.release/archives/ximpim_11172026.htm",
+      "importanceScore": 65,
+      "ndxRelevant": true,
+      "eventKey": "us-import-prices-202610"
+    },
+    {
+      "title": "BofA: čistá nadváha technologií u správců fondů klesla z 37 % na 12 %; 52 % očekává omezení investic do AI infrastruktury.",
+      "time": "17. 11. 2026, 11:29 UTC – původní zveřejnění Reuters; průzkum BofA za listopad 2026",
+      "publishedAtPrague": "17. 11. 2026, 12:29",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "source": "Reuters / průzkum BofA Global Research",
+      "url": "https://www.reuters.com/business/global-markets-bofa-survey-2026-11-17/",
+      "importanceScore": 65,
+      "ndxRelevant": true,
+      "eventKey": "bofa-fund-manager-survey-202611"
+    },
+    {
+      "title": "Reuters: index SOX oslabil od konce června o 34 % před výsledky NVIDIA.",
+      "time": "17. 11. 2026, 11:06 UTC – zveřejnění Reuters",
+      "publishedAtPrague": "17. 11. 2026, 12:06",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "source": "Reuters – polovodiče",
+      "url": "https://www.reuters.com/business/shaky-semiconductor-trade-faces-big-week-investors-look-bottom-2026-11-17/",
+      "importanceScore": 63,
+      "ndxRelevant": true,
+      "eventKey": "sox-chip-sector-20261117"
+    },
+    {
+      "title": "Reuters: technologické akcie před výsledky NVIDIA oslabovaly; trh sledoval návratnost investic do AI a financování datacenter.",
+      "time": "17. 11. 2026, 10:51 UTC – původní vydání Reuters; článek následně aktualizován bez ověřeného přesného času",
+      "publishedAtPrague": "17. 11. 2026, 11:51",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "source": "Reuters – trhy USA",
+      "url": "https://www.reuters.com/business/us-stock-futures-slip-ahead-nvidia-results-fed-speakers-focus-2026-11-17/",
+      "importanceScore": 60,
+      "ndxRelevant": true,
+      "eventKey": "us-tech-selloff-ahead-nvidia-20261117"
+    },
+    {
+      "title": "NVDA +4,7 % po trhu; MSCI Asia ex Japan +0,9 %, KOSPI až +3,3 %.",
+      "time": "18. 11. 2026, 01:46 UTC – původní zveřejnění Reuters",
+      "publishedAtPrague": "18. 11. 2026, 02:46",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "market_reaction",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-11-18/",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-11-18/"
+        }
+      ],
+      "importanceScore": 58,
+      "ndxRelevant": true,
+      "eventKey": "asia-chip-rebound-nvidia-earnings-20261118"
     },
     {
       "title": "Microsoft představil model MAI Code 2 a AI model pro kyberbezpečnost.",
@@ -115,18 +218,6 @@
       "eventKey": "fed-industrial-production-202610"
     },
     {
-      "title": "BLS: dovozní ceny USA +1,1 % m/m oproti tržnímu odhadu +0,7 %; dovážené kapitálové vybavení +1,5 %.",
-      "time": "17. 11. 2026, 08:30 EST; plánované originální zveřejnění BLS",
-      "publishedAtPrague": "17. 11. 2026, 14:30",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "source": "U.S. Bureau of Labor Statistics, USDL-26-1711",
-      "url": "https://www.bls.gov/news.release/archives/ximpim_11172026.htm",
-      "importanceScore": 65,
-      "ndxRelevant": true,
-      "eventKey": "us-import-prices-202610"
-    },
-    {
       "title": "Census: říjnové maloobchodní tržby USA +0,2 % m/m po zářijových +0,8 %.",
       "time": "17. 11. 2026, 08:30 EST – oficiální vydání statistiky Census Bureau",
       "publishedAtPrague": "17. 11. 2026, 14:30",
@@ -137,78 +228,6 @@
       "importanceScore": 54,
       "ndxRelevant": true,
       "eventKey": "us-retail-sales-202610"
-    },
-    {
-      "title": "St. Louis Fed / Musalem: očekává několik zvýšení sazeb do jara 2027 při inflaci nad 3 %.",
-      "time": "17. 11. 2026, 12:32 UTC – původní článek Reuters; čas projevu samostatně neověřen",
-      "publishedAtPrague": "17. 11. 2026, 13:32",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "source": "Reuters – Musalem/Fed",
-      "url": "https://www.reuters.com/business/feds-musalem-us-likely-needs-several-rate-hikes-by-spring-control-inflation-2026-11-17/",
-      "importanceScore": 68,
-      "ndxRelevant": true,
-      "eventKey": "stl-fed-musalem-20261117"
-    },
-    {
-      "title": "Čína (MOFCOM): nesouhlas s americkými omezeními vzdáleného přístupu k AI čipům; hrozba obchodních protiopatření.",
-      "time": "17. 11. 2026, 20:20 čínského času (CST, UTC+8) – původní publikace ministerstva; Reuters zprávu zveřejnil 15:44 CET",
-      "publishedAtPrague": "17. 11. 2026, 13:20",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "source": "Ministerstvo obchodu ČLR (MOFCOM), původní prohlášení",
-      "url": "https://www.mofcom.gov.cn/syxwfb/art/2026/art_3a69f2058b724dd39cd8ecddcaa4ab87.html",
-      "importanceScore": 68,
-      "ndxRelevant": true,
-      "eventKey": "mofcom-ai-remote-access-20261117"
-    },
-    {
-      "title": "BofA: čistá nadváha technologií u správců fondů klesla z 37 % na 12 %; 52 % očekává omezení investic do AI infrastruktury.",
-      "time": "17. 11. 2026, 11:29 UTC – původní zveřejnění Reuters; průzkum BofA za listopad 2026",
-      "publishedAtPrague": "17. 11. 2026, 12:29",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "source": "Reuters / průzkum BofA Global Research",
-      "url": "https://www.reuters.com/business/global-markets-bofa-survey-2026-11-17/",
-      "importanceScore": 65,
-      "ndxRelevant": true,
-      "eventKey": "bofa-fund-manager-survey-202611"
-    },
-    {
-      "title": "Reuters: výnos dluhopisů CoreWeave téměř 15 %; dražší financování AI infrastruktury.",
-      "time": "17. 11. 2026, 11:12 UTC – zveřejnění Reuters",
-      "publishedAtPrague": "17. 11. 2026, 12:12",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "source": "Reuters – AI financování",
-      "url": "https://www.reuters.com/business/nvidia-turmoil-marks-end-easy-money-ai-trade-2026-11-17/",
-      "importanceScore": 74,
-      "ndxRelevant": true,
-      "eventKey": "coreweave-ai-financing-20261117"
-    },
-    {
-      "title": "Reuters: index SOX oslabil od konce června o 34 % před výsledky NVIDIA.",
-      "time": "17. 11. 2026, 11:06 UTC – zveřejnění Reuters",
-      "publishedAtPrague": "17. 11. 2026, 12:06",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "source": "Reuters – polovodiče",
-      "url": "https://www.reuters.com/business/shaky-semiconductor-trade-faces-big-week-investors-look-bottom-2026-11-17/",
-      "importanceScore": 63,
-      "ndxRelevant": true,
-      "eventKey": "sox-chip-sector-20261117"
-    },
-    {
-      "title": "Reuters: technologické akcie před výsledky NVIDIA oslabovaly; trh sledoval návratnost investic do AI a financování datacenter.",
-      "time": "17. 11. 2026, 10:51 UTC – původní vydání Reuters; článek následně aktualizován bez ověřeného přesného času",
-      "publishedAtPrague": "17. 11. 2026, 11:51",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "source": "Reuters – trhy USA",
-      "url": "https://www.reuters.com/business/us-stock-futures-slip-ahead-nvidia-results-fed-speakers-focus-2026-11-17/",
-      "importanceScore": 60,
-      "ndxRelevant": true,
-      "eventKey": "us-tech-selloff-ahead-nvidia-20261117"
     },
     {
       "title": "NVIDIA: zřídila výbor představenstva pro národní bezpečnost a exportní kontroly.",
@@ -223,23 +242,23 @@
       "eventKey": "nvidia-security-committee-20261117"
     },
     {
-      "title": "Návrh FCC: omezení dovozu čínských optických transceiverů pro datacentra; AMZN, GOOGL, META a MSFT namítají dopady na dodávky.",
-      "time": "17. 11. 2026, 11:02 UTC – původní Reuters",
-      "publishedAtPrague": "17. 11. 2026, 12:02",
+      "title": "Kalifornský prokurátor Bonta prověřuje, zda okolnosti ve vedení NVIDIA odůvodňují další postup.",
+      "time": "17. 11. 2026, 19:14 UTC – Reuters",
+      "publishedAtPrague": "17. 11. 2026, 20:14",
       "publicationTimeVerified": true,
       "kind": "continuing",
-      "category": "ai_regulation",
+      "category": "corporate_governance",
       "source": "Reuters",
-      "url": "https://www.reuters.com/world/trumps-china-data-center-curb-advances-despite-amazon-google-meta-lobbying-2026-11-17/",
+      "url": "https://www.reuters.com/business/california-ag-says-nvidia-scandal-has-raised-red-flags-could-lead-probe-2026-11-17/",
       "sourceLinks": [
         {
           "label": "Reuters",
-          "url": "https://www.reuters.com/world/trumps-china-data-center-curb-advances-despite-amazon-google-meta-lobbying-2026-11-17/"
+          "url": "https://www.reuters.com/business/california-ag-says-nvidia-scandal-has-raised-red-flags-could-lead-probe-2026-11-17/"
         }
       ],
-      "importanceScore": 68,
+      "importanceScore": 50,
       "ndxRelevant": true,
-      "eventKey": "fcc-china-optical-transceivers-proposal-20261117"
+      "eventKey": "california-ag-nvidia-review-20261117"
     }
   ],
   "leaders": [
@@ -262,12 +281,12 @@
   },
   "forecast": {
     "athReturnPercent": 12,
-    "athReason": "Odhad beze změny: NVDA Q3 a Q4 výhled nad konsenzem; podmínka stabilizace financování AI.",
+    "athReason": "Odhad beze změny: silná poptávka po AI čipech; podmínka stabilizace financování datacenter.",
     "downside": "−5 až −10 %",
-    "downsideReason": "Odhad beze změny: financování AI datacenter a riziko marží."
+    "downsideReason": "Odhad beze změny: riziko financování datacenter, marží a restriktivního Fedu."
   },
   "catalyst": {
-    "event": "Otevření cash trhu; zápis FOMC",
+    "event": "Otevření cash NDX; zveřejnění zápisu FOMC",
     "timePrague": "18. 11. 2026, 15:30 CET; FOMC 20:00 CET"
   },
   "archive": [
@@ -572,6 +591,24 @@
         {
           "label": "Google Finance futures",
           "url": "https://www.google.com/finance/quote/NQZ26:CME_EMINIS"
+        }
+      ]
+    },
+    {
+      "time": "18. 11. 2026 05:05 CET",
+      "summary": "Cash NDX 17. 11. závěr 27 001,78 b. (−0,72 %, −13,90 % od historického maxima). NVDA Q3 tržby 115,8 mld. USD, upravený EPS 2,68 USD, výhled Q4 130 mld. USD. Bez zásadních novinek od 03:59 CET; sentiment Medvědí, ↗.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq NDX",
+          "url": "https://indexes.nasdaq.com/index/Overview/NDX"
+        },
+        {
+          "label": "NVIDIA IR",
+          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-11-18/"
         }
       ]
     }
@@ -910,6 +947,14 @@
     {
       "name": "Reuters – FCC návrh omezení dovozu čínských transceiverů 17. 11. 12:02 CET",
       "url": "https://www.reuters.com/world/trumps-china-data-center-curb-advances-despite-amazon-google-meta-lobbying-2026-11-17/"
+    },
+    {
+      "name": "NVIDIA IR Q3 FY2027",
+      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/"
+    },
+    {
+      "name": "Reuters Asia 18. 11.",
+      "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-11-18/"
     }
   ]
 }
