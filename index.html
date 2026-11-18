@@ -310,7 +310,7 @@ const sentenceBreaks=value=>cleanText(value).replace(
   }
 );
 // Směr změny je vyjádřen pouze barvou, nikoliv znakem + nebo −.
-const signedPercentPattern=/(^|[^\p{L}\d])([+−-])\s*(\d+(?:[.,]\d+)?)(\s*%)/gu;
+const signedPercentPattern=/(^|[^\p{L}\d])(?:(beat|miss)\s+(\d+(?:[.,]\d+)?)(\s*%)|([+−-])\s*(\d+(?:[.,]\d+)?)(\s*%))/giu;
 const renderSigned=(el,value)=>{
   const raw=String(value??''),frag=document.createDocumentFragment();
   let last=0,m;
@@ -318,8 +318,10 @@ const renderSigned=(el,value)=>{
   while((m=signedPercentPattern.exec(raw))!==null){
     frag.append(document.createTextNode(raw.slice(last,m.index)+m[1]));
     const span=document.createElement('span');
-    span.className=m[2]==='+'?'signed-up':'signed-down';
-    span.textContent=m[3]+m[4];frag.append(span);last=signedPercentPattern.lastIndex;
+    const verdict=m[2]?.toLowerCase();
+    span.className=verdict?(verdict==='beat'?'signed-up':'signed-down'):(m[5]==='+'?'signed-up':'signed-down');
+    span.textContent=verdict?m[2]+' '+m[3]+m[4]:m[6]+m[7];
+    frag.append(span);last=signedPercentPattern.lastIndex;
   }
   frag.append(document.createTextNode(raw.slice(last)));
   el.replaceChildren(frag);
