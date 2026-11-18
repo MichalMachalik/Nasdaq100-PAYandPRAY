@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "18. 11. 2026 05:05 CET",
+  "updatedAtPrague": "18. 11. 2026 06:07 CET",
   "marketStatus": "Cash NDX uzavřen; poslední závěr 17. 11. 2026, 22:00 CET.",
   "ndx": {
     "value": 27001.78,
@@ -9,10 +9,10 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "↗ mírné zlepšení proti 18. 11. 03:59 CET",
-    "reason": "NDX −0,72 % (17. 11.); NVDA Q3 překonala tržní konsenzus; futures po výsledcích mírně rostou."
+    "trend": "↘ mírné zhoršení proti 18. 11. 05:05 CET",
+    "reason": "NDX 17. 11. −0,72 %. NVDA překonala konsenzus Q3, po výsledcích však odevzdala počáteční růst; MSCI Asia ex Japan −0,1 %."
   },
-  "driver": "Vysoký význam: NVDA Q3 tržby 115,8 mld. USD (beat 6,1 %), upravený EPS 2,68 USD (beat 8,5 %), výhled Q4 130 mld. USD (beat 3,8 %).",
+  "driver": "Vysoký význam: při poklesu cash NDX 17. 11. investoři sledovali návratnost AI CAPEX, financování datacenter a nejistotu ve vedení NVDA; následný Q3 report překonal odhady.",
   "news": [
     {
       "title": "NVIDIA Q3 FY2027: tržby 115,8 mld. USD vs. kons. 109,1 (beat 6,1 %). Upravený EPS 2,68 USD vs. kons. 2,47 (beat 8,5 %). Výhled Q4 130 mld. USD vs. kons. 125,25 (beat 3,8 %).",
@@ -56,6 +56,25 @@
       "importanceScore": 78,
       "ndxRelevant": true,
       "eventKey": "nvidia-board-rejects-ceo-return-20261117"
+    },
+    {
+      "title": "WSJ přes Reuters: SEC podle zdrojů prověřuje NVIDIA po odchodu Jensena Huanga.",
+      "time": "17. 11. 2026, 21:08 UTC",
+      "publishedAtPrague": "17. 11. 2026, 22:08",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "corporate_governance",
+      "source": "Reuters (zpráva WSJ)",
+      "url": "https://www.reuters.com/technology/nvidia-facing-sec-probe-after-huangs-resignation-wsj-reports-2026-11-17/",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/technology/nvidia-facing-sec-probe-after-huangs-resignation-wsj-reports-2026-11-17/"
+        }
+      ],
+      "importanceScore": 74,
+      "ndxRelevant": true,
+      "eventKey": "nvidia-sec-wsj-report-20261117"
     },
     {
       "title": "Reuters: výnos dluhopisů CoreWeave téměř 15 %; dražší financování AI infrastruktury.",
@@ -150,6 +169,25 @@
       "eventKey": "bofa-fund-manager-survey-202611"
     },
     {
+      "title": "FedWatch: pravděpodobnost prosincového zvýšení sazeb o 25 bb dosahuje 95,7 %; DXY 103,65.",
+      "time": "18. 11. 2026, 01:34 UTC",
+      "publishedAtPrague": "18. 11. 2026, 02:34",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "macro",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/middle-east/dollar-holds-near-19-month-high-data-supports-case-us-rate-hikes-2026-11-18/",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/middle-east/dollar-holds-near-19-month-high-data-supports-case-us-rate-hikes-2026-11-18/"
+        }
+      ],
+      "importanceScore": 63,
+      "ndxRelevant": true,
+      "eventKey": "us-dec-fedwatch-25bp-20261118"
+    },
+    {
       "title": "Reuters: index SOX oslabil od konce června o 34 % před výsledky NVIDIA.",
       "time": "17. 11. 2026, 11:06 UTC – zveřejnění Reuters",
       "publishedAtPrague": "17. 11. 2026, 12:06",
@@ -174,11 +212,11 @@
       "eventKey": "us-tech-selloff-ahead-nvidia-20261117"
     },
     {
-      "title": "NVDA +4,7 % po trhu; MSCI Asia ex Japan +0,9 %, KOSPI až +3,3 %.",
+      "title": "MSCI Asia ex Japan −0,1 %, Nikkei −0,3 % po výsledcích NVDA; růst asijských akcií se obrátil.",
       "time": "18. 11. 2026, 01:46 UTC – původní zveřejnění Reuters",
       "publishedAtPrague": "18. 11. 2026, 02:46",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "market_reaction",
       "source": "Reuters",
       "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-11-18/",
@@ -265,15 +303,15 @@
     {
       "ticker": "NVDA",
       "changePercent": -0.44,
-      "impact": "Cash závěr 17. 11. 2026: 155,46 USD; po výsledcích Reuters uvádí růst po trhu +4,5 %."
+      "impact": "Cash závěr 17. 11. 2026: 155,46 USD; výsledek Q3 zveřejněn po uzavření."
     },
     {
       "ticker": "AVGO",
       "changePercent": 2.46,
-      "impact": "Cash závěr 17. 11. 2026; ověřené předchozí závěrečné údaje."
+      "impact": "Cash závěr 17. 11. 2026: 341,60 USD."
     }
   ],
-  "macro": "US10Y | 18. 11.: 5,123 % | 17. 11.: 5,100 % | +2,3 bb",
+  "macro": "US10Y | 17. 11.: 5,10 % | 16. 11.: 5,12 % | −2,0 bb",
   "regulation": null,
   "technical": {
     "support": null,
@@ -281,9 +319,9 @@
   },
   "forecast": {
     "athReturnPercent": 12,
-    "athReason": "Odhad beze změny: silná poptávka po AI čipech; podmínka stabilizace financování datacenter.",
+    "athReason": "Odhad beze změny: Q3 NVDA nad konsenzem; podmínka stabilizace financování AI datacenter.",
     "downside": "−5 až −10 %",
-    "downsideReason": "Odhad beze změny: riziko financování datacenter, marží a restriktivního Fedu."
+    "downsideReason": "Odhad beze změny: AI CAPEX, financování datacenter a restriktivní sazby."
   },
   "catalyst": {
     "event": "Otevření cash NDX; zveřejnění zápisu FOMC",
@@ -605,6 +643,24 @@
         {
           "label": "NVIDIA IR",
           "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-11-18/"
+        }
+      ]
+    },
+    {
+      "time": "18. 11. 2026 06:07 CET",
+      "summary": "Cash NDX 17. 11. závěr 27 001,78 b. (−0,72 %, −13,90 % od historického maxima). NVDA Q3 tržby 115,8 mld. USD; asijské akcie po úvodním růstu oslabily. Bez zásadních nových událostí proti 05:05. Odhad návratu 12 %, propad −5 až −10 %.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq NDX",
+          "url": "https://indexes.nasdaq.com/index/Overview/NDX"
+        },
+        {
+          "label": "NVIDIA IR",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027"
         },
         {
           "label": "Reuters",
