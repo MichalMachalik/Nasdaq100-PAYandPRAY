@@ -72,12 +72,7 @@ def extract(soup,label,now):
 
 
 def probe_alternatives():
-    urls=[
-        "https://api.tradingeconomics.com/markets/commodities?c=guest:guest",
-        "https://api.tradingeconomics.com/markets/currency?c=guest:guest",
-        "https://tradingeconomics.com/commodity/crude-oil",
-        "https://tradingeconomics.com/euro-area/currency",
-    ]
+    urls=[item[4] for item in ASSETS]
     for url in urls:
         try:
             req=Request(url,headers={"User-Agent":"Mozilla/5.0"})
@@ -89,9 +84,11 @@ def probe_alternatives():
                     for name in ("description","og:description"):
                         tag=soup.find("meta",attrs={"name":name}) or soup.find("meta",attrs={"property":name})
                         if tag:print("ALT_META",name,repr(tag.get("content","")[:500]),flush=True)
-                    for term in ("Daily Change","Crude Oil - Stats","EUR/USD","101."):
+                    for node in soup.select('[id^="market_"], [id*="last"], [id*="chg"], [id*="daily"]')[:22]:
+                        print("ALT_ELEMENT",node.get("id"),node.name,repr(node.get_text(" ",strip=True)[:125]),flush=True)
+                    for term in ("Daily Change","Crude Oil - Stats","EUR/USD"):
                         at=text.find(term)
-                        if at>=0:print("ALT_MATCH",term,repr(text[max(0,at-90):at+260]),flush=True)
+                        if at>=0:print("ALT_MATCH",term,repr(text[max(0,at-70):at+160]),flush=True)
         except Exception as e:print("ALT_ERROR",url,type(e).__name__,str(e)[:180],flush=True)
 
 def main():
