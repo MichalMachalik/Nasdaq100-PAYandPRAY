@@ -45,7 +45,17 @@
         "nextQuarterRevenueBillionUsd": 125.25,
         "method": "LSEG consensus; Reuters",
         "checkedAtPrague": "18. 11. 2026"
-      }
+      },
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/nvidia-forecasts-quarterly-revenue-above-estimates-first-report-since-huangs-2026-11-17/"
+        },
+        {
+          "label": "NVIDIA IR",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027"
+        }
+      ]
     },
     {
       "title": "John Williams z newyorského Fedu nadále podporuje vyšší sazby, nikoli dramatické zpřísnění.",
