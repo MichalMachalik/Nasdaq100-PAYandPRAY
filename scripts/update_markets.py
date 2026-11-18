@@ -68,7 +68,34 @@ def get_instrument(ident,unit,url,low,high,now):
         raise ValueError("Required live quote fields missing from "+url)
     value=decimal(val.get_text(" ",strip=True))
     change=decimal(day.get_text(" ",strip=True))
-    asof=date_from_description(meta.get("content",""))
+    try:
+        asof=date_from_description(meta.get("content",""))
+    except ValueError:
+        if ident!="EUR/CZK":
+            raise
+        # EURCZK cross view lacks dated metadata. Validate its quote against the
+        # cross on the same provider's dated Czech currency overview.
+        companion=fetch("https://tradingeconomics.com/czech-republic/currency")
+        date_meta=companion.find("meta",attrs={"id":"metaDesc"}) or companion.find("meta",attrs={"name":"description"})
+        if date_meta is None:
+            raise ValueError("Dated Czech currency reference not available")
+        asof=date_from_description(date_meta.get("content",""))
+        cross=None
+        for a in companion.select("a"):
+            if a.get_text(" ",strip=True).upper()=="EURCZK":
+                tr=a.find_parent("tr")
+                if tr:
+                    cells=tr.find_all("td",recursive=False)
+                    nums=[]
+                    for cell in cells:
+                        try: nums.append(decimal(cell.get_text(" ",strip=True)))
+                        except ValueError: continue
+                    if nums:
+                        cross=next((z for z in nums if 10<=z<=60),None)
+                        if cross is not None: break
+        if cross is None or abs(cross/value-1)>0.02:
+            raise ValueError(f"EURCZK undated quote cannot be cross-checked: EURCZK={value}, companion={cross}")
+        print(f"EURCZK verified against dated CZK cross: {cross}, day={asof.isoformat()}",flush=True)
     if not low<=value<=high or not -60<=change<=60:
         raise ValueError("Out-of-range "+ident+" quote")
     if asof>now.date()+timedelta(days=1):
