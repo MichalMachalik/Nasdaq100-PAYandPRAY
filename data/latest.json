@@ -1,18 +1,18 @@
 {
-  "updatedAtPrague": "18. 11. 2026 07:57 CET",
+  "updatedAtPrague": "18. 11. 2026 09:01 CET",
   "marketStatus": "Cash NDX uzavřen; poslední závěr 17. 11. 2026, 22:00 CET.",
   "ndx": {
     "value": 27001.78,
     "changePercent": -0.72,
     "ath": 31361.37,
-    "asOf": "17. 11. 2026, 22:00 CET – závěr cash NDX (Nasdaq)."
+    "asOf": "17. 11. 2026, 22:00 CET – závěr cash NDX."
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→ beze změny proti 18. 11. 07:06 CET",
-    "reason": "Cash NDX 17. 11. −0,72 %. NVDA Q3 tržby 115,8 mld. USD; upravený EPS 2,68 USD."
+    "trend": "→ beze změny proti 18. 11. 07:57 CET",
+    "reason": "Cash NDX 17. 11. −0,72 %; NVDA Q3 tržby 115,8 mld. USD, upravený EPS 2,68 USD."
   },
-  "driver": "Vysoký význam: NVDA Q3 tržby 115,8 mld. USD, upravený EPS 2,68 USD; financování AI infrastruktury zůstává hlavním sledovaným rizikem.",
+  "driver": "Vysoký význam: 17. 11. oslabovaly technologické akcie před výsledky NVDA; pozornost na návratnost AI CAPEX a financování datacenter.",
   "news": [
     {
       "title": "NVIDIA Q3 FY2027: tržby 115,8 mld. USD vs. kons. 109,1 (beat 6,1 %). Upravený EPS 2,68 USD vs. kons. 2,47 (beat 8,5 %). Výhled Q4 130 mld. USD vs. kons. 125,25 (beat 3,8 %).",
@@ -322,15 +322,15 @@
     {
       "ticker": "NVDA",
       "changePercent": -0.44,
-      "impact": "Cash závěr 17. 11. 2026: 155,46 USD; výsledek Q3 zveřejněn po uzavření."
+      "impact": "17. 11. cash závěr 155,46 USD; výsledky Q3 zveřejněny po uzavření."
     },
     {
-      "ticker": "AVGO",
-      "changePercent": 2.46,
-      "impact": "Cash závěr 17. 11. 2026: 341,60 USD."
+      "ticker": "MSFT",
+      "changePercent": -2.27,
+      "impact": "17. 11. cash závěr 506,24 USD."
     }
   ],
-  "macro": "US10Y | 18. 11. ráno: 5,08 % | 17. 11.: 5,10 % | −2,0 bb",
+  "macro": "US10Y | 17. 11.: 5,100 % | 16. 11.: 5,121 % | −2,1 bb",
   "regulation": null,
   "technical": {
     "support": null,
@@ -343,7 +343,7 @@
     "downsideReason": "Odhad beze změny: AI CAPEX, financování neoclouds a sazby."
   },
   "catalyst": {
-    "event": "Otevření cash NDX; zápis FOMC",
+    "event": "Otevření cash NDX; zveřejnění zápisu FOMC",
     "timePrague": "18. 11. 2026, 15:30 CET; FOMC 20:00 CET"
   },
   "archive": [
@@ -722,6 +722,24 @@
           "url": "https://www.reuters.com/business/business-usual-nvidias-kress-passes-first-test-board-slams-door-huang-2026-11-18/"
         }
       ]
+    },
+    {
+      "time": "18. 11. 2026 09:01 CET",
+      "summary": "Cash NDX 17. 11. závěr 27 001,78 b. (−0,72 %, −13,90 % od historického maxima). NVDA Q3 tržby 115,8 mld. USD, upravený EPS 2,68 USD. Bez zásadních novinek od 07:57 CET. Medvědí sentiment beze změny; návrat 12 %, propad −5 až −10 %.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq-100 cash",
+          "url": "https://finance.yahoo.com/quote/%5ENDX/history/"
+        },
+        {
+          "label": "NVIDIA IR",
+          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/default.aspx"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/us-stock-futures-slip-ahead-nvidia-results-fed-speakers-focus-2026-11-17/"
+        }
+      ]
     }
   ],
   "history": [
@@ -1070,6 +1088,18 @@
     {
       "name": "Reuters – Nvidia neoclouds",
       "url": "https://www.reuters.com/business/business-usual-nvidias-kress-passes-first-test-board-slams-door-huang-2026-11-18/"
+    },
+    {
+      "name": "Google Finance – NQZ26 08:39 CET",
+      "url": "https://www.google.com/finance/quote/NQZ26:CME_EMINIS"
+    },
+    {
+      "name": "CompaniesMarketCap – MSFT",
+      "url": "https://companiesmarketcap.com/microsoft/marketcap/"
+    },
+    {
+      "name": "CompaniesMarketCap – NVDA",
+      "url": "https://companiesmarketcap.com/nvidia/marketcap/"
     }
   ]
 }
