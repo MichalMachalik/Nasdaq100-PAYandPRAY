@@ -221,6 +221,25 @@
       "importanceScore": 52,
       "ndxRelevant": true,
       "eventKey": "nvidia-security-committee-20261117"
+    },
+    {
+      "title": "Návrh FCC: omezení dovozu čínských optických transceiverů pro datacentra; AMZN, GOOGL, META a MSFT namítají dopady na dodávky.",
+      "time": "17. 11. 2026, 11:02 UTC – původní Reuters",
+      "publishedAtPrague": "17. 11. 2026, 12:02",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "ai_regulation",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/trumps-china-data-center-curb-advances-despite-amazon-google-meta-lobbying-2026-11-17/",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/trumps-china-data-center-curb-advances-despite-amazon-google-meta-lobbying-2026-11-17/"
+        }
+      ],
+      "importanceScore": 68,
+      "ndxRelevant": true,
+      "eventKey": "fcc-china-optical-transceivers-proposal-20261117"
     }
   ],
   "leaders": [
@@ -235,7 +254,7 @@
       "impact": "Cash závěr 17. 11. 2026; ověřené předchozí závěrečné údaje."
     }
   ],
-  "macro": "US10Y | 18. 11. 02:46: 5,123 % | 17. 11.: 5,100 % | +2,3 bb",
+  "macro": "US10Y | 18. 11.: 5,123 % | 17. 11.: 5,100 % | +2,3 bb",
   "regulation": null,
   "technical": {
     "support": null,
@@ -887,6 +906,10 @@
     {
       "name": "Nasdaq NDX – závěrečná hodnota 17.11.",
       "url": "https://indexes.nasdaq.com/Index/Overview/NDX"
+    },
+    {
+      "name": "Reuters – FCC návrh omezení dovozu čínských transceiverů 17. 11. 12:02 CET",
+      "url": "https://www.reuters.com/world/trumps-china-data-center-curb-advances-despite-amazon-google-meta-lobbying-2026-11-17/"
     }
   ]
 }
