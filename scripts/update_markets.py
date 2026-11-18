@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Publish independently source-dated commodity and EURUSD quotes from Trading Economics."""
+"""Publish independently source-dated commodities and EUR/USD, EUR/CZK, USD/CZK quotes."""
 import calendar
 import json
 import math
@@ -24,6 +24,8 @@ ASSETS = [
     ("EU Gas", "EUR/MWh", "https://tradingeconomics.com/commodity/eu-natural-gas", .1, 1000),
     ("Gold", "USD/oz", "https://tradingeconomics.com/commodity/gold", 100, 20000),
     ("EUR/USD", "EUR/USD", "https://tradingeconomics.com/euro-area/currency", .4, 2.2),
+    ("EUR/CZK", "EUR/CZK", "https://tradingeconomics.com/eurczk:cur", 10, 60),
+    ("USD/CZK", "USD/CZK", "https://tradingeconomics.com/czech-republic/currency", 10, 60),
 ]
 MONTHS = {name.lower():i for i,name in enumerate(calendar.month_name) if name}
 
@@ -100,7 +102,7 @@ def main():
                 continue
         quotes.append(q)
     if failed or len(quotes)!=len(ASSETS):
-        raise RuntimeError("No complete seven-asset snapshot: "+",".join(failed))
+        raise RuntimeError("Incomplete nine-asset snapshot: "+",".join(failed))
     result={
         "source":"Trading Economics",
         "sourceUrls":PAGES,
@@ -112,7 +114,7 @@ def main():
     if old.get("quotes")!=quotes:
         OUT.parent.mkdir(parents=True,exist_ok=True)
         OUT.write_text(json.dumps(result,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
-        print("Wrote seven price references with verified source dates",flush=True)
+        print("Wrote nine price references with verified source dates",flush=True)
     else:print("Trading Economics prices unchanged; preserved original data",flush=True)
 
 if __name__=="__main__":
