@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "18. 11. 2026 02:20 CET",
+  "updatedAtPrague": "18. 11. 2026 02:59 CET",
   "marketStatus": "Cash NDX uzavřen. Poslední závěr 17. 11. 2026, 22:00 CET.",
   "ndx": {
     "value": 27001.78,
@@ -9,17 +9,36 @@
   },
   "sentiment": {
     "label": "Medvědí (subjektivní hodnocení)",
-    "trend": "→ beze změny proti 18. 11. 00:29 CET",
-    "reason": "Cash NDX −0,72 %; silný výhled NVIDIA vyvažuje riziko financování AI a změny vedení."
+    "trend": "↗ zlepšení proti 18. 11. 02:20 CET",
+    "reason": "NVIDIA Q3 a výhled nad konsenzem; NQZ26 +0,96 % k 02:27 CET; US10Y 5,123 %."
   },
-  "driver": "Vysoký význam: financování AI infrastruktury zdražuje. Výnos dluhopisů CoreWeave se podle Reuters přiblížil 15 %.",
+  "driver": "Vysoký význam: před uzavřením cash trhu tlak na financování AI infrastruktury a technologické akcie; NVIDIA po závěru zveřejnila Q3 tržby 115,8 mld. USD.",
   "news": [
+    {
+      "title": "Reuters: NVIDIA po výsledcích +4,7 % po trhu; MSCI Asia ex Japan +0,9 %, KOSPI až +3,3 %.",
+      "time": "18. 11. 2026, 01:46 UTC – původní zveřejnění Reuters",
+      "publishedAtPrague": "18. 11. 2026, 02:46",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "market_reaction",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-11-18/",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-11-18/"
+        }
+      ],
+      "importanceScore": 58,
+      "ndxRelevant": true,
+      "eventKey": "asia-chip-rebound-nvidia-earnings-20261118"
+    },
     {
       "title": "Představenstvo NVIDIA potvrdilo, že Jensena Huanga do funkce CEO nevrátí.",
       "time": "17. 11. 2026, 22:12 UTC",
       "publishedAtPrague": "17. 11. 2026, 23:12",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "corporate_governance",
       "source": "Reuters",
       "url": "https://www.reuters.com/legal/transactional/nvidia-board-says-it-does-not-intend-reinstate-jensen-huang-ceo-2026-11-17/",
@@ -75,7 +94,7 @@
       "time": "17. 11. 2026, 18:16 UTC",
       "publishedAtPrague": "17. 11. 2026, 19:16",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "company_ai",
       "source": "Reuters",
       "url": "https://www.reuters.com/legal/litigation/microsoft-unveils-ai-models-coding-cybersecurity-it-takes-anthropic-openai-2026-11-17/",
@@ -216,7 +235,7 @@
       "impact": "Cash závěr 17. 11. 2026; ověřené předchozí závěrečné údaje."
     }
   ],
-  "macro": "US10Y | 17. 11.: 5,100 % | 16. 11.: 5,121 % | −2,1 bb",
+  "macro": "US10Y | 18. 11. Reuters 02:46: 5,123 % | 17. 11.: 5,100 % | +2,3 bb",
   "regulation": null,
   "technical": {
     "support": null,
@@ -224,12 +243,12 @@
   },
   "forecast": {
     "athReturnPercent": 12,
-    "athReason": "Odhad beze změny: NVIDIA Q3 115,8 mld. USD, Q4 výhled 130 mld. USD; zvýšila by jej stabilizace financování AI.",
+    "athReason": "Odhad beze změny: NVIDIA Q3 tržby 115,8 mld. USD, Q4 výhled 130 mld. USD; podmínka stabilizace financování AI.",
     "downside": "−5 až −10 %",
     "downsideReason": "Odhad beze změny: náklady financování AI a výhled hrubé marže NVIDIA 71–72 %."
   },
   "catalyst": {
-    "event": "První cash seance USA po výsledcích NVIDIA",
+    "event": "První cash seance po výsledcích NVIDIA; zápis FOMC 20:00 CET",
     "timePrague": "18. 11. 2026, 15:30 CET"
   },
   "archive": [
@@ -494,6 +513,24 @@
         {
           "label": "Nasdaq NDX",
           "url": "https://indexes.nasdaq.com/index/Overview/NDX"
+        },
+        {
+          "label": "Google Finance NQZ26",
+          "url": "https://www.google.com/finance/quote/NQZ26:CME_EMINIS"
+        }
+      ]
+    },
+    {
+      "time": "18. 11. 2026 02:59 CET",
+      "summary": "Cash NDX 17. 11. závěr 27 001,78 b. (−0,72 %, −13,90 % od historického maxima). Reuters 02:46: NVDA +4,7 % po trhu, MSCI Asia ex Japan +0,9 %, KOSPI až +3,3 %. NQZ26 +0,96 % v 02:27 CET. Sentiment medvědí, ↗.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq NDX",
+          "url": "https://indexes.nasdaq.com/index/Overview/NDX"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-11-18/"
         },
         {
           "label": "Google Finance NQZ26",
