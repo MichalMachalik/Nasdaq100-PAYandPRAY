@@ -63,7 +63,8 @@ const context={console,URL,Date,Intl,Number,String,Math,Array,Set,Map,Promise,
  fetch:()=>new Promise(()=>{})};vm.createContext(context);
 vm.runInContext(fs.readFileSync(process.argv[2],'utf8'),context);
 context.__fixture=JSON.parse(process.argv[4]);vm.runInContext('render(__fixture)',context);
-const filled=n=>Boolean(n.textContent?.trim())||Boolean(n.children?.length)||Boolean(n.childNodes?.length);\nif(!filled(nodes['forecast-down'])||!filled(nodes.macro))throw Error('Incomplete report render');
+const filled=n=>Boolean(n.textContent?.trim())||Boolean(n.children?.length)||Boolean(n.childNodes?.length);
+if(!filled(nodes['forecast-down'])||!filled(nodes.macro))throw Error('Incomplete report render');
 console.log('PASS: report renderer, macro, forecasts and DOM targets');
 '''
         harness = Path(directory)/'check.cjs'
