@@ -1,18 +1,18 @@
 {
-  "updatedAtPrague": "18. 11. 2026 21:04 CET",
-  "marketStatus": "Cash otevřen; intradenní NDX 18. 11. 2026, 20:41:16 CET.",
+  "updatedAtPrague": "18. 11. 2026 22:04 CET",
+  "marketStatus": "Cash uzavřen; poslední ověřený snímek NDX po 22:00 CET (18. 11. 2026).",
   "ndx": {
-    "value": 27077.01,
-    "changePercent": 0.28,
+    "value": 27116.26,
+    "changePercent": 0.42,
     "ath": 31361.37,
-    "asOf": "18. 11. 2026, 20:41:16 CET – cash NDX (Google Finance, 14:41:16 EST)."
+    "asOf": "18. 11. 2026, 22:02:18 CET – cash NDX, Google Finance (16:02:18 EST); poslední ověřená hodnota po seanci."
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "↘ oslabení proti 18. 11. 2026 20:08 CET",
-    "reason": "NDX +0,28 % (20:41 CET) vs. +0,73 % (19:42 CET); SOX −0,34 %; NVDA −2,84 % (20:35 CET)."
+    "trend": "↗ mírné zlepšení vůči 18. 11. 2026 21:04 CET",
+    "reason": "NDX +0,42 % (22:02 CET) vs. +0,28 % (20:41 CET); SOX +0,10 %; NVDA −2,72 % (21:40 CET)."
   },
-  "driver": "FOMC zápis: téměř všichni očekávají další zvýšení sazeb; Fed upozornil na rychlý růst dluhu AI a neprůhledné financování datacenter.",
+  "driver": "FOMC: většina účastníků upozornila na rychlý růst AI dluhu a neprůhledné financování; NVDA Q4 výhled 130 mld. USD.",
   "news": [
     {
       "title": "NVIDIA Q3 FY2027: tržby 115,8 mld. USD vs. kons. 109,1 (beat 6,1 %). Upravený EPS 2,68 USD vs. kons. 2,47 (beat 8,5 %). Výhled Q4 130 mld. USD vs. kons. 125,25 (beat 3,8 %).",
@@ -172,19 +172,6 @@
       "eventKey": "nvidia-sec-wsj-report-20261117"
     },
     {
-      "title": "John Williams z newyorského Fedu nadále podporuje vyšší sazby, nikoli dramatické zpřísnění.",
-      "time": "17. 11. 2026, 20:08 UTC",
-      "publishedAtPrague": "17. 11. 2026, 21:08",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "fed",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/feds-williams-still-favors-tighter-monetary-policy-says-now-is-not-time-dramatic-2026-11-17/",
-      "importanceScore": 70,
-      "ndxRelevant": true,
-      "eventKey": "ny-fed-williams-rate-outlook-20261117"
-    },
-    {
       "title": "FedWatch: pravděpodobnost prosincového zvýšení sazeb o 25 bb dosahuje 95,7 %; DXY 103,65.",
       "time": "18. 11. 2026, 01:34 UTC",
       "publishedAtPrague": "18. 11. 2026, 02:34",
@@ -264,16 +251,16 @@
   "leaders": [
     {
       "ticker": "NVDA",
-      "changePercent": -2.84,
-      "impact": "Cash 18. 11., Google Finance 20:35:32 CET."
+      "changePercent": -2.72,
+      "impact": "Cash 18. 11., Google Finance 21:40:07 CET."
     },
     {
       "ticker": "AVGO",
-      "changePercent": 4.2,
-      "impact": "Cash 18. 11., Google Finance 20:37:35 CET."
+      "changePercent": 3.65,
+      "impact": "Cash 18. 11., Google Finance 21:42:24 CET."
     }
   ],
-  "macro": "US10Y | 18. 11. 20:31: 5,066 % | 17. 11.: 5,103 % | −3,7 bb",
+  "macro": "US10Y | 18. 11. 20:59: 5,066 % | 17. 11.: 5,103 % | −3,7 bb",
   "regulation": null,
   "technical": {
     "support": null,
@@ -283,7 +270,7 @@
     "athReturnPercent": 12,
     "athReason": "Beze změny: NVDA Q4 výhled 130 mld. USD; podmínka stabilizace AI financování a sazeb.",
     "downside": "−5 až −10 %",
-    "downsideReason": "Fed: růst dluhu AI; NVDA −2,84 %; očekávané další zvýšení sazeb."
+    "downsideReason": "Fed: růst AI dluhu; NVDA −2,72 %; scénář napětí financování datacenter."
   },
   "catalyst": {
     "event": "USA: týdenní žádosti o podporu v nezaměstnanosti",
@@ -887,6 +874,24 @@
           "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm"
         }
       ]
+    },
+    {
+      "time": "18. 11. 2026 22:04 CET",
+      "summary": "NDX cash 27 116,26 b. (+0,42 %, 22:02 CET), -13,54 % od historického maxima; NVDA −2,72 %, AVGO +3,65 %. FOMC: AI dluh, financování datacenter.",
+      "sourceLinks": [
+        {
+          "label": "Google Finance NDX",
+          "url": "https://www.google.com/finance/quote/NDX:INDEXNASDAQ?hl=en"
+        },
+        {
+          "label": "Google Finance NVDA",
+          "url": "https://www.google.com/finance/quote/NVDA:NASDAQ?hl=en"
+        },
+        {
+          "label": "Fed FOMC",
+          "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm"
+        }
+      ]
     }
   ],
   "history": [
@@ -961,6 +966,10 @@
     {
       "time": "18. 11. 2026 21:04 CET",
       "ndx": 27077.01
+    },
+    {
+      "time": "18. 11. 2026 22:04 CET",
+      "ndx": 27116.26
     }
   ],
   "sources": [
