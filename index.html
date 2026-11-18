@@ -733,7 +733,7 @@ function showEconomyRows(id,items,kind){
     }else{
       if(Number.isFinite(x.valuePercent)){
         price.textContent=fmt(Math.abs(x.valuePercent))+' %';
-        price.classList.add(x.valuePercent>0?'economy-positive':x.valuePercent<0?'economy-negative':'');
+        if(x.valuePercent!==0)price.classList.add(x.valuePercent>0?'economy-positive':'economy-negative');
       }else price.textContent='—';
       period.textContent=String(x.period||'').replace(/^(\d{4})-Q(\d)$/,'Q$2 $1');
       const pub=document.createElement('td');pub.className='economy-caption';pub.textContent=fmtShortDate(x.releaseDate);
