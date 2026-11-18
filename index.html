@@ -318,7 +318,7 @@ const sentenceBreaks=value=>cleanText(value).replace(
   }
 );
 // Směr změny je vyjádřen pouze barvou, nikoliv znakem + nebo −.
-const signedPercentPattern=/(^|[^\p{L}\d])(?:(beat|miss)\s+(\d+(?:[.,]\d+)?)(\s*%)|([+−-])\s*(\d+(?:[.,]\d+)?)(\s*%))/giu;
+const signedPercentPattern=/(^|[^\p{L}\d])(?:(beat|miss)\s+(\d+(?:[.,]\d+)?)(\s*%)|([+−-])\s*(\d+(?:[.,]\d+)?)(\s*(?:%|bb\b|bps\b)))/giu;
 const renderSigned=(el,value)=>{
   const raw=String(value??''),frag=document.createDocumentFragment();
   let last=0,m;
