@@ -1,203 +1,19 @@
 {
-  "updatedAtPrague": "18. 11. 2026 20:08 CET",
-  "marketStatus": "Cash otevřen; intradenní NDX 18. 11. 2026, 19:42:04 CET.",
+  "updatedAtPrague": "18. 11. 2026 21:04 CET",
+  "marketStatus": "Cash otevřen; intradenní NDX 18. 11. 2026, 20:41:16 CET.",
   "ndx": {
-    "value": 27199.9,
-    "changePercent": 0.73,
+    "value": 27077.01,
+    "changePercent": 0.28,
     "ath": 31361.37,
-    "asOf": "18. 11. 2026, 19:42:04 CET – cash NDX (Google Finance, 13:42:04 EST)."
+    "asOf": "18. 11. 2026, 20:41:16 CET – cash NDX (Google Finance, 14:41:16 EST)."
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "↗ mírné zlepšení proti 18. 11. 2026 19:06 CET",
-    "reason": "NDX +0,73 % (19:42 CET) vs. +0,33 % (18:37 CET); SOX +0,13 %; NVDA −2,15 % (20:00 CET)."
+    "trend": "↘ oslabení proti 18. 11. 2026 20:08 CET",
+    "reason": "NDX +0,28 % (20:41 CET) vs. +0,73 % (19:42 CET); SOX −0,34 %; NVDA −2,84 % (20:35 CET)."
   },
-  "driver": "FOMC zápis: téměř všichni počítají s dalším zvýšením sazeb; Fed varuje před dluhy a neprůhledným financováním AI datacenter.",
+  "driver": "FOMC zápis: téměř všichni očekávají další zvýšení sazeb; Fed upozornil na rychlý růst dluhu AI a neprůhledné financování datacenter.",
   "news": [
-    {
-      "title": "FOMC zápis 27.–28. 10.: téměř všichni očekávají další zvýšení sazeb; Fed upozornil na neprůhledné financování AI a datacenter.",
-      "time": "18. 11. 2026, 20:00 CET",
-      "publishedAtPrague": "18. 11. 2026, 20:00",
-      "publicationTimeVerified": true,
-      "kind": "new",
-      "category": "fed",
-      "source": "Federal Reserve",
-      "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm",
-      "sourceLinks": [
-        {
-          "label": "Fed FOMC",
-          "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm"
-        }
-      ],
-      "eventKey": "fed-fomc-minutes-oct-27-28-2026-released-20261118",
-      "ndxRelevant": true,
-      "importanceScore": 92
-    },
-    {
-      "title": "Fed Waller: v prosinci zvýšení sazeb o 50 bb nebo signalizace dalších zvýšení v roce 2027.",
-      "time": "18. 11. 2026, 13:51 UTC",
-      "publishedAtPrague": "18. 11. 2026, 14:51",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "fed",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/markets/us/waller-says-cnbc-fed-needs-get-more-aggressive-inflation-response-2026-11-18/",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/markets/us/waller-says-cnbc-fed-needs-get-more-aggressive-inflation-response-2026-11-18/"
-        }
-      ],
-      "importanceScore": 80,
-      "ndxRelevant": true,
-      "eventKey": "fed-waller-cnbc-50bp-or-guidance-20261118"
-    },
-    {
-      "title": "USA zvažují zveřejňování používání čínských AI modelů; ABNB využívá Qwen.",
-      "time": "18. 11. 2026, 12:02 CET",
-      "publishedAtPrague": "18. 11. 2026, 12:02",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_regulation",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/china/trump-administration-weighs-forcing-us-firms-disclose-chinese-ai-use-2026-11-18/",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/world/china/trump-administration-weighs-forcing-us-firms-disclose-chinese-ai-use-2026-11-18/"
-        }
-      ],
-      "eventKey": "us-chinese-ai-model-disclosure-proposal-20261118",
-      "ndxRelevant": true,
-      "importanceScore": 58
-    },
-    {
-      "title": "NVDA po silném výhledu Q4 obrátila předobchodní růst; investoři sledují vedení a export čipů.",
-      "time": "18. 11. 2026, 12:12 CET",
-      "publishedAtPrague": "18. 11. 2026, 12:12",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "market_reaction",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/ai-stocks-rally-nvidia-outlook-calms-demand-fears-2026-11-18/",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/business/ai-stocks-rally-nvidia-outlook-calms-demand-fears-2026-11-18/"
-        }
-      ],
-      "eventKey": "nasdaq-chip-premarket-nvda-guidance-20261118",
-      "ndxRelevant": true,
-      "importanceScore": 76
-    },
-    {
-      "title": "NVDA: zastavila dodávky licencovaných Hopper do Číny; Q3 prodej 2,4 mld. USD, výhled bez dalších dodávek.",
-      "time": "18. 11. 2026, 10:16 CET",
-      "publishedAtPrague": "18. 11. 2026, 10:16",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "chip_exports",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/china/nvidia-stops-shipping-us-approved-ai-chips-china-2026-11-18/",
-      "importanceScore": 83,
-      "ndxRelevant": true,
-      "eventKey": "nvidia-licensed-hopper-china-shipments-halt-20261118",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/world/china/nvidia-stops-shipping-us-approved-ai-chips-china-2026-11-18/"
-        }
-      ]
-    },
-    {
-      "title": "ASML.AS +1,8 %; evropský technologický sektor +1,2 % po výsledcích NVDA.",
-      "time": "18. 11. 2026, 08:25 UTC",
-      "publishedAtPrague": "18. 11. 2026, 09:25",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "market_reaction",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/markets/europe/european-shares-muted-tech-offsets-mining-weakness-2026-11-18/",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/markets/europe/european-shares-muted-tech-offsets-mining-weakness-2026-11-18/"
-        }
-      ],
-      "importanceScore": 52,
-      "ndxRelevant": true,
-      "eventKey": "asml-europe-ai-chip-rally-20261118"
-    },
-    {
-      "title": "NVIDIA Q3: neocloud investice 32 mld. USD vs. 36 mld. USD v Q2. Závazky aktivní po zajištění financování a provozní kapacity.",
-      "time": "18. 11. 2026, 05:22 UTC",
-      "publishedAtPrague": "18. 11. 2026, 06:22",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_infrastructure",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/business-usual-nvidias-kress-passes-first-test-board-slams-door-huang-2026-11-18/",
-      "importanceScore": 79,
-      "ndxRelevant": true,
-      "eventKey": "nvidia-neocloud-financing-conditions-q3-fy2027",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/business/business-usual-nvidias-kress-passes-first-test-board-slams-door-huang-2026-11-18/"
-        }
-      ]
-    },
-    {
-      "title": "MSCI Asia ex Japan −0,1 %, Nikkei −0,3 % po výsledcích NVDA; růst asijských akcií se obrátil.",
-      "time": "18. 11. 2026, 01:46 UTC – původní zveřejnění Reuters",
-      "publishedAtPrague": "18. 11. 2026, 02:46",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "market_reaction",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-11-18/",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-11-18/"
-        }
-      ],
-      "importanceScore": 58,
-      "ndxRelevant": true,
-      "eventKey": "asia-chip-rebound-nvidia-earnings-20261118"
-    },
-    {
-      "title": "FedWatch: pravděpodobnost prosincového zvýšení sazeb o 25 bb dosahuje 95,7 %; DXY 103,65.",
-      "time": "18. 11. 2026, 01:34 UTC",
-      "publishedAtPrague": "18. 11. 2026, 02:34",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "macro",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/middle-east/dollar-holds-near-19-month-high-data-supports-case-us-rate-hikes-2026-11-18/",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/world/middle-east/dollar-holds-near-19-month-high-data-supports-case-us-rate-hikes-2026-11-18/"
-        }
-      ],
-      "importanceScore": 63,
-      "ndxRelevant": true,
-      "eventKey": "us-dec-fedwatch-25bp-20261118"
-    },
-    {
-      "title": "Představenstvo NVIDIA potvrdilo, že Jensena Huanga do funkce CEO nevrátí.",
-      "time": "17. 11. 2026, 22:12 UTC",
-      "publishedAtPrague": "17. 11. 2026, 23:12",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "corporate_governance",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/legal/transactional/nvidia-board-says-it-does-not-intend-reinstate-jensen-huang-ceo-2026-11-17/",
-      "importanceScore": 78,
-      "ndxRelevant": true,
-      "eventKey": "nvidia-board-rejects-ceo-return-20261117"
-    },
     {
       "title": "NVIDIA Q3 FY2027: tržby 115,8 mld. USD vs. kons. 109,1 (beat 6,1 %). Upravený EPS 2,68 USD vs. kons. 2,47 (beat 8,5 %). Výhled Q4 130 mld. USD vs. kons. 125,25 (beat 3,8 %).",
       "time": "17. 11. 2026, 21:24 UTC",
@@ -227,6 +43,114 @@
           "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027"
         }
       ]
+    },
+    {
+      "title": "FOMC zápis 27.–28. 10.: téměř všichni očekávají další zvýšení sazeb; Fed upozornil na neprůhledné financování AI a datacenter.",
+      "time": "18. 11. 2026, 20:00 CET",
+      "publishedAtPrague": "18. 11. 2026, 20:00",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "fed",
+      "source": "Federal Reserve",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm",
+      "sourceLinks": [
+        {
+          "label": "Fed FOMC",
+          "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm"
+        }
+      ],
+      "eventKey": "fed-fomc-minutes-oct-27-28-2026-released-20261118",
+      "ndxRelevant": true,
+      "importanceScore": 92
+    },
+    {
+      "title": "NVDA: zastavila dodávky licencovaných Hopper do Číny; Q3 prodej 2,4 mld. USD, výhled bez dalších dodávek.",
+      "time": "18. 11. 2026, 10:16 CET",
+      "publishedAtPrague": "18. 11. 2026, 10:16",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "chip_exports",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/china/nvidia-stops-shipping-us-approved-ai-chips-china-2026-11-18/",
+      "importanceScore": 83,
+      "ndxRelevant": true,
+      "eventKey": "nvidia-licensed-hopper-china-shipments-halt-20261118",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/china/nvidia-stops-shipping-us-approved-ai-chips-china-2026-11-18/"
+        }
+      ]
+    },
+    {
+      "title": "Fed Waller: v prosinci zvýšení sazeb o 50 bb nebo signalizace dalších zvýšení v roce 2027.",
+      "time": "18. 11. 2026, 13:51 UTC",
+      "publishedAtPrague": "18. 11. 2026, 14:51",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "fed",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/markets/us/waller-says-cnbc-fed-needs-get-more-aggressive-inflation-response-2026-11-18/",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/markets/us/waller-says-cnbc-fed-needs-get-more-aggressive-inflation-response-2026-11-18/"
+        }
+      ],
+      "importanceScore": 80,
+      "ndxRelevant": true,
+      "eventKey": "fed-waller-cnbc-50bp-or-guidance-20261118"
+    },
+    {
+      "title": "NVIDIA Q3: neocloud investice 32 mld. USD vs. 36 mld. USD v Q2. Závazky aktivní po zajištění financování a provozní kapacity.",
+      "time": "18. 11. 2026, 05:22 UTC",
+      "publishedAtPrague": "18. 11. 2026, 06:22",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "ai_infrastructure",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/business-usual-nvidias-kress-passes-first-test-board-slams-door-huang-2026-11-18/",
+      "importanceScore": 79,
+      "ndxRelevant": true,
+      "eventKey": "nvidia-neocloud-financing-conditions-q3-fy2027",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/business-usual-nvidias-kress-passes-first-test-board-slams-door-huang-2026-11-18/"
+        }
+      ]
+    },
+    {
+      "title": "Představenstvo NVIDIA potvrdilo, že Jensena Huanga do funkce CEO nevrátí.",
+      "time": "17. 11. 2026, 22:12 UTC",
+      "publishedAtPrague": "17. 11. 2026, 23:12",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "corporate_governance",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/legal/transactional/nvidia-board-says-it-does-not-intend-reinstate-jensen-huang-ceo-2026-11-17/",
+      "importanceScore": 78,
+      "ndxRelevant": true,
+      "eventKey": "nvidia-board-rejects-ceo-return-20261117"
+    },
+    {
+      "title": "NVDA po silném výhledu Q4 obrátila předobchodní růst; investoři sledují vedení a export čipů.",
+      "time": "18. 11. 2026, 12:12 CET",
+      "publishedAtPrague": "18. 11. 2026, 12:12",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "market_reaction",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/ai-stocks-rally-nvidia-outlook-calms-demand-fears-2026-11-18/",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/ai-stocks-rally-nvidia-outlook-calms-demand-fears-2026-11-18/"
+        }
+      ],
+      "eventKey": "nasdaq-chip-premarket-nvda-guidance-20261118",
+      "ndxRelevant": true,
+      "importanceScore": 76
     },
     {
       "title": "WSJ přes Reuters: SEC podle zdrojů prověřuje NVIDIA po odchodu Jensena Huanga.",
@@ -259,21 +183,97 @@
       "importanceScore": 70,
       "ndxRelevant": true,
       "eventKey": "ny-fed-williams-rate-outlook-20261117"
+    },
+    {
+      "title": "FedWatch: pravděpodobnost prosincového zvýšení sazeb o 25 bb dosahuje 95,7 %; DXY 103,65.",
+      "time": "18. 11. 2026, 01:34 UTC",
+      "publishedAtPrague": "18. 11. 2026, 02:34",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "macro",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/middle-east/dollar-holds-near-19-month-high-data-supports-case-us-rate-hikes-2026-11-18/",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/middle-east/dollar-holds-near-19-month-high-data-supports-case-us-rate-hikes-2026-11-18/"
+        }
+      ],
+      "importanceScore": 63,
+      "ndxRelevant": true,
+      "eventKey": "us-dec-fedwatch-25bp-20261118"
+    },
+    {
+      "title": "USA zvažují zveřejňování používání čínských AI modelů; ABNB využívá Qwen.",
+      "time": "18. 11. 2026, 12:02 CET",
+      "publishedAtPrague": "18. 11. 2026, 12:02",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "ai_regulation",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/china/trump-administration-weighs-forcing-us-firms-disclose-chinese-ai-use-2026-11-18/",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/china/trump-administration-weighs-forcing-us-firms-disclose-chinese-ai-use-2026-11-18/"
+        }
+      ],
+      "eventKey": "us-chinese-ai-model-disclosure-proposal-20261118",
+      "ndxRelevant": true,
+      "importanceScore": 58
+    },
+    {
+      "title": "MSCI Asia ex Japan −0,1 %, Nikkei −0,3 % po výsledcích NVDA; růst asijských akcií se obrátil.",
+      "time": "18. 11. 2026, 01:46 UTC – původní zveřejnění Reuters",
+      "publishedAtPrague": "18. 11. 2026, 02:46",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "market_reaction",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-11-18/",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-11-18/"
+        }
+      ],
+      "importanceScore": 58,
+      "ndxRelevant": true,
+      "eventKey": "asia-chip-rebound-nvidia-earnings-20261118"
+    },
+    {
+      "title": "ASML.AS +1,8 %; evropský technologický sektor +1,2 % po výsledcích NVDA.",
+      "time": "18. 11. 2026, 08:25 UTC",
+      "publishedAtPrague": "18. 11. 2026, 09:25",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "market_reaction",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/markets/europe/european-shares-muted-tech-offsets-mining-weakness-2026-11-18/",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/markets/europe/european-shares-muted-tech-offsets-mining-weakness-2026-11-18/"
+        }
+      ],
+      "importanceScore": 52,
+      "ndxRelevant": true,
+      "eventKey": "asml-europe-ai-chip-rally-20261118"
     }
   ],
   "leaders": [
     {
       "ticker": "NVDA",
-      "changePercent": -2.15,
-      "impact": "Cash 18. 11., Google Finance 20:00:42 CET."
+      "changePercent": -2.84,
+      "impact": "Cash 18. 11., Google Finance 20:35:32 CET."
     },
     {
       "ticker": "AVGO",
-      "changePercent": 3.35,
-      "impact": "Cash 18. 11., Google Finance 19:29:50 CET."
+      "changePercent": 4.2,
+      "impact": "Cash 18. 11., Google Finance 20:37:35 CET."
     }
   ],
-  "macro": "US10Y | 18. 11. 19:46: 5,062 % | 17. 11.: 5,103 % | −4,1 bb",
+  "macro": "US10Y | 18. 11. 20:31: 5,066 % | 17. 11.: 5,103 % | −3,7 bb",
   "regulation": null,
   "technical": {
     "support": null,
@@ -281,9 +281,9 @@
   },
   "forecast": {
     "athReturnPercent": 12,
-    "athReason": "Beze změny: NVDA Q4 výhled 130 mld. USD; podmínkou stabilizace AI financování a sazeb.",
+    "athReason": "Beze změny: NVDA Q4 výhled 130 mld. USD; podmínka stabilizace AI financování a sazeb.",
     "downside": "−5 až −10 %",
-    "downsideReason": "Fed: rizika dluhu AI infrastruktury; NVDA −2,15 %, očekávané další zvýšení sazeb."
+    "downsideReason": "Fed: růst dluhu AI; NVDA −2,84 %; očekávané další zvýšení sazeb."
   },
   "catalyst": {
     "event": "USA: týdenní žádosti o podporu v nezaměstnanosti",
@@ -869,6 +869,24 @@
           "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm"
         }
       ]
+    },
+    {
+      "time": "18. 11. 2026 21:04 CET",
+      "summary": "NDX cash 27 077,01 b. (+0,28 %, 20:41 CET), -13,66 % od historického maxima; NVDA −2,84 % (20:35 CET). FOMC: další zvýšení sazeb, rizika AI dluhu.",
+      "sourceLinks": [
+        {
+          "label": "Google Finance NDX",
+          "url": "https://www.google.com/finance/quote/NDX:INDEXNASDAQ?hl=en"
+        },
+        {
+          "label": "Google Finance NVDA",
+          "url": "https://www.google.com/finance/quote/NVDA:NASDAQ?hl=en"
+        },
+        {
+          "label": "Fed FOMC",
+          "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm"
+        }
+      ]
     }
   ],
   "history": [
@@ -939,6 +957,10 @@
     {
       "time": "18. 11. 2026 20:08 CET",
       "ndx": 27199.9
+    },
+    {
+      "time": "18. 11. 2026 21:04 CET",
+      "ndx": 27077.01
     }
   ],
   "sources": [
