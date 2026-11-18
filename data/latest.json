@@ -1,25 +1,25 @@
 {
-  "updatedAtPrague": "18. 11. 2026 18:01 CET",
-  "marketStatus": "Cash otevřen; intradenní NDX 18. 11. 2026, 17:34:44 CET.",
+  "updatedAtPrague": "18. 11. 2026 19:06 CET",
+  "marketStatus": "Cash otevřen; intradenní NDX 18. 11. 2026, 18:37:17 CET.",
   "ndx": {
-    "value": 26975.21,
-    "changePercent": -0.1,
+    "value": 27091.23,
+    "changePercent": 0.33,
     "ath": 31361.37,
-    "asOf": "18. 11. 2026, 17:34:44 CET – intradenní cash NDX (Google Finance, 11:34:44 EST)."
+    "asOf": "18. 11. 2026, 18:37:17 CET – intradenní cash NDX (Google Finance, 12:37:17 EST)."
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "↘ zhoršení proti 18. 11. 2026 17:00 CET",
-    "reason": "NDX −0,10 % (17:34 CET) vs. +0,24 % (16:24 CET); NVDA −2,64 % (17:55 CET), SOX −0,71 %."
+    "trend": "↗ mírné zlepšení proti 18. 11. 2026 18:01 CET",
+    "reason": "NDX +0,33 % (18:37 CET) vs. −0,10 % (17:34 CET); SOX −0,16 %; NVDA −2,47 % (18:59 CET)."
   },
-  "driver": "NVDA −2,64 % (17:55 CET) po výsledcích Q3; Reuters: nejistota kolem vedení, SEC a exportních omezení.",
+  "driver": "NVDA −2,47 % (18:59 CET) navzdory Q4 výhledu 130 mld. USD; Reuters: rizika vedení, SEC a exportu do Číny.",
   "news": [
     {
       "title": "Fed Waller: v prosinci zvýšení sazeb o 50 bb nebo signalizace dalších zvýšení v roce 2027.",
       "time": "18. 11. 2026, 13:51 UTC",
       "publishedAtPrague": "18. 11. 2026, 14:51",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "fed",
       "source": "Reuters",
       "url": "https://www.reuters.com/markets/us/waller-says-cnbc-fed-needs-get-more-aggressive-inflation-response-2026-11-18/",
@@ -258,13 +258,13 @@
   "leaders": [
     {
       "ticker": "NVDA",
-      "changePercent": -2.64,
-      "impact": "Cash 18. 11., Google Finance 17:55:49 CET."
+      "changePercent": -2.47,
+      "impact": "Cash 18. 11., Google Finance 18:59:31 CET."
     },
     {
       "ticker": "AVGO",
-      "changePercent": 2.35,
-      "impact": "Cash 18. 11., Google Finance 17:26:13 CET."
+      "changePercent": 2.57,
+      "impact": "Cash 18. 11., Google Finance 18:35:38 CET."
     }
   ],
   "macro": "US10Y | 18. 11.: 5,074 % | 17. 11.: 5,120 % | −4,6 bb",
@@ -277,7 +277,7 @@
     "athReturnPercent": 12,
     "athReason": "Beze změny: NVDA Q4 výhled 130 mld. USD; podmínkou stabilizace AI financování a sazeb.",
     "downside": "−5 až −10 %",
-    "downsideReason": "NVDA −2,64 %; AI CAPEX, neocloud financování a sazby."
+    "downsideReason": "NVDA −2,47 %; AI CAPEX, financování datacenter a sazby."
   },
   "catalyst": {
     "event": "Zápis FOMC z 27.–28. října 2026",
@@ -831,6 +831,24 @@
           "url": "https://www.google.com/finance/quote/AVGO:NASDAQ?hl=en"
         }
       ]
+    },
+    {
+      "time": "18. 11. 2026 19:06 CET",
+      "summary": "NDX cash 27 091,23 b. (+0,33 %, 18:37 CET), −13,62 % od historického maxima. NVDA −2,47 % (18:59), AVGO +2,57 % (18:35). Medvědí ↗; bez zásadních novinek od 18:01 CET.",
+      "sourceLinks": [
+        {
+          "label": "Google Finance NDX",
+          "url": "https://www.google.com/finance/quote/NDX:INDEXNASDAQ?hl=en"
+        },
+        {
+          "label": "Google Finance NVDA",
+          "url": "https://www.google.com/finance/quote/NVDA:NASDAQ?hl=en"
+        },
+        {
+          "label": "Google Finance AVGO",
+          "url": "https://www.google.com/finance/quote/AVGO:NASDAQ?hl=en"
+        }
+      ]
     }
   ],
   "history": [
@@ -893,6 +911,10 @@
     {
       "time": "18. 11. 2026 18:01 CET",
       "ndx": 26975.21
+    },
+    {
+      "time": "18. 11. 2026 19:06 CET",
+      "ndx": 27091.23
     }
   ],
   "sources": [
