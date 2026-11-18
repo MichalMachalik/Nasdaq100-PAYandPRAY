@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "sourcePolicy": "Official monetary authorities and statistical offices; values reflect latest verified decisions and publications",
+  "rates": [
+    {
+      "id": "FED",
+      "instrument": "FFR target",
+      "lowerPercent": 3.75,
+      "upperPercent": 4,
+      "effectiveDate": "2026-09-17",
+      "source": "Federal Reserve",
+      "url": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm"
+    },
+    {
+      "id": "ECB",
+      "instrument": "Deposit facility",
+      "valuePercent": 2.5,
+      "effectiveDate": "2026-09-16",
+      "source": "ECB",
+      "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.ga.html"
+    },
+    {
+      "id": "ČNB",
+      "instrument": "2W repo",
+      "valuePercent": 4,
+      "effectiveDate": "2026-11-06",
+      "source": "ČNB",
+      "url": "https://www.cnb.cz/en/monetary-policy/bank-board-decisions/index.html"
+    }
+  ],
+  "gdp": [
+    {
+      "id": "USA",
+      "period": "2026-Q3",
+      "comparison": "y/y",
+      "valuePercent": 2.1,
+      "releaseDate": "2026-11-13",
+      "source": "Eurostat",
+      "url": "https://ec.europa.eu/eurostat/en/web/products-euro-indicators/w/2-13112026-ap"
+    },
+    {
+      "id": "EU",
+      "period": "2026-Q3",
+      "comparison": "y/y",
+      "valuePercent": 1.5,
+      "releaseDate": "2026-11-13",
+      "source": "Eurostat",
+      "url": "https://ec.europa.eu/eurostat/en/web/products-euro-indicators/w/2-13112026-ap"
+    },
+    {
+      "id": "ČR",
+      "period": "2026-Q3",
+      "comparison": "y/y",
+      "valuePercent": 1.6,
+      "releaseDate": "2026-10-30",
+      "source": "ČSÚ",
+      "url": "https://csu.gov.cz/rychle-informace/gdp-preliminary-estimate-3rd-quarter-of-2026"
+    }
+  ]
+}
