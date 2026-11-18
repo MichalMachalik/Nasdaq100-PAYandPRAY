@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "18. 11. 2026 10:06 CET",
+  "updatedAtPrague": "18. 11. 2026 11:01 CET",
   "marketStatus": "Cash NDX uzavřen; poslední závěr 17. 11. 2026, 22:00 CET.",
   "ndx": {
     "value": 27001.78,
@@ -9,10 +9,10 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "↗ mírné zlepšení proti 18. 11. 09:01 CET",
-    "reason": "Cash NDX 17. 11. −0,72 %; NVDA Q3 tržby 115,8 mld. USD; evropské technologie +1,2 %."
+    "trend": "↗ mírné zlepšení proti 18. 11. 10:06 CET",
+    "reason": "NDX 17. 11. −0,72 %; NVDA Q4 výhled 130 mld. USD bez Data Center tržeb z Číny."
   },
-  "driver": "Vysoký význam: NVDA Q3 tržby 115,8 mld. USD a upravený EPS 2,68 USD; ASML.AS 18. 11. +1,8 %.",
+  "driver": "Vysoký význam: NVDA zastavila dodávky licencovaných Hopper do Číny; Q3 prodej 2,4 mld. USD, Q4 výhled bez těchto dodávek.",
   "news": [
     {
       "title": "NVIDIA Q3 FY2027: tržby 115,8 mld. USD vs. kons. 109,1 (beat 6,1 %). Upravený EPS 2,68 USD vs. kons. 2,47 (beat 8,5 %). Výhled Q4 130 mld. USD vs. kons. 125,25 (beat 3,8 %).",
@@ -41,6 +41,25 @@
         {
           "label": "NVIDIA IR",
           "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027"
+        }
+      ]
+    },
+    {
+      "title": "NVDA: zastavila dodávky licencovaných Hopper do Číny; Q3 prodej 2,4 mld. USD, výhled bez dalších dodávek.",
+      "time": "18. 11. 2026, 10:16 CET",
+      "publishedAtPrague": "18. 11. 2026, 10:16",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "chip_exports",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/china/nvidia-stops-shipping-us-approved-ai-chips-china-2026-11-18/",
+      "importanceScore": 83,
+      "ndxRelevant": true,
+      "eventKey": "nvidia-licensed-hopper-china-shipments-halt-20261118",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/china/nvidia-stops-shipping-us-approved-ai-chips-china-2026-11-18/"
         }
       ]
     },
@@ -291,7 +310,7 @@
       "time": "18. 11. 2026, 08:25 UTC",
       "publishedAtPrague": "18. 11. 2026, 09:25",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "market_reaction",
       "source": "Reuters",
       "url": "https://www.reuters.com/markets/europe/european-shares-muted-tech-offsets-mining-weakness-2026-11-18/",
@@ -304,18 +323,6 @@
       "importanceScore": 52,
       "ndxRelevant": true,
       "eventKey": "asml-europe-ai-chip-rally-20261118"
-    },
-    {
-      "title": "NVIDIA: zřídila výbor představenstva pro národní bezpečnost a exportní kontroly.",
-      "time": "17. 11. 2026, 05:00 EST (11:00 CET) – firemní oznámení",
-      "publishedAtPrague": "17. 11. 2026, 11:00",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "source": "NVIDIA Newsroom / GlobeNewswire",
-      "url": "https://nvidianews.nvidia.com/news/nvidia-board-of-directors-establishes-national-security-and-export-control-oversight-committee",
-      "importanceScore": 52,
-      "ndxRelevant": true,
-      "eventKey": "nvidia-security-committee-20261117"
     }
   ],
   "leaders": [
@@ -338,12 +345,12 @@
   },
   "forecast": {
     "athReturnPercent": 12,
-    "athReason": "Odhad beze změny: NVDA Q3 nad konsenzem; podmínka stabilizace financování AI.",
+    "athReason": "Beze změny; podmínka stabilizace financování AI a zachování růstu NVDA.",
     "downside": "−5 až −10 %",
-    "downsideReason": "Odhad beze změny: AI CAPEX, financování neoclouds a sazby."
+    "downsideReason": "Financování AI infrastruktury, čipový export a sazby."
   },
   "catalyst": {
-    "event": "Otevření cash NDX; zveřejnění zápisu FOMC",
+    "event": "Otevření cash NDX; zápis FOMC",
     "timePrague": "18. 11. 2026, 15:30 CET; FOMC 20:00 CET"
   },
   "archive": [
@@ -758,6 +765,24 @@
           "url": "https://www.reuters.com/markets/europe/european-shares-muted-tech-offsets-mining-weakness-2026-11-18/"
         }
       ]
+    },
+    {
+      "time": "18. 11. 2026 11:01 CET",
+      "summary": "Cash NDX 17. 11. 27 001,78 b. (−0,72 %). NVIDIA zastavila dodávky licencovaných Hopper do Číny; Q3 prodej 2,4 mld. USD. Medvědí ↗; návrat 12 %, propad −5 až −10 %.",
+      "sourceLinks": [
+        {
+          "label": "Yahoo Finance NDX",
+          "url": "https://finance.yahoo.com/quote/%5ENDX/history/"
+        },
+        {
+          "label": "Reuters – NVIDIA / Čína",
+          "url": "https://www.reuters.com/world/china/nvidia-stops-shipping-us-approved-ai-chips-china-2026-11-18/"
+        },
+        {
+          "label": "NVIDIA IR",
+          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/"
+        }
+      ]
     }
   ],
   "history": [
@@ -1122,6 +1147,10 @@
     {
       "name": "Reuters – evropské technologie",
       "url": "https://www.reuters.com/markets/europe/european-shares-muted-tech-offsets-mining-weakness-2026-11-18/"
+    },
+    {
+      "name": "Reuters – NVIDIA / Čína 18. 11. 2026",
+      "url": "https://www.reuters.com/world/china/nvidia-stops-shipping-us-approved-ai-chips-china-2026-11-18/"
     }
   ]
 }
