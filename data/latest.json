@@ -1,18 +1,18 @@
 {
-  "updatedAtPrague": "18. 11. 2026 16:03 CET",
-  "marketStatus": "Cash otevřen; ověřený intradenní snímek NDX 18. 11. 2026 15:33 CET.",
+  "updatedAtPrague": "18. 11. 2026 17:00 CET",
+  "marketStatus": "Cash otevřen; intradenní snímek NDX 18. 11. 2026 16:24:05 CET.",
   "ndx": {
-    "value": 27202.77,
-    "changePercent": 0.74,
+    "value": 27066.61,
+    "changePercent": 0.24,
     "ath": 31361.37,
-    "asOf": "18. 11. 2026, 15:33 CET – intradenní cash NDX (MarketWatch, 09:33 EST)."
+    "asOf": "18. 11. 2026, 16:24:05 CET – intradenní cash NDX (Google Finance, 10:24:05 EST)."
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "↗ mírné zlepšení proti 18. 11. 2026 14:58 CET",
-    "reason": "NDX +0,74 % (15:33 CET); NVDA +2,31 %, AVGO +2,38 %; Fed Waller preferuje až 50 bb v prosinci."
+    "trend": "↘ zhoršení proti 18. 11. 2026 16:03 CET",
+    "reason": "NDX +0,24 % (16:24 CET) vs. +0,74 % (15:33 CET); NVDA −1,53 % (16:26), AVGO +2,91 % (16:42)."
   },
-  "driver": "NVDA Q4 FY2027 výhled tržeb 130 mld. USD vs. kons. 125,25 mld. USD (beat 3,8 %).",
+  "driver": "NVDA −1,53 % (16:26 CET) po předchozím růstu +2,31 % (15:33 CET); Q4 výhled tržeb 130 mld. USD.",
   "news": [
     {
       "title": "Fed Waller: v prosinci zvýšení sazeb o 50 bb nebo signalizace dalších zvýšení v roce 2027.",
@@ -53,7 +53,7 @@
       "importanceScore": 58
     },
     {
-      "title": "NVDA v premarketu +3,7 %, AVGO +2,5 %, AMD +3,0 % po Q4 výhledu NVDA 130 mld. USD.",
+      "title": "NVDA po otevření −0,3 % (16:04 CET), CRWV −5,7 %, NBIS −2 %; ranní růst AI akcií oslabil.",
       "time": "18. 11. 2026, 11:28 CET",
       "publishedAtPrague": "18. 11. 2026, 11:28",
       "publicationTimeVerified": true,
@@ -258,16 +258,16 @@
   "leaders": [
     {
       "ticker": "NVDA",
-      "changePercent": 2.31,
-      "impact": "Cash 18. 11., MarketWatch přehled 15:33 CET."
+      "changePercent": -1.53,
+      "impact": "Cash 18. 11., Google Finance 16:26:45 CET."
     },
     {
       "ticker": "AVGO",
-      "changePercent": 2.38,
-      "impact": "Cash 18. 11., MarketWatch přehled 15:33 CET."
+      "changePercent": 2.91,
+      "impact": "Cash 18. 11., Google Finance 16:42:50 CET."
     }
   ],
-  "macro": "US10Y | 18. 11.: 5,126 % | 17. 11.: 5,120 % | +0,6 bb",
+  "macro": "US10Y | 18. 11. 16:29: 5,083 % | 17. 11.: 5,104 % | −2,1 bb",
   "regulation": null,
   "technical": {
     "support": null,
@@ -275,12 +275,12 @@
   },
   "forecast": {
     "athReturnPercent": 12,
-    "athReason": "Beze změny: AI infrastruktura + protiváha přísnějšího Fedu.",
+    "athReason": "Beze změny: NVDA Q4 tržby 130 mld. USD; podmínkou jsou AI cash flow a stabilizace sazeb.",
     "downside": "−5 až −10 %",
-    "downsideReason": "Rizika AI CAPEX, financování datacenter a sazeb Fedu."
+    "downsideReason": "AI CAPEX, financování datacenter a sazby; NVDA oslabila po úvodním růstu."
   },
   "catalyst": {
-    "event": "Zápis FOMC z 27.–28. října",
+    "event": "Zápis FOMC z 27.–28. října 2026",
     "timePrague": "18. 11. 2026, 20:00 CET"
   },
   "archive": [
@@ -795,6 +795,24 @@
           "url": "https://www.reuters.com/markets/us/waller-says-cnbc-fed-needs-get-more-aggressive-inflation-response-2026-11-18/"
         }
       ]
+    },
+    {
+      "time": "18. 11. 2026 17:00 CET",
+      "summary": "NDX cash 27 066,61 b. (+0,24 %; kotace 16:24 CET), −13,69 % od historického maxima. NVDA −1,53 %, AVGO +2,91 %; medvědí ↘. Bez nové zásadní zprávy od 16:03 CET.",
+      "sourceLinks": [
+        {
+          "label": "Google Finance NDX",
+          "url": "https://www.google.com/finance/quote/NDX:INDEXNASDAQ?hl=en"
+        },
+        {
+          "label": "Google Finance NVDA",
+          "url": "https://www.google.com/finance/quote/NVDA:NASDAQ?hl=en"
+        },
+        {
+          "label": "Google Finance AVGO",
+          "url": "https://www.google.com/finance/quote/AVGO:NASDAQ?hl=en"
+        }
+      ]
     }
   ],
   "history": [
@@ -849,6 +867,10 @@
     {
       "time": "18. 11. 2026 16:03 CET",
       "ndx": 27202.77
+    },
+    {
+      "time": "18. 11. 2026 17:00 CET",
+      "ndx": 27066.61
     }
   ],
   "sources": [
@@ -1199,6 +1221,10 @@
     {
       "name": "Reuters Waller",
       "url": "https://www.reuters.com/markets/us/waller-says-cnbc-fed-needs-get-more-aggressive-inflation-response-2026-11-18/"
+    },
+    {
+      "name": "Investing.com US10Y",
+      "url": "https://www.investing.com/rates-bonds/u.s.-10-year-bond-yield"
     }
   ]
 }
