@@ -427,6 +427,19 @@ body :is(h1,h2,h3,p,div,span,small,strong,button,a,table,th,td,time,summary,labe
 .economy-positive{color:var(--green)}.economy-negative{color:var(--red)}
 .economy-caption{font-size:11px;color:#777}
 @media(max-width:580px){.economy-table{font-size:12px}.economy-table td,.economy-table th{padding:9px 5px}}
+
+/* Stronger than the old td:last-child color:#777: trend direction wins. */
+.market-table td:last-child.market-up{color:var(--green);font-weight:700}
+.market-table td:last-child.market-down{color:var(--red);font-weight:700}
+/* Friendly, consistent vector national / EU flag marks. */
+.economy-symbol{display:inline-flex;align-items:center;gap:10px;vertical-align:middle}
+.economy-flag{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;flex:0 0 30px}
+.economy-flag svg{width:30px;height:30px;display:block;overflow:visible}
+@media(max-width:580px){
+ .economy-symbol{gap:7px}
+ .economy-flag,.economy-flag svg{width:26px;height:26px}
+ .economy-flag{flex-basis:26px}
+}
 </style></head>
 <body><div class="wrap">
 <header class="header"><div class="brand"><svg class="aardvark-mark" viewBox="0 0 100 73" role="img" aria-label="Logo Aardvarkland" xmlns="http://www.w3.org/2000/svg">
@@ -715,13 +728,27 @@ function economyLink(value,url){
   }
   return document.createTextNode(value);
 }
+
+/* Compact colorful flags for central-bank decisions and GDP snapshots. */
+const ECONOMY_FLAGS={
+  "USA": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 32 32\" aria-hidden=\"true\"><rect width=\"32\" height=\"32\" rx=\"9\" fill=\"#EEF4FF\"/><rect x=\"4.7\" y=\"9.2\" width=\"22.6\" height=\"13.6\" rx=\"2.4\" fill=\"#FFF\" stroke=\"#DCE5F1\" stroke-width=\".45\"/><path d=\"M4.7 10.9h22.6v1.8H4.7zm0 3.8h22.6v1.8H4.7zm0 3.8h22.6v1.8H4.7zm0 3h22.6v1.3H4.7z\" fill=\"#DB4655\"/><path d=\"M4.7 9.3h10.1v7.2H4.7z\" fill=\"#2555A2\"/><g fill=\"#FFF\"><circle cx=\"7\" cy=\"11\" r=\".64\"/><circle cx=\"10\" cy=\"11\" r=\".64\"/><circle cx=\"13\" cy=\"11\" r=\".64\"/><circle cx=\"8.5\" cy=\"13.2\" r=\".64\"/><circle cx=\"11.5\" cy=\"13.2\" r=\".64\"/><circle cx=\"7\" cy=\"15.4\" r=\".55\"/><circle cx=\"10\" cy=\"15.4\" r=\".55\"/><circle cx=\"13\" cy=\"15.4\" r=\".55\"/></g></svg>",
+  "EU": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 32 32\" aria-hidden=\"true\"><rect width=\"32\" height=\"32\" rx=\"9\" fill=\"#EBF2FF\"/><circle cx=\"16\" cy=\"16\" r=\"11.4\" fill=\"#2156B4\"/><circle cx=\"16\" cy=\"16\" r=\"10.65\" fill=\"none\" stroke=\"#628CD7\" stroke-width=\".65\"/><polygon points=\"16.00,7.70 16.31,8.48 17.14,8.53 16.49,9.06 16.71,9.87 16.00,9.42 15.29,9.87 15.51,9.06 14.86,8.53 15.69,8.48\" fill=\"#FFCE4A\"/><polygon points=\"19.55,8.65 19.86,9.43 20.69,9.48 20.04,10.01 20.26,10.82 19.55,10.37 18.84,10.82 19.06,10.01 18.41,9.48 19.24,9.43\" fill=\"#FFCE4A\"/><polygon points=\"22.15,11.25 22.45,12.03 23.29,12.08 22.64,12.61 22.85,13.42 22.15,12.97 21.44,13.42 21.65,12.61 21.01,12.08 21.84,12.03\" fill=\"#FFCE4A\"/><polygon points=\"23.10,14.80 23.41,15.58 24.24,15.63 23.59,16.16 23.81,16.97 23.10,16.52 22.39,16.97 22.61,16.16 21.96,15.63 22.79,15.58\" fill=\"#FFCE4A\"/><polygon points=\"22.15,18.35 22.45,19.13 23.29,19.18 22.64,19.71 22.85,20.52 22.15,20.07 21.44,20.52 21.65,19.71 21.01,19.18 21.84,19.13\" fill=\"#FFCE4A\"/><polygon points=\"19.55,20.95 19.86,21.73 20.69,21.78 20.04,22.31 20.26,23.12 19.55,22.67 18.84,23.12 19.06,22.31 18.41,21.78 19.24,21.73\" fill=\"#FFCE4A\"/><polygon points=\"16.00,21.90 16.31,22.68 17.14,22.73 16.49,23.26 16.71,24.07 16.00,23.62 15.29,24.07 15.51,23.26 14.86,22.73 15.69,22.68\" fill=\"#FFCE4A\"/><polygon points=\"12.45,20.95 12.76,21.73 13.59,21.78 12.94,22.31 13.16,23.12 12.45,22.67 11.74,23.12 11.96,22.31 11.31,21.78 12.14,21.73\" fill=\"#FFCE4A\"/><polygon points=\"9.85,18.35 10.16,19.13 10.99,19.18 10.35,19.71 10.56,20.52 9.85,20.07 9.15,20.52 9.36,19.71 8.71,19.18 9.55,19.13\" fill=\"#FFCE4A\"/><polygon points=\"8.90,14.80 9.21,15.58 10.04,15.63 9.39,16.16 9.61,16.97 8.90,16.52 8.19,16.97 8.41,16.16 7.76,15.63 8.59,15.58\" fill=\"#FFCE4A\"/><polygon points=\"9.85,11.25 10.16,12.03 10.99,12.08 10.35,12.61 10.56,13.42 9.85,12.97 9.15,13.42 9.36,12.61 8.71,12.08 9.55,12.03\" fill=\"#FFCE4A\"/><polygon points=\"12.45,8.65 12.76,9.43 13.59,9.48 12.94,10.01 13.16,10.82 12.45,10.37 11.74,10.82 11.96,10.01 11.31,9.48 12.14,9.43\" fill=\"#FFCE4A\"/></svg>",
+  "ČR": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 32 32\" aria-hidden=\"true\"><rect width=\"32\" height=\"32\" rx=\"9\" fill=\"#F1F5FB\"/><rect x=\"4.7\" y=\"9.1\" width=\"22.6\" height=\"13.8\" rx=\"2.5\" fill=\"#FFF\"/><path d=\"M4.8 16h22.5v6.9H4.8z\" fill=\"#E64A56\"/><path d=\"M4.8 9.2v13.7L15.5 16z\" fill=\"#2A5FA7\"/><rect x=\"4.7\" y=\"9.1\" width=\"22.6\" height=\"13.8\" rx=\"2.5\" fill=\"none\" stroke=\"#D7DFEA\" stroke-width=\".7\"/></svg>"
+};
 function showEconomyRows(id,items,kind){
   const target=$(id);if(!target)return;
   const frag=document.createDocumentFragment();
   for(const x of items.slice(0,3)){
     const tr=document.createElement('tr');
     const name=document.createElement('td');
-    name.append(economyLink(String(x.id||'—'),x.url));
+    const label=document.createElement('span');label.className='economy-symbol';
+    const flagCode=({FED:'USA',ECB:'EU','ČNB':'ČR'})[x.id]||x.id;
+    if(ECONOMY_FLAGS[flagCode]){
+      const flag=document.createElement('span');flag.className='economy-flag';
+      flag.setAttribute('aria-hidden','true');
+      flag.innerHTML=ECONOMY_FLAGS[flagCode];label.append(flag);
+    }
+    label.append(economyLink(String(x.id||'—'),x.url));name.append(label);
     const price=document.createElement('td');price.className='economy-main';
     const period=document.createElement('td');
     if(kind==='rates'){
