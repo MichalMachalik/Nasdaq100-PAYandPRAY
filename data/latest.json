@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "18. 11. 2026 00:59 CET",
+  "updatedAtPrague": "18. 11. 2026 02:20 CET",
   "marketStatus": "Cash NDX uzavřen. Poslední závěr 17. 11. 2026, 22:00 CET.",
   "ndx": {
     "value": 27001.78,
@@ -484,6 +484,20 @@
         {
           "label": "Reuters / NVIDIA",
           "url": "https://www.reuters.com/legal/transactional/nvidia-board-says-it-does-not-intend-reinstate-jensen-huang-ceo-2026-11-17/"
+        }
+      ]
+    },
+    {
+      "time": "18. 11. 2026 02:20 CET",
+      "summary": "Bez zásadních novinek. Cash NDX: poslední závěr 17. 11. 27 001,78 b. (−0,72 %); trh uzavřen. NQZ26 futures: kotace 18. 11. 01:58 CET, 27 403,50 b. (+1,21 %); nejde o cash NDX.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq NDX",
+          "url": "https://indexes.nasdaq.com/index/Overview/NDX"
+        },
+        {
+          "label": "Google Finance NQZ26",
+          "url": "https://www.google.com/finance/quote/NQZ26:CME_EMINIS"
         }
       ]
     }
