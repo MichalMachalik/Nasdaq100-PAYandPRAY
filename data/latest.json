@@ -263,7 +263,7 @@
       "impact": "Cash závěr 18. 11., 22:00 CET, Google Finance."
     }
   ],
-  "macro": "US10Y | 18. 11.: 5,064 % | 17. 11.: 5,103 % | −3,9 bb",
+  "macro": "US10Y | 18. 11. 20:20: 5,066 % | 17. 11.: 5,103 % | −3,7 bb",
   "regulation": null,
   "technical": {
     "support": null,
@@ -1433,6 +1433,10 @@
     {
       "name": "Reuters MSFT ByteDance",
       "url": "https://www.reuters.com/world/china/us-house-panel-seeks-microsoft-briefing-reported-ai-deal-talks-with-chinas-2026-11-18/"
+    },
+    {
+      "name": "US10Y Kinzan 18. 11. 20:20 CET",
+      "url": "https://kinzan.io/markets/rates/us-10-year-yield/"
     }
   ]
 }
