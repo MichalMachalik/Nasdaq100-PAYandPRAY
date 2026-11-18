@@ -1,18 +1,18 @@
 {
-  "updatedAtPrague": "18. 11. 2026 17:00 CET",
-  "marketStatus": "Cash otevřen; intradenní snímek NDX 18. 11. 2026 16:24:05 CET.",
+  "updatedAtPrague": "18. 11. 2026 17:59 CET",
+  "marketStatus": "Cash otevřen; intradenní NDX 18. 11. 2026, 17:34:44 CET.",
   "ndx": {
-    "value": 27066.61,
-    "changePercent": 0.24,
+    "value": 26975.21,
+    "changePercent": -0.1,
     "ath": 31361.37,
-    "asOf": "18. 11. 2026, 16:24:05 CET – intradenní cash NDX (Google Finance, 10:24:05 EST)."
+    "asOf": "18. 11. 2026, 17:34:44 CET – intradenní cash NDX (Google Finance, 11:34:44 EST)."
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "↘ zhoršení proti 18. 11. 2026 16:03 CET",
-    "reason": "NDX +0,24 % (16:24 CET) vs. +0,74 % (15:33 CET); NVDA −1,53 % (16:26), AVGO +2,91 % (16:42)."
+    "trend": "↘ zhoršení proti 18. 11. 2026 17:00 CET",
+    "reason": "NDX −0,10 % (17:34 CET) vs. +0,24 % (16:24 CET); NVDA −2,30 %, SOX −0,71 %."
   },
-  "driver": "NVDA −1,53 % (16:26 CET) po předchozím růstu +2,31 % (15:33 CET); Q4 výhled tržeb 130 mld. USD.",
+  "driver": "NVDA −2,30 % (17:27 CET); Reuters: nejistota kolem vedení, SEC a exportních omezení po výsledcích Q3.",
   "news": [
     {
       "title": "Fed Waller: v prosinci zvýšení sazeb o 50 bb nebo signalizace dalších zvýšení v roce 2027.",
@@ -53,18 +53,18 @@
       "importanceScore": 58
     },
     {
-      "title": "NVDA po otevření −0,3 % (16:04 CET), CRWV −5,7 %, NBIS −2 %; ranní růst AI akcií oslabil.",
-      "time": "18. 11. 2026, 11:28 CET",
-      "publishedAtPrague": "18. 11. 2026, 11:28",
+      "title": "NVDA po silném výhledu Q4 obrátila předobchodní růst; investoři sledují vedení a export čipů.",
+      "time": "18. 11. 2026, 12:12 CET",
+      "publishedAtPrague": "18. 11. 2026, 12:12",
       "publicationTimeVerified": true,
       "kind": "continuing",
-      "category": "equities",
+      "category": "market_reaction",
       "source": "Reuters",
-      "url": "https://www.reuters.com/business/nasdaq-futures-jump-nvidia-forecast-lifts-ai-trade-ahead-anthropic-pricing-2026-11-18/",
+      "url": "https://www.reuters.com/business/ai-stocks-rally-nvidia-outlook-calms-demand-fears-2026-11-18/",
       "sourceLinks": [
         {
           "label": "Reuters",
-          "url": "https://www.reuters.com/business/nasdaq-futures-jump-nvidia-forecast-lifts-ai-trade-ahead-anthropic-pricing-2026-11-18/"
+          "url": "https://www.reuters.com/business/ai-stocks-rally-nvidia-outlook-calms-demand-fears-2026-11-18/"
         }
       ],
       "eventKey": "nasdaq-chip-premarket-nvda-guidance-20261118",
@@ -258,16 +258,16 @@
   "leaders": [
     {
       "ticker": "NVDA",
-      "changePercent": -1.53,
-      "impact": "Cash 18. 11., Google Finance 16:26:45 CET."
+      "changePercent": -2.3,
+      "impact": "Cash 18. 11., Google Finance 17:27:15 CET."
     },
     {
       "ticker": "AVGO",
-      "changePercent": 2.91,
-      "impact": "Cash 18. 11., Google Finance 16:42:50 CET."
+      "changePercent": 2.35,
+      "impact": "Cash 18. 11., Google Finance 17:26:13 CET."
     }
   ],
-  "macro": "US10Y | 18. 11. 16:29: 5,083 % | 17. 11.: 5,104 % | −2,1 bb",
+  "macro": "US10Y | 18. 11.: 5,074 % | 17. 11.: 5,120 % | −4,6 bb",
   "regulation": null,
   "technical": {
     "support": null,
@@ -275,9 +275,9 @@
   },
   "forecast": {
     "athReturnPercent": 12,
-    "athReason": "Beze změny: NVDA Q4 tržby 130 mld. USD; podmínkou jsou AI cash flow a stabilizace sazeb.",
+    "athReason": "Beze změny: NVDA Q4 výhled 130 mld. USD; podmínkou stabilizace AI financování a sazeb.",
     "downside": "−5 až −10 %",
-    "downsideReason": "AI CAPEX, financování datacenter a sazby; NVDA oslabila po úvodním růstu."
+    "downsideReason": "NVDA −2,30 %; AI CAPEX, neocloud financování a sazby."
   },
   "catalyst": {
     "event": "Zápis FOMC z 27.–28. října 2026",
@@ -813,6 +813,24 @@
           "url": "https://www.google.com/finance/quote/AVGO:NASDAQ?hl=en"
         }
       ]
+    },
+    {
+      "time": "18. 11. 2026 17:59 CET",
+      "summary": "NDX cash 26 975,21 b. (−0,10 %, 17:34 CET), −13,99 % od historického maxima. NVDA −2,30 %, AVGO +2,35 %. Medvědí ↘; bez zásadních novinek od 17:00 CET.",
+      "sourceLinks": [
+        {
+          "label": "Google Finance NDX",
+          "url": "https://www.google.com/finance/quote/NDX:INDEXNASDAQ?hl=en"
+        },
+        {
+          "label": "Google Finance NVDA",
+          "url": "https://www.google.com/finance/quote/NVDA:NASDAQ?hl=en"
+        },
+        {
+          "label": "Google Finance AVGO",
+          "url": "https://www.google.com/finance/quote/AVGO:NASDAQ?hl=en"
+        }
+      ]
     }
   ],
   "history": [
@@ -871,6 +889,10 @@
     {
       "time": "18. 11. 2026 17:00 CET",
       "ndx": 27066.61
+    },
+    {
+      "time": "18. 11. 2026 17:59 CET",
+      "ndx": 26975.21
     }
   ],
   "sources": [
@@ -1225,6 +1247,10 @@
     {
       "name": "Investing.com US10Y",
       "url": "https://www.investing.com/rates-bonds/u.s.-10-year-bond-yield"
+    },
+    {
+      "name": "Reuters / NVDA market",
+      "url": "https://www.reuters.com/business/ai-stocks-rally-nvidia-outlook-calms-demand-fears-2026-11-18/"
     }
   ]
 }
