@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "19. 11. 2026 08:12 CET",
+  "updatedAtPrague": "19. 11. 2026 09:06 CET",
   "marketStatus": "Uzavřeno – poslední závěr cash NDX 18. 11. 2026",
   "ndx": {
     "value": 27116.26,
@@ -9,11 +9,49 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→ beze změny oproti 19. 11. 2026 07:04 CET",
-    "reason": "Cash NDX +0,42 %; SOX +0,10 %; NVDA −2,89 %; AVGO +3,64 % (18. 11.)."
+    "trend": "→ beze změny oproti 19. 11. 2026 08:12 CET",
+    "reason": "NDX +0,42 %; SOX +0,10 %; NVDA −2,89 %; AVGO +3,64 % (18. 11.). TAIEX −4,4 % (19. 11.)."
   },
-  "driver": "FOMC zápis 18. 11.: rychlý růst dluhu financujícího AI, leasingové závazky mimo rozvahu a kruhové financování; podmíněné riziko přecenění AI aktiv.",
+  "driver": "FOMC 18. 11.: rychlý růst dluhu financujícího AI, mimobilanční leasing a kruhové financování; scénář přecenění AI aktiv při slabších výnosech investic.",
   "news": [
+    {
+      "title": "Tchaj-wan: TAIEX −4,4 %; regulátor omezí short-selling akcií po denním poklesu ≥3,5 %.",
+      "time": "19. 11. 2026, 08:11 CET",
+      "publishedAtPrague": "19. 11. 2026, 08:11",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "semiconductors",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/markets/europe/global-markets-taiwan-update-1-2026-11-19/",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/markets/europe/global-markets-taiwan-update-1-2026-11-19/"
+        }
+      ],
+      "eventKey": "taiwan-short-selling-curbs-taiex-drop-20261119",
+      "ndxRelevant": true,
+      "importanceScore": 64
+    },
+    {
+      "title": "Korea: export čipů za Q1–Q3 +184 % y/y; 42 % vývozu země. Celkový vývoz překročil 1 bil. USD.",
+      "time": "19. 11. 2026, 07:29 CET",
+      "publishedAtPrague": "19. 11. 2026, 07:29",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "semiconductors",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/south-korea-becomes-fourth-country-globally-hit-1-trillion-exports-ai-chip-boom-2026-11-19/",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/south-korea-becomes-fourth-country-globally-hit-1-trillion-exports-ai-chip-boom-2026-11-19/"
+        }
+      ],
+      "eventKey": "south-korea-chip-exports-184pct-yoy-2026q3-20261119",
+      "ndxRelevant": true,
+      "importanceScore": 57
+    },
     {
       "title": "Asijské čipy: TSMC, Samsung a SK Hynix přibližně −2 %; Nasdaq futures téměř +1 %.",
       "time": "19. 11. 2026, 02:53",
@@ -237,9 +275,9 @@
   },
   "forecast": {
     "athReturnPercent": 12,
-    "athReason": "Silný NVDA Q4 výhled; podmínkou návratu je stabilizace AI financování a sazeb.",
+    "athReason": "NVDA výhled Q4; podmínkou návratu je stabilizace AI financování a sazeb.",
     "downside": "−5 až −10 %",
-    "downsideReason": "AI CAPEX, úvěrové financování datacenter a očekávání dalších zvýšení sazeb."
+    "downsideReason": "AI CAPEX, dluhové financování datacenter a očekávání dalších zvýšení sazeb."
   },
   "catalyst": {
     "event": "USA – týdenní žádosti o podporu v nezaměstnanosti",
@@ -1025,6 +1063,24 @@
           "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm"
         }
       ]
+    },
+    {
+      "time": "19. 11. 2026 09:06 CET",
+      "summary": "NDX cash 27 116,26 b. (+0,42 %, závěr 18. 11.), −13,54 % od historického maxima. TAIEX −4,4 %; Tchaj-wan omezuje short-selling. Korejský export čipů +184 % y/y za Q1–Q3.",
+      "sourceLinks": [
+        {
+          "label": "NDX",
+          "url": "https://ycharts.com/indices/%5ENDX/level"
+        },
+        {
+          "label": "Reuters Tchaj-wan",
+          "url": "https://www.reuters.com/markets/europe/global-markets-taiwan-update-1-2026-11-19/"
+        },
+        {
+          "label": "Reuters Korea",
+          "url": "https://www.reuters.com/world/south-korea-becomes-fourth-country-globally-hit-1-trillion-exports-ai-chip-boom-2026-11-19/"
+        }
+      ]
     }
   ],
   "history": [
@@ -1142,6 +1198,10 @@
     },
     {
       "time": "19. 11. 2026 08:12 CET",
+      "ndx": 27116.26
+    },
+    {
+      "time": "19. 11. 2026 09:06 CET",
       "ndx": 27116.26
     }
   ],
@@ -1561,6 +1621,14 @@
     {
       "name": "Reuters Asia",
       "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-11-19/"
+    },
+    {
+      "name": "Reuters Tchaj-wan",
+      "url": "https://www.reuters.com/markets/europe/global-markets-taiwan-update-1-2026-11-19/"
+    },
+    {
+      "name": "Reuters Korea",
+      "url": "https://www.reuters.com/world/south-korea-becomes-fourth-country-globally-hit-1-trillion-exports-ai-chip-boom-2026-11-19/"
     }
   ]
 }
