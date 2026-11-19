@@ -1,6 +1,6 @@
 {
-  "updatedAtPrague": "20. 11. 2026 00:02 CET",
-  "marketStatus": "Cash uzavřen (poslední závěr 19. 11. 2026, 22:00 CET)",
+  "updatedAtPrague": "20. 11. 2026 00:58 CET",
+  "marketStatus": "Cash uzavřen",
   "ndx": {
     "value": 26517.05,
     "changePercent": -2.21,
@@ -9,10 +9,10 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→ beze změny proti 19. 11. 2026 23:05 CET",
+    "trend": "→ beze změny proti 20. 11. 2026 00:02 CET",
     "reason": "NDX −2,21 %, SOX −2,41 %, NVDA −3,30 % a AVGO −2,09 %; uzavření 19. 11."
   },
-  "driver": "NDX −2,21 %, SOX −2,41 %, NVDA −3,30 %; Reuters: ztráta podpory AI sektoru po debutu Anthropic, CAPEX datacenter a valuace.",
+  "driver": "NDX −2,21 %, SOX −2,41 %; Reuters: výprodej AI a čipů po debutu Anthropic, tlak valuací a CAPEX datacenter.",
   "news": [
     {
       "title": "Fed Barr: inflace příliš vysoká; očekává další zvýšení sazeb. Současně varuje před oslabením bankovního dohledu.",
@@ -1373,6 +1373,20 @@
           "url": "https://www.reuters.com/business/nasdaq-futures-jump-anthropics-record-ipo-pricing-fuels-hopes-strong-debut-2026-11-19/"
         }
       ]
+    },
+    {
+      "time": "20. 11. 2026 00:58 CET",
+      "summary": "Cash NDX 26 517,05 b. (−2,21 %, −15,45 % od historického maxima); SOX −2,41 %, NVDA −3,30 %. Medvědí →. Bez zásadních novinek od 00:02 CET.",
+      "sourceLinks": [
+        {
+          "label": "Yahoo Finance – NDX",
+          "url": "https://finance.yahoo.com/quote/%5ENDX/history/"
+        },
+        {
+          "label": "Reuters – závěr USA",
+          "url": "https://www.reuters.com/business/nasdaq-futures-jump-anthropics-record-ipo-pricing-fuels-hopes-strong-debut-2026-11-19/"
+        }
+      ]
     }
   ],
   "history": [
@@ -1554,6 +1568,10 @@
     },
     {
       "time": "20. 11. 2026 00:02 CET",
+      "ndx": 26517.05
+    },
+    {
+      "time": "20. 11. 2026 00:58 CET",
       "ndx": 26517.05
     }
   ],
