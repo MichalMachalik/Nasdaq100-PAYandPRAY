@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "19. 11. 2026 11:00 CET",
+  "updatedAtPrague": "19. 11. 2026 12:04 CET",
   "marketStatus": "Uzavřeno – poslední závěr cash NDX 18. 11. 2026",
   "ndx": {
     "value": 27116.26,
@@ -9,10 +9,10 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "↗ zlepšení oproti 19. 11. 2026 10:05 CET",
-    "reason": "NDX +0,42 % a SOX +0,10 % (18. 11.); NVDA předobchodně +1,6 %, INTC/AMD/MU/MRVL +3–4,5 % (19. 11.)."
+    "trend": "→ beze změny oproti 19. 11. 2026 11:00 CET",
+    "reason": "NDX +0,42 % a SOX +0,10 % (18. 11.); NVDA +1,6 %, AMD/INTC/MU/MRVL +3–4,5 % (19. 11., premarket)."
   },
-  "driver": "USA premarket: NVDA +1,6 %, INTC/AMD/MU/MRVL +3–4,5 %; IPO Anthropic 81,3 mld. USD při ceně 83 USD.",
+  "driver": "Anthropic IPO: 81,31 mld. USD, cena 83 USD vs. pásmo 70–78 USD; NVDA premarket +1,6 %.",
   "news": [
     {
       "title": "USA premarket: NVDA +1,6 %; INTC, AMD, MU, MRVL +3–4,5 % po ocenění IPO Anthropic na 83 USD.",
@@ -234,25 +234,6 @@
       "eventKey": "nasdaq-chip-premarket-nvda-guidance-20261118",
       "ndxRelevant": true,
       "importanceScore": 76
-    },
-    {
-      "title": "USA zvažují zveřejňování používání čínských AI modelů; ABNB využívá Qwen.",
-      "time": "18. 11. 2026, 12:02 CET",
-      "publishedAtPrague": "18. 11. 2026, 12:02",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_regulation",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/china/trump-administration-weighs-forcing-us-firms-disclose-chinese-ai-use-2026-11-18/",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/world/china/trump-administration-weighs-forcing-us-firms-disclose-chinese-ai-use-2026-11-18/"
-        }
-      ],
-      "eventKey": "us-chinese-ai-model-disclosure-proposal-20261118",
-      "ndxRelevant": true,
-      "importanceScore": 58
     }
   ],
   "leaders": [
@@ -1117,6 +1098,20 @@
           "url": "https://www.reuters.com/business/nasdaq-futures-jump-anthropics-record-ipo-pricing-fuels-hopes-strong-debut-2026-11-19/"
         }
       ]
+    },
+    {
+      "time": "19. 11. 2026 12:04 CET",
+      "summary": "NDX cash 27 116,26 b. (+0,42 %, závěr 18. 11.), −13,54 % od historického maxima. Anthropic IPO 81,31 mld. USD (83 USD); NVDA premarket +1,6 %. Bez zásadních novinek od 11:00 CET.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq NDX",
+          "url": "https://indexes.nasdaq.com/index/Overview/NDX"
+        },
+        {
+          "label": "Reuters Anthropic/čipy",
+          "url": "https://www.reuters.com/business/nasdaq-futures-jump-anthropics-record-ipo-pricing-fuels-hopes-strong-debut-2026-11-19/"
+        }
+      ]
     }
   ],
   "history": [
@@ -1246,6 +1241,10 @@
     },
     {
       "time": "2026-11-18",
+      "ndx": 27116.26
+    },
+    {
+      "time": "19. 11. 2026 12:04 CET",
       "ndx": 27116.26
     }
   ],
