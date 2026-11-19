@@ -1,18 +1,18 @@
 {
-  "updatedAtPrague": "19. 11. 2026 09:06 CET",
+  "updatedAtPrague": "19. 11. 2026 10:05 CET",
   "marketStatus": "Uzavřeno – poslední závěr cash NDX 18. 11. 2026",
   "ndx": {
     "value": 27116.26,
     "changePercent": 0.42,
     "ath": 31361.37,
-    "asOf": "18. 11. 2026, 22:00 CET – cash NDX, poslední závěr (Yahoo Finance)"
+    "asOf": "18. 11. 2026, 22:00 CET – cash NDX, poslední závěr (Google Finance)"
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→ beze změny oproti 19. 11. 2026 08:12 CET",
+    "trend": "→ beze změny oproti 19. 11. 2026 09:06 CET",
     "reason": "NDX +0,42 %; SOX +0,10 %; NVDA −2,89 %; AVGO +3,64 % (18. 11.). TAIEX −4,4 % (19. 11.)."
   },
-  "driver": "FOMC 18. 11.: rychlý růst dluhu financujícího AI, mimobilanční leasing a kruhové financování; scénář přecenění AI aktiv při slabších výnosech investic.",
+  "driver": "FOMC 18. 11.: růst dluhu pro AI, leasingové závazky a provázané financování datacenter; scénář přecenění AI aktiv při vyšších sazbách.",
   "news": [
     {
       "title": "Tchaj-wan: TAIEX −4,4 %; regulátor omezí short-selling akcií po denním poklesu ≥3,5 %.",
@@ -51,6 +51,25 @@
       "eventKey": "south-korea-chip-exports-184pct-yoy-2026q3-20261119",
       "ndxRelevant": true,
       "importanceScore": 57
+    },
+    {
+      "title": "Delta Electronics: indické tržby plánuje ztrojnásobit za 4–5 let; Nvidia partner, datacentra a chlazení.",
+      "time": "19. 11. 2026, 06:36 CET",
+      "publishedAtPrague": "19. 11. 2026, 06:36",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "ai_infrastructure",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/asia-pacific/taiwans-delta-electronics-looks-triple-india-revenue-4-5-years-ai-boom-2026-11-19/",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/asia-pacific/taiwans-delta-electronics-looks-triple-india-revenue-4-5-years-ai-boom-2026-11-19/"
+        }
+      ],
+      "eventKey": "delta-electronics-india-ai-datacenter-triple-revenue-20261119",
+      "ndxRelevant": true,
+      "importanceScore": 48
     },
     {
       "title": "Asijské čipy: TSMC, Samsung a SK Hynix přibližně −2 %; Nasdaq futures téměř +1 %.",
@@ -234,25 +253,6 @@
           "url": "https://www.reuters.com/world/china/nvidia-stops-shipping-us-approved-ai-chips-china-2026-11-18/"
         }
       ]
-    },
-    {
-      "title": "ASML.AS +1,8 %; evropský technologický sektor +1,2 % po výsledcích NVDA.",
-      "time": "18. 11. 2026, 08:25 UTC",
-      "publishedAtPrague": "18. 11. 2026, 09:25",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "market_reaction",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/markets/europe/european-shares-muted-tech-offsets-mining-weakness-2026-11-18/",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/markets/europe/european-shares-muted-tech-offsets-mining-weakness-2026-11-18/"
-        }
-      ],
-      "importanceScore": 52,
-      "ndxRelevant": true,
-      "eventKey": "asml-europe-ai-chip-rally-20261118"
     }
   ],
   "leaders": [
@@ -275,9 +275,9 @@
   },
   "forecast": {
     "athReturnPercent": 12,
-    "athReason": "NVDA výhled Q4; podmínkou návratu je stabilizace AI financování a sazeb.",
+    "athReason": "NVDA výhled Q4; podmínkou je stabilizace AI financování a sazeb.",
     "downside": "−5 až −10 %",
-    "downsideReason": "AI CAPEX, dluhové financování datacenter a očekávání dalších zvýšení sazeb."
+    "downsideReason": "AI CAPEX, financování datacenter a očekávání vyšších sazeb."
   },
   "catalyst": {
     "event": "USA – týdenní žádosti o podporu v nezaměstnanosti",
@@ -1081,6 +1081,24 @@
           "url": "https://www.reuters.com/world/south-korea-becomes-fourth-country-globally-hit-1-trillion-exports-ai-chip-boom-2026-11-19/"
         }
       ]
+    },
+    {
+      "time": "19. 11. 2026 10:05 CET",
+      "summary": "NDX cash 27 116,26 b. (+0,42 %, závěr 18. 11.), −13,54 % od historického maxima. FOMC: další zvýšení sazeb, financování AI. Bez zásadních novinek od 09:06 CET; Delta Electronics: rozvoj indických datacenter.",
+      "sourceLinks": [
+        {
+          "label": "NDX Google Finance",
+          "url": "https://www.google.com/finance/quote/NDX:INDEXNASDAQ"
+        },
+        {
+          "label": "Reuters FOMC / trhy",
+          "url": "https://www.reuters.com/business/nasdaq-futures-jump-nvidia-forecast-lifts-ai-trade-ahead-anthropic-pricing-2026-11-18/"
+        },
+        {
+          "label": "Reuters Delta Electronics",
+          "url": "https://www.reuters.com/world/asia-pacific/taiwans-delta-electronics-looks-triple-india-revenue-4-5-years-ai-boom-2026-11-19/"
+        }
+      ]
     }
   ],
   "history": [
@@ -1202,6 +1220,10 @@
     },
     {
       "time": "19. 11. 2026 09:06 CET",
+      "ndx": 27116.26
+    },
+    {
+      "time": "19. 11. 2026 10:05 CET",
       "ndx": 27116.26
     }
   ],
@@ -1629,6 +1651,10 @@
     {
       "name": "Reuters Korea",
       "url": "https://www.reuters.com/world/south-korea-becomes-fourth-country-globally-hit-1-trillion-exports-ai-chip-boom-2026-11-19/"
+    },
+    {
+      "name": "Reuters Delta Electronics",
+      "url": "https://www.reuters.com/world/asia-pacific/taiwans-delta-electronics-looks-triple-india-revenue-4-5-years-ai-boom-2026-11-19/"
     }
   ]
 }
