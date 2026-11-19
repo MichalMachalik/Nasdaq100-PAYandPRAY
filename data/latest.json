@@ -1,60 +1,37 @@
 {
-  "updatedAtPrague": "19. 11. 2026 23:05 CET",
-  "marketStatus": "Cash uzavřen (závěr 19. 11. 2026, 22:00 CET)",
+  "updatedAtPrague": "20. 11. 2026 00:02 CET",
+  "marketStatus": "Cash uzavřen (poslední závěr 19. 11. 2026, 22:00 CET)",
   "ndx": {
     "value": 26517.05,
     "changePercent": -2.21,
     "ath": 31361.37,
-    "asOf": "19. 11. 2026 22:00 CET – cash NDX, poslední závěr (Google Finance)"
+    "asOf": "19. 11. 2026 22:00 CET – cash NDX, poslední závěr (Yahoo Finance)"
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→ beze změny proti 19. 11. 2026 22:05 CET",
-    "reason": "NDX −2,21 % (závěr 22:00), NVDA −3,30 %, SOX −2,41 %; Nasdaq šíře 1 057 rostoucích / 3 756 klesajících."
+    "trend": "→ beze změny proti 19. 11. 2026 23:05 CET",
+    "reason": "NDX −2,21 %, SOX −2,41 %, NVDA −3,30 % a AVGO −2,09 %; uzavření 19. 11."
   },
-  "driver": "NDX −2,21 %, NVDA −3,30 %, SOX −2,41 %; Reuters: výprodej AI/čipů, tlak na financování datacenter a valuace.",
+  "driver": "NDX −2,21 %, SOX −2,41 %, NVDA −3,30 %; Reuters: ztráta podpory AI sektoru po debutu Anthropic, CAPEX datacenter a valuace.",
   "news": [
     {
-      "title": "Anthropic (ANT): debut Nasdaq na 111,50 USD, 34,3 % nad IPO cenou 83 USD; valuace přes 2 bil. USD.",
-      "time": "19. 11. 2026, 12:08 CET",
-      "publishedAtPrague": "19. 11. 2026, 12:08",
+      "title": "Fed Barr: inflace příliš vysoká; očekává další zvýšení sazeb. Současně varuje před oslabením bankovního dohledu.",
+      "time": "19. 11. 2026, 20:54 CET",
+      "publishedAtPrague": "19. 11. 2026, 20:54",
       "publicationTimeVerified": true,
       "kind": "new",
-      "category": "ai_infrastructure",
+      "category": "monetary_policy",
       "source": "Reuters",
-      "url": "https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/",
+      "url": "https://www.reuters.com/business/feds-barr-worried-regulation-changes-may-increase-financial-sector-risks-2026-11-19/",
       "sourceLinks": [
         {
-          "label": "Reuters – debut",
-          "url": "https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/"
+          "label": "Reuters – Barr",
+          "url": "https://www.reuters.com/business/feds-barr-worried-regulation-changes-may-increase-financial-sector-risks-2026-11-19/"
         }
       ],
-      "eventKey": "anthropic-nasdaq-debut-11150-20261119",
+      "eventKey": "fed-barr-inflation-rate-hikes-20261119",
       "ndxRelevant": true,
-      "importanceScore": 84
-    },
-    {
-      "title": "TSMC: pozastavuje vybrané čínské objednávky ≤16 nm bez americké licence; nová BIS pravidla účinná 19. 11.",
-      "time": "19. 11. 2026, 13:48 CET",
-      "publishedAtPrague": "19. 11. 2026, 13:48",
-      "publicationTimeVerified": true,
-      "kind": "new",
-      "category": "ai_regulation",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/china/tsmc-tightens-china-ai-chip-curbs-new-us-rules-close-manufacturing-loophole-2026-11-19/",
-      "sourceLinks": [
-        {
-          "label": "Reuters – TSMC",
-          "url": "https://www.reuters.com/world/china/tsmc-tightens-china-ai-chip-curbs-new-us-rules-close-manufacturing-loophole-2026-11-19/"
-        },
-        {
-          "label": "BIS – účinné pravidlo",
-          "url": "https://www.federalregister.gov/documents/2026/11/19/2026-23529/addressing-remote-access-to-advanced-semiconductors"
-        }
-      ],
-      "eventKey": "bis-tsmc-china-foundry-export-rule-effective-20261119",
-      "ndxRelevant": true,
-      "importanceScore": 77
+      "importanceScore": 72
     },
     {
       "title": "Fed Goolsbee: investice do AI datacenter a spotřeba mohou přehřívat americkou ekonomiku.",
@@ -74,6 +51,25 @@
           "url": "https://www.reuters.com/business/goolsbee-says-feds-job-right-now-is-keep-ai-surge-overheating-economy-2026-11-19/"
         }
       ]
+    },
+    {
+      "title": "AMD −8 %; Hunterbrook zveřejnil tvrzení o vazbách na sankcionované čínské firmy. AMD obvinění odmítá.",
+      "time": "19. 11. 2026, 18:07 CET",
+      "publishedAtPrague": "19. 11. 2026, 18:07",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "semiconductors",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/china/amd-shares-slide-report-says-china-links-could-invite-us-scrutiny-2026-11-19/",
+      "sourceLinks": [
+        {
+          "label": "Reuters – AMD",
+          "url": "https://www.reuters.com/world/china/amd-shares-slide-report-says-china-links-could-invite-us-scrutiny-2026-11-19/"
+        }
+      ],
+      "eventKey": "amd-hunterbrook-china-export-scrutiny-20261119",
+      "ndxRelevant": true,
+      "importanceScore": 74
     },
     {
       "title": "Fed Jefferson: AI CAPEX a datacentra nyní zvyšují poptávku a inflaci; produktivní přínosy mohou ceny tlumit později.",
@@ -99,61 +95,23 @@
       "importanceScore": 76
     },
     {
-      "title": "AMD −8 %; Hunterbrook zveřejnil tvrzení o vazbách na sankcionované čínské firmy. AMD obvinění odmítá.",
-      "time": "19. 11. 2026, 18:07 CET",
-      "publishedAtPrague": "19. 11. 2026, 18:07",
+      "title": "USA ICSA: 203 tis. vs. předchozí revid. 202 tis. (+1 tis.), kons. Reuters 197 tis.; týden do 14. 11.",
+      "time": "19. 11. 2026, 14:44 CET",
+      "publishedAtPrague": "19. 11. 2026, 14:44",
       "publicationTimeVerified": true,
       "kind": "new",
-      "category": "semiconductors",
+      "category": "employment",
       "source": "Reuters",
-      "url": "https://www.reuters.com/world/china/amd-shares-slide-report-says-china-links-could-invite-us-scrutiny-2026-11-19/",
-      "sourceLinks": [
-        {
-          "label": "Reuters – AMD",
-          "url": "https://www.reuters.com/world/china/amd-shares-slide-report-says-china-links-could-invite-us-scrutiny-2026-11-19/"
-        }
-      ],
-      "eventKey": "amd-hunterbrook-china-export-scrutiny-20261119",
-      "ndxRelevant": true,
-      "importanceScore": 74
-    },
-    {
-      "title": "Fed Barr: inflace příliš vysoká; očekává další zvýšení sazeb. Současně varuje před oslabením bankovního dohledu.",
-      "time": "19. 11. 2026, 20:54 CET",
-      "publishedAtPrague": "19. 11. 2026, 20:54",
-      "publicationTimeVerified": true,
-      "kind": "new",
-      "category": "monetary_policy",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/feds-barr-worried-regulation-changes-may-increase-financial-sector-risks-2026-11-19/",
-      "sourceLinks": [
-        {
-          "label": "Reuters – Barr",
-          "url": "https://www.reuters.com/business/feds-barr-worried-regulation-changes-may-increase-financial-sector-risks-2026-11-19/"
-        }
-      ],
-      "eventKey": "fed-barr-inflation-rate-hikes-20261119",
-      "ndxRelevant": true,
-      "importanceScore": 72
-    },
-    {
-      "title": "USA premarket: NVDA +1,6 %; INTC, AMD, MU, MRVL +3–4,5 % po ocenění IPO Anthropic na 83 USD.",
-      "time": "19. 11. 2026, 10:03 CET",
-      "publishedAtPrague": "19. 11. 2026, 10:03",
-      "publicationTimeVerified": true,
-      "kind": "new",
-      "category": "market_reaction",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/nasdaq-futures-jump-anthropics-record-ipo-pricing-fuels-hopes-strong-debut-2026-11-19/",
+      "url": "https://www.reuters.com/world/us/us-weekly-jobless-claims-increase-slightly-2026-11-19/",
       "sourceLinks": [
         {
           "label": "Reuters",
-          "url": "https://www.reuters.com/business/nasdaq-futures-jump-anthropics-record-ipo-pricing-fuels-hopes-strong-debut-2026-11-19/"
+          "url": "https://www.reuters.com/world/us/us-weekly-jobless-claims-increase-slightly-2026-11-19/"
         }
       ],
-      "eventKey": "us-semiconductor-premarket-rebound-anthropic-20261119",
+      "eventKey": "us-weekly-initial-claims-203k-week-20261114-released-20261119",
       "ndxRelevant": true,
-      "importanceScore": 68
+      "importanceScore": 61
     },
     {
       "title": "J.P. Morgan: odhad zvýšení sazeb Fedu o 25 bb v prosinci, lednu a březnu.",
@@ -175,80 +133,46 @@
       ]
     },
     {
-      "title": "Tchaj-wan: TAIEX −4,4 %; regulátor omezí short-selling akcií po denním poklesu ≥3,5 %.",
-      "time": "19. 11. 2026, 08:11 CET",
-      "publishedAtPrague": "19. 11. 2026, 08:11",
+      "title": "TSMC: pozastavuje vybrané čínské objednávky ≤16 nm bez americké licence; nová BIS pravidla účinná 19. 11.",
+      "time": "19. 11. 2026, 13:48 CET",
+      "publishedAtPrague": "19. 11. 2026, 13:48",
       "publicationTimeVerified": true,
       "kind": "new",
-      "category": "semiconductors",
+      "category": "ai_regulation",
       "source": "Reuters",
-      "url": "https://www.reuters.com/markets/europe/global-markets-taiwan-update-1-2026-11-19/",
+      "url": "https://www.reuters.com/world/china/tsmc-tightens-china-ai-chip-curbs-new-us-rules-close-manufacturing-loophole-2026-11-19/",
       "sourceLinks": [
         {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/markets/europe/global-markets-taiwan-update-1-2026-11-19/"
+          "label": "Reuters – TSMC",
+          "url": "https://www.reuters.com/world/china/tsmc-tightens-china-ai-chip-curbs-new-us-rules-close-manufacturing-loophole-2026-11-19/"
+        },
+        {
+          "label": "BIS – účinné pravidlo",
+          "url": "https://www.federalregister.gov/documents/2026/11/19/2026-23529/addressing-remote-access-to-advanced-semiconductors"
         }
       ],
-      "eventKey": "taiwan-short-selling-curbs-taiex-drop-20261119",
+      "eventKey": "bis-tsmc-china-foundry-export-rule-effective-20261119",
       "ndxRelevant": true,
-      "importanceScore": 64
+      "importanceScore": 77
     },
     {
-      "title": "USA ICSA: 203 tis. vs. předchozí revid. 202 tis. (+1 tis.), kons. Reuters 197 tis.; týden do 14. 11.",
-      "time": "19. 11. 2026, 14:44 CET",
-      "publishedAtPrague": "19. 11. 2026, 14:44",
+      "title": "Anthropic (ANT): debut Nasdaq na 111,50 USD, 34,3 % nad IPO cenou 83 USD; valuace přes 2 bil. USD.",
+      "time": "19. 11. 2026, 12:08 CET",
+      "publishedAtPrague": "19. 11. 2026, 12:08",
       "publicationTimeVerified": true,
       "kind": "new",
-      "category": "employment",
+      "category": "ai_infrastructure",
       "source": "Reuters",
-      "url": "https://www.reuters.com/world/us/us-weekly-jobless-claims-increase-slightly-2026-11-19/",
+      "url": "https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/",
       "sourceLinks": [
         {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/world/us/us-weekly-jobless-claims-increase-slightly-2026-11-19/"
+          "label": "Reuters – debut",
+          "url": "https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/"
         }
       ],
-      "eventKey": "us-weekly-initial-claims-203k-week-20261114-released-20261119",
+      "eventKey": "anthropic-nasdaq-debut-11150-20261119",
       "ndxRelevant": true,
-      "importanceScore": 61
-    },
-    {
-      "title": "Asijské čipy: TSMC, Samsung a SK Hynix přibližně −2 %; Nasdaq futures téměř +1 %.",
-      "time": "19. 11. 2026, 02:53",
-      "publishedAtPrague": "19. 11. 2026, 02:53",
-      "publicationTimeVerified": true,
-      "kind": "continuation",
-      "category": "semiconductors",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-11-19/",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-11-19/"
-        }
-      ],
-      "eventKey": "asian-chipmakers-decline-anthropic-ipo-20261119",
-      "ndxRelevant": true,
-      "importanceScore": 59
-    },
-    {
-      "title": "Korea: export čipů za Q1–Q3 +184 % y/y; 42 % vývozu země. Celkový vývoz překročil 1 bil. USD.",
-      "time": "19. 11. 2026, 07:29 CET",
-      "publishedAtPrague": "19. 11. 2026, 07:29",
-      "publicationTimeVerified": true,
-      "kind": "new",
-      "category": "semiconductors",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/south-korea-becomes-fourth-country-globally-hit-1-trillion-exports-ai-chip-boom-2026-11-19/",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/world/south-korea-becomes-fourth-country-globally-hit-1-trillion-exports-ai-chip-boom-2026-11-19/"
-        }
-      ],
-      "eventKey": "south-korea-chip-exports-184pct-yoy-2026q3-20261119",
-      "ndxRelevant": true,
-      "importanceScore": 57
+      "importanceScore": 84
     },
     {
       "title": "INTC: první externí zákazník procesu 18A-P, identita klienta nezveřejněna; technologie v rizikové výrobě od června.",
@@ -270,6 +194,63 @@
       "importanceScore": 55
     },
     {
+      "title": "USA premarket: NVDA +1,6 %; INTC, AMD, MU, MRVL +3–4,5 % po ocenění IPO Anthropic na 83 USD.",
+      "time": "19. 11. 2026, 10:03 CET",
+      "publishedAtPrague": "19. 11. 2026, 10:03",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "market_reaction",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/nasdaq-futures-jump-anthropics-record-ipo-pricing-fuels-hopes-strong-debut-2026-11-19/",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/nasdaq-futures-jump-anthropics-record-ipo-pricing-fuels-hopes-strong-debut-2026-11-19/"
+        }
+      ],
+      "eventKey": "us-semiconductor-premarket-rebound-anthropic-20261119",
+      "ndxRelevant": true,
+      "importanceScore": 68
+    },
+    {
+      "title": "Tchaj-wan: TAIEX −4,4 %; regulátor omezí short-selling akcií po denním poklesu ≥3,5 %.",
+      "time": "19. 11. 2026, 08:11 CET",
+      "publishedAtPrague": "19. 11. 2026, 08:11",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "semiconductors",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/markets/europe/global-markets-taiwan-update-1-2026-11-19/",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/markets/europe/global-markets-taiwan-update-1-2026-11-19/"
+        }
+      ],
+      "eventKey": "taiwan-short-selling-curbs-taiex-drop-20261119",
+      "ndxRelevant": true,
+      "importanceScore": 64
+    },
+    {
+      "title": "Korea: export čipů za Q1–Q3 +184 % y/y; 42 % vývozu země. Celkový vývoz překročil 1 bil. USD.",
+      "time": "19. 11. 2026, 07:29 CET",
+      "publishedAtPrague": "19. 11. 2026, 07:29",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "semiconductors",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/south-korea-becomes-fourth-country-globally-hit-1-trillion-exports-ai-chip-boom-2026-11-19/",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/south-korea-becomes-fourth-country-globally-hit-1-trillion-exports-ai-chip-boom-2026-11-19/"
+        }
+      ],
+      "eventKey": "south-korea-chip-exports-184pct-yoy-2026q3-20261119",
+      "ndxRelevant": true,
+      "importanceScore": 57
+    },
+    {
       "title": "Delta Electronics: indické tržby plánuje ztrojnásobit za 4–5 let; Nvidia partner, datacentra a chlazení.",
       "time": "19. 11. 2026, 06:36 CET",
       "publishedAtPrague": "19. 11. 2026, 06:36",
@@ -287,18 +268,37 @@
       "eventKey": "delta-electronics-india-ai-datacenter-triple-revenue-20261119",
       "ndxRelevant": true,
       "importanceScore": 48
+    },
+    {
+      "title": "Asijské čipy: TSMC, Samsung a SK Hynix přibližně −2 %; Nasdaq futures téměř +1 %.",
+      "time": "19. 11. 2026, 02:53",
+      "publishedAtPrague": "19. 11. 2026, 02:53",
+      "publicationTimeVerified": true,
+      "kind": "continuation",
+      "category": "semiconductors",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-11-19/",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-11-19/"
+        }
+      ],
+      "eventKey": "asian-chipmakers-decline-anthropic-ipo-20261119",
+      "ndxRelevant": true,
+      "importanceScore": 59
     }
   ],
   "leaders": [
     {
       "ticker": "NVDA",
       "changePercent": -3.3,
-      "impact": "19. 11. 2026 22:00:01 CET; 145,98 USD (Google Finance, cash závěr)."
+      "impact": "Vysoký, negativní; závěr 19. 11. 2026"
     },
     {
       "ticker": "AVGO",
       "changePercent": -2.09,
-      "impact": "19. 11. 2026 22:00:00 CET; 346,65 USD (Google Finance, cash závěr)."
+      "impact": "Vysoký, negativní; závěr 19. 11. 2026"
     }
   ],
   "macro": "US10Y | 19. 11. 20:36: 5,060 % | 18. 11.: 5,066 % | −0,6 bb",
@@ -309,12 +309,12 @@
   },
   "forecast": {
     "athReturnPercent": 5,
-    "athReason": "NDX −2,21 %, NVDA −3,30 %, SOX −2,41 %; návrat vyžaduje obnovu růstu čipů a stabilizaci AI financování.",
+    "athReason": "NDX −2,21 %, SOX −2,41 %; podmínka stabilizace AI financování a návratu růstu čipů.",
     "downside": "−5 až −10 %",
-    "downsideReason": "AI CAPEX, financování datacenter, sazby a pokles čipů."
+    "downsideReason": "AI CAPEX, financování datacenter a sazby."
   },
   "catalyst": {
-    "event": "USA – University of Michigan: listopadový spotřebitelský sentiment (finální)",
+    "event": "University of Michigan: listopadový spotřebitelský sentiment (finální)",
     "timePrague": "20. 11. 2026 16:00 CET"
   },
   "archive": [
@@ -1359,6 +1359,20 @@
           "url": "https://www.federalregister.gov/documents/2026/11/19/2026-23529/addressing-remote-access-to-advanced-semiconductors"
         }
       ]
+    },
+    {
+      "time": "20. 11. 2026 00:02 CET",
+      "summary": "Cash NDX 26 517,05 b. (−2,21 %, −15,45 % od historického maxima), SOX −2,41 %, NVDA −3,30 %; medvědí →. Bez zásadních novinek od 23:05 CET.",
+      "sourceLinks": [
+        {
+          "label": "Yahoo Finance – NDX",
+          "url": "https://finance.yahoo.com/quote/%5ENDX/history/"
+        },
+        {
+          "label": "Reuters – závěr USA",
+          "url": "https://www.reuters.com/business/nasdaq-futures-jump-anthropics-record-ipo-pricing-fuels-hopes-strong-debut-2026-11-19/"
+        }
+      ]
     }
   ],
   "history": [
@@ -1536,6 +1550,10 @@
     },
     {
       "time": "19. 11. 2026 23:05 CET",
+      "ndx": 26517.05
+    },
+    {
+      "time": "20. 11. 2026 00:02 CET",
       "ndx": 26517.05
     }
   ],
@@ -2071,6 +2089,10 @@
     {
       "name": "Reuters – Fed Barr",
       "url": "https://www.reuters.com/business/feds-barr-worried-regulation-changes-may-increase-financial-sector-risks-2026-11-19/"
+    },
+    {
+      "name": "Michigan – kalendář",
+      "url": "https://www.sca.isr.umich.edu/"
     }
   ]
 }
