@@ -492,6 +492,19 @@ body :is(h1,h2,h3,p,div,span,small,strong,button,a,table,th,td,time,summary,labe
   overflow-wrap:break-word;
   text-wrap:pretty;
 }
+/* Inline currency pictograms in editorial copy; no colored backplates. */
+.inline-currency{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:1.08em;height:1.08em;vertical-align:-.15em;
+  margin:0 .035em;line-height:1;white-space:nowrap;
+}
+.inline-currency svg{
+  display:block;width:100%;height:100%;overflow:visible;
+  fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;
+  stroke-width:1.65;
+}
+.inline-currency--usd{color:#16826e}
+.inline-currency--eur{color:#2766b4}
 </style></head>
 <body><div class="wrap">
 <header class="header"><div class="brand"><svg class="aardvark-mark" viewBox="0 0 100 73" role="img" aria-label="Logo Aardvarkland" xmlns="http://www.w3.org/2000/svg">
@@ -584,22 +597,55 @@ const sentenceBreaks=value=>cleanText(value).replace(
 );
 // Směr změny je vyjádřen pouze barvou, nikoliv znakem + nebo −.
 const signedPercentPattern=/(^|[^\p{L}\d])(?:(beat|miss)\s+(\d+(?:[.,]\d+)?)(\s*%)|([+−-])\s*(\d+(?:[.,]\d+)?)(\s*(?:%|bb\b|bps\b)))/giu;
+// Render standalone dollar/euro coin pictograms in narrative text only.
+const CURRENCY_INLINE_SVG={
+  USD:'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9.25"/><path d="M15.2 8.6c-.9-.9-2.1-1.4-3.4-1.4-2.2 0-3.5 1-3.5 2.6 0 1.4 1.1 2.1 3.5 2.5 2.5.4 3.8 1.2 3.8 2.7 0 1.7-1.5 2.8-3.8 2.8-1.4 0-2.8-.5-3.7-1.5M12 5.5v13"/></svg>',
+  EUR:'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9.25"/><path d="M16.2 7.8a5.3 5.3 0 0 0-3.4-1.2c-3.2 0-5.2 2.3-5.2 5.4s2 5.4 5.2 5.4a5.3 5.3 0 0 0 3.4-1.2M6 10.2h8M6 13.8h8"/></svg>'
+};
+const appendCurrencyText=(fragment,value)=>{
+  const text=String(value??'');
+  // A slash identifies currency pairs: EUR/USD and EUR/CZK must stay unchanged.
+  const pattern=/(^|[^\\p{L}\\p{N}\/])(USD|EUR)(?=$|[^\\p{L}\\p{N}\/])/giu;
+  let from=0,found;
+  while((found=pattern.exec(text))!==null){
+    let before=text.slice(from,found.index)+found[1];
+    // Keep units attached to preceding numeric values, avoiding orphaned icons.
+    if(/\\d[^\\n]*\\s$/u.test(before))before=before.replace(/\\s$/u,'\\u00a0');
+    if(before)fragment.append(document.createTextNode(before));
+    const unit=found[2].toUpperCase();
+    const span=document.createElement('span');
+    span.className='inline-currency inline-currency--'+unit.toLowerCase();
+    span.setAttribute('role','img');
+    span.setAttribute('aria-label',unit==='USD'?'americký dolar (USD)':'euro (EUR)');
+    span.title=unit;
+    span.innerHTML=CURRENCY_INLINE_SVG[unit];
+    fragment.append(span);
+    from=pattern.lastIndex;
+  }
+  if(from<text.length)fragment.append(document.createTextNode(text.slice(from)));
+};
 const renderSigned=(el,value)=>{
   const raw=String(value??''),frag=document.createDocumentFragment();
   let last=0,m;
   signedPercentPattern.lastIndex=0;
   while((m=signedPercentPattern.exec(raw))!==null){
-    frag.append(document.createTextNode(raw.slice(last,m.index)+m[1]));
+    appendCurrencyText(frag,raw.slice(last,m.index)+m[1]);
     const span=document.createElement('span');
     const verdict=m[2]?.toLowerCase();
     span.className=verdict?(verdict==='beat'?'signed-up':'signed-down'):(m[5]==='+'?'signed-up':'signed-down');
     span.textContent=verdict?m[2]+' '+m[3]+m[4]:m[6]+m[7];
     frag.append(span);last=signedPercentPattern.lastIndex;
   }
-  frag.append(document.createTextNode(raw.slice(last)));
+  appendCurrencyText(frag,raw.slice(last));
   el.replaceChildren(frag);
 };
 const setSentences=(id,value)=>{const el=$(id);if(el)renderSigned(el,sentenceBreaks(value))};
+// The distance-from-peak statistic is already displayed above the analysis.
+const cleanAthReason=value=>{
+  const original=String(value??'').trim();
+  const cleaned=original.replace(/^\\s*(?:(?:cash\\s+)?NDX|Nasdaq(?:-100)?)[\\s:]*[+−-]?\\s*\\d+(?:[.,]\\d+)?\\s*%\\s*(?:od\\s+(?:historického\\s+)?maxima|pod\\s+(?:historickým\\s+)?maximem)\\s*[;,.]?\\s*/iu,'').trim();
+  return cleaned||'Čeká na aktualizaci';
+};
 const displayScenario=value=>String(value??'—').split(/\s*\(/u)[0].replace(/(^|[^\p{L}\d])([+−-])(?=\s*\d)/gu,'$1').trim();
 
 function link(url,label){try{let u=new URL(url);if(u.protocol!=='https:')return document.createTextNode(label);let a=document.createElement('a');a.href=u.href;a.textContent=label;a.rel='noopener noreferrer';a.target='_blank';return a}catch{return document.createTextNode(label)}}
@@ -704,7 +750,7 @@ const macroText=String(d.macro||'Zatím bez údajů')
  .replace(/\s+(?:Reuters|Bloomberg)\s+(?=\d{1,2}:\d{2})/gu,' ')
  .replace(/Δ\s*(?=[+−-]?\d)/gu,'')
  .replace(/\s*\|\s*/gu,' · ');
-renderSigned($('macro'),macroText);let f=d.forecast||{};set('forecast-ath',typeof f.athReturnPercent==='number'?pct(f.athReturnPercent):'—');setSentences('forecast-ath-reason',f.athReason||'Čeká na aktualizaci');set('forecast-down',displayScenario(f.downside||'—'));
+renderSigned($('macro'),macroText);let f=d.forecast||{};set('forecast-ath',typeof f.athReturnPercent==='number'?pct(f.athReturnPercent):'—');setSentences('forecast-ath-reason',cleanAthReason(f.athReason||'Čeká na aktualizaci'));set('forecast-down',displayScenario(f.downside||'—'));
 const percentages=(String(f.downside||'').match(/\d+(?:[.,]\d+)?/g)||[]).map(v=>Number(v.replace(',','.')));
 if(Number.isFinite(n.value)&&n.value>0&&percentages.length>=2&&percentages[0]>0&&percentages[1]>percentages[0]&&percentages[1]<=100){
   const upper=Math.round(n.value*(1-percentages[0]/100));
