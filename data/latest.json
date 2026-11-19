@@ -1,19 +1,38 @@
 {
-  "updatedAtPrague": "19. 11. 2026 10:05 CET",
+  "updatedAtPrague": "19. 11. 2026 11:00 CET",
   "marketStatus": "Uzavřeno – poslední závěr cash NDX 18. 11. 2026",
   "ndx": {
     "value": 27116.26,
     "changePercent": 0.42,
     "ath": 31361.37,
-    "asOf": "18. 11. 2026, 22:00 CET – cash NDX, poslední závěr (Google Finance)"
+    "asOf": "18. 11. 2026, 22:00 CET – cash NDX, poslední závěr (Nasdaq)"
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→ beze změny oproti 19. 11. 2026 09:06 CET",
-    "reason": "NDX +0,42 %; SOX +0,10 %; NVDA −2,89 %; AVGO +3,64 % (18. 11.). TAIEX −4,4 % (19. 11.)."
+    "trend": "↗ zlepšení oproti 19. 11. 2026 10:05 CET",
+    "reason": "NDX +0,42 % a SOX +0,10 % (18. 11.); NVDA předobchodně +1,6 %, INTC/AMD/MU/MRVL +3–4,5 % (19. 11.)."
   },
-  "driver": "FOMC 18. 11.: růst dluhu pro AI, leasingové závazky a provázané financování datacenter; scénář přecenění AI aktiv při vyšších sazbách.",
+  "driver": "USA premarket: NVDA +1,6 %, INTC/AMD/MU/MRVL +3–4,5 %; IPO Anthropic 81,3 mld. USD při ceně 83 USD.",
   "news": [
+    {
+      "title": "USA premarket: NVDA +1,6 %; INTC, AMD, MU, MRVL +3–4,5 % po ocenění IPO Anthropic na 83 USD.",
+      "time": "19. 11. 2026, 10:03 CET",
+      "publishedAtPrague": "19. 11. 2026, 10:03",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "market_reaction",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/nasdaq-futures-jump-anthropics-record-ipo-pricing-fuels-hopes-strong-debut-2026-11-19/",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/nasdaq-futures-jump-anthropics-record-ipo-pricing-fuels-hopes-strong-debut-2026-11-19/"
+        }
+      ],
+      "eventKey": "us-semiconductor-premarket-rebound-anthropic-20261119",
+      "ndxRelevant": true,
+      "importanceScore": 68
+    },
     {
       "title": "Tchaj-wan: TAIEX −4,4 %; regulátor omezí short-selling akcií po denním poklesu ≥3,5 %.",
       "time": "19. 11. 2026, 08:11 CET",
@@ -234,25 +253,6 @@
       "eventKey": "us-chinese-ai-model-disclosure-proposal-20261118",
       "ndxRelevant": true,
       "importanceScore": 58
-    },
-    {
-      "title": "NVDA: zastavila dodávky licencovaných Hopper do Číny; Q3 prodej 2,4 mld. USD, výhled bez dalších dodávek.",
-      "time": "18. 11. 2026, 10:16 CET",
-      "publishedAtPrague": "18. 11. 2026, 10:16",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "chip_exports",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/china/nvidia-stops-shipping-us-approved-ai-chips-china-2026-11-18/",
-      "importanceScore": 83,
-      "ndxRelevant": true,
-      "eventKey": "nvidia-licensed-hopper-china-shipments-halt-20261118",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/world/china/nvidia-stops-shipping-us-approved-ai-chips-china-2026-11-18/"
-        }
-      ]
     }
   ],
   "leaders": [
@@ -275,9 +275,9 @@
   },
   "forecast": {
     "athReturnPercent": 12,
-    "athReason": "NVDA výhled Q4; podmínkou je stabilizace AI financování a sazeb.",
+    "athReason": "NDX −13,54 % od maxima; návrat podmiňuje stabilizace financování AI a sazeb.",
     "downside": "−5 až −10 %",
-    "downsideReason": "AI CAPEX, financování datacenter a očekávání vyšších sazeb."
+    "downsideReason": "AI CAPEX, financování datacenter a riziko dalších zvýšení sazeb."
   },
   "catalyst": {
     "event": "USA – týdenní žádosti o podporu v nezaměstnanosti",
@@ -1099,6 +1099,24 @@
           "url": "https://www.reuters.com/world/asia-pacific/taiwans-delta-electronics-looks-triple-india-revenue-4-5-years-ai-boom-2026-11-19/"
         }
       ]
+    },
+    {
+      "time": "19. 11. 2026 11:00 CET",
+      "summary": "Cash NDX 27 116,26 b. (+0,42 %, 18. 11.); medvědí ↗. NVDA premarket +1,6 %; IPO Anthropic 81,3 mld. USD. FOMC: AI dluh a mimobilanční leasing.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq NDX",
+          "url": "https://indexes.nasdaq.com/index/Overview/NDX"
+        },
+        {
+          "label": "Fed FOMC",
+          "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/nasdaq-futures-jump-anthropics-record-ipo-pricing-fuels-hopes-strong-debut-2026-11-19/"
+        }
+      ]
     }
   ],
   "history": [
@@ -1224,6 +1242,10 @@
     },
     {
       "time": "19. 11. 2026 10:05 CET",
+      "ndx": 27116.26
+    },
+    {
+      "time": "2026-11-18",
       "ndx": 27116.26
     }
   ],
@@ -1655,6 +1677,10 @@
     {
       "name": "Reuters Delta Electronics",
       "url": "https://www.reuters.com/world/asia-pacific/taiwans-delta-electronics-looks-triple-india-revenue-4-5-years-ai-boom-2026-11-19/"
+    },
+    {
+      "name": "Reuters – USA premarket 19. 11.",
+      "url": "https://www.reuters.com/business/nasdaq-futures-jump-anthropics-record-ipo-pricing-fuels-hopes-strong-debut-2026-11-19/"
     }
   ]
 }
