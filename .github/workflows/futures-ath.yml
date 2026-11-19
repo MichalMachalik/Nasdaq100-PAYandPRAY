@@ -1,0 +1,35 @@
+name: E-mini Nasdaq-100 historical high
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/futures-ath.yml"
+      - "scripts/update_futures_ath.py"
+  schedule:
+    - cron: "20 7 * * *"
+permissions:
+  contents: write
+concurrency:
+  group: futures-ath
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Retrieve verified continuous NQ history high
+        run: python scripts/update_futures_ath.py
+      - name: Commit latest reference
+        run: |
+          if git diff --quiet -- data/futures-ath.json; then
+            echo "Historical reference unchanged."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/futures-ath.json
+          git commit -m "Refresh NQ historical high reference"
+          git push
