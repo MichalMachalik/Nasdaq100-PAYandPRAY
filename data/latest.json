@@ -1,38 +1,19 @@
 {
-  "updatedAtPrague": "19. 11. 2026 19:57 CET",
-  "marketStatus": "Otevřeno – cash NDX, 19. 11. 2026",
+  "updatedAtPrague": "19. 11. 2026 21:01 CET",
+  "marketStatus": "Cash otevřen (NYSE/Nasdaq 15:30–22:00 CET)",
   "ndx": {
-    "value": 26776.88,
-    "changePercent": -1.25,
+    "value": 26727.91,
+    "changePercent": -1.43,
     "ath": 31361.37,
-    "asOf": "19. 11. 2026, 19:38:52 CET – cash NDX (Google Finance)"
+    "asOf": "19. 11. 2026, 20:40:08 CET – cash NDX (Google Finance)"
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "↘ zhoršení proti 19. 11. 2026 19:08 CET",
-    "reason": "NDX −1,25 % (19:38) vs. −1,12 % (18:43); SOX −1,19 % (19:54), NVDA −1,74 % (19:45)."
+    "trend": "↘ zhoršení proti 19. 11. 2026 19:57 CET",
+    "reason": "NDX −1,43 % (20:40) vs. −1,25 % (19:38); SOX −1,61 % (20:54), NVDA −2,13 % (20:50)."
   },
-  "driver": "Plošný technologický výprodej: NDX −1,25 %, SOX −1,19 %, NVDA −1,74 %; AMD −8 % po zprávě Hunterbrook.",
+  "driver": "NDX −1,43 %, SOX −1,61 %, NVDA −2,13 %; výprodej AI a čipů. Reuters: tlak AI valuací a kapitálových výdajů, slabší sentiment po IPO Anthropic.",
   "news": [
-    {
-      "title": "FOMC zápis 27.–28. 10.: téměř všichni očekávají další zvýšení sazeb; Fed upozornil na neprůhledné financování AI a datacenter.",
-      "time": "18. 11. 2026, 20:00 CET",
-      "publishedAtPrague": "18. 11. 2026, 20:00",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "fed",
-      "source": "Federal Reserve",
-      "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm",
-      "sourceLinks": [
-        {
-          "label": "Fed FOMC",
-          "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm"
-        }
-      ],
-      "eventKey": "fed-fomc-minutes-oct-27-28-2026-released-20261118",
-      "ndxRelevant": true,
-      "importanceScore": 92
-    },
     {
       "title": "Anthropic (ANT): debut Nasdaq na 111,50 USD, 34,3 % nad IPO cenou 83 USD; valuace přes 2 bil. USD.",
       "time": "19. 11. 2026, 12:08 CET",
@@ -299,18 +280,56 @@
       "eventKey": "delta-electronics-india-ai-datacenter-triple-revenue-20261119",
       "ndxRelevant": true,
       "importanceScore": 48
+    },
+    {
+      "title": "Fed Goolsbee: investice do AI datacenter a spotřeba mohou přehřívat americkou ekonomiku.",
+      "time": "19. 11. 2026, 19:57 CET",
+      "publishedAtPrague": "19. 11. 2026, 19:57",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "monetary_policy",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/goolsbee-says-feds-job-right-now-is-keep-ai-surge-overheating-economy-2026-11-19/",
+      "eventKey": "fed-goolsbee-ai-overheating-20261119",
+      "ndxRelevant": true,
+      "importanceScore": 76,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/goolsbee-says-feds-job-right-now-is-keep-ai-surge-overheating-economy-2026-11-19/"
+        }
+      ]
+    },
+    {
+      "title": "J.P. Morgan: odhad zvýšení sazeb Fedu o 25 bb v prosinci, lednu a březnu.",
+      "time": "19. 11. 2026, 14:41 CET",
+      "publishedAtPrague": "19. 11. 2026, 14:41",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "monetary_policy",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/jp-morgan-sees-fed-rate-hikes-next-three-meetings-inflation-persists-2026-11-19/",
+      "eventKey": "jpm-three-fed-hikes-20261119",
+      "ndxRelevant": true,
+      "importanceScore": 65,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/jp-morgan-sees-fed-rate-hikes-next-three-meetings-inflation-persists-2026-11-19/"
+        }
+      ]
     }
   ],
   "leaders": [
     {
       "ticker": "NVDA",
-      "changePercent": -1.74,
-      "impact": "19. 11. 2026 19:45:58 CET; 148,33 USD (Google Finance)."
+      "changePercent": -2.13,
+      "impact": "19. 11. 2026 20:50:59 CET; 147,74 USD (Google Finance)."
     },
     {
       "ticker": "AVGO",
-      "changePercent": -1.45,
-      "impact": "19. 11. 2026 19:28:41 CET; 348,91 USD (Google Finance)."
+      "changePercent": -1.36,
+      "impact": "19. 11. 2026 20:29:57 CET; 349,22 USD (Google Finance)."
     }
   ],
   "macro": "US10Y | 19. 11.: 5,056 % | 18. 11.: 5,065 % | −0,9 bb",
@@ -320,14 +339,14 @@
     "resistance": null
   },
   "forecast": {
-    "athReturnPercent": 7,
-    "athReason": "NDX −1,25 %; SOX −1,19 %, NVDA −1,74 %, náklady financování AI infrastruktury.",
+    "athReturnPercent": 6,
+    "athReason": "NDX −1,43 %, SOX −1,61 %; 20. 11. spotřebitelský sentiment a očekávání sazeb.",
     "downside": "−5 až −10 %",
-    "downsideReason": "AI CAPEX, dluhové financování a oslabení čipového sektoru."
+    "downsideReason": "AI CAPEX, financování datacenter, sazby a slabost čipů."
   },
   "catalyst": {
-    "event": "Fed – Barr: Artificial Intelligence",
-    "timePrague": "19. 11. 2026 20:15 CET"
+    "event": "USA – University of Michigan: spotřebitelský sentiment (finální listopad)",
+    "timePrague": "20. 11. 2026 16:00 CET"
   },
   "archive": [
     {
@@ -1317,6 +1336,24 @@
           "url": "https://www.reuters.com/business/nasdaq-futures-jump-anthropics-record-ipo-pricing-fuels-hopes-strong-debut-2026-11-19/"
         }
       ]
+    },
+    {
+      "time": "19. 11. 2026 21:01 CET",
+      "summary": "Cash NDX 26 727,91 b. (−1,43 %, −14,77 % od historického maxima); NVDA −2,13 %, SOX −1,61 %. Medvědí ↘. Fed Goolsbee: AI investice mohou zvyšovat inflaci.",
+      "sourceLinks": [
+        {
+          "label": "Google Finance NDX",
+          "url": "https://www.google.com/finance/quote/NDX:INDEXNASDAQ?hl=en"
+        },
+        {
+          "label": "Google Finance NVDA",
+          "url": "https://www.google.com/finance/quote/NVDA:NASDAQ"
+        },
+        {
+          "label": "Reuters – Goolsbee",
+          "url": "https://www.reuters.com/business/goolsbee-says-feds-job-right-now-is-keep-ai-surge-overheating-economy-2026-11-19/"
+        }
+      ]
     }
   ],
   "history": [
@@ -1483,6 +1520,10 @@
     {
       "time": "19. 11. 2026 19:57 CET",
       "ndx": 26776.88
+    },
+    {
+      "time": "19. 11. 2026 21:01 CET",
+      "ndx": 26727.91
     }
   ],
   "sources": [
@@ -1993,6 +2034,18 @@
     {
       "name": "Investing – US10Y 19. 11.",
       "url": "https://www.investing.com/rates-bonds/u.s.-10-year-bond-yield"
+    },
+    {
+      "name": "Reuters – Fed Goolsbee",
+      "url": "https://www.reuters.com/business/goolsbee-says-feds-job-right-now-is-keep-ai-surge-overheating-economy-2026-11-19/"
+    },
+    {
+      "name": "Reuters – JPM Fed outlook",
+      "url": "https://www.reuters.com/business/jp-morgan-sees-fed-rate-hikes-next-three-meetings-inflation-persists-2026-11-19/"
+    },
+    {
+      "name": "University of Michigan calendar",
+      "url": "https://www.financecalendar.com/event/us-university-of-michigan-consumer-sentiment-november-2026/"
     }
   ]
 }
