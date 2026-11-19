@@ -5,98 +5,98 @@
     "currencies": "https://tradingeconomics.com/currencies"
   },
   "timestampKind": "retrieval timestamp is separate from trading day",
-  "fetchedAtUtc": "2026-11-18T23:20:54.700Z",
-  "fetchedAtPrague": "19. 11. 2026 00:20 CET",
+  "fetchedAtUtc": "2026-11-19T00:59:25.656Z",
+  "fetchedAtPrague": "19. 11. 2026 01:59",
   "quotes": [
     {
       "id": "WTI",
       "unit": "USD/bbl",
-      "price": 82.736,
-      "changePercent": -3.65,
-      "quoteDate": "Nov/18",
-      "quoteDateISO": "2026-11-18",
+      "price": 82.698,
+      "changePercent": -0.67,
+      "quoteDate": "Nov/19",
+      "quoteDateISO": "2026-11-19",
       "sourceUrl": "https://tradingeconomics.com/commodity/crude-oil",
-      "fetchedAtUtc": "2026-11-18T23:20:54.700Z"
+      "fetchedAtUtc": "2026-11-19T00:59:25.656Z"
     },
     {
       "id": "Brent",
       "unit": "USD/bbl",
-      "price": 91.4,
-      "changePercent": -1.87,
-      "quoteDate": "Nov/18",
-      "quoteDateISO": "2026-11-18",
+      "price": 91.446,
+      "changePercent": -0.55,
+      "quoteDate": "Nov/19",
+      "quoteDateISO": "2026-11-19",
       "sourceUrl": "https://tradingeconomics.com/commodity/brent-crude-oil",
-      "fetchedAtUtc": "2026-11-18T23:20:54.700Z"
+      "fetchedAtUtc": "2026-11-19T00:59:25.656Z"
     },
     {
       "id": "Natural Gas",
       "unit": "USD/MMBtu",
-      "price": 3.3824,
-      "changePercent": 5.44,
-      "quoteDate": "Nov/18",
-      "quoteDateISO": "2026-11-18",
+      "price": 3.3815,
+      "changePercent": 0.28,
+      "quoteDate": "Nov/19",
+      "quoteDateISO": "2026-11-19",
       "sourceUrl": "https://tradingeconomics.com/commodity/natural-gas",
-      "fetchedAtUtc": "2026-11-18T23:20:54.700Z"
+      "fetchedAtUtc": "2026-11-19T00:59:25.656Z"
     },
     {
       "id": "Gasoline",
       "unit": "USD/gal",
-      "price": 2.4607,
-      "changePercent": -2.93,
-      "quoteDate": "Nov/18",
-      "quoteDateISO": "2026-11-18",
+      "price": 2.4673,
+      "changePercent": -0.59,
+      "quoteDate": "Nov/19",
+      "quoteDateISO": "2026-11-19",
       "sourceUrl": "https://tradingeconomics.com/commodity/gasoline",
-      "fetchedAtUtc": "2026-11-18T23:20:54.700Z"
+      "fetchedAtUtc": "2026-11-19T00:59:25.656Z"
     },
     {
       "id": "EU Gas",
       "unit": "EUR/MWh",
-      "price": 81.15,
-      "changePercent": -4.97,
+      "price": 81.25,
+      "changePercent": -4.86,
       "quoteDate": "Nov/18",
       "quoteDateISO": "2026-11-18",
       "sourceUrl": "https://tradingeconomics.com/commodity/eu-natural-gas",
-      "fetchedAtUtc": "2026-11-18T23:20:54.700Z"
+      "fetchedAtUtc": "2026-11-19T00:59:25.656Z"
     },
     {
       "id": "Gold",
       "unit": "USD/oz",
-      "price": 3729.63,
-      "changePercent": -3.11,
-      "quoteDate": "Nov/18",
-      "quoteDateISO": "2026-11-18",
+      "price": 3748.32,
+      "changePercent": 0.61,
+      "quoteDate": "Nov/19",
+      "quoteDateISO": "2026-11-19",
       "sourceUrl": "https://tradingeconomics.com/commodity/gold",
-      "fetchedAtUtc": "2026-11-18T23:20:54.700Z"
+      "fetchedAtUtc": "2026-11-19T00:59:25.656Z"
     },
     {
       "id": "EUR/USD",
       "unit": "EUR/USD",
-      "price": 1.09741,
-      "changePercent": -0.22,
+      "price": 1.09724,
+      "changePercent": -0.24,
       "quoteDate": "Nov/18",
       "quoteDateISO": "2026-11-18",
       "sourceUrl": "https://tradingeconomics.com/euro-area/currency",
-      "fetchedAtUtc": "2026-11-18T23:20:54.700Z"
+      "fetchedAtUtc": "2026-11-19T00:59:25.656Z"
     },
     {
       "id": "EUR/CZK",
       "unit": "EUR/CZK",
-      "price": 24.389,
-      "changePercent": 0.11,
+      "price": 24.3934,
+      "changePercent": 0.01,
       "quoteDate": "Nov/18",
       "quoteDateISO": "2026-11-18",
       "sourceUrl": "https://tradingeconomics.com/eurczk:cur",
-      "fetchedAtUtc": "2026-11-18T22:03:51.299Z"
+      "fetchedAtUtc": "2026-11-19T00:59:25.656Z"
     },
     {
       "id": "USD/CZK",
       "unit": "USD/CZK",
-      "price": 22.2195,
-      "changePercent": 0.35,
+      "price": 22.2209,
+      "changePercent": 0.36,
       "quoteDate": "Nov/18",
       "quoteDateISO": "2026-11-18",
       "sourceUrl": "https://tradingeconomics.com/czech-republic/currency",
-      "fetchedAtUtc": "2026-11-18T23:20:54.700Z"
+      "fetchedAtUtc": "2026-11-19T00:59:25.656Z"
     }
   ]
 }
