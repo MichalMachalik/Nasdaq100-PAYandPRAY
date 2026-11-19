@@ -1,18 +1,18 @@
 {
-  "updatedAtPrague": "19. 11. 2026 19:08 CET",
+  "updatedAtPrague": "19. 11. 2026 19:57 CET",
   "marketStatus": "Otevřeno – cash NDX, 19. 11. 2026",
   "ndx": {
-    "value": 26811.53,
-    "changePercent": -1.12,
+    "value": 26776.88,
+    "changePercent": -1.25,
     "ath": 31361.37,
-    "asOf": "19. 11. 2026, 18:43:40 CET – cash NDX (Google Finance)"
+    "asOf": "19. 11. 2026, 19:38:52 CET – cash NDX (Google Finance)"
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→ beze změny proti 19. 11. 2026 18:08 CET",
-    "reason": "NDX −1,12 % (18:43) vs. −1,51 % (18:04); NVDA −1,12 % (18:45), SOX −0,56 % (18:54)."
+    "trend": "↘ zhoršení proti 19. 11. 2026 19:08 CET",
+    "reason": "NDX −1,25 % (19:38) vs. −1,12 % (18:43); SOX −1,19 % (19:54), NVDA −1,74 % (19:45)."
   },
-  "driver": "AI výprodej: NVDA −1,12 %, SOX −0,56 %; 85 % akcií S&P 500 v poklesu.",
+  "driver": "Plošný technologický výprodej: NDX −1,25 %, SOX −1,19 %, NVDA −1,74 %; AMD −8 % po zprávě Hunterbrook.",
   "news": [
     {
       "title": "FOMC zápis 27.–28. 10.: téměř všichni očekávají další zvýšení sazeb; Fed upozornil na neprůhledné financování AI a datacenter.",
@@ -101,6 +101,25 @@
       "eventKey": "fed-jefferson-ai-inflation-demand-20261119",
       "ndxRelevant": true,
       "importanceScore": 76
+    },
+    {
+      "title": "AMD −8 %; Hunterbrook zveřejnil tvrzení o vazbách na sankcionované čínské firmy. AMD obvinění odmítá.",
+      "time": "19. 11. 2026, 18:07 CET",
+      "publishedAtPrague": "19. 11. 2026, 18:07",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "semiconductors",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/china/amd-shares-slide-report-says-china-links-could-invite-us-scrutiny-2026-11-19/",
+      "sourceLinks": [
+        {
+          "label": "Reuters – AMD",
+          "url": "https://www.reuters.com/world/china/amd-shares-slide-report-says-china-links-could-invite-us-scrutiny-2026-11-19/"
+        }
+      ],
+      "eventKey": "amd-hunterbrook-china-export-scrutiny-20261119",
+      "ndxRelevant": true,
+      "importanceScore": 74
     },
     {
       "title": "PANW FQ1: tržby 3,45 mld. USD vs. kons. 3,31 (beat 4,2 %); upr. EPS 1,05 USD vs. 0,97 (beat 8,2 %). FY27 výhled 14,52–14,57 mld. USD, premarket >9 %.",
@@ -285,16 +304,16 @@
   "leaders": [
     {
       "ticker": "NVDA",
-      "changePercent": -1.12,
-      "impact": "19. 11. 2026 18:45:38 CET; 149,27 USD (Google Finance)."
+      "changePercent": -1.74,
+      "impact": "19. 11. 2026 19:45:58 CET; 148,33 USD (Google Finance)."
     },
     {
       "ticker": "AVGO",
-      "changePercent": -0.96,
-      "impact": "19. 11. 2026 18:58:39 CET; 350,64 USD (Google Finance)."
+      "changePercent": -1.45,
+      "impact": "19. 11. 2026 19:28:41 CET; 348,91 USD (Google Finance)."
     }
   ],
-  "macro": "US10Y | 19. 11. 19:01: 5,064 % | 18. 11.: 5,065 % | −0,1 bb",
+  "macro": "US10Y | 19. 11.: 5,056 % | 18. 11.: 5,065 % | −0,9 bb",
   "regulation": null,
   "technical": {
     "support": null,
@@ -302,9 +321,9 @@
   },
   "forecast": {
     "athReturnPercent": 7,
-    "athReason": "NDX −1,12 %; NVDA −1,12 %, SOX −0,56 %, AI financování a sazby.",
+    "athReason": "NDX −1,25 %; SOX −1,19 %, NVDA −1,74 %, náklady financování AI infrastruktury.",
     "downside": "−5 až −10 %",
-    "downsideReason": "AI CAPEX, náklady financování a oslabení polovodičů."
+    "downsideReason": "AI CAPEX, dluhové financování a oslabení čipového sektoru."
   },
   "catalyst": {
     "event": "Fed – Barr: Artificial Intelligence",
@@ -1280,6 +1299,24 @@
           "url": "https://www.google.com/finance/quote/SOX:INDEXNASDAQ"
         }
       ]
+    },
+    {
+      "time": "19. 11. 2026 19:57 CET",
+      "summary": "Cash NDX 26 776,88 b. (−1,25 %, −14,62 % od historického maxima); NVDA −1,74 %, SOX −1,19 %. AMD −8 % po tvrzeních Hunterbrook, která firma odmítá. Medvědí ↘.",
+      "sourceLinks": [
+        {
+          "label": "Google Finance NDX",
+          "url": "https://www.google.com/finance/quote/NDX:INDEXNASDAQ"
+        },
+        {
+          "label": "Reuters – AMD",
+          "url": "https://www.reuters.com/world/china/amd-shares-slide-report-says-china-links-could-invite-us-scrutiny-2026-11-19/"
+        },
+        {
+          "label": "Reuters – Wall Street",
+          "url": "https://www.reuters.com/business/nasdaq-futures-jump-anthropics-record-ipo-pricing-fuels-hopes-strong-debut-2026-11-19/"
+        }
+      ]
     }
   ],
   "history": [
@@ -1442,6 +1479,10 @@
     {
       "time": "19. 11. 2026 19:08 CET",
       "ndx": 26811.53
+    },
+    {
+      "time": "19. 11. 2026 19:57 CET",
+      "ndx": 26776.88
     }
   ],
   "sources": [
@@ -1936,6 +1977,22 @@
     {
       "name": "AP – široký výprodej 19.11.",
       "url": "https://apnews.com/article/stocks-markets-ai-us-anthropic-206c84045137824feabe052a29ff6140"
+    },
+    {
+      "name": "Google Finance NDX – 19. 11. 19:38 CET",
+      "url": "https://www.google.com/finance/quote/NDX:INDEXNASDAQ"
+    },
+    {
+      "name": "Reuters – AMD 19. 11. 18:07 CET",
+      "url": "https://www.reuters.com/world/china/amd-shares-slide-report-says-china-links-could-invite-us-scrutiny-2026-11-19/"
+    },
+    {
+      "name": "Reuters – výprodej Wall Street 19. 11.",
+      "url": "https://www.reuters.com/business/nasdaq-futures-jump-anthropics-record-ipo-pricing-fuels-hopes-strong-debut-2026-11-19/"
+    },
+    {
+      "name": "Investing – US10Y 19. 11.",
+      "url": "https://www.investing.com/rates-bonds/u.s.-10-year-bond-yield"
     }
   ]
 }
