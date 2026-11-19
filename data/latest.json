@@ -1,56 +1,114 @@
 {
-  "updatedAtPrague": "19. 11. 2026 16:08 CET",
+  "updatedAtPrague": "19. 11. 2026 17:09 CET",
   "marketStatus": "Otevřeno – cash NDX, 19. 11. 2026",
   "ndx": {
-    "value": 27602.51,
-    "changePercent": 1.79,
+    "value": 27216.23,
+    "changePercent": 0.37,
     "ath": 31361.37,
-    "asOf": "19. 11. 2026, 16:00:57 CET – cash NDX (Investing.com)"
+    "asOf": "19. 11. 2026, 17:04:46 CET – cash NDX (Investing.com)"
   },
   "sentiment": {
-    "label": "Neutrální",
-    "trend": "↗ zlepšení proti 19. 11. 2026 15:00 CET",
-    "reason": "NDX +1,79 %, NVDA +2,64 %, AVGO +3,99 %; NDX 11,99 % pod historickým maximem."
+    "label": "Medvědí",
+    "trend": "↘ zhoršení proti 19. 11. 2026 16:08 CET",
+    "reason": "NDX +0,37 % (17:04) vs. +1,79 % (16:00); NVDA +1,05 %, MSFT +1,94 % (16:35)."
   },
-  "driver": "NDX cash +1,79 % (16:00:57 CET); NVDA +2,64 %, AVGO +3,99 %. Pokračuje očekávání debutu Anthropic po IPO za 83 USD.",
+  "driver": "Fed Jefferson: AI CAPEX a datacentra aktuálně zvyšují poptávku a inflaci; produktivní přínosy mohou ceny tlumit později.",
   "news": [
     {
-      "title": "USA ICSA: 203 tis. vs. předchozí revid. 202 tis. (+1 tis.), kons. Reuters 197 tis.; týden do 14. 11.",
-      "time": "19. 11. 2026, 14:44 CET",
-      "publishedAtPrague": "19. 11. 2026, 14:44",
+      "title": "FOMC zápis 27.–28. 10.: téměř všichni očekávají další zvýšení sazeb; Fed upozornil na neprůhledné financování AI a datacenter.",
+      "time": "18. 11. 2026, 20:00 CET",
+      "publishedAtPrague": "18. 11. 2026, 20:00",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "fed",
+      "source": "Federal Reserve",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm",
+      "sourceLinks": [
+        {
+          "label": "Fed FOMC",
+          "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm"
+        }
+      ],
+      "eventKey": "fed-fomc-minutes-oct-27-28-2026-released-20261118",
+      "ndxRelevant": true,
+      "importanceScore": 92
+    },
+    {
+      "title": "Anthropic IPO: 81,31 mld. USD; cena 83 USD vs. pásmo 70–78 USD. Výpočetní závazky téměř 900 mld. USD.",
+      "time": "18. 11. 2026, 21:26 UTC",
+      "publishedAtPrague": "18. 11. 2026, 22:26",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "ai_infrastructure",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/legal/transactional/anthropic-prices-blockbuster-ipo-83-share-source-says-2026-11-18/",
+      "sourceLinks": [
+        {
+          "label": "Reuters IPO",
+          "url": "https://www.reuters.com/business/anthropic-clinches-biggest-ever-ipo-with-81-billion-offering-2026-11-18/"
+        },
+        {
+          "label": "Reuters cena",
+          "url": "https://www.reuters.com/legal/transactional/anthropic-prices-blockbuster-ipo-83-share-source-says-2026-11-18/"
+        },
+        {
+          "label": "Reuters debut",
+          "url": "https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/"
+        }
+      ],
+      "eventKey": "anthropic-ipo-priced-83-20261118",
+      "ndxRelevant": true,
+      "importanceScore": 78
+    },
+    {
+      "title": "Fed Jefferson: AI CAPEX a datacentra nyní zvyšují poptávku a inflaci; produktivní přínosy mohou ceny tlumit později.",
+      "time": "19. 11. 2026, 15:26 CET",
+      "publishedAtPrague": "19. 11. 2026, 15:26",
       "publicationTimeVerified": true,
       "kind": "new",
-      "category": "employment",
+      "category": "fed",
       "source": "Reuters",
-      "url": "https://www.reuters.com/world/us/us-weekly-jobless-claims-increase-slightly-2026-11-19/",
+      "url": "https://www.reuters.com/business/feds-jefferson-says-ai-boosting-inflation-productivity-impact-possible-in-future-2026-11-19/",
       "sourceLinks": [
         {
           "label": "Reuters",
-          "url": "https://www.reuters.com/world/us/us-weekly-jobless-claims-increase-slightly-2026-11-19/"
+          "url": "https://www.reuters.com/business/feds-jefferson-says-ai-boosting-inflation-productivity-impact-possible-in-future-2026-11-19/"
+        },
+        {
+          "label": "Fed – projev",
+          "url": "https://www.federalreserve.gov/newsevents/speech/jefferson20261119a.htm"
         }
       ],
-      "eventKey": "us-weekly-initial-claims-203k-week-20261114-released-20261119",
+      "eventKey": "fed-jefferson-ai-inflation-demand-20261119",
       "ndxRelevant": true,
-      "importanceScore": 61
+      "importanceScore": 76
     },
     {
-      "title": "INTC: první externí zákazník procesu 18A-P, identita klienta nezveřejněna; technologie v rizikové výrobě od června.",
-      "time": "19. 11. 2026, 10:09 CET",
-      "publishedAtPrague": "19. 11. 2026, 10:09",
+      "title": "PANW FQ1: tržby 3,45 mld. USD vs. kons. 3,31 (beat 4,2 %); upr. EPS 1,05 USD vs. 0,97 (beat 8,2 %). FY27 výhled 14,52–14,57 mld. USD, premarket >9 %.",
+      "time": "18. 11. 2026, 22:09 CET",
+      "publishedAtPrague": "18. 11. 2026, 22:09",
       "publicationTimeVerified": true,
-      "kind": "new",
-      "category": "semiconductors",
-      "source": "The Next Web",
-      "url": "https://thenextweb.com/news/intel-ceo-lip-bu-tan-says-intel-has-signed-its-first-outside-18a-customer",
+      "kind": "continuing",
+      "category": "earnings",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/technology/palo-alto-buy-ai-startup-applied-compute-45-billion-2026-11-18/",
       "sourceLinks": [
         {
-          "label": "The Next Web",
-          "url": "https://thenextweb.com/news/intel-ceo-lip-bu-tan-says-intel-has-signed-its-first-outside-18a-customer"
+          "label": "Reuters výsledky",
+          "url": "https://www.reuters.com/technology/palo-alto-buy-ai-startup-applied-compute-45-billion-2026-11-18/"
+        },
+        {
+          "label": "Palo Alto IR",
+          "url": "https://investors.paloaltonetworks.com/news-releases/news-release-details/palo-alto-networks-reports-fiscal-first-quarter-2027-financial"
+        },
+        {
+          "label": "Reuters reakce",
+          "url": "https://www.reuters.com/legal/litigation/palo-altos-raised-sales-forecast-powers-cybersecurity-stock-rally-2026-11-19/"
         }
       ],
-      "eventKey": "intel-first-18ap-external-client-20261118",
+      "eventKey": "panw-q1-fy2027-results-applied-compute-20261118",
       "ndxRelevant": true,
-      "importanceScore": 55
+      "importanceScore": 73
     },
     {
       "title": "USA premarket: NVDA +1,6 %; INTC, AMD, MU, MRVL +3–4,5 % po ocenění IPO Anthropic na 83 USD.",
@@ -91,115 +149,23 @@
       "importanceScore": 64
     },
     {
-      "title": "Korea: export čipů za Q1–Q3 +184 % y/y; 42 % vývozu země. Celkový vývoz překročil 1 bil. USD.",
-      "time": "19. 11. 2026, 07:29 CET",
-      "publishedAtPrague": "19. 11. 2026, 07:29",
+      "title": "USA ICSA: 203 tis. vs. předchozí revid. 202 tis. (+1 tis.), kons. Reuters 197 tis.; týden do 14. 11.",
+      "time": "19. 11. 2026, 14:44 CET",
+      "publishedAtPrague": "19. 11. 2026, 14:44",
       "publicationTimeVerified": true,
       "kind": "new",
-      "category": "semiconductors",
+      "category": "employment",
       "source": "Reuters",
-      "url": "https://www.reuters.com/world/south-korea-becomes-fourth-country-globally-hit-1-trillion-exports-ai-chip-boom-2026-11-19/",
+      "url": "https://www.reuters.com/world/us/us-weekly-jobless-claims-increase-slightly-2026-11-19/",
       "sourceLinks": [
         {
           "label": "Reuters",
-          "url": "https://www.reuters.com/world/south-korea-becomes-fourth-country-globally-hit-1-trillion-exports-ai-chip-boom-2026-11-19/"
+          "url": "https://www.reuters.com/world/us/us-weekly-jobless-claims-increase-slightly-2026-11-19/"
         }
       ],
-      "eventKey": "south-korea-chip-exports-184pct-yoy-2026q3-20261119",
+      "eventKey": "us-weekly-initial-claims-203k-week-20261114-released-20261119",
       "ndxRelevant": true,
-      "importanceScore": 57
-    },
-    {
-      "title": "Delta Electronics: indické tržby plánuje ztrojnásobit za 4–5 let; Nvidia partner, datacentra a chlazení.",
-      "time": "19. 11. 2026, 06:36 CET",
-      "publishedAtPrague": "19. 11. 2026, 06:36",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_infrastructure",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/asia-pacific/taiwans-delta-electronics-looks-triple-india-revenue-4-5-years-ai-boom-2026-11-19/",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/world/asia-pacific/taiwans-delta-electronics-looks-triple-india-revenue-4-5-years-ai-boom-2026-11-19/"
-        }
-      ],
-      "eventKey": "delta-electronics-india-ai-datacenter-triple-revenue-20261119",
-      "ndxRelevant": true,
-      "importanceScore": 48
-    },
-    {
-      "title": "Asijské čipy: TSMC, Samsung a SK Hynix přibližně −2 %; Nasdaq futures téměř +1 %.",
-      "time": "19. 11. 2026, 02:53",
-      "publishedAtPrague": "19. 11. 2026, 02:53",
-      "publicationTimeVerified": true,
-      "kind": "continuation",
-      "category": "semiconductors",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-11-19/",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-11-19/"
-        }
-      ],
-      "eventKey": "asian-chipmakers-decline-anthropic-ipo-20261119",
-      "ndxRelevant": true,
-      "importanceScore": 59
-    },
-    {
-      "title": "Anthropic IPO: 81,31 mld. USD; cena 83 USD vs. pásmo 70–78 USD. Výpočetní závazky téměř 900 mld. USD.",
-      "time": "18. 11. 2026, 21:26 UTC",
-      "publishedAtPrague": "18. 11. 2026, 22:26",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_infrastructure",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/legal/transactional/anthropic-prices-blockbuster-ipo-83-share-source-says-2026-11-18/",
-      "sourceLinks": [
-        {
-          "label": "Reuters IPO",
-          "url": "https://www.reuters.com/business/anthropic-clinches-biggest-ever-ipo-with-81-billion-offering-2026-11-18/"
-        },
-        {
-          "label": "Reuters cena",
-          "url": "https://www.reuters.com/legal/transactional/anthropic-prices-blockbuster-ipo-83-share-source-says-2026-11-18/"
-        },
-        {
-          "label": "Reuters debut",
-          "url": "https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/"
-        }
-      ],
-      "eventKey": "anthropic-ipo-priced-83-20261118",
-      "ndxRelevant": true,
-      "importanceScore": 78
-    },
-    {
-      "title": "PANW FQ1: tržby 3,45 mld. USD vs. kons. 3,31 (beat 4,2 %); upr. EPS 1,05 USD vs. 0,97 (beat 8,2 %). FY27 výhled 14,52–14,57 mld. USD, premarket >9 %.",
-      "time": "18. 11. 2026, 22:09 CET",
-      "publishedAtPrague": "18. 11. 2026, 22:09",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "earnings",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/technology/palo-alto-buy-ai-startup-applied-compute-45-billion-2026-11-18/",
-      "sourceLinks": [
-        {
-          "label": "Reuters výsledky",
-          "url": "https://www.reuters.com/technology/palo-alto-buy-ai-startup-applied-compute-45-billion-2026-11-18/"
-        },
-        {
-          "label": "Palo Alto IR",
-          "url": "https://investors.paloaltonetworks.com/news-releases/news-release-details/palo-alto-networks-reports-fiscal-first-quarter-2027-financial"
-        },
-        {
-          "label": "Reuters reakce",
-          "url": "https://www.reuters.com/legal/litigation/palo-altos-raised-sales-forecast-powers-cybersecurity-stock-rally-2026-11-19/"
-        }
-      ],
-      "eventKey": "panw-q1-fy2027-results-applied-compute-20261118",
-      "ndxRelevant": true,
-      "importanceScore": 73
+      "importanceScore": 61
     },
     {
       "title": "Sněmovní výbor USA žádá MSFT o briefing ke zvažovanému prodeji Azure AI služeb ByteDance; medializovaný objem 500 mil. USD.",
@@ -221,52 +187,109 @@
       "importanceScore": 61
     },
     {
-      "title": "FOMC zápis 27.–28. 10.: téměř všichni očekávají další zvýšení sazeb; Fed upozornil na neprůhledné financování AI a datacenter.",
-      "time": "18. 11. 2026, 20:00 CET",
-      "publishedAtPrague": "18. 11. 2026, 20:00",
+      "title": "Asijské čipy: TSMC, Samsung a SK Hynix přibližně −2 %; Nasdaq futures téměř +1 %.",
+      "time": "19. 11. 2026, 02:53",
+      "publishedAtPrague": "19. 11. 2026, 02:53",
       "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "fed",
-      "source": "Federal Reserve",
-      "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm",
+      "kind": "continuation",
+      "category": "semiconductors",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-11-19/",
       "sourceLinks": [
         {
-          "label": "Fed FOMC",
-          "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm"
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-11-19/"
         }
       ],
-      "eventKey": "fed-fomc-minutes-oct-27-28-2026-released-20261118",
+      "eventKey": "asian-chipmakers-decline-anthropic-ipo-20261119",
       "ndxRelevant": true,
-      "importanceScore": 92
+      "importanceScore": 59
+    },
+    {
+      "title": "Korea: export čipů za Q1–Q3 +184 % y/y; 42 % vývozu země. Celkový vývoz překročil 1 bil. USD.",
+      "time": "19. 11. 2026, 07:29 CET",
+      "publishedAtPrague": "19. 11. 2026, 07:29",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "semiconductors",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/south-korea-becomes-fourth-country-globally-hit-1-trillion-exports-ai-chip-boom-2026-11-19/",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/south-korea-becomes-fourth-country-globally-hit-1-trillion-exports-ai-chip-boom-2026-11-19/"
+        }
+      ],
+      "eventKey": "south-korea-chip-exports-184pct-yoy-2026q3-20261119",
+      "ndxRelevant": true,
+      "importanceScore": 57
+    },
+    {
+      "title": "INTC: první externí zákazník procesu 18A-P, identita klienta nezveřejněna; technologie v rizikové výrobě od června.",
+      "time": "19. 11. 2026, 10:09 CET",
+      "publishedAtPrague": "19. 11. 2026, 10:09",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "semiconductors",
+      "source": "The Next Web",
+      "url": "https://thenextweb.com/news/intel-ceo-lip-bu-tan-says-intel-has-signed-its-first-outside-18a-customer",
+      "sourceLinks": [
+        {
+          "label": "The Next Web",
+          "url": "https://thenextweb.com/news/intel-ceo-lip-bu-tan-says-intel-has-signed-its-first-outside-18a-customer"
+        }
+      ],
+      "eventKey": "intel-first-18ap-external-client-20261118",
+      "ndxRelevant": true,
+      "importanceScore": 55
+    },
+    {
+      "title": "Delta Electronics: indické tržby plánuje ztrojnásobit za 4–5 let; Nvidia partner, datacentra a chlazení.",
+      "time": "19. 11. 2026, 06:36 CET",
+      "publishedAtPrague": "19. 11. 2026, 06:36",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "ai_infrastructure",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/asia-pacific/taiwans-delta-electronics-looks-triple-india-revenue-4-5-years-ai-boom-2026-11-19/",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/asia-pacific/taiwans-delta-electronics-looks-triple-india-revenue-4-5-years-ai-boom-2026-11-19/"
+        }
+      ],
+      "eventKey": "delta-electronics-india-ai-datacenter-triple-revenue-20261119",
+      "ndxRelevant": true,
+      "importanceScore": 48
     }
   ],
   "leaders": [
     {
       "ticker": "NVDA",
-      "changePercent": 2.64,
-      "impact": "19. 11. 2026, 15:59:58 CET; 154,94 USD (Investing.com)."
+      "changePercent": 1.05,
+      "impact": "19. 11. 2026, 16:35 CET; 152,55 USD (Nasdaq)."
     },
     {
-      "ticker": "AVGO",
-      "changePercent": 3.99,
-      "impact": "19. 11. 2026, 15:44:23 CET; 368,18 USD (Investing.com)."
+      "ticker": "MSFT",
+      "changePercent": 1.94,
+      "impact": "19. 11. 2026, 16:35 CET; 517,17 USD (Nasdaq)."
     }
   ],
-  "macro": "ICSA | týden do 14. 11.: 203 tis. | předchozí revid.: 202 tis. | +1 tis. | kons.: 197 tis.",
+  "macro": "US10Y | 19. 11.: 5,085 % | 18. 11.: 5,066 % | +1,9 bb",
   "regulation": null,
   "technical": {
     "support": null,
     "resistance": null
   },
   "forecast": {
-    "athReturnPercent": 15,
-    "athReason": "NDX +1,79 %, široké oživení čipů; k historickému maximu zbývá 11,99 %. Rizika: sazby a AI CAPEX.",
+    "athReturnPercent": 12,
+    "athReason": "NDX +0,37 % vs. +1,79 % při 16:00; návrat na historické maximum vyžaduje růst 15,23 %. Rizika: sazby a AI CAPEX.",
     "downside": "−5 až −10 %",
-    "downsideReason": "AI CAPEX, financování datacenter a očekávané zpřísňování sazeb Fedu."
+    "downsideReason": "AI CAPEX, financování datacenter a zvýšené inflační riziko."
   },
   "catalyst": {
-    "event": "Fed – Jefferson: Economic Shocks",
-    "timePrague": "19. 11. 2026 16:25 CET"
+    "event": "Fed – Barr: Artificial Intelligence",
+    "timePrague": "19. 11. 2026 20:15 CET"
   },
   "archive": [
     {
@@ -1188,6 +1211,24 @@
           "url": "https://www.dol.gov/ui/data.pdf"
         }
       ]
+    },
+    {
+      "time": "19. 11. 2026 17:09 CET",
+      "summary": "NDX cash 27 216,23 b. (+0,37 %, 17:04:46 CET), 13,22 % pod historickým maximem; Fed Jefferson: AI CAPEX aktuálně zvyšuje inflační tlak.",
+      "sourceLinks": [
+        {
+          "label": "Investing NDX",
+          "url": "https://www.investing.com/indices/nq-100"
+        },
+        {
+          "label": "Fed – projev",
+          "url": "https://www.federalreserve.gov/newsevents/speech/jefferson20261119a.htm"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/feds-jefferson-says-ai-boosting-inflation-productivity-impact-possible-in-future-2026-11-19/"
+        }
+      ]
     }
   ],
   "history": [
@@ -1338,6 +1379,10 @@
     {
       "time": "19. 11. 2026 16:08 CET",
       "ndx": 27602.51
+    },
+    {
+      "time": "19. 11. 2026 17:09 CET",
+      "ndx": 27216.23
     }
   ],
   "sources": [
@@ -1812,6 +1857,18 @@
     {
       "name": "Fed kalendář 19. 11.",
       "url": "https://www.federalreserve.gov/newsevents/2026-november.htm"
+    },
+    {
+      "name": "Fed – Jefferson 19. 11.",
+      "url": "https://www.federalreserve.gov/newsevents/speech/jefferson20261119a.htm"
+    },
+    {
+      "name": "Reuters – Jefferson 19. 11.",
+      "url": "https://www.reuters.com/business/feds-jefferson-says-ai-boosting-inflation-productivity-impact-possible-in-future-2026-11-19/"
+    },
+    {
+      "name": "Nasdaq – NDX členství a ceny 19. 11.",
+      "url": "https://api.nasdaq.com/api/quote/list-type/nasdaq100"
     }
   ]
 }
