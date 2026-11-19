@@ -1,19 +1,38 @@
 {
-  "updatedAtPrague": "19. 11. 2026 04:59 CET",
-  "marketStatus": "Cash uzavřen; poslední závěr 18. 11. 2026",
+  "updatedAtPrague": "19. 11. 2026 06:03 CET",
+  "marketStatus": "Uzavřeno – poslední závěr cash NDX 18. 11. 2026",
   "ndx": {
     "value": 27116.26,
     "changePercent": 0.42,
     "ath": 31361.37,
-    "asOf": "18. 11. 2026, 22:00 CET – cash NDX, poslední závěr (Yahoo Finance)"
+    "asOf": "18. 11. 2026, 22:00 CET – cash NDX, poslední závěr (Google Finance)"
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→ beze změny oproti 19. 11. 2026 03:57 CET",
+    "trend": "→ beze změny oproti 19. 11. 2026 04:59 CET",
     "reason": "NDX +0,42 %; SOX +0,10 %; NVDA −2,89 %; AVGO +3,64 % (cash 18. 11.)."
   },
-  "driver": "FOMC 18. 11.: téměř všichni účastníci očekávají další zvýšení sazeb; rostoucí AI dluh a neprůhledné financování datacenter.",
+  "driver": "FOMC 18. 11.: téměř všichni členové očekávají další zvýšení sazeb; AI dluh, leasingové závazky a financování datacenter jsou rizika pro finanční stabilitu.",
   "news": [
+    {
+      "title": "Asijské čipy: TSMC, Samsung a SK Hynix přibližně −2 %; Nasdaq futures téměř +1 %.",
+      "time": "19. 11. 2026, 02:53",
+      "publishedAtPrague": "19. 11. 2026, 02:53",
+      "publicationTimeVerified": true,
+      "kind": "continuation",
+      "category": "semiconductors",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-11-19/",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-11-19/"
+        }
+      ],
+      "eventKey": "asian-chipmakers-decline-anthropic-ipo-20261119",
+      "ndxRelevant": true,
+      "importanceScore": 59
+    },
     {
       "title": "Anthropic IPO: 81,31 mld. USD; cena 83 USD vs. pásmo 70–78 USD. Výpočetní závazky téměř 900 mld. USD.",
       "time": "18. 11. 2026, 21:26 UTC",
@@ -237,13 +256,13 @@
   },
   "forecast": {
     "athReturnPercent": 12,
-    "athReason": "NVDA Q4 výhled 130 mld. USD; podmínka stabilizace AI financování a sazeb.",
+    "athReason": "NVDA Q4 výhled 130 mld. USD; podmínkou návratu je stabilizace financování AI a sazeb.",
     "downside": "−5 až −10 %",
-    "downsideReason": "Riziko zpřísnění financování datacenter a vyšších sazeb."
+    "downsideReason": "Riziko zpřísnění financování AI infrastruktury a růstu sazeb."
   },
   "catalyst": {
-    "event": "USA: týdenní žádosti o podporu v nezaměstnanosti",
-    "timePrague": "19. 11. 2026, 14:30 CET"
+    "event": "USA – týdenní žádosti o podporu v nezaměstnanosti",
+    "timePrague": "19. 11. 2026 14:30 CET"
   },
   "archive": [
     {
@@ -979,6 +998,24 @@
           "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm"
         }
       ]
+    },
+    {
+      "time": "19. 11. 2026 06:03 CET",
+      "summary": "NDX cash 27 116,26 b. (+0,42 %, závěr 18. 11.), −13,54 % od historického maxima. Medvědí →; FOMC: AI dluh a sazby. Asijské polovodiče −2 %.",
+      "sourceLinks": [
+        {
+          "label": "Google Finance NDX",
+          "url": "https://www.google.com/finance/quote/NDX:INDEXNASDAQ"
+        },
+        {
+          "label": "Fed FOMC",
+          "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-11-19/"
+        }
+      ]
     }
   ],
   "history": [
@@ -1084,6 +1121,10 @@
     },
     {
       "time": "19. 11. 2026 04:59 CET",
+      "ndx": 27116.26
+    },
+    {
+      "time": "19. 11. 2026 06:03 CET",
       "ndx": 27116.26
     }
   ],
@@ -1499,6 +1540,10 @@
     {
       "name": "US10Y close",
       "url": "https://portfolio-terminal.com/markets/10-year-treasury-yield"
+    },
+    {
+      "name": "Reuters Asia",
+      "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-11-19/"
     }
   ]
 }
