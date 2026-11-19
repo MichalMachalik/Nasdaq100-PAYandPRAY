@@ -1,18 +1,18 @@
 {
-  "updatedAtPrague": "19. 11. 2026 15:00 CET",
-  "marketStatus": "Uzavřeno – poslední závěr cash NDX 18. 11. 2026",
+  "updatedAtPrague": "19. 11. 2026 16:08 CET",
+  "marketStatus": "Otevřeno – cash NDX, 19. 11. 2026",
   "ndx": {
-    "value": 27116.26,
-    "changePercent": 0.42,
+    "value": 27602.51,
+    "changePercent": 1.79,
     "ath": 31361.37,
-    "asOf": "18. 11. 2026, 22:00 CET – cash NDX, poslední závěr (Nasdaq)"
+    "asOf": "19. 11. 2026, 16:00:57 CET – cash NDX (Investing.com)"
   },
   "sentiment": {
-    "label": "Medvědí",
-    "trend": "→ beze změny oproti 19. 11. 2026 13:59 CET",
-    "reason": "NDX +0,42 %, SOX +0,10 % (18. 11.); AMZN +2,6 %, GOOGL +4,2 %, NVDA +1,6 % v premarket 19. 11."
+    "label": "Neutrální",
+    "trend": "↗ zlepšení proti 19. 11. 2026 15:00 CET",
+    "reason": "NDX +1,79 %, NVDA +2,64 %, AVGO +3,99 %; NDX 11,99 % pod historickým maximem."
   },
-  "driver": "Anthropic IPO: 81,31 mld. USD, 83 USD/akcie, valuace přibližně 1,5 bil. USD; AMZN +2,6 %, GOOGL +4,2 % v premarket.",
+  "driver": "NDX cash +1,79 % (16:00:57 CET); NVDA +2,64 %, AVGO +3,99 %. Pokračuje očekávání debutu Anthropic po IPO za 83 USD.",
   "news": [
     {
       "title": "USA ICSA: 203 tis. vs. předchozí revid. 202 tis. (+1 tis.), kons. Reuters 197 tis.; týden do 14. 11.",
@@ -243,30 +243,30 @@
   "leaders": [
     {
       "ticker": "NVDA",
-      "changePercent": -2.89,
-      "impact": "Cash závěr 18. 11. 2026."
+      "changePercent": 2.64,
+      "impact": "19. 11. 2026, 15:59:58 CET; 154,94 USD (Investing.com)."
     },
     {
       "ticker": "AVGO",
-      "changePercent": 3.64,
-      "impact": "Cash závěr 18. 11. 2026."
+      "changePercent": 3.99,
+      "impact": "19. 11. 2026, 15:44:23 CET; 368,18 USD (Investing.com)."
     }
   ],
-  "macro": "ICSA | 14. 11.: 203 tis. | předchozí revid.: 202 tis. | +1 tis. | kons.: 197 tis.",
+  "macro": "ICSA | týden do 14. 11.: 203 tis. | předchozí revid.: 202 tis. | +1 tis. | kons.: 197 tis.",
   "regulation": null,
   "technical": {
     "support": null,
     "resistance": null
   },
   "forecast": {
-    "athReturnPercent": 12,
-    "athReason": "NDX 13,54 % pod historickým maximem; návrat podmiňuje stabilizace AI financování a sazeb.",
+    "athReturnPercent": 15,
+    "athReason": "NDX +1,79 %, široké oživení čipů; k historickému maximu zbývá 11,99 %. Rizika: sazby a AI CAPEX.",
     "downside": "−5 až −10 %",
-    "downsideReason": "AI CAPEX, financování datacenter a riziko dalších zvýšení sazeb."
+    "downsideReason": "AI CAPEX, financování datacenter a očekávané zpřísňování sazeb Fedu."
   },
   "catalyst": {
-    "event": "Nasdaq / NYSE – zahájení americké cash seance",
-    "timePrague": "19. 11. 2026 15:30 CET"
+    "event": "Fed – Jefferson: Economic Shocks",
+    "timePrague": "19. 11. 2026 16:25 CET"
   },
   "archive": [
     {
@@ -1170,6 +1170,24 @@
           "url": "https://www.reuters.com/business/nasdaq-futures-jump-anthropics-record-ipo-pricing-fuels-hopes-strong-debut-2026-11-19/"
         }
       ]
+    },
+    {
+      "time": "19. 11. 2026 16:08 CET",
+      "summary": "Cash NDX 27 602,51 b. (+1,79 %, 16:00:57 CET), 11,99 % pod historickým maximem; NVDA +2,64 %, AVGO +3,99 %. ICSA 203 tis. vs. 202 tis.",
+      "sourceLinks": [
+        {
+          "label": "Investing NDX",
+          "url": "https://www.investing.com/indices/nq-100"
+        },
+        {
+          "label": "Investing NVDA / AVGO",
+          "url": "https://www.investing.com/equities/nvidia-corp"
+        },
+        {
+          "label": "US DOL ICSA",
+          "url": "https://www.dol.gov/ui/data.pdf"
+        }
+      ]
     }
   ],
   "history": [
@@ -1316,6 +1334,10 @@
     {
       "time": "19. 11. 2026 15:00 CET",
       "ndx": 27116.26
+    },
+    {
+      "time": "19. 11. 2026 16:08 CET",
+      "ndx": 27602.51
     }
   ],
   "sources": [
@@ -1770,6 +1792,26 @@
     {
       "name": "Reuters ICSA 19. 11.",
       "url": "https://www.reuters.com/world/us/us-weekly-jobless-claims-increase-slightly-2026-11-19/"
+    },
+    {
+      "name": "Investing – NDX cash 19. 11.",
+      "url": "https://www.investing.com/indices/nq-100"
+    },
+    {
+      "name": "Investing – NVDA cash 19. 11.",
+      "url": "https://www.investing.com/equities/nvidia-corp"
+    },
+    {
+      "name": "Investing – AVGO cash 19. 11.",
+      "url": "https://www.investing.com/equities/avago-technologies"
+    },
+    {
+      "name": "US DOL ICSA 19. 11.",
+      "url": "https://www.dol.gov/ui/data.pdf"
+    },
+    {
+      "name": "Fed kalendář 19. 11.",
+      "url": "https://www.federalreserve.gov/newsevents/2026-november.htm"
     }
   ]
 }
