@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "19. 11. 2026 13:59 CET",
+  "updatedAtPrague": "19. 11. 2026 15:00 CET",
   "marketStatus": "Uzavřeno – poslední závěr cash NDX 18. 11. 2026",
   "ndx": {
     "value": 27116.26,
@@ -9,11 +9,30 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→ beze změny oproti 19. 11. 2026 13:03 CET",
-    "reason": "NDX +0,42 %, SOX +0,10 % (18. 11.); AMZN +2,2 %, GOOGL +4,3 %, NVDA +1,7 % v premarket 19. 11."
+    "trend": "→ beze změny oproti 19. 11. 2026 13:59 CET",
+    "reason": "NDX +0,42 %, SOX +0,10 % (18. 11.); AMZN +2,6 %, GOOGL +4,2 %, NVDA +1,6 % v premarket 19. 11."
   },
-  "driver": "Anthropic IPO: 81,31 mld. USD, 83 USD/akcie, valuace 1,5 bil. USD; AMZN +2,2 %, GOOGL +4,3 % v premarket.",
+  "driver": "Anthropic IPO: 81,31 mld. USD, 83 USD/akcie, valuace přibližně 1,5 bil. USD; AMZN +2,6 %, GOOGL +4,2 % v premarket.",
   "news": [
+    {
+      "title": "USA ICSA: 203 tis. vs. předchozí revid. 202 tis. (+1 tis.), kons. Reuters 197 tis.; týden do 14. 11.",
+      "time": "19. 11. 2026, 14:44 CET",
+      "publishedAtPrague": "19. 11. 2026, 14:44",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "employment",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/us/us-weekly-jobless-claims-increase-slightly-2026-11-19/",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/us/us-weekly-jobless-claims-increase-slightly-2026-11-19/"
+        }
+      ],
+      "eventKey": "us-weekly-initial-claims-203k-week-20261114-released-20261119",
+      "ndxRelevant": true,
+      "importanceScore": 61
+    },
     {
       "title": "INTC: první externí zákazník procesu 18A-P, identita klienta nezveřejněna; technologie v rizikové výrobě od června.",
       "time": "19. 11. 2026, 10:09 CET",
@@ -219,25 +238,6 @@
       "eventKey": "fed-fomc-minutes-oct-27-28-2026-released-20261118",
       "ndxRelevant": true,
       "importanceScore": 92
-    },
-    {
-      "title": "Fed Waller: v prosinci zvýšení sazeb o 50 bb nebo signalizace dalších zvýšení v roce 2027.",
-      "time": "18. 11. 2026, 13:51 UTC",
-      "publishedAtPrague": "18. 11. 2026, 14:51",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "fed",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/markets/us/waller-says-cnbc-fed-needs-get-more-aggressive-inflation-response-2026-11-18/",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/markets/us/waller-says-cnbc-fed-needs-get-more-aggressive-inflation-response-2026-11-18/"
-        }
-      ],
-      "importanceScore": 80,
-      "ndxRelevant": true,
-      "eventKey": "fed-waller-cnbc-50bp-or-guidance-20261118"
     }
   ],
   "leaders": [
@@ -252,7 +252,7 @@
       "impact": "Cash závěr 18. 11. 2026."
     }
   ],
-  "macro": "US10Y | 19. 11.: 5,085 % | 18. 11.: 5,066 % | +1,9 bb",
+  "macro": "ICSA | 14. 11.: 203 tis. | předchozí revid.: 202 tis. | +1 tis. | kons.: 197 tis.",
   "regulation": null,
   "technical": {
     "support": null,
@@ -265,8 +265,8 @@
     "downsideReason": "AI CAPEX, financování datacenter a riziko dalších zvýšení sazeb."
   },
   "catalyst": {
-    "event": "USA – týdenní žádosti o podporu v nezaměstnanosti",
-    "timePrague": "19. 11. 2026 14:30 CET"
+    "event": "Nasdaq / NYSE – zahájení americké cash seance",
+    "timePrague": "19. 11. 2026 15:30 CET"
   },
   "archive": [
     {
@@ -1152,6 +1152,24 @@
           "url": "https://thenextweb.com/news/intel-ceo-lip-bu-tan-says-intel-has-signed-its-first-outside-18a-customer"
         }
       ]
+    },
+    {
+      "time": "19. 11. 2026 15:00 CET",
+      "summary": "NDX cash 27 116,26 b. (+0,42 %, závěr 18. 11.), −13,54 % od historického maxima. USA ICSA 203 tis., předchozí revid. 202 tis., kons. Reuters 197 tis. Anthropic IPO 83 USD/akcie.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq NDX",
+          "url": "https://indexes.nasdaq.com/Index/Overview/NDX"
+        },
+        {
+          "label": "Reuters ICSA",
+          "url": "https://www.reuters.com/world/us/us-weekly-jobless-claims-increase-slightly-2026-11-19/"
+        },
+        {
+          "label": "Reuters Anthropic",
+          "url": "https://www.reuters.com/business/nasdaq-futures-jump-anthropics-record-ipo-pricing-fuels-hopes-strong-debut-2026-11-19/"
+        }
+      ]
     }
   ],
   "history": [
@@ -1293,6 +1311,10 @@
     },
     {
       "time": "19. 11. 2026 13:59 CET",
+      "ndx": 27116.26
+    },
+    {
+      "time": "19. 11. 2026 15:00 CET",
       "ndx": 27116.26
     }
   ],
@@ -1744,6 +1766,10 @@
     {
       "name": "Investing US10Y 19. 11.",
       "url": "https://ng.investing.com/rates-bonds/u.s.-10-year-bond-yield-historical-data"
+    },
+    {
+      "name": "Reuters ICSA 19. 11.",
+      "url": "https://www.reuters.com/world/us/us-weekly-jobless-claims-increase-slightly-2026-11-19/"
     }
   ]
 }
