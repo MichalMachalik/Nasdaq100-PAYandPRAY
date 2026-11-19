@@ -3,11 +3,11 @@
   "name": "E-mini Nasdaq-100 futures",
   "instrumentType": "FUTURES",
   "source": "Google Finance CME_EMINIS (delayed)",
-  "sourceUrl": "https://www.google.com/finance/quote/NQZ26:CME_EMINIS",
-  "price": 26795,
-  "changePercent": -1.44,
-  "quotedAtUtc": "2026-11-19T18:56:40Z",
-  "quotedAtPrague": "19. 11. 2026 19:56",
-  "fetchedAtUtc": "2026-11-19T19:16:55.037Z",
+  "sourceUrl": "https://www.google.com/finance/beta/quote/NQZ26:CME_EMINIS",
+  "price": 26704,
+  "changePercent": -1.78,
+  "quotedAtUtc": "2026-11-19T19:50:38Z",
+  "quotedAtPrague": "19. 11. 2026 20:50",
+  "fetchedAtUtc": "2026-11-19T20:20:52.048Z",
   "delayed": true
 }
