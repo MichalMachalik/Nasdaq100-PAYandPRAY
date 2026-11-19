@@ -605,12 +605,12 @@ const CURRENCY_INLINE_SVG={
 const appendCurrencyText=(fragment,value)=>{
   const text=String(value??'');
   // A slash identifies currency pairs: EUR/USD and EUR/CZK must stay unchanged.
-  const pattern=/(^|[^\\p{L}\\p{N}\/])(USD|EUR)(?=$|[^\\p{L}\\p{N}\/])/giu;
+  const pattern=/(^|[^\p{L}\p{N}\/])(USD|EUR)(?=$|[^\p{L}\p{N}\/])/giu;
   let from=0,found;
   while((found=pattern.exec(text))!==null){
     let before=text.slice(from,found.index)+found[1];
     // Keep units attached to preceding numeric values, avoiding orphaned icons.
-    if(/\\d[^\\n]*\\s$/u.test(before))before=before.replace(/\\s$/u,'\\u00a0');
+    if(/\d[^\n]*\s$/u.test(before))before=before.replace(/\s$/u,'\u00a0');
     if(before)fragment.append(document.createTextNode(before));
     const unit=found[2].toUpperCase();
     const span=document.createElement('span');
@@ -643,7 +643,7 @@ const setSentences=(id,value)=>{const el=$(id);if(el)renderSigned(el,sentenceBre
 // The distance-from-peak statistic is already displayed above the analysis.
 const cleanAthReason=value=>{
   const original=String(value??'').trim();
-  const cleaned=original.replace(/^\\s*(?:(?:cash\\s+)?NDX|Nasdaq(?:-100)?)[\\s:]*[+−-]?\\s*\\d+(?:[.,]\\d+)?\\s*%\\s*(?:od\\s+(?:historického\\s+)?maxima|pod\\s+(?:historickým\\s+)?maximem)\\s*[;,.]?\\s*/iu,'').trim();
+  const cleaned=original.replace(/^\s*(?:(?:cash\s+)?NDX|Nasdaq(?:-100)?)[\s:]*[+−-]?\s*\d+(?:[.,]\d+)?\s*%\s*(?:od\s+(?:historického\s+)?maxima|pod\s+(?:historickým\s+)?maximem)\s*[;,.]?\s*/iu,'').trim();
   return cleaned||'Čeká na aktualizaci';
 };
 const displayScenario=value=>String(value??'—').split(/\s*\(/u)[0].replace(/(^|[^\p{L}\d])([+−-])(?=\s*\d)/gu,'$1').trim();
