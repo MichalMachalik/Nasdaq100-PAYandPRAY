@@ -1,18 +1,18 @@
 {
-  "updatedAtPrague": "19. 11. 2026 17:09 CET",
+  "updatedAtPrague": "19. 11. 2026 18:08 CET",
   "marketStatus": "Otevřeno – cash NDX, 19. 11. 2026",
   "ndx": {
-    "value": 27216.23,
-    "changePercent": 0.37,
+    "value": 26706.23,
+    "changePercent": -1.51,
     "ath": 31361.37,
-    "asOf": "19. 11. 2026, 17:04:46 CET – cash NDX (Investing.com)"
+    "asOf": "19. 11. 2026, 18:04:31 CET – cash NDX (Investing.com)"
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "↘ zhoršení proti 19. 11. 2026 16:08 CET",
-    "reason": "NDX +0,37 % (17:04) vs. +1,79 % (16:00); NVDA +1,05 %, MSFT +1,94 % (16:35)."
+    "trend": "↘ zhoršení proti 19. 11. 2026 17:09 CET",
+    "reason": "NDX −1,51 % (18:04) vs. +0,37 % (17:04); NVDA −0,28 % (17:53), MSFT +1,40 % (17:16)."
   },
-  "driver": "Fed Jefferson: AI CAPEX a datacentra aktuálně zvyšují poptávku a inflaci; produktivní přínosy mohou ceny tlumit později.",
+  "driver": "NDX −1,51 % v 18:04 CET po intradenním maximu 27 749,35 b.; Anthropic (ANT) otevřel na 111,50 USD vs. IPO cena 83 USD.",
   "news": [
     {
       "title": "FOMC zápis 27.–28. 10.: téměř všichni očekávají další zvýšení sazeb; Fed upozornil na neprůhledné financování AI a datacenter.",
@@ -32,6 +32,25 @@
       "eventKey": "fed-fomc-minutes-oct-27-28-2026-released-20261118",
       "ndxRelevant": true,
       "importanceScore": 92
+    },
+    {
+      "title": "Anthropic (ANT): debut Nasdaq na 111,50 USD, 34,3 % nad IPO cenou 83 USD; valuace přes 2 bil. USD.",
+      "time": "19. 11. 2026, 12:08 CET",
+      "publishedAtPrague": "19. 11. 2026, 12:08",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "ai_infrastructure",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/",
+      "sourceLinks": [
+        {
+          "label": "Reuters – debut",
+          "url": "https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/"
+        }
+      ],
+      "eventKey": "anthropic-nasdaq-debut-11150-20261119",
+      "ndxRelevant": true,
+      "importanceScore": 84
     },
     {
       "title": "Anthropic IPO: 81,31 mld. USD; cena 83 USD vs. pásmo 70–78 USD. Výpočetní závazky téměř 900 mld. USD.",
@@ -266,26 +285,26 @@
   "leaders": [
     {
       "ticker": "NVDA",
-      "changePercent": 1.05,
-      "impact": "19. 11. 2026, 16:35 CET; 152,55 USD (Nasdaq)."
+      "changePercent": -0.28,
+      "impact": "19. 11. 2026 17:53:24 CET; 150,53 USD (Investing.com)."
     },
     {
       "ticker": "MSFT",
-      "changePercent": 1.94,
-      "impact": "19. 11. 2026, 16:35 CET; 517,17 USD (Nasdaq)."
+      "changePercent": 1.4,
+      "impact": "19. 11. 2026 17:16:49 CET; 514,40 USD (Investing.com)."
     }
   ],
-  "macro": "US10Y | 19. 11.: 5,085 % | 18. 11.: 5,066 % | +1,9 bb",
+  "macro": "US10Y | 19. 11. 17:55: 5,069 % | 18. 11.: 5,066 % | +0,3 bb",
   "regulation": null,
   "technical": {
     "support": null,
     "resistance": null
   },
   "forecast": {
-    "athReturnPercent": 12,
-    "athReason": "NDX +0,37 % vs. +1,79 % při 16:00; návrat na historické maximum vyžaduje růst 15,23 %. Rizika: sazby a AI CAPEX.",
+    "athReturnPercent": 7,
+    "athReason": "NDX −1,51 % vs. +0,37 % při poslední kontrole; vysoké valuace AI, sazby a financování CAPEX.",
     "downside": "−5 až −10 %",
-    "downsideReason": "AI CAPEX, financování datacenter a zvýšené inflační riziko."
+    "downsideReason": "AI CAPEX, náklady financování a intradenní obrat NDX."
   },
   "catalyst": {
     "event": "Fed – Barr: Artificial Intelligence",
@@ -1229,6 +1248,20 @@
           "url": "https://www.reuters.com/business/feds-jefferson-says-ai-boosting-inflation-productivity-impact-possible-in-future-2026-11-19/"
         }
       ]
+    },
+    {
+      "time": "19. 11. 2026 18:08 CET",
+      "summary": "Cash NDX 26 706,23 b. (−1,51 %, −14,85 % od historického maxima), obrat proti 17:09 CET. ANT debut 111,50 USD vs. IPO 83 USD. Medvědí ↘; návrat 7 %, scénář −5 až −10 %.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq-100 cash",
+          "url": "https://www.investing.com/indices/nq-100"
+        },
+        {
+          "label": "Reuters – Anthropic",
+          "url": "https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/"
+        }
+      ]
     }
   ],
   "history": [
@@ -1383,6 +1416,10 @@
     {
       "time": "19. 11. 2026 17:09 CET",
       "ndx": 27216.23
+    },
+    {
+      "time": "19. 11. 2026 18:08 CET",
+      "ndx": 26706.23
     }
   ],
   "sources": [
