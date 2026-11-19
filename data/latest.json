@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "19. 11. 2026 03:57 CET",
+  "updatedAtPrague": "19. 11. 2026 04:59 CET",
   "marketStatus": "Cash uzavřen; poslední závěr 18. 11. 2026",
   "ndx": {
     "value": 27116.26,
@@ -9,10 +9,10 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→ beze změny oproti 19. 11. 2026 02:57 CET",
+    "trend": "→ beze změny oproti 19. 11. 2026 03:57 CET",
     "reason": "NDX +0,42 %; SOX +0,10 %; NVDA −2,89 %; AVGO +3,64 % (cash 18. 11.)."
   },
-  "driver": "FOMC 18. 11.: téměř všichni účastníci očekávají další zvýšení sazeb; investice AI, růst dluhu a neprůhledné financování datacenter.",
+  "driver": "FOMC 18. 11.: téměř všichni účastníci očekávají další zvýšení sazeb; rostoucí AI dluh a neprůhledné financování datacenter.",
   "news": [
     {
       "title": "Anthropic IPO: 81,31 mld. USD; cena 83 USD vs. pásmo 70–78 USD. Výpočetní závazky téměř 900 mld. USD.",
@@ -965,6 +965,20 @@
           "url": "https://www.reuters.com/legal/transactional/fed-policymakers-concerned-about-financial-system-risks-minutes-show-2026-11-18/"
         }
       ]
+    },
+    {
+      "time": "19. 11. 2026 04:59 CET",
+      "summary": "NDX cash 27 116,26 b. (+0,42 %, závěr 18. 11.), −13,54 % od historického maxima; FOMC: rostoucí AI dluh a financování datacenter. Bez zásadních novinek od 03:57 CET.",
+      "sourceLinks": [
+        {
+          "label": "Yahoo Finance NDX",
+          "url": "https://finance.yahoo.com/quote/%5ENDX/history/"
+        },
+        {
+          "label": "Fed FOMC",
+          "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm"
+        }
+      ]
     }
   ],
   "history": [
@@ -1066,6 +1080,10 @@
     },
     {
       "time": "19. 11. 2026 03:57 CET",
+      "ndx": 27116.26
+    },
+    {
+      "time": "19. 11. 2026 04:59 CET",
       "ndx": 27116.26
     }
   ],
