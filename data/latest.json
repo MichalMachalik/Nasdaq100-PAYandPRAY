@@ -229,7 +229,7 @@
       "impact": "Cash závěr 18. 11. 2026."
     }
   ],
-  "macro": "US10Y | 18. 11.: 5,066 % | 17. 11.: 5,103 % | −3,7 bb",
+  "macro": "US10Y | 18. 11.: 5,068 % | 17. 11.: 5,103 % | −3,5 bb",
   "regulation": null,
   "technical": {
     "support": null,
@@ -1451,6 +1451,10 @@
     {
       "name": "Reuters Anthropic IPO",
       "url": "https://www.reuters.com/business/anthropic-clinches-biggest-ever-ipo-with-81-billion-offering-2026-11-18/"
+    },
+    {
+      "name": "Reuters GLOBAL MARKETS (Metrobank)",
+      "url": "https://wealthinsights.metrobank.com.ph/news/global-markets-stocks-slip-with-eyes-on-anthropic-and-nvidia-oil-prices-slide"
     }
   ]
 }
