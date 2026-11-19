@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "19. 11. 2026 13:03 CET",
+  "updatedAtPrague": "19. 11. 2026 13:59 CET",
   "marketStatus": "Uzavřeno – poslední závěr cash NDX 18. 11. 2026",
   "ndx": {
     "value": 27116.26,
@@ -9,11 +9,30 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "↗ mírné zlepšení oproti 19. 11. 2026 12:04 CET",
-    "reason": "NDX +0,42 %, SOX +0,10 % (18. 11.); oživení předobchodního obchodování AI akcií po ocenění IPO Anthropic."
+    "trend": "→ beze změny oproti 19. 11. 2026 13:03 CET",
+    "reason": "NDX +0,42 %, SOX +0,10 % (18. 11.); AMZN +2,2 %, GOOGL +4,3 %, NVDA +1,7 % v premarket 19. 11."
   },
-  "driver": "Anthropic IPO: 81,31 mld. USD, 83 USD/akcie vs. pásmo 70–78 USD; rostoucí zájem o AI akcie před debutem.",
+  "driver": "Anthropic IPO: 81,31 mld. USD, 83 USD/akcie, valuace 1,5 bil. USD; AMZN +2,2 %, GOOGL +4,3 % v premarket.",
   "news": [
+    {
+      "title": "INTC: první externí zákazník procesu 18A-P, identita klienta nezveřejněna; technologie v rizikové výrobě od června.",
+      "time": "19. 11. 2026, 10:09 CET",
+      "publishedAtPrague": "19. 11. 2026, 10:09",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "semiconductors",
+      "source": "The Next Web",
+      "url": "https://thenextweb.com/news/intel-ceo-lip-bu-tan-says-intel-has-signed-its-first-outside-18a-customer",
+      "sourceLinks": [
+        {
+          "label": "The Next Web",
+          "url": "https://thenextweb.com/news/intel-ceo-lip-bu-tan-says-intel-has-signed-its-first-outside-18a-customer"
+        }
+      ],
+      "eventKey": "intel-first-18ap-external-client-20261118",
+      "ndxRelevant": true,
+      "importanceScore": 55
+    },
     {
       "title": "USA premarket: NVDA +1,6 %; INTC, AMD, MU, MRVL +3–4,5 % po ocenění IPO Anthropic na 83 USD.",
       "time": "19. 11. 2026, 10:03 CET",
@@ -137,7 +156,7 @@
       "importanceScore": 78
     },
     {
-      "title": "PANW FQ1: tržby 3,45 mld. USD vs. kons. 3,31 (beat 4,2 %); upr. EPS 1,05 USD vs. 0,97 (beat 8,2 %). Applied Compute 4,5 mld. USD.",
+      "title": "PANW FQ1: tržby 3,45 mld. USD vs. kons. 3,31 (beat 4,2 %); upr. EPS 1,05 USD vs. 0,97 (beat 8,2 %). FY27 výhled 14,52–14,57 mld. USD, premarket >9 %.",
       "time": "18. 11. 2026, 22:09 CET",
       "publishedAtPrague": "18. 11. 2026, 22:09",
       "publicationTimeVerified": true,
@@ -147,7 +166,7 @@
       "url": "https://www.reuters.com/technology/palo-alto-buy-ai-startup-applied-compute-45-billion-2026-11-18/",
       "sourceLinks": [
         {
-          "label": "Reuters",
+          "label": "Reuters výsledky",
           "url": "https://www.reuters.com/technology/palo-alto-buy-ai-startup-applied-compute-45-billion-2026-11-18/"
         },
         {
@@ -155,8 +174,8 @@
           "url": "https://investors.paloaltonetworks.com/news-releases/news-release-details/palo-alto-networks-reports-fiscal-first-quarter-2027-financial"
         },
         {
-          "label": "Barron's",
-          "url": "https://www.barrons.com/articles/palo-alto-networks-earnings-stock-price-6d97b172"
+          "label": "Reuters reakce",
+          "url": "https://www.reuters.com/legal/litigation/palo-altos-raised-sales-forecast-powers-cybersecurity-stock-rally-2026-11-19/"
         }
       ],
       "eventKey": "panw-q1-fy2027-results-applied-compute-20261118",
@@ -233,7 +252,7 @@
       "impact": "Cash závěr 18. 11. 2026."
     }
   ],
-  "macro": "US10Y | 19. 11.: 5,088 % | 18. 11.: 5,066 % | +2,2 bb",
+  "macro": "US10Y | 19. 11.: 5,085 % | 18. 11.: 5,066 % | +1,9 bb",
   "regulation": null,
   "technical": {
     "support": null,
@@ -241,7 +260,7 @@
   },
   "forecast": {
     "athReturnPercent": 12,
-    "athReason": "NDX −13,54 % od maxima; návrat podmiňuje stabilizace financování AI a sazeb.",
+    "athReason": "NDX 13,54 % pod historickým maximem; návrat podmiňuje stabilizace AI financování a sazeb.",
     "downside": "−5 až −10 %",
     "downsideReason": "AI CAPEX, financování datacenter a riziko dalších zvýšení sazeb."
   },
@@ -1115,6 +1134,24 @@
           "url": "https://tradingeconomics.com/united-states/government-bond-yield"
         }
       ]
+    },
+    {
+      "time": "19. 11. 2026 13:59 CET",
+      "summary": "Cash NDX 27 116,26 b. (+0,42 %, závěr 18. 11.), 13,54 % pod historickým maximem. AMZN premarket +2,2 %, GOOGL +4,3 %. Intel potvrdil první externí zakázku 18A-P.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq NDX",
+          "url": "https://indexes.nasdaq.com/index/Overview/NDX"
+        },
+        {
+          "label": "Reuters premarket",
+          "url": "https://www.reuters.com/business/nasdaq-futures-jump-anthropics-record-ipo-pricing-fuels-hopes-strong-debut-2026-11-19/"
+        },
+        {
+          "label": "The Next Web Intel",
+          "url": "https://thenextweb.com/news/intel-ceo-lip-bu-tan-says-intel-has-signed-its-first-outside-18a-customer"
+        }
+      ]
     }
   ],
   "history": [
@@ -1252,6 +1289,10 @@
     },
     {
       "time": "19. 11. 2026 13:03 CET",
+      "ndx": 27116.26
+    },
+    {
+      "time": "19. 11. 2026 13:59 CET",
       "ndx": 27116.26
     }
   ],
@@ -1691,6 +1732,18 @@
     {
       "name": "Reuters Anthropic debut",
       "url": "https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/"
+    },
+    {
+      "name": "Reuters PANW premarket 19. 11.",
+      "url": "https://www.reuters.com/legal/litigation/palo-altos-raised-sales-forecast-powers-cybersecurity-stock-rally-2026-11-19/"
+    },
+    {
+      "name": "The Next Web Intel 18A-P 19. 11.",
+      "url": "https://thenextweb.com/news/intel-ceo-lip-bu-tan-says-intel-has-signed-its-first-outside-18a-customer"
+    },
+    {
+      "name": "Investing US10Y 19. 11.",
+      "url": "https://ng.investing.com/rates-bonds/u.s.-10-year-bond-yield-historical-data"
     }
   ]
 }
