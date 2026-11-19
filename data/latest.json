@@ -1,18 +1,18 @@
 {
-  "updatedAtPrague": "19. 11. 2026 06:03 CET",
+  "updatedAtPrague": "19. 11. 2026 07:04 CET",
   "marketStatus": "Uzavřeno – poslední závěr cash NDX 18. 11. 2026",
   "ndx": {
     "value": 27116.26,
     "changePercent": 0.42,
     "ath": 31361.37,
-    "asOf": "18. 11. 2026, 22:00 CET – cash NDX, poslední závěr (Google Finance)"
+    "asOf": "18. 11. 2026, 22:00 CET – cash NDX, poslední závěr (Yahoo Finance)"
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→ beze změny oproti 19. 11. 2026 04:59 CET",
+    "trend": "→ beze změny oproti 19. 11. 2026 06:03 CET",
     "reason": "NDX +0,42 %; SOX +0,10 %; NVDA −2,89 %; AVGO +3,64 % (cash 18. 11.)."
   },
-  "driver": "FOMC 18. 11.: téměř všichni členové očekávají další zvýšení sazeb; AI dluh, leasingové závazky a financování datacenter jsou rizika pro finanční stabilitu.",
+  "driver": "FOMC 18. 11.: téměř všichni účastníci podmíněně očekávají další zvýšení sazeb; Fed upozornil na rychlý růst AI dluhu a leasingových závazků.",
   "news": [
     {
       "title": "Asijské čipy: TSMC, Samsung a SK Hynix přibližně −2 %; Nasdaq futures téměř +1 %.",
@@ -215,25 +215,6 @@
       "importanceScore": 52,
       "ndxRelevant": true,
       "eventKey": "asml-europe-ai-chip-rally-20261118"
-    },
-    {
-      "title": "NVIDIA Q3: neocloud investice 32 mld. USD vs. 36 mld. USD v Q2. Závazky aktivní po zajištění financování a provozní kapacity.",
-      "time": "18. 11. 2026, 05:22 UTC",
-      "publishedAtPrague": "18. 11. 2026, 06:22",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_infrastructure",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/business-usual-nvidias-kress-passes-first-test-board-slams-door-huang-2026-11-18/",
-      "importanceScore": 79,
-      "ndxRelevant": true,
-      "eventKey": "nvidia-neocloud-financing-conditions-q3-fy2027",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/business/business-usual-nvidias-kress-passes-first-test-board-slams-door-huang-2026-11-18/"
-        }
-      ]
     }
   ],
   "leaders": [
@@ -256,9 +237,9 @@
   },
   "forecast": {
     "athReturnPercent": 12,
-    "athReason": "NVDA Q4 výhled 130 mld. USD; podmínkou návratu je stabilizace financování AI a sazeb.",
+    "athReason": "Silný NVDA Q4 výhled; podmínkou návratu je stabilizace AI financování a sazeb.",
     "downside": "−5 až −10 %",
-    "downsideReason": "Riziko zpřísnění financování AI infrastruktury a růstu sazeb."
+    "downsideReason": "AI CAPEX, úvěrové financování datacenter a očekávání dalších zvýšení sazeb."
   },
   "catalyst": {
     "event": "USA – týdenní žádosti o podporu v nezaměstnanosti",
@@ -1016,6 +997,20 @@
           "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-11-19/"
         }
       ]
+    },
+    {
+      "time": "19. 11. 2026 07:04 CET",
+      "summary": "NDX cash 27 116,26 b. (+0,42 %, závěr 18. 11.), −13,54 % od historického maxima. FOMC: další zvýšení sazeb v základním scénáři, AI dluh. Bez zásadních novinek od 06:03 CET.",
+      "sourceLinks": [
+        {
+          "label": "Yahoo Finance NDX",
+          "url": "https://finance.yahoo.com/quote/%5ENDX/history/"
+        },
+        {
+          "label": "Fed FOMC",
+          "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm"
+        }
+      ]
     }
   ],
   "history": [
@@ -1125,6 +1120,10 @@
     },
     {
       "time": "19. 11. 2026 06:03 CET",
+      "ndx": 27116.26
+    },
+    {
+      "time": "19. 11. 2026 07:04 CET",
       "ndx": 27116.26
     }
   ],
