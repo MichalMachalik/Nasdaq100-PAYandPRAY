@@ -457,6 +457,26 @@ body :is(h1,h2,h3,p,div,span,small,strong,button,a,table,th,td,time,summary,labe
   .economy-flag svg,.market-icon svg{width:32px;height:32px}
   .economy-symbol,.market-symbol{gap:7px}
 }
+/* Market snapshot stays on a single readable line, without artificial sentence breaks.
+   On small screens it scrolls horizontally instead of spilling into adjacent sections. */
+.flowline > div{min-width:0}
+#sentiment-reason{
+  display:block;
+  max-width:100%;
+  margin-top:5px;
+  white-space:nowrap;
+  overflow-x:auto;
+  overflow-y:hidden;
+  font-variant-numeric:tabular-nums;
+  scrollbar-width:thin;
+  -webkit-overflow-scrolling:touch;
+}
+#sentiment-reason .signed-up,#sentiment-reason .signed-down{white-space:nowrap}
+#driver,#forecast-ath-reason,#forecast-down-reason,#catalyst{
+  max-width:100%;
+  overflow-wrap:break-word;
+  text-wrap:pretty;
+}
 </style></head>
 <body><div class="wrap">
 <header class="header"><div class="brand"><svg class="aardvark-mark" viewBox="0 0 100 73" role="img" aria-label="Logo Aardvarkland" xmlns="http://www.w3.org/2000/svg">
@@ -660,7 +680,7 @@ function displayTopNews(){
 
 function render(d){d=d||{};set('updated',d.updatedAtPrague?safe(d.updatedAtPrague):'Čeká na data');let n=d.ndx||{};// Cash NDX zůstává výhradně ve zdrojovém reportu pro dlouhodobé odhady.
 
-let s=d.sentiment||{};set('sentiment',String(s.label||'').replace(/\s*\(subjektivní hodnocení\)/giu,'').trim()||'Čeká na vyhodnocení');$('sentiment').className='status '+(/medvěd|bear|zhorš/i.test(s.label||'')?'red':/býč|bull/i.test(s.label||'')?'green':'neutral');setSentences('sentiment-reason',cleanSentimentText(s.reason||'Zatím bez vyhodnocení'));setSentences('driver',d.driver||'Zatím nezveřejněno');$('driver').className=d.driver?'':'empty';
+let s=d.sentiment||{};set('sentiment',String(s.label||'').replace(/\s*\(subjektivní hodnocení\)/giu,'').trim()||'Čeká na vyhodnocení');$('sentiment').className='status '+(/medvěd|bear|zhorš/i.test(s.label||'')?'red':/býč|bull/i.test(s.label||'')?'green':'neutral');renderSigned($('sentiment-reason'),cleanSentimentText(s.reason||'Zatím bez vyhodnocení'));setSentences('driver',d.driver||'Zatím nezveřejněno');$('driver').className=d.driver?'':'empty';
 latestNews=Array.isArray(d.news)?d.news:[];
 displayTopNews();
 
