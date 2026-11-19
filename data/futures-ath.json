@@ -1,10 +1,12 @@
 {
   "symbol": "NQ=F",
   "maxPrice": 31616.5,
-  "benchmark": "52w",
-  "observedOn": "2026-10-06",
-  "source": "OwlChart (CME daily candles, trailing 52 weeks)",
-  "sourceUrl": "https://owlchart.com/chart/NQ",
-  "checkedAtUtc": "2026-11-19",
-  "note": "Provisional 52-week high; replaced by independently computed full-history NQ=F high when scheduled Yahoo history update succeeds."
+  "benchmark": "historical",
+  "observedWeek": "2026-10-01",
+  "source": "Yahoo Finance continuous NQ=F weekly candle highs (unofficial)",
+  "sourceUrl": "https://finance.yahoo.com/quote/NQ=F/",
+  "range": "max",
+  "interval": "1wk",
+  "historyPoints": 268,
+  "checkedAtUtc": "2026-11-19T11:18:43.812955Z"
 }
