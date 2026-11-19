@@ -216,6 +216,21 @@ body{background:#fff;color:#242424;font:17px/1.6 Georgia,"Times New Roman",serif
 .futures-warning{margin-top:6px;color:#ab424e}
 @media(max-width:650px){.futures-hero .headline{gap:18px}.futures-hero #futures-price{font-size:38px}.futures-hero #futures-change{font-size:21px}}
 
+/* Centred, color-coded distance to the NQ futures peak (no minus signs). */
+.futures-hero #futures-ath{
+  width:100%;
+  margin:2px auto 9px;
+  text-align:center;
+  font:650 15px/1.45 var(--site-font,system-ui,sans-serif);
+  font-variant-numeric:tabular-nums;
+  color:var(--red);
+}
+.futures-hero #futures-ath.is-at-peak{color:var(--green)}
+.futures-hero #futures-ath.is-unavailable{color:var(--muted);font-weight:500}
+@media(max-width:580px){
+  .futures-hero #futures-ath{font-size:13px;line-height:1.55}
+}
+
 /* Consistent toolbar: timestamp first; both action icons as one adjacent pair. */
 .header .topright{display:flex;align-items:center;justify-content:flex-end;gap:14px;flex-wrap:nowrap}
 .header .header-actions{display:flex;align-items:center;justify-content:center;gap:6px;flex:0 0 auto}
@@ -494,6 +509,7 @@ body :is(h1,h2,h3,p,div,span,small,strong,button,a,table,th,td,time,summary,labe
       <div class="small-stat metric"><div id="futures-change" class="value" aria-label="Denní procentní změna futures">—</div></div>
     </div>
   </div>
+  <div id="futures-ath" class="futures-ath" aria-live="polite"></div>
   <div id="futures-time" class="futures-time">Čeká na ověřený údaj futures · může být zpožděný</div>
 
   <a class="futures-provider" href="https://finance.yahoo.com/quote/NQ=F/" target="_blank" rel="noopener noreferrer">Zdroj futures dat</a>
@@ -937,10 +953,33 @@ async function loadFutures(){
     $('futures-change').className='value '+(q.changePercent<0?'red':q.changePercent>0?'green':'neutral');
     const lag=age>1800000?' · starší údaj':' · zpožděná data';
     set('futures-time','Kotace '+String(q.quotedAtPrague||'čas neuveden')+' Praha'+lag);
+    // Reference belongs to the NQ futures series, never to the cash NDX ATH.
+    const peakEl=$('futures-ath');
+    if(peakEl){
+      try{
+        const maxResponse=await fetch('./data/futures-ath.json?t='+Date.now(),{cache:'no-store'});
+        if(!maxResponse.ok)throw new Error('NQ high unavailable');
+        const peak=await maxResponse.json();
+        if(peak.symbol!=='NQ=F'||!Number.isFinite(peak.maxPrice)||peak.maxPrice<=1000||
+          !['52w','historical'].includes(peak.benchmark))throw new Error('Invalid NQ high');
+        const maxPrice=Math.max(q.price,peak.maxPrice);
+        const below=Math.max(0,(maxPrice-q.price)/maxPrice*100);
+        const historical=peak.benchmark==='historical';
+        const label=historical?'Od historického maxima':'Od maxima za 52 týdnů';
+        peakEl.textContent=label+': '+fmt(below)+' % (maximum: '+fmt(maxPrice)+' bodů)';
+        peakEl.className='futures-ath'+(below<0.005?' is-at-peak':'');
+        peakEl.title='E-mini Nasdaq-100 futures · '+(historical?'historické maximum souvislé řady NQ=F':'maximální high posledních 52 týdnů')+' · '+String(peak.source||'Zdroj neuveden');
+      }catch(highError){
+        peakEl.className='futures-ath is-unavailable';
+        peakEl.textContent='Maximum futures NQ není ověřeno';
+        peakEl.removeAttribute('title');
+      }
+    }
   }catch(err){
     set('futures-price','—');
     set('futures-change','—');
     set('futures-time','Aktuální futures kotace není ověřena');
+    set('futures-ath','');
   }
 }
 async function load(){
