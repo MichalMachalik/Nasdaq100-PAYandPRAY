@@ -4,10 +4,10 @@
   "instrumentType": "FUTURES",
   "source": "Google Finance CME_EMINIS",
   "sourceUrl": "https://www.google.com/finance/quote/NQZ26:CME_EMINIS",
-  "price": 27153.25,
-  "changePercent": -0.12,
-  "quotedAtUtc": "2026-11-19T15:53:52Z",
-  "quotedAtPrague": "19. 11. 2026 16:53",
-  "fetchedAtUtc": "2026-11-19T16:19:49.516Z",
+  "price": 27122.25,
+  "changePercent": -0.24,
+  "quotedAtUtc": "2026-11-19T16:45:06Z",
+  "quotedAtPrague": "19. 11. 2026 17:45:06 CET",
+  "fetchedAtUtc": "2026-11-19T17:08:19.857Z",
   "delayed": true
 }
