@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "19. 11. 2026 07:04 CET",
+  "updatedAtPrague": "19. 11. 2026 08:12 CET",
   "marketStatus": "Uzavřeno – poslední závěr cash NDX 18. 11. 2026",
   "ndx": {
     "value": 27116.26,
@@ -9,10 +9,10 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→ beze změny oproti 19. 11. 2026 06:03 CET",
-    "reason": "NDX +0,42 %; SOX +0,10 %; NVDA −2,89 %; AVGO +3,64 % (cash 18. 11.)."
+    "trend": "→ beze změny oproti 19. 11. 2026 07:04 CET",
+    "reason": "Cash NDX +0,42 %; SOX +0,10 %; NVDA −2,89 %; AVGO +3,64 % (18. 11.)."
   },
-  "driver": "FOMC 18. 11.: téměř všichni účastníci podmíněně očekávají další zvýšení sazeb; Fed upozornil na rychlý růst AI dluhu a leasingových závazků.",
+  "driver": "FOMC zápis 18. 11.: rychlý růst dluhu financujícího AI, leasingové závazky mimo rozvahu a kruhové financování; podmíněné riziko přecenění AI aktiv.",
   "news": [
     {
       "title": "Asijské čipy: TSMC, Samsung a SK Hynix přibližně −2 %; Nasdaq futures téměř +1 %.",
@@ -229,7 +229,7 @@
       "impact": "Cash závěr 18. 11. 2026."
     }
   ],
-  "macro": "US10Y | 18. 11.: 5,066 % | 17. 11.: 5,103 % | −3,7 bb",
+  "macro": "US10Y | 18. 11.: 5,07 % | 17. 11.: 5,10 % | −3,0 bb",
   "regulation": null,
   "technical": {
     "support": null,
@@ -1011,6 +1011,20 @@
           "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm"
         }
       ]
+    },
+    {
+      "time": "19. 11. 2026 08:12 CET",
+      "summary": "NDX cash 27 116,26 b. (+0,42 %, závěr 18. 11.), −13,54 % od historického maxima. FOMC: AI dluh, leasing a finanční stabilita. Bez zásadních novinek od 07:04 CET.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq-100 NDX",
+          "url": "https://www.google.com/finance/quote/NDX:INDEXNASDAQ"
+        },
+        {
+          "label": "Fed FOMC",
+          "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm"
+        }
+      ]
     }
   ],
   "history": [
@@ -1124,6 +1138,10 @@
     },
     {
       "time": "19. 11. 2026 07:04 CET",
+      "ndx": 27116.26
+    },
+    {
+      "time": "19. 11. 2026 08:12 CET",
       "ndx": 27116.26
     }
   ],
