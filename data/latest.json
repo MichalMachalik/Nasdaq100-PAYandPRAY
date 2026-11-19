@@ -1,21 +1,21 @@
 {
-  "updatedAtPrague": "19. 11. 2026 00:58 CET",
+  "updatedAtPrague": "19. 11. 2026 01:59 CET",
   "marketStatus": "Cash uzavřen; poslední závěr 18. 11. 2026",
   "ndx": {
     "value": 27116.26,
     "changePercent": 0.42,
     "ath": 31361.37,
-    "asOf": "18. 11. 2026, 22:00 CET – cash NDX, poslední závěr (Nasdaq/Google Finance)"
+    "asOf": "18. 11. 2026, 22:00 CET – cash NDX, poslední závěr (YCharts)"
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→ beze změny oproti 19. 11. 2026 00:05 CET",
-    "reason": "NDX +0,42 %; SOX +0,10 %; NVDA −2,89 %; AVGO +3,64 %."
+    "trend": "→ beze změny oproti 19. 11. 2026 00:58 CET",
+    "reason": "NDX +0,42 %; SOX +0,10 %; NVDA −2,89 %; AVGO +3,64 % (cash 18. 11.)."
   },
-  "driver": "FOMC zápis: rizika financování AI infrastruktury; NVDA −2,89 % při silném výhledu, AVGO +3,64 %.",
+  "driver": "FOMC 18. 11.: financování AI infrastruktury a rizika přecenění AI aktiv; NVDA −2,89 %, AVGO +3,64 %.",
   "news": [
     {
-      "title": "Anthropic IPO: cena 83 USD vs. původní pásmo 70–78 USD; závazky na výpočetní kapacitu téměř 900 mld. USD zahrnují AMZN a GOOGL.",
+      "title": "Anthropic IPO: 81,31 mld. USD; cena 83 USD vs. pásmo 70–78 USD. Výpočetní závazky téměř 900 mld. USD.",
       "time": "18. 11. 2026, 21:26 UTC",
       "publishedAtPrague": "18. 11. 2026, 22:26",
       "publicationTimeVerified": true,
@@ -25,7 +25,11 @@
       "url": "https://www.reuters.com/legal/transactional/anthropic-prices-blockbuster-ipo-83-share-source-says-2026-11-18/",
       "sourceLinks": [
         {
-          "label": "Reuters",
+          "label": "Reuters IPO",
+          "url": "https://www.reuters.com/business/anthropic-clinches-biggest-ever-ipo-with-81-billion-offering-2026-11-18/"
+        },
+        {
+          "label": "Reuters cena",
           "url": "https://www.reuters.com/legal/transactional/anthropic-prices-blockbuster-ipo-83-share-source-says-2026-11-18/"
         }
       ],
@@ -38,7 +42,7 @@
       "time": "18. 11. 2026, 22:09 CET",
       "publishedAtPrague": "18. 11. 2026, 22:09",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "earnings",
       "source": "Reuters",
       "url": "https://www.reuters.com/technology/palo-alto-buy-ai-startup-applied-compute-45-billion-2026-11-18/",
@@ -65,7 +69,7 @@
       "time": "18. 11. 2026, 21:24 CET",
       "publishedAtPrague": "18. 11. 2026, 21:24",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "ai_regulation",
       "source": "Reuters",
       "url": "https://www.reuters.com/world/china/us-house-panel-seeks-microsoft-briefing-reported-ai-deal-talks-with-chinas-2026-11-18/",
@@ -255,15 +259,15 @@
     {
       "ticker": "NVDA",
       "changePercent": -2.89,
-      "impact": "Cash závěr 18. 11., 22:00 CET, Google Finance."
+      "impact": "Cash závěr 18. 11. 2026."
     },
     {
       "ticker": "AVGO",
       "changePercent": 3.64,
-      "impact": "Cash závěr 18. 11., 22:00 CET, Google Finance."
+      "impact": "Cash závěr 18. 11. 2026."
     }
   ],
-  "macro": "US10Y | 18. 11. 20:20: 5,066 % | 17. 11.: 5,103 % | −3,7 bb",
+  "macro": "US10Y | 18. 11.: 5,066 % | 17. 11.: 5,103 % | −3,7 bb",
   "regulation": null,
   "technical": {
     "support": null,
@@ -949,6 +953,24 @@
           "url": "https://www.reuters.com/legal/transactional/anthropic-prices-blockbuster-ipo-83-share-source-says-2026-11-18/"
         }
       ]
+    },
+    {
+      "time": "19. 11. 2026 01:59 CET",
+      "summary": "NDX cash 27 116,26 b. (+0,42 %, závěr 18. 11.); FOMC: rizika financování AI infrastruktury; Anthropic IPO 81,31 mld. USD, cena 83 USD.",
+      "sourceLinks": [
+        {
+          "label": "NDX YCharts",
+          "url": "https://ycharts.com/indices/%5ENDX/level"
+        },
+        {
+          "label": "Fed FOMC",
+          "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm"
+        },
+        {
+          "label": "Reuters Anthropic",
+          "url": "https://www.reuters.com/business/anthropic-clinches-biggest-ever-ipo-with-81-billion-offering-2026-11-18/"
+        }
+      ]
     }
   ],
   "history": [
@@ -1038,6 +1060,10 @@
     },
     {
       "time": "19. 11. 2026 00:58 CET",
+      "ndx": 27116.26
+    },
+    {
+      "time": "19. 11. 2026 01:59 CET",
       "ndx": 27116.26
     }
   ],
@@ -1437,6 +1463,10 @@
     {
       "name": "US10Y Kinzan 18. 11. 20:20 CET",
       "url": "https://kinzan.io/markets/rates/us-10-year-yield/"
+    },
+    {
+      "name": "Reuters Anthropic IPO",
+      "url": "https://www.reuters.com/business/anthropic-clinches-biggest-ever-ipo-with-81-billion-offering-2026-11-18/"
     }
   ]
 }
