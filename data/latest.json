@@ -1,18 +1,18 @@
 {
-  "updatedAtPrague": "19. 11. 2026 01:59 CET",
+  "updatedAtPrague": "19. 11. 2026 02:57 CET",
   "marketStatus": "Cash uzavřen; poslední závěr 18. 11. 2026",
   "ndx": {
     "value": 27116.26,
     "changePercent": 0.42,
     "ath": 31361.37,
-    "asOf": "18. 11. 2026, 22:00 CET – cash NDX, poslední závěr (YCharts)"
+    "asOf": "18. 11. 2026, 22:00 CET – cash NDX, poslední závěr (Yahoo Finance)"
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→ beze změny oproti 19. 11. 2026 00:58 CET",
+    "trend": "→ beze změny oproti 19. 11. 2026 01:59 CET",
     "reason": "NDX +0,42 %; SOX +0,10 %; NVDA −2,89 %; AVGO +3,64 % (cash 18. 11.)."
   },
-  "driver": "FOMC 18. 11.: financování AI infrastruktury a rizika přecenění AI aktiv; NVDA −2,89 %, AVGO +3,64 %.",
+  "driver": "FOMC 18. 11.: dluh AI infrastruktury, leasingové závazky a neprůhledné financování datacenter; NVDA −2,89 %, AVGO +3,64 %.",
   "news": [
     {
       "title": "Anthropic IPO: 81,31 mld. USD; cena 83 USD vs. pásmo 70–78 USD. Výpočetní závazky téměř 900 mld. USD.",
@@ -215,44 +215,6 @@
           "url": "https://www.reuters.com/business/business-usual-nvidias-kress-passes-first-test-board-slams-door-huang-2026-11-18/"
         }
       ]
-    },
-    {
-      "title": "MSCI Asia ex Japan −0,1 %, Nikkei −0,3 % po výsledcích NVDA; růst asijských akcií se obrátil.",
-      "time": "18. 11. 2026, 01:46 UTC – původní zveřejnění Reuters",
-      "publishedAtPrague": "18. 11. 2026, 02:46",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "market_reaction",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-11-18/",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-11-18/"
-        }
-      ],
-      "importanceScore": 58,
-      "ndxRelevant": true,
-      "eventKey": "asia-chip-rebound-nvidia-earnings-20261118"
-    },
-    {
-      "title": "FedWatch: pravděpodobnost prosincového zvýšení sazeb o 25 bb dosahuje 95,7 %; DXY 103,65.",
-      "time": "18. 11. 2026, 01:34 UTC",
-      "publishedAtPrague": "18. 11. 2026, 02:34",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "macro",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/middle-east/dollar-holds-near-19-month-high-data-supports-case-us-rate-hikes-2026-11-18/",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/world/middle-east/dollar-holds-near-19-month-high-data-supports-case-us-rate-hikes-2026-11-18/"
-        }
-      ],
-      "importanceScore": 63,
-      "ndxRelevant": true,
-      "eventKey": "us-dec-fedwatch-25bp-20261118"
     }
   ],
   "leaders": [
@@ -971,6 +933,24 @@
           "url": "https://www.reuters.com/business/anthropic-clinches-biggest-ever-ipo-with-81-billion-offering-2026-11-18/"
         }
       ]
+    },
+    {
+      "time": "19. 11. 2026 02:57 CET",
+      "summary": "NDX cash 27 116,26 b. (+0,42 %, závěr 18. 11.); FOMC: dluh AI infrastruktury a leasingové závazky; NVDA −2,89 %, AVGO +3,64 %.",
+      "sourceLinks": [
+        {
+          "label": "Yahoo Finance NDX",
+          "url": "https://finance.yahoo.com/quote/%5ENDX/history/"
+        },
+        {
+          "label": "Fed FOMC",
+          "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm"
+        },
+        {
+          "label": "Reuters trh",
+          "url": "https://www.reuters.com/business/nasdaq-futures-jump-nvidia-forecast-lifts-ai-trade-ahead-anthropic-pricing-2026-11-18/"
+        }
+      ]
     }
   ],
   "history": [
@@ -1064,6 +1044,10 @@
     },
     {
       "time": "19. 11. 2026 01:59 CET",
+      "ndx": 27116.26
+    },
+    {
+      "time": "19. 11. 2026 02:57 CET",
       "ndx": 27116.26
     }
   ],
