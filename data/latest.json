@@ -1,18 +1,18 @@
 {
-  "updatedAtPrague": "20. 11. 2026 15:06 CET",
-  "marketStatus": "cash uzavřen",
+  "updatedAtPrague": "20. 11. 2026 16:00 CET",
+  "marketStatus": "cash otevřen",
   "ndx": {
-    "value": 26517.05,
-    "changePercent": -2.21,
+    "value": 26097.43,
+    "changePercent": -1.58,
     "ath": 31361.37,
-    "asOf": "19. 11. 2026 22:00 CET – cash NDX, poslední závěr"
+    "asOf": "20. 11. 2026 15:39 CET – cash NDX, intradenní kotace"
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "↘ zhoršení proti 13:56 CET",
-    "reason": "USA premarket: NVDA −3,7 %, META −4,5 %, AMZN/MSFT přes −2 %; VIX max. 30,04."
+    "trend": "↗ mírné zlepšení proti 15:06 CET",
+    "reason": "NDX −1,58 %, SOX −4,09 %, NVDA −3,41 %, META −2,42 %."
   },
-  "driver": "USA premarket: NVDA −3,7 %, AMD/AVGO/MRVL/MU −3,6 až −7 %; obavy o návratnost AI infrastruktury a vyšší sazby.",
+  "driver": "SOX −4,09 %, NVDA −3,41 %; sektorový tlak na polovodiče a AI infrastrukturu.",
   "news": [
     {
       "title": "USA premarket: NVDA −3,7 %, META −4,5 %, AMZN/MSFT přes −2 %; AMD/AVGO/MRVL/MU −3,6 až −7 %.",
@@ -306,44 +306,21 @@
       "eventKey": "amd-hunterbrook-china-export-scrutiny-20261119",
       "ndxRelevant": true,
       "importanceScore": 74
-    },
-    {
-      "title": "Fed Jefferson: AI CAPEX a datacentra nyní zvyšují poptávku a inflaci; produktivní přínosy mohou ceny tlumit později.",
-      "time": "19. 11. 2026, 15:26 CET",
-      "publishedAtPrague": "19. 11. 2026, 15:26",
-      "publicationTimeVerified": true,
-      "kind": "new",
-      "category": "fed",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/feds-jefferson-says-ai-boosting-inflation-productivity-impact-possible-in-future-2026-11-19/",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/business/feds-jefferson-says-ai-boosting-inflation-productivity-impact-possible-in-future-2026-11-19/"
-        },
-        {
-          "label": "Fed – projev",
-          "url": "https://www.federalreserve.gov/newsevents/speech/jefferson20261119a.htm"
-        }
-      ],
-      "eventKey": "fed-jefferson-ai-inflation-demand-20261119",
-      "ndxRelevant": true,
-      "importanceScore": 76
     }
   ],
   "leaders": [
     {
       "ticker": "NVDA",
-      "changePercent": -3.3,
-      "impact": "Cash závěr 19. 11.; polovodiče"
+      "changePercent": -3.41,
+      "impact": "20. 11. 15:56 CET; polovodiče"
     },
     {
-      "ticker": "AVGO",
-      "changePercent": -2.09,
-      "impact": "Cash závěr 19. 11.; AI infrastruktura"
+      "ticker": "META",
+      "changePercent": -2.42,
+      "impact": "20. 11. 15:51 CET; AI CAPEX"
     }
   ],
-  "macro": "US10Y | 20. 11.: 4,991 %",
+  "macro": "US10Y | 20. 11. 15:04: 4,984 % | 19. 11.: 5,052 % | −6,8 bb",
   "regulation": null,
   "technical": {
     "support": null,
@@ -351,7 +328,7 @@
   },
   "forecast": {
     "athReturnPercent": 5,
-    "athReason": "Potřebný růst 18,27 %; podmínka stabilizace čipů a AI CAPEX.",
+    "athReason": "Nutný růst 20,17 %; podmínka stabilizace čipů a AI CAPEX.",
     "downside": "−5 až −10 %",
     "downsideReason": "AI CAPEX, financování datacenter a sazby."
   },
@@ -1673,6 +1650,24 @@
           "url": "https://www.reuters.com/legal/transactional/wall-st-futures-slip-anthropic-debut-fails-reassure-ai-investors-2026-11-20/"
         }
       ]
+    },
+    {
+      "time": "20. 11. 2026 16:00 CET",
+      "summary": "Cash NDX 26 097,43 b. (−1,58 %, 15:39 CET), SOX −4,09 %, NVDA −3,41 %. Sentiment medvědí ↗; USA cash otevřen.",
+      "sourceLinks": [
+        {
+          "label": "Google Finance – cash NDX",
+          "url": "https://www.google.com/finance/quote/NDX:INDEXNASDAQ?hl=en"
+        },
+        {
+          "label": "Google Finance – NVDA",
+          "url": "https://www.google.com/finance/quote/NVDA:NASDAQ?hl=en"
+        },
+        {
+          "label": "Reuters – otevření USA",
+          "url": "https://www.reuters.com/legal/transactional/wall-st-futures-slip-anthropic-debut-fails-reassure-ai-investors-2026-11-20/"
+        }
+      ]
     }
   ],
   "history": [
@@ -1915,6 +1910,10 @@
     {
       "time": "20. 11. 2026 15:06 CET",
       "ndx": 26517.05
+    },
+    {
+      "time": "20. 11. 2026 16:00 CET",
+      "ndx": 26097.43
     }
   ],
   "sources": [
@@ -2517,6 +2516,10 @@
     {
       "name": "MarketWatch – US10Y",
       "url": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-nasdaq-anthropic-ipo-second-day-trading/card/treasury-yields-fall-below-5-as-sliding-risk-assets-bolster-demand-for-government-bonds-V0fIHwHPjKuujMfSbcHc"
+    },
+    {
+      "name": "Google Finance – META",
+      "url": "https://www.google.com/finance/quote/META:NASDAQ?hl=en"
     }
   ]
 }
