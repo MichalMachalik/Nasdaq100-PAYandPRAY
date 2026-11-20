@@ -1,6 +1,6 @@
 {
-  "updatedAtPrague": "20. 11. 2026 03:59 CET",
-  "marketStatus": "Cash uzavřen – poslední závěr 19. 11. 2026",
+  "updatedAtPrague": "20. 11. 2026 05:04 CET",
+  "marketStatus": "Cash uzavřen; poslední závěr 19. 11. 2026 22:00 CET",
   "ndx": {
     "value": 26517.05,
     "changePercent": -2.21,
@@ -9,29 +9,48 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→ beze změny proti 03:03 CET; cash beze změny, asijské akcie a čipy pod tlakem",
-    "reason": "Cash NDX −2,21 % (19. 11.); MSCI Asia-Pacific −2,5 %, týden −7 %; Nikkei −4,1 %, KOSPI −4,7 % (20. 11.)."
+    "trend": "↘ zhoršení proti 03:59 CET; asijský prodejní tlak zesílil",
+    "reason": "Cash NDX −2,21 % (19. 11.); MSCI Asia-Pacific −3,2 %, týden −8,3 %; Nikkei −4,1 %, KOSPI −4,4 %."
   },
-  "driver": "MSCI Asia-Pacific −2,5 % (týden −7 %); Nikkei −4,1 %, KOSPI −4,7 % při pokračující slabosti AI a čipů.",
+  "driver": "MSCI Asia-Pacific −3,2 % (týden −8,3 %); asijský výprodej AI a čipů. Senát USA schválil 62:33 návrh zrychlení povolování energetiky a datacenter.",
   "news": [
     {
-      "title": "Sněmovní výbor USA: schválené licence pro 879 tis. AI čipů NVDA a AMD do Číny (12/2025–05/2026); dodané množství neznámé.",
-      "time": "19. 11. 2026, 21:11 CET",
-      "publishedAtPrague": "19. 11. 2026, 21:11",
+      "title": "Senát USA schválil 62:33 návrh zákona pro rychlejší povolování energetiky a datacenter; čeká na Sněmovnu.",
+      "time": "20. 11. 2026, 04:17 CET",
+      "publishedAtPrague": "20. 11. 2026, 04:17",
       "publicationTimeVerified": true,
       "kind": "new",
       "category": "ai_regulation",
       "source": "Reuters",
-      "url": "https://www.reuters.com/world/license-information-ai-chips-sent-china-released-by-us-house-committee-2026-11-19/",
+      "url": "https://www.reuters.com/legal/litigation/us-senate-passes-bipartisan-bill-speed-energy-infrastructure-projects-2026-11-20/",
       "sourceLinks": [
         {
-          "label": "Reuters – licence čipů",
-          "url": "https://www.reuters.com/world/license-information-ai-chips-sent-china-released-by-us-house-committee-2026-11-19/"
+          "label": "Reuters – Senát USA",
+          "url": "https://www.reuters.com/legal/litigation/us-senate-passes-bipartisan-bill-speed-energy-infrastructure-projects-2026-11-20/"
         }
       ],
-      "eventKey": "us-house-chip-license-disclosure-879k-20261119",
+      "eventKey": "us-senate-energy-datacenter-permitting-bill-passed-62-33-20261119",
       "ndxRelevant": true,
-      "importanceScore": 72
+      "importanceScore": 78
+    },
+    {
+      "title": "Anthropic: australské datacentrum Western Downs 1,44 GW; 595 námitek veřejnosti, 2 podpořily projekt.",
+      "time": "20. 11. 2026, 03:39 CET",
+      "publishedAtPrague": "20. 11. 2026, 03:39",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "ai_infrastructure",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/asia-pacific/anthropics-australian-data-centre-overwhelmingly-opposed-by-residents-2026-11-20/",
+      "sourceLinks": [
+        {
+          "label": "Reuters – Western Downs",
+          "url": "https://www.reuters.com/world/asia-pacific/anthropics-australian-data-centre-overwhelmingly-opposed-by-residents-2026-11-20/"
+        }
+      ],
+      "eventKey": "anthropic-western-downs-datacentre-595-objections-20261120",
+      "ndxRelevant": true,
+      "importanceScore": 64
     },
     {
       "title": "DXY u 103,9, maximum za 19 měsíců; US10Y v asijské seanci 5,016 %.",
@@ -70,6 +89,25 @@
       "eventKey": "asia-equities-selloff-nq-futures-20261120",
       "ndxRelevant": true,
       "importanceScore": 71
+    },
+    {
+      "title": "Sněmovní výbor USA: schválené licence pro 879 tis. AI čipů NVDA a AMD do Číny (12/2025–05/2026); dodané množství neznámé.",
+      "time": "19. 11. 2026, 21:11 CET",
+      "publishedAtPrague": "19. 11. 2026, 21:11",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "ai_regulation",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/license-information-ai-chips-sent-china-released-by-us-house-committee-2026-11-19/",
+      "sourceLinks": [
+        {
+          "label": "Reuters – licence čipů",
+          "url": "https://www.reuters.com/world/license-information-ai-chips-sent-china-released-by-us-house-committee-2026-11-19/"
+        }
+      ],
+      "eventKey": "us-house-chip-license-disclosure-879k-20261119",
+      "ndxRelevant": true,
+      "importanceScore": 72
     },
     {
       "title": "Fed Barr: inflace příliš vysoká; očekává další zvýšení sazeb. Současně varuje před oslabením bankovního dohledu.",
@@ -347,12 +385,12 @@
   },
   "forecast": {
     "athReturnPercent": 5,
-    "athReason": "Cash NDX −2,21 %; asijské akcie dál oslabují. Podmínka: stabilizace čipů a AI financování.",
+    "athReason": "Cash NDX −2,21 %; MSCI Asia-Pacific −3,2 %. Podmínka: stabilizace čipů a AI financování.",
     "downside": "−5 až −10 %",
     "downsideReason": "AI CAPEX, financování datacenter a sazby."
   },
   "catalyst": {
-    "event": "University of Michigan: listopadový spotřebitelský sentiment (finální)",
+    "event": "Michigan: listopadový spotřebitelský sentiment (finální)",
     "timePrague": "20. 11. 2026 16:00 CET"
   },
   "archive": [
@@ -1479,6 +1517,24 @@
           "url": "https://www.reuters.com/world/license-information-ai-chips-sent-china-released-by-us-house-committee-2026-11-19/"
         }
       ]
+    },
+    {
+      "time": "20. 11. 2026 05:04 CET",
+      "summary": "Cash NDX 26 517,05 b. (−2,21 %, závěr 19. 11.); MSCI Asia-Pacific −3,2 % (týden −8,3 %). Senát USA 62:33 schválil návrh pro energetiku a datacentra; sentiment medvědí ↘.",
+      "sourceLinks": [
+        {
+          "label": "YCharts – NDX",
+          "url": "https://ycharts.com/indices/%5ENDX/level"
+        },
+        {
+          "label": "Reuters – Asie",
+          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-20/"
+        },
+        {
+          "label": "Reuters – Senát USA",
+          "url": "https://www.reuters.com/legal/litigation/us-senate-passes-bipartisan-bill-speed-energy-infrastructure-projects-2026-11-20/"
+        }
+      ]
     }
   ],
   "history": [
@@ -1676,6 +1732,10 @@
     },
     {
       "time": "20. 11. 2026 03:59 CET",
+      "ndx": 26517.05
+    },
+    {
+      "time": "20. 11. 2026 05:04 CET",
       "ndx": 26517.05
     }
   ],
@@ -2231,6 +2291,14 @@
     {
       "name": "Reuters – exportní licence 19. 11.",
       "url": "https://www.reuters.com/world/license-information-ai-chips-sent-china-released-by-us-house-committee-2026-11-19/"
+    },
+    {
+      "name": "Reuters – Senát USA",
+      "url": "https://www.reuters.com/legal/litigation/us-senate-passes-bipartisan-bill-speed-energy-infrastructure-projects-2026-11-20/"
+    },
+    {
+      "name": "Reuters – datacentrum Anthropic",
+      "url": "https://www.reuters.com/world/asia-pacific/anthropics-australian-data-centre-overwhelmingly-opposed-by-residents-2026-11-20/"
     }
   ]
 }
