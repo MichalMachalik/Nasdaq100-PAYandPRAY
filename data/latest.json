@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "20. 11. 2026 07:07 CET",
+  "updatedAtPrague": "20. 11. 2026 08:05 CET",
   "marketStatus": "Cash uzavřen; poslední závěr 19. 11. 2026",
   "ndx": {
     "value": 26517.05,
@@ -9,10 +9,10 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "↘ zhoršení proti 06:02 CET; NQ=F −0,83 % (05:35) → −1,17 % (06:10), cash uzavřen",
-    "reason": "Cash NDX −2,21 % (19. 11.); MSCI Asia-Pacific −3,2 % (týden −8,3 %); TAIEX týden −16 %."
+    "trend": "↘ zhoršení proti 07:07 CET; asijské akcie dále klesly, futures oslabily",
+    "reason": "Cash NDX −2,21 % (19. 11.); Nikkei −5,0 %, KOSPI −5,2 %; TAIEX za týden −17,5 %."
   },
-  "driver": "MSCI Asia-Pacific −3,2 %, týden −8,3 %; TAIEX za týden −16 %; Euro Stoxx 50 futures −1,6 %. Přetrvává tlak na čipy a AI financování.",
+  "driver": "MSCI Asia-Pacific −3,3 %, za týden −8,5 %; TAIEX týden −17,5 %. Pokračující redukce expozic v AI a polovodičích.",
   "news": [
     {
       "title": "Senát USA schválil 62:33 návrh zákona pro rychlejší povolování energetiky a datacenter; čeká na Sněmovnu.",
@@ -72,7 +72,7 @@
       "importanceScore": 57
     },
     {
-      "title": "Asie: MSCI Asia-Pacific −3,2 % (týden −8,3 %), Nikkei −4,1 %, KOSPI −4,4 %; TAIEX týden −16 %.",
+      "title": "Asie: MSCI Asia-Pacific −3,3 % (týden −8,5 %), Nikkei −5,0 %, KOSPI −5,2 %; TAIEX týden −17,5 %.",
       "time": "20. 11. 2026, 02:46 CET",
       "publishedAtPrague": "20. 11. 2026, 02:46",
       "publicationTimeVerified": true,
@@ -325,25 +325,6 @@
       "eventKey": "taiwan-short-selling-curbs-taiex-drop-20261119",
       "ndxRelevant": true,
       "importanceScore": 64
-    },
-    {
-      "title": "Korea: export čipů za Q1–Q3 +184 % y/y; 42 % vývozu země. Celkový vývoz překročil 1 bil. USD.",
-      "time": "19. 11. 2026, 07:29 CET",
-      "publishedAtPrague": "19. 11. 2026, 07:29",
-      "publicationTimeVerified": true,
-      "kind": "new",
-      "category": "semiconductors",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/south-korea-becomes-fourth-country-globally-hit-1-trillion-exports-ai-chip-boom-2026-11-19/",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/world/south-korea-becomes-fourth-country-globally-hit-1-trillion-exports-ai-chip-boom-2026-11-19/"
-        }
-      ],
-      "eventKey": "south-korea-chip-exports-184pct-yoy-2026q3-20261119",
-      "ndxRelevant": true,
-      "importanceScore": 57
     }
   ],
   "leaders": [
@@ -366,9 +347,9 @@
   },
   "forecast": {
     "athReturnPercent": 5,
-    "athReason": "Cash NDX −2,21 %; Asie −3,2 %. Podmínka: stabilizace AI čipů a financování datacenter.",
+    "athReason": "Cash NDX −2,21 %, slabé čipy; podmínka: stabilizace AI financování.",
     "downside": "−5 až −10 %",
-    "downsideReason": "AI CAPEX, financování datacenter a riziko vyšších sazeb."
+    "downsideReason": "AI CAPEX, dluhové financování datacenter a riziko vyšších sazeb."
   },
   "catalyst": {
     "event": "Michigan: listopadový spotřebitelský sentiment (finální)",
@@ -1548,6 +1529,24 @@
           "url": "https://www.reuters.com/markets/europe/global-markets-view-europe-2026-11-20/"
         }
       ]
+    },
+    {
+      "time": "20. 11. 2026 08:05 CET",
+      "summary": "Cash NDX 26 517,05 b. (−2,21 %, závěr 19. 11.); MSCI Asia-Pacific −3,3 % (týden −8,5 %); NQ futures −1,22 % (07:41 CET). Sentiment medvědí ↘.",
+      "sourceLinks": [
+        {
+          "label": "YCharts – cash NDX",
+          "url": "https://ycharts.com/indices/%5ENDX/level"
+        },
+        {
+          "label": "Reuters – Asie",
+          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-20/"
+        },
+        {
+          "label": "Google Finance – futures",
+          "url": "https://www.google.com/finance/quote/NQZ26:CME_EMINIS?hl=en"
+        }
+      ]
     }
   ],
   "history": [
@@ -1757,6 +1756,10 @@
     },
     {
       "time": "20. 11. 2026 07:07 CET",
+      "ndx": 26517.05
+    },
+    {
+      "time": "20. 11. 2026 08:05 CET",
       "ndx": 26517.05
     }
   ],
@@ -2332,6 +2335,10 @@
     {
       "name": "Reuters – evropské trhy, 20. 11.",
       "url": "https://www.reuters.com/markets/europe/global-markets-view-europe-2026-11-20/"
+    },
+    {
+      "name": "Google Finance – NQZ26",
+      "url": "https://www.google.com/finance/quote/NQZ26:CME_EMINIS?hl=en"
     }
   ]
 }
