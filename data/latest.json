@@ -1,18 +1,18 @@
 {
-  "updatedAtPrague": "20. 11. 2026 23:03 CET",
+  "updatedAtPrague": "21. 11. 2026 00:01 CET",
   "marketStatus": "Cash uzavřen; poslední závěr 20. 11. 2026, 22:00 CET",
   "ndx": {
     "value": 25028.98,
     "changePercent": -5.61,
     "ath": 31361.37,
-    "asOf": "20. 11. 2026, 22:00 CET – cash NDX, závěr (Google Finance; stav zobrazen 22:52 CET)"
+    "asOf": "20. 11. 2026, 22:00 CET – cash NDX, závěr (Yahoo Finance)"
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→ beze změny proti 22:05 CET",
-    "reason": "NDX −5,61 %, SOX −10,73 %, NVDA −14,01 %, AVGO −12,19 %; cash závěr 20. 11."
+    "trend": "→ beze změny proti 23:03 CET",
+    "reason": "NDX −5,61 %, SOX −10,73 %, NVDA −14,01 %, AVGO −12,19 %; závěr 20. 11."
   },
-  "driver": "SOX −10,73 %; NVDA −14,01 %, AVGO −12,19 %. Reuters: výprodej AI titulů a přechod investorů k defenzivním aktivům.",
+  "driver": "SOX −10,73 %; NVDA −14,01 %, AVGO −12,19 %. Reuters: prodej AI titulů, rotace do dluhopisů a hodnotových akcií.",
   "news": [
     {
       "title": "SEC podle Reuters prověřuje účetní postupy NVIDIA; zaměření vyšetřování zatím nebylo upřesněno.",
@@ -38,7 +38,7 @@
       "time": "20. 11. 2026, 22:17 CET",
       "publishedAtPrague": "20. 11. 2026, 22:17",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "market_reaction",
       "source": "Reuters",
       "url": "https://www.reuters.com/business/view-nasdaq-plunges-5-day-after-anthropic-debut-investors-still-believe-ai-2026-11-20/",
@@ -304,29 +304,6 @@
       "importanceScore": 78
     },
     {
-      "title": "NVDA: kalifornská prokuratura vydala vyšetřovací předvolání kvůli prověřování vývozu čipů do Číny a informování investorů.",
-      "time": "19. 11. 2026, 23:43 CET",
-      "publishedAtPrague": "19. 11. 2026, 23:43",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_regulation",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/legal/litigation/california-ag-subpoenas-nvidia-over-concerns-about-former-ceo-china-2026-11-19/",
-      "sourceLinks": [
-        {
-          "label": "Reuters – NVDA",
-          "url": "https://www.reuters.com/legal/litigation/california-ag-subpoenas-nvidia-over-concerns-about-former-ceo-china-2026-11-19/"
-        },
-        {
-          "label": "California DOJ",
-          "url": "https://oag.ca.gov/news/press-releases/attorney-general-bonta-serves-investigative-subpoena-nvidia"
-        }
-      ],
-      "eventKey": "california-ag-nvidia-investigative-subpoena-20261119",
-      "ndxRelevant": true,
-      "importanceScore": 80
-    },
-    {
       "title": "INTU FY27: tržby nově +8 až +9 % vs. původně +9 až +10 %; prodej Mailchimpu za 3,68 mld. USD.",
       "time": "20. 11. 2026, 11:37 CET",
       "publishedAtPrague": "20. 11. 2026, 11:37",
@@ -427,13 +404,13 @@
   },
   "forecast": {
     "athReturnPercent": 1,
-    "athReason": "Nutný růst 25,30 %; cash NDX −5,61 %, NVDA −14,01 %, SOX −10,73 %.",
+    "athReason": "Nutný růst 25,30 %; SOX −10,73 % a slabost čipů.",
     "downside": "−8 až −17 %",
-    "downsideReason": "Pokles polovodičů, financování datacenter a očekávání sazeb Fedu."
+    "downsideReason": "AI CAPEX, financování datacenter, čipy a očekávání sazeb Fedu."
   },
   "catalyst": {
-    "event": "S&P Global: Flash US PMI – listopad",
-    "timePrague": "23. 11. 2026 15:45 CET"
+    "event": "S&P Global Flash US PMI (listopad)",
+    "timePrague": "23. 11. 2026, 15:45 CET"
   },
   "archive": [
     {
@@ -1911,6 +1888,20 @@
           "url": "https://www.reuters.com/business/view-nasdaq-plunges-5-day-after-anthropic-debut-investors-still-believe-ai-2026-11-20/"
         }
       ]
+    },
+    {
+      "time": "21. 11. 2026 00:01 CET",
+      "summary": "Cash NDX 25 028,98 b. (−5,61 %, 20. 11., 22:00 CET); SOX −10,73 %, NVDA −14,01 %. Bez zásadních novinek po 23:03 CET.",
+      "sourceLinks": [
+        {
+          "label": "Yahoo Finance – cash NDX",
+          "url": "https://finance.yahoo.com/quote/%5ENDX/history/"
+        },
+        {
+          "label": "Reuters – závěr a AI výprodej",
+          "url": "https://www.reuters.com/business/view-nasdaq-plunges-5-day-after-anthropic-debut-investors-still-believe-ai-2026-11-20/"
+        }
+      ]
     }
   ],
   "history": [
@@ -2188,6 +2179,10 @@
     },
     {
       "time": "20. 11. 2026 23:03 CET",
+      "ndx": 25028.98
+    },
+    {
+      "time": "21. 11. 2026 00:01 CET",
       "ndx": 25028.98
     }
   ],
