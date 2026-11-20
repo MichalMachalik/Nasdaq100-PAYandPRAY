@@ -1,25 +1,44 @@
 {
-  "updatedAtPrague": "20. 11. 2026 21:01 CET",
-  "marketStatus": "Cash otevřen",
+  "updatedAtPrague": "20. 11. 2026 22:05 CET",
+  "marketStatus": "Cash uzavřen; závěrečná hodnota 20. 11. zatím neověřena",
   "ndx": {
-    "value": 25244.99,
-    "changePercent": -4.8,
+    "value": 24952.84,
+    "changePercent": -5.9,
     "ath": 31361.37,
-    "asOf": "20. 11. 2026 20:47:54 CET – cash NDX (Google Finance)"
+    "asOf": "20. 11. 2026 21:54:56 CET – cash NDX, poslední ověřená intradenní kotace (Google Finance)"
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "↘ zhoršení proti 20:01 CET",
-    "reason": "NDX −4,80 %, SOX −9,70 %, NVDA −10,71 %, AVGO −12,37 %."
+    "trend": "↘ zhoršení proti 21:01 CET",
+    "reason": "NDX −5,90 %, SOX −11,05 %, NVDA −12,57 %, AVGO −12,62 %."
   },
-  "driver": "SOX −9,70 % (20:47 CET); NVDA −10,71 % (20:39 CET), AVGO −12,37 % (20:54 CET). SEC podle Reuters prověřuje účetnictví NVIDIA.",
+  "driver": "SOX −11,05 % (21:49 CET); NVDA −12,57 % (21:43 CET), AVGO −12,62 % (21:54 CET). Reuters: SEC prověřuje účetnictví NVIDIA.",
   "news": [
+    {
+      "title": "Reuters: rotace z AI technologií do dluhopisů a hodnotových akcií; Nasdaq Composite během seance přes −4 %.",
+      "time": "20. 11. 2026, 21:13 CET",
+      "publishedAtPrague": "20. 11. 2026, 21:13",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "market_rotation",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/finance/ai-tech-rout-prompts-us-investors-rush-into-value-stocks-2026-11-20/",
+      "sourceLinks": [
+        {
+          "label": "Reuters – rotace z AI do value",
+          "url": "https://www.reuters.com/business/finance/ai-tech-rout-prompts-us-investors-rush-into-value-stocks-2026-11-20/"
+        }
+      ],
+      "eventKey": "ai-tech-selloff-bonds-value-rotation-20261120",
+      "ndxRelevant": true,
+      "importanceScore": 79
+    },
     {
       "title": "SEC podle Reuters prověřuje účetní postupy NVIDIA; zaměření vyšetřování zatím nebylo upřesněno.",
       "time": "20. 11. 2026, 20:13 CET",
       "publishedAtPrague": "20. 11. 2026, 20:13",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "ai_regulation",
       "source": "Reuters",
       "url": "https://www.reuters.com/world/us-secs-nvidia-probe-is-examining-potential-accounting-issues-sources-say-2026-11-20/",
@@ -38,7 +57,7 @@
       "time": "20. 11. 2026, 19:40 CET",
       "publishedAtPrague": "20. 11. 2026, 19:40",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "ai_regulation",
       "source": "Reuters",
       "url": "https://www.reuters.com/world/china/trump-says-only-older-chips-should-be-sold-china-2026-11-20/",
@@ -57,7 +76,7 @@
       "time": "20. 11. 2026, 19:13 CET",
       "publishedAtPrague": "20. 11. 2026, 19:13",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "ai_financing",
       "source": "Reuters",
       "url": "https://www.reuters.com/business/feds-cook-says-central-bank-watching-ai-industry-financing-2026-11-20/",
@@ -76,7 +95,7 @@
       "time": "20. 11. 2026, 19:08 CET",
       "publishedAtPrague": "20. 11. 2026, 19:08",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "ai_regulation",
       "source": "Reuters",
       "url": "https://www.reuters.com/technology/trump-says-us-penalize-firms-building-data-centers-abroad-2026-11-20/",
@@ -95,7 +114,7 @@
       "time": "20. 11. 2026, 18:18 CET",
       "publishedAtPrague": "20. 11. 2026, 18:18",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "monetary_policy",
       "source": "Reuters",
       "url": "https://www.reuters.com/business/feds-cook-says-rate-hikes-needed-lower-high-inflation-2026-11-20/",
@@ -118,7 +137,7 @@
       "time": "20. 11. 2026, 16:46 CET",
       "publishedAtPrague": "20. 11. 2026, 16:46",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "monetary_policy",
       "source": "Reuters",
       "url": "https://www.reuters.com/business/bessent-advocates-lower-fed-rate-hike-cites-energy-shock-2026-11-20/",
@@ -137,7 +156,7 @@
       "time": "20. 11. 2026, 16:31 CET",
       "publishedAtPrague": "20. 11. 2026, 16:31",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "semiconductors",
       "source": "Reuters",
       "url": "https://www.reuters.com/business/retail-consumer/nvidias-share-slide-knocks-it-below-alphabet-valuation-2026-11-20/",
@@ -156,7 +175,7 @@
       "time": "20. 11. 2026, 16:00 CET",
       "publishedAtPrague": "20. 11. 2026, 16:00",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "macro",
       "source": "University of Michigan",
       "url": "https://www.sca.isr.umich.edu/",
@@ -175,7 +194,7 @@
       "time": "20. 11. 2026, 11:46 UTC",
       "publishedAtPrague": "20. 11. 2026, 12:46",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "ai_infrastructure",
       "source": "Reuters",
       "url": "https://www.reuters.com/business/alphabet-aims-raise-419-billion-canadian-debt-offering-2026-11-20/",
@@ -213,7 +232,7 @@
       "time": "20. 11. 2026, 11:37 CET",
       "publishedAtPrague": "20. 11. 2026, 11:37",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "earnings",
       "source": "Reuters",
       "url": "https://www.reuters.com/legal/transactional/wall-st-futures-slip-anthropic-debut-fails-reassure-ai-investors-2026-11-20/",
@@ -236,7 +255,7 @@
       "time": "20. 11. 2026, 11:36 CET",
       "publishedAtPrague": "20. 11. 2026, 11:36",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "market_reaction",
       "source": "Reuters",
       "url": "https://www.reuters.com/business/wall-streets-fear-gauge-touches-seven-month-high-ai-worries-mount-2026-11-20/",
@@ -293,7 +312,7 @@
       "time": "20. 11. 2026, 04:17 CET",
       "publishedAtPrague": "20. 11. 2026, 04:17",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "ai_regulation",
       "source": "Reuters",
       "url": "https://www.reuters.com/legal/litigation/us-senate-passes-bipartisan-bill-speed-energy-infrastructure-projects-2026-11-20/",
@@ -312,7 +331,7 @@
       "time": "20. 11. 2026, 03:39 CET",
       "publishedAtPrague": "20. 11. 2026, 03:39",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "ai_infrastructure",
       "source": "Reuters",
       "url": "https://www.reuters.com/world/asia-pacific/anthropics-australian-data-centre-overwhelmingly-opposed-by-residents-2026-11-20/",
@@ -350,7 +369,7 @@
       "time": "20. 11. 2026, 00:41 CET",
       "publishedAtPrague": "20. 11. 2026, 00:41",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "monetary_policy",
       "source": "Reuters",
       "url": "https://www.reuters.com/business/feds-paulson-says-understanding-not-guidance-drives-effective-communication-2026-11-19/",
@@ -369,7 +388,7 @@
       "time": "19. 11. 2026, 23:43 CET",
       "publishedAtPrague": "19. 11. 2026, 23:43",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "ai_regulation",
       "source": "Reuters",
       "url": "https://www.reuters.com/legal/litigation/california-ag-subpoenas-nvidia-over-concerns-about-former-ceo-china-2026-11-19/",
@@ -386,40 +405,21 @@
       "eventKey": "california-ag-nvidia-investigative-subpoena-20261119",
       "ndxRelevant": true,
       "importanceScore": 80
-    },
-    {
-      "title": "Sněmovní výbor USA: schválené licence pro 879 tis. AI čipů NVDA a AMD do Číny (12/2025–05/2026); dodané množství neznámé.",
-      "time": "19. 11. 2026, 21:11 CET",
-      "publishedAtPrague": "19. 11. 2026, 21:11",
-      "publicationTimeVerified": true,
-      "kind": "new",
-      "category": "ai_regulation",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/license-information-ai-chips-sent-china-released-by-us-house-committee-2026-11-19/",
-      "sourceLinks": [
-        {
-          "label": "Reuters – licence čipů",
-          "url": "https://www.reuters.com/world/license-information-ai-chips-sent-china-released-by-us-house-committee-2026-11-19/"
-        }
-      ],
-      "eventKey": "us-house-chip-license-disclosure-879k-20261119",
-      "ndxRelevant": true,
-      "importanceScore": 72
     }
   ],
   "leaders": [
     {
       "ticker": "NVDA",
-      "changePercent": -10.71,
-      "impact": "vysoký – výprodej klíčové čipové složky; prověřování účetnictví SEC"
+      "changePercent": -12.57,
+      "impact": "vysoký – pokles čipové složky; Reuters: SEC prověřuje účetnictví"
     },
     {
       "ticker": "AVGO",
-      "changePercent": -12.37,
-      "impact": "vysoký – pokračující oslabení AI čipů"
+      "changePercent": -12.62,
+      "impact": "vysoký – pokles AI polovodičů"
     }
   ],
-  "macro": "US10Y | 20. 11. 19:48: 4,940 % | 19. 11.: 5,052 % | −11,2 bb",
+  "macro": "US10Y | 20. 11.: 4,928 % | 19. 11.: 5,052 % | −12,4 bb",
   "regulation": null,
   "technical": {
     "support": null,
@@ -427,9 +427,9 @@
   },
   "forecast": {
     "athReturnPercent": 1,
-    "athReason": "Nutný růst 24,23 %; SOX −9,70 %, NVDA −10,71 %, SEC prověřuje účetnictví NVIDIA.",
-    "downside": "−7 až −16 %",
-    "downsideReason": "Výprodej polovodičů, kontrola účetnictví NVIDIA, financování datacenter a riziko vyšších sazeb."
+    "athReason": "Nutný růst 25,68 %; SOX −11,05 %, NVDA −12,57 %, SEC prověřuje účetnictví NVIDIA.",
+    "downside": "−8 až −17 %",
+    "downsideReason": "Výprodej polovodičů, regulatorní tlak na NVIDIA, dluhové financování datacenter a Fed."
   },
   "catalyst": {
     "event": "S&P Global: Flash US PMI – listopad",
@@ -1875,6 +1875,24 @@
           "url": "https://www.reuters.com/technology/trump-says-us-penalize-firms-building-data-centers-abroad-2026-11-20/"
         }
       ]
+    },
+    {
+      "time": "20. 11. 2026 22:05 CET",
+      "summary": "Cash NDX 24 952,84 b. (−5,90 %, 21:54 CET, intraday); SOX −11,05 %, NVDA −12,57 %. Reuters 21:13 CET: rotace z AI do dluhopisů a hodnotových akcií.",
+      "sourceLinks": [
+        {
+          "label": "Google Finance – cash NDX",
+          "url": "https://www.google.com/finance/quote/NDX:INDEXNASDAQ?hl=en"
+        },
+        {
+          "label": "Google Finance – SOX",
+          "url": "https://www.google.com/finance/quote/SOX:INDEXNASDAQ?hl=en"
+        },
+        {
+          "label": "Reuters – AI a hodnotové akcie",
+          "url": "https://www.reuters.com/business/finance/ai-tech-rout-prompts-us-investors-rush-into-value-stocks-2026-11-20/"
+        }
+      ]
     }
   ],
   "history": [
@@ -2145,6 +2163,10 @@
     {
       "time": "20. 11. 2026 21:01 CET",
       "ndx": 25244.99
+    },
+    {
+      "time": "20. 11. 2026 22:05 CET",
+      "ndx": 24952.84
     }
   ],
   "sources": [
@@ -2795,6 +2817,10 @@
     {
       "name": "Reuters – Trump / datacentra",
       "url": "https://www.reuters.com/technology/trump-says-us-penalize-firms-building-data-centers-abroad-2026-11-20/"
+    },
+    {
+      "name": "Reuters – AI rotace",
+      "url": "https://www.reuters.com/business/finance/ai-tech-rout-prompts-us-investors-rush-into-value-stocks-2026-11-20/"
     }
   ]
 }
