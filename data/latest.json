@@ -406,7 +406,7 @@
     "athReturnPercent": 1,
     "athReason": "Nutný růst 25,30 %; SOX −10,73 % a slabost čipů.",
     "downside": "−9 až −16 %",
-    "downsideReason": "VXN 45,25 % (20. 11.): dolní kvartil koncové ceny NDX za 1 a 3 měsíce v lognormálním scénáři. Nejde o předpověď ani o maximum poklesu. Vstupy: Fed 3,75–4,00 %, US10Y 4,92 %, QQQ forward P/E 18,56×. Fundmentální EPS × P/E scénáře jsou nezávislou kontrolou, ne dalším přičítaným šokem.",
+    "downsideReason": "VXN 45,25 % (20. 11.): dolní kvartil koncové ceny NDX za 1 a 3 měsíce v lognormálním scénáři. Nejde o předpověď ani o maximum poklesu. Vstupy: Fed 3,75–4,00 %, US10Y 4,92 %, QQQ forward P/E 18,56×. Fundamentální EPS × P/E scénáře jsou nezávislou kontrolou, ne dalším přičítaným šokem.",
     "downsideModel": {
       "id": "ndx-evidence-volatility-v1",
       "dataFile": "data/risk-model.json",
@@ -415,7 +415,7 @@
       "modelQuantile": 0.25,
       "month1Pct": 9.21,
       "month3Pct": 16.32,
-      "warning": "Modelová 25% hladina koncové ceny při rizikově neutrálním lognormálním předpokladu; bez reálné kalibrace a bez záruky."
+      "warning": "Modelová 25% hladina koncové ceny při nulovém očekávaném jednoduchém výnosu a konstantní opční volatilitě; nikoli empiricky kalibrovaná pravděpodobnost ani záruka."
     }
   },
   "catalyst": {
