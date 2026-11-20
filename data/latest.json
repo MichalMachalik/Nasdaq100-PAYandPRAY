@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "20. 11. 2026 03:03 CET",
+  "updatedAtPrague": "20. 11. 2026 03:59 CET",
   "marketStatus": "Cash uzavřen – poslední závěr 19. 11. 2026",
   "ndx": {
     "value": 26517.05,
@@ -9,11 +9,30 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "↘ zhoršení proti 02:04 CET: pokles asijských akcií a Nasdaq futures",
-    "reason": "NDX −2,21 % (19. 11.); MSCI Asia-Pacific −2,5 %, Nikkei −4,1 %, KOSPI −4,7 % (20. 11.)."
+    "trend": "→ beze změny proti 03:03 CET; cash beze změny, asijské akcie a čipy pod tlakem",
+    "reason": "Cash NDX −2,21 % (19. 11.); MSCI Asia-Pacific −2,5 %, týden −7 %; Nikkei −4,1 %, KOSPI −4,7 % (20. 11.)."
   },
-  "driver": "MSCI Asia-Pacific −2,5 %, Nikkei −4,1 %, KOSPI −4,7 % po americkém výprodeji AI a čipů.",
+  "driver": "MSCI Asia-Pacific −2,5 % (týden −7 %); Nikkei −4,1 %, KOSPI −4,7 % při pokračující slabosti AI a čipů.",
   "news": [
+    {
+      "title": "Sněmovní výbor USA: schválené licence pro 879 tis. AI čipů NVDA a AMD do Číny (12/2025–05/2026); dodané množství neznámé.",
+      "time": "19. 11. 2026, 21:11 CET",
+      "publishedAtPrague": "19. 11. 2026, 21:11",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "ai_regulation",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/license-information-ai-chips-sent-china-released-by-us-house-committee-2026-11-19/",
+      "sourceLinks": [
+        {
+          "label": "Reuters – licence čipů",
+          "url": "https://www.reuters.com/world/license-information-ai-chips-sent-china-released-by-us-house-committee-2026-11-19/"
+        }
+      ],
+      "eventKey": "us-house-chip-license-disclosure-879k-20261119",
+      "ndxRelevant": true,
+      "importanceScore": 72
+    },
     {
       "title": "DXY u 103,9, maximum za 19 měsíců; US10Y v asijské seanci 5,016 %.",
       "time": "20. 11. 2026, 02:47 CET",
@@ -328,7 +347,7 @@
   },
   "forecast": {
     "athReturnPercent": 5,
-    "athReason": "NDX −2,21 %, asijské akcie pod tlakem; podmínka stabilizace čipů a AI financování.",
+    "athReason": "Cash NDX −2,21 %; asijské akcie dál oslabují. Podmínka: stabilizace čipů a AI financování.",
     "downside": "−5 až −10 %",
     "downsideReason": "AI CAPEX, financování datacenter a sazby."
   },
@@ -1442,6 +1461,24 @@
           "url": "https://www.reuters.com/business/dollar-near-19-month-peak-ai-jitters-sap-risk-appetite-2026-11-20/"
         }
       ]
+    },
+    {
+      "time": "20. 11. 2026 03:59 CET",
+      "summary": "Cash NDX 26 517,05 b. (−2,21 %, závěr 19. 11.); MSCI Asia-Pacific −2,5 % a týden −7 %. Exportní licence USA pro 879 tis. AI čipů schválené za 12/2025–05/2026; sentiment medvědí →.",
+      "sourceLinks": [
+        {
+          "label": "Yahoo – cash NDX",
+          "url": "https://finance.yahoo.com/quote/%5ENDX/history/"
+        },
+        {
+          "label": "Reuters – Asie",
+          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-20/"
+        },
+        {
+          "label": "Reuters – export čipů",
+          "url": "https://www.reuters.com/world/license-information-ai-chips-sent-china-released-by-us-house-committee-2026-11-19/"
+        }
+      ]
     }
   ],
   "history": [
@@ -1635,6 +1672,10 @@
     },
     {
       "time": "20. 11. 2026 03:03 CET",
+      "ndx": 26517.05
+    },
+    {
+      "time": "20. 11. 2026 03:59 CET",
       "ndx": 26517.05
     }
   ],
@@ -2186,6 +2227,10 @@
     {
       "name": "Reuters – USD 20. 11.",
       "url": "https://www.reuters.com/business/dollar-near-19-month-peak-ai-jitters-sap-risk-appetite-2026-11-20/"
+    },
+    {
+      "name": "Reuters – exportní licence 19. 11.",
+      "url": "https://www.reuters.com/world/license-information-ai-chips-sent-china-released-by-us-house-committee-2026-11-19/"
     }
   ]
 }
