@@ -1,6 +1,6 @@
 {
-  "updatedAtPrague": "20. 11. 2026 12:03 CET",
-  "marketStatus": "Cash uzavřen",
+  "updatedAtPrague": "20. 11. 2026 13:00 CET",
+  "marketStatus": "Cash NDX uzavřen; poslední závěr 19. 11. 2026 22:00 CET",
   "ndx": {
     "value": 26517.05,
     "changePercent": -2.21,
@@ -9,10 +9,10 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→ beze změny proti 11:01 CET",
-    "reason": "Cash NDX −2,21 % (19. 11.); VIX max. 30,04 (20. 11.), NVDA premarket −2,6 % a AMD/AVGO/MRVL/MU −3,5 až −5,5 %."
+    "trend": "↘ zhoršení proti 12:03 CET",
+    "reason": "Cash NDX −2,21 % (19. 11.); VIX max. 30,04 (20. 11.); NVDA premarket −2,6 %, AMD/AVGO/MRVL/MU −3,5 až −5,5 %."
   },
-  "driver": "USA premarket: NVDA −2,6 %, AMD/AVGO/MRVL/MU −3,5 až −5,5 %, AMZN/META/MSFT přes −1,8 %. VIX maximum 30,04.",
+  "driver": "USA premarket: NVDA −2,6 %, AMD/AVGO/MRVL/MU −3,5 až −5,5 %, AMZN/META/MSFT přes −1,8 %. AI CAPEX a náklady financování datacenter.",
   "news": [
     {
       "title": "USA premarket: NVDA −2,6 %, AMD/AVGO/MRVL/MU −3,5 až −5,5 %; AMZN/META/MSFT přes −1,8 %.",
@@ -329,40 +329,21 @@
       "eventKey": "bis-tsmc-china-foundry-export-rule-effective-20261119",
       "ndxRelevant": true,
       "importanceScore": 77
-    },
-    {
-      "title": "Anthropic (ANT): debut Nasdaq na 111,50 USD, 34,3 % nad IPO cenou 83 USD; valuace přes 2 bil. USD.",
-      "time": "19. 11. 2026, 12:08 CET",
-      "publishedAtPrague": "19. 11. 2026, 12:08",
-      "publicationTimeVerified": true,
-      "kind": "new",
-      "category": "ai_infrastructure",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/",
-      "sourceLinks": [
-        {
-          "label": "Reuters – debut",
-          "url": "https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/"
-        }
-      ],
-      "eventKey": "anthropic-nasdaq-debut-11150-20261119",
-      "ndxRelevant": true,
-      "importanceScore": 84
     }
   ],
   "leaders": [
     {
       "ticker": "NVDA",
       "changePercent": -3.3,
-      "impact": "Závěr 19. 11.; tlak na polovodiče"
+      "impact": "Cash závěr 19. 11.; polovodiče"
     },
     {
       "ticker": "AVGO",
       "changePercent": -2.09,
-      "impact": "Závěr 19. 11.; tlak na AI infrastrukturu"
+      "impact": "Cash závěr 19. 11.; AI infrastruktura"
     }
   ],
-  "macro": "US10Y | 19. 11.: 5,04 % | 18. 11.: 5,07 % | −3 bb",
+  "macro": "US10Y | 20. 11.: 4,991 %",
   "regulation": null,
   "technical": {
     "support": null,
@@ -370,9 +351,9 @@
   },
   "forecast": {
     "athReturnPercent": 5,
-    "athReason": "Cash NDX potřebuje růst 18,27 %; podmínka stabilizace polovodičů a financování AI CAPEX.",
+    "athReason": "Nutný růst 18,27 %; stabilizace polovodičů a financování AI CAPEX.",
     "downside": "−5 až −10 %",
-    "downsideReason": "AI CAPEX, financování datacenter a vyšší sazby."
+    "downsideReason": "AI CAPEX, náklady financování datacenter a Fed."
   },
   "catalyst": {
     "event": "Michigan: finální spotřebitelský sentiment za listopad",
@@ -1642,6 +1623,24 @@
           "url": "https://www.reuters.com/business/wall-streets-fear-gauge-touches-seven-month-high-ai-worries-mount-2026-11-20/"
         }
       ]
+    },
+    {
+      "time": "20. 11. 2026 13:00 CET",
+      "summary": "Cash NDX 26 517,05 b. (−2,21 %, závěr 19. 11.); NVDA premarket −2,6 %, polovodiče AMD/AVGO/MRVL/MU −3,5 až −5,5 %. US10Y 4,991 %. Sentiment medvědí ↘.",
+      "sourceLinks": [
+        {
+          "label": "Yahoo Finance – cash NDX",
+          "url": "https://finance.yahoo.com/quote/%5ENDX/history/"
+        },
+        {
+          "label": "Reuters – USA premarket",
+          "url": "https://www.reuters.com/legal/transactional/wall-st-futures-slip-anthropic-debut-fails-reassure-ai-investors-2026-11-20/"
+        },
+        {
+          "label": "MarketWatch – US10Y",
+          "url": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-nasdaq-anthropic-ipo-second-day-trading/card/treasury-yields-fall-below-5-as-sliding-risk-assets-bolster-demand-for-government-bonds-V0fIHwHPjKuujMfSbcHc"
+        }
+      ]
     }
   ],
   "history": [
@@ -1871,6 +1870,10 @@
     },
     {
       "time": "20. 11. 2026 12:03 CET",
+      "ndx": 26517.05
+    },
+    {
+      "time": "20. 11. 2026 13:00 CET",
       "ndx": 26517.05
     }
   ],
@@ -2470,6 +2473,10 @@
     {
       "name": "Reuters – VIX",
       "url": "https://www.reuters.com/business/wall-streets-fear-gauge-touches-seven-month-high-ai-worries-mount-2026-11-20/"
+    },
+    {
+      "name": "MarketWatch – US10Y",
+      "url": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-nasdaq-anthropic-ipo-second-day-trading/card/treasury-yields-fall-below-5-as-sliding-risk-assets-bolster-demand-for-government-bonds-V0fIHwHPjKuujMfSbcHc"
     }
   ]
 }
