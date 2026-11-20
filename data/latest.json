@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "20. 11. 2026 17:05 CET",
+  "updatedAtPrague": "20. 11. 2026 17:08 CET",
   "marketStatus": "Otevřeno – cash Nasdaq-100",
   "ndx": {
     "value": 25754.24,
@@ -10,9 +10,9 @@
   "sentiment": {
     "label": "Medvědí",
     "trend": "↘ zhoršení proti 16:00 CET",
-    "reason": "NDX −2,88 %, NVDA −6,80 %, AVGO −8,37 %; AI a polovodiče pod tlakem."
+    "reason": "NDX −2,88 %, NVDA −6,80 %, AVGO −8,37 % (poslední kotace 16:47 CET); tlak na AI CAPEX a jeho financování."
   },
-  "driver": "NVDA −6,80 %, AVGO −8,37 %; přeceňování návratnosti AI CAPEX a financování datacenter.",
+  "driver": "Výprodej NVDA a AVGO souvisí s obavami o návratnost AI CAPEX. Alphabet mezitím vydal dluhopisy za 6 mld. CAD, jejichž výnos je určen na obecné firemní účely.",
   "news": [
     {
       "title": "Alphabet předstihl NVIDIA v tržní kapitalizaci USA: 3,44 bil. USD vs. 3,4 bil. USD.",
@@ -51,6 +51,25 @@
       "eventKey": "michigan-final-sentiment-inflation-nov2026",
       "ndxRelevant": true,
       "importanceScore": 58
+    },
+    {
+      "title": "Alphabet vydal dluhopisy v Kanadě za 6 mld. CAD (4,19 mld. USD); výnos plánuje použít na obecné firemní účely.",
+      "time": "20. 11. 2026, 11:46 UTC",
+      "publishedAtPrague": "20. 11. 2026, 12:46",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "ai_infrastructure",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/alphabet-aims-raise-419-billion-canadian-debt-offering-2026-11-20/",
+      "sourceLinks": [
+        {
+          "label": "Reuters – dluhopisy Alphabet",
+          "url": "https://www.reuters.com/business/alphabet-aims-raise-419-billion-canadian-debt-offering-2026-11-20/"
+        }
+      ],
+      "eventKey": "alphabet-canadian-bond-issue-6bn-cad-20261120",
+      "ndxRelevant": true,
+      "importanceScore": 74
     },
     {
       "title": "USA premarket: NVDA −3,7 %, META −4,5 %, AMZN/MSFT přes −2 %; AMD/AVGO/MRVL/MU −3,6 až −7 %.",
@@ -1724,6 +1743,24 @@
           "url": "https://www.sca.isr.umich.edu/"
         }
       ]
+    },
+    {
+      "time": "20. 11. 2026 17:08 CET",
+      "summary": "Analytický update k poslední kotaci 16:47 CET: NDX 25 754,24 b. (−2,88 %), NVDA −6,80 %, AVGO −8,37 %. Nově doložena dluhopisová emise Alphabet 6 mld. CAD; Michigan final 51,5.",
+      "sourceLinks": [
+        {
+          "label": "Investing.com – cash NDX",
+          "url": "https://www.investing.com/indices/nq-100"
+        },
+        {
+          "label": "Reuters – Alphabet dluhopisy",
+          "url": "https://www.reuters.com/business/alphabet-aims-raise-419-billion-canadian-debt-offering-2026-11-20/"
+        },
+        {
+          "label": "Michigan – listopad final",
+          "url": "https://www.sca.isr.umich.edu/"
+        }
+      ]
     }
   ],
   "history": [
@@ -1973,6 +2010,10 @@
     },
     {
       "time": "20. 11. 2026 17:05 CET",
+      "ndx": 25754.24
+    },
+    {
+      "time": "20. 11. 2026 17:08 CET",
       "ndx": 25754.24
     }
   ],
@@ -2588,6 +2629,10 @@
     {
       "name": "Fed – kalendář listopad",
       "url": "https://www.federalreserve.gov/newsevents/2026-November.htm"
+    },
+    {
+      "name": "Reuters – Alphabet dluhopisy 6 mld. CAD",
+      "url": "https://www.reuters.com/business/alphabet-aims-raise-419-billion-canadian-debt-offering-2026-11-20/"
     }
   ]
 }
