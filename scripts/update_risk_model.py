@@ -17,8 +17,8 @@ from zoneinfo import ZoneInfo
 OUT = pathlib.Path("data/risk-model.json")
 VXN_URL = "https://query1.finance.yahoo.com/v8/finance/chart/%5EVXN?range=1mo&interval=1d"
 TREASURY_URL = ("https://home.treasury.gov/resource-center/data-chart-center/"
-                "interest-rates/daily-treasury-rates.csv/2026/all"
-                "?type=daily_treasury_yield_curve&field_tdr_date_value=2026&page&_format=csv")
+                "interest-rates/daily-treasury-rates.csv/{year}/all"
+                "?type=daily_treasury_yield_curve&field_tdr_date_value={year}&page&_format=csv")
 HEADER = {"User-Agent": "Mozilla/5.0 (compatible; PayAndPrayEvidenceModel/1.0)",
           "Accept": "application/json,text/csv,*/*"}
 
@@ -59,7 +59,8 @@ def parse_treasury(text, now):
             obs = datetime.strptime(stamp, "%m/%d/%Y").date()
             if not 0 <= (now.date() - obs).days <= 7:
                 continue
-            values = [float((line.get(key) or "").strip()) for key in ("2-year", "10-year", "30-year")]
+            values = [float(str(line.get(short) or line.get(long) or "").strip())
+                      for short, long in (("2 Yr", "2-year"), ("10 Yr", "10-year"), ("30 Yr", "30-year"))]
             if not all(math.isfinite(x) and 0.5 <= x <= 15 for x in values):
                 continue
             candidates.append((obs.isoformat(), values))
@@ -95,7 +96,7 @@ def main():
     except Exception as exc:
         failures.append(f"VXN: {exc}")
     try:
-        obs, rates = parse_treasury(fetch(TREASURY_URL), now)
+        obs, rates = parse_treasury(fetch(TREASURY_URL.format(year=now.year)), now)
         if obs >= market["treasuryAsOf"]:
             previous = (market.get("treasury2yPct"), market.get("treasury10yPct"),
                         market.get("treasury30yPct"))
