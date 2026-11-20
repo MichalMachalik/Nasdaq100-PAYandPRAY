@@ -1,19 +1,57 @@
 {
-  "updatedAtPrague": "20. 11. 2026 02:04 CET",
-  "marketStatus": "Cash uzavřen",
+  "updatedAtPrague": "20. 11. 2026 03:03 CET",
+  "marketStatus": "Cash uzavřen – poslední závěr 19. 11. 2026",
   "ndx": {
     "value": 26517.05,
     "changePercent": -2.21,
     "ath": 31361.37,
-    "asOf": "19. 11. 2026 22:00 CET – cash NDX, poslední závěr (YCharts)"
+    "asOf": "19. 11. 2026 22:00 CET – cash NDX, poslední závěr"
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→ beze změny proti 20. 11. 2026 00:58 CET",
-    "reason": "NDX −2,21 %, SOX −2,41 %, NVDA −3,30 %, AVGO −2,09 %; závěr 19. 11."
+    "trend": "↘ zhoršení proti 02:04 CET: pokles asijských akcií a Nasdaq futures",
+    "reason": "NDX −2,21 % (19. 11.); MSCI Asia-Pacific −2,5 %, Nikkei −4,1 %, KOSPI −4,7 % (20. 11.)."
   },
-  "driver": "SOX −2,41 %, NVDA −3,30 % a AVGO −2,09 % při plošném výprodeji polovodičů 19. 11.",
+  "driver": "MSCI Asia-Pacific −2,5 %, Nikkei −4,1 %, KOSPI −4,7 % po americkém výprodeji AI a čipů.",
   "news": [
+    {
+      "title": "DXY u 103,9, maximum za 19 měsíců; US10Y v asijské seanci 5,016 %.",
+      "time": "20. 11. 2026, 02:47 CET",
+      "publishedAtPrague": "20. 11. 2026, 02:47",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "macro",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/dollar-near-19-month-peak-ai-jitters-sap-risk-appetite-2026-11-20/",
+      "sourceLinks": [
+        {
+          "label": "Reuters – FX",
+          "url": "https://www.reuters.com/business/dollar-near-19-month-peak-ai-jitters-sap-risk-appetite-2026-11-20/"
+        }
+      ],
+      "eventKey": "usd-19-month-high-ai-risk-aversion-20261120",
+      "ndxRelevant": true,
+      "importanceScore": 57
+    },
+    {
+      "title": "Asie: MSCI Asia-Pacific −2,5 %, Nikkei −4,1 %, KOSPI −4,7 %; Nasdaq futures −0,7 %.",
+      "time": "20. 11. 2026, 02:46 CET",
+      "publishedAtPrague": "20. 11. 2026, 02:46",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "market_reaction",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-20/",
+      "sourceLinks": [
+        {
+          "label": "Reuters – Asie",
+          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-20/"
+        }
+      ],
+      "eventKey": "asia-equities-selloff-nq-futures-20261120",
+      "ndxRelevant": true,
+      "importanceScore": 71
+    },
     {
       "title": "Fed Barr: inflace příliš vysoká; očekává další zvýšení sazeb. Současně varuje před oslabením bankovního dohledu.",
       "time": "19. 11. 2026, 20:54 CET",
@@ -268,37 +306,18 @@
       "eventKey": "delta-electronics-india-ai-datacenter-triple-revenue-20261119",
       "ndxRelevant": true,
       "importanceScore": 48
-    },
-    {
-      "title": "Asijské čipy: TSMC, Samsung a SK Hynix přibližně −2 %; Nasdaq futures téměř +1 %.",
-      "time": "19. 11. 2026, 02:53",
-      "publishedAtPrague": "19. 11. 2026, 02:53",
-      "publicationTimeVerified": true,
-      "kind": "continuation",
-      "category": "semiconductors",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-11-19/",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-11-19/"
-        }
-      ],
-      "eventKey": "asian-chipmakers-decline-anthropic-ipo-20261119",
-      "ndxRelevant": true,
-      "importanceScore": 59
     }
   ],
   "leaders": [
     {
       "ticker": "NVDA",
       "changePercent": -3.3,
-      "impact": "Vysoký, negativní; závěr 19. 11. 2026"
+      "impact": "Vysoký; závěr 19. 11."
     },
     {
       "ticker": "AVGO",
       "changePercent": -2.09,
-      "impact": "Vysoký, negativní; závěr 19. 11. 2026"
+      "impact": "Vysoký; závěr 19. 11."
     }
   ],
   "macro": "US10Y | 19. 11.: 5,04 % | 18. 11.: 5,07 % | −3 bb",
@@ -309,7 +328,7 @@
   },
   "forecast": {
     "athReturnPercent": 5,
-    "athReason": "NDX −2,21 %, SOX −2,41 %; podmínka stabilizace čipů a financování AI.",
+    "athReason": "NDX −2,21 %, asijské akcie pod tlakem; podmínka stabilizace čipů a AI financování.",
     "downside": "−5 až −10 %",
     "downsideReason": "AI CAPEX, financování datacenter a sazby."
   },
@@ -1405,6 +1424,24 @@
           "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value=2026&type=daily_treasury_yield_curve"
         }
       ]
+    },
+    {
+      "time": "20. 11. 2026 03:03 CET",
+      "summary": "Cash NDX 26 517,05 b. (−2,21 %, závěr 19. 11.); MSCI Asia-Pacific −2,5 %, Nasdaq futures −0,7 %, DXY u 103,9. Sentiment medvědí ↘.",
+      "sourceLinks": [
+        {
+          "label": "YCharts – NDX",
+          "url": "https://ycharts.com/indices/%5ENDX/level"
+        },
+        {
+          "label": "Reuters – Asie",
+          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-20/"
+        },
+        {
+          "label": "Reuters – DXY",
+          "url": "https://www.reuters.com/business/dollar-near-19-month-peak-ai-jitters-sap-risk-appetite-2026-11-20/"
+        }
+      ]
     }
   ],
   "history": [
@@ -1594,6 +1631,10 @@
     },
     {
       "time": "20. 11. 2026 02:04 CET",
+      "ndx": 26517.05
+    },
+    {
+      "time": "20. 11. 2026 03:03 CET",
       "ndx": 26517.05
     }
   ],
@@ -2137,6 +2178,14 @@
     {
       "name": "U.S. Treasury – daily par yield curve",
       "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+    },
+    {
+      "name": "Reuters – Asie 20. 11.",
+      "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-20/"
+    },
+    {
+      "name": "Reuters – USD 20. 11.",
+      "url": "https://www.reuters.com/business/dollar-near-19-month-peak-ai-jitters-sap-risk-appetite-2026-11-20/"
     }
   ]
 }
