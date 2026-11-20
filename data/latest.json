@@ -1,19 +1,57 @@
 {
-  "updatedAtPrague": "20. 11. 2026 19:00 CET",
-  "marketStatus": "Otevřeno – cash Nasdaq-100",
+  "updatedAtPrague": "20. 11. 2026 20:01 CET",
+  "marketStatus": "Cash otevřen",
   "ndx": {
-    "value": 25476.04,
-    "changePercent": -3.93,
+    "value": 25497.38,
+    "changePercent": -3.85,
     "ath": 31361.37,
-    "asOf": "20. 11. 2026 18:47:28 CET – cash NDX (Google Finance)"
+    "asOf": "20. 11. 2026 19:50 CET – cash NDX (Google Finance)"
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "↘ zhoršení proti 18:05 CET",
-    "reason": "NDX −3,93 %, SOX −8,93 %, NVDA −7,27 %, AVGO −11,46 %."
+    "trend": "↗ mírné zlepšení proti 19:00 CET",
+    "reason": "NDX −3,85 %, SOX −8,11 %, NVDA −6,99 %, AVGO −11,72 %."
   },
-  "driver": "SOX −8,93 % (18:47 CET); NVDA −7,27 % (18:40 CET), AVGO −11,46 % (18:43 CET). Pokračuje výprodej polovodičů a přeceňování AI investic.",
+  "driver": "SOX −8,11 % (19:44 CET); NVDA −6,99 % (19:40 CET), AVGO −11,72 % (19:44 CET). Výprodej polovodičů a tlak na financování AI infrastruktury.",
   "news": [
+    {
+      "title": "Trump: USA chce do Číny prodávat jen starší čipy; o možné dohodě s Čínou se jedná.",
+      "time": "20. 11. 2026, 19:40 CET",
+      "publishedAtPrague": "20. 11. 2026, 19:40",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "ai_regulation",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/china/trump-says-only-older-chips-should-be-sold-china-2026-11-20/",
+      "sourceLinks": [
+        {
+          "label": "Reuters – výrok Trumpa / export čipů",
+          "url": "https://www.reuters.com/world/china/trump-says-only-older-chips-should-be-sold-china-2026-11-20/"
+        }
+      ],
+      "eventKey": "us-trump-older-ai-chips-export-china-statement-20261120",
+      "ndxRelevant": true,
+      "importanceScore": 76
+    },
+    {
+      "title": "Fed Cook: centrální banka sleduje neprůhledné a provázané financování AI infrastruktury.",
+      "time": "20. 11. 2026, 19:13 CET",
+      "publishedAtPrague": "20. 11. 2026, 19:13",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "ai_financing",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/feds-cook-says-central-bank-watching-ai-industry-financing-2026-11-20/",
+      "sourceLinks": [
+        {
+          "label": "Reuters – Cook / AI financování",
+          "url": "https://www.reuters.com/business/feds-cook-says-central-bank-watching-ai-industry-financing-2026-11-20/"
+        }
+      ],
+      "eventKey": "fed-cook-ai-financing-complexity-20261120",
+      "ndxRelevant": true,
+      "importanceScore": 81
+    },
     {
       "title": "Fed Cook: současné sazby nestačí ke snížení inflace; odhad říjnového PCE 3,8 % y/y a core 3,2 % y/y.",
       "time": "20. 11. 2026, 18:18 CET",
@@ -367,37 +405,18 @@
       "eventKey": "fed-barr-inflation-rate-hikes-20261119",
       "ndxRelevant": true,
       "importanceScore": 72
-    },
-    {
-      "title": "Fed Goolsbee: investice do AI datacenter a spotřeba mohou přehřívat americkou ekonomiku.",
-      "time": "19. 11. 2026, 19:57 CET",
-      "publishedAtPrague": "19. 11. 2026, 19:57",
-      "publicationTimeVerified": true,
-      "kind": "new",
-      "category": "monetary_policy",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/goolsbee-says-feds-job-right-now-is-keep-ai-surge-overheating-economy-2026-11-19/",
-      "eventKey": "fed-goolsbee-ai-overheating-20261119",
-      "ndxRelevant": true,
-      "importanceScore": 76,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/business/goolsbee-says-feds-job-right-now-is-keep-ai-surge-overheating-economy-2026-11-19/"
-        }
-      ]
     }
   ],
   "leaders": [
     {
       "ticker": "NVDA",
-      "changePercent": -7.27,
-      "impact": "vysoký – pokles nejvýznamnější čipové složky"
+      "changePercent": -6.99,
+      "impact": "vysoký – pokles klíčové čipové složky"
     },
     {
       "ticker": "AVGO",
-      "changePercent": -11.46,
-      "impact": "vysoký – výprodej čipové infrastruktury"
+      "changePercent": -11.72,
+      "impact": "vysoký – oslabení čipové infrastruktury"
     }
   ],
   "macro": "US10Y | 20. 11. 17:58: 4,944 % | 19. 11.: 5,052 % | −10,8 bb",
@@ -408,9 +427,9 @@
   },
   "forecast": {
     "athReturnPercent": 2,
-    "athReason": "Nutný růst 23,10 %; SOX −8,93 %, AVGO −11,46 %, Fed Cook požaduje další zpřísnění.",
+    "athReason": "Nutný růst 23,00 %; SOX −8,11 %, AVGO −11,72 %, Fed sleduje financování AI.",
     "downside": "−6 až −14 %",
-    "downsideReason": "Výprodej polovodičů, AI CAPEX a očekávání dalšího zvýšení sazeb Fedu."
+    "downsideReason": "Přecenění polovodičů, financování AI infrastruktury a očekávání sazeb Fedu."
   },
   "catalyst": {
     "event": "S&P Global: Flash US PMI – listopad",
@@ -1820,6 +1839,24 @@
           "url": "https://www.federalreserve.gov/newsevents/speech/cook20261120a.htm"
         }
       ]
+    },
+    {
+      "time": "20. 11. 2026 20:01 CET",
+      "summary": "Cash NDX 25 497,38 b. (−3,85 %, 19:50 CET), SOX −8,11 %, NVDA −6,99 %, AVGO −11,72 %. Fed Cook: kontrola financování AI; Trump: pouze starší čipy do Číny.",
+      "sourceLinks": [
+        {
+          "label": "Google Finance – cash NDX",
+          "url": "https://www.google.com/finance/quote/NDX:INDEXNASDAQ?hl=en"
+        },
+        {
+          "label": "Reuters – Fed Cook / AI financování",
+          "url": "https://www.reuters.com/business/feds-cook-says-central-bank-watching-ai-industry-financing-2026-11-20/"
+        },
+        {
+          "label": "Reuters – Trump / export čipů",
+          "url": "https://www.reuters.com/world/china/trump-says-only-older-chips-should-be-sold-china-2026-11-20/"
+        }
+      ]
     }
   ],
   "history": [
@@ -2082,6 +2119,10 @@
     {
       "time": "20. 11. 2026 19:00 CET",
       "ndx": 25476.04
+    },
+    {
+      "time": "20. 11. 2026 20:01 CET",
+      "ndx": 25497.38
     }
   ],
   "sources": [
@@ -2716,6 +2757,14 @@
     {
       "name": "S&P Global PMI release calendar",
       "url": "https://www.pmi.spglobal.com/Public/Home/PDF/UK_Rel_Dates"
+    },
+    {
+      "name": "Reuters – Fed Cook / AI financování 20. 11.",
+      "url": "https://www.reuters.com/business/feds-cook-says-central-bank-watching-ai-industry-financing-2026-11-20/"
+    },
+    {
+      "name": "Reuters – Trump / export čipů 20. 11.",
+      "url": "https://www.reuters.com/world/china/trump-says-only-older-chips-should-be-sold-china-2026-11-20/"
     }
   ]
 }
