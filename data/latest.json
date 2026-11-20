@@ -1,18 +1,18 @@
 {
-  "updatedAtPrague": "20. 11. 2026 00:58 CET",
+  "updatedAtPrague": "20. 11. 2026 02:04 CET",
   "marketStatus": "Cash uzavřen",
   "ndx": {
     "value": 26517.05,
     "changePercent": -2.21,
     "ath": 31361.37,
-    "asOf": "19. 11. 2026 22:00 CET – cash NDX, poslední závěr (Yahoo Finance)"
+    "asOf": "19. 11. 2026 22:00 CET – cash NDX, poslední závěr (YCharts)"
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→ beze změny proti 20. 11. 2026 00:02 CET",
-    "reason": "NDX −2,21 %, SOX −2,41 %, NVDA −3,30 % a AVGO −2,09 %; uzavření 19. 11."
+    "trend": "→ beze změny proti 20. 11. 2026 00:58 CET",
+    "reason": "NDX −2,21 %, SOX −2,41 %, NVDA −3,30 %, AVGO −2,09 %; závěr 19. 11."
   },
-  "driver": "NDX −2,21 %, SOX −2,41 %; Reuters: výprodej AI a čipů po debutu Anthropic, tlak valuací a CAPEX datacenter.",
+  "driver": "SOX −2,41 %, NVDA −3,30 % a AVGO −2,09 % při plošném výprodeji polovodičů 19. 11.",
   "news": [
     {
       "title": "Fed Barr: inflace příliš vysoká; očekává další zvýšení sazeb. Současně varuje před oslabením bankovního dohledu.",
@@ -309,7 +309,7 @@
   },
   "forecast": {
     "athReturnPercent": 5,
-    "athReason": "NDX −2,21 %, SOX −2,41 %; podmínka stabilizace AI financování a návratu růstu čipů.",
+    "athReason": "NDX −2,21 %, SOX −2,41 %; podmínka stabilizace čipů a financování AI.",
     "downside": "−5 až −10 %",
     "downsideReason": "AI CAPEX, financování datacenter a sazby."
   },
@@ -1387,6 +1387,24 @@
           "url": "https://www.reuters.com/business/nasdaq-futures-jump-anthropics-record-ipo-pricing-fuels-hopes-strong-debut-2026-11-19/"
         }
       ]
+    },
+    {
+      "time": "20. 11. 2026 02:04 CET",
+      "summary": "Cash NDX 26 517,05 b. (závěr 19. 11., −2,21 %, −15,45 % od historického maxima); NVDA −3,30 %, AVGO −2,09 %. US10Y 5,04 % (−3 bb); medvědí →. Bez zásadních novinek.",
+      "sourceLinks": [
+        {
+          "label": "YCharts NDX",
+          "url": "https://ycharts.com/indices/%5ENDX/level"
+        },
+        {
+          "label": "Yahoo NVDA",
+          "url": "https://finance.yahoo.com/quote/NVDA/history/"
+        },
+        {
+          "label": "U.S. Treasury",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value=2026&type=daily_treasury_yield_curve"
+        }
+      ]
     }
   ],
   "history": [
@@ -1572,6 +1590,10 @@
     },
     {
       "time": "20. 11. 2026 00:58 CET",
+      "ndx": 26517.05
+    },
+    {
+      "time": "20. 11. 2026 02:04 CET",
       "ndx": 26517.05
     }
   ],
