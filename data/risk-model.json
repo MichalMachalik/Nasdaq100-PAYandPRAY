@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "id": "ndx-evidence-volatility-v1",
+  "title": "NDX 1–3měsíční poklesový scénář založený na cenách opcí a fundamentálních předpokladech",
+  "definition": "Orientační dolní kvartil KONCOVÉ ceny v horizontu 1 a 3 měsíců, nikoli předpověď směru ani intraperiodického minima.",
+  "observedAtUtc": "2026-11-20T21:15:00Z",
+  "market": {
+    "instrument": "NDX cash; QQQ valuation is a proxy, not the index itself",
+    "ndxClose": 25028.98,
+    "ndxCloseAsOf": "2026-11-20",
+    "ndxAth": 31361.37,
+    "vxnPct": 45.25,
+    "vxnAsOf": "2026-11-20",
+    "vxnSource": "https://www.google.com/finance/quote/VXN:INDEXCBOE?hl=en",
+    "treasury2yPct": 4.63,
+    "treasury10yPct": 4.92,
+    "treasury30yPct": 5.31,
+    "treasuryAsOf": "2026-11-20",
+    "treasurySource": "https://home.treasury.gov/",
+    "fedLowerPct": 3.75,
+    "fedUpperPct": 4,
+    "fedPolicyAsOf": "2026-10-28",
+    "fedPolicySource": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm",
+    "nextFedMoveMarketPricing": "Zvýšení o 25 bb v prosinci mělo podle tržních odhadů 19. 11. asi 95% pravděpodobnost; jde o tehdejší odhad, nikoli dnešní aktuální kotaci.",
+    "nextFedMovePricingAsOf": "2026-11-19",
+    "nextFedMovePricingSource": "https://apnews.com/article/9e72f3b6e3484173471cc382d6918de0",
+    "highYieldOasPct": 3.52,
+    "highYieldOasAsOf": "2026-11-19",
+    "highYieldOasPctAt20261006": 3.03,
+    "highYieldOasSource": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2",
+    "qqqForwardPE": 18.56,
+    "qqqForwardPEAsOf": "2026-11-20",
+    "qqqForwardPESource": "https://stockanalysis.com/etf/qqq/",
+    "citadelNasdaqForwardPE": 19.1,
+    "citadelNasdaqForwardPEAsOf": "2026-11-04",
+    "citadelSource": "https://www.citadelsecurities.com/news-and-insights/global-market-intelligence/november-the-setup-improves/?series=global-market-intelligence"
+  },
+  "earnings": [
+    {
+      "ticker": "NVDA",
+      "quarter": "FY27 Q3",
+      "revenueBillionUsd": 115.8,
+      "revenueYoYPct": 103,
+      "nextQuarterRevenueMidpointBillionUsd": 130,
+      "nextQuarterRevenuePlusMinusPct": 3,
+      "nextQuarterMarginPctLow": 71,
+      "nextQuarterMarginPctHigh": 72,
+      "source": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/default.aspx"
+    },
+    {
+      "ticker": "MSFT",
+      "quarter": "FY27 Q1",
+      "revenueBillionUsd": 92.3,
+      "revenueYoYPct": 19,
+      "source": "https://www.microsoft.com/en-us/investor/earnings/fy-2027-q1/press-release-webcast"
+    },
+    {
+      "ticker": "GOOGL",
+      "quarter": "2026 Q3",
+      "revenueBillionUsd": 127.6,
+      "revenueYoYPct": 25,
+      "cloudRevenueYoYPct": 103,
+      "source": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/googexhibit991q32026.htm"
+    },
+    {
+      "ticker": "AMZN",
+      "quarter": "2026 Q3",
+      "revenueBillionUsd": 201.9,
+      "revenueYoYPct": 12,
+      "awsRevenueYoYPct": 39.3,
+      "nextQuarterRevenueLowBillionUsd": 240,
+      "nextQuarterRevenueHighBillionUsd": 247,
+      "annualCapexBillionUsd": 220,
+      "source": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/"
+    },
+    {
+      "ticker": "META",
+      "quarter": "2026 Q3",
+      "revenueBillionUsd": 64.6,
+      "revenueYoYPct": 26,
+      "nextQuarterRevenueLowBillionUsd": 73,
+      "nextQuarterRevenueHighBillionUsd": 76,
+      "source": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx"
+    },
+    {
+      "ticker": "AMD",
+      "quarter": "2026 Q3",
+      "revenueBillionUsd": 13.4,
+      "revenueYoYPct": 45,
+      "nextQuarterRevenueMidpointBillionUsd": 17,
+      "nextQuarterRevenuePlusMinusPct": 3,
+      "source": "https://newsroom.amd.com/news/amd-reports-third-quarter-2026-earnings/"
+    },
+    {
+      "ticker": "AVGO",
+      "quarter": "FY26 Q3",
+      "revenueBillionUsd": 29.6,
+      "revenueYoYPct": 86,
+      "nextQuarterRevenueMidpointBillionUsd": 34.8,
+      "source": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-third-quarter-fiscal-year-2026-financial"
+    }
+  ],
+  "model": {
+    "version": "1.0",
+    "distribution": "lognormal terminal price, zero expected simple return, constant annualized implied volatility",
+    "percentile": 25,
+    "months": [
+      1,
+      3
+    ],
+    "z25": -0.6744897501960817,
+    "formula": "P25/P0 = exp(-0.5*(VXN/100)^2*(months/12) - 0.67448975*(VXN/100)*sqrt(months/12))",
+    "useMarketPriceForScale": "Current cash NDX from data/latest.json; no futures/cash mixing",
+    "annualization": "12 calendar months; VXN reflects roughly 30 calendar days and is not a guaranteed 3-month forward volatility",
+    "maxVolatilityAgeCalendarDays": 7,
+    "numericScenarioIs": "Option-implied terminal downside illustration under an uncalibrated lognormal distribution. NOT a forecast of market direction, true 25% real-world odds, or the maximum drawdown.",
+    "valuationShockCheck": {
+      "description": "Independent fundamental EPS × forward P/E test; inputs are explicitly chosen shocks, NOT observed future changes and NOT added to the VXN outcome.",
+      "bear": {
+        "earningsRevisionPct": -3,
+        "forwardPEChangePct": -8
+      },
+      "stress": {
+        "earningsRevisionPct": -6,
+        "forwardPEChangePct": -14
+      }
+    },
+    "signalsAlreadyReflected": [
+      "NDX >20% below historical intraday peak",
+      "Expected December Fed rate hike substantially priced in",
+      "AI capex/semiconductor valuation compression already under way"
+    ],
+    "futureTriggers": [
+      "Material revision of forward EPS forecasts",
+      "Unexpected changes in 2Y/10Y UST yields and implied Fed path",
+      "Credit-spread widening beyond known snapshot",
+      "Corporate AI investment ROI and cash-flow guidance changes"
+    ],
+    "stalePolicy": "If VXN update is unavailable or older than 7 calendar days, keep the report's last authored scenario and display a stale-data warning. Never relabel an old VXN figure as current."
+  }
+}
