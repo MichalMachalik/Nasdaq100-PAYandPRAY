@@ -1,6 +1,6 @@
 {
-  "updatedAtPrague": "20. 11. 2026 13:00 CET",
-  "marketStatus": "Cash NDX uzavřen; poslední závěr 19. 11. 2026 22:00 CET",
+  "updatedAtPrague": "20. 11. 2026 13:56 CET",
+  "marketStatus": "cash uzavřen",
   "ndx": {
     "value": 26517.05,
     "changePercent": -2.21,
@@ -9,10 +9,10 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "↘ zhoršení proti 12:03 CET",
-    "reason": "Cash NDX −2,21 % (19. 11.); VIX max. 30,04 (20. 11.); NVDA premarket −2,6 %, AMD/AVGO/MRVL/MU −3,5 až −5,5 %."
+    "trend": "↘ zhoršení proti 13:00 CET",
+    "reason": "NVDA −2,2 %; AMD/AVGO/MRVL/MU −2,2 až −6,6 % (premarket 20. 11.); VIX dosáhl 30,04."
   },
-  "driver": "USA premarket: NVDA −2,6 %, AMD/AVGO/MRVL/MU −3,5 až −5,5 %, AMZN/META/MSFT přes −1,8 %. AI CAPEX a náklady financování datacenter.",
+  "driver": "Pokračující tlak na čipy: NVDA −2,2 %, AMD/AVGO/MRVL/MU −2,2 až −6,6 % v premarketu; obavy z financování AI CAPEX.",
   "news": [
     {
       "title": "USA premarket: NVDA −2,6 %, AMD/AVGO/MRVL/MU −3,5 až −5,5 %; AMZN/META/MSFT přes −1,8 %.",
@@ -34,6 +34,29 @@
       "importanceScore": 77
     },
     {
+      "title": "INTU FY27: tržby nově +8 až +9 % vs. původně +9 až +10 %; prodej Mailchimpu za 3,68 mld. USD.",
+      "time": "20. 11. 2026, 11:37 CET",
+      "publishedAtPrague": "20. 11. 2026, 11:37",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "earnings",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/legal/transactional/wall-st-futures-slip-anthropic-debut-fails-reassure-ai-investors-2026-11-20/",
+      "sourceLinks": [
+        {
+          "label": "Reuters – INTU",
+          "url": "https://www.reuters.com/legal/transactional/wall-st-futures-slip-anthropic-debut-fails-reassure-ai-investors-2026-11-20/"
+        },
+        {
+          "label": "Intuit IR",
+          "url": "https://investors.intuit.com/news-events/press-releases/detail/1331/intuit-reports-first-quarter-results-and-enters-agreement-to-sell-mailchimp-to-bending-spoons"
+        }
+      ],
+      "eventKey": "intuit-fy27-revenue-guidance-mailchimp-sale-20261119",
+      "ndxRelevant": true,
+      "importanceScore": 64
+    },
+    {
       "title": "VIX dosáhl 30,04, maxima od 30. 3.; poslední údaj 29,50 (+1,08 b.).",
       "time": "20. 11. 2026, 11:36 CET",
       "publishedAtPrague": "20. 11. 2026, 11:36",
@@ -51,6 +74,25 @@
       "eventKey": "vix-seven-month-high-30-04-20261120",
       "ndxRelevant": true,
       "importanceScore": 67
+    },
+    {
+      "title": "Anthropic ANT: 88,87 USD, přibližně −9 % proti závěru po IPO; valuace 1,2 bil. USD dle akcií v oběhu.",
+      "time": "20. 11. 2026, 11:20 CET",
+      "publishedAtPrague": "20. 11. 2026, 11:20",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "ai_financing",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/anthropics-post-debut-stumble-delivers-reality-check-ai-trade-2026-11-20/",
+      "sourceLinks": [
+        {
+          "label": "Reuters – Anthropic",
+          "url": "https://www.reuters.com/business/anthropics-post-debut-stumble-delivers-reality-check-ai-trade-2026-11-20/"
+        }
+      ],
+      "eventKey": "anthropic-post-ipo-day2-pullback-20261120",
+      "ndxRelevant": true,
+      "importanceScore": 73
     },
     {
       "title": "Evropa: STOXX 600 −1 % (09:05 CET); ASML, ASM International a Infineon ztrácejí přes 4 %.",
@@ -146,6 +188,25 @@
       "eventKey": "asia-equities-selloff-nq-futures-20261120",
       "ndxRelevant": true,
       "importanceScore": 71
+    },
+    {
+      "title": "Fed Paulson: inflace příliš vysoká; považuje další zvýšení sazeb za potřebné.",
+      "time": "20. 11. 2026, 00:41 CET",
+      "publishedAtPrague": "20. 11. 2026, 00:41",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "monetary_policy",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/feds-paulson-says-understanding-not-guidance-drives-effective-communication-2026-11-19/",
+      "sourceLinks": [
+        {
+          "label": "Reuters – Fed Paulson",
+          "url": "https://www.reuters.com/business/feds-paulson-says-understanding-not-guidance-drives-effective-communication-2026-11-19/"
+        }
+      ],
+      "eventKey": "fed-paulson-more-rate-hikes-needed-20261119",
+      "ndxRelevant": true,
+      "importanceScore": 78
     },
     {
       "title": "NVDA: kalifornská prokuratura vydala vyšetřovací předvolání kvůli prověřování vývozu čipů do Číny a informování investorů.",
@@ -306,29 +367,6 @@
           "url": "https://www.reuters.com/business/jp-morgan-sees-fed-rate-hikes-next-three-meetings-inflation-persists-2026-11-19/"
         }
       ]
-    },
-    {
-      "title": "TSMC: pozastavuje vybrané čínské objednávky ≤16 nm bez americké licence; nová BIS pravidla účinná 19. 11.",
-      "time": "19. 11. 2026, 13:48 CET",
-      "publishedAtPrague": "19. 11. 2026, 13:48",
-      "publicationTimeVerified": true,
-      "kind": "new",
-      "category": "ai_regulation",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/china/tsmc-tightens-china-ai-chip-curbs-new-us-rules-close-manufacturing-loophole-2026-11-19/",
-      "sourceLinks": [
-        {
-          "label": "Reuters – TSMC",
-          "url": "https://www.reuters.com/world/china/tsmc-tightens-china-ai-chip-curbs-new-us-rules-close-manufacturing-loophole-2026-11-19/"
-        },
-        {
-          "label": "BIS – účinné pravidlo",
-          "url": "https://www.federalregister.gov/documents/2026/11/19/2026-23529/addressing-remote-access-to-advanced-semiconductors"
-        }
-      ],
-      "eventKey": "bis-tsmc-china-foundry-export-rule-effective-20261119",
-      "ndxRelevant": true,
-      "importanceScore": 77
     }
   ],
   "leaders": [
@@ -351,9 +389,9 @@
   },
   "forecast": {
     "athReturnPercent": 5,
-    "athReason": "Nutný růst 18,27 %; stabilizace polovodičů a financování AI CAPEX.",
+    "athReason": "Nutný růst 18,27 %; podmínka stabilizace čipů a AI CAPEX.",
     "downside": "−5 až −10 %",
-    "downsideReason": "AI CAPEX, náklady financování datacenter a Fed."
+    "downsideReason": "AI CAPEX, financování datacenter a sazby."
   },
   "catalyst": {
     "event": "Michigan: finální spotřebitelský sentiment za listopad",
@@ -1641,6 +1679,24 @@
           "url": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-nasdaq-anthropic-ipo-second-day-trading/card/treasury-yields-fall-below-5-as-sliding-risk-assets-bolster-demand-for-government-bonds-V0fIHwHPjKuujMfSbcHc"
         }
       ]
+    },
+    {
+      "time": "20. 11. 2026 13:56 CET",
+      "summary": "Cash NDX 26 517,05 b. (−2,21 %, závěr 19. 11.); NQZ26 26 120,25 b. (−1,80 %, kotace 13:30 CET). NVDA premarket −2,2 %. Sentiment medvědí ↘.",
+      "sourceLinks": [
+        {
+          "label": "YCharts – cash NDX",
+          "url": "https://ycharts.com/indices/%5ENDX/level"
+        },
+        {
+          "label": "Google Finance – NQZ26",
+          "url": "https://www.google.com/finance/quote/NQZ26:CME_EMINIS?hl=en"
+        },
+        {
+          "label": "Reuters – USA premarket",
+          "url": "https://www.reuters.com/legal/transactional/wall-st-futures-slip-anthropic-debut-fails-reassure-ai-investors-2026-11-20/"
+        }
+      ]
     }
   ],
   "history": [
@@ -1874,6 +1930,10 @@
     },
     {
       "time": "20. 11. 2026 13:00 CET",
+      "ndx": 26517.05
+    },
+    {
+      "time": "20. 11. 2026 13:56 CET",
       "ndx": 26517.05
     }
   ],
