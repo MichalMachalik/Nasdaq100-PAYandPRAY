@@ -1,19 +1,57 @@
 {
-  "updatedAtPrague": "20. 11. 2026 16:00 CET",
-  "marketStatus": "cash otevřen",
+  "updatedAtPrague": "20. 11. 2026 17:05 CET",
+  "marketStatus": "Otevřeno – cash Nasdaq-100",
   "ndx": {
-    "value": 26097.43,
-    "changePercent": -1.58,
+    "value": 25754.24,
+    "changePercent": -2.88,
     "ath": 31361.37,
-    "asOf": "20. 11. 2026 15:39 CET – cash NDX, intradenní kotace"
+    "asOf": "20. 11. 2026 16:47 CET – cash NDX, intradenní kotace (Investing.com)"
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "↗ mírné zlepšení proti 15:06 CET",
-    "reason": "NDX −1,58 %, SOX −4,09 %, NVDA −3,41 %, META −2,42 %."
+    "trend": "↘ zhoršení proti 16:00 CET",
+    "reason": "NDX −2,88 %, NVDA −6,80 %, AVGO −8,37 %; AI a polovodiče pod tlakem."
   },
-  "driver": "SOX −4,09 %, NVDA −3,41 %; sektorový tlak na polovodiče a AI infrastrukturu.",
+  "driver": "NVDA −6,80 %, AVGO −8,37 %; přeceňování návratnosti AI CAPEX a financování datacenter.",
   "news": [
+    {
+      "title": "Alphabet předstihl NVIDIA v tržní kapitalizaci USA: 3,44 bil. USD vs. 3,4 bil. USD.",
+      "time": "20. 11. 2026, 16:31 CET",
+      "publishedAtPrague": "20. 11. 2026, 16:31",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "semiconductors",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/retail-consumer/nvidias-share-slide-knocks-it-below-alphabet-valuation-2026-11-20/",
+      "sourceLinks": [
+        {
+          "label": "Reuters – NVDA / Alphabet",
+          "url": "https://www.reuters.com/business/retail-consumer/nvidias-share-slide-knocks-it-below-alphabet-valuation-2026-11-20/"
+        }
+      ],
+      "eventKey": "nvidia-alphabet-marketcap-rank-switch-20261120",
+      "ndxRelevant": true,
+      "importanceScore": 71
+    },
+    {
+      "title": "U. Michigan listopad final: sentiment 51,5 vs. říjen 48,0; roční inflační očekávání 3,7 % vs. 4,7 %.",
+      "time": "20. 11. 2026, 16:00 CET",
+      "publishedAtPrague": "20. 11. 2026, 16:00",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "macro",
+      "source": "University of Michigan",
+      "url": "https://www.sca.isr.umich.edu/",
+      "sourceLinks": [
+        {
+          "label": "Michigan – final listopad",
+          "url": "https://www.sca.isr.umich.edu/"
+        }
+      ],
+      "eventKey": "michigan-final-sentiment-inflation-nov2026",
+      "ndxRelevant": true,
+      "importanceScore": 58
+    },
     {
       "title": "USA premarket: NVDA −3,7 %, META −4,5 %, AMZN/MSFT přes −2 %; AMD/AVGO/MRVL/MU −3,6 až −7 %.",
       "time": "20. 11. 2026, 11:37 CET",
@@ -311,30 +349,30 @@
   "leaders": [
     {
       "ticker": "NVDA",
-      "changePercent": -3.41,
-      "impact": "20. 11. 15:56 CET; polovodiče"
+      "changePercent": -6.8,
+      "impact": "Vysoký negativní; AI čipy"
     },
     {
-      "ticker": "META",
-      "changePercent": -2.42,
-      "impact": "20. 11. 15:51 CET; AI CAPEX"
+      "ticker": "AVGO",
+      "changePercent": -8.37,
+      "impact": "Vysoký negativní; polovodiče a AI infrastruktura"
     }
   ],
-  "macro": "US10Y | 20. 11. 15:04: 4,984 % | 19. 11.: 5,052 % | −6,8 bb",
+  "macro": "UMICH | 20. 11. 16:00: 51,5 | říjen: 48,0 | +3,5 b.",
   "regulation": null,
   "technical": {
     "support": null,
     "resistance": null
   },
   "forecast": {
-    "athReturnPercent": 5,
-    "athReason": "Nutný růst 20,17 %; podmínka stabilizace čipů a AI CAPEX.",
-    "downside": "−5 až −10 %",
-    "downsideReason": "AI CAPEX, financování datacenter a sazby."
+    "athReturnPercent": 4,
+    "athReason": "Nutný růst 21,77 %; NVDA −6,80 %, AVGO −8,37 %, tlak na AI CAPEX.",
+    "downside": "−5 až −12 %",
+    "downsideReason": "Pokračující slabost čipů, AI financování a sazby Fedu."
   },
   "catalyst": {
-    "event": "Michigan: finální spotřebitelský sentiment za listopad",
-    "timePrague": "20. 11. 2026 16:00 CET"
+    "event": "Fed: projev guvernérky Lisy Cook (U.S. Economy in Global Context)",
+    "timePrague": "20. 11. 2026 18:15 CET"
   },
   "archive": [
     {
@@ -1668,6 +1706,24 @@
           "url": "https://www.reuters.com/legal/transactional/wall-st-futures-slip-anthropic-debut-fails-reassure-ai-investors-2026-11-20/"
         }
       ]
+    },
+    {
+      "time": "20. 11. 2026 17:05 CET",
+      "summary": "NDX 25 754,24 b. (−2,88 %), NVDA −6,80 %, AVGO −8,37 %; Michigan final 51,5.",
+      "sourceLinks": [
+        {
+          "label": "Investing.com – cash NDX",
+          "url": "https://www.investing.com/indices/nq-100"
+        },
+        {
+          "label": "Reuters – tržní kapitalizace NVDA",
+          "url": "https://www.reuters.com/business/retail-consumer/nvidias-share-slide-knocks-it-below-alphabet-valuation-2026-11-20/"
+        },
+        {
+          "label": "Michigan – listopad final",
+          "url": "https://www.sca.isr.umich.edu/"
+        }
+      ]
     }
   ],
   "history": [
@@ -1914,6 +1970,10 @@
     {
       "time": "20. 11. 2026 16:00 CET",
       "ndx": 26097.43
+    },
+    {
+      "time": "20. 11. 2026 17:05 CET",
+      "ndx": 25754.24
     }
   ],
   "sources": [
@@ -2520,6 +2580,14 @@
     {
       "name": "Google Finance – META",
       "url": "https://www.google.com/finance/quote/META:NASDAQ?hl=en"
+    },
+    {
+      "name": "Reuters – NVDA Alphabet",
+      "url": "https://www.reuters.com/business/retail-consumer/nvidias-share-slide-knocks-it-below-alphabet-valuation-2026-11-20/"
+    },
+    {
+      "name": "Fed – kalendář listopad",
+      "url": "https://www.federalreserve.gov/newsevents/2026-November.htm"
     }
   ]
 }
