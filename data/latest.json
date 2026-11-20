@@ -1,6 +1,6 @@
 {
-  "updatedAtPrague": "20. 11. 2026 06:02 CET",
-  "marketStatus": "Cash uzavřen; poslední závěr 19. 11. 2026 22:00 CET",
+  "updatedAtPrague": "20. 11. 2026 07:07 CET",
+  "marketStatus": "Cash uzavřen; poslední závěr 19. 11. 2026",
   "ndx": {
     "value": 26517.05,
     "changePercent": -2.21,
@@ -9,10 +9,10 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "↘ zhoršení proti 05:04 CET; NQ futures klesly proti snímku 04:58 CET",
+    "trend": "↘ zhoršení proti 06:02 CET; NQ=F −0,83 % (05:35) → −1,17 % (06:10), cash uzavřen",
     "reason": "Cash NDX −2,21 % (19. 11.); MSCI Asia-Pacific −3,2 % (týden −8,3 %); TAIEX týden −16 %."
   },
-  "driver": "MSCI Asia-Pacific −3,2 %, týden −8,3 %; TAIEX za týden −16 %. AI čipy a datacentrové financování pod prodejním tlakem.",
+  "driver": "MSCI Asia-Pacific −3,2 %, týden −8,3 %; TAIEX za týden −16 %; Euro Stoxx 50 futures −1,6 %. Přetrvává tlak na čipy a AI financování.",
   "news": [
     {
       "title": "Senát USA schválil 62:33 návrh zákona pro rychlejší povolování energetiky a datacenter; čeká na Sněmovnu.",
@@ -344,37 +344,18 @@
       "eventKey": "south-korea-chip-exports-184pct-yoy-2026q3-20261119",
       "ndxRelevant": true,
       "importanceScore": 57
-    },
-    {
-      "title": "Delta Electronics: indické tržby plánuje ztrojnásobit za 4–5 let; Nvidia partner, datacentra a chlazení.",
-      "time": "19. 11. 2026, 06:36 CET",
-      "publishedAtPrague": "19. 11. 2026, 06:36",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_infrastructure",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/asia-pacific/taiwans-delta-electronics-looks-triple-india-revenue-4-5-years-ai-boom-2026-11-19/",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/world/asia-pacific/taiwans-delta-electronics-looks-triple-india-revenue-4-5-years-ai-boom-2026-11-19/"
-        }
-      ],
-      "eventKey": "delta-electronics-india-ai-datacenter-triple-revenue-20261119",
-      "ndxRelevant": true,
-      "importanceScore": 48
     }
   ],
   "leaders": [
     {
       "ticker": "NVDA",
       "changePercent": -3.3,
-      "impact": "Vysoký; závěr 19. 11."
+      "impact": "Vysoký; cash závěr 19. 11."
     },
     {
       "ticker": "AVGO",
       "changePercent": -2.09,
-      "impact": "Vysoký; závěr 19. 11."
+      "impact": "Vysoký; cash závěr 19. 11."
     }
   ],
   "macro": "US10Y | 19. 11.: 5,04 % | 18. 11.: 5,07 % | −3 bb",
@@ -385,9 +366,9 @@
   },
   "forecast": {
     "athReturnPercent": 5,
-    "athReason": "Cash NDX −2,21 %; MSCI Asia-Pacific −3,2 %. Podmínka: stabilizace čipů a AI financování.",
+    "athReason": "Cash NDX −2,21 %; Asie −3,2 %. Podmínka: stabilizace AI čipů a financování datacenter.",
     "downside": "−5 až −10 %",
-    "downsideReason": "AI CAPEX, financování datacenter a sazby."
+    "downsideReason": "AI CAPEX, financování datacenter a riziko vyšších sazeb."
   },
   "catalyst": {
     "event": "Michigan: listopadový spotřebitelský sentiment (finální)",
@@ -1549,6 +1530,24 @@
           "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-20/"
         }
       ]
+    },
+    {
+      "time": "20. 11. 2026 07:07 CET",
+      "summary": "Cash NDX 26 517,05 b. (−2,21 %, závěr 19. 11.); MSCI Asia-Pacific −3,2 %, týden −8,3 %; Euro Stoxx 50 futures −1,6 %. Sentiment medvědí ↘.",
+      "sourceLinks": [
+        {
+          "label": "Yahoo – cash NDX",
+          "url": "https://es.finance.yahoo.com/quote/%5ENDX/history/"
+        },
+        {
+          "label": "Reuters – asijské akcie",
+          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-20/"
+        },
+        {
+          "label": "Reuters – Evropa",
+          "url": "https://www.reuters.com/markets/europe/global-markets-view-europe-2026-11-20/"
+        }
+      ]
     }
   ],
   "history": [
@@ -1754,6 +1753,10 @@
     },
     {
       "time": "20. 11. 2026 06:02 CET",
+      "ndx": 26517.05
+    },
+    {
+      "time": "20. 11. 2026 07:07 CET",
       "ndx": 26517.05
     }
   ],
@@ -2321,6 +2324,14 @@
     {
       "name": "Nasdaq – cash NDX",
       "url": "https://indexes.nasdaq.com/Index/Weighting/NDX"
+    },
+    {
+      "name": "Yahoo Finance – cash NDX, 19. 11.",
+      "url": "https://es.finance.yahoo.com/quote/%5ENDX/history/"
+    },
+    {
+      "name": "Reuters – evropské trhy, 20. 11.",
+      "url": "https://www.reuters.com/markets/europe/global-markets-view-europe-2026-11-20/"
     }
   ]
 }
