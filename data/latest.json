@@ -1,38 +1,19 @@
 {
-  "updatedAtPrague": "20. 11. 2026 22:05 CET",
-  "marketStatus": "Cash uzavřen; závěrečná hodnota 20. 11. zatím neověřena",
+  "updatedAtPrague": "20. 11. 2026 23:03 CET",
+  "marketStatus": "Cash uzavřen; poslední závěr 20. 11. 2026, 22:00 CET",
   "ndx": {
-    "value": 24952.84,
-    "changePercent": -5.9,
+    "value": 25028.98,
+    "changePercent": -5.61,
     "ath": 31361.37,
-    "asOf": "20. 11. 2026 21:54:56 CET – cash NDX, poslední ověřená intradenní kotace (Google Finance)"
+    "asOf": "20. 11. 2026, 22:00 CET – cash NDX, závěr (Google Finance; stav zobrazen 22:52 CET)"
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "↘ zhoršení proti 21:01 CET",
-    "reason": "NDX −5,90 %, SOX −11,05 %, NVDA −12,57 %, AVGO −12,62 %."
+    "trend": "→ beze změny proti 22:05 CET",
+    "reason": "NDX −5,61 %, SOX −10,73 %, NVDA −14,01 %, AVGO −12,19 %; cash závěr 20. 11."
   },
-  "driver": "SOX −11,05 % (21:49 CET); NVDA −12,57 % (21:43 CET), AVGO −12,62 % (21:54 CET). Reuters: SEC prověřuje účetnictví NVIDIA.",
+  "driver": "SOX −10,73 %; NVDA −14,01 %, AVGO −12,19 %. Reuters: výprodej AI titulů a přechod investorů k defenzivním aktivům.",
   "news": [
-    {
-      "title": "Reuters: rotace z AI technologií do dluhopisů a hodnotových akcií; Nasdaq Composite během seance přes −4 %.",
-      "time": "20. 11. 2026, 21:13 CET",
-      "publishedAtPrague": "20. 11. 2026, 21:13",
-      "publicationTimeVerified": true,
-      "kind": "new",
-      "category": "market_rotation",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/finance/ai-tech-rout-prompts-us-investors-rush-into-value-stocks-2026-11-20/",
-      "sourceLinks": [
-        {
-          "label": "Reuters – rotace z AI do value",
-          "url": "https://www.reuters.com/business/finance/ai-tech-rout-prompts-us-investors-rush-into-value-stocks-2026-11-20/"
-        }
-      ],
-      "eventKey": "ai-tech-selloff-bonds-value-rotation-20261120",
-      "ndxRelevant": true,
-      "importanceScore": 79
-    },
     {
       "title": "SEC podle Reuters prověřuje účetní postupy NVIDIA; zaměření vyšetřování zatím nebylo upřesněno.",
       "time": "20. 11. 2026, 20:13 CET",
@@ -53,42 +34,23 @@
       "importanceScore": 94
     },
     {
-      "title": "Trump: USA chce do Číny prodávat jen starší čipy; o možné dohodě s Čínou se jedná.",
-      "time": "20. 11. 2026, 19:40 CET",
-      "publishedAtPrague": "20. 11. 2026, 19:40",
+      "title": "USA cash závěr: NDX −5,61 %, SOX −10,73 %, NVDA −14,01 %; Nasdaq Composite týden −10 %.",
+      "time": "20. 11. 2026, 22:17 CET",
+      "publishedAtPrague": "20. 11. 2026, 22:17",
       "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_regulation",
+      "kind": "new",
+      "category": "market_reaction",
       "source": "Reuters",
-      "url": "https://www.reuters.com/world/china/trump-says-only-older-chips-should-be-sold-china-2026-11-20/",
+      "url": "https://www.reuters.com/business/view-nasdaq-plunges-5-day-after-anthropic-debut-investors-still-believe-ai-2026-11-20/",
       "sourceLinks": [
         {
-          "label": "Reuters – výrok Trumpa / export čipů",
-          "url": "https://www.reuters.com/world/china/trump-says-only-older-chips-should-be-sold-china-2026-11-20/"
+          "label": "Reuters – AI výprodej a závěr USA",
+          "url": "https://www.reuters.com/business/view-nasdaq-plunges-5-day-after-anthropic-debut-investors-still-believe-ai-2026-11-20/"
         }
       ],
-      "eventKey": "us-trump-older-ai-chips-export-china-statement-20261120",
+      "eventKey": "us-ai-stocks-friday-nov20-closing-rout-20261120",
       "ndxRelevant": true,
-      "importanceScore": 76
-    },
-    {
-      "title": "Fed Cook: centrální banka sleduje neprůhledné a provázané financování AI infrastruktury.",
-      "time": "20. 11. 2026, 19:13 CET",
-      "publishedAtPrague": "20. 11. 2026, 19:13",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_financing",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/feds-cook-says-central-bank-watching-ai-industry-financing-2026-11-20/",
-      "sourceLinks": [
-        {
-          "label": "Reuters – Cook / AI financování",
-          "url": "https://www.reuters.com/business/feds-cook-says-central-bank-watching-ai-industry-financing-2026-11-20/"
-        }
-      ],
-      "eventKey": "fed-cook-ai-financing-complexity-20261120",
-      "ndxRelevant": true,
-      "importanceScore": 81
+      "importanceScore": 85
     },
     {
       "title": "Trump avizoval vysokou daň pro americké firmy budující datacentra mimo USA; dosud jde o záměr.",
@@ -108,6 +70,44 @@
       "eventKey": "trump-proposed-tax-on-overseas-us-data-centers-20261120",
       "ndxRelevant": true,
       "importanceScore": 84
+    },
+    {
+      "title": "Reuters: rotace z AI technologií do dluhopisů a hodnotových akcií; Nasdaq Composite během seance přes −4 %.",
+      "time": "20. 11. 2026, 21:13 CET",
+      "publishedAtPrague": "20. 11. 2026, 21:13",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "market_rotation",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/finance/ai-tech-rout-prompts-us-investors-rush-into-value-stocks-2026-11-20/",
+      "sourceLinks": [
+        {
+          "label": "Reuters – rotace z AI do value",
+          "url": "https://www.reuters.com/business/finance/ai-tech-rout-prompts-us-investors-rush-into-value-stocks-2026-11-20/"
+        }
+      ],
+      "eventKey": "ai-tech-selloff-bonds-value-rotation-20261120",
+      "ndxRelevant": true,
+      "importanceScore": 79
+    },
+    {
+      "title": "Fed Cook: centrální banka sleduje neprůhledné a provázané financování AI infrastruktury.",
+      "time": "20. 11. 2026, 19:13 CET",
+      "publishedAtPrague": "20. 11. 2026, 19:13",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "ai_financing",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/feds-cook-says-central-bank-watching-ai-industry-financing-2026-11-20/",
+      "sourceLinks": [
+        {
+          "label": "Reuters – Cook / AI financování",
+          "url": "https://www.reuters.com/business/feds-cook-says-central-bank-watching-ai-industry-financing-2026-11-20/"
+        }
+      ],
+      "eventKey": "fed-cook-ai-financing-complexity-20261120",
+      "ndxRelevant": true,
+      "importanceScore": 81
     },
     {
       "title": "Fed Cook: současné sazby nestačí ke snížení inflace; odhad říjnového PCE 3,8 % y/y a core 3,2 % y/y.",
@@ -133,23 +133,23 @@
       "importanceScore": 83
     },
     {
-      "title": "Bessent doporučuje Fedu vyhnout se zvýšení sazeb o 50 bb; odkazuje na energetický šok a pokles cen ropy.",
-      "time": "20. 11. 2026, 16:46 CET",
-      "publishedAtPrague": "20. 11. 2026, 16:46",
+      "title": "Trump: USA chce do Číny prodávat jen starší čipy; o možné dohodě s Čínou se jedná.",
+      "time": "20. 11. 2026, 19:40 CET",
+      "publishedAtPrague": "20. 11. 2026, 19:40",
       "publicationTimeVerified": true,
       "kind": "continuing",
-      "category": "monetary_policy",
+      "category": "ai_regulation",
       "source": "Reuters",
-      "url": "https://www.reuters.com/business/bessent-advocates-lower-fed-rate-hike-cites-energy-shock-2026-11-20/",
+      "url": "https://www.reuters.com/world/china/trump-says-only-older-chips-should-be-sold-china-2026-11-20/",
       "sourceLinks": [
         {
-          "label": "Reuters – Bessent / Fed",
-          "url": "https://www.reuters.com/business/bessent-advocates-lower-fed-rate-hike-cites-energy-shock-2026-11-20/"
+          "label": "Reuters – výrok Trumpa / export čipů",
+          "url": "https://www.reuters.com/world/china/trump-says-only-older-chips-should-be-sold-china-2026-11-20/"
         }
       ],
-      "eventKey": "us-treasury-bessent-opposes-50bp-fed-hike-20261120",
+      "eventKey": "us-trump-older-ai-chips-export-china-statement-20261120",
       "ndxRelevant": true,
-      "importanceScore": 66
+      "importanceScore": 76
     },
     {
       "title": "Alphabet předstihl NVIDIA v tržní kapitalizaci USA: 3,44 bil. USD vs. 3,4 bil. USD.",
@@ -171,23 +171,23 @@
       "importanceScore": 71
     },
     {
-      "title": "U. Michigan listopad final: sentiment 51,5 vs. říjen 48,0; roční inflační očekávání 3,7 % vs. 4,7 %.",
-      "time": "20. 11. 2026, 16:00 CET",
-      "publishedAtPrague": "20. 11. 2026, 16:00",
+      "title": "USA premarket: NVDA −3,7 %, META −4,5 %, AMZN/MSFT přes −2 %; AMD/AVGO/MRVL/MU −3,6 až −7 %.",
+      "time": "20. 11. 2026, 11:37 CET",
+      "publishedAtPrague": "20. 11. 2026, 11:37",
       "publicationTimeVerified": true,
       "kind": "continuing",
-      "category": "macro",
-      "source": "University of Michigan",
-      "url": "https://www.sca.isr.umich.edu/",
+      "category": "semiconductors",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/legal/transactional/wall-st-futures-slip-anthropic-debut-fails-reassure-ai-investors-2026-11-20/",
       "sourceLinks": [
         {
-          "label": "Michigan – final listopad",
-          "url": "https://www.sca.isr.umich.edu/"
+          "label": "Reuters – USA premarket",
+          "url": "https://www.reuters.com/legal/transactional/wall-st-futures-slip-anthropic-debut-fails-reassure-ai-investors-2026-11-20/"
         }
       ],
-      "eventKey": "michigan-final-sentiment-inflation-nov2026",
+      "eventKey": "us-premarket-chip-hyperscaler-selloff-20261120",
       "ndxRelevant": true,
-      "importanceScore": 58
+      "importanceScore": 77
     },
     {
       "title": "Alphabet vydal dluhopisy v Kanadě za 6 mld. CAD (4,19 mld. USD); výnos plánuje použít na obecné firemní účely.",
@@ -209,67 +209,6 @@
       "importanceScore": 74
     },
     {
-      "title": "USA premarket: NVDA −3,7 %, META −4,5 %, AMZN/MSFT přes −2 %; AMD/AVGO/MRVL/MU −3,6 až −7 %.",
-      "time": "20. 11. 2026, 11:37 CET",
-      "publishedAtPrague": "20. 11. 2026, 11:37",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "semiconductors",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/legal/transactional/wall-st-futures-slip-anthropic-debut-fails-reassure-ai-investors-2026-11-20/",
-      "sourceLinks": [
-        {
-          "label": "Reuters – USA premarket",
-          "url": "https://www.reuters.com/legal/transactional/wall-st-futures-slip-anthropic-debut-fails-reassure-ai-investors-2026-11-20/"
-        }
-      ],
-      "eventKey": "us-premarket-chip-hyperscaler-selloff-20261120",
-      "ndxRelevant": true,
-      "importanceScore": 77
-    },
-    {
-      "title": "INTU FY27: tržby nově +8 až +9 % vs. původně +9 až +10 %; prodej Mailchimpu za 3,68 mld. USD.",
-      "time": "20. 11. 2026, 11:37 CET",
-      "publishedAtPrague": "20. 11. 2026, 11:37",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "earnings",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/legal/transactional/wall-st-futures-slip-anthropic-debut-fails-reassure-ai-investors-2026-11-20/",
-      "sourceLinks": [
-        {
-          "label": "Reuters – INTU",
-          "url": "https://www.reuters.com/legal/transactional/wall-st-futures-slip-anthropic-debut-fails-reassure-ai-investors-2026-11-20/"
-        },
-        {
-          "label": "Intuit IR",
-          "url": "https://investors.intuit.com/news-events/press-releases/detail/1331/intuit-reports-first-quarter-results-and-enters-agreement-to-sell-mailchimp-to-bending-spoons"
-        }
-      ],
-      "eventKey": "intuit-fy27-revenue-guidance-mailchimp-sale-20261119",
-      "ndxRelevant": true,
-      "importanceScore": 64
-    },
-    {
-      "title": "VIX dosáhl 30,04, maxima od 30. 3.; poslední údaj 29,50 (+1,08 b.).",
-      "time": "20. 11. 2026, 11:36 CET",
-      "publishedAtPrague": "20. 11. 2026, 11:36",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "market_reaction",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/wall-streets-fear-gauge-touches-seven-month-high-ai-worries-mount-2026-11-20/",
-      "sourceLinks": [
-        {
-          "label": "Reuters – VIX",
-          "url": "https://www.reuters.com/business/wall-streets-fear-gauge-touches-seven-month-high-ai-worries-mount-2026-11-20/"
-        }
-      ],
-      "eventKey": "vix-seven-month-high-30-04-20261120",
-      "ndxRelevant": true,
-      "importanceScore": 67
-    },
-    {
       "title": "Anthropic ANT: 88,87 USD, přibližně −9 % proti závěru po IPO; valuace 1,2 bil. USD dle akcií v oběhu.",
       "time": "20. 11. 2026, 11:20 CET",
       "publishedAtPrague": "20. 11. 2026, 11:20",
@@ -289,23 +228,23 @@
       "importanceScore": 73
     },
     {
-      "title": "Evropa: STOXX 600 −1,3 % (10:26 CET); ASML, ASM International a STMicroelectronics přes −5 %.",
-      "time": "20. 11. 2026, 09:25 CET",
-      "publishedAtPrague": "20. 11. 2026, 09:25",
+      "title": "Bessent doporučuje Fedu vyhnout se zvýšení sazeb o 50 bb; odkazuje na energetický šok a pokles cen ropy.",
+      "time": "20. 11. 2026, 16:46 CET",
+      "publishedAtPrague": "20. 11. 2026, 16:46",
       "publicationTimeVerified": true,
       "kind": "continuing",
-      "category": "market_reaction",
+      "category": "monetary_policy",
       "source": "Reuters",
-      "url": "https://www.reuters.com/markets/europe/european-shares-head-steepest-weekly-drop-since-march-2026-11-20/",
+      "url": "https://www.reuters.com/business/bessent-advocates-lower-fed-rate-hike-cites-energy-shock-2026-11-20/",
       "sourceLinks": [
         {
-          "label": "Reuters – evropské akcie",
-          "url": "https://www.reuters.com/markets/europe/european-shares-head-steepest-weekly-drop-since-march-2026-11-20/"
+          "label": "Reuters – Bessent / Fed",
+          "url": "https://www.reuters.com/business/bessent-advocates-lower-fed-rate-hike-cites-energy-shock-2026-11-20/"
         }
       ],
-      "eventKey": "europe-stoxx600-chip-selloff-open-20261120",
+      "eventKey": "us-treasury-bessent-opposes-50bp-fed-hike-20261120",
       "ndxRelevant": true,
-      "importanceScore": 62
+      "importanceScore": 66
     },
     {
       "title": "Senát USA schválil 62:33 návrh zákona pro rychlejší povolování energetiky a datacenter; čeká na Sněmovnu.",
@@ -327,42 +266,23 @@
       "importanceScore": 78
     },
     {
-      "title": "Anthropic: australské datacentrum Western Downs 1,44 GW; 595 námitek veřejnosti, 2 podpořily projekt.",
-      "time": "20. 11. 2026, 03:39 CET",
-      "publishedAtPrague": "20. 11. 2026, 03:39",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_infrastructure",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/asia-pacific/anthropics-australian-data-centre-overwhelmingly-opposed-by-residents-2026-11-20/",
-      "sourceLinks": [
-        {
-          "label": "Reuters – Western Downs",
-          "url": "https://www.reuters.com/world/asia-pacific/anthropics-australian-data-centre-overwhelmingly-opposed-by-residents-2026-11-20/"
-        }
-      ],
-      "eventKey": "anthropic-western-downs-datacentre-595-objections-20261120",
-      "ndxRelevant": true,
-      "importanceScore": 64
-    },
-    {
-      "title": "Asie: MSCI Asia-Pacific −3,3 % (týden −8,5 %), Nikkei −5,0 %, KOSPI −5,2 %; TAIEX týden −17,5 %.",
-      "time": "20. 11. 2026, 02:46 CET",
-      "publishedAtPrague": "20. 11. 2026, 02:46",
+      "title": "VIX dosáhl 30,04, maxima od 30. 3.; poslední údaj 29,50 (+1,08 b.).",
+      "time": "20. 11. 2026, 11:36 CET",
+      "publishedAtPrague": "20. 11. 2026, 11:36",
       "publicationTimeVerified": true,
       "kind": "continuing",
       "category": "market_reaction",
       "source": "Reuters",
-      "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-20/",
+      "url": "https://www.reuters.com/business/wall-streets-fear-gauge-touches-seven-month-high-ai-worries-mount-2026-11-20/",
       "sourceLinks": [
         {
-          "label": "Reuters – Asie",
-          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-20/"
+          "label": "Reuters – VIX",
+          "url": "https://www.reuters.com/business/wall-streets-fear-gauge-touches-seven-month-high-ai-worries-mount-2026-11-20/"
         }
       ],
-      "eventKey": "asia-equities-selloff-nq-futures-20261120",
+      "eventKey": "vix-seven-month-high-30-04-20261120",
       "ndxRelevant": true,
-      "importanceScore": 71
+      "importanceScore": 67
     },
     {
       "title": "Fed Paulson: inflace příliš vysoká; považuje další zvýšení sazeb za potřebné.",
@@ -405,21 +325,101 @@
       "eventKey": "california-ag-nvidia-investigative-subpoena-20261119",
       "ndxRelevant": true,
       "importanceScore": 80
+    },
+    {
+      "title": "INTU FY27: tržby nově +8 až +9 % vs. původně +9 až +10 %; prodej Mailchimpu za 3,68 mld. USD.",
+      "time": "20. 11. 2026, 11:37 CET",
+      "publishedAtPrague": "20. 11. 2026, 11:37",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "earnings",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/legal/transactional/wall-st-futures-slip-anthropic-debut-fails-reassure-ai-investors-2026-11-20/",
+      "sourceLinks": [
+        {
+          "label": "Reuters – INTU",
+          "url": "https://www.reuters.com/legal/transactional/wall-st-futures-slip-anthropic-debut-fails-reassure-ai-investors-2026-11-20/"
+        },
+        {
+          "label": "Intuit IR",
+          "url": "https://investors.intuit.com/news-events/press-releases/detail/1331/intuit-reports-first-quarter-results-and-enters-agreement-to-sell-mailchimp-to-bending-spoons"
+        }
+      ],
+      "eventKey": "intuit-fy27-revenue-guidance-mailchimp-sale-20261119",
+      "ndxRelevant": true,
+      "importanceScore": 64
+    },
+    {
+      "title": "U. Michigan listopad final: sentiment 51,5 vs. říjen 48,0; roční inflační očekávání 3,7 % vs. 4,7 %.",
+      "time": "20. 11. 2026, 16:00 CET",
+      "publishedAtPrague": "20. 11. 2026, 16:00",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "macro",
+      "source": "University of Michigan",
+      "url": "https://www.sca.isr.umich.edu/",
+      "sourceLinks": [
+        {
+          "label": "Michigan – final listopad",
+          "url": "https://www.sca.isr.umich.edu/"
+        }
+      ],
+      "eventKey": "michigan-final-sentiment-inflation-nov2026",
+      "ndxRelevant": true,
+      "importanceScore": 58
+    },
+    {
+      "title": "Asie: MSCI Asia-Pacific −3,3 % (týden −8,5 %), Nikkei −5,0 %, KOSPI −5,2 %; TAIEX týden −17,5 %.",
+      "time": "20. 11. 2026, 02:46 CET",
+      "publishedAtPrague": "20. 11. 2026, 02:46",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "market_reaction",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-20/",
+      "sourceLinks": [
+        {
+          "label": "Reuters – Asie",
+          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-20/"
+        }
+      ],
+      "eventKey": "asia-equities-selloff-nq-futures-20261120",
+      "ndxRelevant": true,
+      "importanceScore": 71
+    },
+    {
+      "title": "Evropa: STOXX 600 −1,3 % (10:26 CET); ASML, ASM International a STMicroelectronics přes −5 %.",
+      "time": "20. 11. 2026, 09:25 CET",
+      "publishedAtPrague": "20. 11. 2026, 09:25",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "market_reaction",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/markets/europe/european-shares-head-steepest-weekly-drop-since-march-2026-11-20/",
+      "sourceLinks": [
+        {
+          "label": "Reuters – evropské akcie",
+          "url": "https://www.reuters.com/markets/europe/european-shares-head-steepest-weekly-drop-since-march-2026-11-20/"
+        }
+      ],
+      "eventKey": "europe-stoxx600-chip-selloff-open-20261120",
+      "ndxRelevant": true,
+      "importanceScore": 62
     }
   ],
   "leaders": [
     {
       "ticker": "NVDA",
-      "changePercent": -12.57,
-      "impact": "vysoký – pokles čipové složky; Reuters: SEC prověřuje účetnictví"
+      "changePercent": -14.01,
+      "impact": "vysoký – polovodiče; pokles během cash seance"
     },
     {
       "ticker": "AVGO",
-      "changePercent": -12.62,
-      "impact": "vysoký – pokles AI polovodičů"
+      "changePercent": -12.19,
+      "impact": "vysoký – AI polovodiče; pokles během cash seance"
     }
   ],
-  "macro": "US10Y | 20. 11.: 4,928 % | 19. 11.: 5,052 % | −12,4 bb",
+  "macro": "US10Y | 20. 11.: 4,942 % | 19. 11.: 5,052 % | −11,0 bb",
   "regulation": null,
   "technical": {
     "support": null,
@@ -427,9 +427,9 @@
   },
   "forecast": {
     "athReturnPercent": 1,
-    "athReason": "Nutný růst 25,68 %; SOX −11,05 %, NVDA −12,57 %, SEC prověřuje účetnictví NVIDIA.",
+    "athReason": "Nutný růst 25,30 %; cash NDX −5,61 %, NVDA −14,01 %, SOX −10,73 %.",
     "downside": "−8 až −17 %",
-    "downsideReason": "Výprodej polovodičů, regulatorní tlak na NVIDIA, dluhové financování datacenter a Fed."
+    "downsideReason": "Pokles polovodičů, financování datacenter a očekávání sazeb Fedu."
   },
   "catalyst": {
     "event": "S&P Global: Flash US PMI – listopad",
@@ -1893,6 +1893,24 @@
           "url": "https://www.reuters.com/business/finance/ai-tech-rout-prompts-us-investors-rush-into-value-stocks-2026-11-20/"
         }
       ]
+    },
+    {
+      "time": "20. 11. 2026 23:03 CET",
+      "summary": "Cash NDX 25 028,98 b. (−5,61 %, závěr 22:00 CET); SOX −10,73 %, NVDA −14,01 %, AVGO −12,19 %. Reuters 22:17 CET: týdenní výprodej AI titulů.",
+      "sourceLinks": [
+        {
+          "label": "Google Finance – cash NDX",
+          "url": "https://www.google.com/finance/quote/NDX:INDEXNASDAQ?hl=en"
+        },
+        {
+          "label": "Google Finance – SOX",
+          "url": "https://www.google.com/finance/quote/SOX:INDEXNASDAQ?hl=en"
+        },
+        {
+          "label": "Reuters – závěr trhu",
+          "url": "https://www.reuters.com/business/view-nasdaq-plunges-5-day-after-anthropic-debut-investors-still-believe-ai-2026-11-20/"
+        }
+      ]
     }
   ],
   "history": [
@@ -2167,6 +2185,10 @@
     {
       "time": "20. 11. 2026 22:05 CET",
       "ndx": 24952.84
+    },
+    {
+      "time": "20. 11. 2026 23:03 CET",
+      "ndx": 25028.98
     }
   ],
   "sources": [
@@ -2821,6 +2843,10 @@
     {
       "name": "Reuters – AI rotace",
       "url": "https://www.reuters.com/business/finance/ai-tech-rout-prompts-us-investors-rush-into-value-stocks-2026-11-20/"
+    },
+    {
+      "name": "Reuters – závěr trhu",
+      "url": "https://www.reuters.com/business/view-nasdaq-plunges-5-day-after-anthropic-debut-investors-still-believe-ai-2026-11-20/"
     }
   ]
 }
