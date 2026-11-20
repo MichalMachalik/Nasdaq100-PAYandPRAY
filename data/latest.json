@@ -1,6 +1,6 @@
 {
-  "updatedAtPrague": "20. 11. 2026 09:58 CET",
-  "marketStatus": "Cash uzavřen; poslední závěr 19. 11. 2026",
+  "updatedAtPrague": "20. 11. 2026 11:01 CET",
+  "marketStatus": "Cash uzavřen",
   "ndx": {
     "value": 26517.05,
     "changePercent": -2.21,
@@ -9,10 +9,10 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→ beze změny proti 08:56 CET",
-    "reason": "Cash NDX −2,21 % (19. 11.); MSCI Asia-Pacific −3,3 %; STOXX 600 −1 % (20. 11., 09:05 CET)."
+    "trend": "→ beze změny proti 09:58 CET",
+    "reason": "Cash NDX −2,21 % (19. 11.); MSCI Asia-Pacific −3,3 % a TAIEX za týden −17,5 %; STOXX 600 −1,0 % (20. 11., 09:05 CET)."
   },
-  "driver": "STOXX 600 −1 % (09:05 CET); ASML, ASM International a Infineon klesly o více než 4 %. Pokračuje redukce AI a polovodičových pozic.",
+  "driver": "MSCI Asia-Pacific −3,3 %, TAIEX za týden −17,5 %. Evropští výrobci čipového vybavení ASML, ASM International a Infineon ráno ztráceli přes 4 %.",
   "news": [
     {
       "title": "Evropa: STOXX 600 −1 % (09:05 CET); ASML, ASM International a Infineon ztrácejí přes 4 %.",
@@ -108,6 +108,29 @@
       "eventKey": "asia-equities-selloff-nq-futures-20261120",
       "ndxRelevant": true,
       "importanceScore": 71
+    },
+    {
+      "title": "NVDA: kalifornská prokuratura vydala vyšetřovací předvolání kvůli prověřování vývozu čipů do Číny a informování investorů.",
+      "time": "19. 11. 2026, 23:43 CET",
+      "publishedAtPrague": "19. 11. 2026, 23:43",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "ai_regulation",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/legal/litigation/california-ag-subpoenas-nvidia-over-concerns-about-former-ceo-china-2026-11-19/",
+      "sourceLinks": [
+        {
+          "label": "Reuters – NVDA",
+          "url": "https://www.reuters.com/legal/litigation/california-ag-subpoenas-nvidia-over-concerns-about-former-ceo-china-2026-11-19/"
+        },
+        {
+          "label": "California DOJ",
+          "url": "https://oag.ca.gov/news/press-releases/attorney-general-bonta-serves-investigative-subpoena-nvidia"
+        }
+      ],
+      "eventKey": "california-ag-nvidia-investigative-subpoena-20261119",
+      "ndxRelevant": true,
+      "importanceScore": 80
     },
     {
       "title": "Sněmovní výbor USA: schválené licence pro 879 tis. AI čipů NVDA a AMD do Číny (12/2025–05/2026); dodané množství neznámé.",
@@ -287,44 +310,6 @@
       "eventKey": "anthropic-nasdaq-debut-11150-20261119",
       "ndxRelevant": true,
       "importanceScore": 84
-    },
-    {
-      "title": "INTC: první externí zákazník procesu 18A-P, identita klienta nezveřejněna; technologie v rizikové výrobě od června.",
-      "time": "19. 11. 2026, 10:09 CET",
-      "publishedAtPrague": "19. 11. 2026, 10:09",
-      "publicationTimeVerified": true,
-      "kind": "new",
-      "category": "semiconductors",
-      "source": "The Next Web",
-      "url": "https://thenextweb.com/news/intel-ceo-lip-bu-tan-says-intel-has-signed-its-first-outside-18a-customer",
-      "sourceLinks": [
-        {
-          "label": "The Next Web",
-          "url": "https://thenextweb.com/news/intel-ceo-lip-bu-tan-says-intel-has-signed-its-first-outside-18a-customer"
-        }
-      ],
-      "eventKey": "intel-first-18ap-external-client-20261118",
-      "ndxRelevant": true,
-      "importanceScore": 55
-    },
-    {
-      "title": "USA premarket: NVDA +1,6 %; INTC, AMD, MU, MRVL +3–4,5 % po ocenění IPO Anthropic na 83 USD.",
-      "time": "19. 11. 2026, 10:03 CET",
-      "publishedAtPrague": "19. 11. 2026, 10:03",
-      "publicationTimeVerified": true,
-      "kind": "new",
-      "category": "market_reaction",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/nasdaq-futures-jump-anthropics-record-ipo-pricing-fuels-hopes-strong-debut-2026-11-19/",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/business/nasdaq-futures-jump-anthropics-record-ipo-pricing-fuels-hopes-strong-debut-2026-11-19/"
-        }
-      ],
-      "eventKey": "us-semiconductor-premarket-rebound-anthropic-20261119",
-      "ndxRelevant": true,
-      "importanceScore": 68
     }
   ],
   "leaders": [
@@ -347,9 +332,9 @@
   },
   "forecast": {
     "athReturnPercent": 5,
-    "athReason": "Cash NDX −2,21 %; podmínka: stabilizace AI financování a polovodičů.",
+    "athReason": "Nutný růst cash NDX o 18,27 %; podmínkou stabilizace AI financování a polovodičů.",
     "downside": "−5 až −10 %",
-    "downsideReason": "AI CAPEX, financování datacenter a riziko růstu sazeb."
+    "downsideReason": "AI CAPEX, financování datacenter a riziko vyšších sazeb."
   },
   "catalyst": {
     "event": "Michigan: finální spotřebitelský sentiment za listopad",
@@ -1583,6 +1568,24 @@
           "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value=2026&type=daily_treasury_yield_curve"
         }
       ]
+    },
+    {
+      "time": "20. 11. 2026 11:01 CET",
+      "summary": "Cash NDX 26 517,05 b. (−2,21 %, závěr 19. 11.); MSCI Asia-Pacific −3,3 %, TAIEX za týden −17,5 %. NVDA: kalifornská prokuratura vydala vyšetřovací předvolání. Sentiment medvědí →.",
+      "sourceLinks": [
+        {
+          "label": "YCharts – cash NDX",
+          "url": "https://ycharts.com/indices/%5ENDX/level"
+        },
+        {
+          "label": "Reuters – Asie",
+          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-20/"
+        },
+        {
+          "label": "Reuters – NVDA",
+          "url": "https://www.reuters.com/legal/litigation/california-ag-subpoenas-nvidia-over-concerns-about-former-ceo-china-2026-11-19/"
+        }
+      ]
     }
   ],
   "history": [
@@ -1804,6 +1807,10 @@
     },
     {
       "time": "20. 11. 2026 09:58 CET",
+      "ndx": 26517.05
+    },
+    {
+      "time": "20. 11. 2026 11:01 CET",
       "ndx": 26517.05
     }
   ],
@@ -2387,6 +2394,14 @@
     {
       "name": "Reuters – evropské akcie",
       "url": "https://www.reuters.com/markets/europe/european-shares-head-steepest-weekly-drop-since-march-2026-11-20/"
+    },
+    {
+      "name": "Reuters – NVDA investigativní předvolání",
+      "url": "https://www.reuters.com/legal/litigation/california-ag-subpoenas-nvidia-over-concerns-about-former-ceo-china-2026-11-19/"
+    },
+    {
+      "name": "California DOJ – vyšetřovací předvolání NVDA",
+      "url": "https://oag.ca.gov/news/press-releases/attorney-general-bonta-serves-investigative-subpoena-nvidia"
     }
   ]
 }
