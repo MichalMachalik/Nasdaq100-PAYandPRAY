@@ -1,0 +1,43 @@
+name: Nasdaq-100 evidence-based 1-3 month downside
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "scripts/update_risk_model.py"
+      - "data/risk-model.json"
+      - "tests/test_risk_model.py"
+      - ".github/workflows/risk-model.yml"
+  schedule:
+    - cron: "50 22 * * 1-5"
+permissions:
+  contents: write
+concurrency:
+  group: ndx-risk-model
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Test model mathematics and timestamp validation
+        run: python -m unittest discover -s tests -p test_risk_model.py -v
+      - name: Refresh verified VXN and Treasury observations
+        run: python scripts/update_risk_model.py
+      - name: Publish sources without overwriting news report
+        run: |
+          if git diff --quiet -- data/risk-model.json; then
+            echo "Evidence sources unchanged."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/risk-model.json
+          git commit -m "Refresh observed Nasdaq-100 volatility and Treasury risk inputs"
+          for attempt in 1 2 3; do
+            git pull --rebase origin "${{ github.event.repository.default_branch }}"
+            if git push; then exit 0; fi
+          done
+          exit 1
