@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "20. 11. 2026 08:56 CET",
+  "updatedAtPrague": "20. 11. 2026 09:58 CET",
   "marketStatus": "Cash uzavřen; poslední závěr 19. 11. 2026",
   "ndx": {
     "value": 26517.05,
@@ -9,11 +9,30 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→ beze změny proti 08:05 CET",
-    "reason": "Cash NDX −2,21 % (19. 11.); MSCI Asia-Pacific −3,3 %, týden −8,5 %; TAIEX týden −17,5 %."
+    "trend": "→ beze změny proti 08:56 CET",
+    "reason": "Cash NDX −2,21 % (19. 11.); MSCI Asia-Pacific −3,3 %; STOXX 600 −1 % (20. 11., 09:05 CET)."
   },
-  "driver": "MSCI Asia-Pacific −3,3 %, týden −8,5 %; TAIEX za týden −17,5 %. Pokračuje redukce pozic v AI a polovodičích.",
+  "driver": "STOXX 600 −1 % (09:05 CET); ASML, ASM International a Infineon klesly o více než 4 %. Pokračuje redukce AI a polovodičových pozic.",
   "news": [
+    {
+      "title": "Evropa: STOXX 600 −1 % (09:05 CET); ASML, ASM International a Infineon ztrácejí přes 4 %.",
+      "time": "20. 11. 2026, 09:25 CET",
+      "publishedAtPrague": "20. 11. 2026, 09:25",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "market_reaction",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/markets/europe/european-shares-head-steepest-weekly-drop-since-march-2026-11-20/",
+      "sourceLinks": [
+        {
+          "label": "Reuters – evropské akcie",
+          "url": "https://www.reuters.com/markets/europe/european-shares-head-steepest-weekly-drop-since-march-2026-11-20/"
+        }
+      ],
+      "eventKey": "europe-stoxx600-chip-selloff-open-20261120",
+      "ndxRelevant": true,
+      "importanceScore": 62
+    },
     {
       "title": "Senát USA schválil 62:33 návrh zákona pro rychlejší povolování energetiky a datacenter; čeká na Sněmovnu.",
       "time": "20. 11. 2026, 04:17 CET",
@@ -312,12 +331,12 @@
     {
       "ticker": "NVDA",
       "changePercent": -3.3,
-      "impact": "Vysoký; cash závěr 19. 11."
+      "impact": "Závěr 19. 11.; tlak na polovodiče"
     },
     {
       "ticker": "AVGO",
       "changePercent": -2.09,
-      "impact": "Vysoký; cash závěr 19. 11."
+      "impact": "Závěr 19. 11.; tlak na AI infrastrukturu"
     }
   ],
   "macro": "US10Y | 19. 11.: 5,04 % | 18. 11.: 5,07 % | −3 bb",
@@ -328,9 +347,9 @@
   },
   "forecast": {
     "athReturnPercent": 5,
-    "athReason": "Cash NDX −2,21 %, oslabení čipů; podmínka: stabilizace AI financování.",
+    "athReason": "Cash NDX −2,21 %; podmínka: stabilizace AI financování a polovodičů.",
     "downside": "−5 až −10 %",
-    "downsideReason": "AI CAPEX, zadlužení datacenter a riziko dalšího růstu sazeb."
+    "downsideReason": "AI CAPEX, financování datacenter a riziko růstu sazeb."
   },
   "catalyst": {
     "event": "Michigan: finální spotřebitelský sentiment za listopad",
@@ -1546,6 +1565,24 @@
           "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value=2026&type=daily_treasury_yield_curve"
         }
       ]
+    },
+    {
+      "time": "20. 11. 2026 09:58 CET",
+      "summary": "Cash NDX 26 517,05 b. (−2,21 %, závěr 19. 11.); STOXX 600 −1 %, evropské čipy přes −4 %. Sentiment medvědí →.",
+      "sourceLinks": [
+        {
+          "label": "YCharts – cash NDX",
+          "url": "https://ycharts.com/indices/%5ENDX/level"
+        },
+        {
+          "label": "Reuters – evropské akcie",
+          "url": "https://www.reuters.com/markets/europe/european-shares-head-steepest-weekly-drop-since-march-2026-11-20/"
+        },
+        {
+          "label": "U.S. Treasury – US10Y",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value=2026&type=daily_treasury_yield_curve"
+        }
+      ]
     }
   ],
   "history": [
@@ -1763,6 +1800,10 @@
     },
     {
       "time": "20. 11. 2026 08:56 CET",
+      "ndx": 26517.05
+    },
+    {
+      "time": "20. 11. 2026 09:58 CET",
       "ndx": 26517.05
     }
   ],
@@ -2342,6 +2383,10 @@
     {
       "name": "Google Finance – NQZ26",
       "url": "https://www.google.com/finance/quote/NQZ26:CME_EMINIS?hl=en"
+    },
+    {
+      "name": "Reuters – evropské akcie",
+      "url": "https://www.reuters.com/markets/europe/european-shares-head-steepest-weekly-drop-since-march-2026-11-20/"
     }
   ]
 }
