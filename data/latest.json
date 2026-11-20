@@ -1,19 +1,38 @@
 {
-  "updatedAtPrague": "20. 11. 2026 17:08 CET",
+  "updatedAtPrague": "20. 11. 2026 18:05 CET",
   "marketStatus": "Otevřeno – cash Nasdaq-100",
   "ndx": {
-    "value": 25754.24,
-    "changePercent": -2.88,
+    "value": 25575.35,
+    "changePercent": -3.55,
     "ath": 31361.37,
-    "asOf": "20. 11. 2026 16:47 CET – cash NDX, intradenní kotace (Investing.com)"
+    "asOf": "20. 11. 2026 17:46:52 CET – cash NDX (Google Finance)"
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "↘ zhoršení proti 16:00 CET",
-    "reason": "NDX −2,88 %, NVDA −6,80 %, AVGO −8,37 % (poslední kotace 16:47 CET); tlak na AI CAPEX a jeho financování."
+    "trend": "↘ zhoršení proti 17:05 CET",
+    "reason": "NDX −3,55 %, SOX −8,41 %, NVDA −6,77 %, AVGO −10,62 %."
   },
-  "driver": "Výprodej NVDA a AVGO souvisí s obavami o návratnost AI CAPEX. Alphabet mezitím vydal dluhopisy za 6 mld. CAD, jejichž výnos je určen na obecné firemní účely.",
+  "driver": "SOX −8,41 % (17:41 CET); NVDA −6,77 % (17:56 CET), AVGO −10,62 % (17:55 CET). Pokračuje výprodej čipů při přehodnocování AI CAPEX a jeho financování.",
   "news": [
+    {
+      "title": "Bessent doporučuje Fedu vyhnout se zvýšení sazeb o 50 bb; odkazuje na energetický šok a pokles cen ropy.",
+      "time": "20. 11. 2026, 16:46 CET",
+      "publishedAtPrague": "20. 11. 2026, 16:46",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "monetary_policy",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/bessent-advocates-lower-fed-rate-hike-cites-energy-shock-2026-11-20/",
+      "sourceLinks": [
+        {
+          "label": "Reuters – Bessent / Fed",
+          "url": "https://www.reuters.com/business/bessent-advocates-lower-fed-rate-hike-cites-energy-shock-2026-11-20/"
+        }
+      ],
+      "eventKey": "us-treasury-bessent-opposes-50bp-fed-hike-20261120",
+      "ndxRelevant": true,
+      "importanceScore": 66
+    },
     {
       "title": "Alphabet předstihl NVIDIA v tržní kapitalizaci USA: 3,44 bil. USD vs. 3,4 bil. USD.",
       "time": "20. 11. 2026, 16:31 CET",
@@ -368,29 +387,29 @@
   "leaders": [
     {
       "ticker": "NVDA",
-      "changePercent": -6.8,
-      "impact": "Vysoký negativní; AI čipy"
+      "changePercent": -6.77,
+      "impact": "vysoký – pokles velké vážené složky NDX"
     },
     {
       "ticker": "AVGO",
-      "changePercent": -8.37,
-      "impact": "Vysoký negativní; polovodiče a AI infrastruktura"
+      "changePercent": -10.62,
+      "impact": "vysoký – čipová složka pod tlakem"
     }
   ],
-  "macro": "UMICH | 20. 11. 16:00: 51,5 | říjen: 48,0 | +3,5 b.",
+  "macro": "US10Y | 20. 11.: 4,948 % | 19. 11.: 5,052 % | −10,4 bb",
   "regulation": null,
   "technical": {
     "support": null,
     "resistance": null
   },
   "forecast": {
-    "athReturnPercent": 4,
-    "athReason": "Nutný růst 21,77 %; NVDA −6,80 %, AVGO −8,37 %, tlak na AI CAPEX.",
-    "downside": "−5 až −12 %",
-    "downsideReason": "Pokračující slabost čipů, AI financování a sazby Fedu."
+    "athReturnPercent": 3,
+    "athReason": "Nutný růst 22,62 %; SOX −8,41 %, AVGO −10,62 %.",
+    "downside": "−6 až −14 %",
+    "downsideReason": "Výprodej polovodičů, financování AI CAPEX a očekávané zvýšení sazeb Fedu."
   },
   "catalyst": {
-    "event": "Fed: projev guvernérky Lisy Cook (U.S. Economy in Global Context)",
+    "event": "Fed: projev guvernérky Lisy Cook – The U.S. Economy in Global Context",
     "timePrague": "20. 11. 2026 18:15 CET"
   },
   "archive": [
@@ -1761,6 +1780,24 @@
           "url": "https://www.sca.isr.umich.edu/"
         }
       ]
+    },
+    {
+      "time": "20. 11. 2026 18:05 CET",
+      "summary": "Cash NDX 25 575,35 b. (−3,55 %, kotace 17:46 CET), SOX −8,41 %, NVDA −6,77 %, AVGO −10,62 %; US10Y 4,948 %. Sentiment medvědí ↘.",
+      "sourceLinks": [
+        {
+          "label": "Google Finance – cash NDX",
+          "url": "https://www.google.com/finance/quote/NDX:INDEXNASDAQ?hl=en"
+        },
+        {
+          "label": "Google Finance – SOX",
+          "url": "https://www.google.com/finance/quote/SOX:INDEXNASDAQ?hl=en"
+        },
+        {
+          "label": "Reuters – globální trhy / US10Y",
+          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-20/"
+        }
+      ]
     }
   ],
   "history": [
@@ -2015,6 +2052,10 @@
     {
       "time": "20. 11. 2026 17:08 CET",
       "ndx": 25754.24
+    },
+    {
+      "time": "20. 11. 2026 18:05 CET",
+      "ndx": 25575.35
     }
   ],
   "sources": [
@@ -2633,6 +2674,10 @@
     {
       "name": "Reuters – Alphabet dluhopisy 6 mld. CAD",
       "url": "https://www.reuters.com/business/alphabet-aims-raise-419-billion-canadian-debt-offering-2026-11-20/"
+    },
+    {
+      "name": "Reuters – Bessent",
+      "url": "https://www.reuters.com/business/bessent-advocates-lower-fed-rate-hike-cites-energy-shock-2026-11-20/"
     }
   ]
 }
