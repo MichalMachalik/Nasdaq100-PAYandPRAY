@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "20. 11. 2026 11:01 CET",
+  "updatedAtPrague": "20. 11. 2026 12:03 CET",
   "marketStatus": "Cash uzavřen",
   "ndx": {
     "value": 26517.05,
@@ -9,11 +9,49 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→ beze změny proti 09:58 CET",
-    "reason": "Cash NDX −2,21 % (19. 11.); MSCI Asia-Pacific −3,3 % a TAIEX za týden −17,5 %; STOXX 600 −1,0 % (20. 11., 09:05 CET)."
+    "trend": "→ beze změny proti 11:01 CET",
+    "reason": "Cash NDX −2,21 % (19. 11.); VIX max. 30,04 (20. 11.), NVDA premarket −2,6 % a AMD/AVGO/MRVL/MU −3,5 až −5,5 %."
   },
-  "driver": "MSCI Asia-Pacific −3,3 %, TAIEX za týden −17,5 %. Evropští výrobci čipového vybavení ASML, ASM International a Infineon ráno ztráceli přes 4 %.",
+  "driver": "USA premarket: NVDA −2,6 %, AMD/AVGO/MRVL/MU −3,5 až −5,5 %, AMZN/META/MSFT přes −1,8 %. VIX maximum 30,04.",
   "news": [
+    {
+      "title": "USA premarket: NVDA −2,6 %, AMD/AVGO/MRVL/MU −3,5 až −5,5 %; AMZN/META/MSFT přes −1,8 %.",
+      "time": "20. 11. 2026, 11:37 CET",
+      "publishedAtPrague": "20. 11. 2026, 11:37",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "semiconductors",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/legal/transactional/wall-st-futures-slip-anthropic-debut-fails-reassure-ai-investors-2026-11-20/",
+      "sourceLinks": [
+        {
+          "label": "Reuters – USA premarket",
+          "url": "https://www.reuters.com/legal/transactional/wall-st-futures-slip-anthropic-debut-fails-reassure-ai-investors-2026-11-20/"
+        }
+      ],
+      "eventKey": "us-premarket-chip-hyperscaler-selloff-20261120",
+      "ndxRelevant": true,
+      "importanceScore": 77
+    },
+    {
+      "title": "VIX dosáhl 30,04, maxima od 30. 3.; poslední údaj 29,50 (+1,08 b.).",
+      "time": "20. 11. 2026, 11:36 CET",
+      "publishedAtPrague": "20. 11. 2026, 11:36",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "market_reaction",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/wall-streets-fear-gauge-touches-seven-month-high-ai-worries-mount-2026-11-20/",
+      "sourceLinks": [
+        {
+          "label": "Reuters – VIX",
+          "url": "https://www.reuters.com/business/wall-streets-fear-gauge-touches-seven-month-high-ai-worries-mount-2026-11-20/"
+        }
+      ],
+      "eventKey": "vix-seven-month-high-30-04-20261120",
+      "ndxRelevant": true,
+      "importanceScore": 67
+    },
     {
       "title": "Evropa: STOXX 600 −1 % (09:05 CET); ASML, ASM International a Infineon ztrácejí přes 4 %.",
       "time": "20. 11. 2026, 09:25 CET",
@@ -332,9 +370,9 @@
   },
   "forecast": {
     "athReturnPercent": 5,
-    "athReason": "Nutný růst cash NDX o 18,27 %; podmínkou stabilizace AI financování a polovodičů.",
+    "athReason": "Cash NDX potřebuje růst 18,27 %; podmínka stabilizace polovodičů a financování AI CAPEX.",
     "downside": "−5 až −10 %",
-    "downsideReason": "AI CAPEX, financování datacenter a riziko vyšších sazeb."
+    "downsideReason": "AI CAPEX, financování datacenter a vyšší sazby."
   },
   "catalyst": {
     "event": "Michigan: finální spotřebitelský sentiment za listopad",
@@ -1586,6 +1624,24 @@
           "url": "https://www.reuters.com/legal/litigation/california-ag-subpoenas-nvidia-over-concerns-about-former-ceo-china-2026-11-19/"
         }
       ]
+    },
+    {
+      "time": "20. 11. 2026 12:03 CET",
+      "summary": "Cash NDX 26 517,05 b. (−2,21 %, závěr 19. 11.); USA premarket NVDA −2,6 %, AMD/AVGO/MRVL/MU −3,5 až −5,5 %. VIX max. 30,04; sentiment medvědí →.",
+      "sourceLinks": [
+        {
+          "label": "YCharts – cash NDX",
+          "url": "https://ycharts.com/indices/%5ENDX/level"
+        },
+        {
+          "label": "Reuters – USA premarket",
+          "url": "https://www.reuters.com/legal/transactional/wall-st-futures-slip-anthropic-debut-fails-reassure-ai-investors-2026-11-20/"
+        },
+        {
+          "label": "Reuters – VIX",
+          "url": "https://www.reuters.com/business/wall-streets-fear-gauge-touches-seven-month-high-ai-worries-mount-2026-11-20/"
+        }
+      ]
     }
   ],
   "history": [
@@ -1811,6 +1867,10 @@
     },
     {
       "time": "20. 11. 2026 11:01 CET",
+      "ndx": 26517.05
+    },
+    {
+      "time": "20. 11. 2026 12:03 CET",
       "ndx": 26517.05
     }
   ],
@@ -2402,6 +2462,14 @@
     {
       "name": "California DOJ – vyšetřovací předvolání NVDA",
       "url": "https://oag.ca.gov/news/press-releases/attorney-general-bonta-serves-investigative-subpoena-nvidia"
+    },
+    {
+      "name": "Reuters – USA premarket",
+      "url": "https://www.reuters.com/legal/transactional/wall-st-futures-slip-anthropic-debut-fails-reassure-ai-investors-2026-11-20/"
+    },
+    {
+      "name": "Reuters – VIX",
+      "url": "https://www.reuters.com/business/wall-streets-fear-gauge-touches-seven-month-high-ai-worries-mount-2026-11-20/"
     }
   ]
 }
