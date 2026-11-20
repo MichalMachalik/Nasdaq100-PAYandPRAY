@@ -3,8 +3,8 @@
   "sourceUrl": "https://companiesmarketcap.com/",
   "market": "NASDAQ-100 constituent companies, global total-market-cap ranking",
   "currency": "USD",
-  "fetchedAtUtc": "2026-11-20T21:05:59.810Z",
-  "fetchedAtPrague": "20. 11. 2026 22:05",
+  "fetchedAtUtc": "2026-11-20T22:23:18.456Z",
+  "fetchedAtPrague": "20. 11. 2026 23:23",
   "timestampKind": "fetch_time_not_quote_time",
   "constituentsSourceUrl": "https://api.nasdaq.com/api/quote/list-type/nasdaq100",
   "constituentsAsOf": "2026-11-20",
@@ -17,9 +17,9 @@
     {
       "ticker": "AAPL",
       "name": "Apple",
-      "marketCapUsd": 4983000000000,
-      "priceUsd": 342.94,
-      "changePercent": -1.79,
+      "marketCapUsd": 4978000000000,
+      "priceUsd": 342.56,
+      "changePercent": -1.9,
       "sourceUrl": "https://companiesmarketcap.com/apple/marketcap/",
       "indexMembershipVerified": true
     },
@@ -44,9 +44,9 @@
     {
       "ticker": "NVDA",
       "name": "NVIDIA",
-      "marketCapUsd": 3019000000000,
-      "priceUsd": 125.03,
-      "changePercent": -14.35,
+      "marketCapUsd": 3031000000000,
+      "priceUsd": 125.53,
+      "changePercent": -14.01,
       "sourceUrl": "https://companiesmarketcap.com/nvidia/marketcap/",
       "indexMembershipVerified": true
     },
@@ -80,18 +80,18 @@
     {
       "ticker": "META",
       "name": "Meta Platforms (Facebook)",
-      "marketCapUsd": 1432000000000,
-      "priceUsd": 560.25,
-      "changePercent": -6.03,
+      "marketCapUsd": 1433000000000,
+      "priceUsd": 560.84,
+      "changePercent": -5.93,
       "sourceUrl": "https://companiesmarketcap.com/meta-platforms/marketcap/",
       "indexMembershipVerified": true
     },
     {
       "ticker": "TSLA",
       "name": "Tesla",
-      "marketCapUsd": 1364000000000,
-      "priceUsd": 345.18,
-      "changePercent": -7.81,
+      "marketCapUsd": 1366000000000,
+      "priceUsd": 345.82,
+      "changePercent": -7.64,
       "sourceUrl": "https://companiesmarketcap.com/tesla/marketcap/",
       "indexMembershipVerified": true
     },
