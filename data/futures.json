@@ -5,10 +5,10 @@
   "source": "Google Finance / CME_EMINIS (delayed)",
   "sourceUrl": "https://www.google.com/finance/quote/NQZ26:CME_EMINIS?hl=en",
   "quoteField": "lastPrice",
-  "price": 26295,
-  "changePercent": -1.15,
-  "quotedAtUtc": "2026-11-20T10:30:03Z",
-  "quotedAtPrague": "20. 11. 2026 11:30",
-  "fetchedAtUtc": "2026-11-20T11:03:12.010Z",
+  "price": 26215,
+  "changePercent": -1.45,
+  "quotedAtUtc": "2026-11-20T11:30:32Z",
+  "quotedAtPrague": "20. 11. 2026 12:30",
+  "fetchedAtUtc": "2026-11-20T11:59:07.506Z",
   "delayed": true
 }
