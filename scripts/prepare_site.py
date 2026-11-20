@@ -39,7 +39,7 @@ def prepare():
                 'forecast-down','futures-price','refresh','updated','archive','commodity-rows','fx-rows','commodities-updated','fx-updated','policy-rates','quarterly-gdp'}
     if not required.issubset(ids):
         raise ValueError('Missing dashboard DOM targets: '+str(required-set(ids)))
-    # Economy data must be official, complete, and explicitly YoY for Q3 2026.
+    # Validate the period and comparison for each quarterly growth figure.
     econ = json.loads(Path('data/economy.json').read_text(encoding='utf-8'))
     if {x['id'] for x in econ.get('rates',[])} != {'FED','ECB','ČNB'}:
         raise ValueError('Missing official central bank reference rates')
@@ -65,7 +65,6 @@ def prepare():
         check.write_text(code, encoding='utf-8')
         subprocess.run(['node','--check',str(check)],check=True)
         # Execute the real report renderer against current JSON, not just parse syntax.
-        fixture = json.loads(Path('data/latest.json').read_text(encoding='utf-8'))
         prefix = r'''const vm=require('node:vm'); const fs=require('node:fs');
 function element(){return {textContent:'',className:'',children:[],childNodes:[],style:{},classList:{add(){}},append(...x){this.children.push(...x);this.childNodes.push(...x)},replaceChildren(...x){this.children=x;this.childNodes=x},addEventListener(){},querySelector(){return null}}}
 const ids=JSON.parse(process.argv[3]);const nodes=Object.fromEntries(ids.map(id=>[id,element()]));
@@ -74,14 +73,14 @@ const context={console,URL,Date,Intl,Number,String,Math,Array,Set,Map,Promise,
  window:{location:{href:'https://example.invalid/',replace(){}}},setInterval(){},
  fetch:()=>new Promise(()=>{})};vm.createContext(context);
 vm.runInContext(fs.readFileSync(process.argv[2],'utf8'),context);
-context.__fixture=JSON.parse(process.argv[4]);vm.runInContext('render(__fixture)',context);
+context.__fixture=JSON.parse(fs.readFileSync(process.argv[4],'utf8'));vm.runInContext('render(__fixture)',context);
 const filled=n=>Boolean(n.textContent?.trim())||Boolean(n.children?.length)||Boolean(n.childNodes?.length);
 if(!filled(nodes['forecast-down'])||!filled(nodes.macro))throw Error('Incomplete report render');
 console.log('PASS: report renderer, macro, forecasts and DOM targets');
 '''
         harness = Path(directory)/'check.cjs'
         harness.write_text(prefix,encoding='utf-8')
-        subprocess.run(['node',str(harness),str(check),json.dumps(ids),json.dumps(fixture)],check=True)
+        subprocess.run(['node',str(harness),str(check),json.dumps(ids),'data/latest.json'],check=True)
     if html != original:
         PAGE.write_text(html, encoding='utf-8')
     print('PASS: no standalone AI regulation, intact Top 10, commodities, FX and quote loaders')

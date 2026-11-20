@@ -10,6 +10,7 @@ import re
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
+from urllib.error import URLError
 from urllib.parse import urljoin
 from urllib.request import Request, urlopen
 from zoneinfo import ZoneInfo
@@ -39,21 +40,35 @@ def parse_date(value):
     raise ValueError('Unrecognized membership date: '+repr(value))
 
 
-def current_members(now):
-    payload = json.loads(fetch(MEMBERS_URL, 'application/json'))
-    data = payload.get('data') or {}
-    rows = (data.get('data') or {}).get('rows') or []
-    symbols = {str(row.get('symbol', '')).strip().upper() for row in rows}
+def validate_members(symbols, source_date, now):
     if not 99 <= len(symbols) <= 110 or not all(re.fullmatch(r'[A-Z][A-Z0-9.\-]{0,9}', t) for t in symbols):
         raise ValueError('Nasdaq membership is incomplete or malformed: '+str(len(symbols)))
-    total = data.get('totalrecords')
-    if total is not None and int(total) != len(rows):
-        raise ValueError('Nasdaq membership response is paginated or truncated')
-    source_date = parse_date(data.get('date'))
     age = (now.astimezone(ZoneInfo('America/New_York')).date()-source_date).days
     if age < -1 or age > 7:
         raise ValueError('Stale Nasdaq membership date: '+source_date.isoformat())
-    return symbols, source_date.isoformat()
+
+
+def current_members(now):
+    try:
+        payload = json.loads(fetch(MEMBERS_URL, 'application/json'))
+    except (URLError, TimeoutError):
+        if not MEMBERS_OUT.exists():
+            raise
+        saved = json.loads(MEMBERS_OUT.read_text(encoding='utf-8'))
+        if saved.get('sourceUrl') != MEMBERS_URL or saved.get('index') != 'NDX':
+            raise ValueError('Cached membership source is unverified')
+        symbols = set(saved['symbols'])
+        source_date = parse_date(saved['sourceDate'])
+        validate_members(symbols, source_date, now)
+        return symbols, source_date.isoformat(), False
+    data = payload.get('data') or {}
+    rows = (data.get('data') or {}).get('rows') or []
+    if data.get('totalrecords') is not None and int(data['totalrecords']) != len(rows):
+        raise ValueError('Nasdaq membership response is paginated or truncated')
+    symbols = {str(row.get('symbol', '')).strip().upper() for row in rows}
+    source_date = parse_date(data.get('date'))
+    validate_members(symbols, source_date, now)
+    return symbols, source_date.isoformat(), True
 
 
 def money(text):
@@ -152,8 +167,9 @@ def atomic_json(path, data):
 
 def retrieve():
     now = datetime.now(timezone.utc)
-    eligible, source_date = current_members(now)
-    print('Membership:',len(eligible),'securities, Nasdaq date',source_date)
+    eligible, source_date, refreshed = current_members(now)
+    print('Membership:',len(eligible),'securities, Nasdaq date',source_date,
+          '(retrieved)' if refreshed else '(saved Nasdaq snapshot)')
     top, coverage, candidates = ranked_page(fetch(SOURCE_URL), eligible)
     now = datetime.now(timezone.utc)
     timestamp = now.isoformat().replace('+00:00','Z')
@@ -162,13 +178,15 @@ def retrieve():
               'fetchedAtPrague':now.astimezone(ZoneInfo('Europe/Prague')).strftime('%d. %m. %Y %H:%M'),
               'timestampKind':'retrieval; quote time not supplied by source',
               'constituentsSourceUrl':MEMBERS_URL,'constituentsAsOf':source_date,
+              'membershipLookup':'retrieved' if refreshed else 'cached',
               'constituentSecurityCount':len(eligible),'rankingScope':'all sectors; company market cap',
               'globalCompaniesChecked':coverage,'eligibleCompaniesCompared':candidates,
               'companies':top}
     membership = {'index':'NDX','sourceUrl':MEMBERS_URL,'sourceDate':source_date,
                   'checkedAtUtc':timestamp,'symbols':sorted(eligible)}
     # Update the check timestamp even if prices are unchanged; it is not a quote timestamp.
-    atomic_json(MEMBERS_OUT,membership)
+    if refreshed:
+        atomic_json(MEMBERS_OUT,membership)
     atomic_json(OUT,output)
     print('Verified Top 10: '+', '.join(item['ticker'] for item in top))
 

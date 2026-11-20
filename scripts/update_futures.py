@@ -28,12 +28,20 @@ try:
     if symbol != "NQ=F":
         raise ValueError(f"Unexpected ticker {symbol!r}, source name={name!r}")
     ts = result.get("timestamp") or []
-    vals = (result["indicators"]["quote"][0].get("close") or [])
+    quotes = (result.get("indicators") or {}).get("quote") or []
+    vals = (quotes[0].get("close") or []) if quotes else []
     ticks = [(int(t), float(p)) for t, p in zip(ts, vals)
              if isinstance(p, (int, float)) and math.isfinite(p) and p > 1000]
-    if not ticks:
+    if ticks:
+        last_ts, last_px = ticks[-1]
+        quote_field = "intradayClose"
+    elif (isinstance(meta.get("regularMarketTime"), int)
+          and isinstance(meta.get("regularMarketPrice"), (int, float))
+          and math.isfinite(meta["regularMarketPrice"]) and meta["regularMarketPrice"] > 1000):
+        last_ts, last_px = meta["regularMarketTime"], meta["regularMarketPrice"]
+        quote_field = "regularMarketPrice"
+    else:
         raise ValueError("No usable timestamped close")
-    last_ts, last_px = ticks[-1]
     now = datetime.now(timezone.utc)
     quote_dt = datetime.fromtimestamp(last_ts, timezone.utc)
     age = (now - quote_dt).total_seconds()
@@ -48,6 +56,7 @@ try:
         "instrumentType": "FUTURES",
         "source": "Yahoo Finance chart (unofficial)",
         "sourceUrl": "https://finance.yahoo.com/quote/NQ=F/",
+        "quoteField": quote_field,
         "price": round(last_px, 2),
         "changePercent": round(change, 2) if change is not None else None,
         "quotedAtUtc": quote_dt.isoformat().replace("+00:00", "Z"),
@@ -57,7 +66,8 @@ try:
     }
     OUT.parent.mkdir(parents=True, exist_ok=True)
     old = json.loads(OUT.read_text(encoding="utf-8")) if OUT.exists() else {}
-    # Do not commit repeatedly unless provider's quote timestamp changes.
+    if old.get("quotedAtUtc") and datetime.fromisoformat(old["quotedAtUtc"].replace("Z", "+00:00")) > quote_dt:
+        raise ValueError("Quote predates the published snapshot")
     if old.get("quotedAtUtc") != output["quotedAtUtc"] or old.get("price") != output["price"]:
         OUT.write_text(json.dumps(output, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     print(f"NQ=F {last_px:.2f}, timestamp={last_ts}, age_s={round(age)}")
