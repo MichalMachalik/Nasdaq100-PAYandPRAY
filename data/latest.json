@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "20. 11. 2026 13:56 CET",
+  "updatedAtPrague": "20. 11. 2026 15:06 CET",
   "marketStatus": "cash uzavřen",
   "ndx": {
     "value": 26517.05,
@@ -9,17 +9,17 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "↘ zhoršení proti 13:00 CET",
-    "reason": "NVDA −2,2 %; AMD/AVGO/MRVL/MU −2,2 až −6,6 % (premarket 20. 11.); VIX dosáhl 30,04."
+    "trend": "↘ zhoršení proti 13:56 CET",
+    "reason": "USA premarket: NVDA −3,7 %, META −4,5 %, AMZN/MSFT přes −2 %; VIX max. 30,04."
   },
-  "driver": "Pokračující tlak na čipy: NVDA −2,2 %, AMD/AVGO/MRVL/MU −2,2 až −6,6 % v premarketu; obavy z financování AI CAPEX.",
+  "driver": "USA premarket: NVDA −3,7 %, AMD/AVGO/MRVL/MU −3,6 až −7 %; obavy o návratnost AI infrastruktury a vyšší sazby.",
   "news": [
     {
-      "title": "USA premarket: NVDA −2,6 %, AMD/AVGO/MRVL/MU −3,5 až −5,5 %; AMZN/META/MSFT přes −1,8 %.",
+      "title": "USA premarket: NVDA −3,7 %, META −4,5 %, AMZN/MSFT přes −2 %; AMD/AVGO/MRVL/MU −3,6 až −7 %.",
       "time": "20. 11. 2026, 11:37 CET",
       "publishedAtPrague": "20. 11. 2026, 11:37",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "semiconductors",
       "source": "Reuters",
       "url": "https://www.reuters.com/legal/transactional/wall-st-futures-slip-anthropic-debut-fails-reassure-ai-investors-2026-11-20/",
@@ -95,11 +95,11 @@
       "importanceScore": 73
     },
     {
-      "title": "Evropa: STOXX 600 −1 % (09:05 CET); ASML, ASM International a Infineon ztrácejí přes 4 %.",
+      "title": "Evropa: STOXX 600 −1,3 % (10:26 CET); ASML, ASM International a STMicroelectronics přes −5 %.",
       "time": "20. 11. 2026, 09:25 CET",
       "publishedAtPrague": "20. 11. 2026, 09:25",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "market_reaction",
       "source": "Reuters",
       "url": "https://www.reuters.com/markets/europe/european-shares-head-steepest-weekly-drop-since-march-2026-11-20/",
@@ -329,44 +329,6 @@
       "eventKey": "fed-jefferson-ai-inflation-demand-20261119",
       "ndxRelevant": true,
       "importanceScore": 76
-    },
-    {
-      "title": "USA ICSA: 203 tis. vs. předchozí revid. 202 tis. (+1 tis.), kons. Reuters 197 tis.; týden do 14. 11.",
-      "time": "19. 11. 2026, 14:44 CET",
-      "publishedAtPrague": "19. 11. 2026, 14:44",
-      "publicationTimeVerified": true,
-      "kind": "new",
-      "category": "employment",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/us/us-weekly-jobless-claims-increase-slightly-2026-11-19/",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/world/us/us-weekly-jobless-claims-increase-slightly-2026-11-19/"
-        }
-      ],
-      "eventKey": "us-weekly-initial-claims-203k-week-20261114-released-20261119",
-      "ndxRelevant": true,
-      "importanceScore": 61
-    },
-    {
-      "title": "J.P. Morgan: odhad zvýšení sazeb Fedu o 25 bb v prosinci, lednu a březnu.",
-      "time": "19. 11. 2026, 14:41 CET",
-      "publishedAtPrague": "19. 11. 2026, 14:41",
-      "publicationTimeVerified": true,
-      "kind": "new",
-      "category": "monetary_policy",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/jp-morgan-sees-fed-rate-hikes-next-three-meetings-inflation-persists-2026-11-19/",
-      "eventKey": "jpm-three-fed-hikes-20261119",
-      "ndxRelevant": true,
-      "importanceScore": 65,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/business/jp-morgan-sees-fed-rate-hikes-next-three-meetings-inflation-persists-2026-11-19/"
-        }
-      ]
     }
   ],
   "leaders": [
@@ -389,7 +351,7 @@
   },
   "forecast": {
     "athReturnPercent": 5,
-    "athReason": "Nutný růst 18,27 %; podmínka stabilizace čipů a AI CAPEX.",
+    "athReason": "Potřebný růst 18,27 %; podmínka stabilizace čipů a AI CAPEX.",
     "downside": "−5 až −10 %",
     "downsideReason": "AI CAPEX, financování datacenter a sazby."
   },
@@ -1697,6 +1659,20 @@
           "url": "https://www.reuters.com/legal/transactional/wall-st-futures-slip-anthropic-debut-fails-reassure-ai-investors-2026-11-20/"
         }
       ]
+    },
+    {
+      "time": "20. 11. 2026 15:06 CET",
+      "summary": "Cash NDX 26 517,05 b. (−2,21 %, závěr 19. 11.); USA premarket NVDA −3,7 %, META −4,5 %, AVGO a další čipy pod tlakem. Nasdaq-100 E-mini −2,16 % v 14:41 CET; sentiment medvědí ↘.",
+      "sourceLinks": [
+        {
+          "label": "YCharts – cash NDX",
+          "url": "https://ycharts.com/indices/%5ENDX/level"
+        },
+        {
+          "label": "Reuters – USA premarket",
+          "url": "https://www.reuters.com/legal/transactional/wall-st-futures-slip-anthropic-debut-fails-reassure-ai-investors-2026-11-20/"
+        }
+      ]
     }
   ],
   "history": [
@@ -1934,6 +1910,10 @@
     },
     {
       "time": "20. 11. 2026 13:56 CET",
+      "ndx": 26517.05
+    },
+    {
+      "time": "20. 11. 2026 15:06 CET",
       "ndx": 26517.05
     }
   ],
