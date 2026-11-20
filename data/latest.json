@@ -1,19 +1,42 @@
 {
-  "updatedAtPrague": "20. 11. 2026 18:05 CET",
+  "updatedAtPrague": "20. 11. 2026 19:00 CET",
   "marketStatus": "Otevřeno – cash Nasdaq-100",
   "ndx": {
-    "value": 25575.35,
-    "changePercent": -3.55,
+    "value": 25476.04,
+    "changePercent": -3.93,
     "ath": 31361.37,
-    "asOf": "20. 11. 2026 17:46:52 CET – cash NDX (Google Finance)"
+    "asOf": "20. 11. 2026 18:47:28 CET – cash NDX (Google Finance)"
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "↘ zhoršení proti 17:05 CET",
-    "reason": "NDX −3,55 %, SOX −8,41 %, NVDA −6,77 %, AVGO −10,62 %."
+    "trend": "↘ zhoršení proti 18:05 CET",
+    "reason": "NDX −3,93 %, SOX −8,93 %, NVDA −7,27 %, AVGO −11,46 %."
   },
-  "driver": "SOX −8,41 % (17:41 CET); NVDA −6,77 % (17:56 CET), AVGO −10,62 % (17:55 CET). Pokračuje výprodej čipů při přehodnocování AI CAPEX a jeho financování.",
+  "driver": "SOX −8,93 % (18:47 CET); NVDA −7,27 % (18:40 CET), AVGO −11,46 % (18:43 CET). Pokračuje výprodej polovodičů a přeceňování AI investic.",
   "news": [
+    {
+      "title": "Fed Cook: současné sazby nestačí ke snížení inflace; odhad říjnového PCE 3,8 % y/y a core 3,2 % y/y.",
+      "time": "20. 11. 2026, 18:18 CET",
+      "publishedAtPrague": "20. 11. 2026, 18:18",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "monetary_policy",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/feds-cook-says-rate-hikes-needed-lower-high-inflation-2026-11-20/",
+      "sourceLinks": [
+        {
+          "label": "Fed – projev Lisa Cook",
+          "url": "https://www.federalreserve.gov/newsevents/speech/cook20261120a.htm"
+        },
+        {
+          "label": "Reuters – Cook / sazby",
+          "url": "https://www.reuters.com/business/feds-cook-says-rate-hikes-needed-lower-high-inflation-2026-11-20/"
+        }
+      ],
+      "eventKey": "fed-cook-further-rate-hikes-inflation-ai-investment-20261120",
+      "ndxRelevant": true,
+      "importanceScore": 83
+    },
     {
       "title": "Bessent doporučuje Fedu vyhnout se zvýšení sazeb o 50 bb; odkazuje na energetický šok a pokles cen ropy.",
       "time": "20. 11. 2026, 16:46 CET",
@@ -363,54 +386,35 @@
           "url": "https://www.reuters.com/business/goolsbee-says-feds-job-right-now-is-keep-ai-surge-overheating-economy-2026-11-19/"
         }
       ]
-    },
-    {
-      "title": "AMD −8 %; Hunterbrook zveřejnil tvrzení o vazbách na sankcionované čínské firmy. AMD obvinění odmítá.",
-      "time": "19. 11. 2026, 18:07 CET",
-      "publishedAtPrague": "19. 11. 2026, 18:07",
-      "publicationTimeVerified": true,
-      "kind": "new",
-      "category": "semiconductors",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/china/amd-shares-slide-report-says-china-links-could-invite-us-scrutiny-2026-11-19/",
-      "sourceLinks": [
-        {
-          "label": "Reuters – AMD",
-          "url": "https://www.reuters.com/world/china/amd-shares-slide-report-says-china-links-could-invite-us-scrutiny-2026-11-19/"
-        }
-      ],
-      "eventKey": "amd-hunterbrook-china-export-scrutiny-20261119",
-      "ndxRelevant": true,
-      "importanceScore": 74
     }
   ],
   "leaders": [
     {
       "ticker": "NVDA",
-      "changePercent": -6.77,
-      "impact": "vysoký – pokles velké vážené složky NDX"
+      "changePercent": -7.27,
+      "impact": "vysoký – pokles nejvýznamnější čipové složky"
     },
     {
       "ticker": "AVGO",
-      "changePercent": -10.62,
-      "impact": "vysoký – čipová složka pod tlakem"
+      "changePercent": -11.46,
+      "impact": "vysoký – výprodej čipové infrastruktury"
     }
   ],
-  "macro": "US10Y | 20. 11.: 4,948 % | 19. 11.: 5,052 % | −10,4 bb",
+  "macro": "US10Y | 20. 11. 17:58: 4,944 % | 19. 11.: 5,052 % | −10,8 bb",
   "regulation": null,
   "technical": {
     "support": null,
     "resistance": null
   },
   "forecast": {
-    "athReturnPercent": 3,
-    "athReason": "Nutný růst 22,62 %; SOX −8,41 %, AVGO −10,62 %.",
+    "athReturnPercent": 2,
+    "athReason": "Nutný růst 23,10 %; SOX −8,93 %, AVGO −11,46 %, Fed Cook požaduje další zpřísnění.",
     "downside": "−6 až −14 %",
-    "downsideReason": "Výprodej polovodičů, financování AI CAPEX a očekávané zvýšení sazeb Fedu."
+    "downsideReason": "Výprodej polovodičů, AI CAPEX a očekávání dalšího zvýšení sazeb Fedu."
   },
   "catalyst": {
-    "event": "Fed: projev guvernérky Lisy Cook – The U.S. Economy in Global Context",
-    "timePrague": "20. 11. 2026 18:15 CET"
+    "event": "S&P Global: Flash US PMI – listopad",
+    "timePrague": "23. 11. 2026 15:45 CET"
   },
   "archive": [
     {
@@ -1798,6 +1802,24 @@
           "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-20/"
         }
       ]
+    },
+    {
+      "time": "20. 11. 2026 19:00 CET",
+      "summary": "Cash NDX 25 476,04 b. (−3,93 %, 18:47 CET); SOX −8,93 %. Fed Cook: další zvýšení sazeb potřebné.",
+      "sourceLinks": [
+        {
+          "label": "Google Finance – cash NDX",
+          "url": "https://www.google.com/finance/quote/NDX:INDEXNASDAQ?hl=en"
+        },
+        {
+          "label": "Google Finance – SOX",
+          "url": "https://www.google.com/finance/quote/SOX:INDEXNASDAQ?hl=en"
+        },
+        {
+          "label": "Fed – Lisa Cook",
+          "url": "https://www.federalreserve.gov/newsevents/speech/cook20261120a.htm"
+        }
+      ]
     }
   ],
   "history": [
@@ -2056,6 +2078,10 @@
     {
       "time": "20. 11. 2026 18:05 CET",
       "ndx": 25575.35
+    },
+    {
+      "time": "20. 11. 2026 19:00 CET",
+      "ndx": 25476.04
     }
   ],
   "sources": [
@@ -2678,6 +2704,18 @@
     {
       "name": "Reuters – Bessent",
       "url": "https://www.reuters.com/business/bessent-advocates-lower-fed-rate-hike-cites-energy-shock-2026-11-20/"
+    },
+    {
+      "name": "Fed – Lisa Cook 20. 11. 2026",
+      "url": "https://www.federalreserve.gov/newsevents/speech/cook20261120a.htm"
+    },
+    {
+      "name": "Reuters – Fed Cook",
+      "url": "https://www.reuters.com/business/feds-cook-says-rate-hikes-needed-lower-high-inflation-2026-11-20/"
+    },
+    {
+      "name": "S&P Global PMI release calendar",
+      "url": "https://www.pmi.spglobal.com/Public/Home/PDF/UK_Rel_Dates"
     }
   ]
 }
