@@ -27,9 +27,9 @@ class RsiTest(unittest.TestCase):
     def test_cash_index_only_and_fresh_completed_day(self):
         now=datetime(2026,11,21,9,tzinfo=timezone.utc)
         ny=ZoneInfo("America/New_York")
-        start=datetime(2026,9,28,16,tzinfo=ny)
-        timestamps=[int((start+timedelta(days=i)).timestamp()) for i in range(54)]
-        prices=[26000-(i*19.0) for i in range(54)]
+        start=datetime(2026,9,17,16,tzinfo=ny)
+        timestamps=[int((start+timedelta(days=i)).timestamp()) for i in range(65)]
+        prices=[26000-(i*19.0) for i in range(65)]
         def chart(symbol):
             return {"chart":{"result":[{"meta":{"symbol":symbol},"timestamp":timestamps,
                 "indicators":{"quote":[{"close":prices}]}}]}}
@@ -40,6 +40,9 @@ class RsiTest(unittest.TestCase):
         self.assertEqual(snapshot["value"],0)
         self.assertEqual(snapshot["rsiChangeFiveSessions"],0)
         self.assertLess(snapshot["ma20DistancePct"],0)
+        self.assertLess(snapshot["ma50DistancePct"],0)
+        self.assertLess(snapshot["ma50Change5SessionsPct"],0)
+        self.assertGreater(snapshot["ma50"], snapshot["ma20"])
         with self.assertRaises(ValueError):
             technical.parse_daily_closes(chart("NQ=F"),now)
         with self.assertRaises(ValueError):
@@ -82,6 +85,20 @@ class RsiTest(unittest.TestCase):
         )
         short = [30000-i for i in range(60)]
         self.assertIsNone(technical.technical_extremity(short, technical.wilder_rsi(short)))
+
+    def test_ma50_trend_is_distinct_from_oversold_score(self):
+        # With a steadily rising index, price is above MA50 and MA50 climbs.
+        prices = [20000 + 30*i for i in range(320)]
+        history = [(f"day-{i:03d}", price) for i, price in enumerate(prices)]
+        d = technical.build_snapshot(history)
+        self.assertGreater(d["ma50"], 0)
+        self.assertGreater(d["ma50DistancePct"], 0)
+        self.assertGreater(d["ma50Change5SessionsPct"], 0)
+        self.assertEqual(d["ma50TrendRole"], "separate_midterm_trend_filter_not_in_oversold_score")
+        self.assertEqual(d["technicalOversold"]["score"], 0)
+        # MA50 slope needs 55 completed trading sessions, not only 50.
+        with self.assertRaises(ValueError):
+            technical.build_snapshot(history[:54])
 
     def test_published_snapshot_has_source_and_a_date(self):
         d=json.loads((ROOT/"data/oversold.json").read_text(encoding="utf-8"))
