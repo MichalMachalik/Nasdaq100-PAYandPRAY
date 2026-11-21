@@ -512,24 +512,30 @@ body :is(h1,h2,h3,p,div,span,small,strong,button,a,table,th,td,time,summary,labe
   .brand-tagline{font-size:10px;line-height:1.3}
 }
 
-/* Descriptive historical downside stress, NOT % of the selloff completed. */
-.forecastgrid{grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(15px,2vw,30px)}
-.oversold-card #oversold-rsi{font-variant-numeric:tabular-nums}
-.oversold-scale{height:9px;margin:14px 0 5px;position:relative;border-radius:999px;
+/* Compact three-column outlook: ATH | oversold gauge | downside. */
+.forecastgrid{display:grid;grid-template-columns:minmax(0,.96fr) minmax(0,1.08fr) minmax(0,1.08fr);gap:clamp(18px,2.5vw,32px)}
+.forecastgrid>.forecast{min-width:0}
+.forecastgrid .label{line-height:1.55;min-height:32px}
+.forecastgrid .forecast>strong{display:block;margin:8px 0 5px;font-size:clamp(20px,2.7vw,29px);line-height:1.12;white-space:nowrap;font-variant-numeric:tabular-nums}
+.forecastgrid .forecast .detail{font-size:12px;line-height:1.45;margin-top:9px}
+.forecastgrid .forecast-points{font-size:clamp(14px,1.8vw,18px);margin:9px 0 8px;line-height:1.4;white-space:normal}
+.oversold-scale{height:10px;margin:16px 0 7px;position:relative;border-radius:999px;
  background:linear-gradient(90deg,#7dae9d 0%,#cfd8d7 32%,#ddd0ab 65%,#d99759 82%,#bf515c 100%)}
-.oversold-pointer{position:absolute;top:-4px;width:4px;height:17px;background:#25282d;
- border-radius:3px;transform:translateX(-50%);box-shadow:0 0 0 1px #fff}
-.oversold-ticks{display:flex;justify-content:space-between;margin:0 0 9px;font-size:10px;color:var(--muted)}
-.oversold-card .futures-provider{font-size:11px;white-space:normal;overflow-wrap:anywhere}
-.oversold-card .detail{line-height:1.5}
-#oversold-method{margin-top:4px;color:var(--muted)}
-#oversold-ma50{margin-top:5px;font-variant-numeric:tabular-nums}
-.oversold-explain{margin-top:10px;border-top:1px solid var(--border);padding-top:9px}
-.oversold-explain summary{cursor:pointer;color:var(--muted);font-size:12px;font-weight:600;line-height:1.5}
-.oversold-explain summary:hover{text-decoration:underline}
-.oversold-explain p{margin:8px 0 0;font-size:12px;line-height:1.6;color:var(--muted);overflow-wrap:break-word}
-.oversold-explain p strong{color:var(--ink);font-weight:650}
-@media(max-width:720px){.forecastgrid{grid-template-columns:1fr;gap:21px}}
+.oversold-pointer{position:absolute;top:-4px;width:4px;height:18px;background:var(--ink);
+ border-radius:3px;transform:translateX(-50%);box-shadow:0 0 0 1px white}
+.oversold-ticks{display:flex;justify-content:space-between;margin-bottom:13px;font-size:10px;color:var(--muted)}
+.oversold-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}
+.oversold-metric{display:flex;flex-direction:column;gap:3px;min-width:0}
+.oversold-metric>span{font-size:10px;color:var(--muted);font-weight:600;letter-spacing:.2px}
+.oversold-metric>strong{font-size:clamp(11px,1.5vw,14px);line-height:1.3;font-weight:650;color:var(--ink);white-space:nowrap;font-variant-numeric:tabular-nums}
+@media(max-width:690px){.forecastgrid{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:22px}
+  .forecastgrid .oversold-card{grid-column:1 / -1;grid-row:2}
+  .forecastgrid .oversold-card .oversold-scale{max-width:360px}
+  .forecastgrid .oversold-card .oversold-ticks{max-width:360px}
+  .forecastgrid .oversold-card .oversold-metrics{max-width:360px}}
+@media(max-width:400px){.forecastgrid{column-gap:13px}
+  .forecastgrid .forecast>strong{font-size:clamp(18px,5vw,22px)}
+  .forecastgrid .forecast-points{font-size:13px}}
 </style></head>
 <body><div class="wrap">
 <header class="header"><div class="brand"><svg class="aardvark-mark" viewBox="0 0 100 73" role="img" aria-label="Logo Aardvarkland" xmlns="http://www.w3.org/2000/svg">
@@ -556,14 +562,35 @@ body :is(h1,h2,h3,p,div,span,small,strong,button,a,table,th,td,time,summary,labe
 <section class="section"><h2 class="sectiontitle">TOP 5 zpráv</h2><div id="news" class="empty">Čeká na první report.</div></section>
 <section class="section"><h2 class="sectiontitle">Makroekonomika</h2><div id="macro" class="empty">Nejsou zveřejněna data</div></section>
 
-<section class="section"><h2 class="sectiontitle">Výhled</h2><div class="forecastgrid"><div class="forecast"><div class="label">Návrat na historické maximum / 6 měsíců</div><strong id="forecast-ath" class="green">—</strong><div id="forecast-ath-reason" class="detail">Čeká na aktualizaci</div></div><div class="forecast oversold-card"><div class="label">Technická přeprodanost · NDX</div><strong id="oversold-rsi" class="red">—</strong><div id="oversold-status" class="detail">Skóre historické extrémnosti se načítá</div><div class="oversold-scale" aria-hidden="true"><div id="oversold-pointer" class="oversold-pointer" style="left:0%"></div></div><div class="oversold-ticks"><span>0</span><span>25</span><span>50</span><span>75</span><span>100</span></div><div id="oversold-trend" class="detail">RSI · odchylka MA20 · výnos za 5 seancí</div><div id="oversold-ma50" class="detail">MA50: střednědobý trend se načítá</div><div id="oversold-drawdown" class="detail">Pokles NDX od historického maxima: —</div><div id="oversold-asof" class="detail">Srovnání s posledními 252 seancemi</div><div id="oversold-method" class="detail">Skóre měří historickou výjimečnost výprodeje, nikoli jeho zbývající délku.</div>
-<details class="oversold-explain">
-  <summary>Metodika MA20, MA50 a 5D</summary>
-  <p><strong>MA20 · odchylka od 20denního průměru.</strong> Průměr 20 posledních závěrečných cen NDX. Výpočet: (aktuální NDX / MA20 − 1) × 100. Hodnota „pod MA20“ znamená, že index je níž než jeho nedávný průměr. Neurčuje další možný propad.</p>
-  <p><strong>MA50 · střednědobý trend.</strong> Průměr 50 posledních závěrečných cen NDX (přibližně 2,5 měsíce). Vzdálenost od MA50 = (aktuální NDX / MA50 − 1) × 100. Směr MA50 měří změna průměru vůči jeho hodnotě před 5 obchodními seancemi. NDX pod klesající MA50 značí pokračující střednědobou slabost; NDX nad rostoucí MA50 je známkou širšího zotavení, nikoli zárukou dalšího růstu.</p>
-  <p><strong>5D výnos · změna za pět obchodních seancí.</strong> Výpočet: (aktuální NDX / NDX před 5 seancemi − 1) × 100. „Pokles“ označuje již uskutečněný pohyb za zhruba týden; není to predikce pro příští týden.</p>
-  <p><strong>Společná interpretace.</strong> Výrazně záporná MA20 odchylka spolu se záporným 5D výnosem potvrzuje silný krátkodobý prodejní tlak. MA50 hodnotí delší trend nezávisle na skóre přeprodanosti. Tyto hodnoty se nesčítají. Extrémní výprodej může předcházet odrazu, ale nevylučuje další propad ani margin call.</p>
-</details><a href="./data/oversold.json" target="_blank" rel="noopener noreferrer" class="futures-provider">Data, percentily a metodika</a></div><div class="forecast"><div class="label">NDX · 25. percentil / 1 a 3 měsíce</div><strong id="forecast-down" class="red">—</strong><div id="forecast-down-points" class="forecast-points">—</div><div id="forecast-down-reason" class="detail">Čeká na aktualizaci</div><div id="forecast-risk-meta" class="detail" style="margin-top:9px">Výsledky opčního modelu se načítají</div><a href="./data/risk-model.json" target="_blank" rel="noopener noreferrer" class="futures-provider">Opční model, EPS a dluhopisy</a></div></div><div style="margin-top:22px"><div class="mini-title">Nejbližší katalyzátor</div><div id="catalyst" class="empty">Zatím nezveřejněno</div></div></section>
+<section class="section">
+  <h2 class="sectiontitle">Výhled</h2>
+  <div class="forecastgrid">
+    <div class="forecast forecast-ath-card">
+      <div class="label">Návrat na historické maximum / 6 měsíců</div>
+      <strong id="forecast-ath" class="green">—</strong>
+      <div id="forecast-ath-reason" class="detail">Odhad návratu na Maxima</div>
+    </div>
+    <div class="forecast oversold-card">
+      <div class="label">Technická přeprodanost · NDX</div>
+      <strong id="oversold-rsi" class="red">—</strong>
+      <div class="oversold-scale" aria-label="Historické skóre přeprodanosti od 0 do 100">
+        <div id="oversold-pointer" class="oversold-pointer" style="left:0%"></div>
+      </div>
+      <div class="oversold-ticks"><span>0</span><span>25</span><span>50</span><span>75</span><span>100</span></div>
+      <div class="oversold-metrics">
+        <div class="oversold-metric"><span>RSI(14)</span><strong id="oversold-raw-rsi">—</strong></div>
+        <div class="oversold-metric"><span>MA20</span><strong id="oversold-ma20">—</strong></div>
+        <div class="oversold-metric"><span>MA50</span><strong id="oversold-ma50">—</strong></div>
+      </div>
+    </div>
+    <div class="forecast forecast-down-card">
+      <div class="label">Rizikový scénář / 1–3 měsíce</div>
+      <strong id="forecast-down" class="red">—</strong>
+      <div id="forecast-down-points" class="forecast-points">—</div>
+      <div id="forecast-down-reason" class="detail" title="Jde o dolní kvartil modelové koncové ceny za 1 a 3 měsíce, nikoli o skutečný nejhorší možný výsledek.">Odhad horšího a nejhoršího scénáře</div>
+    </div>
+  </div>
+  <div style="margin-top:22px"><div class="mini-title">Nejbližší katalyzátor</div><div id="catalyst" class="empty">Zatím nezveřejněno</div></div></section>
 <section class="section" id="top10-section"><h2 class="sectiontitle">Top 10 Nasdaq-100 <small>podle tržní kapitalizace</small></h2>
 <div class="top10-scroll"><table class="top10-table" aria-label="Deset největších společností Nasdaq-100 podle tržní kapitalizace">
 <thead><tr><th scope="col">#</th><th scope="col">Společnost</th><th scope="col">Market cap</th><th scope="col">Cena</th><th scope="col">Dnes</th></tr></thead>
@@ -784,9 +811,7 @@ const macroText=String(d.macro||'Zatím bez údajů')
  .replace(/\s*\|\s*/gu,' · ');
 renderSigned($('macro'),macroText);let f=d.forecast||{};set('forecast-ath',typeof f.athReturnPercent==='number'?pct(f.athReturnPercent):'—');const athGrowth=Number.isFinite(n.ath)&&Number.isFinite(n.value)&&n.value>0?
   (n.ath/n.value-1)*100:NaN;
-setSentences('forecast-ath-reason',Number.isFinite(athGrowth)?
-  'NDX musí k ATH růst o '+fmt(athGrowth)+' %. Scénář není historicky kalibrovaná pravděpodobnost.':
-  cleanAthReason(f.athReason||'Čeká na aktualizaci'));set('forecast-down',displayScenario(f.downside||'—'));
+set('forecast-ath-reason','Odhad návratu na Maxima');set('forecast-down',displayScenario(f.downside||'—'));
 const percentages=(String(f.downside||'').match(/\d+(?:[.,]\d+)?/g)||[]).map(v=>Number(v.replace(',','.')));
 if(Number.isFinite(n.value)&&n.value>0&&percentages.length>=2&&percentages[0]>0&&percentages[1]>percentages[0]&&percentages[1]<=100){
   const upper=Math.round(n.value*(1-percentages[0]/100));
@@ -795,7 +820,7 @@ if(Number.isFinite(n.value)&&n.value>0&&percentages.length>=2&&percentages[0]>0&
 }else{
   set('forecast-down-points','Bodový rozsah zatím neověřen');
 }
-setSentences('forecast-down-reason',f.downsideReason||'Čeká na aktualizaci');let c=d.catalyst||{};setSentences('catalyst',[c.event,c.timePrague].filter(Boolean).join(' • ')||'Zatím nezveřejněno');
+set('forecast-down-reason','Odhad horšího a nejhoršího scénáře');let c=d.catalyst||{};setSentences('catalyst',[c.event,c.timePrague].filter(Boolean).join(' • ')||'Zatím nezveřejněno');
 rows('archive',Array.isArray(d.archive)?d.archive.slice(-15).reverse():[],x=>{
   const el=document.createElement('div');el.className='news history-entry';
   const time=document.createElement('time');time.textContent=safe(x.time);
@@ -1074,7 +1099,6 @@ const downsideTerminalPct=(annualVolPct,months)=>{
   return 100*(1-Math.exp(-0.5*sigma*sigma*years-RISK_Z25*sigma*Math.sqrt(years)));
 };
 async function loadRiskModel(ndx){
-  const meta=$('forecast-risk-meta');
   try{
     const response=await fetch('./data/risk-model.json?t='+Date.now(),{cache:'no-store'});
     if(!response.ok)throw new Error('risk inputs unavailable');
@@ -1099,17 +1123,10 @@ async function loadRiskModel(ndx){
     set('forecast-down-points',
         fmt(Math.round(ndx.value*(1-oneMonth/100)),0)+'–'+
         fmt(Math.round(ndx.value*(1-threeMonths/100)),0)+' bodů NDX');
-    const rate=Number.isFinite(market.treasury10yPct)?' · US10Y '+fmt(market.treasury10yPct)+' %':'';
-    const valuation=Number.isFinite(market.qqqForwardPE)?' · QQQ forward P/E '+fmt(market.qqqForwardPE)+'×':'';
-    const spread=Number.isFinite(market.highYieldOasPct)?' · HY OAS '+fmt(market.highYieldOasPct)+' %':'';
-    set('forecast-down-reason','VXN(30D) '+fmt(volatility)+' % · datum '+String(market.vxnAsOf)+
-        ' · dolní kvartil koncové ceny NDX, nikoli intraperiodické minimum.');
-    if(meta){
-      meta.textContent='Model: lognormální, konstantní IV, nulový drift.'+
-        rate+valuation+spread+'. VXN není směrná předpověď ani intraperiodické dno.';
-    }
+    // Caption is intentionally concise; technical model assumptions remain
+    // verifiable in data/risk-model.json and on the marker's hover title.
   }catch(error){
-    if(meta)meta.textContent='Volatilita není nově ověřena; zobrazen záložní odhad ze zdrojového reportu.';
+
     // Keep the authored forecast in latest.json rather than fabricate an update.
   }
 }
@@ -1133,51 +1150,22 @@ async function loadOversold(ndx){
                t.percentiles[key]<=100))
       throw new Error('missing or stale historical extremity');
     const score=t.score;
-    const status=score>=90?'Historicky mimořádný výprodej':
-      score>=75?'Silně nadprůměrný prodejní tlak':
-      score>=55?'Zvýšená technická slabost':'Nevýrazná technická přeprodanost';
+    // Historical technical-extremity score; not probability or completed selloff.
     set('oversold-rsi',fmt(score,1)+' / 100');
     $('oversold-rsi').className=score>=75?'red':'neutral';
-    set('oversold-status',status+' · srovnání s 252 seancemi.');
-    if(marker){marker.style.left=Math.max(1,Math.min(99,score))+'%';
-               marker.title='Průměr historických percentilů RSI, MA20 a 5D výnosu';}
-    const gap=d.ma20DistancePct,change=d.rsiChangeFiveSessions,ret=t.return5SessionsPct;
-    const parts=['RSI(14): '+fmt(rsi,1)+'/100'];
-    if(Number.isFinite(gap))parts.push('MA20: '+fmt(Math.abs(gap),1)+' % '+(gap<0?'pod průměrem':gap>0?'nad průměrem':'odchylka 0'));
-    if(Number.isFinite(ret))parts.push('5D výnos: '+fmt(Math.abs(ret),1)+' % '+(ret<0?'pokles':ret>0?'růst':'beze změny'));
-    set('oversold-trend',parts.join(' · '));
-    const ma50=d.ma50, ma50Gap=d.ma50DistancePct, ma50Change=d.ma50Change5SessionsPct;
-    if([ma50,ma50Gap,ma50Change].every(Number.isFinite)&&ma50>1000){
-      const side=ma50Gap<0?'pod':ma50Gap>0?'nad':'na';
-      const slope=ma50Change<0?'klesá':ma50Change>0?'roste':'stabilní';
-      set('oversold-ma50','MA50: '+fmt(ma50,0)+' b. · NDX '+fmt(Math.abs(ma50Gap),1)+
-        ' % '+side+' MA50 · trend 5D: '+slope+
-        (ma50Change!==0?' o '+fmt(Math.abs(ma50Change),1)+' %':''));
-    }else set('oversold-ma50','MA50: ověřená 50denní historie zatím není dostupná.');
-    const sameCashQuote=Number.isFinite(ndx?.value)&&ndx.value>1000&&
-      Number.isFinite(d.ndxClose)&&d.ndxClose>1000&&
-      Math.abs(ndx.value-d.ndxClose)/d.ndxClose<0.001;
-    const drawdown=sameCashQuote&&Number.isFinite(ndx.ath)&&ndx.ath>=ndx.value?
-      (1-ndx.value/ndx.ath)*100:NaN;
-    set('oversold-drawdown',Number.isFinite(drawdown)?
-      'NDX od ATH: '+fmt(drawdown,1)+' % níže · údaj o ceně, ne skóre RSI':
-      'Odstup NDX od ATH: referenční ceny se neshodují');
-    const direction=change<0?'níže; tlak sílí':change>0?'výše; tlak slábne':'beze změny';
-    set('oversold-asof',
-        'RSI 5D: '+(Number.isFinite(change)?fmt(Math.abs(change),1)+' b. '+direction:'bez dat')+
-        ' · vzorek '+t.referenceSessions+' seancí · '+String(d.asOf));
-    const p=t.percentiles;
-    set('oversold-method','Historické percentily: RSI '+fmt(p.rsi14,0)+
-      ' · MA20 '+fmt(p.priceToMA20,0)+' · 5D '+fmt(p.return5Sessions,0)+
-      '. Skóre = jejich průměr; MA50 je samostatný trendový filtr, ne další složka skóre.');
-  }catch(err){
+    if(marker){
+      marker.style.left=Math.max(1,Math.min(99,score))+'%';
+      marker.title='Historická přeprodanost, vzorek '+t.referenceSessions+' seancí';
+    }
+    const plain=(x)=>Number.isFinite(x)?fmt(Math.abs(x),1)+' %':'—';
+    set('oversold-raw-rsi',fmt(rsi,1));
+    set('oversold-ma20',plain(d.ma20DistancePct));
+    set('oversold-ma50',plain(d.ma50DistancePct));
+    }catch(err){
     set('oversold-rsi','—');
-    set('oversold-status','Historické skóre není ověřené; nelze je dopočítat z jediného RSI.');
-    set('oversold-trend','Čeká na dostatečnou historii NDX.');
-    set('oversold-ma50','MA50: údaj není ověřen.');
-    set('oversold-drawdown','NDX odstup od ATH není ověřen');
-    set('oversold-asof','Indikátor se při výpadku zdroje neodhaduje.');
-    set('oversold-method','Samotné RSI ani technické skóre nezaručuje tržní dno.');
+    set('oversold-raw-rsi','—');
+    set('oversold-ma20','—');
+    set('oversold-ma50','—');
     if(marker)marker.style.left='0%';
   }
 }
