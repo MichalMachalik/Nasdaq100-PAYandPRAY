@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "21. 11. 2026 21:56 CET",
+  "updatedAtPrague": "21. 11. 2026 23:04 CET",
   "marketStatus": "Uzavřen – sobota (cash USA)",
   "ndx": {
     "value": 25028.98,
@@ -9,7 +9,7 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→ beze změny proti 21:01 CET",
+    "trend": "→ beze změny proti 21:56 CET",
     "reason": "NDX −5,61 %, SOX −10,73 %, NVDA −14,01 %; nad MA50 32/101 (31,7 %), data 20. 11."
   },
   "driver": "SOX −10,73 % (20. 11.), NVDA −14,01 %, AVGO −12,19 %; MA50 breadth 31,7 % (20. 11.).",
@@ -89,44 +89,6 @@
       "eventKey": "oracle-openai-infrastructure-fully-funded-20261120",
       "ndxRelevant": true,
       "importanceScore": 78
-    },
-    {
-      "title": "CRWD jedná o akvizici Zscaler; dohoda nepotvrzena. Po trhu CRWD −8 %, ZS +17 %.",
-      "time": "20. 11. 2026, 22:32 CET",
-      "publishedAtPrague": "20. 11. 2026, 22:32",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "corporate_ma",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/legal/litigation/crowdstrike-talks-acquire-zscaler-source-says-2026-11-20/",
-      "sourceLinks": [
-        {
-          "label": "Reuters – CRWD / Zscaler",
-          "url": "https://www.reuters.com/legal/litigation/crowdstrike-talks-acquire-zscaler-source-says-2026-11-20/"
-        }
-      ],
-      "eventKey": "crwd-zscaler-acquisition-talks-20261120",
-      "ndxRelevant": true,
-      "importanceScore": 65
-    },
-    {
-      "title": "USA cash závěr: NDX −5,61 %, SOX −10,73 %, NVDA −14,01 %; Nasdaq Composite týden −10 %.",
-      "time": "20. 11. 2026, 22:17 CET",
-      "publishedAtPrague": "20. 11. 2026, 22:17",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "market_reaction",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/view-nasdaq-plunges-5-day-after-anthropic-debut-investors-still-believe-ai-2026-11-20/",
-      "sourceLinks": [
-        {
-          "label": "Reuters – AI výprodej a závěr USA",
-          "url": "https://www.reuters.com/business/view-nasdaq-plunges-5-day-after-anthropic-debut-investors-still-believe-ai-2026-11-20/"
-        }
-      ],
-      "eventKey": "us-ai-stocks-friday-nov20-closing-rout-20261120",
-      "ndxRelevant": true,
-      "importanceScore": 85
     }
   ],
   "leaders": [
@@ -2075,6 +2037,24 @@
         {
           "label": "Trading Economics – trhy",
           "url": "https://tradingeconomics.com/commodities"
+        }
+      ]
+    },
+    {
+      "time": "21. 11. 2026 23:04 CET",
+      "summary": "Cash NDX 25 028,98 b. (−5,61 %, závěr 20. 11.); VXN 45,25 (20. 11.). Zdrojově ověřeny cash NDX (Nasdaq), Nasdaq-100 členství a globální pořadí kapitalizace, VXN a všech 9 kotací Trading Economics (obchodní den 20. 11.); kontrola zpráv Reuters, 24h pool 4 platných událostí (2 expirovaly), bez nové zásadní zprávy. Futures Yahoo 429, poslední potvrzená kotace zachována; breadth/oversold/risk-model bez nového uzavřeného trhu. GitHub Pages přímé ověření nedostupné.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq – cash NDX",
+          "url": "https://indexes.nasdaq.com/Index/Overview/NDX"
+        },
+        {
+          "label": "Trading Economics – trhy",
+          "url": "https://tradingeconomics.com/commodities"
+        },
+        {
+          "label": "Google Finance – VXN",
+          "url": "https://www.google.com/finance/quote/VXN:INDEXCBOE?hl=en"
         }
       ]
     }
