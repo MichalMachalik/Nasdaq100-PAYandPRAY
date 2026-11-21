@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "21. 11. 2026 17:07 CET",
+  "updatedAtPrague": "21. 11. 2026 18:01 CET",
   "marketStatus": "Uzavřen – sobota (cash USA)",
   "ndx": {
     "value": 25028.98,
@@ -9,7 +9,7 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→ beze změny proti 15:58 CET",
+    "trend": "→ beze změny proti 17:07 CET",
     "reason": "NDX −5,61 %, SOX −10,73 %, NVDA −14,01 %; nad MA50 32/101 (31,7 %), data 20. 11."
   },
   "driver": "SOX −10,73 % (20. 11.), NVDA −14,01 %, AVGO −12,19 %; MA50 breadth 31,7 % (20. 11.).",
@@ -2156,6 +2156,24 @@
         {
           "label": "Google Finance – VXN",
           "url": "https://www.google.com/finance/quote/VXN:INDEXCBOE?hl=en"
+        },
+        {
+          "label": "Trading Economics – WTI",
+          "url": "https://tradingeconomics.com/commodity/crude-oil"
+        }
+      ]
+    },
+    {
+      "time": "21. 11. 2026 18:01 CET",
+      "summary": "Cash NDX 25 028,98 b. (−5,61 %, závěr 20. 11.); US10Y 4,92 % (20. 11.). Kontrola Nasdaq, Treasury, 9 veřejných instrumentů Trading Economics a 24h zpráv; bez nové kvalifikované události, 15 kandidátů. Yahoo 429, Nasdaq API vendor error, externí breadth feed blokován; datované hodnoty ponechány.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq – NDX",
+          "url": "https://indexes.nasdaq.com/Index/Overview/NDX"
+        },
+        {
+          "label": "U.S. Treasury – US10Y",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
         },
         {
           "label": "Trading Economics – WTI",
