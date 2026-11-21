@@ -1,6 +1,6 @@
 {
-  "updatedAtPrague": "21. 11. 2026 06:57 CET",
-  "marketStatus": "Cash uzavřen; sobota; poslední závěr 20. 11. 2026, 22:00 CET",
+  "updatedAtPrague": "21. 11. 2026 08:00 CET",
+  "marketStatus": "Cash trh uzavřen (sobota)",
   "ndx": {
     "value": 25028.98,
     "changePercent": -5.61,
@@ -9,11 +9,49 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→ beze změny proti 06:02 CET",
+    "trend": "→ beze změny proti 06:57 CET",
     "reason": "NDX −5,61 %, SOX −10,73 %, NVDA −14,01 %, AVGO −12,19 %; závěr 20. 11."
   },
   "driver": "SOX −10,73 %; NVDA −14,01 %, AVGO −12,19 %; páteční tlak polovodičového sektoru.",
   "news": [
+    {
+      "title": "AWS/SK Ulsan: datacentrum s plánem 5,2 mld. USD do roku 2029; provoz plánován od H2 2027.",
+      "time": "21. 11. 2026, 06:34 CET",
+      "publishedAtPrague": "21. 11. 2026, 06:34",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "ai_infrastructure",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/media-telecom/south-koreas-lee-says-speed-is-vital-ai-race-data-centre-visit-2026-11-21/",
+      "sourceLinks": [
+        {
+          "label": "Reuters – AWS/SK Ulsan",
+          "url": "https://www.reuters.com/business/media-telecom/south-koreas-lee-says-speed-is-vital-ai-race-data-centre-visit-2026-11-21/"
+        }
+      ],
+      "eventKey": "aws-sk-ulsan-datacenter-lee-visit-20261121",
+      "ndxRelevant": true,
+      "importanceScore": 50
+    },
+    {
+      "title": "Oracle: financování datacenter pro OpenAI potvrzeno; plán +4,5 GW, dodávky NVDA Vera Rubin podle harmonogramu.",
+      "time": "20. 11. 2026, 23:11 CET",
+      "publishedAtPrague": "20. 11. 2026, 23:11",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "ai_financing",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/oracle-says-openai-infrastructure-deal-is-fully-funded-after-final-capital-raise-2026-11-20/",
+      "sourceLinks": [
+        {
+          "label": "Reuters – Oracle / OpenAI financování",
+          "url": "https://www.reuters.com/business/oracle-says-openai-infrastructure-deal-is-fully-funded-after-final-capital-raise-2026-11-20/"
+        }
+      ],
+      "eventKey": "oracle-openai-infrastructure-fully-funded-20261120",
+      "ndxRelevant": true,
+      "importanceScore": 78
+    },
     {
       "title": "CRWD jedná o akvizici Zscaler; dohoda nepotvrzena. Po trhu CRWD −8 %, ZS +17 %.",
       "time": "20. 11. 2026, 22:32 CET",
@@ -146,6 +184,25 @@
       "eventKey": "trump-proposed-tax-on-overseas-us-data-centers-20261120",
       "ndxRelevant": true,
       "importanceScore": 84
+    },
+    {
+      "title": "SpaceX/NVDA: Apollo a Goldman Sachs nacenily GPU financování za 44 mld. USD; součástí jsou čipy Vera Rubin.",
+      "time": "20. 11. 2026, 18:45 CET",
+      "publishedAtPrague": "20. 11. 2026, 18:45",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "ai_financing",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/media-telecom/apollo-goldman-lead-44-billion-spacex-gpu-debt-financing-2026-11-20/",
+      "sourceLinks": [
+        {
+          "label": "Reuters – SpaceX GPU financování",
+          "url": "https://www.reuters.com/business/media-telecom/apollo-goldman-lead-44-billion-spacex-gpu-debt-financing-2026-11-20/"
+        }
+      ],
+      "eventKey": "spacex-44b-gpu-debt-financing-20261120",
+      "ndxRelevant": true,
+      "importanceScore": 82
     },
     {
       "title": "Fed Cook: současné sazby nestačí ke snížení inflace; odhad říjnového PCE 3,8 % y/y a core 3,2 % y/y.",
@@ -1992,6 +2049,24 @@
           "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
         }
       ]
+    },
+    {
+      "time": "21. 11. 2026 08:00 CET",
+      "summary": "NDX 25 028,98 b. (−5,61 %, závěr 20. 11.). SpaceX/NVDA GPU financování 44 mld. USD; AWS/SK Ulsan projekt 5,2 mld. USD.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq – cash NDX",
+          "url": "https://indexes.nasdaq.com/Index/Overview/NDX"
+        },
+        {
+          "label": "Reuters – SpaceX GPU financování",
+          "url": "https://www.reuters.com/business/media-telecom/apollo-goldman-lead-44-billion-spacex-gpu-debt-financing-2026-11-20/"
+        },
+        {
+          "label": "Reuters – AWS/SK Ulsan",
+          "url": "https://www.reuters.com/business/media-telecom/south-koreas-lee-says-speed-is-vital-ai-race-data-centre-visit-2026-11-21/"
+        }
+      ]
     }
   ],
   "history": [
@@ -2293,6 +2368,10 @@
     },
     {
       "time": "21. 11. 2026 06:57 CET",
+      "ndx": 25028.98
+    },
+    {
+      "time": "21. 11. 2026 08:00 CET",
       "ndx": 25028.98
     }
   ],
@@ -2960,6 +3039,18 @@
     {
       "name": "Reuters – CRWD / Zscaler",
       "url": "https://www.reuters.com/legal/litigation/crowdstrike-talks-acquire-zscaler-source-says-2026-11-20/"
+    },
+    {
+      "name": "Reuters – SpaceX GPU financing",
+      "url": "https://www.reuters.com/business/media-telecom/apollo-goldman-lead-44-billion-spacex-gpu-debt-financing-2026-11-20/"
+    },
+    {
+      "name": "Reuters – Oracle OpenAI funding",
+      "url": "https://www.reuters.com/business/oracle-says-openai-infrastructure-deal-is-fully-funded-after-final-capital-raise-2026-11-20/"
+    },
+    {
+      "name": "Reuters – AWS/SK Ulsan",
+      "url": "https://www.reuters.com/business/media-telecom/south-koreas-lee-says-speed-is-vital-ai-race-data-centre-visit-2026-11-21/"
     }
   ]
 }
