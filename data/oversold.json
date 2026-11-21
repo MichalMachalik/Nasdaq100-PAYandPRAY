@@ -9,6 +9,10 @@
   "ndxClose": 25028.98,
   "ma20": 27893.46,
   "ma20DistancePct": -10.27,
+  "ma50": 29224.26,
+  "ma50DistancePct": -14.36,
+  "ma50Change5SessionsPct": -0.95,
+  "ma50TrendRole": "separate_midterm_trend_filter_not_in_oversold_score",
   "rsiChangeFiveSessions": -16.12,
   "trendConfirmation": "worsening",
   "technicalOversold": {
@@ -24,7 +28,7 @@
   },
   "source": "Yahoo Finance cash ^NDX daily closes; Wilder RSI(14) calculated",
   "sourceUrl": "https://finance.yahoo.com/quote/%5ENDX/history/",
-  "methodology": "Cash NDX daily Wilder RSI(14): below 20 extremely oversold, 20–30 oversold. This indicates past selling pressure, not a reversal guarantee, forecast or instruction to trade. technicalOversold.score (0–100) is the average lower-tail percentile for RSI14, MA20 gap, and 5d return over 252 earlier sessions; not a percentage of decline completed.",
+  "methodology": "Cash NDX daily Wilder RSI(14): below 20 extremely oversold, 20–30 oversold. This indicates past selling pressure, not a reversal guarantee, forecast or instruction to trade. technicalOversold.score (0–100) is the average lower-tail percentile for RSI14, MA20 gap, and 5d return over 252 earlier sessions; not a percentage of decline completed. MA50 level, NDX distance and 5-session MA50 slope are an independent medium-term trend context, not scored twice.",
   "isProviderSnapshot": false,
-  "collectedAtUtc": "2026-11-21T00:29:13.781415Z"
+  "collectedAtUtc": "2026-11-21T00:37:39.138482Z"
 }
