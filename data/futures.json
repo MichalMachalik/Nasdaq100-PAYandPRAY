@@ -4,11 +4,13 @@
   "instrumentType": "FUTURES",
   "source": "Yahoo Finance chart (unofficial)",
   "sourceUrl": "https://finance.yahoo.com/quote/NQ=F/",
-  "quoteField": "intradayClose",
-  "price": 25291.0,
-  "changePercent": -4.92,
+  "quoteField": "regularMarketPrice",
+  "price": 25126.5,
+  "changePercent": -5.54,
   "quotedAtUtc": "2026-11-20T21:59:59Z",
   "quotedAtPrague": "20. 11. 2026 22:59",
-  "fetchedAtUtc": "2026-11-20T22:45:44.556488Z",
+  "fetchedAtUtc": "2026-11-21T08:57:23.264017Z",
+  "checkedAtUtc": "2026-11-21T08:57:23.264017Z",
+  "quoteStatus": "delayed",
   "delayed": true
 }

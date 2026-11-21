@@ -6,9 +6,9 @@ on:
       - "scripts/update_breadth.py"
       - "tests/test_breadth.py"
       - ".github/workflows/breadth.yml"
-  # Source has historically published around 04:00 UTC following US close.
+  # Check every day; the source's actual daily observation date is preserved.
   schedule:
-    - cron: "20 6 * * 2-6"
+    - cron: "23 * * * *"
 permissions:
   contents: write
 concurrency:
@@ -41,3 +41,4 @@ jobs:
             if git push; then exit 0; fi
           done
           exit 1
+

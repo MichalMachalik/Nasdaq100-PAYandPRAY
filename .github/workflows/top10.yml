@@ -7,7 +7,7 @@ on:
       - "scripts/prepare_site.py"
       - ".github/workflows/top10.yml"
   schedule:
-    - cron: "11 * * * 1-5"
+    - cron: "11 * * * *"
 permissions:
   contents: write
 concurrency:
@@ -51,3 +51,4 @@ jobs:
         run: |
           echo "Index membership or market data could not be verified; existing snapshot was not relabeled as current."
           exit 1
+

@@ -103,10 +103,13 @@ def main():
     snapshot = make_snapshot(fetch_chart(), now)
     if previous.get("asOf", "") > snapshot["asOf"]:
         raise ValueError("Upstream source is older than existing publication")
+    checked_at = now.isoformat().replace("+00:00", "Z")
     if all(previous.get(k)==v for k,v in snapshot.items()):
+        snapshot = previous
         print("MA50 breadth unchanged", snapshot["asOf"])
-        return
-    snapshot["collectedAtUtc"] = now.isoformat().replace("+00:00", "Z")
+    else:
+        snapshot["collectedAtUtc"] = checked_at
+    snapshot["checkedAtUtc"] = checked_at
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(snapshot, ensure_ascii=False, indent=2)+"\n", encoding="utf-8")
     print("Published MA50 breadth", snapshot["abovePct"], "above,",
@@ -114,3 +117,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

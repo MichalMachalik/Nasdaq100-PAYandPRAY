@@ -196,22 +196,26 @@ def main():
     snapshot = build_snapshot(parse_daily_closes(fetch_history(), now))
     if previous.get("asOf", "") > snapshot["asOf"]:
         raise ValueError("New history predates published RSI snapshot")
-    snapshot["collectedAtUtc"] = now.isoformat().replace("+00:00", "Z")
-    # Avoid rewriting an unchanged completed trading day every weekend.
-    if (previous.get("asOf") == snapshot["asOf"] and
+    checked_at = now.isoformat().replace("+00:00", "Z")
+    # Preserve observation and collection time on an unchanged completed day.
+    unchanged = (previous.get("asOf") == snapshot["asOf"] and
         previous.get("value") == snapshot["value"] and
         previous.get("ma20") == snapshot["ma20"] and
         previous.get("ma50") == snapshot["ma50"] and
         previous.get("ma50Change5SessionsPct") == snapshot["ma50Change5SessionsPct"] and
         previous.get("source") == snapshot["source"] and
-        previous.get("technicalOversold") == snapshot["technicalOversold"]):
-        print("RSI unchanged; retained dated snapshot", snapshot["asOf"])
-        return
+        previous.get("technicalOversold") == snapshot["technicalOversold"])
+    if unchanged:
+        snapshot = previous
+    else:
+        snapshot["collectedAtUtc"] = checked_at
+    snapshot["checkedAtUtc"] = checked_at
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(snapshot, indent=2, ensure_ascii=False)+"\n",
                    encoding="utf-8")
-    print("Published NDX RSI(14)",snapshot["value"],"as of",snapshot["asOf"],
+    print("Checked NDX RSI(14)" if unchanged else "Published NDX RSI(14)",snapshot["value"],"as of",snapshot["asOf"],
           "5d RSI change",snapshot["rsiChangeFiveSessions"])
 
 if __name__ == "__main__":
     main()
+

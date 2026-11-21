@@ -1092,12 +1092,18 @@ async function loadFutures(){
     const time=Date.parse(q.quotedAtUtc||'');
     if(!Number.isFinite(time)||!Number.isFinite(q.price)||q.price<=1000)throw new Error('invalid futures quote');
     const age=Date.now()-time;
-    if(age < -120000 || age > 86400000)throw new Error('stale futures quote');
+    if(age < -120000)throw new Error('future futures quote');
     set('futures-price',fmt(q.price));
     set('futures-change',typeof q.changePercent==='number'?pct(q.changePercent):'—');
     $('futures-change').className='value '+(q.changePercent<0?'red':q.changePercent>0?'green':'neutral');
-    const lag=age>1800000?' · starší údaj':' · zpožděná data';
-    set('futures-time','Kotace '+String(q.quotedAtPrague||'čas neuveden')+' Praha'+lag);
+    const freshness=age>86400000?'stale':'delayed';
+    $('futures-price').setAttribute('data-freshness',freshness);
+    const lag=age>86400000?' · poslední dostupná kotace, starší než 24 h':
+      age>1800000?' · starší údaj':' · zpožděná data';
+    const checked=fmtShortPrague(q.checkedAtUtc||q.fetchedAtUtc);
+    const quoted=q.quotedAtPrague||fmtShortPrague(q.quotedAtUtc)||'čas neuveden';
+    set('futures-time','Kotace '+String(quoted)+' Praha'+lag+
+      (checked?' · Kontrola '+checked:''));
     // Reference belongs to the NQ futures series, never to the cash NDX ATH.
     const peakEl=$('futures-ath');
     if(peakEl){
@@ -1123,6 +1129,7 @@ async function loadFutures(){
   }catch(err){
     set('futures-price','—');
     set('futures-change','—');
+    $('futures-price').setAttribute('data-freshness','unavailable');
     set('futures-time','Aktuální futures kotace není ověřena');
     set('futures-ath','');
   }
@@ -1283,3 +1290,4 @@ document.addEventListener('visibilitychange',()=>{
 
 </script>
 </body></html>
+

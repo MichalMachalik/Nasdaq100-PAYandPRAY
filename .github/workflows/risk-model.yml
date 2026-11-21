@@ -8,7 +8,7 @@ on:
       - "tests/test_risk_model.py"
       - ".github/workflows/risk-model.yml"
   schedule:
-    - cron: "50 22 * * 1-5"
+    - cron: "47 * * * *"
 permissions:
   contents: write
 concurrency:
@@ -41,3 +41,4 @@ jobs:
             if git push; then exit 0; fi
           done
           exit 1
+

@@ -84,19 +84,26 @@ def main():
     if model.get("schemaVersion") != 1 or model.get("id") != "ndx-evidence-volatility-v1":
         raise ValueError("Unexpected schema; manual reconciliation required")
     market = model["market"]
-    outcomes, failures = [], []
+    outcomes, failures, checked = [], [], []
+    checked_at = now.isoformat().replace("+00:00", "Z")
     try:
         obs, value = parse_vxn(json.loads(fetch(VXN_URL)), now)
+        if obs < market["vxnAsOf"]:
+            raise ValueError("VXN source predates the published observation")
         if obs >= market["vxnAsOf"]:
             if obs != market["vxnAsOf"] or value != market["vxnPct"]:
                 market.update(vxnPct=value, vxnAsOf=obs,
                               vxnSource="https://finance.yahoo.com/quote/%5EVXN/",
                               vxnRetrievedAtUtc=now.isoformat().replace("+00:00", "Z"))
                 outcomes.append(f"VXN {obs}: {value:.2f}%")
+            market["vxnCheckedAtUtc"] = checked_at
+            checked.append("VXN")
     except Exception as exc:
         failures.append(f"VXN: {exc}")
     try:
         obs, rates = parse_treasury(fetch(TREASURY_URL.format(year=now.year)), now)
+        if obs < market["treasuryAsOf"]:
+            raise ValueError("Treasury source predates the published observation")
         if obs >= market["treasuryAsOf"]:
             previous = (market.get("treasury2yPct"), market.get("treasury10yPct"),
                         market.get("treasury30yPct"))
@@ -106,10 +113,15 @@ def main():
                               treasurySource="https://home.treasury.gov/",
                               treasuryRetrievedAtUtc=now.isoformat().replace("+00:00", "Z"))
                 outcomes.append(f"Treasury {obs}: 2Y {rates[0]:.2f}%, 10Y {rates[1]:.2f}%, 30Y {rates[2]:.2f}%")
+            market["treasuryCheckedAtUtc"] = checked_at
+            checked.append("Treasury")
     except Exception as exc:
         failures.append(f"UST: {exc}")
-    # A live market is never relabeled with fetch time if its price did not move.
-    if outcomes:
+    # Successful checks are separate from the unchanged observation dates.
+    # A partial source failure must not claim a full-model successful refresh.
+    if len(checked) == 2:
+        model["checkedAtUtc"] = checked_at
+    if checked:
         OUT.write_text(json.dumps(model, ensure_ascii=False, indent=2) + "\n",
                        encoding="utf-8")
     # A valid unchanged Saturday snapshot is fine. If both feeds failed, surface
@@ -123,3 +135,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
