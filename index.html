@@ -523,6 +523,11 @@ body :is(h1,h2,h3,p,div,span,small,strong,button,a,table,th,td,time,summary,labe
 .oversold-card .futures-provider{font-size:11px;white-space:normal;overflow-wrap:anywhere}
 .oversold-card .detail{line-height:1.5}
 #oversold-method{margin-top:4px;color:var(--muted)}
+.oversold-explain{margin-top:10px;border-top:1px solid var(--border);padding-top:9px}
+.oversold-explain summary{cursor:pointer;color:var(--muted);font-size:12px;font-weight:600;line-height:1.5}
+.oversold-explain summary:hover{text-decoration:underline}
+.oversold-explain p{margin:8px 0 0;font-size:12px;line-height:1.6;color:var(--muted);overflow-wrap:break-word}
+.oversold-explain p strong{color:var(--text);font-weight:650}
 @media(max-width:720px){.forecastgrid{grid-template-columns:1fr;gap:21px}}
 </style></head>
 <body><div class="wrap">
@@ -550,7 +555,13 @@ body :is(h1,h2,h3,p,div,span,small,strong,button,a,table,th,td,time,summary,labe
 <section class="section"><h2 class="sectiontitle">TOP 5 zpráv</h2><div id="news" class="empty">Čeká na první report.</div></section>
 <section class="section"><h2 class="sectiontitle">Makroekonomika</h2><div id="macro" class="empty">Nejsou zveřejněna data</div></section>
 
-<section class="section"><h2 class="sectiontitle">Výhled</h2><div class="forecastgrid"><div class="forecast"><div class="label">Návrat na historické maximum / 6 měsíců</div><strong id="forecast-ath" class="green">—</strong><div id="forecast-ath-reason" class="detail">Čeká na aktualizaci</div></div><div class="forecast oversold-card"><div class="label">Technická přeprodanost · NDX</div><strong id="oversold-rsi" class="red">—</strong><div id="oversold-status" class="detail">Skóre historické extrémnosti se načítá</div><div class="oversold-scale" aria-hidden="true"><div id="oversold-pointer" class="oversold-pointer" style="left:0%"></div></div><div class="oversold-ticks"><span>0</span><span>25</span><span>50</span><span>75</span><span>100</span></div><div id="oversold-trend" class="detail">RSI · odchylka MA20 · výnos za 5 seancí</div><div id="oversold-drawdown" class="detail">Pokles NDX od historického maxima: —</div><div id="oversold-asof" class="detail">Srovnání s posledními 252 seancemi</div><div id="oversold-method" class="detail">Skóre nevyjadřuje procento dokončeného výprodeje.</div><a href="./data/oversold.json" target="_blank" rel="noopener noreferrer" class="futures-provider">Data, percentily a metodika</a></div><div class="forecast"><div class="label">NDX · 25. percentil / 1 a 3 měsíce</div><strong id="forecast-down" class="red">—</strong><div id="forecast-down-points" class="forecast-points">—</div><div id="forecast-down-reason" class="detail">Čeká na aktualizaci</div><div id="forecast-risk-meta" class="detail" style="margin-top:9px">Výsledky opčního modelu se načítají</div><a href="./data/risk-model.json" target="_blank" rel="noopener noreferrer" class="futures-provider">Opční model, EPS a dluhopisy</a></div></div><div style="margin-top:22px"><div class="mini-title">Nejbližší katalyzátor</div><div id="catalyst" class="empty">Zatím nezveřejněno</div></div></section>
+<section class="section"><h2 class="sectiontitle">Výhled</h2><div class="forecastgrid"><div class="forecast"><div class="label">Návrat na historické maximum / 6 měsíců</div><strong id="forecast-ath" class="green">—</strong><div id="forecast-ath-reason" class="detail">Čeká na aktualizaci</div></div><div class="forecast oversold-card"><div class="label">Technická přeprodanost · NDX</div><strong id="oversold-rsi" class="red">—</strong><div id="oversold-status" class="detail">Skóre historické extrémnosti se načítá</div><div class="oversold-scale" aria-hidden="true"><div id="oversold-pointer" class="oversold-pointer" style="left:0%"></div></div><div class="oversold-ticks"><span>0</span><span>25</span><span>50</span><span>75</span><span>100</span></div><div id="oversold-trend" class="detail">RSI · odchylka MA20 · výnos za 5 seancí</div><div id="oversold-drawdown" class="detail">Pokles NDX od historického maxima: —</div><div id="oversold-asof" class="detail">Srovnání s posledními 252 seancemi</div><div id="oversold-method" class="detail">Skóre měří historickou výjimečnost výprodeje, nikoli jeho zbývající délku.</div>
+<details class="oversold-explain">
+  <summary>Co přesně znamenají MA20 a 5D?</summary>
+  <p><strong>MA20 · odchylka od 20denního průměru.</strong> Průměr 20 posledních závěrečných cen NDX. Výpočet: (aktuální NDX / MA20 − 1) × 100. Hodnota „pod MA20“ znamená, že index je níž než jeho nedávný průměr. Neurčuje další možný propad.</p>
+  <p><strong>5D výnos · změna za pět obchodních seancí.</strong> Výpočet: (aktuální NDX / NDX před 5 seancemi − 1) × 100. „Pokles“ označuje již uskutečněný pohyb za zhruba týden; není to predikce pro příští týden.</p>
+  <p><strong>Společná interpretace.</strong> Výrazně záporná MA20 odchylka spolu se záporným 5D výnosem potvrzuje silný krátkodobý prodejní tlak. Obě hodnoty měří částečně stejný pohyb, proto se nesčítají. Extrémní výprodej může předcházet odrazu, ale nevylučuje další propad ani margin call.</p>
+</details><a href="./data/oversold.json" target="_blank" rel="noopener noreferrer" class="futures-provider">Data, percentily a metodika</a></div><div class="forecast"><div class="label">NDX · 25. percentil / 1 a 3 měsíce</div><strong id="forecast-down" class="red">—</strong><div id="forecast-down-points" class="forecast-points">—</div><div id="forecast-down-reason" class="detail">Čeká na aktualizaci</div><div id="forecast-risk-meta" class="detail" style="margin-top:9px">Výsledky opčního modelu se načítají</div><a href="./data/risk-model.json" target="_blank" rel="noopener noreferrer" class="futures-provider">Opční model, EPS a dluhopisy</a></div></div><div style="margin-top:22px"><div class="mini-title">Nejbližší katalyzátor</div><div id="catalyst" class="empty">Zatím nezveřejněno</div></div></section>
 <section class="section" id="top10-section"><h2 class="sectiontitle">Top 10 Nasdaq-100 <small>podle tržní kapitalizace</small></h2>
 <div class="top10-scroll"><table class="top10-table" aria-label="Deset největších společností Nasdaq-100 podle tržní kapitalizace">
 <thead><tr><th scope="col">#</th><th scope="col">Společnost</th><th scope="col">Market cap</th><th scope="col">Cena</th><th scope="col">Dnes</th></tr></thead>
@@ -1129,9 +1140,9 @@ async function loadOversold(ndx){
     if(marker){marker.style.left=Math.max(1,Math.min(99,score))+'%';
                marker.title='Průměr historických percentilů RSI, MA20 a 5D výnosu';}
     const gap=d.ma20DistancePct,change=d.rsiChangeFiveSessions,ret=t.return5SessionsPct;
-    const parts=['RSI(14) '+fmt(rsi,1)];
-    if(Number.isFinite(gap))parts.push('NDX '+fmt(Math.abs(gap),1)+' % '+(gap<0?'pod MA20':'nad MA20'));
-    if(Number.isFinite(ret))parts.push('5D '+fmt(Math.abs(ret),1)+' % '+(ret<0?'pokles':'růst'));
+    const parts=['RSI(14): '+fmt(rsi,1)+'/100'];
+    if(Number.isFinite(gap))parts.push('MA20: '+fmt(Math.abs(gap),1)+' % '+(gap<0?'pod průměrem':gap>0?'nad průměrem':'odchylka 0'));
+    if(Number.isFinite(ret))parts.push('5D výnos: '+fmt(Math.abs(ret),1)+' % '+(ret<0?'pokles':ret>0?'růst':'beze změny'));
     set('oversold-trend',parts.join(' · '));
     const sameCashQuote=Number.isFinite(ndx?.value)&&ndx.value>1000&&
       Number.isFinite(d.ndxClose)&&d.ndxClose>1000&&
