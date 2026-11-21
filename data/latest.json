@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "21. 11. 2026 18:01 CET",
+  "updatedAtPrague": "21. 11. 2026 19:01 CET",
   "marketStatus": "Uzavřen – sobota (cash USA)",
   "ndx": {
     "value": 25028.98,
@@ -9,7 +9,7 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→ beze změny proti 17:07 CET",
+    "trend": "→ beze změny proti 18:01 CET",
     "reason": "NDX −5,61 %, SOX −10,73 %, NVDA −14,01 %; nad MA50 32/101 (31,7 %), data 20. 11."
   },
   "driver": "SOX −10,73 % (20. 11.), NVDA −14,01 %, AVGO −12,19 %; MA50 breadth 31,7 % (20. 11.).",
@@ -241,67 +241,6 @@
       "eventKey": "trump-proposed-tax-on-overseas-us-data-centers-20261120",
       "ndxRelevant": true,
       "importanceScore": 84
-    },
-    {
-      "title": "SpaceX/NVDA: Apollo a Goldman Sachs nacenily GPU financování za 44 mld. USD; součástí jsou čipy Vera Rubin.",
-      "time": "20. 11. 2026, 18:45 CET",
-      "publishedAtPrague": "20. 11. 2026, 18:45",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_financing",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/media-telecom/apollo-goldman-lead-44-billion-spacex-gpu-debt-financing-2026-11-20/",
-      "sourceLinks": [
-        {
-          "label": "Reuters – SpaceX GPU financování",
-          "url": "https://www.reuters.com/business/media-telecom/apollo-goldman-lead-44-billion-spacex-gpu-debt-financing-2026-11-20/"
-        }
-      ],
-      "eventKey": "spacex-44b-gpu-debt-financing-20261120",
-      "ndxRelevant": true,
-      "importanceScore": 82
-    },
-    {
-      "title": "Fed Cook: současné sazby nestačí ke snížení inflace; odhad říjnového PCE 3,8 % y/y a core 3,2 % y/y.",
-      "time": "20. 11. 2026, 18:18 CET",
-      "publishedAtPrague": "20. 11. 2026, 18:18",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "monetary_policy",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/feds-cook-says-rate-hikes-needed-lower-high-inflation-2026-11-20/",
-      "sourceLinks": [
-        {
-          "label": "Fed – projev Lisa Cook",
-          "url": "https://www.federalreserve.gov/newsevents/speech/cook20261120a.htm"
-        },
-        {
-          "label": "Reuters – Cook / sazby",
-          "url": "https://www.reuters.com/business/feds-cook-says-rate-hikes-needed-lower-high-inflation-2026-11-20/"
-        }
-      ],
-      "eventKey": "fed-cook-further-rate-hikes-inflation-ai-investment-20261120",
-      "ndxRelevant": true,
-      "importanceScore": 83
-    },
-    {
-      "title": "Anthropic: Morgan Stanley uplatnila celou opci na 147 mil. akcií za IPO cenu; odpadá jeden zdroj možné nákupní podpory.",
-      "publishedAtPrague": "20. 11. 2026, 18:09",
-      "category": "ai_financing",
-      "url": "https://www.reuters.com/markets/us/anthropics-ipo-bank-closed-position-meant-stabilize-stock-removing-source-2026-11-20/",
-      "eventKey": "anthropic-full-greenshoe-stabilization-option-exercised-20261120",
-      "importanceScore": 82,
-      "time": "20. 11. 2026, 18:09 CET",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "source": "Reuters",
-      "sourceLinks": [
-        {
-          "label": "Reuters – Anthropic / stabilizační opce",
-          "url": "https://www.reuters.com/markets/us/anthropics-ipo-bank-closed-position-meant-stabilize-stock-removing-source-2026-11-20/"
-        }
-      ],
-      "ndxRelevant": true
     }
   ],
   "leaders": [
@@ -2178,6 +2117,24 @@
         {
           "label": "Trading Economics – WTI",
           "url": "https://tradingeconomics.com/commodity/crude-oil"
+        }
+      ]
+    },
+    {
+      "time": "21. 11. 2026 19:01 CET",
+      "summary": "NDX 25 028,98 b. (−5,61 %, závěr 20. 11.); US10Y 4,92 % (20. 11.). Ověřeny cash NDX, Treasury, VXN, 24h Reuters a 9 stránek Trading Economics; 12 kvalifikovaných zpráv (3 expirovaly). USD/CZK zdrojově konfliktní; původní kotace ponechána. Yahoo NQ=F 429, Nasdaq členství API vendor error; breadth/oversold/model ponechány na ověřeném období.",
+      "sourceLinks": [
+        {
+          "label": "Yahoo Finance – cash NDX",
+          "url": "https://finance.yahoo.com/quote/%5ENDX/history/"
+        },
+        {
+          "label": "U.S. Treasury – US10Y",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+        },
+        {
+          "label": "Trading Economics – EUR/CZK",
+          "url": "https://tradingeconomics.com/eurczk:cur"
         }
       ]
     }
