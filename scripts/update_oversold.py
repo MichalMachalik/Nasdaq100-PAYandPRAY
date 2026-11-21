@@ -16,7 +16,7 @@ from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 
 OUT = pathlib.Path("data/oversold.json")
-URL = "https://query1.finance.yahoo.com/v8/finance/chart/%5ENDX?range=1y&interval=1d"
+URL = "https://query1.finance.yahoo.com/v8/finance/chart/%5ENDX?range=2y&interval=1d"
 NY = ZoneInfo("America/New_York")
 
 def fetch_history():
@@ -80,6 +80,59 @@ def wilder_rsi(closes, period=14):
         series.append(value(gain, loss))
     return series
 
+def inverted_percentile(current, previous):
+    """Rank downside extremity against earlier observations, including half of ties.
+
+    A return of 95 means the current measure is lower than approximately 95%
+    of the historical sample. It does NOT mean 95% of a selloff is complete.
+    """
+    if not previous or not all(math.isfinite(x) for x in previous):
+        raise ValueError("Empty or invalid comparison sample")
+    if not math.isfinite(current):
+        raise ValueError("Current observation is invalid")
+    count = sum(x > current for x in previous)
+    ties = sum(x == current for x in previous)
+    return 100 * (count + 0.5 * ties) / len(previous)
+
+
+def technical_extremity(closes, rsi_values, lookback=252):
+    """Uncalibrated technical stretch: mean of three transparent percentiles.
+
+    RSI(14), price deviation from MA20, and five-session return are correlated.
+    This descriptive gauge NEVER claims to know the fraction of decline already
+    completed, a turning-point probability, or future price direction.
+    """
+    n = len(closes)
+    if len(rsi_values) != n - 14:
+        raise ValueError("RSI alignment mismatch")
+    if n < lookback + 20:
+        return None
+    rsi_by_day = [None] * 14 + rsi_values
+    deviation_by_day = [None] * 19 + [
+        (closes[i] / (sum(closes[i-19:i+1]) / 20) - 1) * 100
+        for i in range(19, n)
+    ]
+    returns_by_day = [None] * 5 + [
+        (closes[i] / closes[i-5] - 1) * 100 for i in range(5, n)
+    ]
+    start = n - lookback - 1
+    end = n - 1  # exclude the current date from the reference distribution
+    indicators = (rsi_by_day, deviation_by_day, returns_by_day)
+    ranks = [inverted_percentile(values[-1], values[start:end])
+             for values in indicators]
+    return {
+        "score": round(sum(ranks) / len(ranks), 1),
+        "percentiles": {
+            "rsi14": round(ranks[0], 1),
+            "priceToMA20": round(ranks[1], 1),
+            "return5Sessions": round(ranks[2], 1),
+        },
+        "referenceSessions": lookback,
+        "return5SessionsPct": round(returns_by_day[-1], 2),
+        "method": "Unweighted mean of three lower-tail ranks vs prior 252 sessions",
+    }
+
+
 def build_snapshot(history):
     values = [x[1] for x in history]
     rsi = wilder_rsi(values)
@@ -95,6 +148,7 @@ def build_snapshot(history):
         momentum = "worsening"
     else:
         momentum = "unconfirmed"
+    severity = technical_extremity(values, rsi)
     return {
         "schemaVersion": 1, "instrument": "^NDX", "instrumentType": "INDEX",
         "indicator": "RSI", "period": 14,
@@ -104,11 +158,15 @@ def build_snapshot(history):
         "ma20DistancePct": round(100*(values[-1]/ma20 - 1), 2),
         "rsiChangeFiveSessions": round(five_day_change, 2),
         "trendConfirmation": momentum,
+        "technicalOversold": severity,
         "source": "Yahoo Finance cash ^NDX daily closes; Wilder RSI(14) calculated",
         "sourceUrl": "https://finance.yahoo.com/quote/%5ENDX/history/",
         "methodology": ("Cash NDX daily Wilder RSI(14): below 20 extremely oversold, "
                         "20–30 oversold. This indicates past selling pressure, "
-                        "not a reversal guarantee, forecast or instruction to trade."),
+                        "not a reversal guarantee, forecast or instruction to trade. "
+                        "technicalOversold.score (0–100) is the average lower-tail "
+                        "percentile for RSI14, MA20 gap, and 5d return over 252 "
+                        "earlier sessions; not a percentage of decline completed."),
         "isProviderSnapshot": False,
     }
 
@@ -123,7 +181,8 @@ def main():
     if (previous.get("asOf") == snapshot["asOf"] and
         previous.get("value") == snapshot["value"] and
         previous.get("ma20") == snapshot["ma20"] and
-        previous.get("source") == snapshot["source"]):
+        previous.get("source") == snapshot["source"] and
+        previous.get("technicalOversold") == snapshot["technicalOversold"]):
         print("RSI unchanged; retained dated snapshot", snapshot["asOf"])
         return
     OUT.parent.mkdir(parents=True, exist_ok=True)
