@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "21. 11. 2026 01:58 CET",
+  "updatedAtPrague": "21. 11. 2026 02:58 CET",
   "marketStatus": "Cash uzavřen; sobota; poslední závěr 20. 11. 2026, 22:00 CET",
   "ndx": {
     "value": 25028.98,
@@ -9,7 +9,7 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→ beze změny proti 00:57 CET",
+    "trend": "→ beze změny proti 01:58 CET",
     "reason": "NDX −5,61 %, SOX −10,73 %, NVDA −14,01 %, AVGO −12,19 %; závěr 20. 11."
   },
   "driver": "SOX −10,73 %, NVDA −14,01 %, AVGO −12,19 %; pokračující výprodej polovodičů a AI titulů.",
@@ -19,7 +19,7 @@
       "time": "20. 11. 2026, 22:32 CET",
       "publishedAtPrague": "20. 11. 2026, 22:32",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "corporate_ma",
       "source": "Reuters",
       "url": "https://www.reuters.com/legal/litigation/crowdstrike-talks-acquire-zscaler-source-says-2026-11-20/",
@@ -363,25 +363,6 @@
       "eventKey": "us-senate-energy-datacenter-permitting-bill-passed-62-33-20261119",
       "ndxRelevant": true,
       "importanceScore": 78
-    },
-    {
-      "title": "Asie: MSCI Asia-Pacific −3,3 % (týden −8,5 %), Nikkei −5,0 %, KOSPI −5,2 %; TAIEX týden −17,5 %.",
-      "time": "20. 11. 2026, 02:46 CET",
-      "publishedAtPrague": "20. 11. 2026, 02:46",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "market_reaction",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-20/",
-      "sourceLinks": [
-        {
-          "label": "Reuters – Asie",
-          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-20/"
-        }
-      ],
-      "eventKey": "asia-equities-selloff-nq-futures-20261120",
-      "ndxRelevant": true,
-      "importanceScore": 71
     }
   ],
   "leaders": [
@@ -1944,6 +1925,20 @@
           "url": "https://www.reuters.com/legal/litigation/crowdstrike-talks-acquire-zscaler-source-says-2026-11-20/"
         }
       ]
+    },
+    {
+      "time": "21. 11. 2026 02:58 CET",
+      "summary": "Cash NDX 25 028,98 b. (−5,61 %, závěr 20. 11.); SOX −10,73 %, NVDA −14,01 %. Bez zásadních novinek proti 01:58 CET.",
+      "sourceLinks": [
+        {
+          "label": "Yahoo Finance – cash NDX",
+          "url": "https://finance.yahoo.com/quote/%5ENDX/history/"
+        },
+        {
+          "label": "Reuters – závěr a AI sektor",
+          "url": "https://www.reuters.com/business/view-nasdaq-plunges-5-day-after-anthropic-debut-investors-still-believe-ai-2026-11-20/"
+        }
+      ]
     }
   ],
   "history": [
@@ -2233,6 +2228,10 @@
     },
     {
       "time": "21. 11. 2026 01:57 CET",
+      "ndx": 25028.98
+    },
+    {
+      "time": "21. 11. 2026 02:58 CET",
       "ndx": 25028.98
     }
   ],
