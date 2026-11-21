@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "21. 11. 2026 21:01 CET",
+  "updatedAtPrague": "21. 11. 2026 21:56 CET",
   "marketStatus": "Uzavřen – sobota (cash USA)",
   "ndx": {
     "value": 25028.98,
@@ -9,7 +9,7 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→ beze změny proti 20:06 CET",
+    "trend": "→ beze změny proti 21:01 CET",
     "reason": "NDX −5,61 %, SOX −10,73 %, NVDA −14,01 %; nad MA50 32/101 (31,7 %), data 20. 11."
   },
   "driver": "SOX −10,73 % (20. 11.), NVDA −14,01 %, AVGO −12,19 %; MA50 breadth 31,7 % (20. 11.).",
@@ -127,25 +127,6 @@
       "eventKey": "us-ai-stocks-friday-nov20-closing-rout-20261120",
       "ndxRelevant": true,
       "importanceScore": 85
-    },
-    {
-      "title": "Reuters: rotace z AI technologií do dluhopisů a hodnotových akcií; Nasdaq Composite během seance přes −4 %.",
-      "time": "20. 11. 2026, 21:13 CET",
-      "publishedAtPrague": "20. 11. 2026, 21:13",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "market_rotation",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/finance/ai-tech-rout-prompts-us-investors-rush-into-value-stocks-2026-11-20/",
-      "sourceLinks": [
-        {
-          "label": "Reuters – rotace z AI do value",
-          "url": "https://www.reuters.com/business/finance/ai-tech-rout-prompts-us-investors-rush-into-value-stocks-2026-11-20/"
-        }
-      ],
-      "eventKey": "ai-tech-selloff-bonds-value-rotation-20261120",
-      "ndxRelevant": true,
-      "importanceScore": 79
     }
   ],
   "leaders": [
@@ -2076,6 +2057,24 @@
         {
           "label": "ChartVault – MA50 breadth",
           "url": "https://aveceasar.github.io/nasdaq100-percent-above-moving-averages/"
+        }
+      ]
+    },
+    {
+      "time": "21. 11. 2026 21:56 CET",
+      "summary": "Cash NDX 25 028,98 b. (−5,61 %, závěr 20. 11.); VXN 45,25 (20. 11.), MA50 breadth 31,7 %. Ověřeny poslední NDX závěr, Reuters, Nasdaq členství, VXN a 9 referenčních instrumentů Trading Economics; kvalifikovaných událostí 6 (1 expirovala), bez nové zásadní události. Yahoo NQ=F 429; futures a odvozené modelové snímky zachovány.",
+      "sourceLinks": [
+        {
+          "label": "YCharts – cash NDX",
+          "url": "https://ycharts.com/indices/%5ENDX/level"
+        },
+        {
+          "label": "Google Finance – VXN",
+          "url": "https://www.google.com/finance/quote/VXN:INDEXCBOE?hl=en"
+        },
+        {
+          "label": "Trading Economics – trhy",
+          "url": "https://tradingeconomics.com/commodities"
         }
       ]
     }
