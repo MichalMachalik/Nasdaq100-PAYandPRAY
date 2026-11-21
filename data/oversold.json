@@ -16,11 +16,11 @@
   "rsiChangeFiveSessions": -16.12,
   "trendConfirmation": "worsening",
   "technicalOversold": {
-    "score": 100.0,
+    "score": 100,
     "percentiles": {
-      "rsi14": 100.0,
-      "priceToMA20": 100.0,
-      "return5Sessions": 100.0
+      "rsi14": 100,
+      "priceToMA20": 100,
+      "return5Sessions": 100
     },
     "referenceSessions": 252,
     "return5SessionsPct": -10.43,
@@ -31,5 +31,5 @@
   "methodology": "Cash NDX daily Wilder RSI(14): below 20 extremely oversold, 20–30 oversold. This indicates past selling pressure, not a reversal guarantee, forecast or instruction to trade. technicalOversold.score (0–100) is the average lower-tail percentile for RSI14, MA20 gap, and 5d return over 252 earlier sessions; not a percentage of decline completed. MA50 level, NDX distance and 5-session MA50 slope are an independent medium-term trend context, not scored twice.",
   "isProviderSnapshot": false,
   "collectedAtUtc": "2026-11-21T00:37:39.138482Z",
-  "checkedAtUtc": "2026-11-21T09:04:48.486120Z"
+  "checkedAtUtc": "2026-11-21T10:26:29.810Z"
 }
