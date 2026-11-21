@@ -1,0 +1,42 @@
+name: Nasdaq 100 cash RSI oversold indicator
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "scripts/update_oversold.py"
+      - "tests/test_oversold.py"
+      - ".github/workflows/oversold.yml"
+  schedule:
+    - cron: "40 22 * * 1-5"
+permissions:
+  contents: write
+concurrency:
+  group: ndx-oversold
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Verify RSI arithmetic and data validation
+        run: python -m unittest discover -s tests -p test_oversold.py -v
+      - name: Fetch completed cash NDX candles and calculate Wilder RSI
+        run: python scripts/update_oversold.py
+      - name: Publish dated RSI snapshot
+        run: |
+          if git diff --quiet -- data/oversold.json; then
+            echo "RSI data unchanged"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/oversold.json
+          git commit -m "Refresh confirmed cash NDX RSI14 oversold indicator"
+          for attempt in 1 2 3; do
+            git pull --rebase origin "${{ github.event.repository.default_branch }}"
+            if git push; then exit 0; fi
+          done
+          exit 1
