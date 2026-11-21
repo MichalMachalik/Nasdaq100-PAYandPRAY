@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "21. 11. 2026 10:04 CET",
+  "updatedAtPrague": "21. 11. 2026 10:59 CET",
   "marketStatus": "cash uzavřen (sobota)",
   "ndx": {
     "value": 25028.98,
@@ -9,13 +9,13 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→ beze změny proti 10:02 CET",
+    "trend": "→ beze změny proti 10:04 CET",
     "reason": "NDX −5,61 %, SOX −10,73 %, NVDA −14,01 %; nad MA50 32/101 (31,7 %), data 20. 11."
   },
   "driver": "SOX −10,73 % (20. 11.), NVDA −14,01 %, AVGO −12,19 %; MA50 breadth 31,7 % (20. 11.).",
   "news": [
     {
-      "title": "Hormuz: tanker u ománského Khasabu zasáhl neznámý projektil; UKMTO nehlásí zranění.",
+      "title": "Hormuz: UKMTO hlásí dva incidenty tankerů u ománského Khasabu; bez obětí.",
       "publishedAtPrague": "21. 11. 2026, 08:57",
       "category": "geopolitics",
       "url": "https://www.reuters.com/business/energy/tanker-hit-by-unknown-projectile-near-omans-khasab-ukmto-says-2026-11-21/",
@@ -2128,6 +2128,24 @@
         },
         {
           "label": "Reuters – tanker / Hormuz",
+          "url": "https://www.reuters.com/business/energy/tanker-hit-by-unknown-projectile-near-omans-khasab-ukmto-says-2026-11-21/"
+        }
+      ]
+    },
+    {
+      "time": "21. 11. 2026 10:59 CET",
+      "summary": "NDX 25 028,98 b. (−5,61 %, cash závěr 20. 11.); US10Y 4,92 % vs. 5,04 % (19. 11.); Reuters: dva incidenty tankerů u Khasabu, 21. 11. Bez nových firemních výsledků s ověřeným časem po minulé kontrole.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq – NDX",
+          "url": "https://indexes.nasdaq.com/index/CorpActions/NDX"
+        },
+        {
+          "label": "U.S. Treasury – US10Y",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+        },
+        {
+          "label": "Reuters – incidenty Hormuz",
           "url": "https://www.reuters.com/business/energy/tanker-hit-by-unknown-projectile-near-omans-khasab-ukmto-says-2026-11-21/"
         }
       ]
