@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "21. 11. 2026 01:57 CET",
+  "updatedAtPrague": "21. 11. 2026 01:58 CET",
   "marketStatus": "Cash uzavřen; sobota; poslední závěr 20. 11. 2026, 22:00 CET",
   "ndx": {
     "value": 25028.98,
@@ -14,6 +14,25 @@
   },
   "driver": "SOX −10,73 %, NVDA −14,01 %, AVGO −12,19 %; pokračující výprodej polovodičů a AI titulů.",
   "news": [
+    {
+      "title": "CRWD jedná o akvizici Zscaler; dohoda nepotvrzena. Po trhu CRWD −8 %, ZS +17 %.",
+      "time": "20. 11. 2026, 22:32 CET",
+      "publishedAtPrague": "20. 11. 2026, 22:32",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "corporate_ma",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/legal/litigation/crowdstrike-talks-acquire-zscaler-source-says-2026-11-20/",
+      "sourceLinks": [
+        {
+          "label": "Reuters – CRWD / Zscaler",
+          "url": "https://www.reuters.com/legal/litigation/crowdstrike-talks-acquire-zscaler-source-says-2026-11-20/"
+        }
+      ],
+      "eventKey": "crwd-zscaler-acquisition-talks-20261120",
+      "ndxRelevant": true,
+      "importanceScore": 65
+    },
     {
       "title": "USA cash závěr: NDX −5,61 %, SOX −10,73 %, NVDA −14,01 %; Nasdaq Composite týden −10 %.",
       "time": "20. 11. 2026, 22:17 CET",
@@ -1910,15 +1929,19 @@
     },
     {
       "time": "21. 11. 2026 01:57 CET",
-      "summary": "Cash NDX 25 028,98 b. (−5,61 %; závěr 20. 11.); SOX −10,73 %, NVDA −14,01 %. Bez zásadních novinek proti 00:57 CET.",
+      "summary": "Cash NDX 25 028,98 b. (−5,61 %, závěr 20. 11.); SOX −10,73 %. Nově ověřena Reuters zpráva: CRWD jedná o koupi ZS, CRWD po trhu −8 %.",
       "sourceLinks": [
         {
           "label": "Yahoo Finance – cash NDX",
           "url": "https://finance.yahoo.com/quote/%5ENDX/history/"
         },
         {
-          "label": "Reuters – závěr USA a AI výprodej",
+          "label": "Reuters – AI výprodej",
           "url": "https://www.reuters.com/business/view-nasdaq-plunges-5-day-after-anthropic-debut-investors-still-believe-ai-2026-11-20/"
+        },
+        {
+          "label": "Reuters – CRWD / Zscaler",
+          "url": "https://www.reuters.com/legal/litigation/crowdstrike-talks-acquire-zscaler-source-says-2026-11-20/"
         }
       ]
     }
@@ -2873,6 +2896,10 @@
     {
       "name": "Pay & Pray – ověřená data a transparentní model 1–3 měsíce",
       "url": "https://github.com/MichalMachalik/Nasdaq100-PAYandPRAY/blob/main/data/risk-model.json"
+    },
+    {
+      "name": "Reuters – CRWD / Zscaler",
+      "url": "https://www.reuters.com/legal/litigation/crowdstrike-talks-acquire-zscaler-source-says-2026-11-20/"
     }
   ]
 }
