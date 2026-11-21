@@ -1132,7 +1132,7 @@ async function loadOversold(){
     if(Number.isFinite(gap))parts.push('NDX '+fmt(Math.abs(gap),1)+' % '+(gap<0?'pod MA20':'nad MA20'));
     if(Number.isFinite(ret))parts.push('5D '+fmt(Math.abs(ret),1)+' % '+(ret<0?'pokles':'růst'));
     set('oversold-trend',parts.join(' · '));
-    const direction=change<0?'slábne':change>0?'zesiluje':'beze změny';
+    const direction=change<0?'níže; tlak sílí':change>0?'výše; tlak slábne':'beze změny';
     set('oversold-asof',
         'RSI 5D: '+(Number.isFinite(change)?fmt(Math.abs(change),1)+' b. '+direction:'bez dat')+
         ' · vzorek '+t.referenceSessions+' seancí · '+String(d.asOf));
