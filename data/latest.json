@@ -1,6 +1,6 @@
 {
-  "updatedAtPrague": "21. 11. 2026 15:58 CET",
-  "marketStatus": "cash uzavřen (sobota)",
+  "updatedAtPrague": "21. 11. 2026 17:07 CET",
+  "marketStatus": "Uzavřen – sobota (cash USA)",
   "ndx": {
     "value": 25028.98,
     "changePercent": -5.61,
@@ -9,7 +9,7 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→ beze změny proti 15:02 CET",
+    "trend": "→ beze změny proti 15:58 CET",
     "reason": "NDX −5,61 %, SOX −10,73 %, NVDA −14,01 %; nad MA50 32/101 (31,7 %), data 20. 11."
   },
   "driver": "SOX −10,73 % (20. 11.), NVDA −14,01 %, AVGO −12,19 %; MA50 breadth 31,7 % (20. 11.).",
@@ -302,63 +302,6 @@
         }
       ],
       "ndxRelevant": true
-    },
-    {
-      "title": "Bessent doporučuje Fedu vyhnout se zvýšení sazeb o 50 bb; odkazuje na energetický šok a pokles cen ropy.",
-      "time": "20. 11. 2026, 16:46 CET",
-      "publishedAtPrague": "20. 11. 2026, 16:46",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "monetary_policy",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/bessent-advocates-lower-fed-rate-hike-cites-energy-shock-2026-11-20/",
-      "sourceLinks": [
-        {
-          "label": "Reuters – Bessent / Fed",
-          "url": "https://www.reuters.com/business/bessent-advocates-lower-fed-rate-hike-cites-energy-shock-2026-11-20/"
-        }
-      ],
-      "eventKey": "us-treasury-bessent-opposes-50bp-fed-hike-20261120",
-      "ndxRelevant": true,
-      "importanceScore": 66
-    },
-    {
-      "title": "Alphabet předstihl NVIDIA v tržní kapitalizaci USA: 3,44 bil. USD vs. 3,4 bil. USD.",
-      "time": "20. 11. 2026, 16:31 CET",
-      "publishedAtPrague": "20. 11. 2026, 16:31",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "semiconductors",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/retail-consumer/nvidias-share-slide-knocks-it-below-alphabet-valuation-2026-11-20/",
-      "sourceLinks": [
-        {
-          "label": "Reuters – NVDA / Alphabet",
-          "url": "https://www.reuters.com/business/retail-consumer/nvidias-share-slide-knocks-it-below-alphabet-valuation-2026-11-20/"
-        }
-      ],
-      "eventKey": "nvidia-alphabet-marketcap-rank-switch-20261120",
-      "ndxRelevant": true,
-      "importanceScore": 71
-    },
-    {
-      "title": "U. Michigan listopad final: sentiment 51,5 vs. říjen 48,0; roční inflační očekávání 3,7 % vs. 4,7 %.",
-      "time": "20. 11. 2026, 16:00 CET",
-      "publishedAtPrague": "20. 11. 2026, 16:00",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "macro",
-      "source": "University of Michigan",
-      "url": "https://www.sca.isr.umich.edu/",
-      "sourceLinks": [
-        {
-          "label": "Michigan – final listopad",
-          "url": "https://www.sca.isr.umich.edu/"
-        }
-      ],
-      "eventKey": "michigan-final-sentiment-inflation-nov2026",
-      "ndxRelevant": true,
-      "importanceScore": 58
     }
   ],
   "leaders": [
@@ -2195,6 +2138,24 @@
         {
           "label": "U.S. Treasury – US10Y",
           "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+        },
+        {
+          "label": "Trading Economics – WTI",
+          "url": "https://tradingeconomics.com/commodity/crude-oil"
+        }
+      ]
+    },
+    {
+      "time": "21. 11. 2026 17:07 CET",
+      "summary": "Cash NDX 25 028,98 b. (−5,61 %, závěr 20. 11.); VXN 45,25, US10Y 4,92 % (20. 11.). Ověřeny Nasdaq, Google Finance, 9 kotací Trading Economics a 24h zprávy; bez nové zásadní události. Yahoo 429, Nasdaq API chyba, externí breadth feed nedostupný; ostatní datované snímky zachovány.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq – NDX",
+          "url": "https://indexes.nasdaq.com/index/CorpActions/NDX"
+        },
+        {
+          "label": "Google Finance – VXN",
+          "url": "https://www.google.com/finance/quote/VXN:INDEXCBOE?hl=en"
         },
         {
           "label": "Trading Economics – WTI",
