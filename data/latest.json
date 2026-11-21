@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "21. 11. 2026 10:59 CET",
+  "updatedAtPrague": "21. 11. 2026 12:01 CET",
   "marketStatus": "cash uzavřen (sobota)",
   "ndx": {
     "value": 25028.98,
@@ -9,7 +9,7 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→ beze změny proti 10:04 CET",
+    "trend": "→ beze změny proti 10:59 CET",
     "reason": "NDX −5,61 %, SOX −10,73 %, NVDA −14,01 %; nad MA50 32/101 (31,7 %), data 20. 11."
   },
   "driver": "SOX −10,73 % (20. 11.), NVDA −14,01 %, AVGO −12,19 %; MA50 breadth 31,7 % (20. 11.).",
@@ -378,25 +378,6 @@
       "eventKey": "alphabet-canadian-bond-issue-6bn-cad-20261120",
       "ndxRelevant": true,
       "importanceScore": 74
-    },
-    {
-      "title": "VIX dosáhl 30,04, maxima od 30. 3.; poslední údaj 29,50 (+1,08 b.).",
-      "time": "20. 11. 2026, 11:36 CET",
-      "publishedAtPrague": "20. 11. 2026, 11:36",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "market_reaction",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/wall-streets-fear-gauge-touches-seven-month-high-ai-worries-mount-2026-11-20/",
-      "sourceLinks": [
-        {
-          "label": "Reuters – VIX",
-          "url": "https://www.reuters.com/business/wall-streets-fear-gauge-touches-seven-month-high-ai-worries-mount-2026-11-20/"
-        }
-      ],
-      "eventKey": "vix-seven-month-high-30-04-20261120",
-      "ndxRelevant": true,
-      "importanceScore": 67
     }
   ],
   "leaders": [
@@ -2147,6 +2128,24 @@
         {
           "label": "Reuters – incidenty Hormuz",
           "url": "https://www.reuters.com/business/energy/tanker-hit-by-unknown-projectile-near-omans-khasab-ukmto-says-2026-11-21/"
+        }
+      ]
+    },
+    {
+      "time": "21. 11. 2026 12:01 CET",
+      "summary": "NDX 25 028,98 b. (−5,61 %, cash závěr 20. 11.); US10Y 4,92 % vs. 5,04 % (19. 11.). Zprávy Reuters/Nasdaq kontrolovány, bez nové kvalifikované události od 10:59 CET; 24h pool revidován. Zavřené burzy, referenční ceny beze změny.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq – NDX",
+          "url": "https://indexes.nasdaq.com/Index/Overview/NDX"
+        },
+        {
+          "label": "U.S. Treasury – US10Y",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+        },
+        {
+          "label": "Reuters – šetření SEC / NVDA",
+          "url": "https://www.reuters.com/world/us-secs-nvidia-probe-is-examining-potential-accounting-issues-sources-say-2026-11-20/"
         }
       ]
     }
