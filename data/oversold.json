@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "instrument": "^NDX",
+  "instrumentType": "INDEX",
+  "indicator": "RSI",
+  "period": 14,
+  "value": 17.66,
+  "asOf": "2026-11-20",
+  "ndxClose": 25028.98,
+  "ma20": 26500.8,
+  "ma20DistancePct": -5.55,
+  "rsiChangeFiveSessions": null,
+  "trendConfirmation": "unavailable",
+  "source": "Investing.com Nasdaq 100 daily technical indicators",
+  "sourceUrl": "https://www.investing.com/technical/nq-100-technical-analysis",
+  "methodology": "RSI(14) on daily Nasdaq 100 cash index; <20 is an extreme oversold condition, not a buy signal or probability of reversal. Future source may use Wilder RSI calculated from daily Yahoo Finance closes.",
+  "collectedAtUtc": "2026-11-20T21:00:00Z",
+  "isProviderSnapshot": true
+}
