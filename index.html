@@ -550,7 +550,7 @@ body :is(h1,h2,h3,p,div,span,small,strong,button,a,table,th,td,time,summary,labe
 <section class="section"><h2 class="sectiontitle">TOP 5 zpráv</h2><div id="news" class="empty">Čeká na první report.</div></section>
 <section class="section"><h2 class="sectiontitle">Makroekonomika</h2><div id="macro" class="empty">Nejsou zveřejněna data</div></section>
 
-<section class="section"><h2 class="sectiontitle">Výhled</h2><div class="forecastgrid"><div class="forecast"><div class="label">Návrat na historické maximum / 6 měsíců</div><strong id="forecast-ath" class="green">—</strong><div id="forecast-ath-reason" class="detail">Čeká na aktualizaci</div></div><div class="forecast oversold-card"><div class="label">Technická přeprodanost · NDX</div><strong id="oversold-rsi" class="red">—</strong><div id="oversold-status" class="detail">Skóre historické extrémnosti se načítá</div><div class="oversold-scale" aria-hidden="true"><div id="oversold-pointer" class="oversold-pointer" style="left:0%"></div></div><div class="oversold-ticks"><span>0</span><span>25</span><span>50</span><span>75</span><span>100</span></div><div id="oversold-trend" class="detail">RSI · odchylka MA20 · výnos za 5 seancí</div><div id="oversold-asof" class="detail">Srovnání s posledními 252 seancemi</div><div id="oversold-method" class="detail">Skóre nevyjadřuje procento dokončeného výprodeje.</div><a href="./data/oversold.json" target="_blank" rel="noopener noreferrer" class="futures-provider">Data, percentily a metodika</a></div><div class="forecast"><div class="label">NDX · 25. percentil / 1 a 3 měsíce</div><strong id="forecast-down" class="red">—</strong><div id="forecast-down-points" class="forecast-points">—</div><div id="forecast-down-reason" class="detail">Čeká na aktualizaci</div><div id="forecast-risk-meta" class="detail" style="margin-top:9px">Výsledky opčního modelu se načítají</div><a href="./data/risk-model.json" target="_blank" rel="noopener noreferrer" class="futures-provider">Opční model, EPS a dluhopisy</a></div></div><div style="margin-top:22px"><div class="mini-title">Nejbližší katalyzátor</div><div id="catalyst" class="empty">Zatím nezveřejněno</div></div></section>
+<section class="section"><h2 class="sectiontitle">Výhled</h2><div class="forecastgrid"><div class="forecast"><div class="label">Návrat na historické maximum / 6 měsíců</div><strong id="forecast-ath" class="green">—</strong><div id="forecast-ath-reason" class="detail">Čeká na aktualizaci</div></div><div class="forecast oversold-card"><div class="label">Technická přeprodanost · NDX</div><strong id="oversold-rsi" class="red">—</strong><div id="oversold-status" class="detail">Skóre historické extrémnosti se načítá</div><div class="oversold-scale" aria-hidden="true"><div id="oversold-pointer" class="oversold-pointer" style="left:0%"></div></div><div class="oversold-ticks"><span>0</span><span>25</span><span>50</span><span>75</span><span>100</span></div><div id="oversold-trend" class="detail">RSI · odchylka MA20 · výnos za 5 seancí</div><div id="oversold-drawdown" class="detail">Pokles NDX od historického maxima: —</div><div id="oversold-asof" class="detail">Srovnání s posledními 252 seancemi</div><div id="oversold-method" class="detail">Skóre nevyjadřuje procento dokončeného výprodeje.</div><a href="./data/oversold.json" target="_blank" rel="noopener noreferrer" class="futures-provider">Data, percentily a metodika</a></div><div class="forecast"><div class="label">NDX · 25. percentil / 1 a 3 měsíce</div><strong id="forecast-down" class="red">—</strong><div id="forecast-down-points" class="forecast-points">—</div><div id="forecast-down-reason" class="detail">Čeká na aktualizaci</div><div id="forecast-risk-meta" class="detail" style="margin-top:9px">Výsledky opčního modelu se načítají</div><a href="./data/risk-model.json" target="_blank" rel="noopener noreferrer" class="futures-provider">Opční model, EPS a dluhopisy</a></div></div><div style="margin-top:22px"><div class="mini-title">Nejbližší katalyzátor</div><div id="catalyst" class="empty">Zatím nezveřejněno</div></div></section>
 <section class="section" id="top10-section"><h2 class="sectiontitle">Top 10 Nasdaq-100 <small>podle tržní kapitalizace</small></h2>
 <div class="top10-scroll"><table class="top10-table" aria-label="Deset největších společností Nasdaq-100 podle tržní kapitalizace">
 <thead><tr><th scope="col">#</th><th scope="col">Společnost</th><th scope="col">Market cap</th><th scope="col">Cena</th><th scope="col">Dnes</th></tr></thead>
@@ -1088,11 +1088,12 @@ async function loadRiskModel(ndx){
         fmt(Math.round(ndx.value*(1-threeMonths/100)),0)+' bodů NDX');
     const rate=Number.isFinite(market.treasury10yPct)?' · US10Y '+fmt(market.treasury10yPct)+' %':'';
     const valuation=Number.isFinite(market.qqqForwardPE)?' · QQQ forward P/E '+fmt(market.qqqForwardPE)+'×':'';
+    const spread=Number.isFinite(market.highYieldOasPct)?' · HY OAS '+fmt(market.highYieldOasPct)+' %':'';
     set('forecast-down-reason','VXN(30D) '+fmt(volatility)+' % · datum '+String(market.vxnAsOf)+
         ' · dolní kvartil koncové ceny NDX, nikoli intraperiodické minimum.');
     if(meta){
       meta.textContent='Model: lognormální, konstantní IV, nulový drift.'+
-        rate+valuation+'. EPS, Fed a kreditní rozpětí se kontrolují zvlášť.';
+        rate+valuation+spread+'. VXN není směrná předpověď ani intraperiodické dno.';
     }
   }catch(error){
     if(meta)meta.textContent='Volatilita není nově ověřena; zobrazen záložní odhad ze zdrojového reportu.';
@@ -1100,7 +1101,7 @@ async function loadRiskModel(ndx){
   }
 }
 // RSI reports actual price pressure; it never claims a trade is safe.
-async function loadOversold(){
+async function loadOversold(ndx){
   const marker=$('oversold-pointer');
   try{
     const response=await fetch('./data/oversold.json?t='+Date.now(),{cache:'no-store'});
@@ -1132,6 +1133,14 @@ async function loadOversold(){
     if(Number.isFinite(gap))parts.push('NDX '+fmt(Math.abs(gap),1)+' % '+(gap<0?'pod MA20':'nad MA20'));
     if(Number.isFinite(ret))parts.push('5D '+fmt(Math.abs(ret),1)+' % '+(ret<0?'pokles':'růst'));
     set('oversold-trend',parts.join(' · '));
+    const sameCashQuote=Number.isFinite(ndx?.value)&&ndx.value>1000&&
+      Number.isFinite(d.ndxClose)&&d.ndxClose>1000&&
+      Math.abs(ndx.value-d.ndxClose)/d.ndxClose<0.001;
+    const drawdown=sameCashQuote&&Number.isFinite(ndx.ath)&&ndx.ath>=ndx.value?
+      (1-ndx.value/ndx.ath)*100:NaN;
+    set('oversold-drawdown',Number.isFinite(drawdown)?
+      'NDX od ATH: '+fmt(drawdown,1)+' % níže · údaj o ceně, ne skóre RSI':
+      'Odstup NDX od ATH: referenční ceny se neshodují');
     const direction=change<0?'níže; tlak sílí':change>0?'výše; tlak slábne':'beze změny';
     set('oversold-asof',
         'RSI 5D: '+(Number.isFinite(change)?fmt(Math.abs(change),1)+' b. '+direction:'bez dat')+
@@ -1144,6 +1153,7 @@ async function loadOversold(){
     set('oversold-rsi','—');
     set('oversold-status','Historické skóre není ověřené; nelze je dopočítat z jediného RSI.');
     set('oversold-trend','Čeká na dostatečnou historii NDX.');
+    set('oversold-drawdown','NDX odstup od ATH není ověřen');
     set('oversold-asof','Indikátor se při výpadku zdroje neodhaduje.');
     set('oversold-method','Samotné RSI ani technické skóre nezaručuje tržní dno.');
     if(marker)marker.style.left='0%';
@@ -1155,7 +1165,7 @@ async function load(){
     if(!response.ok)throw new Error('HTTP '+response.status);
     const report=await response.json();
     render(report);
-    await loadRiskModel(report.ndx||{});
+    await Promise.all([loadRiskModel(report.ndx||{}),loadOversold(report.ndx||{})]);
   }catch(err){set('updated','Data nedostupná');}
 }
 $('refresh').addEventListener('click',()=>{
@@ -1172,7 +1182,7 @@ document.addEventListener('keydown',event=>{
     historyMenu.open=false;historyMenu.querySelector('summary')?.focus();
   }
 });
-function refreshAll(){load();loadOversold();loadFutures();loadTop10();loadMarkets();loadEconomy();}
+function refreshAll(){load();loadFutures();loadTop10();loadMarkets();loadEconomy();}
 refreshAll();
 let lastDataCheck=Date.now();
 setInterval(()=>{
