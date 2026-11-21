@@ -99,6 +99,7 @@ def technical_extremity(closes, rsi_values, lookback=252):
     """Uncalibrated technical stretch: mean of three transparent percentiles.
 
     RSI(14), price deviation from MA20, and five-session return are correlated.
+    Only bearish-side readings count; neutral and bullish readings contribute zero.
     This descriptive gauge NEVER claims to know the fraction of decline already
     completed, a turning-point probability, or future price direction.
     """
@@ -118,8 +119,14 @@ def technical_extremity(closes, rsi_values, lookback=252):
     start = n - lookback - 1
     end = n - 1  # exclude the current date from the reference distribution
     indicators = (rsi_by_day, deviation_by_day, returns_by_day)
-    ranks = [inverted_percentile(values[-1], values[start:end])
-             for values in indicators]
+    # Count only readings on the oversold side: a high RSI, positive
+    # MA20 premium or positive five-day return cannot be 'oversold' even
+    # if its historical rank is unusually low.
+    is_downside = (rsi_by_day[-1] < 50,
+                   deviation_by_day[-1] < 0,
+                   returns_by_day[-1] < 0)
+    ranks = [inverted_percentile(values[-1], values[start:end]) if weak else 0.0
+             for values, weak in zip(indicators, is_downside)]
     return {
         "score": round(sum(ranks) / len(ranks), 1),
         "percentiles": {
