@@ -56,6 +56,33 @@ class RsiTest(unittest.TestCase):
         series=technical.parse_daily_closes(data,now)
         self.assertLessEqual(series[-1][0],"2026-11-19")
 
+    def test_lower_tail_percentiles_are_not_trade_probabilities(self):
+        self.assertEqual(technical.inverted_percentile(1, [2,3,4,5]), 100)
+        self.assertEqual(technical.inverted_percentile(9, [2,3,4,5]), 0)
+        self.assertEqual(technical.inverted_percentile(3, [1,2,3,4]), 37.5)
+        self.assertEqual(technical.inverted_percentile(5, [5,5,5,5]), 50)
+        with self.assertRaises(ValueError):
+            technical.inverted_percentile(0, [])
+
+    def test_technical_intensity_uses_three_transparent_percentiles(self):
+        # 320 sessions ensure 252 prior comparisons for all three measures.
+        rising = [20000 + 25*i for i in range(320)]
+        falling = [32000 - 25*i for i in range(320)]
+        for closes in (rising, falling):
+            result = technical.technical_extremity(closes, technical.wilder_rsi(closes))
+            self.assertEqual(result["referenceSessions"], 252)
+            self.assertTrue(0 <= result["score"] <= 100)
+            self.assertEqual(set(result["percentiles"]),
+                             {"rsi14", "priceToMA20", "return5Sessions"})
+            expected = sum(result["percentiles"].values())/3
+            self.assertAlmostEqual(result["score"], expected, delta=0.1)
+        self.assertGreater(
+            technical.technical_extremity(falling, technical.wilder_rsi(falling))["score"],
+            technical.technical_extremity(rising, technical.wilder_rsi(rising))["score"],
+        )
+        short = [30000-i for i in range(60)]
+        self.assertIsNone(technical.technical_extremity(short, technical.wilder_rsi(short)))
+
     def test_published_snapshot_has_source_and_a_date(self):
         d=json.loads((ROOT/"data/oversold.json").read_text(encoding="utf-8"))
         self.assertEqual(d["instrument"],"^NDX")
