@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "21. 11. 2026 02:58 CET",
+  "updatedAtPrague": "21. 11. 2026 03:58 CET",
   "marketStatus": "Cash uzavřen; sobota; poslední závěr 20. 11. 2026, 22:00 CET",
   "ndx": {
     "value": 25028.98,
@@ -9,10 +9,10 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→ beze změny proti 01:58 CET",
-    "reason": "NDX −5,61 %, SOX −10,73 %, NVDA −14,01 %, AVGO −12,19 %; závěr 20. 11."
+    "trend": "→ beze změny proti 02:58 CET",
+    "reason": "NDX −5,61 %, SOX −10,73 %, NVDA −14,01 %, AVGO −12,19 %; cash závěr 20. 11."
   },
-  "driver": "SOX −10,73 %, NVDA −14,01 %, AVGO −12,19 %; pokračující výprodej polovodičů a AI titulů.",
+  "driver": "SOX −10,73 %, NVDA −14,01 %, AVGO −12,19 %; výprodej čipů a AI titulů při tlaku na financování infrastruktury.",
   "news": [
     {
       "title": "CRWD jedná o akvizici Zscaler; dohoda nepotvrzena. Po trhu CRWD −8 %, ZS +17 %.",
@@ -385,9 +385,9 @@
   },
   "forecast": {
     "athReturnPercent": 1,
-    "athReason": "Nutný růst 25,30 %; SOX −10,73 %, NVDA −14,01 %, tlak na financování AI.",
+    "athReason": "Nutný růst 25,30 %; SOX −10,73 %, NVDA −14,01 %; tlak AI CAPEX a financování.",
     "downside": "−9 až −16 %",
-    "downsideReason": "VXN 45,25 % (20. 11.); modelový dolní kvartil koncové ceny NDX za 1–3 měsíce při konstantní volatilitě. Vstupy Fed 3,75–4,00 %, US10Y 4,942 %.",
+    "downsideReason": "VXN 45,25 (20. 11.); modelový dolní kvartil koncové ceny za 1–3 měsíce.",
     "downsideModel": {
       "id": "ndx-evidence-volatility-v1",
       "dataFile": "data/risk-model.json",
@@ -1937,6 +1937,24 @@
         {
           "label": "Reuters – závěr a AI sektor",
           "url": "https://www.reuters.com/business/view-nasdaq-plunges-5-day-after-anthropic-debut-investors-still-believe-ai-2026-11-20/"
+        }
+      ]
+    },
+    {
+      "time": "21. 11. 2026 03:58 CET",
+      "summary": "Cash NDX 25 028,98 b. (−5,61 %, závěr 20. 11.); SOX −10,73 %, NVDA −14,01 %. Bez zásadních novinek proti 02:58 CET.",
+      "sourceLinks": [
+        {
+          "label": "Yahoo Finance – cash NDX",
+          "url": "https://finance.yahoo.com/quote/%5ENDX/history/"
+        },
+        {
+          "label": "Reuters – AI výprodej",
+          "url": "https://www.reuters.com/business/view-nasdaq-plunges-5-day-after-anthropic-debut-investors-still-believe-ai-2026-11-20/"
+        },
+        {
+          "label": "Reuters – SEC / NVIDIA",
+          "url": "https://www.reuters.com/world/us-secs-nvidia-probe-is-examining-potential-accounting-issues-sources-say-2026-11-20/"
         }
       ]
     }
