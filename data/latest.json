@@ -1,6 +1,6 @@
 {
-  "updatedAtPrague": "21. 11. 2026 08:00 CET",
-  "marketStatus": "Cash trh uzavřen (sobota)",
+  "updatedAtPrague": "21. 11. 2026 09:03 CET",
+  "marketStatus": "cash uzavřen (sobota)",
   "ndx": {
     "value": 25028.98,
     "changePercent": -5.61,
@@ -9,8 +9,8 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→ beze změny proti 06:57 CET",
-    "reason": "NDX −5,61 %, SOX −10,73 %, NVDA −14,01 %, AVGO −12,19 %; závěr 20. 11."
+    "trend": "→ beze změny proti 08:00 CET",
+    "reason": "NDX −5,61 %, SOX −10,73 %, NVDA −14,01 %, AVGO −12,19 %; cash závěr 20. 11."
   },
   "driver": "SOX −10,73 %; NVDA −14,01 %, AVGO −12,19 %; páteční tlak polovodičového sektoru.",
   "news": [
@@ -2067,6 +2067,20 @@
           "url": "https://www.reuters.com/business/media-telecom/south-koreas-lee-says-speed-is-vital-ai-race-data-centre-visit-2026-11-21/"
         }
       ]
+    },
+    {
+      "time": "21. 11. 2026 09:03 CET",
+      "summary": "NDX 25 028,98 b. (20. 11., −5,61 %), SOX −10,73 %; bez zásadních novinek od 08:00 CET.",
+      "sourceLinks": [
+        {
+          "label": "WSJ NDX",
+          "url": "https://www.wsj.com/market-data/index/ndx"
+        },
+        {
+          "label": "Reuters – výprodej čipů",
+          "url": "https://www.reuters.com/business/view-nasdaq-plunges-5-day-after-anthropic-debut-investors-still-believe-ai-2026-11-20/"
+        }
+      ]
     }
   ],
   "history": [
@@ -2372,6 +2386,10 @@
     },
     {
       "time": "21. 11. 2026 08:00 CET",
+      "ndx": 25028.98
+    },
+    {
+      "time": "21. 11. 2026 09:03 CET",
       "ndx": 25028.98
     }
   ],
