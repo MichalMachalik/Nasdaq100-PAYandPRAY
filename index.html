@@ -528,11 +528,28 @@ body :is(h1,h2,h3,p,div,span,small,strong,button,a,table,th,td,time,summary,labe
 .oversold-metric{display:flex;flex-direction:column;gap:3px;min-width:0}
 .oversold-metric>span{font-size:10px;color:var(--muted);font-weight:600;letter-spacing:.2px}
 .oversold-metric>strong{font-size:clamp(11px,1.5vw,14px);line-height:1.3;font-weight:650;color:var(--ink);white-space:nowrap;font-variant-numeric:tabular-nums}
+.oversold-metric>strong.red{color:var(--red)}
+.oversold-metric>strong.green{color:var(--green)}
+.breadth-widget{margin-top:18px;padding-top:12px;border-top:1px solid var(--border)}
+.breadth-heading{font-size:10px;letter-spacing:.55px;text-transform:uppercase;font-weight:650;color:var(--muted);margin-bottom:8px}
+.breadth-numbers{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}
+.breadth-side{display:flex;flex-direction:column;min-width:0;gap:2px}
+.breadth-side strong{font-size:clamp(16px,2.3vw,23px);line-height:1.1;font-weight:700;white-space:nowrap;font-variant-numeric:tabular-nums}
+.breadth-side strong.green{color:var(--green)}
+.breadth-side strong.red{color:var(--red)}
+.breadth-side span{font-size:10px;line-height:1.35;color:var(--muted)}
+.breadth-right{text-align:right;align-items:flex-end}
+.breadth-track{display:flex;width:100%;height:12px;margin:10px 0 5px;border-radius:100px;background:var(--border);overflow:hidden}
+.breadth-positive{background:var(--green);flex:0 0 auto;transition:width .4s ease}
+.breadth-negative{background:var(--red);flex:1;min-width:0}
+.breadth-source{display:flex;justify-content:space-between;gap:9px;align-items:center;font-size:10px;color:var(--muted);font-variant-numeric:tabular-nums}
+.breadth-source a{font-size:10px;color:var(--muted);text-decoration:underline;text-underline-offset:2px}
 @media(max-width:690px){.forecastgrid{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:22px}
   .forecastgrid .oversold-card{grid-column:1 / -1;grid-row:2}
   .forecastgrid .oversold-card .oversold-scale{max-width:360px}
   .forecastgrid .oversold-card .oversold-ticks{max-width:360px}
-  .forecastgrid .oversold-card .oversold-metrics{max-width:360px}}
+  .forecastgrid .oversold-card .oversold-metrics{max-width:360px}
+  .forecastgrid .oversold-card .breadth-widget{max-width:360px}}
 @media(max-width:400px){.forecastgrid{column-gap:13px}
   .forecastgrid .forecast>strong{font-size:clamp(18px,5vw,22px)}
   .forecastgrid .forecast-points{font-size:13px}}
@@ -581,6 +598,27 @@ body :is(h1,h2,h3,p,div,span,small,strong,button,a,table,th,td,time,summary,labe
         <div class="oversold-metric"><span>RSI(14)</span><strong id="oversold-raw-rsi">—</strong></div>
         <div class="oversold-metric"><span>MA20</span><strong id="oversold-ma20">—</strong></div>
         <div class="oversold-metric"><span>MA50</span><strong id="oversold-ma50">—</strong></div>
+      </div>
+      <div class="breadth-widget" aria-label="Šířka trhu Nasdaq-100 podle MA50">
+        <div class="breadth-heading">Šířka trhu / MA50</div>
+        <div class="breadth-numbers">
+          <div class="breadth-side breadth-left">
+            <strong id="breadth-above" class="green">—</strong>
+            <span>Akcie nad MA50</span>
+          </div>
+          <div class="breadth-side breadth-right">
+            <strong id="breadth-below" class="red">—</strong>
+            <span>Akcie pod MA50</span>
+          </div>
+        </div>
+        <div id="breadth-track" class="breadth-track" role="img" aria-label="Podíl způsobilých akciových tříd nad a pod padesátidenním průměrem">
+          <div id="breadth-positive" class="breadth-positive" style="width:0%"></div>
+          <div class="breadth-negative"></div>
+        </div>
+        <div class="breadth-source">
+          <span id="breadth-asof">Čeká na datový zdroj</span>
+          <a href="./data/breadth.json" target="_blank" rel="noopener noreferrer" title="Počet akciových tříd, datum, metodika a veřejný zdroj">Zdroj</a>
+        </div>
       </div>
     </div>
     <div class="forecast forecast-down-card">
@@ -1159,8 +1197,13 @@ async function loadOversold(ndx){
     }
     const plain=(x)=>Number.isFinite(x)?fmt(Math.abs(x),1)+' %':'—';
     set('oversold-raw-rsi',fmt(rsi,1));
+    $('oversold-raw-rsi').className=rsi<30?'red':rsi>70?'green':'neutral';
     set('oversold-ma20',plain(d.ma20DistancePct));
+    $('oversold-ma20').className=d.ma20DistancePct<0?'red':d.ma20DistancePct>0?'green':'neutral';
+    $('oversold-ma20').title='NDX '+plain(d.ma20DistancePct)+(d.ma20DistancePct<0?' pod':' nad')+' 20denním průměrem';
     set('oversold-ma50',plain(d.ma50DistancePct));
+    $('oversold-ma50').className=d.ma50DistancePct<0?'red':d.ma50DistancePct>0?'green':'neutral';
+    $('oversold-ma50').title='NDX '+plain(d.ma50DistancePct)+(d.ma50DistancePct<0?' pod':' nad')+' 50denním průměrem';
     }catch(err){
     set('oversold-rsi','—');
     set('oversold-raw-rsi','—');
@@ -1169,13 +1212,46 @@ async function loadOversold(ndx){
     if(marker)marker.style.left='0%';
   }
 }
+async function loadBreadth(){
+  const bar=$('breadth-positive'),track=$('breadth-track');
+  try {
+    const response=await fetch('./data/breadth.json?t='+Date.now(),{cache:'no-store'});
+    if(!response.ok)throw new Error('breadth snapshot unavailable');
+    const d=await response.json(),date=Date.parse(String(d.asOf||'')+'T23:59:59Z');
+    const above=d.abovePct,below=d.belowPct,eligible=d.eligibleSecurities;
+    const validCounts=Number.isInteger(eligible)&&eligible>=95&&eligible<=120&&
+      Number.isInteger(d.aboveCount)&&Number.isInteger(d.atOrBelowCount)&&
+      d.aboveCount+d.atOrBelowCount===eligible&&
+      Math.abs(d.aboveCount/eligible*100-above)<=0.11&&
+      Math.abs(d.atOrBelowCount/eligible*100-below)<=0.11;
+    if(d.schemaVersion!==1||d.id!=='ndx-ma50-breadth'||d.feedStatus!=='published'||
+       !Number.isFinite(date)||Date.now()-date > 7*86400000||
+       Date.now()-date < -48*3600000||
+       !Number.isFinite(above)||!Number.isFinite(below)||above<0||below<0||
+       above>100||below>100||Math.abs(above+below-100)>0.11||
+       !validCounts)throw new Error('missing or stale breadth data');
+    set('breadth-above',fmt(above,1)+' %');
+    set('breadth-below',fmt(below,1)+' %');
+    if(bar)bar.style.width=above+'%';
+    if(track)track.setAttribute('aria-label',
+      d.aboveCount+' z '+eligible+' akciových tříd nad MA50; '+
+      d.atOrBelowCount+' pod nebo na MA50; data '+d.asOf);
+    set('breadth-asof',d.asOf+' · '+d.aboveCount+'/'+eligible+' nad MA50');
+  } catch(err){
+    set('breadth-above','—');
+    set('breadth-below','—');
+    set('breadth-asof','Šířka trhu: zdroj chybí nebo je zastaralý');
+    if(bar)bar.style.width='0%';
+    if(track)track.setAttribute('aria-label','Neověřená šířka trhu');
+  }
+}
 async function load(){
   try {
     const response=await fetch('./data/latest.json?t='+Date.now(),{cache:'no-store'});
     if(!response.ok)throw new Error('HTTP '+response.status);
     const report=await response.json();
     render(report);
-    await Promise.all([loadRiskModel(report.ndx||{}),loadOversold(report.ndx||{})]);
+    await Promise.all([loadRiskModel(report.ndx||{}),loadOversold(report.ndx||{}),loadBreadth()]);
   }catch(err){set('updated','Data nedostupná');}
 }
 $('refresh').addEventListener('click',()=>{
