@@ -1,0 +1,43 @@
+name: Nasdaq-100 breadth above MA50
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "scripts/update_breadth.py"
+      - "tests/test_breadth.py"
+      - ".github/workflows/breadth.yml"
+  # Source has historically published around 04:00 UTC following US close.
+  schedule:
+    - cron: "20 6 * * 2-6"
+permissions:
+  contents: write
+concurrency:
+  group: ndx-ma50-breadth
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Test breadth math and freshness constraints
+        run: python -m unittest discover -s tests -p test_breadth.py -v
+      - name: Fetch current-basket Nasdaq-100 breadth
+        run: python scripts/update_breadth.py
+      - name: Commit dated result
+        run: |
+          if git diff --quiet -- data/breadth.json; then
+            echo "Source unchanged"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/breadth.json
+          git commit -m "Update verified Nasdaq-100 MA50 breadth"
+          for attempt in 1 2 3; do
+            git pull --rebase origin "${{ github.event.repository.default_branch }}"
+            if git push; then exit 0; fi
+          done
+          exit 1
