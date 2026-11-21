@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "21. 11. 2026 20:06 CET",
+  "updatedAtPrague": "21. 11. 2026 21:01 CET",
   "marketStatus": "Uzavřen – sobota (cash USA)",
   "ndx": {
     "value": 25028.98,
@@ -9,7 +9,7 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→ beze změny proti 19:01 CET",
+    "trend": "→ beze změny proti 20:06 CET",
     "reason": "NDX −5,61 %, SOX −10,73 %, NVDA −14,01 %; nad MA50 32/101 (31,7 %), data 20. 11."
   },
   "driver": "SOX −10,73 % (20. 11.), NVDA −14,01 %, AVGO −12,19 %; MA50 breadth 31,7 % (20. 11.).",
@@ -146,25 +146,6 @@
       "eventKey": "ai-tech-selloff-bonds-value-rotation-20261120",
       "ndxRelevant": true,
       "importanceScore": 79
-    },
-    {
-      "title": "SEC podle Reuters prověřuje účetní postupy NVIDIA; zaměření vyšetřování zatím nebylo upřesněno.",
-      "time": "20. 11. 2026, 20:13 CET",
-      "publishedAtPrague": "20. 11. 2026, 20:13",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_regulation",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/us-secs-nvidia-probe-is-examining-potential-accounting-issues-sources-say-2026-11-20/",
-      "sourceLinks": [
-        {
-          "label": "Reuters – SEC / NVIDIA",
-          "url": "https://www.reuters.com/world/us-secs-nvidia-probe-is-examining-potential-accounting-issues-sources-say-2026-11-20/"
-        }
-      ],
-      "eventKey": "us-sec-nvidia-accounting-inquiry-20261120",
-      "ndxRelevant": true,
-      "importanceScore": 94
     }
   ],
   "leaders": [
@@ -2077,6 +2058,24 @@
         {
           "label": "Trading Economics – EUR/CZK",
           "url": "https://tradingeconomics.com/eurczk:cur"
+        }
+      ]
+    },
+    {
+      "time": "21. 11. 2026 21:01 CET",
+      "summary": "Cash NDX 25 028,98 b. (−5,61 %, závěr 20. 11.); US10Y 4,92 % vs. 5,04 % (−12 bb); MA50 breadth 31,7 % (20. 11.). Zdrojově ověřeno 9 instrumentů Trading Economics, Nasdaq členství a celková kapitalizace Top 10; 7 kvalifikovaných událostí v 24h okně (1 expirovalo), bez nové zásadní události. Yahoo NQ=F 429, futures snímek zachován; hodnoty uzavřených trhů a modelové periody beze změny.",
+      "sourceLinks": [
+        {
+          "label": "Cash NDX – Investing.com",
+          "url": "https://www.investing.com/indices/nq-100-historical-data"
+        },
+        {
+          "label": "U.S. Treasury – US10Y",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+        },
+        {
+          "label": "ChartVault – MA50 breadth",
+          "url": "https://aveceasar.github.io/nasdaq100-percent-above-moving-averages/"
         }
       ]
     }
