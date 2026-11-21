@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "21. 11. 2026 23:04 CET",
+  "updatedAtPrague": "21. 11. 2026 23:58 CET",
   "marketStatus": "Uzavřen – sobota (cash USA)",
   "ndx": {
     "value": 25028.98,
@@ -9,11 +9,30 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→ beze změny proti 21:56 CET",
+    "trend": "→ beze změny proti 23:04 CET",
     "reason": "NDX −5,61 %, SOX −10,73 %, NVDA −14,01 %; nad MA50 32/101 (31,7 %), data 20. 11."
   },
   "driver": "SOX −10,73 % (20. 11.), NVDA −14,01 %, AVGO −12,19 %; MA50 breadth 31,7 % (20. 11.).",
   "news": [
+    {
+      "title": "EU: návrh 3% daně z online reklamy, digitálního zprostředkování a uživatelských dat; hranice 50 mil. EUR v EU a 750 mil. EUR globálně.",
+      "time": "21. 11. 2026, 14:00 CET",
+      "publishedAtPrague": "21. 11. 2026, 14:00",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "digital_tax_proposal",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/markets/us/eu-leaders-chair-proposes-new-cuts-eu-2028-2034-budget-draft-suggests-digital-2026-11-21/",
+      "sourceLinks": [
+        {
+          "label": "Reuters – návrh digitální daně EU",
+          "url": "https://www.reuters.com/markets/us/eu-leaders-chair-proposes-new-cuts-eu-2028-2034-budget-draft-suggests-digital-2026-11-21/"
+        }
+      ],
+      "eventKey": "eu-costa-digital-tax-3pct-proposal-20261121",
+      "ndxRelevant": true,
+      "importanceScore": 64
+    },
     {
       "title": "Hormuz: UKMTO hlásí dva incidenty tankerů u ománského Khasabu; bez obětí.",
       "publishedAtPrague": "21. 11. 2026, 08:57",
@@ -70,25 +89,6 @@
         }
       ],
       "ndxRelevant": true
-    },
-    {
-      "title": "Oracle: financování datacenter pro OpenAI potvrzeno; plán +4,5 GW, dodávky NVDA Vera Rubin podle harmonogramu.",
-      "time": "20. 11. 2026, 23:11 CET",
-      "publishedAtPrague": "20. 11. 2026, 23:11",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_financing",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/oracle-says-openai-infrastructure-deal-is-fully-funded-after-final-capital-raise-2026-11-20/",
-      "sourceLinks": [
-        {
-          "label": "Reuters – Oracle / OpenAI financování",
-          "url": "https://www.reuters.com/business/oracle-says-openai-infrastructure-deal-is-fully-funded-after-final-capital-raise-2026-11-20/"
-        }
-      ],
-      "eventKey": "oracle-openai-infrastructure-fully-funded-20261120",
-      "ndxRelevant": true,
-      "importanceScore": 78
     }
   ],
   "leaders": [
@@ -2057,6 +2057,24 @@
           "url": "https://www.google.com/finance/quote/VXN:INDEXCBOE?hl=en"
         }
       ]
+    },
+    {
+      "time": "21. 11. 2026 23:58 CET",
+      "summary": "Cash NDX 25 028,98 b. (−5,61 %, závěr 20. 11.); VXN 45,25 (20. 11.). Ověřeny Nasdaq cash, oficiální členství Nasdaq-100, globální kapitalizační ranking a všech 9 referenčních kotací Trading Economics. Reuters: nový návrh 3% digitální daně EU (publikace 14:00 CET); 24h pool 4 události, Oracle expiroval. Futures Yahoo 429; breadth/oversold/risk-model beze změny ověřeného referenčního období; přímá kontrola Pages nedostupná.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq – cash NDX",
+          "url": "https://indexes.nasdaq.com/Index/Overview/NDX"
+        },
+        {
+          "label": "Reuters – návrh digitální daně EU",
+          "url": "https://www.reuters.com/markets/us/eu-leaders-chair-proposes-new-cuts-eu-2028-2034-budget-draft-suggests-digital-2026-11-21/"
+        },
+        {
+          "label": "Trading Economics – trhy",
+          "url": "https://tradingeconomics.com/commodities"
+        }
+      ]
     }
   ],
   "history": [
@@ -3069,6 +3087,10 @@
     {
       "name": "Reuters – Anthropic / stabilizační opce",
       "url": "https://www.reuters.com/markets/us/anthropics-ipo-bank-closed-position-meant-stabilize-stock-removing-source-2026-11-20/"
+    },
+    {
+      "name": "Reuters – návrh digitální daně EU 21. 11. 2026",
+      "url": "https://www.reuters.com/markets/us/eu-leaders-chair-proposes-new-cuts-eu-2028-2034-budget-draft-suggests-digital-2026-11-21/"
     }
   ]
 }
