@@ -63,7 +63,7 @@ def make_snapshot(chart, now=None):
         raise ValueError("Source updated before reported market observation")
     eligible = current.get("eligible50")
     pct = current.get("above50")
-    if type(eligible) is not int or not 90 <= eligible <= 120:
+    if type(eligible) is not int or not 95 <= eligible <= 120:
         raise ValueError("Insufficient MA50 coverage / impossible share-class count")
     if not isinstance(pct, (float, int)) or isinstance(pct, bool) or not math.isfinite(pct) or not 0 <= pct <= 100:
         raise ValueError("Invalid MA50 breadth percentage")
