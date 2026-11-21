@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "21. 11. 2026 12:01 CET",
+  "updatedAtPrague": "21. 11. 2026 13:05 CET",
   "marketStatus": "cash uzavřen (sobota)",
   "ndx": {
     "value": 25028.98,
@@ -9,7 +9,7 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→ beze změny proti 10:59 CET",
+    "trend": "→ beze změny proti 12:01 CET",
     "reason": "NDX −5,61 %, SOX −10,73 %, NVDA −14,01 %; nad MA50 32/101 (31,7 %), data 20. 11."
   },
   "driver": "SOX −10,73 % (20. 11.), NVDA −14,01 %, AVGO −12,19 %; MA50 breadth 31,7 % (20. 11.).",
@@ -359,25 +359,6 @@
       "eventKey": "michigan-final-sentiment-inflation-nov2026",
       "ndxRelevant": true,
       "importanceScore": 58
-    },
-    {
-      "title": "Alphabet vydal dluhopisy v Kanadě za 6 mld. CAD (4,19 mld. USD); výnos plánuje použít na obecné firemní účely.",
-      "time": "20. 11. 2026, 11:46 UTC",
-      "publishedAtPrague": "20. 11. 2026, 12:46",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_infrastructure",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/alphabet-aims-raise-419-billion-canadian-debt-offering-2026-11-20/",
-      "sourceLinks": [
-        {
-          "label": "Reuters – dluhopisy Alphabet",
-          "url": "https://www.reuters.com/business/alphabet-aims-raise-419-billion-canadian-debt-offering-2026-11-20/"
-        }
-      ],
-      "eventKey": "alphabet-canadian-bond-issue-6bn-cad-20261120",
-      "ndxRelevant": true,
-      "importanceScore": 74
     }
   ],
   "leaders": [
@@ -2145,6 +2126,24 @@
         },
         {
           "label": "Reuters – šetření SEC / NVDA",
+          "url": "https://www.reuters.com/world/us-secs-nvidia-probe-is-examining-potential-accounting-issues-sources-say-2026-11-20/"
+        }
+      ]
+    },
+    {
+      "time": "21. 11. 2026 13:05 CET",
+      "summary": "NDX 25 028,98 b. (−5,61 %, cash závěr 20. 11.); SOX −10,73 %, MA50 breadth 32/101. Reuters/Nasdaq, US10Y a 24h zprávy kontrolovány; bez nové kvalifikované události. Expirované zprávy vyřazeny. Futures a oficiální Nasdaq členství: nové zdrojové ověření nedostupné; původní snímky ponechány.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq – NDX",
+          "url": "https://indexes.nasdaq.com/Index/Overview/NDX"
+        },
+        {
+          "label": "U.S. Treasury – US10Y",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+        },
+        {
+          "label": "Reuters – SEC / NVIDIA",
           "url": "https://www.reuters.com/world/us-secs-nvidia-probe-is-examining-potential-accounting-issues-sources-say-2026-11-20/"
         }
       ]
