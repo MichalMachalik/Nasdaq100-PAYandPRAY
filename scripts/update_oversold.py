@@ -4,6 +4,8 @@
 Data: unofficial Yahoo Finance daily index close candles. Calculations:
 - Wilder RSI(14), seeded with a simple 14-session average then smoothed.
 - 20-session simple moving average and % distance from it.
+- 50-session simple moving average, % price deviation and 5-session MA50 slope.
+  MA50 is a separate trend filter, NOT an extra term in the oversold score.
 - RSI change across five trading sessions, NOT an oversold buy signal.
 
 A source outage or stale price never overwrites the last verified observation.
@@ -51,8 +53,8 @@ def parse_daily_closes(chart, now):
             continue
         by_day[dt.date().isoformat()] = close
     days = sorted(by_day)
-    if len(days) < 45:
-        raise ValueError("At least 45 completed NDX daily closes are required")
+    if len(days) < 55:
+        raise ValueError("At least 55 completed NDX daily closes are required for MA50 trend")
     last_date = datetime.fromisoformat(days[-1]).date()
     days_old = (now_ny.date() - last_date).days
     if not 0 <= days_old <= 7:
@@ -146,6 +148,9 @@ def build_snapshot(history):
     if len(rsi) < 6:
         raise ValueError("Need at least six RSI observations to assess change")
     ma20 = sum(values[-20:]) / 20
+    ma50 = sum(values[-50:]) / 50
+    previous_ma50 = sum(values[-55:-5]) / 50
+    ma50_change5 = 100 * (ma50 / previous_ma50 - 1)
     now_rsi = rsi[-1]
     five_day_change = now_rsi - rsi[-6]
     three_day_change = now_rsi - rsi[-4]
@@ -163,6 +168,10 @@ def build_snapshot(history):
         "ndxClose": round(values[-1], 2),
         "ma20": round(ma20, 2),
         "ma20DistancePct": round(100*(values[-1]/ma20 - 1), 2),
+        "ma50": round(ma50, 2),
+        "ma50DistancePct": round(100*(values[-1]/ma50 - 1), 2),
+        "ma50Change5SessionsPct": round(ma50_change5, 2),
+        "ma50TrendRole": "separate_midterm_trend_filter_not_in_oversold_score",
         "rsiChangeFiveSessions": round(five_day_change, 2),
         "trendConfirmation": momentum,
         "technicalOversold": severity,
@@ -173,7 +182,9 @@ def build_snapshot(history):
                         "not a reversal guarantee, forecast or instruction to trade. "
                         "technicalOversold.score (0–100) is the average lower-tail "
                         "percentile for RSI14, MA20 gap, and 5d return over 252 "
-                        "earlier sessions; not a percentage of decline completed."),
+                        "earlier sessions; not a percentage of decline completed. "
+                        "MA50 level, NDX distance and 5-session MA50 slope are "
+                        "an independent medium-term trend context, not scored twice."),
         "isProviderSnapshot": False,
     }
 
@@ -188,6 +199,8 @@ def main():
     if (previous.get("asOf") == snapshot["asOf"] and
         previous.get("value") == snapshot["value"] and
         previous.get("ma20") == snapshot["ma20"] and
+        previous.get("ma50") == snapshot["ma50"] and
+        previous.get("ma50Change5SessionsPct") == snapshot["ma50Change5SessionsPct"] and
         previous.get("source") == snapshot["source"] and
         previous.get("technicalOversold") == snapshot["technicalOversold"]):
         print("RSI unchanged; retained dated snapshot", snapshot["asOf"])
