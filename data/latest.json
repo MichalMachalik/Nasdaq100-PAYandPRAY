@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "21. 11. 2026 06:02 CET",
+  "updatedAtPrague": "21. 11. 2026 06:57 CET",
   "marketStatus": "Cash uzavřen; sobota; poslední závěr 20. 11. 2026, 22:00 CET",
   "ndx": {
     "value": 25028.98,
@@ -9,10 +9,10 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→ beze změny proti 05:05 CET",
-    "reason": "NDX −5,61 %, SOX −10,73 %, NVDA −14,01 %, AVGO −12,19 %; cash 20. 11."
+    "trend": "→ beze změny proti 06:02 CET",
+    "reason": "NDX −5,61 %, SOX −10,73 %, NVDA −14,01 %, AVGO −12,19 %; závěr 20. 11."
   },
-  "driver": "SOX −10,73 %; NVDA −14,01 %, AVGO −12,19 %; polovodiče vedly páteční výprodej.",
+  "driver": "SOX −10,73 %; NVDA −14,01 %, AVGO −12,19 %; páteční tlak polovodičového sektoru.",
   "news": [
     {
       "title": "CRWD jedná o akvizici Zscaler; dohoda nepotvrzena. Po trhu CRWD −8 %, ZS +17 %.",
@@ -1974,6 +1974,24 @@
           "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
         }
       ]
+    },
+    {
+      "time": "21. 11. 2026 06:57 CET",
+      "summary": "NDX 25 028,98 b. (−5,61 %, závěr 20. 11.); SOX −10,73 %. US10Y 4,92 % vs. 5,04 % (−12 bb). Bez zásadních novinek od 06:02 CET.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq – cash NDX",
+          "url": "https://indexes.nasdaq.com/Index/Overview/NDX"
+        },
+        {
+          "label": "SOX – historická data",
+          "url": "https://ycharts.com/indices/%5ESOX/level"
+        },
+        {
+          "label": "U.S. Treasury – US10Y",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+        }
+      ]
     }
   ],
   "history": [
@@ -2271,6 +2289,10 @@
     },
     {
       "time": "21. 11. 2026 06:02 CET",
+      "ndx": 25028.98
+    },
+    {
+      "time": "21. 11. 2026 06:57 CET",
       "ndx": 25028.98
     }
   ],
