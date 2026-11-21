@@ -144,6 +144,8 @@ def technical_extremity(closes, rsi_values, lookback=252):
 
 def build_snapshot(history):
     values = [x[1] for x in history]
+    if len(values) < 55:
+        raise ValueError("At least 55 completed sessions are required for MA50 slope")
     rsi = wilder_rsi(values)
     if len(rsi) < 6:
         raise ValueError("Need at least six RSI observations to assess change")
