@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "22. 11. 2026 19:59 CET",
+  "updatedAtPrague": "22. 11. 2026 21:05 CET",
   "marketStatus": "Neděle, cash uzavřen; poslední závěr 20. 11. 2026",
   "ndx": {
     "value": 25028.98,
@@ -9,7 +9,7 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→ beze změny proti 19:06 CET",
+    "trend": "→ beze změny proti 19:59 CET",
     "reason": "NDX −5,61 %, SOX −10,73 %, NVDA −14,01 %; MA50 breadth 32/101 (31,7 %), 20. 11."
   },
   "driver": "SOX −10,73 % (20. 11.), NVDA −14,01 %, AVGO −12,19 %; MA50 breadth 31,7 % (20. 11.).",
@@ -19,7 +19,7 @@
       "time": "22. 11. 2026, 18:48 CET",
       "publishedAtPrague": "22. 11. 2026, 18:48",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "chip_export_compliance",
       "source": "Reuters",
       "url": "https://www.reuters.com/world/china/us-seeks-answers-nvidias-sale-chips-china-bessent-says-2026-11-22/",
@@ -2416,6 +2416,24 @@
     {
       "time": "22. 11. 2026 19:59 CET",
       "summary": "Cash NDX 25 028,98 b., −5,61 % (závěr 20. 11.). Reuters 22. 11. 18:48 CET: Bessent požaduje od NVDA odpovědi k prodejům AI čipů do Číny; 3 platné události v 24h poolu. Zdrojově porovnáno 9/9 TE instrumentů (kotace z 20. 11.), cash NDX, US10Y, VXN, Nasdaq složení/Top10, oficiální sazby/HDP a MA50 breadth. Yahoo NQ=F/^NDX 429; RSI bez nového validovaného výpočtu, risk-model bez nového spuštění.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq – cash NDX",
+          "url": "https://indexes.nasdaq.com/Index/Overview/NDX"
+        },
+        {
+          "label": "Reuters – NVDA/Čína",
+          "url": "https://www.reuters.com/world/china/us-seeks-answers-nvidias-sale-chips-china-bessent-says-2026-11-22/"
+        },
+        {
+          "label": "Trading Economics – komodity",
+          "url": "https://tradingeconomics.com/commodities"
+        }
+      ]
+    },
+    {
+      "time": "22. 11. 2026 21:05 CET",
+      "summary": "Cash NDX 25 028,98 b., −5,61 % (závěr 20. 11.), historické maximum 31 361,37 b. Reuters NVDA/Čína pokračuje; 3 ověřené události v 24h poolu, bez nového kvalifikovaného kandidáta. Zkontrolováno 9/9 cenových údajů Trading Economics včetně EUR/CZK a USD/CZK (kotace 20. 11.), Nasdaq členství a globální Top 10, sazby Fed/ECB/ČNB, HDP y/y, SOX, US10Y a VXN. Cash i futures zůstávají na původních obchodních datech; Yahoo 429, RSI a NQ=F bez nového výpočtu/kotace. Detailní feed ChartVault v tomto běhu nedostupný; předchozí MA50 breadth zachován.",
       "sourceLinks": [
         {
           "label": "Nasdaq – cash NDX",
