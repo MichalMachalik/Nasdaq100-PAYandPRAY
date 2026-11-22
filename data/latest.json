@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "22. 11. 2026 05:57 CET",
+  "updatedAtPrague": "22. 11. 2026 06:57 CET",
   "marketStatus": "Neděle – cash NDX uzavřen; poslední závěr 20. 11. 2026",
   "ndx": {
     "value": 25028.98,
@@ -9,7 +9,7 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→ beze změny proti 05:05 CET",
+    "trend": "→ beze změny proti 05:57 CET",
     "reason": "NDX −5,61 %, SOX −10,73 %, NVDA −14,01 %; MA50 breadth 32/101 (31,7 %), 20. 11."
   },
   "driver": "SOX −10,73 % (20. 11.), NVDA −14,01 %, AVGO −12,19 %; MA50 breadth 31,7 % (20. 11.).",
@@ -51,25 +51,6 @@
         }
       ],
       "ndxRelevant": true
-    },
-    {
-      "title": "AWS/SK Ulsan: datacentrum s plánem 5,2 mld. USD do roku 2029; provoz plánován od H2 2027.",
-      "time": "21. 11. 2026, 06:34 CET",
-      "publishedAtPrague": "21. 11. 2026, 06:34",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_infrastructure",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/media-telecom/south-koreas-lee-says-speed-is-vital-ai-race-data-centre-visit-2026-11-21/",
-      "sourceLinks": [
-        {
-          "label": "Reuters – AWS/SK Ulsan",
-          "url": "https://www.reuters.com/business/media-telecom/south-koreas-lee-says-speed-is-vital-ai-race-data-centre-visit-2026-11-21/"
-        }
-      ],
-      "eventKey": "aws-sk-ulsan-datacenter-lee-visit-20261121",
-      "ndxRelevant": true,
-      "importanceScore": 50
     }
   ],
   "leaders": [
@@ -2162,6 +2143,24 @@
         {
           "label": "Fed – rozhodnutí 28. 10.",
           "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm"
+        }
+      ]
+    },
+    {
+      "time": "22. 11. 2026 06:57 CET",
+      "summary": "Cash NDX 25 028,98 b., −5,61 % (závěr 20. 11.); 2 ověřené kandidátní události v 24h okně, 1 expirace, bez nové kvalifikované zprávy. Zdrojově zkontrolovány Nasdaq NDX a členství 101 tříd, globální Top 10, všech 9 veřejných kotací TE, sazby Fed/ECB/ČNB, HDP Q3 y/y USA/EU/ČR, MA50 breadth 31,7 %, US10Y a VXN 45,25. Yahoo NQ=F 429; futures maximum a RSI bez nového validovaného průchodu, risk-model bez kompletního ověření obou vstupů; GitHub Pages přímo nedostupné.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq – NDX",
+          "url": "https://indexes.nasdaq.com/Index/Overview/NDX"
+        },
+        {
+          "label": "Trading Economics – tržní kotace",
+          "url": "https://tradingeconomics.com/commodities"
+        },
+        {
+          "label": "Reuters – návrh digitální daně EU",
+          "url": "https://www.reuters.com/markets/us/eu-leaders-chair-proposes-new-cuts-eu-2028-2034-budget-draft-suggests-digital-2026-11-21/"
         }
       ]
     }
