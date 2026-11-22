@@ -1,6 +1,6 @@
 {
-  "updatedAtPrague": "22. 11. 2026 17:05 CET",
-  "marketStatus": "Neděle – cash NDX uzavřen; poslední závěr 20. 11. 2026",
+  "updatedAtPrague": "22. 11. 2026 18:04 CET",
+  "marketStatus": "Neděle, cash uzavřen; poslední závěr 20. 11. 2026",
   "ndx": {
     "value": 25028.98,
     "changePercent": -5.61,
@@ -9,11 +9,30 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→ beze změny proti 16:01 CET",
+    "trend": "→ beze změny proti 17:05 CET",
     "reason": "NDX −5,61 %, SOX −10,73 %, NVDA −14,01 %; MA50 breadth 32/101 (31,7 %), 20. 11."
   },
   "driver": "SOX −10,73 % (20. 11.), NVDA −14,01 %, AVGO −12,19 %; MA50 breadth 31,7 % (20. 11.).",
   "news": [
+    {
+      "title": "AI servery: Dell, HPE, Lenovo a Supermicro navyšují ceny dodávek po podpisu smluv o 25–45 %.",
+      "time": "22. 11. 2026, 06:00 CET",
+      "publishedAtPrague": "22. 11. 2026, 06:00",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "ai_infrastructure",
+      "source": "Financial Times",
+      "url": "https://www.ft.com/content/dd2a6594-6146-4ff1-ac8e-54749c1fc99f",
+      "sourceLinks": [
+        {
+          "label": "Financial Times – ceny AI serverů",
+          "url": "https://www.ft.com/content/dd2a6594-6146-4ff1-ac8e-54749c1fc99f"
+        }
+      ],
+      "eventKey": "ai-server-delivery-price-increases-20261122",
+      "ndxRelevant": true,
+      "importanceScore": 65
+    },
     {
       "title": "US: S&P 500 −11,6 % od maxima 6. 10.; Nasdaq Composite −2,7 % YTD; VIX 35,89 (20. 11.).",
       "time": "22. 11. 2026, 13:04 CET",
@@ -2338,6 +2357,24 @@
           "url": "https://tradingeconomics.com/commodities"
         }
       ]
+    },
+    {
+      "time": "22. 11. 2026 18:04 CET",
+      "summary": "Cash NDX 25 028,98 b., −5,61 % (20. 11.); Financial Times 22. 11. 06:00 CET: AI servery +25–45 % při dodání; US10Y 4,92 % (20. 11.). Kontrola 24h zpráv a všech 9 referenčních kotací TE; původní obchodní data zachována.",
+      "sourceLinks": [
+        {
+          "label": "YCharts – cash NDX",
+          "url": "https://ycharts.com/indices/%5ENDX/level"
+        },
+        {
+          "label": "Financial Times – AI servery",
+          "url": "https://www.ft.com/content/dd2a6594-6146-4ff1-ac8e-54749c1fc99f"
+        },
+        {
+          "label": "U.S. Treasury – výnosy",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+        }
+      ]
     }
   ],
   "history": [
@@ -3358,6 +3395,10 @@
     {
       "name": "Reuters – korekce USA 22. 11. 2026",
       "url": "https://www.reuters.com/business/finance/correction-or-deeper-reckoning-investors-seek-signs-us-stock-selling-will-abate-2026-11-22/"
+    },
+    {
+      "name": "Financial Times – AI server price increases",
+      "url": "https://www.ft.com/content/dd2a6594-6146-4ff1-ac8e-54749c1fc99f"
     }
   ]
 }
