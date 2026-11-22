@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "22. 11. 2026 01:15 CET",
+  "updatedAtPrague": "22. 11. 2026 02:03 CET",
   "marketStatus": "Uzavřen – neděle (cash USA)",
   "ndx": {
     "value": 25028.98,
@@ -9,7 +9,7 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→ beze změny proti 23:58 CET",
+    "trend": "→ beze změny proti 01:15 CET",
     "reason": "NDX −5,61 %, SOX −10,73 %, NVDA −14,01 %; nad MA50 32/101 (31,7 %), data 20. 11."
   },
   "driver": "SOX −10,73 % (20. 11.), NVDA −14,01 %, AVGO −12,19 %; MA50 breadth 31,7 % (20. 11.).",
@@ -2072,6 +2072,24 @@
         {
           "label": "ChartVault – MA50",
           "url": "https://aveceasar.github.io/nasdaq100-percent-above-moving-averages/"
+        }
+      ]
+    },
+    {
+      "time": "22. 11. 2026 02:03 CET",
+      "summary": "Cash NDX 25 028,98 b., −5,61 % (závěr 20. 11.); Reuters: návrh 3% digitální daně EU (21. 11.); 24h pool 3 události, 0 expirací. Ověřeny cash NDX, Nasdaq-100 členství a Top 10, 9 obchodních kotací TE, oficiální sazby FED/ECB/ČNB, EU a ČR HDP, VXN a MA50 breadth; US HDP y/y bez primárního potvrzení. Yahoo futures a RSI historie 429, zachovány původní kotace a modely; Pages publikace k ověření.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq – cash NDX",
+          "url": "https://indexes.nasdaq.com/Index/Overview/NDX"
+        },
+        {
+          "label": "Reuters – digitální daň EU",
+          "url": "https://www.reuters.com/markets/us/eu-leaders-chair-proposes-new-cuts-eu-2028-2034-budget-draft-suggests-digital-2026-11-21/"
+        },
+        {
+          "label": "Trading Economics – trhy",
+          "url": "https://tradingeconomics.com/commodities"
         }
       ]
     }
