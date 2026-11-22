@@ -6,11 +6,11 @@
   "sourceUrl": "https://finance.yahoo.com/quote/NQ=F/",
   "quoteField": "regularMarketPrice",
   "price": 25126.5,
-  "changePercent": -5.54,
+  "changePercent": 0.0,
   "quotedAtUtc": "2026-11-20T21:59:59Z",
   "quotedAtPrague": "20. 11. 2026 22:59",
-  "fetchedAtUtc": "2026-11-22T22:27:34Z",
-  "checkedAtUtc": "2026-11-22T22:27:34Z",
+  "fetchedAtUtc": "2026-11-22T22:37:55.825617Z",
+  "checkedAtUtc": "2026-11-22T22:37:55.825617Z",
   "quoteStatus": "stale",
   "delayed": true
 }
