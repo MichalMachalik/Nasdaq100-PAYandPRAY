@@ -140,5 +140,5 @@
     ],
     "stalePolicy": "If VXN update is unavailable or older than 7 calendar days, keep the report's last authored scenario and display a stale-data warning. Never relabel an old VXN figure as current."
   },
-  "checkedAtUtc": "2026-11-21T22:25:52.883350Z"
+  "checkedAtUtc": "2026-11-22T02:16:11Z"
 }
