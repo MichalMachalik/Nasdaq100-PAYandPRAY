@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "22. 11. 2026 13:59 CET",
+  "updatedAtPrague": "22. 11. 2026 14:00 CET",
   "marketStatus": "Neděle – cash NDX uzavřen; poslední závěr 20. 11. 2026",
   "ndx": {
     "value": 25028.98,
@@ -14,25 +14,6 @@
   },
   "driver": "SOX −10,73 % (20. 11.), NVDA −14,01 %, AVGO −12,19 %; MA50 breadth 31,7 % (20. 11.).",
   "news": [
-    {
-      "title": "EU: návrh 3% daně z online reklamy, digitálního zprostředkování a uživatelských dat; hranice 50 mil. EUR v EU a 750 mil. EUR globálně.",
-      "time": "21. 11. 2026, 14:00 CET",
-      "publishedAtPrague": "21. 11. 2026, 14:00",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "digital_tax_proposal",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/markets/us/eu-leaders-chair-proposes-new-cuts-eu-2028-2034-budget-draft-suggests-digital-2026-11-21/",
-      "sourceLinks": [
-        {
-          "label": "Reuters – návrh digitální daně EU",
-          "url": "https://www.reuters.com/markets/us/eu-leaders-chair-proposes-new-cuts-eu-2028-2034-budget-draft-suggests-digital-2026-11-21/"
-        }
-      ],
-      "eventKey": "eu-costa-digital-tax-3pct-proposal-20261121",
-      "ndxRelevant": true,
-      "importanceScore": 64
-    },
     {
       "title": "US: S&P 500 −11,6 % od maxima 6. 10.; Nasdaq Composite −2,7 % YTD; VIX 35,89 (20. 11.).",
       "time": "22. 11. 2026, 13:04 CET",
@@ -2287,6 +2268,20 @@
         {
           "label": "Trading Economics – ceny",
           "url": "https://tradingeconomics.com/commodities"
+        }
+      ]
+    },
+    {
+      "time": "22. 11. 2026 14:00 CET",
+      "summary": "TOP 5: 1 událost po 24 h expirovala; 1 platná Reuters událost. Cash NDX 25 028,98 b., −5,61 % (závěr 20. 11.); veřejné tržní kotace a modely nezměněny.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq NDX",
+          "url": "https://indexes.nasdaq.com/Index/Overview/NDX"
+        },
+        {
+          "label": "Reuters – tržní korekce",
+          "url": "https://www.reuters.com/business/finance/correction-or-deeper-reckoning-investors-seek-signs-us-stock-selling-will-abate-2026-11-22/"
         }
       ]
     }
