@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "22. 11. 2026 08:02 CET",
+  "updatedAtPrague": "22. 11. 2026 08:59 CET",
   "marketStatus": "Neděle – cash NDX uzavřen; poslední závěr 20. 11. 2026",
   "ndx": {
     "value": 25028.98,
@@ -9,7 +9,7 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→ beze změny proti 06:57 CET",
+    "trend": "→ beze změny proti 08:02 CET",
     "reason": "NDX −5,61 %, SOX −10,73 %, NVDA −14,01 %; MA50 breadth 32/101 (31,7 %), 20. 11."
   },
   "driver": "SOX −10,73 % (20. 11.), NVDA −14,01 %, AVGO −12,19 %; MA50 breadth 31,7 % (20. 11.).",
@@ -32,25 +32,6 @@
       "eventKey": "eu-costa-digital-tax-3pct-proposal-20261121",
       "ndxRelevant": true,
       "importanceScore": 64
-    },
-    {
-      "title": "Hormuz: UKMTO hlásí dva incidenty tankerů u ománského Khasabu; bez obětí.",
-      "publishedAtPrague": "21. 11. 2026, 08:57",
-      "category": "geopolitics",
-      "url": "https://www.reuters.com/business/energy/tanker-hit-by-unknown-projectile-near-omans-khasab-ukmto-says-2026-11-21/",
-      "eventKey": "hormuz-khasab-tanker-projectile-20261121",
-      "importanceScore": 74,
-      "time": "21. 11. 2026, 08:57 CET",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "source": "Reuters",
-      "sourceLinks": [
-        {
-          "label": "Reuters – tanker / Hormuz",
-          "url": "https://www.reuters.com/business/energy/tanker-hit-by-unknown-projectile-near-omans-khasab-ukmto-says-2026-11-21/"
-        }
-      ],
-      "ndxRelevant": true
     }
   ],
   "leaders": [
@@ -2179,6 +2160,24 @@
         {
           "label": "US10Y – U.S. Treasury",
           "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value=2026&type=daily_treasury_yield_curve"
+        }
+      ]
+    },
+    {
+      "time": "22. 11. 2026 08:59 CET",
+      "summary": "Cash NDX 25 028,98 b. (závěr 20. 11.), −5,61 %; MA50 breadth 31,7 %. Reuters: EU návrh 3% digitální daně; událost Hormuz expirovala z 24h okna. Bez nové kvalifikované události.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq – cash NDX",
+          "url": "https://indexes.nasdaq.com/Index/Overview/NDX"
+        },
+        {
+          "label": "ChartVault – MA50 breadth",
+          "url": "https://aveceasar.github.io/nasdaq100-percent-above-moving-averages/"
+        },
+        {
+          "label": "Reuters – návrh EU",
+          "url": "https://www.reuters.com/markets/us/eu-leaders-chair-proposes-new-cuts-eu-2028-2034-budget-draft-suggests-digital-2026-11-21/"
         }
       ]
     }
