@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "22. 11. 2026 22:59 CET",
+  "updatedAtPrague": "22. 11. 2026 23:58 CET",
   "marketStatus": "Neděle, cash uzavřen; poslední závěr 20. 11. 2026",
   "ndx": {
     "value": 25028.98,
@@ -9,7 +9,7 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→ beze změny proti 22:03 CET",
+    "trend": "→ beze změny proti 22:59 CET",
     "reason": "NDX −5,61 %, SOX −10,73 %, NVDA −14,01 %; MA50 breadth 32/101 (31,7 %), 20. 11."
   },
   "driver": "SOX −10,73 % (20. 11.), NVDA −14,01 %, AVGO −12,19 %; MA50 breadth 31,7 % (20. 11.).",
@@ -2481,6 +2481,24 @@
         },
         {
           "label": "Trading Economics – komodity",
+          "url": "https://tradingeconomics.com/commodities"
+        }
+      ]
+    },
+    {
+      "time": "22. 11. 2026 23:58 CET",
+      "summary": "Cash NDX 25 028,98 b., −5,61 % (závěr 20. 11.); historické maximum 31 361,37 b. Bez nové kvalifikované zprávy; 3 platné události v 24h poolu. Nasdaq NDX, Reuters NVDA/Čína, SOX, US10Y, VXN a ChartVault MA50 32/101 ověřeny. Nasdaq členství 101 emisí a globální Top 10 porovnány. Trading Economics: 9/9 instrumentů zkontrolováno, 6/9 cenových snímků potvrzeno; WTI, EUR/USD a EUR/CZK mají konfliktní zobrazované hodnoty nebo procenta, markets.json ponechán. Yahoo NQ=F 429 a ^NDX history 429; futures, RSI a risk model nezměněny. Fed/ECB/ČNB a HDP EU/ČR ověřeny; HDP USA bez nového primárního potvrzení.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq – cash NDX",
+          "url": "https://indexes.nasdaq.com/index/Overview/NDX"
+        },
+        {
+          "label": "Reuters – NVDA/Čína",
+          "url": "https://www.reuters.com/world/china/us-seeks-answers-nvidias-sale-chips-china-bessent-says-2026-11-22/"
+        },
+        {
+          "label": "Trading Economics – trhy",
           "url": "https://tradingeconomics.com/commodities"
         }
       ]
