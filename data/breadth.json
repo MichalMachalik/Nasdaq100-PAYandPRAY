@@ -16,5 +16,5 @@
   "methodology": "Current Nasdaq-100 securities with enough history (not point-in-time members); each adjusted close > own trailing SMA50 counts as above; remaining eligible securities are at/below. Not forecasts. Historical member changes create survivorship bias.",
   "feedStatus": "published",
   "collectedAtUtc": "2026-11-21T09:01:49.643Z",
-  "checkedAtUtc": "2026-11-22T09:55:46.504824Z"
+  "checkedAtUtc": "2026-11-22T11:17:57.047Z"
 }
