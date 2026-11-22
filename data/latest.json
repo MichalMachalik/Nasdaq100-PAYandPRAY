@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "22. 11. 2026 09:57 CET",
+  "updatedAtPrague": "22. 11. 2026 11:05 CET",
   "marketStatus": "Neděle – cash NDX uzavřen; poslední závěr 20. 11. 2026",
   "ndx": {
     "value": 25028.98,
@@ -9,7 +9,7 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→ beze změny proti 08:59 CET",
+    "trend": "→ beze změny proti 09:57 CET",
     "reason": "NDX −5,61 %, SOX −10,73 %, NVDA −14,01 %; MA50 breadth 32/101 (31,7 %), 20. 11."
   },
   "driver": "SOX −10,73 % (20. 11.), NVDA −14,01 %, AVGO −12,19 %; MA50 breadth 31,7 % (20. 11.).",
@@ -2195,6 +2195,24 @@
         },
         {
           "label": "Trading Economics – veřejné trhy",
+          "url": "https://tradingeconomics.com/commodities"
+        }
+      ]
+    },
+    {
+      "time": "22. 11. 2026 11:05 CET",
+      "summary": "Cash NDX 25 028,98 b., −5,61 % (závěr 20. 11.); 1 platná událost Reuters v 24h okně, bez nové kvalifikované zprávy. Všech 9 referenčních kotací Trading Economics zdrojově ověřeno, obchodní datum 20. 11.; původní kotace zachovány.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq – cash NDX",
+          "url": "https://indexes.nasdaq.com/Index/Overview/NDX"
+        },
+        {
+          "label": "Reuters – návrh digitální daně EU",
+          "url": "https://www.reuters.com/markets/us/eu-leaders-chair-proposes-new-cuts-eu-2028-2034-budget-draft-suggests-digital-2026-11-21/"
+        },
+        {
+          "label": "Trading Economics – tržní kotace",
           "url": "https://tradingeconomics.com/commodities"
         }
       ]
