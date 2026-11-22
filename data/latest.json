@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "22. 11. 2026 13:00 CET",
+  "updatedAtPrague": "22. 11. 2026 13:59 CET",
   "marketStatus": "Neděle – cash NDX uzavřen; poslední závěr 20. 11. 2026",
   "ndx": {
     "value": 25028.98,
@@ -9,7 +9,7 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→ beze změny proti 11:58 CET",
+    "trend": "→ beze změny proti 13:00 CET",
     "reason": "NDX −5,61 %, SOX −10,73 %, NVDA −14,01 %; MA50 breadth 32/101 (31,7 %), 20. 11."
   },
   "driver": "SOX −10,73 % (20. 11.), NVDA −14,01 %, AVGO −12,19 %; MA50 breadth 31,7 % (20. 11.).",
@@ -32,6 +32,25 @@
       "eventKey": "eu-costa-digital-tax-3pct-proposal-20261121",
       "ndxRelevant": true,
       "importanceScore": 64
+    },
+    {
+      "title": "US: S&P 500 −11,6 % od maxima 6. 10.; Nasdaq Composite −2,7 % YTD; VIX 35,89 (20. 11.).",
+      "time": "22. 11. 2026, 13:04 CET",
+      "publishedAtPrague": "22. 11. 2026, 13:04",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "market_correction",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/finance/correction-or-deeper-reckoning-investors-seek-signs-us-stock-selling-will-abate-2026-11-22/",
+      "sourceLinks": [
+        {
+          "label": "Reuters – korekce akciových trhů",
+          "url": "https://www.reuters.com/business/finance/correction-or-deeper-reckoning-investors-seek-signs-us-stock-selling-will-abate-2026-11-22/"
+        }
+      ],
+      "eventKey": "us-market-correction-ai-fed-20261120",
+      "ndxRelevant": true,
+      "importanceScore": 63
     }
   ],
   "leaders": [
@@ -2252,6 +2271,24 @@
           "url": "https://tradingeconomics.com/commodities"
         }
       ]
+    },
+    {
+      "time": "22. 11. 2026 13:59 CET",
+      "summary": "Cash NDX 25 028,98 b., −5,61 % (závěr 20. 11.); Reuters 22. 11. 13:04 CET: S&P 500 −11,6 % od maxima, VIX 35,89; 24h pool 2 ověřených událostí. Nasdaq cash, Nasdaq členství 101 tříd, globální Top 10, všech 9 referenčních cen TE, Fed/ECB/ČNB a HDP ověřeny; Yahoo futures/RSI a zdrojový přepočet rizika nedostupné, původní snapshoty zachovány.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq – cash NDX",
+          "url": "https://indexes.nasdaq.com/Index/Overview/NDX"
+        },
+        {
+          "label": "Reuters – tržní korekce",
+          "url": "https://www.reuters.com/business/finance/correction-or-deeper-reckoning-investors-seek-signs-us-stock-selling-will-abate-2026-11-22/"
+        },
+        {
+          "label": "Trading Economics – ceny",
+          "url": "https://tradingeconomics.com/commodities"
+        }
+      ]
     }
   ],
   "history": [
@@ -3268,6 +3305,10 @@
     {
       "name": "Reuters – návrh digitální daně EU 21. 11. 2026",
       "url": "https://www.reuters.com/markets/us/eu-leaders-chair-proposes-new-cuts-eu-2028-2034-budget-draft-suggests-digital-2026-11-21/"
+    },
+    {
+      "name": "Reuters – korekce USA 22. 11. 2026",
+      "url": "https://www.reuters.com/business/finance/correction-or-deeper-reckoning-investors-seek-signs-us-stock-selling-will-abate-2026-11-22/"
     }
   ]
 }
