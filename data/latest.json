@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "22. 11. 2026 11:58 CET",
+  "updatedAtPrague": "22. 11. 2026 13:00 CET",
   "marketStatus": "Neděle – cash NDX uzavřen; poslední závěr 20. 11. 2026",
   "ndx": {
     "value": 25028.98,
@@ -9,7 +9,7 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→ beze změny proti 11:05 CET",
+    "trend": "→ beze změny proti 11:58 CET",
     "reason": "NDX −5,61 %, SOX −10,73 %, NVDA −14,01 %; MA50 breadth 32/101 (31,7 %), 20. 11."
   },
   "driver": "SOX −10,73 % (20. 11.), NVDA −14,01 %, AVGO −12,19 %; MA50 breadth 31,7 % (20. 11.).",
@@ -2231,6 +2231,24 @@
         },
         {
           "label": "Trading Economics – veřejné kotace",
+          "url": "https://tradingeconomics.com/commodities"
+        }
+      ]
+    },
+    {
+      "time": "22. 11. 2026 13:00 CET",
+      "summary": "Cash NDX 25 028,98 b., −5,61 % (závěr 20. 11.); 1 platná kvalifikovaná událost Reuters v 24h okně, 0 expirací. Nasdaq NDX, Nasdaq členství 101 tříd, globální Top 10, devět cen Trading Economics a oficiální sazby/HDP porovnány. Futures a historické maximum futures: Yahoo chart nedostupný; RSI a rizikový model bez nového validovaného zdrojového výpočtu, původní hodnoty zachovány.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq – cash NDX",
+          "url": "https://indexes.nasdaq.com/Index/Overview/NDX"
+        },
+        {
+          "label": "Reuters – návrh digitální daně EU",
+          "url": "https://www.reuters.com/markets/us/eu-leaders-chair-proposes-new-cuts-eu-2028-2034-budget-draft-suggests-digital-2026-11-21/"
+        },
+        {
+          "label": "Trading Economics – komodity",
           "url": "https://tradingeconomics.com/commodities"
         }
       ]
