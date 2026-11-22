@@ -2169,12 +2169,12 @@
       "summary": "Cash NDX 25 028,98 b. (20. 11.), −5,61 %; SOX −10,73 %, MA50 breadth 31,7 %, US10Y 4,92 %. Dvě platné události v 24h okně, bez nové kvalifikované zprávy; všech 9 veřejných TE kotací zdrojově ověřeno.",
       "sourceLinks": [
         {
-          "label": "Cash NDX – Google Finance",
+          "label": "NDX a SOX – Google Finance",
           "url": "https://www.google.com/finance/quote/NDX:INDEXNASDAQ?hl=en"
         },
         {
-          "label": "SOX / NDX – Google Finance",
-          "url": "https://www.google.com/finance/quote/NDX:INDEXNASDAQ?hl=en"
+          "label": "Nasdaq-100 breadth – ChartVault",
+          "url": "https://aveceasar.github.io/nasdaq100-percent-above-moving-averages/"
         },
         {
           "label": "US10Y – U.S. Treasury",
