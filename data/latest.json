@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "22. 11. 2026 15:05 CET",
+  "updatedAtPrague": "22. 11. 2026 16:01 CET",
   "marketStatus": "Neděle – cash NDX uzavřen; poslední závěr 20. 11. 2026",
   "ndx": {
     "value": 25028.98,
@@ -9,7 +9,7 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→ beze změny proti 14:00 CET",
+    "trend": "→ beze změny proti 15:05 CET",
     "reason": "NDX −5,61 %, SOX −10,73 %, NVDA −14,01 %; MA50 breadth 32/101 (31,7 %), 20. 11."
   },
   "driver": "SOX −10,73 % (20. 11.), NVDA −14,01 %, AVGO −12,19 %; MA50 breadth 31,7 % (20. 11.).",
@@ -2299,6 +2299,24 @@
         },
         {
           "label": "Trading Economics – referenční ceny",
+          "url": "https://tradingeconomics.com/commodities"
+        }
+      ]
+    },
+    {
+      "time": "22. 11. 2026 16:01 CET",
+      "summary": "Cash NDX 25 028,98 b., −5,61 % (závěr 20. 11.); SOX −10,73 %, US10Y 4,92 %; Reuters 22. 11. 13:04 CET: S&P 500 −11,6 % od maxima. 24h pool 1 událost. Ověřeno 9/9 cen TE, Nasdaq členství, globální Top 10, breadth (poslední zdrojová kontrola do 65 min), sazby/HDP; VXN/US10Y přímo ověřeny. Yahoo futures/RSI 429; futures maximum a model bez nového úplného průchodu, původní hodnoty zachovány.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq NDX – cash",
+          "url": "https://www.google.com/finance/quote/NDX:INDEXNASDAQ"
+        },
+        {
+          "label": "Reuters – korekce",
+          "url": "https://www.reuters.com/business/finance/correction-or-deeper-reckoning-investors-seek-signs-us-stock-selling-will-abate-2026-11-22/"
+        },
+        {
+          "label": "Trading Economics – trhy",
           "url": "https://tradingeconomics.com/commodities"
         }
       ]
