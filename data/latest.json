@@ -1,6 +1,6 @@
 {
-  "updatedAtPrague": "21. 11. 2026 23:58 CET",
-  "marketStatus": "Uzavřen – sobota (cash USA)",
+  "updatedAtPrague": "22. 11. 2026 01:05 CET",
+  "marketStatus": "Uzavřen – neděle (cash USA)",
   "ndx": {
     "value": 25028.98,
     "changePercent": -5.61,
@@ -9,30 +9,11 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→ beze změny proti 23:04 CET",
+    "trend": "→ beze změny proti 23:58 CET",
     "reason": "NDX −5,61 %, SOX −10,73 %, NVDA −14,01 %; nad MA50 32/101 (31,7 %), data 20. 11."
   },
   "driver": "SOX −10,73 % (20. 11.), NVDA −14,01 %, AVGO −12,19 %; MA50 breadth 31,7 % (20. 11.).",
   "news": [
-    {
-      "title": "EU: návrh 3% daně z online reklamy, digitálního zprostředkování a uživatelských dat; hranice 50 mil. EUR v EU a 750 mil. EUR globálně.",
-      "time": "21. 11. 2026, 14:00 CET",
-      "publishedAtPrague": "21. 11. 2026, 14:00",
-      "publicationTimeVerified": true,
-      "kind": "new",
-      "category": "digital_tax_proposal",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/markets/us/eu-leaders-chair-proposes-new-cuts-eu-2028-2034-budget-draft-suggests-digital-2026-11-21/",
-      "sourceLinks": [
-        {
-          "label": "Reuters – návrh digitální daně EU",
-          "url": "https://www.reuters.com/markets/us/eu-leaders-chair-proposes-new-cuts-eu-2028-2034-budget-draft-suggests-digital-2026-11-21/"
-        }
-      ],
-      "eventKey": "eu-costa-digital-tax-3pct-proposal-20261121",
-      "ndxRelevant": true,
-      "importanceScore": 64
-    },
     {
       "title": "Hormuz: UKMTO hlásí dva incidenty tankerů u ománského Khasabu; bez obětí.",
       "publishedAtPrague": "21. 11. 2026, 08:57",
@@ -53,6 +34,25 @@
       "ndxRelevant": true
     },
     {
+      "title": "EU: návrh 3% daně z online reklamy, digitálního zprostředkování a uživatelských dat; hranice 50 mil. EUR v EU a 750 mil. EUR globálně.",
+      "time": "21. 11. 2026, 14:00 CET",
+      "publishedAtPrague": "21. 11. 2026, 14:00",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "digital_tax_proposal",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/markets/us/eu-leaders-chair-proposes-new-cuts-eu-2028-2034-budget-draft-suggests-digital-2026-11-21/",
+      "sourceLinks": [
+        {
+          "label": "Reuters – návrh digitální daně EU",
+          "url": "https://www.reuters.com/markets/us/eu-leaders-chair-proposes-new-cuts-eu-2028-2034-budget-draft-suggests-digital-2026-11-21/"
+        }
+      ],
+      "eventKey": "eu-costa-digital-tax-3pct-proposal-20261121",
+      "ndxRelevant": true,
+      "importanceScore": 64
+    },
+    {
       "title": "AWS/SK Ulsan: datacentrum s plánem 5,2 mld. USD do roku 2029; provoz plánován od H2 2027.",
       "time": "21. 11. 2026, 06:34 CET",
       "publishedAtPrague": "21. 11. 2026, 06:34",
@@ -70,25 +70,6 @@
       "eventKey": "aws-sk-ulsan-datacenter-lee-visit-20261121",
       "ndxRelevant": true,
       "importanceScore": 50
-    },
-    {
-      "title": "Databricks podle WSJ jedná o získání několika miliard USD při ocenění 225 mld. USD; podmínky nejsou dohodnuté.",
-      "publishedAtPrague": "21. 11. 2026, 00:40",
-      "category": "ai_financing",
-      "url": "https://www.reuters.com/legal/transactional/databricks-early-talks-raise-funds-225-billion-valuation-wsj-reports-2026-11-20/",
-      "eventKey": "databricks-fundraising-talks-225bn-valuation-20261120",
-      "importanceScore": 62,
-      "time": "21. 11. 2026, 00:40 CET",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "source": "Reuters",
-      "sourceLinks": [
-        {
-          "label": "Reuters / WSJ – Databricks financování",
-          "url": "https://www.reuters.com/legal/transactional/databricks-early-talks-raise-funds-225-billion-valuation-wsj-reports-2026-11-20/"
-        }
-      ],
-      "ndxRelevant": true
     }
   ],
   "leaders": [
@@ -2073,6 +2054,24 @@
         {
           "label": "Trading Economics – trhy",
           "url": "https://tradingeconomics.com/commodities"
+        }
+      ]
+    },
+    {
+      "time": "22. 11. 2026 01:05 CET",
+      "summary": "Cash NDX 25 028,98 b. (závěr 20. 11.), −5,61 %; EU návrh 3% digitální daně (21. 11.); MA50 breadth 31,7 % (20. 11.); 24h pool 3 události.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq NDX",
+          "url": "https://indexes.nasdaq.com/index/Overview/NDX"
+        },
+        {
+          "label": "Reuters – EU daň",
+          "url": "https://www.reuters.com/markets/us/eu-leaders-chair-proposes-new-cuts-eu-2028-2034-budget-draft-suggests-digital-2026-11-21/"
+        },
+        {
+          "label": "ChartVault – MA50",
+          "url": "https://aveceasar.github.io/nasdaq100-percent-above-moving-averages/"
         }
       ]
     }
