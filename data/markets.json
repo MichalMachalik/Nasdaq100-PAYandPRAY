@@ -5,18 +5,18 @@
     "currencies": "https://tradingeconomics.com/currencies"
   },
   "timestampKind": "retrieval timestamp is separate from trading day",
-  "fetchedAtUtc": "2026-11-23T19:55:08Z",
-  "fetchedAtPrague": "23. 11. 2026 20:55",
+  "fetchedAtUtc": "2026-11-23T21:03:49Z",
+  "fetchedAtPrague": "23. 11. 2026 22:03",
   "quotes": [
     {
       "id": "WTI",
       "unit": "USD/bbl",
-      "price": 80.918,
-      "changePercent": -2.99,
+      "price": 80.009,
+      "changePercent": -4.08,
       "quoteDate": "Nov/23",
       "quoteDateISO": "2026-11-23",
       "sourceUrl": "https://tradingeconomics.com/commodity/crude-oil",
-      "fetchedAtUtc": "2026-11-23T18:06:35.018Z"
+      "fetchedAtUtc": "2026-11-23T21:03:49Z"
     },
     {
       "id": "Brent",
@@ -61,12 +61,12 @@
     {
       "id": "Gold",
       "unit": "USD/oz",
-      "price": 3651.02,
-      "changePercent": 3.28,
+      "price": 3635.79,
+      "changePercent": 2.85,
       "quoteDate": "Nov/23",
       "quoteDateISO": "2026-11-23",
       "sourceUrl": "https://tradingeconomics.com/commodity/gold",
-      "fetchedAtUtc": "2026-11-23T18:06:35.018Z"
+      "fetchedAtUtc": "2026-11-23T21:03:49Z"
     },
     {
       "id": "EUR/USD",
@@ -91,12 +91,12 @@
     {
       "id": "USD/CZK",
       "unit": "USD/CZK",
-      "price": 22.4179,
-      "changePercent": 0.54,
+      "price": 22.3868,
+      "changePercent": 0.39,
       "quoteDate": "Nov/23",
       "quoteDateISO": "2026-11-23",
       "sourceUrl": "https://tradingeconomics.com/czech-republic/currency",
-      "fetchedAtUtc": "2026-11-23T18:06:35.018Z"
+      "fetchedAtUtc": "2026-11-23T21:03:49Z"
     }
   ]
 }
