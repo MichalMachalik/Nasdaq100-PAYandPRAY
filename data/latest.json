@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "23. 11. 2026 08:58 CET",
+  "updatedAtPrague": "23. 11. 2026 10:03 CET",
   "marketStatus": "Pondělí, cash mimo seanci; poslední závěr 20. 11. 2026",
   "ndx": {
     "value": 25028.98,
@@ -9,29 +9,29 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "↗ mírné zlepšení proti 23. 11. 2026 08:04 CET",
-    "reason": "Cash NDX −5,61 %, SOX −10,73 %, VXN 45,25 a MA50 breadth 31,7 % (20. 11.)."
+    "trend": "↗ mírné zlepšení proti 23. 11. 2026 08:58 CET",
+    "reason": "Cash NDX −5,61 %, SOX −10,73 %, VXN 45,25 a MA50 breadth 31,7 % (20. 11.); pondělní NQZ26 futures +3,22 %."
   },
-  "driver": "SOX −10,73 % (20. 11.); NVDA −14,01 %, AVGO −12,19 % (20. 11.); MA50 breadth 31,7 %.",
+  "driver": "SOX −10,73 % (20. 11.); globální hedgeové fondy za týden do 20. 11. ztratily přes 3 % (JPMorgan, Reuters 23. 11.).",
   "news": [
     {
-      "title": "NVDA: americké ministerstvo financí žádá vysvětlení prodejů AI čipů do Číny a odpovědnosti za exportní compliance.",
-      "time": "22. 11. 2026, 18:48 CET",
-      "publishedAtPrague": "22. 11. 2026, 18:48",
+      "title": "Hedgeové fondy: týdenní ztráta přes 3 % do 20. 11.; Goldman Sachs eviduje pokles čisté akciové expozice na úrovně dubna 2025.",
+      "time": "23. 11. 2026, 09:24 CET",
+      "publishedAtPrague": "23. 11. 2026, 09:24",
       "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "chip_export_compliance",
+      "kind": "new",
+      "category": "institutional_deleveraging",
       "source": "Reuters",
-      "url": "https://www.reuters.com/world/china/us-seeks-answers-nvidias-sale-chips-china-bessent-says-2026-11-22/",
+      "url": "https://www.reuters.com/world/china/hedge-funds-post-worst-week-since-april-2025-sparks-defensive-shift-2026-11-23/",
       "sourceLinks": [
         {
-          "label": "Reuters – NVDA China chip compliance",
-          "url": "https://www.reuters.com/world/china/us-seeks-answers-nvidias-sale-chips-china-bessent-says-2026-11-22/"
+          "label": "Reuters – hedge funds / AI selloff",
+          "url": "https://www.reuters.com/world/china/hedge-funds-post-worst-week-since-april-2025-sparks-defensive-shift-2026-11-23/"
         }
       ],
-      "eventKey": "nvda-bessent-china-chip-compliance-inquiry-20261122",
+      "eventKey": "global-hedge-funds-deleveraging-ai-selloff-20261123",
       "ndxRelevant": true,
-      "importanceScore": 80
+      "importanceScore": 68
     },
     {
       "title": "NQ futures: pondělní odraz téměř 3 % v časné seanci; S&P 500 futures +2 %.",
@@ -51,6 +51,25 @@
       "eventKey": "nasdaq100-futures-monday-open-rebound-20261123",
       "ndxRelevant": true,
       "importanceScore": 72
+    },
+    {
+      "title": "NVDA: americké ministerstvo financí žádá vysvětlení prodejů AI čipů do Číny a odpovědnosti za exportní compliance.",
+      "time": "22. 11. 2026, 18:48 CET",
+      "publishedAtPrague": "22. 11. 2026, 18:48",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "chip_export_compliance",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/china/us-seeks-answers-nvidias-sale-chips-china-bessent-says-2026-11-22/",
+      "sourceLinks": [
+        {
+          "label": "Reuters – NVDA China chip compliance",
+          "url": "https://www.reuters.com/world/china/us-seeks-answers-nvidias-sale-chips-china-bessent-says-2026-11-22/"
+        }
+      ],
+      "eventKey": "nvda-bessent-china-chip-compliance-inquiry-20261122",
+      "ndxRelevant": true,
+      "importanceScore": 80
     },
     {
       "title": "US: S&P 500 −11,6 % od maxima 6. 10.; Nasdaq Composite −2,7 % YTD; VIX 35,89 (20. 11.).",
@@ -2664,6 +2683,24 @@
           "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-22/"
         }
       ]
+    },
+    {
+      "time": "23. 11. 2026 10:03 CET",
+      "summary": "Cash NDX 25 028,98 b., −5,61 % (závěr 20. 11.), historické maximum 31 361,37 b. Reuters 23. 11. 09:24 CET: globální hedgeové fondy za týden ztratily přes 3 %, redukce akciové expozice; 4 platné zprávy za 24 h. NQZ26 25 935,50 b., +3,22 % (WSJ/FactSet, zpožděná kotace 09:50 CET). Nasdaq oficiální index a členství 101 emisí k 20. 11.; CompaniesMarketCap Top 10 ověřena. Trading Economics: zkontrolováno všech 9 instrumentových stránek včetně EUR/CZK a USD/CZK, rozdíly mezi cenovými snímky brání jednotné bezpečné aktualizaci, markets ponechán. Fed/ECB/ČNB, Eurostat, ČSÚ, UST, VXN ověřeny. RSI/risk model: validované updater logy z 23. 11. 09:06/09:17 CET, původní období zachováno; MA50 breadth zdrojový JSON nedostupný, ponechán. Yahoo NQ=F/^NDX HTTP 429; futures historické maximum ponecháno.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq – cash NDX",
+          "url": "https://indexes.nasdaq.com/index/Overview/NDX"
+        },
+        {
+          "label": "Reuters – hedge funds",
+          "url": "https://www.reuters.com/world/china/hedge-funds-post-worst-week-since-april-2025-sparks-defensive-shift-2026-11-23/"
+        },
+        {
+          "label": "WSJ – NQZ26",
+          "url": "https://www.wsj.com/market-data/quotes/futures/NQZ26"
+        }
+      ]
     }
   ],
   "history": [
@@ -3692,6 +3729,14 @@
     {
       "name": "Reuters – futures Asia 23. 11. 2026",
       "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-22/"
+    },
+    {
+      "name": "Reuters – hedge funds",
+      "url": "https://www.reuters.com/world/china/hedge-funds-post-worst-week-since-april-2025-sparks-defensive-shift-2026-11-23/"
+    },
+    {
+      "name": "WSJ NQZ26",
+      "url": "https://www.wsj.com/market-data/quotes/futures/NQZ26"
     }
   ]
 }
