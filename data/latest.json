@@ -1,18 +1,18 @@
 {
-  "updatedAtPrague": "23. 11. 2026 19:07 CET",
+  "updatedAtPrague": "23. 11. 2026 20:08 CET",
   "marketStatus": "Cash NDX: seance otevřena (23. 11. 2026, 15:30–22:00 CET)",
   "ndx": {
-    "value": 26636.52,
-    "changePercent": 6.42,
+    "value": 26697.31,
+    "changePercent": 6.67,
     "ath": 31361.37,
-    "asOf": "23. 11. 2026, 18:49:44 CET – cash NDX, intradenní kotace (Google Finance)"
+    "asOf": "23. 11. 2026, 19:48:15 CET – cash NDX, intradenní kotace (Google Finance)"
   },
   "sentiment": {
     "label": "Neutrální",
-    "trend": "↘ mírné zhoršení proti 23. 11. 2026 18:02 CET",
-    "reason": "Cash NDX +6,42 % (18:49 CET); NVDA +30,92 % (19:00 CET); VXN 36,03 (18:30 CET); MA50 breadth 31,7 % (20. 11.)."
+    "trend": "→ beze změny proti 23. 11. 2026 19:07 CET",
+    "reason": "Cash NDX +6,67 % (19:48 CET); NVDA +31,08 % (20:02 CET); VXN 35,29 (19:50 CET); MA50 breadth 31,7 % (20. 11.)."
   },
-  "driver": "NVDA: Jensen Huang opět CEO; akcie +30,92 % (19:00 CET), cash NDX +6,42 % (18:49 CET).",
+  "driver": "NVDA: Jensen Huang znovu CEO; akcie +31,08 % (20:02 CET), výrazný růst AI sektoru.",
   "news": [
     {
       "title": "AMZN: kupuje technologii Decart Optimization Stack a přebírá tým pro Trainium a AI inference; cena nezveřejněna.",
@@ -220,13 +220,13 @@
   "leaders": [
     {
       "ticker": "NVDA",
-      "changePercent": 30.92,
-      "impact": "vysoký – intradenní 23. 11. 2026, 19:00:01 CET"
+      "changePercent": 31.08,
+      "impact": "vysoký – intradenní 23. 11. 2026, 20:02:34 CET"
     },
     {
       "ticker": "MSFT",
-      "changePercent": 2.71,
-      "impact": "vysoký – intradenní 23. 11. 2026, 19:01:55 CET"
+      "changePercent": 2.67,
+      "impact": "vysoký – intradenní 23. 11. 2026, 20:04:22 CET"
     }
   ],
   "macro": "US flash Composite PMI | listopad: 54,6 | říjen: 55,9 | −1,3 b.",
@@ -237,7 +237,7 @@
   },
   "forecast": {
     "athReturnPercent": 18,
-    "athReason": "Nutný růst 17,74 %; NDX +6,42 %, NVDA +30,92 %; VXN 36,03, MA50 breadth 31,7 % (20. 11.).",
+    "athReason": "Nutný růst 17,47 %; cash NDX +6,67 %, NVDA +31,08 %, VXN 35,29; MA50 breadth 31,7 % (20. 11.).",
     "downside": "−9 až −16 %",
     "downsideReason": "Modelový 25. percentil 1–3měsíční koncové ceny; vstupní VXN 45,25 (20. 11.), bez nového validovaného přepočtu.",
     "downsideModel": {
@@ -2989,6 +2989,24 @@
           "url": "https://www.reuters.com/business/retail-consumer/amazon-buy-decarts-ai-chip-optimization-tech-latest-ai-talent-grab-2026-11-23/"
         }
       ]
+    },
+    {
+      "time": "23. 11. 2026 20:08 CET",
+      "summary": "Cash NDX 26 697,31 b. (+6,67 %; 19:48 CET); NVDA +31,08 % (20:02 CET). PMI listopad 54,6 vs. říjen 55,9. Ověřeny veřejné zdroje NDX, NQZ26, 9 instrumentů TE, členství NDX, Top 10, sazby/HDP a breadth. Yahoo 429: futures historické maximum, RSI a model bez přepočtu.",
+      "sourceLinks": [
+        {
+          "label": "Google Finance NDX",
+          "url": "https://www.google.com/finance/quote/NDX:INDEXNASDAQ"
+        },
+        {
+          "label": "Google Finance NVDA",
+          "url": "https://www.google.com/finance/quote/NVDA:NASDAQ"
+        },
+        {
+          "label": "Reuters PMI",
+          "url": "https://www.reuters.com/world/us/us-business-activity-growth-eases-further-november-survey-shows-2026-11-23/"
+        }
+      ]
     }
   ],
   "history": [
@@ -3319,6 +3337,10 @@
     {
       "time": "23. 11. 2026 19:07 CET",
       "ndx": 26636.52
+    },
+    {
+      "time": "23. 11. 2026 20:08 CET",
+      "ndx": 26697.31
     }
   ],
   "sources": [
@@ -4093,6 +4115,10 @@
     {
       "name": "Reuters Amazon Decart",
       "url": "https://www.reuters.com/business/retail-consumer/amazon-buy-decarts-ai-chip-optimization-tech-latest-ai-talent-grab-2026-11-23/"
+    },
+    {
+      "name": "Google Finance NDX",
+      "url": "https://www.google.com/finance/quote/NDX:INDEXNASDAQ"
     }
   ]
 }
