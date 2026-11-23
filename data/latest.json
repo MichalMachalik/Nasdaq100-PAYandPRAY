@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "23. 11. 2026 06:02 CET",
+  "updatedAtPrague": "23. 11. 2026 06:58 CET",
   "marketStatus": "Pondělí, cash mimo seanci; poslední závěr 20. 11. 2026",
   "ndx": {
     "value": 25028.98,
@@ -9,8 +9,8 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→ beze změny proti 23. 11. 2026 05:01 CET",
-    "reason": "Cash NDX −5,61 %, SOX −10,73 %, VXN 45,25 a MA50 breadth 31,7 % (20. 11.); pondělní odraz futures."
+    "trend": "↗ mírné zlepšení proti 23. 11. 2026 06:02 CET",
+    "reason": "Cash NDX −5,61 %, SOX −10,73 %, VXN 45,25 a MA50 breadth 31,7 % (20. 11.); pondělní futures odraz mírně zesílil."
   },
   "driver": "SOX −10,73 % (20. 11.); NVDA −14,01 %, AVGO −12,19 % (20. 11.); MA50 breadth 31,7 %.",
   "news": [
@@ -2607,6 +2607,24 @@
         },
         {
           "label": "Reuters – trhy",
+          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-22/"
+        }
+      ]
+    },
+    {
+      "time": "23. 11. 2026 06:58 CET",
+      "summary": "Cash NDX 25 028,98 b., −5,61 % (závěr 20. 11.), historické maximum 31 361,37 b.; 3 platné kvalifikované události za 24 h, bez nové od 06:02. WSJ NQZ26 25 917,75 b., +3,15 % (zpožděná kotace 06:42 CET). Ověřeny Nasdaq NDX, aktuální seznam 101 emisí k 20. 11., CompaniesMarketCap globální pořadí, 9/9 stránek Trading Economics včetně EUR/CZK a USD/CZK, oficiální sazby Fed/ECB/ČNB, EU/ČR HDP y/y, U.S. Treasury US10Y a VXN. Trading Economics: rozdílné ceny v rámci částí stránek, markets.json nezměněn; zdrojový ChartVault JSON nedostupný, breadth zachován. Yahoo historické NDX a futures HTTP 429; RSI, futures historické maximum a rizikový model bez nového validovaného přepočtu. GitHub Pages ověření oddělené.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq – cash NDX",
+          "url": "https://indexes.nasdaq.com/index/Overview/NDX"
+        },
+        {
+          "label": "WSJ – futures NQZ26",
+          "url": "https://www.wsj.com/market-data/quotes/futures/NQZ26"
+        },
+        {
+          "label": "Reuters – pondělní futures",
           "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-22/"
         }
       ]
