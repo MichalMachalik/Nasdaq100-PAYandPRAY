@@ -1,18 +1,18 @@
 {
-  "updatedAtPrague": "23. 11. 2026 16:58 CET",
+  "updatedAtPrague": "23. 11. 2026 18:02 CET",
   "marketStatus": "Cash NDX: seance otevřena (23. 11. 2026, 15:30–22:00 CET)",
   "ndx": {
-    "value": 26808.96,
-    "changePercent": 7.11,
+    "value": 26706.53,
+    "changePercent": 6.7,
     "ath": 31361.37,
-    "asOf": "23. 11. 2026, 16:48:28 CET – cash NDX, intradenní kotace (Google Finance)"
+    "asOf": "23. 11. 2026, 17:47:52 CET – cash NDX, intradenní kotace (Google Finance)"
   },
   "sentiment": {
     "label": "Neutrální",
-    "trend": "↗ zlepšení proti 23. 11. 2026 16:04 CET",
-    "reason": "Cash NDX +7,11 % (16:48 CET); NVDA +34,53 % (16:37 CET); VXN 35,55 (16:02 CET); MA50 breadth 31,7 % (20. 11.)."
+    "trend": "↘ mírné zhoršení proti 23. 11. 2026 16:58 CET",
+    "reason": "Cash NDX +6,70 % (17:47 CET); NVDA +32,29 % (17:57 CET); VXN 35,76 (17:14 CET); MA50 breadth 31,7 % (20. 11.)."
   },
-  "driver": "NVDA: návrat Jensena Huanga do funkce CEO; NVDA +34,53 % (16:37 CET), cash NDX +7,11 % (16:48 CET).",
+  "driver": "NVDA: Jensen Huang znovu CEO; NVDA +32,29 % (17:57 CET), cash NDX +6,70 % (17:47 CET).",
   "news": [
     {
       "title": "US flash PMI listopad | Composite 54,6 vs. 55,9 (−1,3 b.); služby 54,7 vs. 56,1 (−1,4 b.); výroba 54,5 vs. 54,9 (−0,4 b.).",
@@ -34,7 +34,7 @@
       "importanceScore": 62
     },
     {
-      "title": "NVDA: Jensen Huang znovu CEO s okamžitou účinností; akcie +29,37 % (15:52 CET).",
+      "title": "NVDA: Jensen Huang znovu CEO s okamžitou účinností.",
       "time": "23. 11. 2026, 14:59 CET",
       "publishedAtPrague": "23. 11. 2026, 14:59",
       "publicationTimeVerified": true,
@@ -216,13 +216,13 @@
   "leaders": [
     {
       "ticker": "NVDA",
-      "changePercent": 34.53,
-      "impact": "vysoký – intradenní 23. 11. 2026, 16:37:08 CET"
+      "changePercent": 32.29,
+      "impact": "vysoký – intradenní 23. 11. 2026, 17:57:25 CET"
     },
     {
       "ticker": "MSFT",
-      "changePercent": 4.14,
-      "impact": "vysoký – intradenní 23. 11. 2026, 16:32:33 CET"
+      "changePercent": 2.88,
+      "impact": "vysoký – intradenní 23. 11. 2026, 17:29:56 CET"
     }
   ],
   "macro": "US flash Composite PMI | listopad: 54,6 | říjen: 55,9 | −1,3 b.",
@@ -233,7 +233,7 @@
   },
   "forecast": {
     "athReturnPercent": 18,
-    "athReason": "Nutný růst 16,98 %; cash NDX +7,11 %, NVDA +34,53 %, VXN 35,55; MA50 breadth 31,7 % (20. 11.).",
+    "athReason": "Nutný růst 17,43 %; cash NDX +6,70 %, NVDA +32,29 %; VXN 35,76, MA50 breadth 31,7 % (20. 11.).",
     "downside": "−9 až −16 %",
     "downsideReason": "Modelový 25. percentil 1–3měsíční koncové ceny; vstupní VXN 45,25 (20. 11.), bez nového validovaného přepočtu.",
     "downsideModel": {
@@ -2949,6 +2949,24 @@
           "url": "https://www.reuters.com/business/morgan-stanley-turns-most-bullish-stocks-since-april-after-last-weeks-selloff-2026-11-23/"
         }
       ]
+    },
+    {
+      "time": "23. 11. 2026 18:02 CET",
+      "summary": "Cash NDX 26 706,53 b., +6,70 % (23. 11., 17:47 CET), -14,84 % od historického maxima 31 361,37 b. NVDA +32,29 % (17:57 CET), Jensen Huang znovu CEO; MSFT +2,88 % (17:29 CET). PMI listopad 54,6 vs. říjen 55,9. Prověřeny cash NDX, futures NQZ26, Nasdaq členství, globální Top 10, 9 zdrojů Trading Economics, FED/ECB/ČNB/HDP a ChartVault. Futures historické maximum a RSI: Yahoo 429; ChartVault raw data nedostupná, model nepřepočten. Rozporné tržní snímky ponechány.",
+      "sourceLinks": [
+        {
+          "label": "Google Finance – NDX",
+          "url": "https://www.google.com/finance/quote/NDX:INDEXNASDAQ"
+        },
+        {
+          "label": "Reuters – NVIDIA",
+          "url": "https://www.reuters.com/technology/nvidia-reinstates-jensen-huang-ceo-2026-11-23/"
+        },
+        {
+          "label": "Reuters – PMI",
+          "url": "https://www.reuters.com/world/us/us-business-activity-growth-eases-further-november-survey-shows-2026-11-23/"
+        }
+      ]
     }
   ],
   "history": [
@@ -3271,6 +3289,10 @@
     {
       "time": "23. 11. 2026 16:58 CET",
       "ndx": 26808.96
+    },
+    {
+      "time": "23. 11. 2026 18:02 CET",
+      "ndx": 26706.53
     }
   ],
   "sources": [
@@ -4037,6 +4059,10 @@
     {
       "name": "Reuters – NDX AI rally",
       "url": "https://www.reuters.com/business/ai-rally-set-add-2-trillion-nasdaq-100-huang-returns-nvidia-helm-2026-11-23/"
+    },
+    {
+      "name": "New York Fed – Williams 23. 11.",
+      "url": "https://www.newyorkfed.org/newsevents/mediaadvisory/2026/1113-2026"
     }
   ]
 }
