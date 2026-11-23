@@ -2649,7 +2649,7 @@
     },
     {
       "time": "23. 11. 2026 08:58 CET",
-      "summary": "Cash NDX 25 028,98 b., −5,61 % (závěr 20. 11.); historické maximum 31 361,37 b. Reuters: pondělní odraz NDX futures, bez nové kvalifikované události; 3 platné události za 24 h. NQZ26 25 876,00 b., +2,98 % (WSJ, zpožděná kotace 08:17 CET). Zdrojově ověřeny Nasdaq cash NDX, NDX členství k 20. 11., globální Top 10, aktuální stránky Trading Economics 9/9, Fed/ECB/ČNB, HDP EU/USA/ČR, UST a VXN. TE část cen koliduje s textovými údaji, markets.json zůstává. Yahoo 429, zdrojový ChartVault JSON nedostupný; breadth/RSI/risk-model a futures historické maximum bez nového validovaného přepočtu. GitHub Pages nepřímo ověřitelné přes GitHub; přímé potvrzení chybí.",
+      "summary": "Cash NDX 25 028,98 b., −5,61 % (závěr 20. 11.); historické maximum 31 361,37 b. Reuters: pondělní odraz NDX futures, bez nové kvalifikované události; 3 platné události za 24 h. NQZ26 25 876,00 b., +2,98 % (WSJ, zpožděná kotace 08:17 CET). Zdrojově ověřeny Nasdaq cash NDX, NDX členství k 20. 11., globální Top 10, Trading Economics: kontrola 9 instrumentů, 8 stránek dostupných, Gold blokován, Fed/ECB/ČNB, HDP EU/USA/ČR, UST a VXN. TE část cen koliduje s textovými údaji, markets.json zůstává. Yahoo 429, zdrojový ChartVault JSON nedostupný; breadth/RSI/risk-model a futures historické maximum bez nového validovaného přepočtu. GitHub Pages nepřímo ověřitelné přes GitHub; přímé potvrzení chybí.",
       "sourceLinks": [
         {
           "label": "Nasdaq – cash NDX",
