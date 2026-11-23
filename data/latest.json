@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "23. 11. 2026 04:03 CET",
+  "updatedAtPrague": "23. 11. 2026 05:01 CET",
   "marketStatus": "Pondělí, cash mimo seanci; poslední závěr 20. 11. 2026",
   "ndx": {
     "value": 25028.98,
@@ -9,7 +9,7 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→ beze změny proti 23. 11. 2026 03:05 CET",
+    "trend": "→ beze změny proti 23. 11. 2026 04:03 CET",
     "reason": "Cash NDX −5,61 %, SOX −10,73 %, VXN 45,25 a MA50 breadth 31,7 % (20. 11.); pondělní zotavení futures."
   },
   "driver": "SOX −10,73 % (20. 11.); NVDA −14,01 %, AVGO −12,19 % (20. 11.); MA50 breadth 31,7 %.",
@@ -2591,6 +2591,24 @@
         {
           "label": "Reuters – pondělní trhy",
           "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-22/"
+        }
+      ]
+    },
+    {
+      "time": "23. 11. 2026 05:01 CET",
+      "summary": "Cash NDX 25 028,98 b., −5,61 % (závěr 20. 11.); historické maximum 31 361,37 b. Čtyři ověřené události za posledních 24 h, bez nové kvalifikované události proti 04:03. WSJ NQZ26 25 895 b., +3,06 % (zpožděná kotace 04:40 CET); Yahoo NQ=F nedostupné (HTTP 429), původní kotace futures zachována. Nasdaq členství 101 emisí k 20. 11. a globální Top 10 zkontrolovány, 9/9 veřejných kotací Trading Economics zdrojově porovnáno včetně EUR/CZK a USD/CZK. Fed/ECB/ČNB a Q3 GDP USA/EU/ČR y/y porovnány s oficiálními zdroji; VXN 45,25, Treasury US10Y 4,92 % a ChartVault breadth 31,68 % ověřeny pro 20. 11. Zdrojové historické řady pro nový RSI a úplné futures maximum nedostupné; risk model ponechán. GitHub Pages se ověřuje odděleně.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq – cash NDX",
+          "url": "https://indexes.nasdaq.com/index/Overview/NDX"
+        },
+        {
+          "label": "Reuters – pondělní futures",
+          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-22/"
+        },
+        {
+          "label": "WSJ – NQZ26",
+          "url": "https://www.wsj.com/market-data/quotes/futures/NQZ26"
         }
       ]
     }
