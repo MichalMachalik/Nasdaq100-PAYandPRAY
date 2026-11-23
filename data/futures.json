@@ -5,12 +5,12 @@
   "source": "Google Finance – CME E-mini NQZ26 (public delayed quote)",
   "sourceUrl": "https://www.google.com/finance/quote/NQZ26:CME_EMINIS",
   "quoteField": "NQZ26 CME quote",
-  "price": 26586.5,
-  "changePercent": 5.81,
-  "quotedAtUtc": "2026-11-23T14:46:55Z",
-  "quotedAtPrague": "23. 11. 2026 15:46:55 CET",
-  "fetchedAtUtc": "2026-11-23T15:05:27.593Z",
-  "checkedAtUtc": "2026-11-23T15:05:27.593Z",
+  "price": 26922.5,
+  "changePercent": 7.15,
+  "quotedAtUtc": "2026-11-23T15:19:40Z",
+  "quotedAtPrague": "23. 11. 2026 16:19:40 CET",
+  "fetchedAtUtc": "2026-11-23T15:58:42Z",
+  "checkedAtUtc": "2026-11-23T15:58:42Z",
   "quoteStatus": "delayed",
   "delayed": true
 }
