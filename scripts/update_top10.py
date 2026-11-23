@@ -32,7 +32,7 @@ def fetch(url, accept='text/html'):
 
 def parse_date(value):
     text = str(value or '').strip()
-    for form in ('%b %d, %Y', '%B %d, %Y', '%Y-%m-%d', '%m/%d/%Y'):
+    for form in ('%b %d, %Y', '%b %d, %Y %I:%M %p', '%B %d, %Y', '%Y-%m-%d', '%m/%d/%Y'):
         try:
             return datetime.strptime(text, form).date()
         except ValueError:

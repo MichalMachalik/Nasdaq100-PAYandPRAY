@@ -52,6 +52,20 @@ class QuoteTests(unittest.TestCase):
 
 
 class ConstituentsTests(unittest.TestCase):
+    def test_current_nasdaq_response_can_include_a_time(self):
+        now = datetime(2026, 11, 23, 20, 6, tzinfo=timezone.utc)
+        rows = [{"symbol": f"TEST{i}"} for i in range(101)]
+        payload = {"data": {
+            "date": "Nov 23, 2026 3:05 PM",
+            "totalrecords": len(rows),
+            "data": {"rows": rows},
+        }}
+        with patch.object(ranking, "fetch", return_value=json.dumps(payload)):
+            symbols, source_date, refreshed = ranking.current_members(now)
+        self.assertEqual(symbols, {row["symbol"] for row in rows})
+        self.assertEqual(source_date, "2026-11-23")
+        self.assertTrue(refreshed)
+
     def test_only_recent_official_snapshot_can_substitute_for_unavailable_feed(self):
         now = datetime(2026, 4, 14, 16, tzinfo=timezone.utc)
         with tempfile.TemporaryDirectory() as tmp:
