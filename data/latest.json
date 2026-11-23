@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "23. 11. 2026 05:01 CET",
+  "updatedAtPrague": "23. 11. 2026 06:02 CET",
   "marketStatus": "Pondělí, cash mimo seanci; poslední závěr 20. 11. 2026",
   "ndx": {
     "value": 25028.98,
@@ -9,8 +9,8 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "↗ mírné zlepšení proti 23. 11. 2026 04:03 CET",
-    "reason": "Cash NDX −5,61 %, SOX −10,73 %, VXN 45,25 a MA50 breadth 31,7 % (20. 11.); sílící pondělní odraz futures."
+    "trend": "→ beze změny proti 23. 11. 2026 05:01 CET",
+    "reason": "Cash NDX −5,61 %, SOX −10,73 %, VXN 45,25 a MA50 breadth 31,7 % (20. 11.); pondělní odraz futures."
   },
   "driver": "SOX −10,73 % (20. 11.); NVDA −14,01 %, AVGO −12,19 % (20. 11.); MA50 breadth 31,7 %.",
   "news": [
@@ -51,25 +51,6 @@
       "eventKey": "nasdaq100-futures-monday-open-rebound-20261123",
       "ndxRelevant": true,
       "importanceScore": 72
-    },
-    {
-      "title": "AI servery: Dell, HPE, Lenovo a Supermicro navyšují ceny dodávek po podpisu smluv o 25–45 %.",
-      "time": "22. 11. 2026, 06:00 CET",
-      "publishedAtPrague": "22. 11. 2026, 06:00",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_infrastructure",
-      "source": "Financial Times",
-      "url": "https://www.ft.com/content/dd2a6594-6146-4ff1-ac8e-54749c1fc99f",
-      "sourceLinks": [
-        {
-          "label": "Financial Times – ceny AI serverů",
-          "url": "https://www.ft.com/content/dd2a6594-6146-4ff1-ac8e-54749c1fc99f"
-        }
-      ],
-      "eventKey": "ai-server-delivery-price-increases-20261122",
-      "ndxRelevant": true,
-      "importanceScore": 65
     },
     {
       "title": "US: S&P 500 −11,6 % od maxima 6. 10.; Nasdaq Composite −2,7 % YTD; VIX 35,89 (20. 11.).",
@@ -2609,6 +2590,24 @@
         {
           "label": "WSJ – NQZ26",
           "url": "https://www.wsj.com/market-data/quotes/futures/NQZ26"
+        }
+      ]
+    },
+    {
+      "time": "23. 11. 2026 06:02 CET",
+      "summary": "Cash NDX 25 028,98 b., −5,61 % (20. 11.); historické maximum 31 361,37 b. Ověřeny Nasdaq NDX, Reuters aktualizace trhů, WSJ NQZ26 25 830,50 b., +2,80 % (kotace 23. 11. 05:42 CET), Nasdaq členství 101 emisí k 20. 11., globální Top 10, 9/9 stránek Trading Economics včetně EUR/CZK a USD/CZK, sazby Fed/ECB/ČNB, HDP USA/EU/ČR Q3 y/y, Treasury US10Y, VXN a ChartVault MA50 breadth. Ze 4 zpráv vyřazena 1 po 24 h; bez nové kvalifikované události. TE vykazuje rozdílné cenové a popisné snímky; markets.json zachován. Yahoo NQ=F HTTP 429; RSI bez nového validovaného vstupu, oversold a risk model zachovány. GitHub Pages přímo nedostupné.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq – NDX",
+          "url": "https://indexes.nasdaq.com/index/Overview/NDX"
+        },
+        {
+          "label": "WSJ – NQZ26",
+          "url": "https://www.wsj.com/market-data/quotes/futures/NQZ26"
+        },
+        {
+          "label": "Reuters – trhy",
+          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-22/"
         }
       ]
     }
