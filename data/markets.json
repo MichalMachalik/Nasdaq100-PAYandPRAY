@@ -61,12 +61,12 @@
     {
       "id": "Gold",
       "unit": "USD/oz",
-      "price": 3635.99,
-      "changePercent": 2.86,
+      "price": 3635.1,
+      "changePercent": 2.83,
       "quoteDate": "Nov/23",
       "quoteDateISO": "2026-11-23",
       "sourceUrl": "https://tradingeconomics.com/commodity/gold",
-      "fetchedAtUtc": "2026-11-23T21:29:55.762227Z"
+      "fetchedAtUtc": "2026-11-23T22:02:03Z"
     },
     {
       "id": "EUR/USD",
