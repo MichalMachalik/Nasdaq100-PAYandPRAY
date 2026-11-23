@@ -10,7 +10,7 @@
   "sentiment": {
     "label": "Medvědí",
     "trend": "↗ mírné zlepšení proti 23. 11. 2026 08:58 CET",
-    "reason": "Cash NDX −5,61 %, SOX −10,73 %, VXN 45,25 a MA50 breadth 31,7 % (20. 11.); pondělní NQZ26 futures +3,22 %."
+    "reason": "Cash NDX −5,61 %, SOX −10,73 %, VXN 45,25 a MA50 breadth 31,7 % (20. 11.)."
   },
   "driver": "SOX −10,73 % (20. 11.); globální hedgeové fondy za týden do 20. 11. ztratily přes 3 % (JPMorgan, Reuters 23. 11.).",
   "news": [
@@ -2686,7 +2686,7 @@
     },
     {
       "time": "23. 11. 2026 10:03 CET",
-      "summary": "Cash NDX 25 028,98 b., −5,61 % (závěr 20. 11.), historické maximum 31 361,37 b. Reuters 23. 11. 09:24 CET: globální hedgeové fondy za týden ztratily přes 3 %, redukce akciové expozice; 4 platné zprávy za 24 h. NQZ26 25 935,50 b., +3,22 % (WSJ/FactSet, zpožděná kotace 09:50 CET). Nasdaq oficiální index a členství 101 emisí k 20. 11.; CompaniesMarketCap Top 10 ověřena. Trading Economics: zkontrolováno všech 9 instrumentových stránek včetně EUR/CZK a USD/CZK, rozdíly mezi cenovými snímky brání jednotné bezpečné aktualizaci, markets ponechán. Fed/ECB/ČNB, Eurostat, ČSÚ, UST, VXN ověřeny. RSI/risk model: validované updater logy z 23. 11. 09:06/09:17 CET, původní období zachováno; MA50 breadth zdrojový JSON nedostupný, ponechán. Yahoo NQ=F/^NDX HTTP 429; futures historické maximum ponecháno.",
+      "summary": "Cash NDX 25 028,98 b., −5,61 % (závěr 20. 11.), historické maximum 31 361,37 b. Reuters 23. 11. 09:24 CET: globální hedgeové fondy za týden ztratily přes 3 %, redukce akciové expozice; 4 platné zprávy za 24 h. NQZ26 25 935,50 b., +3,22 % (WSJ/FactSet, zpožděná kotace 09:50 CET). Nasdaq oficiální index a členství 101 emisí k 20. 11.; CompaniesMarketCap Top 10 ověřena. Trading Economics: zkontrolováno všech 9 instrumentových stránek včetně EUR/CZK a USD/CZK, rozdíly mezi cenovými snímky brání jednotné bezpečné aktualizaci, markets ponechán. Fed/ECB/ČNB, Eurostat, ČSÚ, UST, VXN ověřeny. RSI/risk model: validované updater logy z 23. 11. 09:06/09:17 CET, původní období zachováno; MA50 breadth 31,7 % (32/101) k 20. 11. zdrojově znovu ověřen. Yahoo NQ=F/^NDX HTTP 429; futures historické maximum ponecháno.",
       "sourceLinks": [
         {
           "label": "Nasdaq – cash NDX",
