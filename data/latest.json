@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "23. 11. 2026 03:05 CET",
+  "updatedAtPrague": "23. 11. 2026 04:03 CET",
   "marketStatus": "Pondělí, cash mimo seanci; poslední závěr 20. 11. 2026",
   "ndx": {
     "value": 25028.98,
@@ -9,30 +9,11 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→ beze změny proti 23. 11. 2026 02:00 CET",
-    "reason": "Cash NDX −5,61 %, SOX −10,73 %, VXN 45,25 a MA50 breadth 31,7 % (20. 11.); pondělní NQ futures výše."
+    "trend": "→ beze změny proti 23. 11. 2026 03:05 CET",
+    "reason": "Cash NDX −5,61 %, SOX −10,73 %, VXN 45,25 a MA50 breadth 31,7 % (20. 11.); pondělní zotavení futures."
   },
   "driver": "SOX −10,73 % (20. 11.); NVDA −14,01 %, AVGO −12,19 % (20. 11.); MA50 breadth 31,7 %.",
   "news": [
-    {
-      "title": "NQ futures: v časné pondělní seanci růst téměř 3 %; S&P 500 futures +2 %.",
-      "time": "23. 11. 2026, 00:44 CET",
-      "publishedAtPrague": "23. 11. 2026, 00:44",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "market_rebound",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-22/",
-      "sourceLinks": [
-        {
-          "label": "Reuters – otevření futures",
-          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-22/"
-        }
-      ],
-      "eventKey": "nasdaq100-futures-monday-open-rebound-20261123",
-      "ndxRelevant": true,
-      "importanceScore": 72
-    },
     {
       "title": "NVDA: americké ministerstvo financí žádá vysvětlení prodejů AI čipů do Číny a odpovědnosti za exportní compliance.",
       "time": "22. 11. 2026, 18:48 CET",
@@ -51,6 +32,25 @@
       "eventKey": "nvda-bessent-china-chip-compliance-inquiry-20261122",
       "ndxRelevant": true,
       "importanceScore": 80
+    },
+    {
+      "title": "NQ futures: pondělní odraz téměř 3 % v časné seanci; S&P 500 futures +2 %.",
+      "time": "23. 11. 2026, 00:44 CET",
+      "publishedAtPrague": "23. 11. 2026, 00:44",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "market_rebound",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-22/",
+      "sourceLinks": [
+        {
+          "label": "Reuters – otevření futures",
+          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-22/"
+        }
+      ],
+      "eventKey": "nasdaq100-futures-monday-open-rebound-20261123",
+      "ndxRelevant": true,
+      "importanceScore": 72
     },
     {
       "title": "AI servery: Dell, HPE, Lenovo a Supermicro navyšují ceny dodávek po podpisu smluv o 25–45 %.",
@@ -2572,6 +2572,24 @@
         },
         {
           "label": "Reuters – futures a AI",
+          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-22/"
+        }
+      ]
+    },
+    {
+      "time": "23. 11. 2026 04:03 CET",
+      "summary": "Cash NDX 25 028,98 b., −5,61 % (závěr 20. 11.), historické maximum 31 361,37 b.; 4 kvalifikované události do 24 h, bez nové události proti 03:05. WSJ NQZ26 25 657,50 b., +2,11 % (kotace 03:40 CET, zpožděná). Ověřeny Nasdaq NDX, Nasdaq členství 101 emisí k 20. 11., celkový CompaniesMarketCap Top 10, Trading Economics 9/9 instrumentů, Fed/ECB/ČNB, GDP USA/EU/ČR, Treasury US10Y, VXN a ChartVault MA50 breadth 31,68 %. Rozdílné snímky TE: markets.json zachován s původními časy. Yahoo NQ=F a RSI historická data nedostupná; oversold i risk model beze změny. Fut. historické maximum pouze 52týdenně potvrzeno; úplná historie neověřena. GitHub Pages přímý přístup nedostupný.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq – cash NDX",
+          "url": "https://indexes.nasdaq.com/index/Overview/NDX"
+        },
+        {
+          "label": "WSJ – NQZ26",
+          "url": "https://www.wsj.com/market-data/quotes/futures/NQZ26"
+        },
+        {
+          "label": "Reuters – pondělní trhy",
           "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-22/"
         }
       ]
