@@ -9,9 +9,9 @@
     "ndxClose": 25028.98,
     "ndxCloseAsOf": "2026-11-20",
     "ndxAth": 31361.37,
-    "vxnPct": 45.25,
-    "vxnAsOf": "2026-11-20",
-    "vxnSource": "https://www.google.com/finance/quote/VXN:INDEXCBOE?hl=en",
+    "vxnPct": 35.68,
+    "vxnAsOf": "2026-11-23",
+    "vxnSource": "https://finance.yahoo.com/quote/%5EVXN/",
     "treasury2yPct": 4.63,
     "treasury10yPct": 4.92,
     "treasury30yPct": 5.31,
@@ -34,8 +34,9 @@
     "citadelNasdaqForwardPE": 19.1,
     "citadelNasdaqForwardPEAsOf": "2026-11-04",
     "citadelSource": "https://www.citadelsecurities.com/news-and-insights/global-market-intelligence/november-the-setup-improves/?series=global-market-intelligence",
-    "vxnCheckedAtUtc": "2026-11-23T08:17:00.502504Z",
-    "treasuryCheckedAtUtc": "2026-11-23T08:17:00.502504Z"
+    "vxnCheckedAtUtc": "2026-11-23T20:35:54.521311Z",
+    "treasuryCheckedAtUtc": "2026-11-23T20:35:54.521311Z",
+    "vxnRetrievedAtUtc": "2026-11-23T20:35:54.521311Z"
   },
   "earnings": [
     {
@@ -140,5 +141,5 @@
     ],
     "stalePolicy": "If VXN update is unavailable or older than 7 calendar days, keep the report's last authored scenario and display a stale-data warning. Never relabel an old VXN figure as current."
   },
-  "checkedAtUtc": "2026-11-23T08:17:00.502504Z"
+  "checkedAtUtc": "2026-11-23T20:35:54.521311Z"
 }
