@@ -1,18 +1,18 @@
 {
-  "updatedAtPrague": "23. 11. 2026 20:55 CET",
-  "marketStatus": "Cash NDX: seance otevřena (23. 11. 2026, 15:30–22:00 CET)",
+  "updatedAtPrague": "23. 11. 2026 22:03 CET",
+  "marketStatus": "Cash NDX: seance ukončena (23. 11. 2026, 22:00 CET); přesný čas poslední hodnoty Nasdaq neuveden.",
   "ndx": {
-    "value": 26648.22,
-    "changePercent": 6.47,
+    "value": 26829.1,
+    "changePercent": 7.19,
     "ath": 31361.37,
-    "asOf": "23. 11. 2026, 20:44:11 CET – cash NDX, intradenní kotace (Google Finance)"
+    "asOf": "23. 11. 2026 – Nasdaq Global Index Watch, poslední zveřejněná hodnota; čas kotace neuveden"
   },
   "sentiment": {
     "label": "Neutrální",
-    "trend": "→ beze změny proti 23. 11. 2026 20:08 CET",
-    "reason": "Cash NDX +6,47 % (20:44); NVDA +31,45 % (20:27); VXN 35,20 (20:08); MA50 breadth 31,7 % (20. 11.)."
+    "trend": "→ beze změny proti 20:55 CET",
+    "reason": "NDX +7,19 %; NVDA +31,39 % (21:55); VXN 35,90 (21:39); MA50 breadth 31,7 % (20. 11.)."
   },
-  "driver": "NVDA: obnovení mandátu CEO Jensena Huanga; akcie +31,45 % (20:27 CET).",
+  "driver": "NVDA: obnovení mandátu CEO Jensena Huanga; akcie +31,39 % (21:55 CET).",
   "news": [
     {
       "title": "AMZN: kupuje technologii Decart Optimization Stack a přebírá tým pro Trainium a AI inference; cena nezveřejněna.",
@@ -220,16 +220,16 @@
   "leaders": [
     {
       "ticker": "NVDA",
-      "changePercent": 31.45,
-      "impact": "vysoký – intradenní 23. 11. 2026, 20:27:44 CET"
+      "changePercent": 31.39,
+      "impact": "vysoký – intradenní 23. 11. 2026, 21:55:29 CET"
     },
     {
       "ticker": "MSFT",
-      "changePercent": 2.07,
-      "impact": "vysoký – intradenní 23. 11. 2026, 20:48:55 CET"
+      "changePercent": 2.53,
+      "impact": "vysoký – intradenní 23. 11. 2026, 21:49:17 CET"
     }
   ],
-  "macro": "US HY OAS | 20. 11.: 3,76 % | 19. 11.: 3,52 % | +24 bb",
+  "macro": "US10Y | 23. 11.: 4,92 % | 20. 11.: 4,92 % | 0 bb",
   "regulation": null,
   "technical": {
     "support": null,
@@ -237,25 +237,43 @@
   },
   "forecast": {
     "athReturnPercent": 18,
-    "athReason": "Nutný růst 17,69 %; cash NDX +6,47 %, NVDA +31,45 %, VXN 35,20; MA50 breadth 31,7 % (20. 11.).",
-    "downside": "−9 až −16 %",
-    "downsideReason": "Modelový 25. percentil 1–3měsíční koncové ceny; vstupní VXN 45,25 (20. 11.), bez nového validovaného přepočtu.",
+    "athReason": "Nutný růst 16,89 %; NDX +7,19 %, VXN 35,90; MA50 breadth 31,7 % (20. 11.).",
+    "downside": "−7 až −13 %",
+    "downsideReason": "Modelový 25. percentil koncové ceny; VXN 35,68 (23. 11., validovaný updater 21:35 CET).",
     "downsideModel": {
       "id": "ndx-evidence-volatility-v1",
       "dataFile": "data/risk-model.json",
-      "vxnAsOf": "2026-11-20",
+      "vxnAsOf": "2026-11-23",
       "cashNdxReferenceAsOf": "2026-11-20",
       "modelQuantile": 0.25,
-      "month1Pct": 9.21,
-      "month3Pct": 16.32,
+      "month1Pct": 7.2,
+      "month3Pct": 12.74,
       "warning": "Modelová 25% hladina koncové ceny při nulovém očekávaném jednoduchém výnosu a konstantní opční volatilitě; nikoli empiricky kalibrovaná pravděpodobnost ani záruka."
     }
   },
   "catalyst": {
-    "event": "New York Fed: John C. Williams, keynote remarks",
-    "timePrague": "23. 11. 2026, 22:00 CET"
+    "event": "HPE Q4 – earnings call",
+    "timePrague": "23. 11. 2026, 23:00 CET"
   },
   "archive": [
+    {
+      "time": "23. 11. 2026 22:03 CET",
+      "summary": "NDX 26 829,10 b. (+7,19 %; Nasdaq 23. 11., čas neuveden). NVDA +31,39 % (21:55). Bez nové samostatné kvalifikované události. US10Y 4,92 % (23. 11.), 0 bb. TE: 9 kontrol, 6 rozporných zdrojových snímků ponecháno. Yahoo a ChartVault přímý přístup nedostupný; poslední validované soubory RSI, breadth a risk-model načteny. GitHub Pages přímo nedostupné.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq NDX",
+          "url": "https://indexes.nasdaq.com/index/Overview/NDX"
+        },
+        {
+          "label": "Reuters – AI odraz",
+          "url": "https://www.reuters.com/legal/transactional/huangs-stunning-nvidia-return-sparks-relief-battered-ai-trade-2026-11-23/"
+        },
+        {
+          "label": "U.S. Treasury",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value=2026&type=daily_treasury_yield_curve"
+        }
+      ]
+    },
     {
       "time": "23. 11. 2026 20:55 CET",
       "summary": "NDX 26 648,22 b. (+6,47 %; 20:44 CET), -15,03 % od historického maxima. NVDA +31,45 %. Bez nové kvalifikované události; US HY OAS 3,76 % (20. 11.), +24 bb. Zdroje Yahoo a ChartVault JSON nedostupné; původní RSI a model zachovány. TE: 9 kontrol, 8 rozdílných snímků ponecháno. Členství TOP 10 potvrzeno, kompletní seznam znovu nearchivován.",
@@ -4145,6 +4163,14 @@
     {
       "name": "FRED – US HY OAS",
       "url": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+    },
+    {
+      "name": "Reuters – AI odraz",
+      "url": "https://www.reuters.com/legal/transactional/huangs-stunning-nvidia-return-sparks-relief-battered-ai-trade-2026-11-23/"
+    },
+    {
+      "name": "HPE IR",
+      "url": "https://www.hpe.com/us/en/newsroom/press-release/2026/11/hpe-to-present-live-audio-webcast-of-fiscal-2026-fourth-quarter-earnings-conference-call.html"
     }
   ]
 }
