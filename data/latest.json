@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "23. 11. 2026 08:04 CET",
+  "updatedAtPrague": "23. 11. 2026 08:58 CET",
   "marketStatus": "Pondělí, cash mimo seanci; poslední závěr 20. 11. 2026",
   "ndx": {
     "value": 25028.98,
@@ -9,7 +9,7 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→ beze změny proti 23. 11. 2026 06:58 CET",
+    "trend": "↗ mírné zlepšení proti 23. 11. 2026 08:04 CET",
     "reason": "Cash NDX −5,61 %, SOX −10,73 %, VXN 45,25 a MA50 breadth 31,7 % (20. 11.)."
   },
   "driver": "SOX −10,73 % (20. 11.); NVDA −14,01 %, AVGO −12,19 % (20. 11.); MA50 breadth 31,7 %.",
@@ -2644,6 +2644,24 @@
         {
           "label": "U.S. Treasury – US10Y",
           "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value=2026&type=daily_treasury_yield_curve"
+        }
+      ]
+    },
+    {
+      "time": "23. 11. 2026 08:58 CET",
+      "summary": "Cash NDX 25 028,98 b., −5,61 % (závěr 20. 11.); historické maximum 31 361,37 b. Reuters: pondělní odraz NDX futures, bez nové kvalifikované události; 3 platné události za 24 h. NQZ26 25 876,00 b., +2,98 % (WSJ, zpožděná kotace 08:17 CET). Zdrojově ověřeny Nasdaq cash NDX, NDX členství k 20. 11., globální Top 10, aktuální stránky Trading Economics 9/9, Fed/ECB/ČNB, HDP EU/USA/ČR, UST a VXN. TE část cen koliduje s textovými údaji, markets.json zůstává. Yahoo 429, zdrojový ChartVault JSON nedostupný; breadth/RSI/risk-model a futures historické maximum bez nového validovaného přepočtu. GitHub Pages nepřímo ověřitelné přes GitHub; přímé potvrzení chybí.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq – cash NDX",
+          "url": "https://indexes.nasdaq.com/index/Overview/NDX"
+        },
+        {
+          "label": "WSJ – futures NQZ26",
+          "url": "https://www.wsj.com/market-data/quotes/futures/NQZ26"
+        },
+        {
+          "label": "Reuters – pondělní futures",
+          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-22/"
         }
       ]
     }
