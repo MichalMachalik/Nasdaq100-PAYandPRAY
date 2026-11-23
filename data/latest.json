@@ -10,7 +10,7 @@
   "sentiment": {
     "label": "Medvědí",
     "trend": "↗ mírné zlepšení proti 23. 11. 2026 14:02 CET",
-    "reason": "Cash NDX −5,61 % (20. 11.), SOX −10,73 % (20. 11.), VXN 45,25, MA50 breadth 31,7 %; futures NQZ26 +3,07 % (14:39 CET)."
+    "reason": "Cash NDX −5,61 % (20. 11.), SOX −10,73 % (20. 11.), VXN 45,25, MA50 breadth 31,7 %."
   },
   "driver": "JPMorgan odhaduje AI CAPEX v roce 2027 téměř 1,4 bil. USD; tento týden výsledky DELL a HPE prověří poptávku po NVDA/AMD serverech.",
   "news": [
@@ -2837,7 +2837,7 @@
     },
     {
       "time": "23. 11. 2026 15:09 CET",
-      "summary": "Cash NDX 25 028,98 b., −5,61 %, historické maximum 31 361,37 b. (závěr 20. 11.). Reuters 14:49 CET: odhad JPMorgan AI CAPEX 2027 téměř 1,4 bil. USD, Dell Q3 očekávaný růst tržeb 82,6 %. WSJ/Tradeweb US10Y 23. 11. 4,944 %, +3,2 bb. NQZ26 25 897,75 b., +3,07 % (Google Finance, kotace 14:39:39 CET). Nasdaq členství 101 emisí k 20. 11., CompaniesMarketCap Top 10 z 14:23 CET; ChartVault MA50 31,7 % z 20. 11. VXN 45,25 z 20. 11. Fed/ECB/ČNB/Eurostat/ČSÚ ověřeny; 9/9 instrumentů Trading Economics načteno, ale konfliktní souběžné cenové snímky, markets ponechán. Yahoo NQ=F a ^NDX 429: futures historické maximum, RSI a risk model bez nového výpočtu. GitHub Pages přímé načtení nedostupné.",
+      "summary": "Cash NDX 25 028,98 b., −5,61 %, historické maximum 31 361,37 b. (závěr 20. 11.). Reuters 14:49 CET: odhad JPMorgan AI CAPEX 2027 téměř 1,4 bil. USD, Dell Q3 očekávaný růst tržeb 82,6 %. WSJ/Tradeweb US10Y 23. 11. 4,944 %, +3,2 bb. Nasdaq členství 101 emisí k 20. 11., CompaniesMarketCap Top 10 z 14:23 CET; ChartVault MA50 31,7 % z 20. 11. VXN 45,25 z 20. 11. Fed/ECB/ČNB/Eurostat/ČSÚ ověřeny; 9/9 instrumentů Trading Economics načteno, ale konfliktní souběžné cenové snímky, markets ponechán. Yahoo NQ=F a ^NDX 429: futures historické maximum, RSI a risk model bez nového výpočtu. GitHub Pages přímé načtení nedostupné.",
       "sourceLinks": [
         {
           "label": "Nasdaq NDX",
