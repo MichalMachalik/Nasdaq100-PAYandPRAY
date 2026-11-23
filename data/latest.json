@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "23. 11. 2026 06:58 CET",
+  "updatedAtPrague": "23. 11. 2026 08:04 CET",
   "marketStatus": "Pondělí, cash mimo seanci; poslední závěr 20. 11. 2026",
   "ndx": {
     "value": 25028.98,
@@ -9,8 +9,8 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "↗ mírné zlepšení proti 23. 11. 2026 06:02 CET",
-    "reason": "Cash NDX −5,61 %, SOX −10,73 %, VXN 45,25 a MA50 breadth 31,7 % (20. 11.); pondělní futures odraz mírně zesílil."
+    "trend": "→ beze změny proti 23. 11. 2026 06:58 CET",
+    "reason": "Cash NDX −5,61 %, SOX −10,73 %, VXN 45,25 a MA50 breadth 31,7 % (20. 11.)."
   },
   "driver": "SOX −10,73 % (20. 11.); NVDA −14,01 %, AVGO −12,19 % (20. 11.); MA50 breadth 31,7 %.",
   "news": [
@@ -2626,6 +2626,24 @@
         {
           "label": "Reuters – pondělní futures",
           "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-22/"
+        }
+      ]
+    },
+    {
+      "time": "23. 11. 2026 08:04 CET",
+      "summary": "Cash NDX 25 028,98 b., −5,61 % (závěr 20. 11.); historické maximum 31 361,37 b. Oficiální Nasdaq cash i 101 emisí k 20. 11., globální Top 10 a WSJ NQZ26 25 848,75 b., +2,87 % (zpožděná kotace 07:45 CET) zdrojově ověřeny. Nové kvalifikované zprávy od 06:58 nezjištěny; 3 platné události v 24h okně. U.S. Treasury US10Y 4,92 % (20. 11.), VXN 45,25; sazby Fed/ECB/ČNB a HDP Q3 y/y prověřeny. Trading Economics 9/9 instrumentových stránek včetně EUR/CZK a USD/CZK: rozpory aktuální kotace a textového snímku, markets.json ponechán. ChartVault feed nedostupný, Yahoo NDX/NQ=F HTTP 429; breadth/oversold/risk-model/futures-ath beze změny a bez přeznačení starých časů. GitHub Pages nepřímo ověřitelné jen přes repozitář.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq – NDX",
+          "url": "https://indexes.nasdaq.com/index/Overview/NDX"
+        },
+        {
+          "label": "WSJ – NQZ26",
+          "url": "https://www.wsj.com/market-data/quotes/futures/NQZ26"
+        },
+        {
+          "label": "U.S. Treasury – US10Y",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value=2026&type=daily_treasury_yield_curve"
         }
       ]
     }
