@@ -1,56 +1,98 @@
 {
-  "updatedAtPrague": "23. 11. 2026 15:09 CET",
-  "marketStatus": "Pondělí, cash mimo seanci; poslední závěr 20. 11. 2026",
+  "updatedAtPrague": "23. 11. 2026 16:04 CET",
+  "marketStatus": "Cash NDX: seance otevřena (23. 11. 2026, 15:30–22:00 CET)",
   "ndx": {
-    "value": 25028.98,
-    "changePercent": -5.61,
+    "value": 26513.99,
+    "changePercent": 5.93,
     "ath": 31361.37,
-    "asOf": "20. 11. 2026, 22:00 CET – cash NDX, závěr (Nasdaq)"
+    "asOf": "23. 11. 2026, 15:49:10 CET – cash NDX, intradenní kotace (Google Finance/Nasdaq)"
   },
   "sentiment": {
-    "label": "Medvědí",
-    "trend": "↗ mírné zlepšení proti 23. 11. 2026 14:02 CET",
-    "reason": "Cash NDX −5,61 % (20. 11.), SOX −10,73 % (20. 11.), VXN 45,25, MA50 breadth 31,7 %."
+    "label": "Neutrální",
+    "trend": "↗ zlepšení proti 23. 11. 2026 15:09 CET",
+    "reason": "Cash NDX +5,93 % (15:49 CET), NVDA +29,37 % (15:52 CET), VXN 28,65 (15:31 CET); MA50 breadth 31,7 % (20. 11.)."
   },
-  "driver": "JPMorgan odhaduje AI CAPEX v roce 2027 téměř 1,4 bil. USD; tento týden výsledky DELL a HPE prověří poptávku po NVDA/AMD serverech.",
+  "driver": "NVDA: návrat Jensena Huanga do funkce CEO; akcie +29,37 % v 15:52 CET, cash NDX +5,93 % v 15:49 CET.",
   "news": [
     {
-      "title": "NVDA: americké ministerstvo financí žádá vysvětlení prodejů AI čipů do Číny a odpovědnosti za exportní compliance.",
-      "time": "22. 11. 2026, 18:48 CET",
-      "publishedAtPrague": "22. 11. 2026, 18:48",
+      "title": "US flash PMI listopad | Composite 54,6 vs. 55,9 (−1,3 b.); služby 54,7 vs. 56,1 (−1,4 b.); výroba 54,5 vs. 54,9 (−0,4 b.).",
+      "time": "23. 11. 2026, 15:50 CET",
+      "publishedAtPrague": "23. 11. 2026, 15:50",
       "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "chip_export_compliance",
+      "kind": "new",
+      "category": "macro",
       "source": "Reuters",
-      "url": "https://www.reuters.com/world/china/us-seeks-answers-nvidias-sale-chips-china-bessent-says-2026-11-22/",
+      "url": "https://www.reuters.com/world/us/us-business-activity-growth-eases-further-november-survey-shows-2026-11-23/",
       "sourceLinks": [
         {
-          "label": "Reuters – NVDA China chip compliance",
-          "url": "https://www.reuters.com/world/china/us-seeks-answers-nvidias-sale-chips-china-bessent-says-2026-11-22/"
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/us/us-business-activity-growth-eases-further-november-survey-shows-2026-11-23/"
         }
       ],
-      "eventKey": "nvda-bessent-china-chip-compliance-inquiry-20261122",
+      "eventKey": "us-flash-pmi-nov-2026-20261123",
       "ndxRelevant": true,
-      "importanceScore": 80
+      "importanceScore": 62
     },
     {
-      "title": "NQ futures: pondělní odraz téměř 3 % v časné seanci; S&P 500 futures +2 %.",
-      "time": "23. 11. 2026, 00:44 CET",
-      "publishedAtPrague": "23. 11. 2026, 00:44",
+      "title": "NVDA: Jensen Huang znovu CEO s okamžitou účinností; akcie +29,37 % (15:52 CET).",
+      "time": "23. 11. 2026, 14:59 CET",
+      "publishedAtPrague": "23. 11. 2026, 14:59",
       "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "market_rebound",
+      "kind": "new",
+      "category": "earnings_corporate",
       "source": "Reuters",
-      "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-22/",
+      "url": "https://www.reuters.com/technology/nvidia-reinstates-jensen-huang-ceo-2026-11-23/",
       "sourceLinks": [
         {
-          "label": "Reuters – otevření futures",
-          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-22/"
+          "label": "Reuters",
+          "url": "https://www.reuters.com/technology/nvidia-reinstates-jensen-huang-ceo-2026-11-23/"
+        },
+        {
+          "label": "NVIDIA IR",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director"
         }
       ],
-      "eventKey": "nasdaq100-futures-monday-open-rebound-20261123",
+      "eventKey": "nvda-jensen-huang-reinstated-ceo-20261123",
       "ndxRelevant": true,
-      "importanceScore": 72
+      "importanceScore": 97
+    },
+    {
+      "title": "Odhad JPMorgan: AI CAPEX v roce 2027 téměř 1,4 bil. USD; Dell Q3 očekávaný růst tržeb 82,6 %.",
+      "time": "23. 11. 2026 14:49 CET",
+      "publishedAtPrague": "23. 11. 2026, 14:49",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "ai_infrastructure",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/dell-hpe-results-put-ai-demand-test-after-tech-rout-2026-11-23/",
+      "sourceLinks": [
+        {
+          "label": "Reuters – AI CAPEX / DELL / HPE",
+          "url": "https://www.reuters.com/business/dell-hpe-results-put-ai-demand-test-after-tech-rout-2026-11-23/"
+        }
+      ],
+      "eventKey": "jpmorgan-ai-capex-2027-dell-hpe-results-preview-20261123",
+      "ndxRelevant": true,
+      "importanceScore": 62
+    },
+    {
+      "title": "ARM: René Haas prodloužil mandát CEO do roku 2033; NVDA jej oslovila při hledání nástupce Jensena Huanga.",
+      "time": "23. 11. 2026, 13:10 CET",
+      "publishedAtPrague": "23. 11. 2026, 13:10",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "semiconductor_leadership",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/arm-holdings-haas-extends-contract-lead-chip-firm-through-2033-2026-11-23/",
+      "sourceLinks": [
+        {
+          "label": "Reuters – ARM / NVDA",
+          "url": "https://www.reuters.com/business/arm-holdings-haas-extends-contract-lead-chip-firm-through-2033-2026-11-23/"
+        }
+      ],
+      "eventKey": "arm-haas-ceo-contract-through-2033-20261123",
+      "ndxRelevant": true,
+      "importanceScore": 64
     },
     {
       "title": "CRWD kupuje ZS za 43,9 mld. USD; Q4 výhled tržeb 1,638–1,644 vs. kons. 1,620 mld. USD (beat 1,3 %). ZS Q1: tržby 949,3 vs. kons. 938 mil. USD (beat 1,2 %), upr. EPS 1,23 vs. 1,16 USD (beat 6,0 %).",
@@ -95,44 +137,6 @@
       "importanceScore": 68
     },
     {
-      "title": "ARM: René Haas prodloužil mandát CEO do roku 2033; NVDA jej oslovila při hledání nástupce Jensena Huanga.",
-      "time": "23. 11. 2026, 13:10 CET",
-      "publishedAtPrague": "23. 11. 2026, 13:10",
-      "publicationTimeVerified": true,
-      "kind": "new",
-      "category": "semiconductor_leadership",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/arm-holdings-haas-extends-contract-lead-chip-firm-through-2033-2026-11-23/",
-      "sourceLinks": [
-        {
-          "label": "Reuters – ARM / NVDA",
-          "url": "https://www.reuters.com/business/arm-holdings-haas-extends-contract-lead-chip-firm-through-2033-2026-11-23/"
-        }
-      ],
-      "eventKey": "arm-haas-ceo-contract-through-2033-20261123",
-      "ndxRelevant": true,
-      "importanceScore": 64
-    },
-    {
-      "title": "Odhad JPMorgan: AI CAPEX v roce 2027 téměř 1,4 bil. USD; Dell Q3 očekávaný růst tržeb 82,6 %.",
-      "time": "23. 11. 2026 14:49 CET",
-      "publishedAtPrague": "23. 11. 2026, 14:49",
-      "publicationTimeVerified": true,
-      "kind": "new",
-      "category": "ai_infrastructure",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/dell-hpe-results-put-ai-demand-test-after-tech-rout-2026-11-23/",
-      "sourceLinks": [
-        {
-          "label": "Reuters – AI CAPEX / DELL / HPE",
-          "url": "https://www.reuters.com/business/dell-hpe-results-put-ai-demand-test-after-tech-rout-2026-11-23/"
-        }
-      ],
-      "eventKey": "jpmorgan-ai-capex-2027-dell-hpe-results-preview-20261123",
-      "ndxRelevant": true,
-      "importanceScore": 62
-    },
-    {
       "title": "Tchaj-wan: od 24. 11. minimální margin ratio 120 % z 130 %; TSMC 23. 11. +1,5 %.",
       "time": "23. 11. 2026, 09:19 CET",
       "publishedAtPrague": "23. 11. 2026, 09:19",
@@ -150,31 +154,69 @@
       "eventKey": "taiwan-margin-requirement-easing-20261123",
       "ndxRelevant": true,
       "importanceScore": 58
+    },
+    {
+      "title": "NQ futures: pondělní odraz téměř 3 % v časné seanci; S&P 500 futures +2 %.",
+      "time": "23. 11. 2026, 00:44 CET",
+      "publishedAtPrague": "23. 11. 2026, 00:44",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "market_rebound",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-22/",
+      "sourceLinks": [
+        {
+          "label": "Reuters – otevření futures",
+          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-22/"
+        }
+      ],
+      "eventKey": "nasdaq100-futures-monday-open-rebound-20261123",
+      "ndxRelevant": true,
+      "importanceScore": 72
+    },
+    {
+      "title": "NVDA: americké ministerstvo financí žádá vysvětlení prodejů AI čipů do Číny a odpovědnosti za exportní compliance.",
+      "time": "22. 11. 2026, 18:48 CET",
+      "publishedAtPrague": "22. 11. 2026, 18:48",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "chip_export_compliance",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/china/us-seeks-answers-nvidias-sale-chips-china-bessent-says-2026-11-22/",
+      "sourceLinks": [
+        {
+          "label": "Reuters – NVDA China chip compliance",
+          "url": "https://www.reuters.com/world/china/us-seeks-answers-nvidias-sale-chips-china-bessent-says-2026-11-22/"
+        }
+      ],
+      "eventKey": "nvda-bessent-china-chip-compliance-inquiry-20261122",
+      "ndxRelevant": true,
+      "importanceScore": 80
     }
   ],
   "leaders": [
     {
       "ticker": "NVDA",
-      "changePercent": -14.01,
-      "impact": "vysoký – cash závěr 20. 11."
+      "changePercent": 29.37,
+      "impact": "vysoký – intradenní 23. 11. 2026, 15:52:41 CET"
     },
     {
-      "ticker": "AVGO",
-      "changePercent": -12.19,
-      "impact": "vysoký – cash závěr 20. 11."
+      "ticker": "MSFT",
+      "changePercent": 4.29,
+      "impact": "vysoký – intradenní 23. 11. 2026, 16:02:23 CET"
     }
   ],
-  "macro": "US10Y | 23. 11.: 4,944 % | 20. 11.: 4,912 % | +3,2 bb",
+  "macro": "US flash Composite PMI | listopad: 54,6 | říjen: 55,9 | −1,3 b.",
   "regulation": null,
   "technical": {
     "support": null,
     "resistance": null
   },
   "forecast": {
-    "athReturnPercent": 1,
-    "athReason": "Nutný růst 25,30 %; SOX −10,73 %, MA50 breadth 31,7 %.",
+    "athReturnPercent": 15,
+    "athReason": "Nutný růst 18,28 %; NVDA +29,37 %, cash NDX +5,93 %, VXN 28,65; MA50 breadth 31,7 % k 20. 11.",
     "downside": "−9 až −16 %",
-    "downsideReason": "VXN 45,25 (20. 11.); modelový 25. percentil koncové ceny za 1–3 měsíce.",
+    "downsideReason": "Modelový 25. percentil 1–3měsíční koncové ceny; vstupní VXN 45,25 (20. 11.), bez nového validovaného přepočtu.",
     "downsideModel": {
       "id": "ndx-evidence-volatility-v1",
       "dataFile": "data/risk-model.json",
@@ -187,8 +229,8 @@
     }
   },
   "catalyst": {
-    "event": "S&P Global Flash US PMI (listopad)",
-    "timePrague": "23. 11. 2026, 15:45 CET"
+    "event": "New York Fed: John C. Williams, keynote remarks",
+    "timePrague": "23. 11. 2026, 22:00 CET"
   },
   "archive": [
     {
@@ -2852,6 +2894,24 @@
           "url": "https://www.wsj.com/finance/investing/u-s-european-bond-yields-rise-reversing-last-weeks-sharp-falls-9afadf09"
         }
       ]
+    },
+    {
+      "time": "23. 11. 2026 16:04 CET",
+      "summary": "Cash NDX 26 513,99 b., +5,93 % (23. 11., 15:49 CET), −15,46 % od historického maxima 31 361,37 b. NVDA: Jensen Huang znovu CEO (Reuters 14:59 CET), NVDA +29,37 % (15:52 CET). Flash US Composite PMI 54,6 vs. 55,9 (Reuters 15:50 CET). NQZ26 a Top 10 ověřovány samostatně; 9/9 trhů Trading Economics porovnáno, rozporné časované snímky ponechány. VXN 28,65 (15:31 CET); breadth 31,7 % z 20. 11.; RSI a risk-model bez nového validovaného výpočtu, Yahoo chart feed nedostupný.",
+      "sourceLinks": [
+        {
+          "label": "Google Finance – NDX",
+          "url": "https://www.google.com/finance/quote/NDX:INDEXNASDAQ"
+        },
+        {
+          "label": "Reuters – NVDA",
+          "url": "https://www.reuters.com/technology/nvidia-reinstates-jensen-huang-ceo-2026-11-23/"
+        },
+        {
+          "label": "Reuters – PMI",
+          "url": "https://www.reuters.com/world/us/us-business-activity-growth-eases-further-november-survey-shows-2026-11-23/"
+        }
+      ]
     }
   ],
   "history": [
@@ -3166,6 +3226,10 @@
     {
       "time": "21. 11. 2026 09:45 CET",
       "ndx": 25028.98
+    },
+    {
+      "time": "23. 11. 2026 16:04 CET",
+      "ndx": 26513.99
     }
   ],
   "sources": [
@@ -3912,6 +3976,18 @@
     {
       "name": "WSJ – US10Y",
       "url": "https://www.wsj.com/finance/investing/u-s-european-bond-yields-rise-reversing-last-weeks-sharp-falls-9afadf09"
+    },
+    {
+      "name": "NVIDIA IR – CEO",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director"
+    },
+    {
+      "name": "Reuters – US PMI",
+      "url": "https://www.reuters.com/world/us/us-business-activity-growth-eases-further-november-survey-shows-2026-11-23/"
+    },
+    {
+      "name": "New York Fed – Schedule",
+      "url": "https://www.newyorkfed.org/press"
     }
   ]
 }
