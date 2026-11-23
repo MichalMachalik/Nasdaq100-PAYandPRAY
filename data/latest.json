@@ -1,6 +1,6 @@
 {
-  "updatedAtPrague": "23. 11. 2026 01:00 CET",
-  "marketStatus": "Pondělí, mimo cash seanci; poslední závěr 20. 11. 2026",
+  "updatedAtPrague": "23. 11. 2026 01:01 CET",
+  "marketStatus": "Pondělí, cash mimo seanci; poslední závěr 20. 11. 2026",
   "ndx": {
     "value": 25028.98,
     "changePercent": -5.61,
@@ -9,11 +9,30 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→ beze změny proti 22. 11. 23:58 CET",
-    "reason": "NDX −5,61 %, SOX −10,73 %, NVDA −14,01 %; MA50 breadth 32/101 (31,7 %), 20. 11."
+    "trend": "↗ mírné zlepšení proti 22. 11. 23:58 CET",
+    "reason": "Cash NDX −5,61 %, SOX −10,73 % a MA50 breadth 31,7 % (20. 11.); pondělní futures otevírají výše."
   },
   "driver": "SOX −10,73 % (20. 11.), NVDA −14,01 %, AVGO −12,19 %; MA50 breadth 31,7 % (20. 11.).",
   "news": [
+    {
+      "title": "NQ futures: po otevření pondělní seance přibližně +2 %; S&P 500 futures přibližně +1 %.",
+      "time": "23. 11. 2026, 00:44 CET",
+      "publishedAtPrague": "23. 11. 2026, 00:44",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "market_rebound",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-22/",
+      "sourceLinks": [
+        {
+          "label": "Reuters – otevření futures",
+          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-22/"
+        }
+      ],
+      "eventKey": "nasdaq100-futures-monday-open-rebound-20261123",
+      "ndxRelevant": true,
+      "importanceScore": 72
+    },
     {
       "title": "NVDA: americké ministerstvo financí žádá vysvětlení prodejů AI čipů do Číny a odpovědnosti za exportní compliance.",
       "time": "22. 11. 2026, 18:48 CET",
@@ -2504,20 +2523,20 @@
       ]
     },
     {
-      "time": "23. 11. 2026 01:00 CET",
-      "summary": "Cash NDX 25 028,98 b., −5,61 % (závěr 20. 11.); historické maximum 31 361,37 b. Bez nové kvalifikované zprávy; 3 události s ověřenými časy v 24h okně. Nasdaq NDX, Reuters NVDA/Čína, VXN 45,25, sazby ECB/ČNB a HDP Eurostat/ČSÚ zdrojově porovnány. Yahoo NQ=F 429, feed ChartVault nedostupný; futures, breadth, RSI a risk model nezměněny. Nasdaq seznam členů vrátil chybu vendora; Top 10 a členství zachovány. Trading Economics 9/9 stránek načteno; cenové snímky v rozporu s posledními uloženými kotacemi, markets.json nezměněn. GitHub Pages přímé načtení nedostupné.",
+      "time": "23. 11. 2026 01:01 CET",
+      "summary": "Cash NDX 25 028,98 b., −5,61 % (závěr 20. 11.), historické maximum 31 361,37 b. Nová Reuters 23. 11. 00:44 CET: NQ futures přibližně +2 % po otevření, S&P futures přibližně +1 %; 4 platné události za 24 h. Nasdaq NDX, Reuters, VXN, ECB/ČNB a HDP y/y Eurostat/ČSÚ ověřeny. Nasdaq membership API vrátilo chybu vendora; Top 10 zachován. Trading Economics: 9/9 stránek načteno, zobrazované ceny/obchodní data se místy rozcházejí s ověřeným 20. 11., markets.json zachován. Yahoo NQ=F 429; futures a RSI bez nové validované kotace; breadth feed nedostupný, risk model nezměněn. GitHub Pages přímo nedostupné.",
       "sourceLinks": [
         {
           "label": "Nasdaq – cash NDX",
           "url": "https://indexes.nasdaq.com/Index/Overview/NDX"
         },
         {
-          "label": "Reuters – NVDA/Čína",
-          "url": "https://www.reuters.com/world/china/us-seeks-answers-nvidias-sale-chips-china-bessent-says-2026-11-22/"
+          "label": "Reuters – futures",
+          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-22/"
         },
         {
-          "label": "Eurostat – HDP Q3",
-          "url": "https://ec.europa.eu/eurostat/en/web/products-euro-indicators/w/2-13112026-ap"
+          "label": "Reuters – NVDA/Čína",
+          "url": "https://www.reuters.com/world/china/us-seeks-answers-nvidias-sale-chips-china-bessent-says-2026-11-22/"
         }
       ]
     }
@@ -3544,6 +3563,10 @@
     {
       "name": "Financial Times – AI server price increases",
       "url": "https://www.ft.com/content/dd2a6594-6146-4ff1-ac8e-54749c1fc99f"
+    },
+    {
+      "name": "Reuters – futures Asia 23. 11. 2026",
+      "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-22/"
     }
   ]
 }
