@@ -1,61 +1,19 @@
 {
-  "updatedAtPrague": "23. 11. 2026 22:03 CET",
-  "marketStatus": "Cash NDX: seance ukončena (23. 11. 2026, 22:00 CET); přesný čas poslední hodnoty Nasdaq neuveden.",
+  "updatedAtPrague": "23. 11. 2026 23:02 CET",
+  "marketStatus": "Cash NDX: seance ukončena (23. 11. 2026); poslední zveřejněný závěr.",
   "ndx": {
-    "value": 26829.1,
-    "changePercent": 7.19,
+    "value": 26746.1,
+    "changePercent": 6.86,
     "ath": 31361.37,
-    "asOf": "23. 11. 2026 – Nasdaq Global Index Watch, poslední zveřejněná hodnota; čas kotace neuveden"
+    "asOf": "23. 11. 2026 – závěr Nasdaq; Google Finance 22:50:28 CET (čas zveřejněné hodnoty)"
   },
   "sentiment": {
     "label": "Neutrální",
-    "trend": "→ beze změny proti 20:55 CET",
-    "reason": "NDX +7,19 %; NVDA +31,39 % (21:55); VXN 35,90 (21:39); MA50 breadth 31,7 % (20. 11.)."
+    "trend": "↘ mírné zhoršení proti 22:03 CET",
+    "reason": "NDX +6,86 %; NVDA +31,48 %, MSFT +1,65 %; VXN 36,31 (22:15 CET); Fed Williams: inflace 3,5 % na konci 2026. MA50 breadth 31,7 % (20. 11.)."
   },
-  "driver": "NVDA: obnovení mandátu CEO Jensena Huanga; akcie +31,39 % (21:55 CET).",
+  "driver": "NVDA: obnovení mandátu CEO Jensena Huanga; akcie +31,48 %, SOX +14,03 % (23. 11.).",
   "news": [
-    {
-      "title": "AMZN: kupuje technologii Decart Optimization Stack a přebírá tým pro Trainium a AI inference; cena nezveřejněna.",
-      "time": "23. 11. 2026 16:33 CET",
-      "publishedAtPrague": "23. 11. 2026, 16:33",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_infrastructure",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/retail-consumer/amazon-buy-decarts-ai-chip-optimization-tech-latest-ai-talent-grab-2026-11-23/",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/business/retail-consumer/amazon-buy-decarts-ai-chip-optimization-tech-latest-ai-talent-grab-2026-11-23/"
-        },
-        {
-          "label": "Amazon",
-          "url": "https://www.aboutamazon.com/news/company-news/amazon-decart-ai-optimization"
-        }
-      ],
-      "eventKey": "amazon-decart-optimization-stack-trainium-20261123",
-      "ndxRelevant": true,
-      "importanceScore": 69
-    },
-    {
-      "title": "US flash PMI listopad | Composite 54,6 vs. 55,9 (−1,3 b.); služby 54,7 vs. 56,1 (−1,4 b.); výroba 54,5 vs. 54,9 (−0,4 b.).",
-      "time": "23. 11. 2026, 15:50 CET",
-      "publishedAtPrague": "23. 11. 2026, 15:50",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "macro",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/us/us-business-activity-growth-eases-further-november-survey-shows-2026-11-23/",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/world/us/us-business-activity-growth-eases-further-november-survey-shows-2026-11-23/"
-        }
-      ],
-      "eventKey": "us-flash-pmi-nov-2026-20261123",
-      "ndxRelevant": true,
-      "importanceScore": 62
-    },
     {
       "title": "NVDA: Jensen Huang znovu CEO s okamžitou účinností.",
       "time": "23. 11. 2026, 14:59 CET",
@@ -80,61 +38,69 @@
       "importanceScore": 97
     },
     {
-      "title": "Odhad JPMorgan: AI CAPEX v roce 2027 téměř 1,4 bil. USD; Dell Q3 očekávaný růst tržeb 82,6 %.",
-      "time": "23. 11. 2026 14:49 CET",
-      "publishedAtPrague": "23. 11. 2026, 14:49",
+      "title": "Fed Williams: očekává inflaci 3,5 % na konci 2026; návrat k 2% cíli v roce 2028. Přetrvávají proinflační rizika.",
+      "time": "23. 11. 2026 22:06 CET",
+      "publishedAtPrague": "23. 11. 2026, 22:06",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "macro",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/fed-has-work-do-lower-inflation-williams-says-2026-11-23/",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/fed-has-work-do-lower-inflation-williams-says-2026-11-23/"
+        }
+      ],
+      "eventKey": "fed-williams-bronx-inflation-20261123",
+      "ndxRelevant": true,
+      "importanceScore": 82
+    },
+    {
+      "title": "HPE Q4: tržby 14,55 mld. USD vs. kons. 14,43 (beat 0,8 %). Upr. EPS 1,43 USD vs. kons. 1,28 (beat 11,7 %). Cloud & AI 11,3 mld. USD, +68,6 % y/y. Q1 výhled tržeb 14,0–14,6 mld. USD, upr. EPS 1,30–1,40 USD.",
+      "time": "23. 11. 2026 22:25 CET",
+      "publishedAtPrague": "23. 11. 2026, 22:25",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "ai_infrastructure",
+      "source": "Benzinga",
+      "url": "https://www.benzinga.com/markets/earnings/26/11/63564030/hewlett-packard-enterprise-q4-results-are-in-heres-what-to-know",
+      "sourceLinks": [
+        {
+          "label": "Benzinga",
+          "url": "https://www.benzinga.com/markets/earnings/26/11/63564030/hewlett-packard-enterprise-q4-results-are-in-heres-what-to-know"
+        },
+        {
+          "label": "HPE / Business Wire",
+          "url": "https://www.businesswire.com/news/home/20261123129850/en/HPE-reports-fiscal-2026-fourth-quarter-results"
+        }
+      ],
+      "eventKey": "hpe-fy2026-q4-earnings-20261123",
+      "ndxRelevant": true,
+      "importanceScore": 76
+    },
+    {
+      "title": "AMZN: kupuje technologii Decart Optimization Stack a přebírá tým pro Trainium a AI inference; cena nezveřejněna.",
+      "time": "23. 11. 2026 16:33 CET",
+      "publishedAtPrague": "23. 11. 2026, 16:33",
       "publicationTimeVerified": true,
       "kind": "continuing",
       "category": "ai_infrastructure",
       "source": "Reuters",
-      "url": "https://www.reuters.com/business/dell-hpe-results-put-ai-demand-test-after-tech-rout-2026-11-23/",
+      "url": "https://www.reuters.com/business/retail-consumer/amazon-buy-decarts-ai-chip-optimization-tech-latest-ai-talent-grab-2026-11-23/",
       "sourceLinks": [
         {
-          "label": "Reuters – AI CAPEX / DELL / HPE",
-          "url": "https://www.reuters.com/business/dell-hpe-results-put-ai-demand-test-after-tech-rout-2026-11-23/"
-        }
-      ],
-      "eventKey": "jpmorgan-ai-capex-2027-dell-hpe-results-preview-20261123",
-      "ndxRelevant": true,
-      "importanceScore": 62
-    },
-    {
-      "title": "Morgan Stanley: odhad růstu EPS 2027 +14 % vs. kons. +17 %; tržní ocenění odpovídá −6 %. Preferuje hyperscalery.",
-      "time": "23. 11. 2026, 14:28 CET",
-      "publishedAtPrague": "23. 11. 2026, 14:28",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "institutional_outlook",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/morgan-stanley-turns-most-bullish-stocks-since-april-after-last-weeks-selloff-2026-11-23/",
-      "sourceLinks": [
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/retail-consumer/amazon-buy-decarts-ai-chip-optimization-tech-latest-ai-talent-grab-2026-11-23/"
+        },
         {
-          "label": "Reuters – Morgan Stanley",
-          "url": "https://www.reuters.com/business/morgan-stanley-turns-most-bullish-stocks-since-april-after-last-weeks-selloff-2026-11-23/"
+          "label": "Amazon",
+          "url": "https://www.aboutamazon.com/news/company-news/amazon-decart-ai-optimization"
         }
       ],
-      "eventKey": "morgan-stanley-tactical-bullish-2027-eps-20261123",
+      "eventKey": "amazon-decart-optimization-stack-trainium-20261123",
       "ndxRelevant": true,
-      "importanceScore": 59
-    },
-    {
-      "title": "ARM: René Haas prodloužil mandát CEO do roku 2033; NVDA jej oslovila při hledání nástupce Jensena Huanga.",
-      "time": "23. 11. 2026, 13:10 CET",
-      "publishedAtPrague": "23. 11. 2026, 13:10",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "semiconductor_leadership",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/arm-holdings-haas-extends-contract-lead-chip-firm-through-2033-2026-11-23/",
-      "sourceLinks": [
-        {
-          "label": "Reuters – ARM / NVDA",
-          "url": "https://www.reuters.com/business/arm-holdings-haas-extends-contract-lead-chip-firm-through-2033-2026-11-23/"
-        }
-      ],
-      "eventKey": "arm-haas-ceo-contract-through-2033-20261123",
-      "ndxRelevant": true,
-      "importanceScore": 64
+      "importanceScore": 69
     },
     {
       "title": "CRWD kupuje ZS za 43,9 mld. USD; Q4 výhled tržeb 1,638–1,644 vs. kons. 1,620 mld. USD (beat 1,3 %). ZS Q1: tržby 949,3 vs. kons. 938 mil. USD (beat 1,2 %), upr. EPS 1,23 vs. 1,16 USD (beat 6,0 %).",
@@ -160,6 +126,63 @@
       "importanceScore": 69
     },
     {
+      "title": "US flash PMI listopad | Composite 54,6 vs. 55,9 (−1,3 b.); služby 54,7 vs. 56,1 (−1,4 b.); výroba 54,5 vs. 54,9 (−0,4 b.).",
+      "time": "23. 11. 2026, 15:50 CET",
+      "publishedAtPrague": "23. 11. 2026, 15:50",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "macro",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/us/us-business-activity-growth-eases-further-november-survey-shows-2026-11-23/",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/us/us-business-activity-growth-eases-further-november-survey-shows-2026-11-23/"
+        }
+      ],
+      "eventKey": "us-flash-pmi-nov-2026-20261123",
+      "ndxRelevant": true,
+      "importanceScore": 62
+    },
+    {
+      "title": "Odhad JPMorgan: AI CAPEX v roce 2027 téměř 1,4 bil. USD; Dell Q3 očekávaný růst tržeb 82,6 %.",
+      "time": "23. 11. 2026 14:49 CET",
+      "publishedAtPrague": "23. 11. 2026, 14:49",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "ai_infrastructure",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/dell-hpe-results-put-ai-demand-test-after-tech-rout-2026-11-23/",
+      "sourceLinks": [
+        {
+          "label": "Reuters – AI CAPEX / DELL / HPE",
+          "url": "https://www.reuters.com/business/dell-hpe-results-put-ai-demand-test-after-tech-rout-2026-11-23/"
+        }
+      ],
+      "eventKey": "jpmorgan-ai-capex-2027-dell-hpe-results-preview-20261123",
+      "ndxRelevant": true,
+      "importanceScore": 62
+    },
+    {
+      "title": "ARM: René Haas prodloužil mandát CEO do roku 2033; NVDA jej oslovila při hledání nástupce Jensena Huanga.",
+      "time": "23. 11. 2026, 13:10 CET",
+      "publishedAtPrague": "23. 11. 2026, 13:10",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "semiconductor_leadership",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/arm-holdings-haas-extends-contract-lead-chip-firm-through-2033-2026-11-23/",
+      "sourceLinks": [
+        {
+          "label": "Reuters – ARM / NVDA",
+          "url": "https://www.reuters.com/business/arm-holdings-haas-extends-contract-lead-chip-firm-through-2033-2026-11-23/"
+        }
+      ],
+      "eventKey": "arm-haas-ceo-contract-through-2033-20261123",
+      "ndxRelevant": true,
+      "importanceScore": 64
+    },
+    {
       "title": "Hedgeové fondy: týdenní ztráta přes 3 % do 20. 11.; Goldman Sachs eviduje pokles čisté akciové expozice na úrovně dubna 2025.",
       "time": "23. 11. 2026, 09:24 CET",
       "publishedAtPrague": "23. 11. 2026, 09:24",
@@ -179,23 +202,23 @@
       "importanceScore": 68
     },
     {
-      "title": "Tchaj-wan: od 24. 11. minimální margin ratio 120 % z 130 %; TSMC 23. 11. +1,5 %.",
-      "time": "23. 11. 2026, 09:19 CET",
-      "publishedAtPrague": "23. 11. 2026, 09:19",
+      "title": "Morgan Stanley: odhad růstu EPS 2027 +14 % vs. kons. +17 %; tržní ocenění odpovídá −6 %. Preferuje hyperscalery.",
+      "time": "23. 11. 2026, 14:28 CET",
+      "publishedAtPrague": "23. 11. 2026, 14:28",
       "publicationTimeVerified": true,
       "kind": "continuing",
-      "category": "semiconductor_market_liquidity",
+      "category": "institutional_outlook",
       "source": "Reuters",
-      "url": "https://www.reuters.com/sustainability/boards-policy-regulation/global-markets-taiwan-update-1-2026-11-23/",
+      "url": "https://www.reuters.com/business/morgan-stanley-turns-most-bullish-stocks-since-april-after-last-weeks-selloff-2026-11-23/",
       "sourceLinks": [
         {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/sustainability/boards-policy-regulation/global-markets-taiwan-update-1-2026-11-23/"
+          "label": "Reuters – Morgan Stanley",
+          "url": "https://www.reuters.com/business/morgan-stanley-turns-most-bullish-stocks-since-april-after-last-weeks-selloff-2026-11-23/"
         }
       ],
-      "eventKey": "taiwan-margin-requirement-easing-20261123",
+      "eventKey": "morgan-stanley-tactical-bullish-2027-eps-20261123",
       "ndxRelevant": true,
-      "importanceScore": 58
+      "importanceScore": 59
     },
     {
       "title": "NQ futures: pondělní odraz téměř 3 % v časné seanci; S&P 500 futures +2 %.",
@@ -215,18 +238,37 @@
       "eventKey": "nasdaq100-futures-monday-open-rebound-20261123",
       "ndxRelevant": true,
       "importanceScore": 72
+    },
+    {
+      "title": "Tchaj-wan: od 24. 11. minimální margin ratio 120 % z 130 %; TSMC 23. 11. +1,5 %.",
+      "time": "23. 11. 2026, 09:19 CET",
+      "publishedAtPrague": "23. 11. 2026, 09:19",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "semiconductor_market_liquidity",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/sustainability/boards-policy-regulation/global-markets-taiwan-update-1-2026-11-23/",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/sustainability/boards-policy-regulation/global-markets-taiwan-update-1-2026-11-23/"
+        }
+      ],
+      "eventKey": "taiwan-margin-requirement-easing-20261123",
+      "ndxRelevant": true,
+      "importanceScore": 58
     }
   ],
   "leaders": [
     {
       "ticker": "NVDA",
-      "changePercent": 31.39,
-      "impact": "vysoký – intradenní 23. 11. 2026, 21:55:29 CET"
+      "changePercent": 31.48,
+      "impact": "vysoký – závěr 23. 11."
     },
     {
       "ticker": "MSFT",
-      "changePercent": 2.53,
-      "impact": "vysoký – intradenní 23. 11. 2026, 21:49:17 CET"
+      "changePercent": 1.65,
+      "impact": "vysoký – závěr 23. 11."
     }
   ],
   "macro": "US10Y | 23. 11.: 4,92 % | 20. 11.: 4,92 % | 0 bb",
@@ -237,9 +279,9 @@
   },
   "forecast": {
     "athReturnPercent": 18,
-    "athReason": "Nutný růst 16,89 %; NDX +7,19 %, VXN 35,90; MA50 breadth 31,7 % (20. 11.).",
+    "athReason": "Nutný růst 17,26 %; NDX +6,86 %; HPE Cloud & AI +68,6 % y/y; Fed Williams očekává inflaci 3,5 % na konci 2026.",
     "downside": "−7 až −13 %",
-    "downsideReason": "Modelový 25. percentil koncové ceny; VXN 35,68 (23. 11., validovaný updater 21:35 CET).",
+    "downsideReason": "Modelový 25. percentil koncové ceny; poslední validovaný vstup VXN 35,68 (23. 11., 21:35 CET).",
     "downsideModel": {
       "id": "ndx-evidence-volatility-v1",
       "dataFile": "data/risk-model.json",
@@ -252,10 +294,28 @@
     }
   },
   "catalyst": {
-    "event": "HPE Q4 – earnings call",
-    "timePrague": "23. 11. 2026, 23:00 CET"
+    "event": "ADI Q4 – výsledky",
+    "timePrague": "24. 11. 2026, 13:00 CET"
   },
   "archive": [
+    {
+      "time": "23. 11. 2026 23:02 CET",
+      "summary": "NDX 26 746,10 b. (+6,86 %), NVDA +31,48 %. Fed Williams: očekávaná inflace na konci 2026 3,5 %. HPE Q4 Cloud & AI +68,6 % y/y. TE: 9 kontrol, Gold aktualizováno; 8 rozporných nebo neúplně datovaných snímků ponecháno. Členství 101 a globální Top 10 ověřeny. Yahoo 429, ChartVault JSON nedostupný; futures maximum, RSI, breadth a risk-model bez nového validovaného výpočtu. Sazby a HDP beze změny; Pages přímé načtení nedostupné.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq NDX",
+          "url": "https://indexes.nasdaq.com/index/Overview/NDX"
+        },
+        {
+          "label": "Reuters – Fed Williams",
+          "url": "https://www.reuters.com/business/fed-has-work-do-lower-inflation-williams-says-2026-11-23/"
+        },
+        {
+          "label": "HPE / Business Wire",
+          "url": "https://www.businesswire.com/news/home/20261123129850/en/HPE-reports-fiscal-2026-fourth-quarter-results"
+        }
+      ]
+    },
     {
       "time": "23. 11. 2026 22:03 CET",
       "summary": "NDX 26 829,10 b. (+7,19 %; Nasdaq 23. 11., čas neuveden). NVDA +31,39 % (21:55). Bez nové samostatné kvalifikované události. US10Y 4,92 % (23. 11.), 0 bb. TE: 9 kontrol, 6 rozporných zdrojových snímků ponecháno. Yahoo a ChartVault přímý přístup nedostupný; poslední validované soubory RSI, breadth a risk-model načteny. GitHub Pages přímo nedostupné.",
@@ -3381,6 +3441,10 @@
     {
       "time": "23. 11. 2026 20:55 CET",
       "ndx": 26648.22
+    },
+    {
+      "time": "23. 11. 2026 23:02 CET",
+      "ndx": 26746.1
     }
   ],
   "sources": [
@@ -4171,6 +4235,34 @@
     {
       "name": "HPE IR",
       "url": "https://www.hpe.com/us/en/newsroom/press-release/2026/11/hpe-to-present-live-audio-webcast-of-fiscal-2026-fourth-quarter-earnings-conference-call.html"
+    },
+    {
+      "name": "Reuters – Fed Williams",
+      "url": "https://www.reuters.com/business/fed-has-work-do-lower-inflation-williams-says-2026-11-23/"
+    },
+    {
+      "name": "Benzinga – HPE Q4",
+      "url": "https://www.benzinga.com/markets/earnings/26/11/63564030/hewlett-packard-enterprise-q4-results-are-in-heres-what-to-know"
+    },
+    {
+      "name": "HPE Q4 – Business Wire",
+      "url": "https://www.businesswire.com/news/home/20261123129850/en/HPE-reports-fiscal-2026-fourth-quarter-results"
+    },
+    {
+      "name": "ADI IR – termín výsledků",
+      "url": "https://investor.analog.com/news-releases/news-release-details/analog-devices-report-fourth-quarter-fiscal-year-2026-financial/"
+    },
+    {
+      "name": "Google Finance – VXN",
+      "url": "https://www.google.com/finance/quote/VXN:INDEXCBOE"
+    },
+    {
+      "name": "Google Finance – MSFT",
+      "url": "https://www.google.com/finance/quote/MSFT:NASDAQ"
+    },
+    {
+      "name": "Reuters – závěr trhu",
+      "url": "https://www.reuters.com/business/wall-street-futures-rebound-after-rough-week-ai-linked-shares-2026-11-23/"
     }
   ]
 }
