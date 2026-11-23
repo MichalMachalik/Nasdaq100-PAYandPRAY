@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "23. 11. 2026 11:58 CET",
+  "updatedAtPrague": "23. 11. 2026 13:02 CET",
   "marketStatus": "Pondělí, cash mimo seanci; poslední závěr 20. 11. 2026",
   "ndx": {
     "value": 25028.98,
@@ -9,29 +9,71 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→ beze změny proti 23. 11. 2026 11:03 CET",
+    "trend": "→ beze změny proti 23. 11. 2026 11:58 CET",
     "reason": "Cash NDX −5,61 %, SOX −10,73 %, VXN 45,25, MA50 breadth 31,7 % (20. 11.)."
   },
-  "driver": "SOX −10,73 % (20. 11.); hedgeové fondy za týden ztratily přes 3 % a snížily akciovou expozici.",
+  "driver": "Tchaj-wan od 24. 11. snižuje minimální margin ratio ze 130 % na 120 %; omezení nucených výprodejů polovodičového trhu.",
   "news": [
     {
-      "title": "NVDA: americké ministerstvo financí žádá vysvětlení prodejů AI čipů do Číny a odpovědnosti za exportní compliance.",
-      "time": "22. 11. 2026, 18:48 CET",
-      "publishedAtPrague": "22. 11. 2026, 18:48",
+      "title": "CRWD kupuje ZS za 43,9 mld. USD (akcie 1,135 : 1); Q4 tržby výhled 1,638–1,644 mld. USD vs. kons. 1,620 mld. USD (beat 1,3 %).",
+      "time": "23. 11. 2026, 11:36 CET",
+      "publishedAtPrague": "23. 11. 2026, 11:36",
       "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "chip_export_compliance",
+      "kind": "new",
+      "category": "cybersecurity_merger",
       "source": "Reuters",
-      "url": "https://www.reuters.com/world/china/us-seeks-answers-nvidias-sale-chips-china-bessent-says-2026-11-22/",
+      "url": "https://www.reuters.com/legal/transactional/crowdstrike-buy-zscaler-439-billion-2026-11-23/",
       "sourceLinks": [
         {
-          "label": "Reuters – NVDA China chip compliance",
-          "url": "https://www.reuters.com/world/china/us-seeks-answers-nvidias-sale-chips-china-bessent-says-2026-11-22/"
+          "label": "Reuters",
+          "url": "https://www.reuters.com/legal/transactional/crowdstrike-buy-zscaler-439-billion-2026-11-23/"
+        },
+        {
+          "label": "CrowdStrike IR",
+          "url": "https://ir.crowdstrike.com/news-releases/news-release-details/crowdstrike-acquire-zscaler-bringing-network-security-and-zero"
         }
       ],
-      "eventKey": "nvda-bessent-china-chip-compliance-inquiry-20261122",
+      "eventKey": "crwd-zs-definitive-acquisition-20261123",
       "ndxRelevant": true,
-      "importanceScore": 80
+      "importanceScore": 69
+    },
+    {
+      "title": "Hedgeové fondy: týdenní ztráta přes 3 % do 20. 11.; Goldman Sachs eviduje pokles čisté akciové expozice na úrovně dubna 2025.",
+      "time": "23. 11. 2026, 09:24 CET",
+      "publishedAtPrague": "23. 11. 2026, 09:24",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "institutional_deleveraging",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/china/hedge-funds-post-worst-week-since-april-2025-sparks-defensive-shift-2026-11-23/",
+      "sourceLinks": [
+        {
+          "label": "Reuters – hedge funds / AI selloff",
+          "url": "https://www.reuters.com/world/china/hedge-funds-post-worst-week-since-april-2025-sparks-defensive-shift-2026-11-23/"
+        }
+      ],
+      "eventKey": "global-hedge-funds-deleveraging-ai-selloff-20261123",
+      "ndxRelevant": true,
+      "importanceScore": 68
+    },
+    {
+      "title": "Tchaj-wan: od 24. 11. minimální margin ratio 120 % z 130 %; TSMC 23. 11. +1,5 %.",
+      "time": "23. 11. 2026, 09:19 CET",
+      "publishedAtPrague": "23. 11. 2026, 09:19",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "semiconductor_market_liquidity",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/sustainability/boards-policy-regulation/global-markets-taiwan-update-1-2026-11-23/",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/sustainability/boards-policy-regulation/global-markets-taiwan-update-1-2026-11-23/"
+        }
+      ],
+      "eventKey": "taiwan-margin-requirement-easing-20261123",
+      "ndxRelevant": true,
+      "importanceScore": 58
     },
     {
       "title": "NQ futures: pondělní odraz téměř 3 % v časné seanci; S&P 500 futures +2 %.",
@@ -53,23 +95,23 @@
       "importanceScore": 72
     },
     {
-      "title": "Hedgeové fondy: týdenní ztráta přes 3 % do 20. 11.; Goldman Sachs eviduje pokles čisté akciové expozice na úrovně dubna 2025.",
-      "time": "23. 11. 2026, 09:24 CET",
-      "publishedAtPrague": "23. 11. 2026, 09:24",
+      "title": "NVDA: americké ministerstvo financí žádá vysvětlení prodejů AI čipů do Číny a odpovědnosti za exportní compliance.",
+      "time": "22. 11. 2026, 18:48 CET",
+      "publishedAtPrague": "22. 11. 2026, 18:48",
       "publicationTimeVerified": true,
-      "kind": "new",
-      "category": "institutional_deleveraging",
+      "kind": "continuing",
+      "category": "chip_export_compliance",
       "source": "Reuters",
-      "url": "https://www.reuters.com/world/china/hedge-funds-post-worst-week-since-april-2025-sparks-defensive-shift-2026-11-23/",
+      "url": "https://www.reuters.com/world/china/us-seeks-answers-nvidias-sale-chips-china-bessent-says-2026-11-22/",
       "sourceLinks": [
         {
-          "label": "Reuters – hedge funds / AI selloff",
-          "url": "https://www.reuters.com/world/china/hedge-funds-post-worst-week-since-april-2025-sparks-defensive-shift-2026-11-23/"
+          "label": "Reuters – NVDA China chip compliance",
+          "url": "https://www.reuters.com/world/china/us-seeks-answers-nvidias-sale-chips-china-bessent-says-2026-11-22/"
         }
       ],
-      "eventKey": "global-hedge-funds-deleveraging-ai-selloff-20261123",
+      "eventKey": "nvda-bessent-china-chip-compliance-inquiry-20261122",
       "ndxRelevant": true,
-      "importanceScore": 68
+      "importanceScore": 80
     },
     {
       "title": "US: S&P 500 −11,6 % od maxima 6. 10.; Nasdaq Composite −2,7 % YTD; VIX 35,89 (20. 11.).",
@@ -2737,6 +2779,24 @@
           "url": "https://www.reuters.com/world/china/hedge-funds-post-worst-week-since-april-2025-sparks-defensive-shift-2026-11-23/"
         }
       ]
+    },
+    {
+      "time": "23. 11. 2026 13:02 CET",
+      "summary": "Cash NDX 25 028,98 b., −5,61 % (20. 11.), historické maximum 31 361,37 b. Nově ověřeno: CRWD–ZS akvizice 43,9 mld. USD, Q4 výhled tržeb midpoint 1,641 vs. kons. 1,620 mld. USD (beat 1,3 %); Taiwan margin ratio 130 % → 120 % od 24. 11. Reuters zveřejnil zprávy 11:36 a 09:19 CET. Futures NQZ26 26 037,50 b., +3,63 % (Google Finance, kotace 12:44:58 CET). Nasdaq cash, 101 emisí k 20. 11.; CompaniesMarketCap globální Top10 ověřena. Trading Economics 9/9 instrumentových stránek včetně obou CZK párů; rozporné cenové snímky, markets ponechán. Fed, ECB, ČNB, Eurostat, ČSÚ, VXN ověřeny; breadth/RSI/risk model ponechány s původním asOf pro nedostupné validované denní feedy; Yahoo 429; futures historické maximum ponecháno.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq NDX",
+          "url": "https://indexes.nasdaq.com/index/Overview/NDX"
+        },
+        {
+          "label": "Reuters – CRWD / ZS",
+          "url": "https://www.reuters.com/legal/transactional/crowdstrike-buy-zscaler-439-billion-2026-11-23/"
+        },
+        {
+          "label": "Reuters – Taiwan",
+          "url": "https://www.reuters.com/sustainability/boards-policy-regulation/global-markets-taiwan-update-1-2026-11-23/"
+        }
+      ]
     }
   ],
   "history": [
@@ -3773,6 +3833,18 @@
     {
       "name": "WSJ NQZ26",
       "url": "https://www.wsj.com/market-data/quotes/futures/NQZ26"
+    },
+    {
+      "name": "Reuters – CRWD–ZS",
+      "url": "https://www.reuters.com/legal/transactional/crowdstrike-buy-zscaler-439-billion-2026-11-23/"
+    },
+    {
+      "name": "CrowdStrike IR – akvizice",
+      "url": "https://ir.crowdstrike.com/news-releases/news-release-details/crowdstrike-acquire-zscaler-bringing-network-security-and-zero"
+    },
+    {
+      "name": "Reuters – Taiwan",
+      "url": "https://www.reuters.com/sustainability/boards-policy-regulation/global-markets-taiwan-update-1-2026-11-23/"
     }
   ]
 }
