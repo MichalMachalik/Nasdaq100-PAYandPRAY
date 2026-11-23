@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "23. 11. 2026 01:01 CET",
+  "updatedAtPrague": "23. 11. 2026 02:00 CET",
   "marketStatus": "Pondělí, cash mimo seanci; poslední závěr 20. 11. 2026",
   "ndx": {
     "value": 25028.98,
@@ -9,17 +9,17 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "↗ mírné zlepšení proti 22. 11. 23:58 CET",
-    "reason": "Cash NDX −5,61 %, SOX −10,73 % a MA50 breadth 31,7 % (20. 11.); pondělní futures otevírají výše."
+    "trend": "→ beze změny proti 23. 11. 2026 01:01 CET",
+    "reason": "Cash NDX −5,61 %, SOX −10,73 %, VXN 45,25 a MA50 breadth 31,7 % (20. 11.); futures po pondělním otevření výše."
   },
-  "driver": "SOX −10,73 % (20. 11.), NVDA −14,01 %, AVGO −12,19 %; MA50 breadth 31,7 % (20. 11.).",
+  "driver": "SOX −10,73 % (20. 11.); NVDA −14,01 %, AVGO −12,19 % (20. 11.); MA50 breadth 31,7 %.",
   "news": [
     {
-      "title": "NQ futures: po otevření pondělní seance přibližně +2 %; S&P 500 futures přibližně +1 %.",
+      "title": "NQ futures: v časné pondělní seanci růst téměř 3 %; S&P 500 futures +2 %.",
       "time": "23. 11. 2026, 00:44 CET",
       "publishedAtPrague": "23. 11. 2026, 00:44",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "market_rebound",
       "source": "Reuters",
       "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-22/",
@@ -2537,6 +2537,24 @@
         {
           "label": "Reuters – NVDA/Čína",
           "url": "https://www.reuters.com/world/china/us-seeks-answers-nvidias-sale-chips-china-bessent-says-2026-11-22/"
+        }
+      ]
+    },
+    {
+      "time": "23. 11. 2026 02:00 CET",
+      "summary": "Cash NDX 25 028,98 b., −5,61 % (závěr 20. 11.); historické maximum 31 361,37 b. Bez nové samostatné kvalifikované události proti 01:01; Reuters aktualizoval pokračující téma pondělního odrazu futures (téměř 3 %). Čtyři ověřené události v 24h poolu. Nasdaq členství k 20. 11. a globální Top 10 zdrojově porovnány; Trading Economics 9/9 instrumentů kontrolováno, poslední validované kotace zachovány. Fed, ECB, ČNB a GDP USA/EU/ČR y/y z oficiálních zdrojů zkontrolovány. NQ=F Yahoo 429, Barron's uvádí starší kontrakt; futures ponechány. VXN 45,25 ověřen, Treasury nově nepotvrzen; breadth zdroj a Wilder RSI bez nového úplného validovaného průchodu, risk model zachován. GitHub Pages přímo nedostupné.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq – cash NDX",
+          "url": "https://indexes.nasdaq.com/Index/Overview/NDX"
+        },
+        {
+          "label": "Reuters – futures a AI sektor",
+          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-22/"
+        },
+        {
+          "label": "Trading Economics – trhy",
+          "url": "https://tradingeconomics.com/commodities"
         }
       ]
     }
