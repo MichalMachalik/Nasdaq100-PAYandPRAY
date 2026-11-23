@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "23. 11. 2026 10:03 CET",
+  "updatedAtPrague": "23. 11. 2026 11:03 CET",
   "marketStatus": "Pondělí, cash mimo seanci; poslední závěr 20. 11. 2026",
   "ndx": {
     "value": 25028.98,
@@ -9,10 +9,10 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "↗ mírné zlepšení proti 23. 11. 2026 08:58 CET",
-    "reason": "Cash NDX −5,61 %, SOX −10,73 %, VXN 45,25 a MA50 breadth 31,7 % (20. 11.)."
+    "trend": "↗ mírné zlepšení proti 23. 11. 2026 10:03 CET",
+    "reason": "Cash NDX −5,61 %, SOX −10,73 %, VXN 45,25, MA50 breadth 31,7 % (20. 11.)."
   },
-  "driver": "SOX −10,73 % (20. 11.); globální hedgeové fondy za týden do 20. 11. ztratily přes 3 % (JPMorgan, Reuters 23. 11.).",
+  "driver": "SOX −10,73 % (20. 11.); hedgeové fondy za týden ztratily přes 3 % a snížily akciovou expozici.",
   "news": [
     {
       "title": "Hedgeové fondy: týdenní ztráta přes 3 % do 20. 11.; Goldman Sachs eviduje pokles čisté akciové expozice na úrovně dubna 2025.",
@@ -2699,6 +2699,24 @@
         {
           "label": "WSJ – NQZ26",
           "url": "https://www.wsj.com/market-data/quotes/futures/NQZ26"
+        }
+      ]
+    },
+    {
+      "time": "23. 11. 2026 11:03 CET",
+      "summary": "Cash NDX 25 028,98 b., −5,61 % (20. 11.); 4 ověřené události za 24 h, bez nové jedinečné události proti 10:03. NQZ26 26 081,75 b., +3,80 % (WSJ, zpožděná kotace 10:20 CET). Nasdaq 101 emisí a globální Top 10 zdrojově prověřeny. Trading Economics 9/9 stránek včetně obou CZK párů kontrolováno; konfliktní snímky ponechány. Sazby Fed/ECB/ČNB, HDP EU/ČR a US10Y ověřeny; BEA uvádí USA Q3 SAAR, y/y nepřepisováno. Yahoo/ChartVault nedostupné; breadth, RSI, rizikový model i futures historické maximum zachovány. GitHub Pages přímo nepotvrzeno.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq – cash NDX",
+          "url": "https://indexes.nasdaq.com/index/Overview/NDX"
+        },
+        {
+          "label": "WSJ – futures NQZ26",
+          "url": "https://www.wsj.com/market-data/quotes/futures/NQZ26"
+        },
+        {
+          "label": "Reuters – hedgeové fondy",
+          "url": "https://www.reuters.com/world/china/hedge-funds-post-worst-week-since-april-2025-sparks-defensive-shift-2026-11-23/"
         }
       ]
     }
