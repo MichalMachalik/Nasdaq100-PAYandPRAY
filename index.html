@@ -266,6 +266,9 @@ body{background:#fff;color:#242424;font:17px/1.6 Georgia,"Times New Roman",serif
 .top10-meta a{color:#777;text-decoration:underline;text-underline-offset:3px}
 @media(max-width:600px){.top10-table{font-size:12px}.top10-table td{padding:9px 5px}.top10-name{min-width:125px;gap:7px}.top10-logo,.top10-fallback{width:24px;height:24px;flex-basis:24px}.top10-company{font-size:12px}.top10-table th{padding:7px 5px}}
 .signed-up{color:var(--green);font-weight:600}.signed-down{color:var(--red);font-weight:600}
+/* Stable editorial lines and nonbreaking directional figures. */
+.news .sentence-lines{display:block;text-align:left;white-space:pre-line;line-height:1.6;overflow-wrap:break-word;text-wrap:pretty}
+.signed-up,.signed-down{white-space:nowrap;font-variant-numeric:tabular-nums}
 
 /* Editorial sources: a separate quiet line below each news item. */
 .news-links{display:flex;flex-wrap:wrap;align-items:center;gap:3px 14px;margin-top:5px;font:12px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
@@ -675,49 +678,81 @@ const safe=(v,f='—')=>v===null||v===undefined||v===''?f:String(v);
 const fmt=(v,d=2)=>typeof v==='number'?v.toLocaleString('cs-CZ',{minimumFractionDigits:d,maximumFractionDigits:d}):safe(v);
 const set=(id,v)=>{const el=$(id);if(el)el.textContent=safe(v)};
 const pct=v=>typeof v==='number'?fmt(Math.abs(v))+' %':safe(v);
-// Každá nová věta začíná na novém řádku; číselné desetinné tečky se nerozdělují.
-// Dekorativní štítky nejsou součástí článků ani analytických odstavců.
-const cleanText=value=>String(value??'').replace(/^\s*(?:(?:🔴|🟢|⚪|🔵|↻|🔄|🆕|📰|🔥|⚠️|📌|⭐|•|·)\s*)+/u,'').trim();
-// Odděluj jen skutečně ukončené věty. Nepoužívej Intl.Segmenter:
-// ten umí nesprávně rozseknout datum „15.–16. 11.“.
-const sentenceBreaks=value=>cleanText(value).replace(
-  /([.!?])\s+(?=[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ])/gu,
-  (whole,mark,index,full)=>{
-    const match=full.slice(0,index+1).match(/([^\s()]+)$/u);
-    const last=(match?.[1]||'').replace(/\.$/,'');
-    // Neodděluj zkratky a jednotky (St. Louis Fed, mld. USD, mil. USD, b. NDX).
-    if(/^(?:St|Dr|Mr|Mrs|Ms|Prof|Sv|Ing|Bc|Mgr|PhDr|JUDr|např|tj|tzv|atd|apod|mld|mil|bil|tis|b|str|č|čl|odst)$/iu.test(last)
-       ||/^[A-Za-zÁ-Ž]$/u.test(last)
-       ||/^(?:[A-Za-z]\.)+[A-Za-z]?$/u.test(last))return whole;
-    return mark+'\n';
-  }
-);
-// Směr změny je vyjádřen pouze barvou, nikoliv znakem + nebo −.
-const signedPercentPattern=/(^|[^\p{L}\d])(?:(beat|miss)\s+(\d+(?:[.,]\d+)?)(\s*%)|([+−-])\s*(\d+(?:[.,]\d+)?)(\s*(?:%|bb\b|bps\b)))/giu;
-// Use typographic currency symbols ($, €) in narratives, not SVG pictograms.
-// Do not modify pairs such as EUR/USD in the FX table or source code.
-const appendCurrencyText=(fragment,value)=>{
-  const formatted=String(value??'').replace(
-    /(^|[^\p{L}\p{N}\/])(USD|EUR)(?=$|[^\p{L}\p{N}\/])/giu,
-    (_,prefix,code)=>(prefix===' '?'\u00a0':prefix)+(code.toUpperCase()==='USD'?'$':'€')
+// Editorial formatter: keep abbreviations together and only color directional values.
+function cleanText(value){return String(value??'').replace(/^\s*(?:(?:🔴|🟢|⚪|🔵|↻|🔄|🆕|📰|🔥|⚠️|📌|⭐|•|·)\s*)+/u,'').trim();}
+function sentenceBreaks(value){
+  return cleanText(value).replace(/[ \t]*\r?\n[ \t]*/gu,' ').replace(
+    /([.!?])\s+(?=[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ])/gu,
+    (whole,mark,index,full)=>{
+      if(mark!=='.')return mark+'\n';
+      const last=(full.slice(0,index+1).match(/([^\s()]+)$/u)?.[1]||'').replace(/\.$/u,'');
+      if(/^(?:St|Dr|Mr|Mrs|Ms|Prof|Sv|Ing|Bc|Mgr|PhDr|JUDr|např|tj|tzv|atd|apod|mld|mil|bil|tis|b|str|č|čl|odst|upr|adj|kons|vs|est|resp|cca|prům|max|min|meziroč|roč|měs|progn)$/iu.test(last)
+          ||/^[A-Za-zÁ-Ž]$/u.test(last)
+          ||/^(?:[A-Za-z]\.)+[A-Za-z]?$/u.test(last))return whole;
+      if(/\d{1,2}\.\s*\d{1,2}\.$/u.test(full.slice(0,index+1))&&/^(?:CET|CEST|UTC|GMT|Praha)\b/u.test(full.slice(index+whole.length)))return whole;
+      return mark+'\n';
+    }
   );
-  fragment.append(document.createTextNode(formatted));
-};
-const renderSigned=(el,value)=>{
-  const raw=String(value??''),frag=document.createDocumentFragment();
-  let last=0,m;
-  signedPercentPattern.lastIndex=0;
-  while((m=signedPercentPattern.exec(raw))!==null){
-    appendCurrencyText(frag,raw.slice(last,m.index)+m[1]);
-    const span=document.createElement('span');
-    const verdict=m[2]?.toLowerCase();
-    span.className=verdict?(verdict==='beat'?'signed-up':'signed-down'):(m[5]==='+'?'signed-up':'signed-down');
-    span.textContent=verdict?m[2]+' '+m[3]+m[4]:m[6]+m[7];
-    frag.append(span);last=signedPercentPattern.lastIndex;
+}
+function narrativeParts(value){
+  const raw=String(value??'');
+  const pattern=/(?<![\p{L}\p{N}.,])(?:(beat|miss)[ \t\u00a0\u202f]+)?(?:([+−-])[ \t\u00a0\u202f]*)?(\d{1,3}(?:[ \u00a0\u202f]\d{3})+(?:[.,]\d+)?|\d+(?:[.,]\d+)?)([ \t\u00a0\u202f]*(?:%|p\.[ \t\u00a0\u202f]*b\.|b\.|bb(?!\p{L})|bps(?!\p{L})|bod(?:u|y|ů|em|ech)?(?!\p{L})|procentn(?:í|ích|ího)[ \t\u00a0\u202f]+bod(?:u|y|ů)?(?!\p{L})))/giu;
+  const parts=[];let last=0;
+  const add=(text,kind='')=>{if(text)parts.push({text,kind});};
+  for(const m of raw.matchAll(pattern)){
+    const [token,verdict,sign,num,unit]=m;
+    const before=raw.slice(0,m.index),after=raw.slice(m.index+token.length);
+    const prefix=before.split(/[;\n|]|\.(?=\s+[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ])/u).pop().slice(-130);
+    const n=Number(num.replace(/[ \u00a0\u202f]/gu,'').replace(',','.'));
+    const range=/(?:\d(?:\s*%)?)\s*[-–—−]\s*$/u.test(before)
+      ||(sign==='-'&&/\d(?:\s*%)?\s*$/u.test(before));
+    let kind='';
+    if(!range&&Number.isFinite(n)&&n!==0){
+      if(verdict)kind=verdict.toLowerCase()==='beat'?'up':'down';
+      else if(sign)kind=sign==='+'?'up':'down';
+      else{
+        // Directional words must immediately qualify the figure, not another
+        // quantity elsewhere in the sentence.
+        const negative=/(?:^|[^\p{L}])(?:pokles(?:u|em)?|kles(?:l[ayoi]?|á|nout)|propad(?:u|l[ayoi]?|em)?|ztrát(?:a|y|u|ou)|oslabení|oslabil[ayoi]?|snížen[íáýé]|snížil[ayoi]?|zlevnil[ayoi]?|drop(?:ped)?|decline[d]?|loss|down)(?:\s+(?:tržeb|zisku|eps|marží|akcií|indexu|ceny|cen|výnosů|hodnoty|poptávky|o|až|téměř|přes|více|než|méně|cca|okolo|kolem|zhruba|přibližně|meziročně|meziměsíčně|mezikvartálně|ročně|by)){0,7}\s*$/iu.test(prefix);
+        const positive=/(?:^|[^\p{L}])(?:růst(?:u|em)?|rost(?:l[ayoi]?|e|ou)|vzrostl[ayoi]?|stoupl[ayoi]?|stoupá|nárůst(?:u|em)?|posílen[íá]|posílil[ayoi]?|zvýšen[íáýé]|zvýšil[ayoi]?|odraz(?:u|em)?|zisk(?:u|em)?|gain(?:ed)?|rise|rose|up)(?:\s+(?:tržeb|zisku|eps|marží|akcií|indexu|ceny|cen|výnosů|hodnoty|poptávky|o|až|téměř|přes|více|než|méně|cca|okolo|kolem|zhruba|přibližně|meziročně|meziměsíčně|mezikvartálně|ročně|by)){0,7}\s*$/iu.test(prefix);
+        const growthPeriod=/^\s*(?:y\/y|q\/q|m\/m|yoy|qoq|mom|meziročně|meziměsíčně|mezikvartálně)(?![\p{L}\d])/iu.test(after);
+        // A rate, share, margin or probability is not a signed change just
+        // because it is expressed annually or as a percentage.
+        const rateLevel=/(?:inflac|úrokov|sazb|výnos(?:u|y|em)?\b|marž|margin\s+ratio|breadth|podíl|pravděpodob|percentil|volatilit|nezaměstnan|pce|cpi|rsi|vxn)/iu.test(prefix);
+        if(negative)kind='down';
+        else if(positive)kind='up';
+        else if(unit.trim()==='%'&&growthPeriod&&!rateLevel)kind='up';
+      }
+    }
+    if(!kind)continue;
+    add(raw.slice(last,m.index));
+    // Follow the existing editorial convention: color expresses the sign.
+    // Preserve a verbal beat/miss label and the full numeric unit.
+    add((verdict?verdict+' ':'')+num+unit,kind);
+    last=m.index+token.length;
   }
-  appendCurrencyText(frag,raw.slice(last));
+  add(raw.slice(last));return parts;
+}
+function protectNarrativeText(value){
+  return String(value??'')
+    .replace(/(^|[^\p{L}\p{N}\/])(USD|EUR)(?=$|[^\p{L}\p{N}\/])/giu,
+      (_,prefix,code)=>(prefix===' '?'\u00a0':prefix)+(code.toUpperCase()==='USD'?'$':'€'))
+    .replace(/(^|[^\p{L}])((?:upr|adj|kons|vs|mld|mil|bil|tis|např|tzv)\.)[ \t\u202f]+(?=\S)/giu,'$1$2\u00a0')
+    .replace(/(\d)[ \t\u202f]+(?=(?:%|\$|€|mld\.|mil\.|bil\.|tis\.|bb\b|bps\b|b\.|bod(?:ů|y|u)?\b))/giu,'$1\u00a0');
+}
+function renderSigned(el,value){
+  if(!el)return;
+  const frag=document.createDocumentFragment();
+  for(const part of narrativeParts(value)){
+    const formatted=protectNarrativeText(part.text);
+    if(!part.kind){frag.append(document.createTextNode(formatted));continue;}
+    const span=document.createElement('span');
+    span.className=part.kind==='up'?'signed-up':'signed-down';
+    span.textContent=formatted;
+    frag.append(span);
+  }
   el.replaceChildren(frag);
-};
+}
 const setSentences=(id,value)=>{const el=$(id);if(el)renderSigned(el,sentenceBreaks(value))};
 
 function renderMarketSentiment(value){
