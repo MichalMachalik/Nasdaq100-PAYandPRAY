@@ -5,12 +5,12 @@
   "source": "WSJ / FactSet (CME delayed Dec 2026 NQZ26)",
   "sourceUrl": "https://www.wsj.com/market-data/quotes/futures/NQZ26",
   "quoteField": "last",
-  "price": 25870.5,
-  "changePercent": 2.96,
-  "quotedAtUtc": "2026-11-23T04:10:00Z",
-  "quotedAtPrague": "23. 11. 2026 05:10",
-  "fetchedAtUtc": "2026-11-23T04:25:04Z",
-  "checkedAtUtc": "2026-11-23T04:25:04Z",
+  "price": 25830.5,
+  "changePercent": 2.8,
+  "quotedAtUtc": "2026-11-23T04:42:00Z",
+  "quotedAtPrague": "23. 11. 2026 05:42",
+  "fetchedAtUtc": "2026-11-23T05:01:50.346Z",
+  "checkedAtUtc": "2026-11-23T05:01:50.346Z",
   "quoteStatus": "delayed",
   "delayed": true
 }
