@@ -1,6 +1,6 @@
 {
-  "updatedAtPrague": "23. 11. 2026 23:02 CET",
-  "marketStatus": "Cash NDX: seance ukončena (23. 11. 2026); poslední zveřejněný závěr.",
+  "updatedAtPrague": "23. 11. 2026 23:55 CET",
+  "marketStatus": "Cash NDX: seance ukončena; závěr 23. 11. 2026.",
   "ndx": {
     "value": 26746.1,
     "changePercent": 6.86,
@@ -9,10 +9,10 @@
   },
   "sentiment": {
     "label": "Neutrální",
-    "trend": "↘ mírné zhoršení proti 22:03 CET",
-    "reason": "NDX +6,86 %; NVDA +31,48 %, MSFT +1,65 %; VXN 36,31 (22:15 CET); Fed Williams: inflace 3,5 % na konci 2026. MA50 breadth 31,7 % (20. 11.)."
+    "trend": "→ beze změny proti 23:02 CET",
+    "reason": "NDX +6,86 %; SOX +14,03 %; VXN 36,31 (23. 11., 22:15 CET); MA50 breadth 31,7 % (20. 11.). HPE Q1 výhled upr. EPS beat 25,0 %."
   },
-  "driver": "NVDA: obnovení mandátu CEO Jensena Huanga; akcie +31,48 %, SOX +14,03 % (23. 11.).",
+  "driver": "NVDA: obnovení mandátu CEO Jensena Huanga; NVDA +31,48 %, SOX +14,03 % (23. 11.).",
   "news": [
     {
       "title": "NVDA: Jensen Huang znovu CEO s okamžitou účinností.",
@@ -42,7 +42,7 @@
       "time": "23. 11. 2026 22:06 CET",
       "publishedAtPrague": "23. 11. 2026, 22:06",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "macro",
       "source": "Reuters",
       "url": "https://www.reuters.com/business/fed-has-work-do-lower-inflation-williams-says-2026-11-23/",
@@ -57,11 +57,11 @@
       "importanceScore": 82
     },
     {
-      "title": "HPE Q4: tržby 14,55 mld. USD vs. kons. 14,43 (beat 0,8 %). Upr. EPS 1,43 USD vs. kons. 1,28 (beat 11,7 %). Cloud & AI 11,3 mld. USD, +68,6 % y/y. Q1 výhled tržeb 14,0–14,6 mld. USD, upr. EPS 1,30–1,40 USD.",
+      "title": "HPE Q4: tržby 14,55 mld. USD vs. kons. 14,43 (beat 0,8 %). Upr. EPS 1,43 USD vs. kons. 1,28 (beat 11,7 %). Cloud & AI +68,6 % y/y. Q1 výhled: střed tržeb 14,3 mld. USD vs. kons. 12,84 (beat 11,4 %); upr. EPS 1,35 vs. kons. 1,08 USD (beat 25,0 %).",
       "time": "23. 11. 2026 22:25 CET",
       "publishedAtPrague": "23. 11. 2026, 22:25",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "ai_infrastructure",
       "source": "Benzinga",
       "url": "https://www.benzinga.com/markets/earnings/26/11/63564030/hewlett-packard-enterprise-q4-results-are-in-heres-what-to-know",
@@ -73,6 +73,10 @@
         {
           "label": "HPE / Business Wire",
           "url": "https://www.businesswire.com/news/home/20261123129850/en/HPE-reports-fiscal-2026-fourth-quarter-results"
+        },
+        {
+          "label": "Investing.com – Q1 konsenzus",
+          "url": "https://www.investing.com/news/earnings/hpe-stocks-falls-after-hours-despite-quarterly-results-guidance-beat-5046357"
         }
       ],
       "eventKey": "hpe-fy2026-q4-earnings-20261123",
@@ -298,6 +302,24 @@
     "timePrague": "24. 11. 2026, 13:00 CET"
   },
   "archive": [
+    {
+      "time": "23. 11. 2026 23:55 CET",
+      "summary": "NDX 26 746,10 b. (+6,86 %), závěr 23. 11. HPE Q1: výhled tržeb beat 11,4 %, upr. EPS beat 25,0 % (střed pásma). Bez nové samostatné události. TE: 9 kontrol, 5 potvrzených, 4 rozporné snímky ponechány. ChartVault: MA50 31,7 % k 20. 11., ověřeno z původního JSON. Nasdaq 101 členů ověřeno. Top 10 potvrzen. Sazby a HDP beze změny. Yahoo historie a VXN JSON, Treasury CSV nedostupné; futures maximum, RSI a risk-model bez nového validovaného výpočtu. Pages přímé načtení nedostupné.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq NDX",
+          "url": "https://indexes.nasdaq.com/index/Overview/NDX"
+        },
+        {
+          "label": "Investing.com – HPE",
+          "url": "https://www.investing.com/news/earnings/hpe-stocks-falls-after-hours-despite-quarterly-results-guidance-beat-5046357"
+        },
+        {
+          "label": "ChartVault",
+          "url": "https://raw.githubusercontent.com/AveCeasar/AveCeasar.github.io/main/chart-data/nasdaq100-percent-above-moving-averages.json"
+        }
+      ]
+    },
     {
       "time": "23. 11. 2026 23:02 CET",
       "summary": "NDX 26 746,10 b. (+6,86 %), NVDA +31,48 %. Fed Williams: očekávaná inflace na konci 2026 3,5 %. HPE Q4 Cloud & AI +68,6 % y/y. TE: 9 kontrol, Gold aktualizováno; 8 rozporných nebo neúplně datovaných snímků ponecháno. Členství 101 a globální Top 10 ověřeny. Yahoo 429, ChartVault JSON nedostupný; futures maximum, RSI, breadth a risk-model bez nového validovaného výpočtu. Sazby a HDP beze změny; Pages přímé načtení nedostupné.",
