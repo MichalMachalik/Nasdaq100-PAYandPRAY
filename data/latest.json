@@ -1,19 +1,42 @@
 {
-  "updatedAtPrague": "23. 11. 2026 18:02 CET",
+  "updatedAtPrague": "23. 11. 2026 19:07 CET",
   "marketStatus": "Cash NDX: seance otevřena (23. 11. 2026, 15:30–22:00 CET)",
   "ndx": {
-    "value": 26706.53,
-    "changePercent": 6.7,
+    "value": 26636.52,
+    "changePercent": 6.42,
     "ath": 31361.37,
-    "asOf": "23. 11. 2026, 17:47:52 CET – cash NDX, intradenní kotace (Google Finance)"
+    "asOf": "23. 11. 2026, 18:49:44 CET – cash NDX, intradenní kotace (Google Finance)"
   },
   "sentiment": {
     "label": "Neutrální",
-    "trend": "↘ mírné zhoršení proti 23. 11. 2026 16:58 CET",
-    "reason": "Cash NDX +6,70 % (17:47 CET); NVDA +32,29 % (17:57 CET); VXN 35,76 (17:14 CET); MA50 breadth 31,7 % (20. 11.)."
+    "trend": "↘ mírné zhoršení proti 23. 11. 2026 18:02 CET",
+    "reason": "Cash NDX +6,42 % (18:49 CET); NVDA +30,92 % (19:00 CET); VXN 36,03 (18:30 CET); MA50 breadth 31,7 % (20. 11.)."
   },
-  "driver": "NVDA: Jensen Huang znovu CEO; NVDA +32,29 % (17:57 CET), cash NDX +6,70 % (17:47 CET).",
+  "driver": "NVDA: Jensen Huang opět CEO; akcie +30,92 % (19:00 CET), cash NDX +6,42 % (18:49 CET).",
   "news": [
+    {
+      "title": "AMZN: kupuje technologii Decart Optimization Stack a přebírá tým pro Trainium a AI inference; cena nezveřejněna.",
+      "time": "23. 11. 2026 16:33 CET",
+      "publishedAtPrague": "23. 11. 2026, 16:33",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "ai_infrastructure",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/retail-consumer/amazon-buy-decarts-ai-chip-optimization-tech-latest-ai-talent-grab-2026-11-23/",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/retail-consumer/amazon-buy-decarts-ai-chip-optimization-tech-latest-ai-talent-grab-2026-11-23/"
+        },
+        {
+          "label": "Amazon",
+          "url": "https://www.aboutamazon.com/news/company-news/amazon-decart-ai-optimization"
+        }
+      ],
+      "eventKey": "amazon-decart-optimization-stack-trainium-20261123",
+      "ndxRelevant": true,
+      "importanceScore": 69
+    },
     {
       "title": "US flash PMI listopad | Composite 54,6 vs. 55,9 (−1,3 b.); služby 54,7 vs. 56,1 (−1,4 b.); výroba 54,5 vs. 54,9 (−0,4 b.).",
       "time": "23. 11. 2026, 15:50 CET",
@@ -80,7 +103,7 @@
       "time": "23. 11. 2026, 14:28 CET",
       "publishedAtPrague": "23. 11. 2026, 14:28",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "institutional_outlook",
       "source": "Reuters",
       "url": "https://www.reuters.com/business/morgan-stanley-turns-most-bullish-stocks-since-april-after-last-weeks-selloff-2026-11-23/",
@@ -192,37 +215,18 @@
       "eventKey": "nasdaq100-futures-monday-open-rebound-20261123",
       "ndxRelevant": true,
       "importanceScore": 72
-    },
-    {
-      "title": "NVDA: americké ministerstvo financí žádá vysvětlení prodejů AI čipů do Číny a odpovědnosti za exportní compliance.",
-      "time": "22. 11. 2026, 18:48 CET",
-      "publishedAtPrague": "22. 11. 2026, 18:48",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "chip_export_compliance",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/china/us-seeks-answers-nvidias-sale-chips-china-bessent-says-2026-11-22/",
-      "sourceLinks": [
-        {
-          "label": "Reuters – NVDA China chip compliance",
-          "url": "https://www.reuters.com/world/china/us-seeks-answers-nvidias-sale-chips-china-bessent-says-2026-11-22/"
-        }
-      ],
-      "eventKey": "nvda-bessent-china-chip-compliance-inquiry-20261122",
-      "ndxRelevant": true,
-      "importanceScore": 80
     }
   ],
   "leaders": [
     {
       "ticker": "NVDA",
-      "changePercent": 32.29,
-      "impact": "vysoký – intradenní 23. 11. 2026, 17:57:25 CET"
+      "changePercent": 30.92,
+      "impact": "vysoký – intradenní 23. 11. 2026, 19:00:01 CET"
     },
     {
       "ticker": "MSFT",
-      "changePercent": 2.88,
-      "impact": "vysoký – intradenní 23. 11. 2026, 17:29:56 CET"
+      "changePercent": 2.71,
+      "impact": "vysoký – intradenní 23. 11. 2026, 19:01:55 CET"
     }
   ],
   "macro": "US flash Composite PMI | listopad: 54,6 | říjen: 55,9 | −1,3 b.",
@@ -233,7 +237,7 @@
   },
   "forecast": {
     "athReturnPercent": 18,
-    "athReason": "Nutný růst 17,43 %; cash NDX +6,70 %, NVDA +32,29 %; VXN 35,76, MA50 breadth 31,7 % (20. 11.).",
+    "athReason": "Nutný růst 17,74 %; NDX +6,42 %, NVDA +30,92 %; VXN 36,03, MA50 breadth 31,7 % (20. 11.).",
     "downside": "−9 až −16 %",
     "downsideReason": "Modelový 25. percentil 1–3měsíční koncové ceny; vstupní VXN 45,25 (20. 11.), bez nového validovaného přepočtu.",
     "downsideModel": {
@@ -2967,6 +2971,24 @@
           "url": "https://www.reuters.com/world/us/us-business-activity-growth-eases-further-november-survey-shows-2026-11-23/"
         }
       ]
+    },
+    {
+      "time": "23. 11. 2026 19:07 CET",
+      "summary": "Cash NDX 26 636,52 b. (+6,42 %; 18:49 CET); NVDA +30,92 %; AMZN kupuje optimalizační technologii Decart pro Trainium.",
+      "sourceLinks": [
+        {
+          "label": "Google Finance NDX",
+          "url": "https://www.google.com/finance/quote/NDX:INDEXNASDAQ"
+        },
+        {
+          "label": "Google Finance NVDA",
+          "url": "https://www.google.com/finance/quote/NVDA:NASDAQ"
+        },
+        {
+          "label": "Reuters AMZN",
+          "url": "https://www.reuters.com/business/retail-consumer/amazon-buy-decarts-ai-chip-optimization-tech-latest-ai-talent-grab-2026-11-23/"
+        }
+      ]
     }
   ],
   "history": [
@@ -3293,6 +3315,10 @@
     {
       "time": "23. 11. 2026 18:02 CET",
       "ndx": 26706.53
+    },
+    {
+      "time": "23. 11. 2026 19:07 CET",
+      "ndx": 26636.52
     }
   ],
   "sources": [
@@ -4063,6 +4089,10 @@
     {
       "name": "New York Fed – Williams 23. 11.",
       "url": "https://www.newyorkfed.org/newsevents/mediaadvisory/2026/1113-2026"
+    },
+    {
+      "name": "Reuters Amazon Decart",
+      "url": "https://www.reuters.com/business/retail-consumer/amazon-buy-decarts-ai-chip-optimization-tech-latest-ai-talent-grab-2026-11-23/"
     }
   ]
 }
