@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "23. 11. 2026 02:00 CET",
+  "updatedAtPrague": "23. 11. 2026 03:05 CET",
   "marketStatus": "Pondělí, cash mimo seanci; poslední závěr 20. 11. 2026",
   "ndx": {
     "value": 25028.98,
@@ -9,8 +9,8 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→ beze změny proti 23. 11. 2026 01:01 CET",
-    "reason": "Cash NDX −5,61 %, SOX −10,73 %, VXN 45,25 a MA50 breadth 31,7 % (20. 11.); futures po pondělním otevření výše."
+    "trend": "→ beze změny proti 23. 11. 2026 02:00 CET",
+    "reason": "Cash NDX −5,61 %, SOX −10,73 %, VXN 45,25 a MA50 breadth 31,7 % (20. 11.); pondělní NQ futures výše."
   },
   "driver": "SOX −10,73 % (20. 11.); NVDA −14,01 %, AVGO −12,19 % (20. 11.); MA50 breadth 31,7 %.",
   "news": [
@@ -2555,6 +2555,24 @@
         {
           "label": "Trading Economics – trhy",
           "url": "https://tradingeconomics.com/commodities"
+        }
+      ]
+    },
+    {
+      "time": "23. 11. 2026 03:05 CET",
+      "summary": "Cash NDX 25 028,98 b., −5,61 % (závěr 20. 11.), historické maximum 31 361,37 b.; bez nové samostatné kvalifikované zprávy, 4 události v 24h poolu. Reuters pondělní odraz futures trvá; WSJ NQZ26 25 837,50 b., +2,83 %, kotace 23. 11. 02:30 CET. Zdrojově ověřeny NDX, NQZ26, historické futures maximum ze zdrojové 52týdenní řady, Nasdaq členství (101 emisí k 20. 11.), globální Top 10, TE 9/9 instrumentů včetně EUR/CZK a USD/CZK, Fed/ECB/ČNB, Q3 HDP USA/EU/ČR y/y, Treasury US10Y, VXN a ChartVault breadth 31,68 %. TE hlavní cena a popis mohou vykazovat rozdílné snímky; markets.json zachován včetně původních časů. RSI bez nového úplného validovaného historického vstupu; risk model bez přepočtu. GitHub Pages přímo nedostupné.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq – cash NDX",
+          "url": "https://indexes.nasdaq.com/index/Overview/NDX"
+        },
+        {
+          "label": "WSJ – CME NQZ26",
+          "url": "https://www.wsj.com/market-data/quotes/futures/NQZ26"
+        },
+        {
+          "label": "Reuters – futures a AI",
+          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-22/"
         }
       ]
     }
