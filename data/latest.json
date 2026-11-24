@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "24. 11. 2026 04:00 CET",
+  "updatedAtPrague": "24. 11. 2026 05:00 CET",
   "marketStatus": "Cash NDX: seance ukončena; závěr 23. 11. 2026.",
   "ndx": {
     "value": 26746.1,
@@ -9,10 +9,10 @@
   },
   "sentiment": {
     "label": "Neutrální",
-    "trend": "↘ mírné zhoršení proti 03:00 CET",
-    "reason": "VXN 36,31 (23. 11.); MA50 breadth 31,7 % (20. 11.). Prosincové zvýšení sazeb Fedu plně započteno."
+    "trend": "→ beze změny proti 04:00 CET",
+    "reason": "VXN 36,31 (23. 11.); MA50 breadth 31,7 % (20. 11.). US10Y 4,92 % (23. 11.)."
   },
-  "driver": "NVDA +31,48 % (23. 11.). MSCI Asia-Pacific ex-Japan +4,6 %; KOSPI +7,5 %, TAIEX +9,1 % (24. 11., Reuters).",
+  "driver": "NVDA +31,48 % a SOX +14,03 % (23. 11.). Reuters: MSCI Asia-Pacific ex-Japan +4,6 %, KOSPI +7,5 %, TAIEX +9,1 % (24. 11.).",
   "news": [
     {
       "title": "NVDA: Jensen Huang znovu CEO s okamžitou účinností.",
@@ -371,6 +371,24 @@
     "timePrague": "24. 11. 2026, 13:00 CET"
   },
   "archive": [
+    {
+      "time": "24. 11. 2026 05:00 CET",
+      "summary": "NDX 26 746,10 b. (+6,86 %, závěr 23. 11.). VXN 36,31. Bez nové kvalifikované události; 15 kandidátů. TE 9/9 prověřeno, 2/9 potvrzeny. ChartVault ověřen, Yahoo nedostupné; Nasdaq členství pouze k 20. 11.; modely zachovány.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq NDX",
+          "url": "https://indexes.nasdaq.com/Index/Overview/NDX"
+        },
+        {
+          "label": "Google Finance NDX",
+          "url": "https://www.google.com/finance/quote/NDX:INDEXNASDAQ"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-24/"
+        }
+      ]
+    },
     {
       "time": "24. 11. 2026 04:00 CET",
       "summary": "NDX 26 746,10 b. (+6,86 %), závěr 23. 11. Bez nové samostatné kvalifikované události; 15 kandidátů, 0 vyřazeno. NQZ26 26 806,50 (−0,01 %), 03:50 CET. Yahoo NQ=F 429, historie NQ, NDX a VXN nedostupná; Treasury CSV nepřístupné. RSI, futures maximum a model zachovány. Nasdaq seznam k 20. 11. starší než uložený; Top 10 zachován. TE 9/9 kontrolováno, 2/9 potvrzeny; ostatní rozdílné snímky ponechány. ChartVault MA50 31,7 % k 20. 11. ověřen. Sazby a HDP beze změny. Přímé načtení Pages nedostupné.",
