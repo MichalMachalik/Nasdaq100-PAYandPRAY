@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "24. 11. 2026 08:02 CET",
+  "updatedAtPrague": "24. 11. 2026 09:01 CET",
   "marketStatus": "Cash NDX: trh uzavřen; závěr 23. 11. 2026.",
   "ndx": {
     "value": 26746.1,
@@ -9,10 +9,10 @@
   },
   "sentiment": {
     "label": "Neutrální",
-    "trend": "→ beze změny proti 07:01 CET u ověřených vstupů",
+    "trend": "→ beze změny proti poslednímu srovnatelnému snímku",
     "reason": "VXN 36,31 (23. 11.); RSI14 41,99 (23. 11.); MA50 breadth 43,6 % (23. 11.)."
   },
-  "driver": "NVDA +31,48 % (23. 11.). Odraz asijských polovodičů; pokračuje kontrola exportu AI čipů a prosincové zvýšení sazeb Fedu je plně započteno.",
+  "driver": "NVDA +31,48 % (23. 11.). TAIEX +9 % po návratu CEO NVDA; prosincové zvýšení sazeb Fedu plně započteno.",
   "news": [
     {
       "title": "NVDA: Jensen Huang znovu CEO s okamžitou účinností.",
@@ -157,7 +157,7 @@
       "time": "24. 11. 2026 03:27 CET",
       "publishedAtPrague": "24. 11. 2026, 03:27",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "ai_regulation",
       "source": "Reuters",
       "url": "https://www.reuters.com/world/singapore-investigating-nvidia-linked-megaspeed-after-us-blacklisting-2026-11-24/",
@@ -226,42 +226,23 @@
       "importanceScore": 69
     },
     {
-      "title": "US flash PMI listopad | Composite 54,6 vs. 55,9 (−1,3 b.); služby 54,7 vs. 56,1 (−1,4 b.); výroba 54,5 vs. 54,9 (−0,4 b.).",
-      "time": "23. 11. 2026, 15:50 CET",
-      "publishedAtPrague": "23. 11. 2026, 15:50",
+      "title": "Singapur Q3 HDP 6,1 % y/y vs. kons. 5,6 %. AI výroba a export zrychlují díky výstavbě datacenter; odhad růstu 2026 zvýšen na 6 % z 4,5–5,5 %.",
+      "time": "24. 11. 2026, 01:06 CET",
+      "publishedAtPrague": "24. 11. 2026, 01:06",
       "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "macro",
+      "kind": "new",
+      "category": "ai_infrastructure",
       "source": "Reuters",
-      "url": "https://www.reuters.com/world/us/us-business-activity-growth-eases-further-november-survey-shows-2026-11-23/",
+      "url": "https://www.reuters.com/markets/asia/singapore-third-quarter-gdp-grows-61-2026-11-24/",
       "sourceLinks": [
         {
           "label": "Reuters",
-          "url": "https://www.reuters.com/world/us/us-business-activity-growth-eases-further-november-survey-shows-2026-11-23/"
+          "url": "https://www.reuters.com/markets/asia/singapore-third-quarter-gdp-grows-61-2026-11-24/"
         }
       ],
-      "eventKey": "us-flash-pmi-nov-2026-20261123",
+      "eventKey": "singapore-q3-gdp-ai-exports-20261124",
       "ndxRelevant": true,
-      "importanceScore": 62
-    },
-    {
-      "title": "Hedgeové fondy: týdenní ztráta přes 3 % do 20. 11.; Goldman Sachs eviduje pokles čisté akciové expozice na úrovně dubna 2025.",
-      "time": "23. 11. 2026, 09:24 CET",
-      "publishedAtPrague": "23. 11. 2026, 09:24",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "institutional_deleveraging",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/china/hedge-funds-post-worst-week-since-april-2025-sparks-defensive-shift-2026-11-23/",
-      "sourceLinks": [
-        {
-          "label": "Reuters – hedge funds / AI selloff",
-          "url": "https://www.reuters.com/world/china/hedge-funds-post-worst-week-since-april-2025-sparks-defensive-shift-2026-11-23/"
-        }
-      ],
-      "eventKey": "global-hedge-funds-deleveraging-ai-selloff-20261123",
-      "ndxRelevant": true,
-      "importanceScore": 68
+      "importanceScore": 55
     },
     {
       "title": "Japonsko flash PMI výroba | listopad 53,7 vs. říjen 53,3; +0,4 b. Exportní objednávky rostou díky poptávce po polovodičích a elektronice.",
@@ -283,21 +264,21 @@
       "importanceScore": 53
     },
     {
-      "title": "Odhad JPMorgan: AI CAPEX v roce 2027 téměř 1,4 bil. USD; Dell Q3 očekávaný růst tržeb 82,6 %.",
-      "time": "23. 11. 2026 14:49 CET",
-      "publishedAtPrague": "23. 11. 2026, 14:49",
+      "title": "US flash PMI listopad | Composite 54,6 vs. 55,9 (−1,3 b.); služby 54,7 vs. 56,1 (−1,4 b.); výroba 54,5 vs. 54,9 (−0,4 b.).",
+      "time": "23. 11. 2026, 15:50 CET",
+      "publishedAtPrague": "23. 11. 2026, 15:50",
       "publicationTimeVerified": true,
       "kind": "continuing",
-      "category": "ai_infrastructure",
+      "category": "macro",
       "source": "Reuters",
-      "url": "https://www.reuters.com/business/dell-hpe-results-put-ai-demand-test-after-tech-rout-2026-11-23/",
+      "url": "https://www.reuters.com/world/us/us-business-activity-growth-eases-further-november-survey-shows-2026-11-23/",
       "sourceLinks": [
         {
-          "label": "Reuters – AI CAPEX / DELL / HPE",
-          "url": "https://www.reuters.com/business/dell-hpe-results-put-ai-demand-test-after-tech-rout-2026-11-23/"
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/us/us-business-activity-growth-eases-further-november-survey-shows-2026-11-23/"
         }
       ],
-      "eventKey": "jpmorgan-ai-capex-2027-dell-hpe-results-preview-20261123",
+      "eventKey": "us-flash-pmi-nov-2026-20261123",
       "ndxRelevant": true,
       "importanceScore": 62
     },
@@ -319,6 +300,44 @@
       "eventKey": "arm-haas-ceo-contract-through-2033-20261123",
       "ndxRelevant": true,
       "importanceScore": 64
+    },
+    {
+      "title": "Hedgeové fondy: týdenní ztráta přes 3 % do 20. 11.; Goldman Sachs eviduje pokles čisté akciové expozice na úrovně dubna 2025.",
+      "time": "23. 11. 2026, 09:24 CET",
+      "publishedAtPrague": "23. 11. 2026, 09:24",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "institutional_deleveraging",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/china/hedge-funds-post-worst-week-since-april-2025-sparks-defensive-shift-2026-11-23/",
+      "sourceLinks": [
+        {
+          "label": "Reuters – hedge funds / AI selloff",
+          "url": "https://www.reuters.com/world/china/hedge-funds-post-worst-week-since-april-2025-sparks-defensive-shift-2026-11-23/"
+        }
+      ],
+      "eventKey": "global-hedge-funds-deleveraging-ai-selloff-20261123",
+      "ndxRelevant": true,
+      "importanceScore": 68
+    },
+    {
+      "title": "Odhad JPMorgan: AI CAPEX v roce 2027 téměř 1,4 bil. USD; Dell Q3 očekávaný růst tržeb 82,6 %.",
+      "time": "23. 11. 2026 14:49 CET",
+      "publishedAtPrague": "23. 11. 2026, 14:49",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "ai_infrastructure",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/dell-hpe-results-put-ai-demand-test-after-tech-rout-2026-11-23/",
+      "sourceLinks": [
+        {
+          "label": "Reuters – AI CAPEX / DELL / HPE",
+          "url": "https://www.reuters.com/business/dell-hpe-results-put-ai-demand-test-after-tech-rout-2026-11-23/"
+        }
+      ],
+      "eventKey": "jpmorgan-ai-capex-2027-dell-hpe-results-preview-20261123",
+      "ndxRelevant": true,
+      "importanceScore": 62
     },
     {
       "title": "Morgan Stanley: odhad růstu EPS 2027 +14 % vs. kons. +17 %; tržní ocenění odpovídá −6 %. Preferuje hyperscalery.",
@@ -379,7 +398,7 @@
   },
   "forecast": {
     "athReturnPercent": 18,
-    "athReason": "Nutný růst 17,26 %; VXN 36,31 a RSI14 41,99 (23. 11.); MA50 breadth 31,7 % (20. 11.).",
+    "athReason": "Nutný růst 17,26 %; VXN 36,31 (23. 11.); RSI14 41,99 (23. 11.); MA50 breadth 43,6 % (23. 11.).",
     "downside": "−7 až −13 %",
     "downsideReason": "Modelový 25. percentil koncové ceny; VXN 36,31 (23. 11.).",
     "downsideModel": {
@@ -398,6 +417,24 @@
     "timePrague": "24. 11. 2026, 13:00 CET"
   },
   "archive": [
+    {
+      "time": "24. 11. 2026 09:01 CET",
+      "summary": "NDX 26 746,10 b. (+6,86 %, závěr 23. 11.). Singapur Q3 HDP 6,1 % y/y; AI export a výroba. 17 kandidátů, 0 vyřazeno. VXN 36,31 (23. 11.); RSI14 41,99 (23. 11.); MA50 breadth 43,6 % (23. 11.). Top 10, breadth a VXN ověřeny v logu; Nasdaq seznam k 20. 11. TE 9/9 kontrolováno, rozporné údaje nezapsány. Yahoo kotace a historie nedostupné; RSI a futures maximum zachovány. Sazby a HDP beze změny. Pages poslední nasazení 08:51; veřejná stránka nepřístupná při kontrole.",
+      "sourceLinks": [
+        {
+          "label": "Google Finance NDX",
+          "url": "https://www.google.com/finance/quote/NDX:INDEXNASDAQ"
+        },
+        {
+          "label": "Reuters – Singapur",
+          "url": "https://www.reuters.com/markets/asia/singapore-third-quarter-gdp-grows-61-2026-11-24/"
+        },
+        {
+          "label": "StockCurry MA50",
+          "url": "https://stockcurry.com/index_timeline.php?index=Nasdaq100&view=percent"
+        }
+      ]
+    },
     {
       "time": "24. 11. 2026 08:02 CET",
       "summary": "NDX 26 746,10 b. (+6,86 %, závěr 23. 11.). 1 nově dohledaná událost: singapurská kontrola vývozu čipů. 16 kandidátů, 0 vyřazeno. ChartVault MA50 31,7 % ověřeno k 20. 11. TE 9/9 potvrzeno zdrojovým logem 07:07; novější rozporné hodnoty ponechány. Nasdaq členství k 20. 11. a globální žebříček načteny, znaménka kompletního nového žebříčku neověřena. Yahoo futures a historie nedostupné; RSI, futures maximum a risk-model nepřepočítány, VXN a Treasury ověřeny samostatně. Sazby a HDP beze změny. Pages poslední úspěšné nasazení 07:22; přímé JSON nedostupné.",
@@ -4553,6 +4590,26 @@
     {
       "name": "Singapur – úřad premiéra",
       "url": "https://www.pmo.gov.sg/newsroom/pm-lawrence-wong-at-the-q-a-segment-of-the-joint-press-conference-with-australia-pm-anthony-albanese-in-canberra-australia-nov-2026/"
+    },
+    {
+      "name": "Reuters – Singapur HDP",
+      "url": "https://www.reuters.com/markets/asia/singapore-third-quarter-gdp-grows-61-2026-11-24/"
+    },
+    {
+      "name": "StockCurry – MA50 breadth",
+      "url": "https://stockcurry.com/index_timeline.php?index=Nasdaq100&view=percent"
+    },
+    {
+      "name": "Cboe VXN",
+      "url": "https://www.cboe.com/data/quotes/VXN/dashboard"
+    },
+    {
+      "name": "FRED VXNCLS",
+      "url": "https://fred.stlouisfed.org/series/VXNCLS"
+    },
+    {
+      "name": "ADI IR – Q4",
+      "url": "https://www.analog.com/en/newsroom/press-releases/2026/10-22-2026-adi-report-4q-fy2026-financial-results.html"
     }
   ]
 }
