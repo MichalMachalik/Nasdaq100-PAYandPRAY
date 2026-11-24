@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "24. 11. 2026 05:00 CET",
+  "updatedAtPrague": "24. 11. 2026 06:01 CET",
   "marketStatus": "Cash NDX: seance ukončena; závěr 23. 11. 2026.",
   "ndx": {
     "value": 26746.1,
@@ -9,10 +9,10 @@
   },
   "sentiment": {
     "label": "Neutrální",
-    "trend": "→ beze změny proti 04:00 CET",
-    "reason": "VXN 36,31 (23. 11.); MA50 breadth 31,7 % (20. 11.). US10Y 4,92 % (23. 11.)."
+    "trend": "→ beze změny proti 05:00 CET",
+    "reason": "VXN 36,31 (23. 11.); RSI14 41,99 (23. 11.); MA50 breadth 31,7 % (20. 11.)."
   },
-  "driver": "NVDA +31,48 % a SOX +14,03 % (23. 11.). Reuters: MSCI Asia-Pacific ex-Japan +4,6 %, KOSPI +7,5 %, TAIEX +9,1 % (24. 11.).",
+  "driver": "NVDA +31,48 % (23. 11.). Reuters: TAIEX +9,1 %, KOSPI +6,5 %, MSCI Asia-Pacific ex-Japan +4 % (24. 11.).",
   "news": [
     {
       "title": "NVDA: Jensen Huang znovu CEO s okamžitou účinností.",
@@ -237,25 +237,6 @@
       "importanceScore": 62
     },
     {
-      "title": "Odhad JPMorgan: AI CAPEX v roce 2027 téměř 1,4 bil. USD; Dell Q3 očekávaný růst tržeb 82,6 %.",
-      "time": "23. 11. 2026 14:49 CET",
-      "publishedAtPrague": "23. 11. 2026, 14:49",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_infrastructure",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/dell-hpe-results-put-ai-demand-test-after-tech-rout-2026-11-23/",
-      "sourceLinks": [
-        {
-          "label": "Reuters – AI CAPEX / DELL / HPE",
-          "url": "https://www.reuters.com/business/dell-hpe-results-put-ai-demand-test-after-tech-rout-2026-11-23/"
-        }
-      ],
-      "eventKey": "jpmorgan-ai-capex-2027-dell-hpe-results-preview-20261123",
-      "ndxRelevant": true,
-      "importanceScore": 62
-    },
-    {
       "title": "ARM: René Haas prodloužil mandát CEO do roku 2033; NVDA jej oslovila při hledání nástupce Jensena Huanga.",
       "time": "23. 11. 2026, 13:10 CET",
       "publishedAtPrague": "23. 11. 2026, 13:10",
@@ -292,6 +273,25 @@
       "eventKey": "global-hedge-funds-deleveraging-ai-selloff-20261123",
       "ndxRelevant": true,
       "importanceScore": 68
+    },
+    {
+      "title": "Odhad JPMorgan: AI CAPEX v roce 2027 téměř 1,4 bil. USD; Dell Q3 očekávaný růst tržeb 82,6 %.",
+      "time": "23. 11. 2026 14:49 CET",
+      "publishedAtPrague": "23. 11. 2026, 14:49",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "ai_infrastructure",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/dell-hpe-results-put-ai-demand-test-after-tech-rout-2026-11-23/",
+      "sourceLinks": [
+        {
+          "label": "Reuters – AI CAPEX / DELL / HPE",
+          "url": "https://www.reuters.com/business/dell-hpe-results-put-ai-demand-test-after-tech-rout-2026-11-23/"
+        }
+      ],
+      "eventKey": "jpmorgan-ai-capex-2027-dell-hpe-results-preview-20261123",
+      "ndxRelevant": true,
+      "importanceScore": 62
     },
     {
       "title": "Morgan Stanley: odhad růstu EPS 2027 +14 % vs. kons. +17 %; tržní ocenění odpovídá −6 %. Preferuje hyperscalery.",
@@ -352,17 +352,17 @@
   },
   "forecast": {
     "athReturnPercent": 18,
-    "athReason": "Nutný růst 17,26 %; VXN 36,31 (23. 11.); MA50 breadth 31,7 % (20. 11.).",
+    "athReason": "Nutný růst 17,26 %; VXN 36,31 a RSI14 41,99 (23. 11.); MA50 breadth 31,7 % (20. 11.).",
     "downside": "−7 až −13 %",
-    "downsideReason": "Modelový 25. percentil koncové ceny; poslední validovaný vstup VXN 35,68 (23. 11., 21:35 CET).",
+    "downsideReason": "Modelový 25. percentil koncové ceny; VXN 36,31 (23. 11.).",
     "downsideModel": {
       "id": "ndx-evidence-volatility-v1",
       "dataFile": "data/risk-model.json",
       "vxnAsOf": "2026-11-23",
       "cashNdxReferenceAsOf": "2026-11-20",
       "modelQuantile": 0.25,
-      "month1Pct": 7.2,
-      "month3Pct": 12.74,
+      "month1Pct": 7.34,
+      "month3Pct": 12.97,
       "warning": "Modelová 25% hladina koncové ceny při nulovém očekávaném jednoduchém výnosu a konstantní opční volatilitě; nikoli empiricky kalibrovaná pravděpodobnost ani záruka."
     }
   },
@@ -371,6 +371,24 @@
     "timePrague": "24. 11. 2026, 13:00 CET"
   },
   "archive": [
+    {
+      "time": "24. 11. 2026 06:01 CET",
+      "summary": "NDX 26 746,10 b. (+6,86 %, závěr 23. 11.). RSI14 41,99; VXN 36,31. Bez nové kvalifikované události; 15 kandidátů, 0 vyřazeno. Ověřeny výstupy updaterů: RSI, risk-model, futures maximum, MA50 breadth, Top 10 a členství k 20. 11. TE 9/9 prověřeno, 3 FX aktualizovány; 6 rozdílných komodit ponecháno. NQ=F nedostupný; kotace 01:05 zachována. Sazby a HDP beze změny. Přímé načtení Pages nedostupné.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq NDX",
+          "url": "https://indexes.nasdaq.com/Index/Overview/NDX"
+        },
+        {
+          "label": "Reuters – Asie / Fed",
+          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-24/"
+        },
+        {
+          "label": "Google Finance NDX",
+          "url": "https://www.google.com/finance/quote/NDX:INDEXNASDAQ"
+        }
+      ]
+    },
     {
       "time": "24. 11. 2026 05:00 CET",
       "summary": "NDX 26 746,10 b. (+6,86 %, závěr 23. 11.). VXN 36,31. Bez nové kvalifikované události; 15 kandidátů. TE 9/9 prověřeno, 2/9 potvrzeny. ChartVault ověřen, Yahoo nedostupné; Nasdaq členství pouze k 20. 11.; modely zachovány.",
