@@ -10,7 +10,7 @@
   "sentiment": {
     "label": "Neutrální",
     "trend": "srovnání nedostupné – aktuální srovnatelná futures kotace nedostupná",
-    "reason": "VXN 36,31 (23. 11.); RSI14 41,99 (23. 11.) (poslední výpočet); MA50 breadth 43,6 % (23. 11.)."
+    "reason": "VXN 36,31 (23. 11.); RSI14 41,99 (23. 11.) (poslední výpočet); MA50 breadth nedostupné (zdroj neověřen)."
   },
   "driver": "Evropské technologie −0,3 % (09:10 CET) po pondělním růstu přes 4 %; NVDA +31,48 % (23. 11.).",
   "news": [
@@ -379,7 +379,7 @@
   },
   "forecast": {
     "athReturnPercent": 18,
-    "athReason": "Nutný růst 17,26 %. VXN 36,31 (23. 11.); RSI14 41,99 (23. 11.) (poslední výpočet); MA50 breadth 43,6 % (23. 11.).",
+    "athReason": "Nutný růst 17,26 %. VXN 36,31 (23. 11.); RSI14 41,99 (23. 11.) (poslední výpočet); MA50 breadth nedostupné (zdroj neověřen).",
     "downside": "−7 až −13 %",
     "downsideReason": "Modelový 25. percentil koncové ceny; VXN 36,31 (23. 11.).",
     "downsideModel": {
