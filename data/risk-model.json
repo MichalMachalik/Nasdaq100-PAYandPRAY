@@ -37,7 +37,13 @@
     "vxnCheckedAtUtc": "2026-11-24T04:59:46.079150Z",
     "treasuryCheckedAtUtc": "2026-11-24T04:59:46.079150Z",
     "vxnRetrievedAtUtc": "2026-11-24T04:59:46.079150Z",
-    "treasuryRetrievedAtUtc": "2026-11-24T04:59:46.079150Z"
+    "treasuryRetrievedAtUtc": "2026-11-24T04:59:46.079150Z",
+    "vxnChangePercent": -19.76,
+    "vxnPreviousClose": 45.25,
+    "vxnPreviousCloseAsOf": "2026-11-20",
+    "vxnQuoteKind": "daily-close",
+    "vxnQuotedAtUtc": "2026-11-23T21:15:01Z",
+    "vxnVerificationSource": "https://ycharts.com/indices/%5EVXN/level"
   },
   "earnings": [
     {
