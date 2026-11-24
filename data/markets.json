@@ -5,8 +5,8 @@
     "currencies": "https://tradingeconomics.com/currencies"
   },
   "timestampKind": "retrieval timestamp is separate from trading day",
-  "fetchedAtUtc": "2026-11-24T11:00:44Z",
-  "fetchedAtPrague": "24. 11. 2026 12:00",
+  "fetchedAtUtc": "2026-11-24T12:21:27Z",
+  "fetchedAtPrague": "24. 11. 2026 13:21",
   "quotes": [
     {
       "id": "WTI",
@@ -41,12 +41,12 @@
     {
       "id": "Gasoline",
       "unit": "USD/gal",
-      "price": 2.4038,
-      "changePercent": -0.07,
+      "price": 2.4213,
+      "changePercent": 0.66,
       "quoteDate": "Nov/24",
       "quoteDateISO": "2026-11-24",
       "sourceUrl": "https://tradingeconomics.com/commodity/gasoline",
-      "fetchedAtUtc": "2026-11-24T09:21:16Z"
+      "fetchedAtUtc": "2026-11-24T12:21:27Z"
     },
     {
       "id": "EU Gas",
@@ -81,12 +81,12 @@
     {
       "id": "EUR/CZK",
       "unit": "EUR/CZK",
-      "price": 24.4249,
-      "changePercent": 0.03,
+      "price": 24.4359,
+      "changePercent": 0.08,
       "quoteDate": "Nov/24",
       "quoteDateISO": "2026-11-24",
       "sourceUrl": "https://tradingeconomics.com/eurczk:cur",
-      "fetchedAtUtc": "2026-11-24T09:00:59Z"
+      "fetchedAtUtc": "2026-11-24T12:21:27Z"
     },
     {
       "id": "USD/CZK",
