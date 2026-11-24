@@ -5,8 +5,8 @@
     "currencies": "https://tradingeconomics.com/currencies"
   },
   "timestampKind": "retrieval timestamp is separate from trading day",
-  "fetchedAtUtc": "2026-11-24T01:01:37Z",
-  "fetchedAtPrague": "24. 11. 2026 02:01",
+  "fetchedAtUtc": "2026-11-24T01:20:47Z",
+  "fetchedAtPrague": "24. 11. 2026 02:20",
   "quotes": [
     {
       "id": "WTI",
@@ -51,12 +51,12 @@
     {
       "id": "EU Gas",
       "unit": "EUR/MWh",
-      "price": 88.69,
-      "changePercent": 0.27,
+      "price": 88.62,
+      "changePercent": 0.19,
       "quoteDate": "Nov/23",
       "quoteDateISO": "2026-11-23",
       "sourceUrl": "https://tradingeconomics.com/commodity/eu-natural-gas",
-      "fetchedAtUtc": "2026-11-23T21:29:55.762227Z"
+      "fetchedAtUtc": "2026-11-24T01:20:47Z"
     },
     {
       "id": "Gold",
