@@ -1,12 +1,6 @@
 name: Trading Economics commodities and FX
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - "data/latest.json"
-      - "scripts/update_markets.py"
-      - ".github/workflows/markets.yml"
   schedule:
     - cron: "17 * * * *"
 permissions:

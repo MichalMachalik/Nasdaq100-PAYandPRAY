@@ -1,12 +1,6 @@
 name: Nasdaq-100 top ten by market cap
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - "data/latest.json"
-      - "scripts/update_top10.py"
-      - ".github/workflows/top10.yml"
   schedule:
     - cron: "11 * * * *"
 permissions:

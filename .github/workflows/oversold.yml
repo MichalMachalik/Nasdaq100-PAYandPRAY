@@ -1,13 +1,6 @@
 name: Nasdaq 100 cash RSI oversold indicator
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - "data/latest.json"
-      - "scripts/update_oversold.py"
-      - "tests/test_oversold.py"
-      - ".github/workflows/oversold.yml"
   schedule:
     - cron: "37 * * * *"
 permissions:

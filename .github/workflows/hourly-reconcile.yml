@@ -1,0 +1,73 @@
+name: Hourly Pay & Pray data reconciliation
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "data/latest.json"
+      - "scripts/update_*.py"
+      - "tests/test_*.py"
+      - ".github/workflows/hourly-reconcile.yml"
+  schedule:
+    - cron: "33 * * * *"
+permissions:
+  contents: write
+concurrency:
+  group: pay-and-pray-hourly-reconcile
+  cancel-in-progress: false
+jobs:
+  reconcile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Install financial table parser
+        run: python -m pip install --disable-pip-version-check beautifulsoup4
+      - name: Refresh independent sources sequentially without overwriting newer snapshots
+        env:
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+        shell: bash
+        run: |
+          set -uo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          failures=()
+          refresh() {
+            local name="$1" script="$2" tests="$3"
+            shift 3
+            for attempt in 1 2 3 4; do
+              echo "Checking $name, attempt $attempt"
+              # This is an isolated runner; discard only its unpublished changes.
+              git reset --hard HEAD >/dev/null || return 1
+              git fetch --no-tags --depth=1 origin "$DEFAULT_BRANCH" || return 1
+              git checkout --detach FETCH_HEAD || return 1
+              bash -c "$tests" || return 1
+              python "$script" || return 1
+              git add -- "$@" || return 1
+              if git diff --cached --quiet; then
+                echo "$name: source unchanged"
+                return 0
+              fi
+              git commit -m "Reconcile verified $name data" || return 1
+              if git push origin "HEAD:refs/heads/$DEFAULT_BRANCH"; then
+                return 0
+              fi
+              sleep "$((attempt * 5))"
+            done
+            echo "::error::$name publication failed; verified remote data retained"
+            return 1
+          }
+          refresh "futures" "scripts/update_futures.py" "PYTHONPATH=tests python -m unittest test_refresh_24x7.FuturesChecks test_refresh_24x7.ScheduleAndDisplayChecks -v" data/futures.json || failures+=("futures")
+          refresh "top10" "scripts/update_top10.py" "true" data/top10.json data/ndx-constituents.json || failures+=("top10")
+          refresh "markets" "scripts/update_markets.py" "true" data/markets.json || failures+=("markets")
+          refresh "futures-ath" "scripts/update_futures_ath.py" "true" data/futures-ath.json || failures+=("futures-ath")
+          refresh "oversold" "scripts/update_oversold.py" "python -m unittest discover -s tests -p test_oversold.py -v" data/oversold.json || failures+=("oversold")
+          refresh "breadth" "scripts/update_breadth.py" "python -m unittest discover -s tests -p test_breadth.py -v" data/breadth.json || failures+=("breadth")
+          refresh "risk-model" "scripts/update_risk_model.py" "python -m unittest discover -s tests -p test_risk_model.py -v" data/risk-model.json || failures+=("risk-model")
+          if [ "${#failures[@]}" -ne 0 ]; then
+            echo "::error::Blocks needing attention: ${failures[*]}"
+            exit 1
+          fi
+          echo "All seven independent source checks completed."

@@ -1,13 +1,6 @@
 name: Futures quote update
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - "data/latest.json"
-      - "scripts/update_futures.py"
-      - "tests/test_refresh_24x7.py"
-      - ".github/workflows/futures.yml"
   schedule:
     - cron: "*/5 * * * *"
 permissions:

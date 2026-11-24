@@ -1,12 +1,6 @@
 name: E-mini Nasdaq-100 historical high
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - "data/latest.json"
-      - "scripts/update_futures_ath.py"
-      - ".github/workflows/futures-ath.yml"
   schedule:
     - cron: "29 * * * *"
 permissions:

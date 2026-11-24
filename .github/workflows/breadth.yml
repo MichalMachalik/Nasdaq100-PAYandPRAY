@@ -1,13 +1,6 @@
 name: Nasdaq-100 breadth above MA50
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - "data/latest.json"
-      - "scripts/update_breadth.py"
-      - "tests/test_breadth.py"
-      - ".github/workflows/breadth.yml"
   schedule:
     - cron: "23 * * * *"
 permissions:

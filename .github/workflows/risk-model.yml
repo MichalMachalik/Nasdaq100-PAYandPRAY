@@ -1,13 +1,6 @@
 name: Nasdaq-100 evidence-based 1-3 month downside
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - "data/latest.json"
-      - "scripts/update_risk_model.py"
-      - "tests/test_risk_model.py"
-      - ".github/workflows/risk-model.yml"
   schedule:
     - cron: "47 * * * *"
 permissions:
