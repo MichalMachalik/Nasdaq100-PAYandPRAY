@@ -5,8 +5,8 @@
     "currencies": "https://tradingeconomics.com/currencies"
   },
   "timestampKind": "retrieval timestamp is separate from trading day",
-  "fetchedAtUtc": "2026-11-24T10:21:03Z",
-  "fetchedAtPrague": "24. 11. 2026 11:21",
+  "fetchedAtUtc": "2026-11-24T11:00:44Z",
+  "fetchedAtPrague": "24. 11. 2026 12:00",
   "quotes": [
     {
       "id": "WTI",
@@ -96,7 +96,7 @@
       "quoteDate": "Nov/24",
       "quoteDateISO": "2026-11-24",
       "sourceUrl": "https://tradingeconomics.com/czech-republic/currency",
-      "fetchedAtUtc": "2026-11-24T10:21:03Z"
+      "fetchedAtUtc": "2026-11-24T11:00:44Z"
     }
   ]
 }
