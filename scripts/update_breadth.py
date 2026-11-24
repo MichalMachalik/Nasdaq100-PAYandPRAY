@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Publish dated Nasdaq-100 50-session breadth from ChartVault or StockCurry.
+"""Publish dated Nasdaq-100 50-session breadth from the dated StockCurry financial-data table.
 
 Input: current Nasdaq-100 security classes, share of eligible close > each 50DMA.
 The measure is not a probability, and eligibility/member composition matters.
@@ -7,7 +7,6 @@ Failure, stale upstream data, or denominator inconsistency never overwrite a
 previous observation. No hidden stale-data substitution or 39/61 hardcoding.
 """
 import json
-import math
 import re
 from html.parser import HTMLParser
 from zoneinfo import ZoneInfo
@@ -16,90 +15,6 @@ from pathlib import Path
 from urllib.request import Request, urlopen
 
 OUT = Path("data/breadth.json")
-SOURCE_URL = (
-    "https://raw.githubusercontent.com/AveCeasar/AveCeasar.github.io/"
-    "main/chart-data/nasdaq100-percent-above-moving-averages.json"
-)
-PUBLIC_URL = "https://aveceasar.github.io/nasdaq100-percent-above-moving-averages/"
-
-def fetch_chart():
-    request = Request(SOURCE_URL, headers={
-        "User-Agent": "PayAndPray-Breadth/1.0 (public-data-reader)",
-        "Accept": "application/json",
-    })
-    with urlopen(request, timeout=30) as response:
-        if response.status != 200:
-            raise ValueError("Breadth data source returned non-200 status")
-        raw = response.read(250_000)
-        if len(raw) >= 250_000:
-            raise ValueError("Breadth data response unexpectedly large")
-        return json.loads(raw)
-
-def make_snapshot(chart, now=None):
-    if now is None:
-        now = datetime.now(timezone.utc)
-    if now.tzinfo is None:
-        raise ValueError("now must be offset aware")
-    if not isinstance(chart, dict) or chart.get("cadence") != "daily":
-        raise ValueError("Unknown or non-daily Nasdaq breadth feed")
-    if not any(x.get("key") == "above50" for x in chart.get("lines", []) if isinstance(x, dict)):
-        raise ValueError("Above-50DMA key is missing")
-    series = chart.get("series")
-    if not isinstance(series, list) or not series:
-        raise ValueError("No source observations")
-    dated = [x for x in series if isinstance(x, dict) and isinstance(x.get("date"), str)]
-    if not dated or any(x.get("date") != str(date.fromisoformat(x["date"])) for x in dated):
-        raise ValueError("Invalid market date")
-    if len({x["date"] for x in dated}) != len(dated):
-        raise ValueError("Duplicate daily observations")
-    if len(dated) != len(series):
-        raise ValueError("Incomplete observations")
-    current = max(dated, key=lambda row: row["date"])
-    as_of = date.fromisoformat(current["date"])
-    age = (now.date() - as_of).days
-    if age < 0 or age > 7:
-        raise ValueError("Missing, future-dated, or stale Nasdaq breadth data")
-    updated = datetime.fromisoformat(chart.get("updatedAt", ""))
-    if updated.tzinfo is None or updated > now:
-        raise ValueError("Source update timestamp missing or in future")
-    if updated.date() < as_of:
-        raise ValueError("Source updated before reported market observation")
-    eligible = current.get("eligible50")
-    pct = current.get("above50")
-    if type(eligible) is not int or not 95 <= eligible <= 120:
-        raise ValueError("Insufficient MA50 coverage / impossible share-class count")
-    if not isinstance(pct, (float, int)) or isinstance(pct, bool) or not math.isfinite(pct) or not 0 <= pct <= 100:
-        raise ValueError("Invalid MA50 breadth percentage")
-    count_f = pct / 100 * eligible
-    above = round(count_f)
-    if abs(count_f-above) > 0.0005:
-        raise ValueError("Percent inconsistent with eligible security count")
-    # The provider may count 101 securities for Nasdaq-100 due to dual classes.
-    # Exactly-on-the-MA50 securities are included in the complement (not above).
-    below = eligible - above
-    return {
-        "schemaVersion": 1,
-        "id": "ndx-ma50-breadth",
-        "asOf": as_of.isoformat(),
-        "sourceUpdatedAt": updated.isoformat(),
-        "eligibleSecurities": eligible,
-        "aboveCount": above,
-        "atOrBelowCount": below,
-        "abovePct": round(100*above/eligible, 1),
-        "belowPct": round(100*below/eligible, 1),
-        "countedSecurityClasses": True,
-        "source": "ChartVault · current Nasdaq-100 security classes vs their own 50-session SMA",
-        "sourceUrl": PUBLIC_URL,
-        "sourceDataUrl": SOURCE_URL,
-        "methodology": (
-            "Current Nasdaq-100 securities with enough history (not point-in-time members); "
-            "each adjusted close > own trailing SMA50 counts as above; remaining eligible "
-            "securities are at/below. Not forecasts. Historical member changes create "
-            "survivorship bias."
-        ),
-        "feedStatus": "published",
-    }
-
 STOCKCURRY_URL = "https://stockcurry.com/index_timeline.php?index=Nasdaq100&view=percent"
 NY = ZoneInfo("America/New_York")
 
@@ -231,25 +146,31 @@ def main():
     now = datetime.now(timezone.utc)
     previous = json.loads(OUT.read_text(encoding="utf-8")) if OUT.exists() else {}
     expected = expected_cash_date(now)
-    available = []
-    try:
-        available.append(make_snapshot(fetch_chart(), now))
-    except (OSError, ValueError, TypeError, KeyError) as exc:
-        print("ChartVault unavailable:", exc)
-    target = max(expected, previous.get("asOf", ""))
-    if not available or available[0]["asOf"] < target:
-        try:
-            available.append(stockcurry_snapshot(fetch_stockcurry(), now, expected))
-        except (OSError, ValueError, TypeError, KeyError, UnicodeError) as exc:
-            print("StockCurry unavailable:", exc)
-    if not available:
-        raise ValueError("No verified breadth observation; previous publication preserved")
-    snapshot = max(available, key=lambda x: x["asOf"])
+    snapshot = stockcurry_snapshot(fetch_stockcurry(), now, expected)
+    # Validate the denominator against the official Nasdaq constituent list.
+    members = json.loads((OUT.parent / "ndx-constituents.json").read_text(encoding="utf-8"))
+    symbols = members.get("symbols", [])
+    if (members.get("index") != "NDX" or
+        members.get("sourceUrl") != "https://api.nasdaq.com/api/quote/list-type/nasdaq100" or
+        not isinstance(symbols, list) or len(set(symbols)) != len(symbols) or
+        not 95 <= len(symbols) <= 120 or snapshot["eligibleSecurities"] != len(symbols)):
+        raise ValueError("Breadth denominator conflicts with official Nasdaq membership")
+    checked_members = datetime.fromisoformat(members["checkedAtUtc"].replace("Z", "+00:00"))
+    if not 0 <= (now-checked_members).total_seconds() <= 7*86400:
+        raise ValueError("Official Nasdaq membership verification is stale")
+    snapshot["constituentsSourceUrl"] = members["sourceUrl"]
+    snapshot["constituentsCheckedAtUtc"] = members["checkedAtUtc"]
+    # Never replace a newer observation with an older one.
+    if snapshot["asOf"] < previous.get("asOf", ""):
+        raise ValueError("Source predates the last published observation")
     checked_at = now.isoformat().replace("+00:00", "Z")
-    if previous.get("asOf", "") >= snapshot["asOf"]:
+    if (previous.get("asOf", "") == snapshot["asOf"] and
+        previous.get("sourceUrl") == STOCKCURRY_URL):
         # Do not silently revise a same-day count when providers disagree, and
         # never overwrite a newer observation with an older fallback.
-        snapshot = previous
+        if (previous.get("aboveCount"), previous.get("eligibleSecurities")) != (snapshot["aboveCount"], snapshot["eligibleSecurities"]):
+            raise ValueError("Conflicting same-session breadth values; retain prior observation")
+        snapshot["collectedAtUtc"] = previous.get("collectedAtUtc", checked_at)
         print("MA50 breadth unchanged", snapshot["asOf"])
     else:
         snapshot["collectedAtUtc"] = checked_at
