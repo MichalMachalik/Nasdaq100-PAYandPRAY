@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "24. 11. 2026 02:01 CET",
+  "updatedAtPrague": "24. 11. 2026 03:00 CET",
   "marketStatus": "Cash NDX: seance ukončena; závěr 23. 11. 2026.",
   "ndx": {
     "value": 26746.1,
@@ -9,10 +9,10 @@
   },
   "sentiment": {
     "label": "Neutrální",
-    "trend": "→ beze změny proti 01:00 CET",
-    "reason": "NDX +6,86 %; VXN 36,31 (23. 11.); MA50 breadth 31,7 % (20. 11.). Japonsko flash PMI výroba 53,7 vs. 53,3."
+    "trend": "→ beze změny proti 02:01 CET",
+    "reason": "VXN 36,31 (23. 11.); MA50 breadth 31,7 % (20. 11.). FedWatch: prosincové zvýšení plně započteno vs. 89 % v pátek."
   },
-  "driver": "NVDA: obnovení mandátu CEO Jensena Huanga; NVDA +31,48 %, SOX +14,03 % (23. 11.).",
+  "driver": "NVDA +31,48 %, SOX +14,03 % (23. 11.). KOSPI +7,5 %, TAIEX +9,1 % (24. 11., Reuters 02:29).",
   "news": [
     {
       "title": "NVDA: Jensen Huang znovu CEO s okamžitou účinností.",
@@ -36,6 +36,25 @@
       "eventKey": "nvda-jensen-huang-reinstated-ceo-20261123",
       "ndxRelevant": true,
       "importanceScore": 97
+    },
+    {
+      "title": "FedWatch: prosincové zvýšení sazeb plně započteno vs. 89 % v pátek; pravděpodobnost +50 bb přibližně 5 %. US10Y 4,94 %, US2Y 4,69 %.",
+      "time": "24. 11. 2026 02:29 CET",
+      "publishedAtPrague": "24. 11. 2026, 02:29",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "macro",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-24/",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-24/"
+        }
+      ],
+      "eventKey": "fed-december-hike-repricing-asia-20261124",
+      "ndxRelevant": true,
+      "importanceScore": 78
     },
     {
       "title": "Fed Williams: očekává inflaci 3,5 % na konci 2026; návrat k 2% cíli v roce 2028. Přetrvávají proinflační rizika.",
@@ -184,7 +203,7 @@
       "time": "24. 11. 2026 01:35 CET",
       "publishedAtPrague": "24. 11. 2026, 01:35",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "macro",
       "source": "Reuters",
       "url": "https://www.reuters.com/business/japans-factory-activity-expands-november-pmi-shows-2026-11-24/",
@@ -214,6 +233,25 @@
         }
       ],
       "eventKey": "us-flash-pmi-nov-2026-20261123",
+      "ndxRelevant": true,
+      "importanceScore": 62
+    },
+    {
+      "title": "Odhad JPMorgan: AI CAPEX v roce 2027 téměř 1,4 bil. USD; Dell Q3 očekávaný růst tržeb 82,6 %.",
+      "time": "23. 11. 2026 14:49 CET",
+      "publishedAtPrague": "23. 11. 2026, 14:49",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "ai_infrastructure",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/dell-hpe-results-put-ai-demand-test-after-tech-rout-2026-11-23/",
+      "sourceLinks": [
+        {
+          "label": "Reuters – AI CAPEX / DELL / HPE",
+          "url": "https://www.reuters.com/business/dell-hpe-results-put-ai-demand-test-after-tech-rout-2026-11-23/"
+        }
+      ],
+      "eventKey": "jpmorgan-ai-capex-2027-dell-hpe-results-preview-20261123",
       "ndxRelevant": true,
       "importanceScore": 62
     },
@@ -254,25 +292,6 @@
       "eventKey": "global-hedge-funds-deleveraging-ai-selloff-20261123",
       "ndxRelevant": true,
       "importanceScore": 68
-    },
-    {
-      "title": "Odhad JPMorgan: AI CAPEX v roce 2027 téměř 1,4 bil. USD; Dell Q3 očekávaný růst tržeb 82,6 %.",
-      "time": "23. 11. 2026 14:49 CET",
-      "publishedAtPrague": "23. 11. 2026, 14:49",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_infrastructure",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/dell-hpe-results-put-ai-demand-test-after-tech-rout-2026-11-23/",
-      "sourceLinks": [
-        {
-          "label": "Reuters – AI CAPEX / DELL / HPE",
-          "url": "https://www.reuters.com/business/dell-hpe-results-put-ai-demand-test-after-tech-rout-2026-11-23/"
-        }
-      ],
-      "eventKey": "jpmorgan-ai-capex-2027-dell-hpe-results-preview-20261123",
-      "ndxRelevant": true,
-      "importanceScore": 62
     },
     {
       "title": "Morgan Stanley: odhad růstu EPS 2027 +14 % vs. kons. +17 %; tržní ocenění odpovídá −6 %. Preferuje hyperscalery.",
@@ -352,6 +371,24 @@
     "timePrague": "24. 11. 2026, 13:00 CET"
   },
   "archive": [
+    {
+      "time": "24. 11. 2026 03:00 CET",
+      "summary": "NDX 26 746,10 b. (+6,86 %), závěr 23. 11. FedWatch: prosincové zvýšení plně započteno vs. 89 % v pátek. 15 kandidátů, 0 vyřazeno. NQ=F Yahoo 429; samostatný NQZ26 WSJ 26 885,25 (+0,29 %) 02:44. Nasdaq seznam 101 k 20. 11., starší než uložený; globální žebříček prověřen, Top 10 zachován. TE 9/9 kontrolováno, rozdílné snímky ponechány. Sazby a HDP beze změny. ChartVault načten, MA50 31,7 % k 20. 11. Yahoo historie a Treasury CSV nedostupné; RSI, futures maximum a model zachovány. Pages přímé načtení nedostupné.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq NDX",
+          "url": "https://indexes.nasdaq.com/index/Overview/NDX"
+        },
+        {
+          "label": "Reuters – FedWatch / Asie",
+          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-24/"
+        },
+        {
+          "label": "WSJ NQZ26",
+          "url": "https://www.wsj.com/market-data/quotes/futures/NQZ26"
+        }
+      ]
+    },
     {
       "time": "24. 11. 2026 02:01 CET",
       "summary": "NDX 26 746,10 b. (+6,86 %), závěr 23. 11. Japonsko PMI výroba 53,7 vs. 53,3. 14 kandidátů; 0 vyřazeno. NQ=F ověřen ze zdrojového logu 01:15 CET, Yahoo přímý přístup nedostupný. Globální žebříček a seznam Nasdaq prověřeny; sazby a HDP beze změny. TE 9/9 kontrolováno, Brent a USD/CZK potvrzeny; 7 rozporných či neúplně datovaných snímků ponecháno. ChartVault ověřen, MA50 31,7 % k 20. 11. Yahoo historie NDX, NQ a VXN a Treasury CSV nedostupné, RSI, futures maximum a model zachovány. Pages přímé načtení nedostupné.",
@@ -4383,6 +4420,10 @@
     {
       "name": "Investing – NDX historie",
       "url": "https://www.investing.com/indices/nq-100-historical-data"
+    },
+    {
+      "name": "Reuters – FedWatch / Asie",
+      "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-24/"
     }
   ]
 }
