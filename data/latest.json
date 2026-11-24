@@ -1,25 +1,25 @@
 {
-  "updatedAtPrague": "24. 11. 2026 20:00 CET",
+  "updatedAtPrague": "24. 11. 2026 21:01 CET",
   "marketStatus": "Cash NDX: trh otevřen.",
   "ndx": {
-    "value": 26279.31,
-    "changePercent": -1.75,
+    "value": 26173.65,
+    "changePercent": -2.14,
     "ath": 31361.37,
-    "asOf": "24. 11. 2026, 19:34:17 CET (Google Finance)"
+    "asOf": "24. 11. 2026, 20:36:03 CET (Google Finance)"
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "↗",
+    "trend": "↘",
     "reason": "MA50 breadth nedostupné (zdroj neověřen); RSI14 41,99 (2026-11-23, poslední validovaný výpočet); VXN 36,31 (2026-11-23, závěr)."
   },
-  "driver": "SOX −7,06 % (19:34 CET, související kotace); NVDA −6,95 % (19:51 CET). NDX zmírňuje ztráty. Pokračuje tlak na AI polovodiče.",
+  "driver": "SOX −7,75 % (20:48 CET); NVDA −7,60 % (20:35 CET). NDX prohloubil ztrátu proti předchozímu snímku.",
   "news": [
     {
       "title": "NVDA | Schumer obvinil CEO Jensena Huanga z porušení exportních pravidel USA a požaduje zpřísnění legislativy. NVDA se bezprostředně nevyjádřila; veřejné slyšení v Senátu 3. 12.",
       "time": "24. 11. 2026 19:46 CET",
       "publishedAtPrague": "24. 11. 2026, 19:46",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "ai_regulation",
       "source": "Reuters",
       "url": "https://www.reuters.com/world/china/schumer-accuses-nvidia-ceo-violating-us-export-control-law-2026-11-24/",
@@ -283,7 +283,7 @@
       "importanceScore": 77
     },
     {
-      "title": "HPE Q4: tržby 14,55 mld. USD vs. kons. 14,43 (beat 0,8 %). Upr. EPS 1,43 USD vs. kons. 1,28 (beat 11,7 %). Cloud & AI +68,6 % y/y. Q1 výhled: střed tržeb 14,3 mld. USD vs. kons. 12,84 (beat 11,4 %); upr. EPS 1,35 vs. kons. 1,08 USD (beat 25,0 %).",
+      "title": "HPE Q4: tržby 14,55 mld. USD vs. kons. 14,43 (beat 0,8 %). Upr. EPS 1,43 USD vs. kons. 1,28 (beat 11,7 %). Cloud & AI +68,6 % y/y. Q1 výhled: střed tržeb 14,3 mld. USD vs. kons. 12,84 (beat 11,4 %); upr. EPS 1,35 vs. kons. 1,08 USD (beat 25,0 %). FY27 upr. provozní marže 14–15 % vs. FY26 15,1 %; Cloud & AI ~14 % vs. 15,2 %.",
       "time": "23. 11. 2026 22:25 CET",
       "publishedAtPrague": "23. 11. 2026, 22:25",
       "publicationTimeVerified": true,
@@ -301,8 +301,8 @@
           "url": "https://www.businesswire.com/news/home/20261123129850/en/HPE-reports-fiscal-2026-fourth-quarter-results"
         },
         {
-          "label": "Investing.com – Q1 konsenzus",
-          "url": "https://www.investing.com/news/earnings/hpe-stocks-falls-after-hours-despite-quarterly-results-guidance-beat-5046357"
+          "label": "Reuters – marže",
+          "url": "https://www.reuters.com/business/hpe-shares-fall-margin-worries-overshadow-raised-outlook-2026-11-24/"
         }
       ],
       "eventKey": "hpe-fy2026-q4-earnings-20261123",
@@ -466,13 +466,13 @@
   "leaders": [
     {
       "ticker": "NVDA",
-      "changePercent": -6.95,
-      "impact": "vysoký – 19:51 CET"
+      "changePercent": -7.6,
+      "impact": "vysoký – 20:35 CET"
     },
     {
       "ticker": "MSFT",
-      "changePercent": 0.57,
-      "impact": "střední – 19:52 CET"
+      "changePercent": 0.16,
+      "impact": "střední – 20:55 CET"
     }
   ],
   "macro": "US10Y | 23. 11.: 4,92 % | 20. 11.: 4,92 % | 0 bb",
@@ -483,7 +483,7 @@
   },
   "forecast": {
     "athReturnPercent": 18,
-    "athReason": "Nutný růst 19,34 %. MA50 breadth nedostupné (zdroj neověřen); RSI14 41,99 (2026-11-23, poslední validovaný výpočet); VXN 36,31 (2026-11-23, závěr). Odhad 18 % zachován; intradenní korekce ztrát, tlak na polovodiče a exportní riziko.",
+    "athReason": "Nutný růst 19,82 %. MA50 breadth nedostupné (zdroj neověřen); RSI14 41,99 (2026-11-23, poslední validovaný výpočet); VXN 36,31 (2026-11-23, závěr). Odhad 18 % zachován; pokračující tlak na polovodiče a exportní riziko.",
     "downside": "−7 až −13 %",
     "downsideReason": "Modelový 25. percentil koncové ceny; VXN 36,31 (2026-11-23, závěr).",
     "downsideModel": {
@@ -502,6 +502,24 @@
     "timePrague": "25. 11. 2026, 14:30 CET"
   },
   "archive": [
+    {
+      "time": "24. 11. 2026 21:01 CET",
+      "summary": "NDX 26 173,65 b. (−2,14 %, 20:36 CET); SOX −7,75 % (20:48). HPE: FY27 upr. provozní marže 14–15 % vs. FY26 15,1 %. MA50 breadth nedostupné (zdroj neověřen); RSI14 41,99 (2026-11-23, poslední validovaný výpočet); VXN 36,31 (2026-11-23, závěr). 20 kandidátů; 10 JSON načteno, TE 9/9 prověřeno, USD/CZK potvrzeno, rozpory zachovány. Nasdaq 101 členů; CMC znaménka neověřena. FRED a Treasury potvrzeny, sazby/HDP bez nové hodnoty. Yahoo nedostupný pro futures, maximum futures a RSI; 7 skriptů bez cizích GitHub URL. Logy updaterů neověřeny, Pages nedostupné.",
+      "sourceLinks": [
+        {
+          "label": "Google Finance – NDX",
+          "url": "https://www.google.com/finance/quote/NDX:INDEXNASDAQ"
+        },
+        {
+          "label": "Google Finance – SOX",
+          "url": "https://www.google.com/finance/quote/SOX:INDEXNASDAQ"
+        },
+        {
+          "label": "Reuters – HPE",
+          "url": "https://www.reuters.com/business/hpe-shares-fall-margin-worries-overshadow-raised-outlook-2026-11-24/"
+        }
+      ]
+    },
     {
       "time": "24. 11. 2026 20:00 CET",
       "summary": "NDX 26 279,31 b. (−1,75 %, 19:34 CET); NVDA −6,95 % (19:51). Reuters 19:46: Schumer obvinil CEO NVDA z porušení exportních pravidel. MA50 breadth nedostupné (zdroj neověřen); RSI14 41,99 (2026-11-23, poslední validovaný výpočet); VXN 36,31 (2026-11-23, závěr). 20 kandidátů; 10 JSON načteno. TE 9/9 kontrolováno, Gasoline aktualizován, rozporné snímky zachovány. Nasdaq 101 členů; CMC znaménka neověřena. FRED VXN a US Treasury potvrzeny; sazby/HDP bez nové hodnoty. Yahoo nedostupný pro futures, historické maximum futures a RSI. 7 skriptů bez cizích GitHub URL; logy updaterů neověřeny, Pages nedostupné.",
@@ -4047,6 +4065,10 @@
     {
       "time": "24. 11. 2026 20:00 CET",
       "ndx": 26279.31
+    },
+    {
+      "time": "24. 11. 2026 21:01 CET",
+      "ndx": 26173.65
     }
   ],
   "sources": [
@@ -5013,6 +5035,10 @@
     {
       "name": "Reuters – NVDA export",
       "url": "https://www.reuters.com/world/china/schumer-accuses-nvidia-ceo-violating-us-export-control-law-2026-11-24/"
+    },
+    {
+      "name": "Reuters – HPE",
+      "url": "https://www.reuters.com/business/hpe-shares-fall-margin-worries-overshadow-raised-outlook-2026-11-24/"
     }
   ]
 }
