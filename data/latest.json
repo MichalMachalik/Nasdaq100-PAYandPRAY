@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "24. 11. 2026 09:01 CET",
+  "updatedAtPrague": "24. 11. 2026 10:00 CET",
   "marketStatus": "Cash NDX: trh uzavřen; závěr 23. 11. 2026.",
   "ndx": {
     "value": 26746.1,
@@ -9,10 +9,10 @@
   },
   "sentiment": {
     "label": "Neutrální",
-    "trend": "→ beze změny proti poslednímu srovnatelnému snímku",
-    "reason": "VXN 36,31 (23. 11.); RSI14 41,99 (23. 11.); MA50 breadth 43,6 % (23. 11.)."
+    "trend": "srovnání nedostupné – aktuální srovnatelná futures kotace nedostupná",
+    "reason": "VXN 36,31 (23. 11.); RSI14 41,99 (23. 11.) (poslední výpočet); MA50 breadth 43,6 % (23. 11.)."
   },
-  "driver": "NVDA +31,48 % (23. 11.). TAIEX +9 % po návratu CEO NVDA; prosincové zvýšení sazeb Fedu plně započteno.",
+  "driver": "Evropské technologie −0,3 % (09:10 CET) po pondělním růstu přes 4 %; NVDA +31,48 % (23. 11.).",
   "news": [
     {
       "title": "NVDA: Jensen Huang znovu CEO s okamžitou účinností.",
@@ -230,7 +230,7 @@
       "time": "24. 11. 2026, 01:06 CET",
       "publishedAtPrague": "24. 11. 2026, 01:06",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "ai_infrastructure",
       "source": "Reuters",
       "url": "https://www.reuters.com/markets/asia/singapore-third-quarter-gdp-grows-61-2026-11-24/",
@@ -243,6 +243,25 @@
       "eventKey": "singapore-q3-gdp-ai-exports-20261124",
       "ndxRelevant": true,
       "importanceScore": 55
+    },
+    {
+      "title": "Evropský technologický index −0,3 % v 09:10 CET po pondělním růstu přes 4 % po návratu CEO NVDA.",
+      "time": "24. 11. 2026 09:27 CET",
+      "publishedAtPrague": "24. 11. 2026, 09:27",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "semiconductor_market",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/markets/europe/europes-stoxx-600-subdued-after-ai-driven-rally-2026-11-24/",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/markets/europe/europes-stoxx-600-subdued-after-ai-driven-rally-2026-11-24/"
+        }
+      ],
+      "eventKey": "europe-tech-rally-fades-20261124",
+      "ndxRelevant": true,
+      "importanceScore": 46
     },
     {
       "title": "Japonsko flash PMI výroba | listopad 53,7 vs. říjen 53,3; +0,4 b. Exportní objednávky rostou díky poptávce po polovodičích a elektronice.",
@@ -283,44 +302,6 @@
       "importanceScore": 62
     },
     {
-      "title": "ARM: René Haas prodloužil mandát CEO do roku 2033; NVDA jej oslovila při hledání nástupce Jensena Huanga.",
-      "time": "23. 11. 2026, 13:10 CET",
-      "publishedAtPrague": "23. 11. 2026, 13:10",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "semiconductor_leadership",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/arm-holdings-haas-extends-contract-lead-chip-firm-through-2033-2026-11-23/",
-      "sourceLinks": [
-        {
-          "label": "Reuters – ARM / NVDA",
-          "url": "https://www.reuters.com/business/arm-holdings-haas-extends-contract-lead-chip-firm-through-2033-2026-11-23/"
-        }
-      ],
-      "eventKey": "arm-haas-ceo-contract-through-2033-20261123",
-      "ndxRelevant": true,
-      "importanceScore": 64
-    },
-    {
-      "title": "Hedgeové fondy: týdenní ztráta přes 3 % do 20. 11.; Goldman Sachs eviduje pokles čisté akciové expozice na úrovně dubna 2025.",
-      "time": "23. 11. 2026, 09:24 CET",
-      "publishedAtPrague": "23. 11. 2026, 09:24",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "institutional_deleveraging",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/china/hedge-funds-post-worst-week-since-april-2025-sparks-defensive-shift-2026-11-23/",
-      "sourceLinks": [
-        {
-          "label": "Reuters – hedge funds / AI selloff",
-          "url": "https://www.reuters.com/world/china/hedge-funds-post-worst-week-since-april-2025-sparks-defensive-shift-2026-11-23/"
-        }
-      ],
-      "eventKey": "global-hedge-funds-deleveraging-ai-selloff-20261123",
-      "ndxRelevant": true,
-      "importanceScore": 68
-    },
-    {
       "title": "Odhad JPMorgan: AI CAPEX v roce 2027 téměř 1,4 bil. USD; Dell Q3 očekávaný růst tržeb 82,6 %.",
       "time": "23. 11. 2026 14:49 CET",
       "publishedAtPrague": "23. 11. 2026, 14:49",
@@ -340,6 +321,25 @@
       "importanceScore": 62
     },
     {
+      "title": "ARM: René Haas prodloužil mandát CEO do roku 2033; NVDA jej oslovila při hledání nástupce Jensena Huanga.",
+      "time": "23. 11. 2026, 13:10 CET",
+      "publishedAtPrague": "23. 11. 2026, 13:10",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "semiconductor_leadership",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/arm-holdings-haas-extends-contract-lead-chip-firm-through-2033-2026-11-23/",
+      "sourceLinks": [
+        {
+          "label": "Reuters – ARM / NVDA",
+          "url": "https://www.reuters.com/business/arm-holdings-haas-extends-contract-lead-chip-firm-through-2033-2026-11-23/"
+        }
+      ],
+      "eventKey": "arm-haas-ceo-contract-through-2033-20261123",
+      "ndxRelevant": true,
+      "importanceScore": 64
+    },
+    {
       "title": "Morgan Stanley: odhad růstu EPS 2027 +14 % vs. kons. +17 %; tržní ocenění odpovídá −6 %. Preferuje hyperscalery.",
       "time": "23. 11. 2026, 14:28 CET",
       "publishedAtPrague": "23. 11. 2026, 14:28",
@@ -357,25 +357,6 @@
       "eventKey": "morgan-stanley-tactical-bullish-2027-eps-20261123",
       "ndxRelevant": true,
       "importanceScore": 59
-    },
-    {
-      "title": "Tchaj-wan: od 24. 11. minimální margin ratio 120 % z 130 %; TSMC 23. 11. +1,5 %.",
-      "time": "23. 11. 2026, 09:19 CET",
-      "publishedAtPrague": "23. 11. 2026, 09:19",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "semiconductor_market_liquidity",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/sustainability/boards-policy-regulation/global-markets-taiwan-update-1-2026-11-23/",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/sustainability/boards-policy-regulation/global-markets-taiwan-update-1-2026-11-23/"
-        }
-      ],
-      "eventKey": "taiwan-margin-requirement-easing-20261123",
-      "ndxRelevant": true,
-      "importanceScore": 58
     }
   ],
   "leaders": [
@@ -398,7 +379,7 @@
   },
   "forecast": {
     "athReturnPercent": 18,
-    "athReason": "Nutný růst 17,26 %; VXN 36,31 (23. 11.); RSI14 41,99 (23. 11.); MA50 breadth 43,6 % (23. 11.).",
+    "athReason": "Nutný růst 17,26 %. VXN 36,31 (23. 11.); RSI14 41,99 (23. 11.) (poslední výpočet); MA50 breadth 43,6 % (23. 11.).",
     "downside": "−7 až −13 %",
     "downsideReason": "Modelový 25. percentil koncové ceny; VXN 36,31 (23. 11.).",
     "downsideModel": {
@@ -417,6 +398,24 @@
     "timePrague": "24. 11. 2026, 13:00 CET"
   },
   "archive": [
+    {
+      "time": "24. 11. 2026 10:00 CET",
+      "summary": "NDX 26 746,10 b. (+6,86 %, závěr 23. 11.). Evropské technologie −0,3 % (09:10 CET). VXN 36,31 (23. 11.); RSI14 41,99 (23. 11.) (poslední výpočet); MA50 breadth 43,6 % (23. 11.). 16 kandidátů; 2 vyřazeno. 10 JSON načteno; TE 9/9 kontrolováno, EUR/CZK aktualizováno, 8 rozporných hodnot zachováno. Sazby a HDP potvrzeny. Nasdaq členství k 20. 11.; Top 10 zachováno. Yahoo kotace a historie nedostupné; futures, historické maximum futures a RSI bez přepočtu. VXN potvrzen YCharts, FRED k 20. 11.; Cboe bez číselné kotace. Sedm skriptů bez cizích GitHub URL; logy a Pages nedostupné.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq NDX",
+          "url": "https://indexes.nasdaq.com/index/Overview/NDX"
+        },
+        {
+          "label": "Reuters – evropské technologie",
+          "url": "https://www.reuters.com/markets/europe/europes-stoxx-600-subdued-after-ai-driven-rally-2026-11-24/"
+        },
+        {
+          "label": "YCharts VXN",
+          "url": "https://ycharts.com/indices/%5EVXN/level"
+        }
+      ]
+    },
     {
       "time": "24. 11. 2026 09:01 CET",
       "summary": "NDX 26 746,10 b. (+6,86 %, závěr 23. 11.). Singapur Q3 HDP 6,1 % y/y; AI export a výroba. 17 kandidátů, 0 vyřazeno. VXN 36,31 (23. 11.); RSI14 41,99 (23. 11.); MA50 breadth 43,6 % (23. 11.). Top 10, breadth a VXN ověřeny v logu; Nasdaq seznam k 20. 11. TE 9/9 kontrolováno, rozporné údaje nezapsány. Yahoo kotace a historie nedostupné; RSI a futures maximum zachovány. Sazby a HDP beze změny. Pages poslední nasazení 08:51; veřejná stránka nepřístupná při kontrole.",
@@ -4610,6 +4609,10 @@
     {
       "name": "ADI IR – Q4",
       "url": "https://www.analog.com/en/newsroom/press-releases/2026/10-22-2026-adi-report-4q-fy2026-financial-results.html"
+    },
+    {
+      "name": "Reuters – evropské technologie",
+      "url": "https://www.reuters.com/markets/europe/europes-stoxx-600-subdued-after-ai-driven-rally-2026-11-24/"
     }
   ]
 }
