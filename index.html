@@ -853,20 +853,25 @@ function renderSigned(el,value){
 }
 const setSentences=(id,value)=>{const el=$(id);if(el)renderSigned(el,sentenceBreaks(value))};
 
-function renderMarketSentiment(value){
+// The overview shares the exact validated observations used by the indicator widgets.
+function renderMarketSentiment(vxn,rsi,breadth,ndx){
   const root=$('sentiment-reason');
   if(!root)return;
-  const text=cleanSentimentText(value).replace(/[ \t]+/gu,' ').trim();
-  // Prefer two clean rows when the numeric snapshot ends with a dated close.
-  const match=text.match(/^(.+?\(\s*\d{1,2}\.\s*\d{1,2}\.\s*(?:\d{4})?\s*\))\s*[;.]\s*(.+)$/u);
-  if(!match){renderSigned(root,text);return;}
+  const snapshots=[vxn,rsi,breadth];
+  const expected=[cashObservationDate(ndx),...snapshots.map(x=>x?.asOf||'')].sort().pop();
+  const metric=(name,snapshot,decimals,unit='')=>{
+    if(!snapshot||!Number.isFinite(snapshot.value))return name+' — (data nedostupná)';
+    const day=snapshot.asOf;
+    const date=String(day).split('-');
+    const label=date.length===3?Number(date[2])+'. '+Number(date[1])+'.':String(day);
+    return name+' '+fmt(snapshot.value,decimals)+unit+' ('+label+(expected&&day<expected?' · starší závěr':'')+')';
+  };
   const figures=document.createElement('span');
   figures.className='market-snapshot-values';
-  renderSigned(figures,match[1]);
+  figures.textContent=metric('VXN',vxn,2);
   const commentary=document.createElement('span');
   commentary.className='market-snapshot-comment';
-  const note=match[2].charAt(0).toLocaleUpperCase('cs-CZ')+match[2].slice(1);
-  renderSigned(commentary,note);
+  commentary.textContent=metric('RSI14',rsi,2)+'; '+metric('MA50 breadth',breadth,1,' %')+'.';
   root.replaceChildren(figures,commentary);
 }
 
@@ -972,7 +977,7 @@ function displayTopNews(){
 
 function render(d){d=d||{};set('updated',d.updatedAtPrague?safe(d.updatedAtPrague):'Čeká na data');let n=d.ndx||{};// Cash NDX zůstává výhradně ve zdrojovém reportu pro dlouhodobé odhady.
 
-let s=d.sentiment||{};set('sentiment',String(s.label||'').replace(/\s*\(subjektivní hodnocení\)/giu,'').trim()||'Čeká na vyhodnocení');$('sentiment').className='status '+(/medvěd|bear|zhorš/i.test(s.label||'')?'red':/býč|bull/i.test(s.label||'')?'green':'neutral');renderMarketSentiment(s.reason||'Zatím bez vyhodnocení');setSentences('driver',d.driver||'Zatím nezveřejněno');$('driver').className=d.driver?'':'empty';
+let s=d.sentiment||{};set('sentiment',String(s.label||'').replace(/\s*\(subjektivní hodnocení\)/giu,'').trim()||'Čeká na vyhodnocení');$('sentiment').className='status '+(/medvěd|bear|zhorš/i.test(s.label||'')?'red':/býč|bull/i.test(s.label||'')?'green':'neutral');set('sentiment-reason','Načítám ověřené ukazatele…');setSentences('driver',d.driver||'Zatím nezveřejněno');$('driver').className=d.driver?'':'empty';
 latestNews=Array.isArray(d.news)?d.news:[];
 displayTopNews();
 
@@ -1315,6 +1320,7 @@ function renderIndicator(id,value,asOf,ndx){
 }
 
 async function loadRiskModel(ndx){
+  let sentimentSnapshot=null;
   renderIndicator('vxn',NaN,'',ndx);
   if($('vxn-change'))$('vxn-change').hidden=true;
   try{
@@ -1330,6 +1336,7 @@ async function loadRiskModel(ndx){
        age>7*86400000)
       throw new Error('missing, invalid or stale volatility snapshot');
     renderIndicator('vxn',volatility,market.vxnAsOf,ndx);
+    sentimentSnapshot={value:volatility,asOf:market.vxnAsOf};
     const source=$('vxn-source-link'),change=$('vxn-change');
     if(source){
       const url=String(market.vxnSource||'');
@@ -1362,6 +1369,7 @@ async function loadRiskModel(ndx){
 
     // Keep the authored forecast in latest.json rather than fabricate an update.
   }
+  return sentimentSnapshot;
 }
 // RSI reports actual price pressure; it never claims a trade is safe.
 async function loadOversold(ndx){
@@ -1398,12 +1406,14 @@ async function loadOversold(ndx){
     set('oversold-ma50',plain(d.ma50DistancePct));
     $('oversold-ma50').className=d.ma50DistancePct<0?'red':d.ma50DistancePct>0?'green':'neutral';
     $('oversold-ma50').title='NDX '+plain(d.ma50DistancePct)+(d.ma50DistancePct<0?' pod':' nad')+' 50denním průměrem';
+    return {value:rsi,asOf:d.asOf};
     }catch(err){
     set('oversold-rsi','—');
     renderIndicator('rsi',NaN,'',ndx);
     set('oversold-ma20','—');
     set('oversold-ma50','—');
     if(marker)marker.style.left='0%';
+    return null;
   }
 }
 async function loadBreadth(ndx){
@@ -1447,6 +1457,7 @@ async function loadBreadth(ndx){
       detail.textContent=(stale?'Starší data · čeká na závěr '+expected:'Denní závěr; ne intradenní data')+
         (checked?' · kontrola '+checked:'');
     }
+    return {value:above,asOf:d.asOf};
   } catch(err){
     set('breadth-above','—');
     set('breadth-below','—');
@@ -1454,16 +1465,22 @@ async function loadBreadth(ndx){
     if(bar)bar.style.width='0%';
     if(track){track.setAttribute('aria-label','Neověřená šířka trhu');track.classList.add('is-unavailable')}
     set('breadth-freshness','Novější ověřená data zatím nedostupná');
+    return null;
   }
 }
+let reportLoadInProgress=false;
 async function load(){
+  if(reportLoadInProgress)return;
+  reportLoadInProgress=true;
   try {
     const response=await fetch('./data/latest.json?t='+Date.now(),{cache:'no-store'});
     if(!response.ok)throw new Error('HTTP '+response.status);
     const report=await response.json();
     render(report);
-    await Promise.all([loadRiskModel(report.ndx||{}),loadOversold(report.ndx||{}),loadBreadth(report.ndx||{})]);
-  }catch(err){set('updated','Data nedostupná');}
+    const [vxn,rsi,breadth]=await Promise.all([loadRiskModel(report.ndx||{}),loadOversold(report.ndx||{}),loadBreadth(report.ndx||{})]);
+    renderMarketSentiment(vxn,rsi,breadth,report.ndx||{});
+  }catch(err){set('updated','Data nedostupná');set('sentiment-reason','Ověřené ukazatele nedostupné');}
+  finally{reportLoadInProgress=false;}
 }
 $('refresh').addEventListener('click',()=>{
   const button=$('refresh');button.disabled=true;button.classList.add('is-loading');
