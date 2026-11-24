@@ -5,8 +5,8 @@
     "currencies": "https://tradingeconomics.com/currencies"
   },
   "timestampKind": "retrieval timestamp is separate from trading day",
-  "fetchedAtUtc": "2026-11-24T13:20:41Z",
-  "fetchedAtPrague": "24. 11. 2026 14:20",
+  "fetchedAtUtc": "2026-11-24T14:00:45Z",
+  "fetchedAtPrague": "24. 11. 2026 15:00",
   "quotes": [
     {
       "id": "WTI",
@@ -51,12 +51,12 @@
     {
       "id": "EU Gas",
       "unit": "EUR/MWh",
-      "price": 89.05,
-      "changePercent": -0.77,
+      "price": 90.1,
+      "changePercent": 0.41,
       "quoteDate": "Nov/24",
       "quoteDateISO": "2026-11-24",
       "sourceUrl": "https://tradingeconomics.com/commodity/eu-natural-gas",
-      "fetchedAtUtc": "2026-11-24T09:21:16Z"
+      "fetchedAtUtc": "2026-11-24T14:00:45Z"
     },
     {
       "id": "Gold",
@@ -91,12 +91,12 @@
     {
       "id": "USD/CZK",
       "unit": "USD/CZK",
-      "price": 22.3483,
-      "changePercent": -0.22,
+      "price": 22.2824,
+      "changePercent": -0.5,
       "quoteDate": "Nov/24",
       "quoteDateISO": "2026-11-24",
       "sourceUrl": "https://tradingeconomics.com/czech-republic/currency",
-      "fetchedAtUtc": "2026-11-24T11:00:44Z"
+      "fetchedAtUtc": "2026-11-24T14:00:45Z"
     }
   ]
 }
