@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "24. 11. 2026 11:00 CET",
+  "updatedAtPrague": "24. 11. 2026 12:00 CET",
   "marketStatus": "Cash NDX: trh uzavřen; závěr 23. 11. 2026.",
   "ndx": {
     "value": 26746.1,
@@ -9,11 +9,30 @@
   },
   "sentiment": {
     "label": "Neutrální",
-    "trend": "srovnání nedostupné",
+    "trend": "↘ zhoršení – premarket čipy",
     "reason": "VXN 36,31 (23. 11.); RSI14 41,99 (23. 11.; poslední výpočet); MA50 breadth nedostupné (zdroj neověřen)."
   },
-  "driver": "Evropské technologie −0,87 % (10:20 CET) po pondělním růstu přes 4 %; Infineon a ASM International přes −2 %.",
+  "driver": "NVDA v premarketu −4,4 % po pondělních +31,5 %; MU/AMD/MRVL −3,3 až −4,3 %. Reuters 11:52 CET.",
   "news": [
+    {
+      "title": "US premarket: NVDA −4,4 %, MU/AMD/MRVL −3,3 až −4,3 %, CRWV −5,4 %. Nasdaq futures −1,1 %.",
+      "time": "24. 11. 2026 11:52 CET",
+      "publishedAtPrague": "24. 11. 2026, 11:52",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "semiconductor_market",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/wall-st-futures-dip-chip-stocks-cool-after-nvidia-fueled-rally-2026-11-24/",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/wall-st-futures-dip-chip-stocks-cool-after-nvidia-fueled-rally-2026-11-24/"
+        }
+      ],
+      "eventKey": "us-chip-premarket-pullback-20261124",
+      "ndxRelevant": true,
+      "importanceScore": 72
+    },
     {
       "title": "NVDA: Jensen Huang znovu CEO s okamžitou účinností.",
       "time": "23. 11. 2026, 14:59 CET",
@@ -203,29 +222,6 @@
       "importanceScore": 69
     },
     {
-      "title": "CRWD kupuje ZS za 43,9 mld. USD; Q4 výhled tržeb 1,638–1,644 vs. kons. 1,620 mld. USD (beat 1,3 %). ZS Q1: tržby 949,3 vs. kons. 938 mil. USD (beat 1,2 %), upr. EPS 1,23 vs. 1,16 USD (beat 6,0 %).",
-      "time": "23. 11. 2026, 11:36 CET",
-      "publishedAtPrague": "23. 11. 2026, 11:36",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "cybersecurity_merger",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/legal/transactional/crowdstrike-buy-zscaler-439-billion-2026-11-23/",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/legal/transactional/crowdstrike-buy-zscaler-439-billion-2026-11-23/"
-        },
-        {
-          "label": "CrowdStrike IR",
-          "url": "https://ir.crowdstrike.com/news-releases/news-release-details/crowdstrike-acquire-zscaler-bringing-network-security-and-zero"
-        }
-      ],
-      "eventKey": "crwd-zs-definitive-acquisition-20261123",
-      "ndxRelevant": true,
-      "importanceScore": 69
-    },
-    {
       "title": "Singapur Q3 HDP 6,1 % y/y vs. kons. 5,6 %. AI výroba a export zrychlují díky výstavbě datacenter; odhad růstu 2026 zvýšen na 6 % z 4,5–5,5 %.",
       "time": "24. 11. 2026, 01:06 CET",
       "publishedAtPrague": "24. 11. 2026, 01:06",
@@ -243,6 +239,44 @@
       "eventKey": "singapore-q3-gdp-ai-exports-20261124",
       "ndxRelevant": true,
       "importanceScore": 55
+    },
+    {
+      "title": "US flash PMI listopad | Composite 54,6 vs. 55,9 (−1,3 b.); služby 54,7 vs. 56,1 (−1,4 b.); výroba 54,5 vs. 54,9 (−0,4 b.).",
+      "time": "23. 11. 2026, 15:50 CET",
+      "publishedAtPrague": "23. 11. 2026, 15:50",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "macro",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/us/us-business-activity-growth-eases-further-november-survey-shows-2026-11-23/",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/us/us-business-activity-growth-eases-further-november-survey-shows-2026-11-23/"
+        }
+      ],
+      "eventKey": "us-flash-pmi-nov-2026-20261123",
+      "ndxRelevant": true,
+      "importanceScore": 62
+    },
+    {
+      "title": "ARM: René Haas prodloužil mandát CEO do roku 2033; NVDA jej oslovila při hledání nástupce Jensena Huanga.",
+      "time": "23. 11. 2026, 13:10 CET",
+      "publishedAtPrague": "23. 11. 2026, 13:10",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "semiconductor_leadership",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/arm-holdings-haas-extends-contract-lead-chip-firm-through-2033-2026-11-23/",
+      "sourceLinks": [
+        {
+          "label": "Reuters – ARM / NVDA",
+          "url": "https://www.reuters.com/business/arm-holdings-haas-extends-contract-lead-chip-firm-through-2033-2026-11-23/"
+        }
+      ],
+      "eventKey": "arm-haas-ceo-contract-through-2033-20261123",
+      "ndxRelevant": true,
+      "importanceScore": 64
     },
     {
       "title": "Evropské technologie −0,87 % (10:20 CET) po pondělním růstu přes 4 %. Infineon a ASM International ztrácejí přes 2 %.",
@@ -283,25 +317,6 @@
       "importanceScore": 53
     },
     {
-      "title": "US flash PMI listopad | Composite 54,6 vs. 55,9 (−1,3 b.); služby 54,7 vs. 56,1 (−1,4 b.); výroba 54,5 vs. 54,9 (−0,4 b.).",
-      "time": "23. 11. 2026, 15:50 CET",
-      "publishedAtPrague": "23. 11. 2026, 15:50",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "macro",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/us/us-business-activity-growth-eases-further-november-survey-shows-2026-11-23/",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/world/us/us-business-activity-growth-eases-further-november-survey-shows-2026-11-23/"
-        }
-      ],
-      "eventKey": "us-flash-pmi-nov-2026-20261123",
-      "ndxRelevant": true,
-      "importanceScore": 62
-    },
-    {
       "title": "Odhad JPMorgan: AI CAPEX v roce 2027 téměř 1,4 bil. USD; Dell Q3 očekávaný růst tržeb 82,6 %.",
       "time": "23. 11. 2026 14:49 CET",
       "publishedAtPrague": "23. 11. 2026, 14:49",
@@ -319,25 +334,6 @@
       "eventKey": "jpmorgan-ai-capex-2027-dell-hpe-results-preview-20261123",
       "ndxRelevant": true,
       "importanceScore": 62
-    },
-    {
-      "title": "ARM: René Haas prodloužil mandát CEO do roku 2033; NVDA jej oslovila při hledání nástupce Jensena Huanga.",
-      "time": "23. 11. 2026, 13:10 CET",
-      "publishedAtPrague": "23. 11. 2026, 13:10",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "semiconductor_leadership",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/arm-holdings-haas-extends-contract-lead-chip-firm-through-2033-2026-11-23/",
-      "sourceLinks": [
-        {
-          "label": "Reuters – ARM / NVDA",
-          "url": "https://www.reuters.com/business/arm-holdings-haas-extends-contract-lead-chip-firm-through-2033-2026-11-23/"
-        }
-      ],
-      "eventKey": "arm-haas-ceo-contract-through-2033-20261123",
-      "ndxRelevant": true,
-      "importanceScore": 64
     },
     {
       "title": "Morgan Stanley: odhad růstu EPS 2027 +14 % vs. kons. +17 %; tržní ocenění odpovídá −6 %. Preferuje hyperscalery.",
@@ -398,6 +394,24 @@
     "timePrague": "24. 11. 2026, 13:00 CET"
   },
   "archive": [
+    {
+      "time": "24. 11. 2026 12:00 CET",
+      "summary": "NDX 26 746,10 b. (+6,86 %, 23. 11.). NVDA −4,4 % v premarketu, Nasdaq futures −1,1 % (Reuters 11:52). VXN 36,31 (23. 11.); RSI14 41,99 (23. 11.; poslední výpočet); MA50 breadth nedostupné (zdroj neověřen). 16 kandidátů, 1 vyřazeno. 10 JSON načteno; TE 9/9 prověřeno, USD/CZK potvrzeno, ostatní zachovány kvůli rozporným údajům nebo nedoloženému datu. Sazby a HDP ověřeny, Top 10 odpovídá zdrojům, členství k 23. 11. VXN a US10Y potvrzeny. Yahoo 429: futures, historické maximum futures a RSI zachovány. Breadth neověřeno. 7 skriptů bez cizích GitHub URL; logy a Pages nedostupné.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq NDX",
+          "url": "https://indexes.nasdaqomx.com/Index/Overview/NDX"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/wall-st-futures-dip-chip-stocks-cool-after-nvidia-fueled-rally-2026-11-24/"
+        },
+        {
+          "label": "YCharts VXN",
+          "url": "https://ycharts.com/indicators/cboe_nasdaq100_volatility_index"
+        }
+      ]
+    },
     {
       "time": "24. 11. 2026 11:00 CET",
       "summary": "NDX 26 746,10 b. (+6,86 %, závěr 23. 11.). Evropské technologie −0,87 % (10:20 CET). VXN 36,31 (23. 11.); RSI14 41,99 (23. 11.; poslední výpočet); MA50 breadth nedostupné (zdroj neověřen). Bez nové kvalifikované události; 16 kandidátů, 0 vyřazeno. 10 JSON načteno; Nasdaq 101 členů k 23. 11., globální Top 10 ověřen. TE 9/9 kontrolováno, USD/CZK obnoveno, osm hodnot zachováno pro nejednotná data nebo nedoložené datum. Sazby a HDP potvrzeny; VXN a US10Y potvrzeny. Yahoo NQ=F, futures maximum a historie RSI nedostupné; poslední výpočty zachovány. Breadth neověřeno. 7 skriptů bez cizích GitHub zdrojů; poslední Pages 10:22 CET.",
@@ -4643,6 +4657,18 @@
     {
       "name": "Trading Economics USD/CZK",
       "url": "https://tradingeconomics.com/czech-republic/currency"
+    },
+    {
+      "name": "Reuters – premarket čipy",
+      "url": "https://www.reuters.com/business/wall-st-futures-dip-chip-stocks-cool-after-nvidia-fueled-rally-2026-11-24/"
+    },
+    {
+      "name": "Nasdaq NDX",
+      "url": "https://indexes.nasdaqomx.com/Index/Overview/NDX"
+    },
+    {
+      "name": "YCharts VXN",
+      "url": "https://ycharts.com/indicators/cboe_nasdaq100_volatility_index"
     }
   ]
 }
