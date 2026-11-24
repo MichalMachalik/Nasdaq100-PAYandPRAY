@@ -858,7 +858,7 @@ function renderMarketSentiment(vxn,rsi,breadth,ndx){
   const root=$('sentiment-reason');
   if(!root)return;
   const snapshots=[vxn,rsi,breadth];
-  const expected=[cashObservationDate(ndx),...snapshots.map(x=>x?.asOf||'')].sort().pop();
+  const expected=snapshots.map(x=>x?.asOf||'').sort().pop();
   const metric=(name,snapshot,decimals,unit='')=>{
     if(!snapshot||!Number.isFinite(snapshot.value))return name+' — (data nedostupná)';
     const day=snapshot.asOf;
@@ -1164,9 +1164,16 @@ async function loadMarkets(){
     if(!Array.isArray(data.quotes))throw Error('Invalid quote data');
     renderMarketRows('commodity-rows',MARKET_ASSETS.slice(0,6).map(x=>x[0]),data.quotes);
     renderMarketRows('fx-rows',['EUR/USD','EUR/CZK','USD/CZK'],data.quotes);
-    const checked=fmtShortPrague(data.fetchedAtUtc);
-    set('commodities-updated',checked?'Načteno '+checked:'Čas načtení neověřen');
-    set('fx-updated',checked?'Načteno '+checked:'Čas načtení neověřen');
+    // The footer describes the oldest row, not the most recent partial refresh.
+    const marketFreshness=ids=>{
+      const rows=ids.map(id=>data.quotes.find(q=>q.id===id));
+      const dates=rows.map(q=>Date.parse(q?.fetchedAtUtc||''));
+      if(dates.some(t=>!Number.isFinite(t)))return 'Čas načtení neověřen';
+      const oldest=Math.min(...dates),stale=dates.filter(t=>Date.now()-t>65*60000).length;
+      return 'Načteno '+fmtShortPrague(new Date(oldest).toISOString())+(stale?' · '+stale+'/'+ids.length+' starších údajů':'');
+    };
+    set('commodities-updated',marketFreshness(MARKET_ASSETS.slice(0,6).map(x=>x[0])));
+    set('fx-updated',marketFreshness(['EUR/USD','EUR/CZK','USD/CZK']));
   }catch(err){
     renderMarketRows('commodity-rows',MARKET_ASSETS.slice(0,6).map(x=>x[0]),[]);
     renderMarketRows('fx-rows',['EUR/USD','EUR/CZK','USD/CZK'],[]);
@@ -1211,7 +1218,8 @@ async function loadTop10() {
       tr.append(tdRank,tdName,cap,price,day);frag.append(tr);
     }
     body.replaceChildren(frag);
-    set('top10-time',data.fetchedAtPrague?'Načteno '+data.fetchedAtPrague+' Praha':'Poslední ověřená data');
+    const checked=Date.parse(data.fetchedAtUtc||'');
+    set('top10-time',data.fetchedAtPrague?'Načteno '+data.fetchedAtPrague+' Praha'+(Number.isFinite(checked)&&Date.now()-checked>65*60000?' · starší údaje':''):'Poslední ověřená data');
   } catch(err) {
     if(body.textContent.includes('Načítání')) {
       const tr=document.createElement('tr');
@@ -1234,7 +1242,7 @@ async function loadFutures(){
     set('futures-price',fmt(q.price));
     set('futures-change',typeof q.changePercent==='number'?pct(q.changePercent):'—');
     $('futures-change').className='value '+(q.changePercent<0?'red':q.changePercent>0?'green':'neutral');
-    const freshness=age>86400000?'stale':'delayed';
+    const freshness=age>65*60000?'stale':'delayed';
     $('futures-price').setAttribute('data-freshness',freshness);
     const lag=age>86400000?' · poslední dostupná kotace, starší než 24 h':
       age>1800000?' · starší údaj':' · zpožděná data';
@@ -1315,7 +1323,7 @@ function renderIndicator(id,value,asOf,ndx){
   if(pointer){pointer.style.display=valid?'block':'none';pointer.style.left=valid?Math.max(0,Math.min(100,value/(isRsi?100:60)*100))+'%':'0%'}
   if(track)track.setAttribute('aria-label',valid?(isRsi?'RSI(14) ':'VXN ')+fmt(value,2)+'; '+state[0]:'Bez ověřených dat');
   set(id+'-state',state[0]);
-  const cashDate=cashObservationDate(ndx),stale=valid&&cashDate&&asOf<cashDate;
+  const cashDate=cashObservationDate(ndx),stale=valid&&cashDate&&asOf<cashDate&&ndx?.isDailyClose===true;
   set(id+'-date',valid?asOf+' · '+(stale?'Starší závěr · ':'')+(isRsi?'14 seancí (Wilder)':'30denní implikovaná volatilita'):'Data zatím nedostupná');
 }
 
@@ -1449,7 +1457,7 @@ async function loadBreadth(ndx){
       source.href=typeof d.sourceUrl==='string'&&/^https:\/\//.test(d.sourceUrl)?d.sourceUrl:'./data/breadth.json';
       source.title=d.source||'Datový zdroj';
     }
-    const expected=cashObservationDate(ndx),stale=Boolean(expected&&d.asOf<expected);
+    const expected=ndx?.isDailyClose===true?cashObservationDate(ndx):'',stale=Boolean(expected&&d.asOf<expected);
     const checked=d.checkedAtUtc?fmtShortPrague(d.checkedAtUtc):'';
     const detail=$('breadth-freshness');
     if(detail){

@@ -2,9 +2,10 @@ name: Nasdaq-100 top ten by market cap
 on:
   workflow_dispatch:
   push:
+    branches: [main]
     paths:
+      - "data/latest.json"
       - "scripts/update_top10.py"
-      - "scripts/prepare_site.py"
       - ".github/workflows/top10.yml"
   schedule:
     - cron: "11 * * * *"
@@ -14,41 +15,40 @@ concurrency:
   group: nasdaq-top-ten
   cancel-in-progress: false
 jobs:
-  update:
+  refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
         with:
           persist-credentials: true
-          ref: ${{ github.event.repository.default_branch }}
       - name: Install HTML parser
         run: python -m pip install --disable-pip-version-check beautifulsoup4
-      - name: Migrate sections and regression-test report rendering
-        run: python scripts/prepare_site.py
-      - name: Fetch verified index membership and all-sector market caps
-        id: market
-        continue-on-error: true
-        run: python scripts/update_top10.py
-      - name: Commit tested site and verified snapshots
+      - name: Validate, fetch and safely publish source data
+        env:
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+        shell: bash
         run: |
+          set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add index.html data/top10.json
-          if [ -f data/ndx-constituents.json ]; then git add data/ndx-constituents.json; fi
-          if git diff --cached --quiet; then
-            echo "No changes to publish."
-            exit 0
-          fi
-          git commit -m "Publish verified Nasdaq-100 ranking and report sections"
-          for attempt in 1 2 3; do
-            git pull --rebase origin "${{ github.event.repository.default_branch }}"
-            if git push; then exit 0; fi
+          for attempt in 1 2 3 4; do
+            echo "Refresh attempt $attempt"
+            git fetch --no-tags --depth=1 origin "$DEFAULT_BRANCH"
+            git checkout --detach FETCH_HEAD
+            python scripts/update_top10.py
+            git add -- data/top10.json data/ndx-constituents.json
+            if git diff --cached --quiet; then
+              echo "Source unchanged; no new snapshot to publish."
+              exit 0
+            fi
+            git commit -m "Refresh verified top10 data"
+            if git push origin "HEAD:refs/heads/$DEFAULT_BRANCH"; then
+              exit 0
+            fi
+            if [ "$attempt" -lt 4 ]; then
+              sleep "$((attempt * 3))"
+            fi
           done
+          echo "::error::Publication conflict: verified remote snapshot preserved."
           exit 1
-      - name: Fail visibly when market verification failed
-        if: steps.market.outcome == 'failure'
-        run: |
-          echo "Index membership or market data could not be verified; existing snapshot was not relabeled as current."
-          exit 1
-

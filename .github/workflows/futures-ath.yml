@@ -2,9 +2,11 @@ name: E-mini Nasdaq-100 historical high
 on:
   workflow_dispatch:
   push:
+    branches: [main]
     paths:
-      - ".github/workflows/futures-ath.yml"
+      - "data/latest.json"
       - "scripts/update_futures_ath.py"
+      - ".github/workflows/futures-ath.yml"
   schedule:
     - cron: "29 * * * *"
 permissions:
@@ -15,26 +17,36 @@ concurrency:
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 3
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
         with:
           persist-credentials: true
-      - name: Retrieve verified continuous NQ history high
-        run: python scripts/update_futures_ath.py
-      - name: Commit latest reference
+      - name: Validate, fetch and safely publish source data
+        env:
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+        shell: bash
         run: |
-          if git diff --quiet -- data/futures-ath.json; then
-            echo "Historical reference unchanged."
-            exit 0
-          fi
+          set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/futures-ath.json
-          git commit -m "Refresh NQ historical high reference"
-          for attempt in 1 2 3; do
-            git pull --rebase origin "${{ github.event.repository.default_branch }}"
-            if git push; then exit 0; fi
+          for attempt in 1 2 3 4; do
+            echo "Refresh attempt $attempt"
+            git fetch --no-tags --depth=1 origin "$DEFAULT_BRANCH"
+            git checkout --detach FETCH_HEAD
+            python scripts/update_futures_ath.py
+            git add -- data/futures-ath.json
+            if git diff --cached --quiet; then
+              echo "Source unchanged; no new snapshot to publish."
+              exit 0
+            fi
+            git commit -m "Refresh verified futures-ath data"
+            if git push origin "HEAD:refs/heads/$DEFAULT_BRANCH"; then
+              exit 0
+            fi
+            if [ "$attempt" -lt 4 ]; then
+              sleep "$((attempt * 3))"
+            fi
           done
+          echo "::error::Publication conflict: verified remote snapshot preserved."
           exit 1
-

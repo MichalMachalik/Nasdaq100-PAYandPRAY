@@ -10,7 +10,7 @@
   "sentiment": {
     "label": "Medvědí",
     "trend": "↘",
-    "reason": "MA50 breadth nedostupné (zdroj neověřen); RSI14 41,99 (2026-11-23, poslední validovaný výpočet); VXN 36,31 (2026-11-23, závěr)."
+    "reason": "MA50 breadth 43,6 % (2026-11-23, denní závěr); RSI14 41,99 (2026-11-23, poslední validovaný výpočet); VXN 36,31 (2026-11-23, závěr)."
   },
   "driver": "SOX −7,75 % (20:48 CET); NVDA −7,60 % (20:35 CET). NDX prohloubil ztrátu proti předchozímu snímku.",
   "news": [

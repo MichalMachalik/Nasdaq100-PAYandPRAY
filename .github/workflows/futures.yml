@@ -2,10 +2,12 @@ name: Futures quote update
 on:
   workflow_dispatch:
   push:
+    branches: [main]
     paths:
-      - ".github/workflows/futures.yml"
+      - "data/latest.json"
       - "scripts/update_futures.py"
       - "tests/test_refresh_24x7.py"
+      - ".github/workflows/futures.yml"
   schedule:
     - cron: "*/5 * * * *"
 permissions:
@@ -14,30 +16,39 @@ concurrency:
   group: futures-quote
   cancel-in-progress: false
 jobs:
-  fetch:
+  refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 3
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
         with:
           persist-credentials: true
-      - name: Test weekend quote retention and source selection
-        run: python -m unittest discover -s tests -p test_refresh_24x7.py -v
-      - name: Fetch delayed futures quotation
-        run: python scripts/update_futures.py
-      - name: Commit verified quote only if changed
+      - name: Validate, fetch and safely publish source data
+        env:
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+        shell: bash
         run: |
-          if git diff --quiet -- data/futures.json; then
-            echo "No change in source quotation."
-            exit 0
-          fi
+          set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/futures.json
-          git commit -m "Refresh Nasdaq-100 futures quote"
-          for attempt in 1 2 3; do
-            git pull --rebase origin "${{ github.event.repository.default_branch }}"
-            if git push; then exit 0; fi
+          for attempt in 1 2 3 4; do
+            echo "Refresh attempt $attempt"
+            git fetch --no-tags --depth=1 origin "$DEFAULT_BRANCH"
+            git checkout --detach FETCH_HEAD
+            PYTHONPATH=tests python -m unittest test_refresh_24x7.FuturesChecks test_refresh_24x7.ScheduleAndDisplayChecks -v
+            python scripts/update_futures.py
+            git add -- data/futures.json
+            if git diff --cached --quiet; then
+              echo "Source unchanged; no new snapshot to publish."
+              exit 0
+            fi
+            git commit -m "Refresh verified futures data"
+            if git push origin "HEAD:refs/heads/$DEFAULT_BRANCH"; then
+              exit 0
+            fi
+            if [ "$attempt" -lt 4 ]; then
+              sleep "$((attempt * 3))"
+            fi
           done
+          echo "::error::Publication conflict: verified remote snapshot preserved."
           exit 1
-

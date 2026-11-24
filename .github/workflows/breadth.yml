@@ -2,11 +2,12 @@ name: Nasdaq-100 breadth above MA50
 on:
   workflow_dispatch:
   push:
+    branches: [main]
     paths:
+      - "data/latest.json"
       - "scripts/update_breadth.py"
       - "tests/test_breadth.py"
       - ".github/workflows/breadth.yml"
-  # Check every day; the source's actual daily observation date is preserved.
   schedule:
     - cron: "23 * * * *"
 permissions:
@@ -17,12 +18,12 @@ concurrency:
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
         with:
           persist-credentials: true
-      - name: Validate, refresh and publish against latest branch
+      - name: Validate, fetch and safely publish source data
         env:
           DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
         shell: bash
@@ -30,28 +31,24 @@ jobs:
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          # Other hourly writers can update main while this job is fetching data.
-          # Recompute on the latest committed snapshot, rather than merge stale JSON.
-          # Never force-push or bypass observation-date/source validation.
           for attempt in 1 2 3 4; do
             echo "Refresh attempt $attempt"
             git fetch --no-tags --depth=1 origin "$DEFAULT_BRANCH"
             git checkout --detach FETCH_HEAD
             python -m unittest discover -s tests -p test_breadth.py -v
             python scripts/update_breadth.py
-            if git diff --quiet -- data/breadth.json; then
-              echo "Verified data unchanged."
+            git add -- data/breadth.json
+            if git diff --cached --quiet; then
+              echo "Source unchanged; no new snapshot to publish."
               exit 0
             fi
-            git add -- data/breadth.json
-            git commit -m "Update verified Nasdaq-100 MA50 breadth"
+            git commit -m "Refresh verified breadth data"
             if git push origin "HEAD:refs/heads/$DEFAULT_BRANCH"; then
               exit 0
             fi
             if [ "$attempt" -lt 4 ]; then
-              echo "Publication failed; reload latest branch and revalidate before retrying."
               sleep "$((attempt * 3))"
             fi
           done
-          echo "::error::Could not publish verified data after four attempts; existing remote data retained."
+          echo "::error::Publication conflict: verified remote snapshot preserved."
           exit 1

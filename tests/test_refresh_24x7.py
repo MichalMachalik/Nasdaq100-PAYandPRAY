@@ -113,15 +113,19 @@ class DailySourceChecks(unittest.TestCase):
         self.assertEqual(checked, "2026-11-22T12:00:00Z")
 
     def test_unchanged_breadth_keeps_source_day_and_collection_time(self):
-        chart = {"updatedAt": "2026-11-21T04:00:00+00:00", "cadence": "daily",
-                 "lines": [{"key": "above50"}],
-                 "series": [{"date": "2026-11-20", "eligible50": 101,
-                             "above50": 100*32/101}]}
-        previous = breadth.make_snapshot(chart, Clock.current)
-        previous.update(collectedAtUtc=self.old_checked, checkedAtUtc=self.old_checked)
+        html = """<table><tr><th>Date</th><th>Total Stocks</th><th>&gt; SMA50</th></tr>
+        <tr><td>2026-11-20</td><td>101</td><td>31.68%</td></tr></table>"""
+        members = self.out.parent / "ndx-constituents.json"
+        symbols = ["T"+str(i) for i in range(101)]
+        members.write_text(json.dumps({"index":"NDX","sourceUrl":"https://api.nasdaq.com/api/quote/list-type/nasdaq100",
+                                       "symbols":symbols,"checkedAtUtc":self.old_checked}))
+        previous = breadth.stockcurry_snapshot(html, Clock.current)
+        previous.update(collectedAtUtc=self.old_checked, checkedAtUtc=self.old_checked,
+                        constituentsSourceUrl="https://api.nasdaq.com/api/quote/list-type/nasdaq100",
+                        constituentsCheckedAtUtc=self.old_checked)
         self.out.write_text(json.dumps(previous))
         with patch.object(breadth, "OUT", self.out), patch.object(breadth, "datetime", Clock), \
-                patch.object(breadth, "fetch_chart", return_value=chart):
+                patch.object(breadth, "fetch_stockcurry", return_value=html):
             breadth.main()
         result = json.loads(self.out.read_text())
         checked = result.pop("checkedAtUtc")
@@ -137,6 +141,10 @@ class DailySourceChecks(unittest.TestCase):
             "id": "ndx-evidence-volatility-v1",
             "market": {
                 "vxnPct": 45.25, "vxnAsOf": "2026-11-20",
+                "vxnSource": "https://finance.yahoo.com/quote/%5EVXN/",
+                "vxnQuoteKind": "daily-close", "vxnChangePercent": None,
+                "vxnPreviousClose": None, "vxnPreviousCloseAsOf": None,
+                "vxnRetrievedAtUtc": self.old_checked,
                 "treasury2yPct": 4.63, "treasury10yPct": 4.92,
                 "treasury30yPct": 5.31, "treasuryAsOf": "2026-11-20",
             },
@@ -172,6 +180,8 @@ class DailySourceChecks(unittest.TestCase):
         for key in ("vxnCheckedAtUtc", "treasuryCheckedAtUtc"):
             self.assertEqual(after["market"].pop(key), "2026-11-22T12:00:00Z")
             before["market"].pop(key)
+        self.assertEqual(after["market"].pop("vxnRetrievedAtUtc"), "2026-11-22T12:00:00Z")
+        before["market"].pop("vxnRetrievedAtUtc")
         after.pop("checkedAtUtc")
         before.pop("checkedAtUtc")
         self.assertEqual(after, before)

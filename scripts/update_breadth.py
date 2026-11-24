@@ -69,7 +69,7 @@ def expected_cash_date(now):
         pass
     local = now.astimezone(NY)
     dates = [x for x in dates if 0 <= (local.date()-x).days <= 7
-             and (x != local.date() or local.hour >= 13)]
+             and (x != local.date() or local.hour >= 16)]
     return max(dates).isoformat() if dates else ""
 
 def stockcurry_snapshot(html, now, expected=""):
@@ -94,7 +94,7 @@ def stockcurry_snapshot(html, now, expected=""):
             continue
         if not 0 <= (local.date()-day).days <= 7:
             continue
-        if day == local.date() and local.hour < 16 and ds != expected:
+        if day == local.date() and local.hour < 16:
             continue
         if not re.fullmatch(r"\d{2,3}", count) or not re.fullmatch(r"\d{1,3}(?:\.\d{1,4})?%", percent):
             continue
@@ -146,7 +146,16 @@ def main():
     now = datetime.now(timezone.utc)
     previous = json.loads(OUT.read_text(encoding="utf-8")) if OUT.exists() else {}
     expected = expected_cash_date(now)
-    snapshot = stockcurry_snapshot(fetch_stockcurry(), now, expected)
+    # Short retries for transient origin timeouts; never substitute another basket.
+    import time
+    for attempt in range(3):
+        try:
+            snapshot = stockcurry_snapshot(fetch_stockcurry(), now, expected)
+            break
+        except (OSError, ValueError):
+            if attempt == 2:
+                raise
+            time.sleep(3 * (attempt + 1))
     # Validate the denominator against the official Nasdaq constituent list.
     members = json.loads((OUT.parent / "ndx-constituents.json").read_text(encoding="utf-8"))
     symbols = members.get("symbols", [])

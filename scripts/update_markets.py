@@ -115,13 +115,17 @@ def main():
     previous={x.get("id"):x for x in old.get("quotes",[]) if isinstance(x,dict)}
     quotes=[]
     failed=[]
+    retained=[]
     for ident,unit,url,low,high in ASSETS:
         try:
             q=get_instrument(ident,unit,url,low,high,now)
+            if q["quoteDateISO"] < previous.get(ident,{}).get("quoteDateISO",""):
+                raise ValueError("Provider observation predates published quote")
             print(f"{ident}: {q['price']} {unit}, daily {q['changePercent']}%, dated {q['quoteDateISO']}",flush=True)
         except Exception as exc:
             if ident in previous:
                 q=previous[ident]
+                retained.append(ident)
                 print(f"STALE {ident}: retained original price/date after {type(exc).__name__}: {exc}",flush=True)
             else:
                 failed.append(ident)
@@ -130,12 +134,17 @@ def main():
         quotes.append(q)
     if failed or len(quotes)!=len(ASSETS):
         raise RuntimeError("Incomplete nine-asset snapshot: "+",".join(failed))
+    if len(retained)==len(ASSETS):
+        raise RuntimeError("All sources unavailable; original data retained")
+    # A partial refresh may publish new rows, but cannot label the entire table fresh.
     result={
         "source":"Trading Economics",
+        "partialRefresh":bool(retained),
+        "retainedIds":retained,
         "sourceUrls":PAGES,
         "timestampKind":"retrieval timestamp is separate from trading day",
-        "fetchedAtUtc":now.isoformat().replace("+00:00","Z"),
-        "fetchedAtPrague":now.astimezone(ZoneInfo("Europe/Prague")).strftime("%d. %m. %Y %H:%M"),
+        "fetchedAtUtc":min(q["fetchedAtUtc"] for q in quotes),
+        "fetchedAtPrague":datetime.fromisoformat(min(q["fetchedAtUtc"] for q in quotes).replace("Z","+00:00")).astimezone(ZoneInfo("Europe/Prague")).strftime("%d. %m. %Y %H:%M"),
         "quotes":quotes,
     }
     if old.get("quotes")!=quotes:

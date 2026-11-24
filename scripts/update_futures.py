@@ -17,9 +17,22 @@ req = urllib.request.Request(URL, headers={
     "User-Agent": "Mozilla/5.0 (compatible; PayAndPrayMarketMonitor/1.0)",
     "Accept": "application/json"
 })
+def fetch_chart():
+    failures = []
+    for url in (URL, URL.replace("query1.finance.yahoo.com", "query2.finance.yahoo.com")):
+        try:
+            request = urllib.request.Request(url, headers=dict(req.header_items()))
+            with urllib.request.urlopen(request, timeout=20) as response:
+                data = json.load(response)
+            if data["chart"]["result"][0]["meta"].get("symbol") != "NQ=F":
+                raise ValueError("Unexpected futures symbol")
+            return data
+        except Exception as exc:
+            failures.append(str(exc))
+    raise ValueError("Both Yahoo chart hosts unavailable: " + "; ".join(failures))
+
 try:
-    with urllib.request.urlopen(req, timeout=20) as response:
-        payload = json.load(response)
+    payload = fetch_chart()
     result = payload["chart"]["result"][0]
     meta = result["meta"]
     name = str(meta.get("shortName") or meta.get("longName") or "")

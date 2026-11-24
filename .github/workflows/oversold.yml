@@ -2,7 +2,9 @@ name: Nasdaq 100 cash RSI oversold indicator
 on:
   workflow_dispatch:
   push:
+    branches: [main]
     paths:
+      - "data/latest.json"
       - "scripts/update_oversold.py"
       - "tests/test_oversold.py"
       - ".github/workflows/oversold.yml"
@@ -16,28 +18,37 @@ concurrency:
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
         with:
           persist-credentials: true
-      - name: Verify RSI arithmetic and data validation
-        run: python -m unittest discover -s tests -p test_oversold.py -v
-      - name: Fetch completed cash NDX candles and calculate Wilder RSI
-        run: python scripts/update_oversold.py
-      - name: Publish dated RSI snapshot
+      - name: Validate, fetch and safely publish source data
+        env:
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+        shell: bash
         run: |
-          if git diff --quiet -- data/oversold.json; then
-            echo "RSI data unchanged"
-            exit 0
-          fi
+          set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/oversold.json
-          git commit -m "Refresh confirmed cash NDX RSI14 oversold indicator"
-          for attempt in 1 2 3; do
-            git pull --rebase origin "${{ github.event.repository.default_branch }}"
-            if git push; then exit 0; fi
+          for attempt in 1 2 3 4; do
+            echo "Refresh attempt $attempt"
+            git fetch --no-tags --depth=1 origin "$DEFAULT_BRANCH"
+            git checkout --detach FETCH_HEAD
+            python -m unittest discover -s tests -p test_oversold.py -v
+            python scripts/update_oversold.py
+            git add -- data/oversold.json
+            if git diff --cached --quiet; then
+              echo "Source unchanged; no new snapshot to publish."
+              exit 0
+            fi
+            git commit -m "Refresh verified oversold data"
+            if git push origin "HEAD:refs/heads/$DEFAULT_BRANCH"; then
+              exit 0
+            fi
+            if [ "$attempt" -lt 4 ]; then
+              sleep "$((attempt * 3))"
+            fi
           done
+          echo "::error::Publication conflict: verified remote snapshot preserved."
           exit 1
-
