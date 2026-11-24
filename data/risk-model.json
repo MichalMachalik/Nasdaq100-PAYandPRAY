@@ -9,13 +9,13 @@
     "ndxClose": 25028.98,
     "ndxCloseAsOf": "2026-11-20",
     "ndxAth": 31361.37,
-    "vxnPct": 35.68,
+    "vxnPct": 36.31,
     "vxnAsOf": "2026-11-23",
     "vxnSource": "https://finance.yahoo.com/quote/%5EVXN/",
     "treasury2yPct": 4.63,
     "treasury10yPct": 4.92,
-    "treasury30yPct": 5.31,
-    "treasuryAsOf": "2026-11-20",
+    "treasury30yPct": 5.29,
+    "treasuryAsOf": "2026-11-23",
     "treasurySource": "https://home.treasury.gov/",
     "fedLowerPct": 3.75,
     "fedUpperPct": 4,
@@ -34,9 +34,10 @@
     "citadelNasdaqForwardPE": 19.1,
     "citadelNasdaqForwardPEAsOf": "2026-11-04",
     "citadelSource": "https://www.citadelsecurities.com/news-and-insights/global-market-intelligence/november-the-setup-improves/?series=global-market-intelligence",
-    "vxnCheckedAtUtc": "2026-11-23T20:35:54.521311Z",
-    "treasuryCheckedAtUtc": "2026-11-23T20:35:54.521311Z",
-    "vxnRetrievedAtUtc": "2026-11-23T20:35:54.521311Z"
+    "vxnCheckedAtUtc": "2026-11-24T04:59:46.079150Z",
+    "treasuryCheckedAtUtc": "2026-11-24T04:59:46.079150Z",
+    "vxnRetrievedAtUtc": "2026-11-24T04:59:46.079150Z",
+    "treasuryRetrievedAtUtc": "2026-11-24T04:59:46.079150Z"
   },
   "earnings": [
     {
@@ -141,5 +142,5 @@
     ],
     "stalePolicy": "If VXN update is unavailable or older than 7 calendar days, keep the report's last authored scenario and display a stale-data warning. Never relabel an old VXN figure as current."
   },
-  "checkedAtUtc": "2026-11-23T20:35:54.521311Z"
+  "checkedAtUtc": "2026-11-24T04:59:46.079150Z"
 }
