@@ -5,8 +5,8 @@
     "currencies": "https://tradingeconomics.com/currencies"
   },
   "timestampKind": "retrieval timestamp is separate from trading day",
-  "fetchedAtUtc": "2026-11-24T09:00:59Z",
-  "fetchedAtPrague": "24. 11. 2026 10:00",
+  "fetchedAtUtc": "2026-11-24T09:21:16Z",
+  "fetchedAtPrague": "24. 11. 2026 10:21",
   "quotes": [
     {
       "id": "WTI",
@@ -31,32 +31,32 @@
     {
       "id": "Natural Gas",
       "unit": "USD/MMBtu",
-      "price": 3.2105,
-      "changePercent": 0.83,
+      "price": 3.2524,
+      "changePercent": 2.15,
       "quoteDate": "Nov/24",
       "quoteDateISO": "2026-11-24",
       "sourceUrl": "https://tradingeconomics.com/commodity/natural-gas",
-      "fetchedAtUtc": "2026-11-24T06:07:51.147270Z"
+      "fetchedAtUtc": "2026-11-24T09:21:16Z"
     },
     {
       "id": "Gasoline",
       "unit": "USD/gal",
-      "price": 2.3924,
-      "changePercent": -0.54,
+      "price": 2.4038,
+      "changePercent": -0.07,
       "quoteDate": "Nov/24",
       "quoteDateISO": "2026-11-24",
       "sourceUrl": "https://tradingeconomics.com/commodity/gasoline",
-      "fetchedAtUtc": "2026-11-24T06:07:51.147270Z"
+      "fetchedAtUtc": "2026-11-24T09:21:16Z"
     },
     {
       "id": "EU Gas",
       "unit": "EUR/MWh",
-      "price": 88.45,
-      "changePercent": -1.43,
+      "price": 89.05,
+      "changePercent": -0.77,
       "quoteDate": "Nov/24",
       "quoteDateISO": "2026-11-24",
       "sourceUrl": "https://tradingeconomics.com/commodity/eu-natural-gas",
-      "fetchedAtUtc": "2026-11-24T06:07:51.147270Z"
+      "fetchedAtUtc": "2026-11-24T09:21:16Z"
     },
     {
       "id": "Gold",
