@@ -1,18 +1,18 @@
 {
-  "updatedAtPrague": "24. 11. 2026 21:01 CET",
-  "marketStatus": "Cash NDX: trh otevřen.",
+  "updatedAtPrague": "24. 11. 2026 22:00 CET",
+  "marketStatus": "Cash NDX: seance ukončena, konečný závěr zatím nepotvrzen.",
   "ndx": {
-    "value": 26173.65,
-    "changePercent": -2.14,
+    "value": 26106.86,
+    "changePercent": -2.39,
     "ath": 31361.37,
-    "asOf": "24. 11. 2026, 20:36:03 CET (Google Finance)"
+    "asOf": "24. 11. 2026, 21:39:09 CET (Google Finance; před závěrem)"
   },
   "sentiment": {
     "label": "Medvědí",
     "trend": "↘",
-    "reason": "MA50 breadth 43,6 % (2026-11-23, denní závěr); RSI14 41,99 (2026-11-23, poslední validovaný výpočet); VXN 36,31 (2026-11-23, závěr)."
+    "reason": "MA50 breadth 43,6 % (2026-11-23, závěr; dnešní úplný snímek nedostupný); RSI14 41,99 (2026-11-23, poslední validovaný výpočet); VXN 36,31 (2026-11-23, závěr)."
   },
-  "driver": "SOX −7,75 % (20:48 CET); NVDA −7,60 % (20:35 CET). NDX prohloubil ztrátu proti předchozímu snímku.",
+  "driver": "SOX −7,80 % (21:52 CET); NVDA −7,39 % (21:36 CET). NDX před závěrem prohloubil ztrátu proti předchozímu snímku.",
   "news": [
     {
       "title": "NVDA | Schumer obvinil CEO Jensena Huanga z porušení exportních pravidel USA a požaduje zpřísnění legislativy. NVDA se bezprostředně nevyjádřila; veřejné slyšení v Senátu 3. 12.",
@@ -466,16 +466,16 @@
   "leaders": [
     {
       "ticker": "NVDA",
-      "changePercent": -7.6,
-      "impact": "vysoký – 20:35 CET"
+      "changePercent": -7.39,
+      "impact": "negativní; 21:36 CET"
     },
     {
       "ticker": "MSFT",
-      "changePercent": 0.16,
-      "impact": "střední – 20:55 CET"
+      "changePercent": 0.66,
+      "impact": "pozitivní; 21:53 CET"
     }
   ],
-  "macro": "US10Y | 23. 11.: 4,92 % | 20. 11.: 4,92 % | 0 bb",
+  "macro": "US10Y | 24. 11.: 4,91 % | 23. 11.: 4,92 % | −1 bb",
   "regulation": null,
   "technical": {
     "support": null,
@@ -483,7 +483,7 @@
   },
   "forecast": {
     "athReturnPercent": 18,
-    "athReason": "Nutný růst 19,82 %. MA50 breadth nedostupné (zdroj neověřen); RSI14 41,99 (2026-11-23, poslední validovaný výpočet); VXN 36,31 (2026-11-23, závěr). Odhad 18 % zachován; pokračující tlak na polovodiče a exportní riziko.",
+    "athReason": "Nutný růst 20,13 %. MA50 breadth 43,6 % (2026-11-23, závěr; dnešní úplný snímek nedostupný); RSI14 41,99 (2026-11-23, poslední validovaný výpočet); VXN 36,31 (2026-11-23, závěr). Odhad 18 % zachován; tlak na polovodiče a exportní riziko.",
     "downside": "−7 až −13 %",
     "downsideReason": "Modelový 25. percentil koncové ceny; VXN 36,31 (2026-11-23, závěr).",
     "downsideModel": {
@@ -498,10 +498,28 @@
     }
   },
   "catalyst": {
-    "event": "PCE a HDP USA",
-    "timePrague": "25. 11. 2026, 14:30 CET"
+    "event": "DELL Q3 FY27 konferenční hovor; PCE a HDP USA 25. 11. ve 14:30",
+    "timePrague": "24. 11. 2026 22:30 CET"
   },
   "archive": [
+    {
+      "time": "24. 11. 2026 22:00 CET",
+      "summary": "NDX 26 106,86 b. (−2,39 %, 21:39 CET; závěr nepotvrzen); SOX −7,80 % (21:52). Bez zásadních nových událostí. US10Y 4,91 % (−1 bb, 24. 11.). MA50 breadth 43,6 % (2026-11-23, závěr; dnešní úplný snímek nedostupný); RSI14 41,99 (2026-11-23, poslední validovaný výpočet); VXN 36,31 (2026-11-23, závěr). 20 kandidátů; 10 JSON načteno; 9/9 tržních kontrol z 21:38; risk, breadth a economy zdrojově ověřeny. Nové nasazení Pages dosud neověřeno.",
+      "sourceLinks": [
+        {
+          "label": "Google Finance – NDX",
+          "url": "https://www.google.com/finance/quote/NDX:INDEXNASDAQ"
+        },
+        {
+          "label": "Google Finance – SOX",
+          "url": "https://www.google.com/finance/quote/SOX:INDEXNASDAQ"
+        },
+        {
+          "label": "US Treasury",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value_month=202611"
+        }
+      ]
+    },
     {
       "time": "24. 11. 2026 21:01 CET",
       "summary": "NDX 26 173,65 b. (−2,14 %, 20:36 CET); SOX −7,75 % (20:48). HPE: FY27 upr. provozní marže 14–15 % vs. FY26 15,1 %. MA50 breadth nedostupné (zdroj neověřen); RSI14 41,99 (2026-11-23, poslední validovaný výpočet); VXN 36,31 (2026-11-23, závěr). 20 kandidátů; 10 JSON načteno, TE 9/9 prověřeno, USD/CZK potvrzeno, rozpory zachovány. Nasdaq 101 členů; CMC znaménka neověřena. FRED a Treasury potvrzeny, sazby/HDP bez nové hodnoty. Yahoo nedostupný pro futures, maximum futures a RSI; 7 skriptů bez cizích GitHub URL. Logy updaterů neověřeny, Pages nedostupné.",
@@ -4069,6 +4087,10 @@
     {
       "time": "24. 11. 2026 21:01 CET",
       "ndx": 26173.65
+    },
+    {
+      "time": "24. 11. 2026 22:00 CET",
+      "ndx": 26106.86
     }
   ],
   "sources": [
@@ -5039,6 +5061,10 @@
     {
       "name": "Reuters – HPE",
       "url": "https://www.reuters.com/business/hpe-shares-fall-margin-worries-overshadow-raised-outlook-2026-11-24/"
+    },
+    {
+      "name": "DELL IR",
+      "url": "https://investors.delltechnologies.com/news-events/press-releases/detail/1661/dell-technologies-to-hold-conference-call-nov-24-to-discuss-third-quarter-fiscal-2027-financial-results"
     }
   ]
 }
