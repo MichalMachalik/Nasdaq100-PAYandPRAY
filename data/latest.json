@@ -1,6 +1,6 @@
 {
-  "updatedAtPrague": "24. 11. 2026 06:01 CET",
-  "marketStatus": "Cash NDX: seance ukončena; závěr 23. 11. 2026.",
+  "updatedAtPrague": "24. 11. 2026 07:01 CET",
+  "marketStatus": "Cash NDX: trh uzavřen; závěr 23. 11. 2026.",
   "ndx": {
     "value": 26746.1,
     "changePercent": 6.86,
@@ -9,10 +9,10 @@
   },
   "sentiment": {
     "label": "Neutrální",
-    "trend": "→ beze změny proti 05:00 CET",
+    "trend": "→ beze změny proti 06:01 CET",
     "reason": "VXN 36,31 (23. 11.); RSI14 41,99 (23. 11.); MA50 breadth 31,7 % (20. 11.)."
   },
-  "driver": "NVDA +31,48 % (23. 11.). Reuters: TAIEX +9,1 %, KOSPI +6,5 %, MSCI Asia-Pacific ex-Japan +4 % (24. 11.).",
+  "driver": "NVDA +31,48 % (23. 11.). Odraz asijských polovodičů; prosincové zvýšení sazeb Fedu plně započteno.",
   "news": [
     {
       "title": "NVDA: Jensen Huang znovu CEO s okamžitou účinností.",
@@ -371,6 +371,24 @@
     "timePrague": "24. 11. 2026, 13:00 CET"
   },
   "archive": [
+    {
+      "time": "24. 11. 2026 07:01 CET",
+      "summary": "NDX 26 746,10 b. (+6,86 %, závěr 23. 11.). Bez nové kvalifikované události; 15 kandidátů, 0 vyřazeno. RSI 41,99 a VXN 36,31 ověřeny v logu; MA50 breadth 31,7 % ověřeno v ChartVault. Nasdaq seznam k 20. 11. a globální žebříček načteny. TE 9/9 prověřeno; rozpory či nedoložené obchodní datum, kotace ponechány. Yahoo NQ=F a historie nedostupné; futures maximum zachováno. Sazby a HDP beze změny. Přímé Pages JSON nedostupné.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq NDX",
+          "url": "https://indexes.nasdaq.com/Index/Overview/NDX"
+        },
+        {
+          "label": "Reuters – Asie / Fed",
+          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-24/"
+        },
+        {
+          "label": "US Treasury",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value_month=202611"
+        }
+      ]
+    },
     {
       "time": "24. 11. 2026 06:01 CET",
       "summary": "NDX 26 746,10 b. (+6,86 %, závěr 23. 11.). RSI14 41,99; VXN 36,31. Bez nové kvalifikované události; 15 kandidátů, 0 vyřazeno. Ověřeny výstupy updaterů: RSI, risk-model, futures maximum, MA50 breadth, Top 10 a členství k 20. 11. TE 9/9 prověřeno, 3 FX aktualizovány; 6 rozdílných komodit ponecháno. NQ=F nedostupný; kotace 01:05 zachována. Sazby a HDP beze změny. Přímé načtení Pages nedostupné.",
@@ -4478,6 +4496,10 @@
     {
       "name": "Reuters – FedWatch / Asie",
       "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-24/"
+    },
+    {
+      "name": "US Treasury",
+      "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value_month=202611"
     }
   ]
 }
