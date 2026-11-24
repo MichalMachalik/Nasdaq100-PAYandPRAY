@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "24. 11. 2026 03:00 CET",
+  "updatedAtPrague": "24. 11. 2026 04:00 CET",
   "marketStatus": "Cash NDX: seance ukončena; závěr 23. 11. 2026.",
   "ndx": {
     "value": 26746.1,
@@ -9,10 +9,10 @@
   },
   "sentiment": {
     "label": "Neutrální",
-    "trend": "→ beze změny proti 02:01 CET",
-    "reason": "VXN 36,31 (23. 11.); MA50 breadth 31,7 % (20. 11.). FedWatch: prosincové zvýšení plně započteno vs. 89 % v pátek."
+    "trend": "↘ mírné zhoršení proti 03:00 CET",
+    "reason": "VXN 36,31 (23. 11.); MA50 breadth 31,7 % (20. 11.). Prosincové zvýšení sazeb Fedu plně započteno."
   },
-  "driver": "NVDA +31,48 %, SOX +14,03 % (23. 11.). KOSPI +7,5 %, TAIEX +9,1 % (24. 11., Reuters 02:29).",
+  "driver": "NVDA +31,48 % (23. 11.). MSCI Asia-Pacific ex-Japan +4,6 %; KOSPI +7,5 %, TAIEX +9,1 % (24. 11., Reuters).",
   "news": [
     {
       "title": "NVDA: Jensen Huang znovu CEO s okamžitou účinností.",
@@ -42,7 +42,7 @@
       "time": "24. 11. 2026 02:29 CET",
       "publishedAtPrague": "24. 11. 2026, 02:29",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "macro",
       "source": "Reuters",
       "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-24/",
@@ -371,6 +371,24 @@
     "timePrague": "24. 11. 2026, 13:00 CET"
   },
   "archive": [
+    {
+      "time": "24. 11. 2026 04:00 CET",
+      "summary": "NDX 26 746,10 b. (+6,86 %), závěr 23. 11. Bez nové samostatné kvalifikované události; 15 kandidátů, 0 vyřazeno. NQZ26 26 806,50 (−0,01 %), 03:50 CET. Yahoo NQ=F 429, historie NQ, NDX a VXN nedostupná; Treasury CSV nepřístupné. RSI, futures maximum a model zachovány. Nasdaq seznam k 20. 11. starší než uložený; Top 10 zachován. TE 9/9 kontrolováno, 2/9 potvrzeny; ostatní rozdílné snímky ponechány. ChartVault MA50 31,7 % k 20. 11. ověřen. Sazby a HDP beze změny. Přímé načtení Pages nedostupné.",
+      "sourceLinks": [
+        {
+          "label": "YCharts NDX",
+          "url": "https://ycharts.com/indices/%5ENDX/level"
+        },
+        {
+          "label": "Reuters – Asie / Fed",
+          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-24/"
+        },
+        {
+          "label": "WSJ NQZ26",
+          "url": "https://www.wsj.com/market-data/quotes/futures/NQZ26"
+        }
+      ]
+    },
     {
       "time": "24. 11. 2026 03:00 CET",
       "summary": "NDX 26 746,10 b. (+6,86 %), závěr 23. 11. FedWatch: prosincové zvýšení plně započteno vs. 89 % v pátek. 15 kandidátů, 0 vyřazeno. NQ=F Yahoo 429; samostatný NQZ26 WSJ 26 885,25 (+0,29 %) 02:44. Nasdaq seznam 101 k 20. 11., starší než uložený; globální žebříček prověřen, Top 10 zachován. TE 9/9 kontrolováno, rozdílné snímky ponechány. Sazby a HDP beze změny. ChartVault načten, MA50 31,7 % k 20. 11. Yahoo historie a Treasury CSV nedostupné; RSI, futures maximum a model zachovány. Pages přímé načtení nedostupné.",
