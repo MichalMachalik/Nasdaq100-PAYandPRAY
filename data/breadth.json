@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
   "id": "ndx-ma50-breadth",
-  "asOf": "2026-11-23",
+  "asOf": "2026-11-24",
   "sourceUpdatedAt": null,
-  "sourceReportedPct": 43.56,
+  "sourceReportedPct": 42.57,
   "eligibleSecurities": 101,
-  "aboveCount": 44,
-  "atOrBelowCount": 57,
-  "abovePct": 43.6,
-  "belowPct": 56.4,
+  "aboveCount": 43,
+  "atOrBelowCount": 58,
+  "abovePct": 42.6,
+  "belowPct": 57.4,
   "countedSecurityClasses": true,
   "source": "StockCurry · Nasdaq100 Timeline, > SMA50",
   "sourceUrl": "https://stockcurry.com/index_timeline.php?index=Nasdaq100&view=percent",
@@ -16,7 +16,7 @@
   "methodology": "Current Nasdaq-100 securities (not point-in-time members); provider's end-of-day percentage above own 50-session SMA and reported security denominator. Integer count reconstructed from the rounded percentage. Different providers may use different pricing histories and basket rules.",
   "feedStatus": "published",
   "constituentsSourceUrl": "https://api.nasdaq.com/api/quote/list-type/nasdaq100",
-  "constituentsCheckedAtUtc": "2026-11-24T20:38:40.516702Z",
-  "collectedAtUtc": "2026-11-24T07:26:04.105Z",
-  "checkedAtUtc": "2026-11-24T21:00:19Z"
+  "constituentsCheckedAtUtc": "2026-11-24T21:02:28.530905Z",
+  "collectedAtUtc": "2026-11-24T21:02:35.827878Z",
+  "checkedAtUtc": "2026-11-24T21:02:35.827878Z"
 }
