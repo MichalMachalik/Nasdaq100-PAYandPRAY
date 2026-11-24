@@ -61,6 +61,24 @@ class BreadthTest(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,"Duplicate"):
             b.make_snapshot(x,NOW)
 
+
+    def test_stockcurry_named_columns_and_rounding(self):
+        html = """<table><tr><th>Date</th><th>Total Stocks</th>
+        <th>RSI_D &gt; 50</th><th>&gt; SMA50</th><th>&gt; SMA200</th></tr>
+        <tr><td>2026-11-23</td><td>101</td><td>39.60%</td><td>43.56%</td><td>42.57%</td></tr>
+        <tr><td>2026-11-20</td><td>101</td><td>37.62%</td><td>43.56%</td><td>41.58%</td></tr></table>"""
+        now = datetime(2026,11,24,7,tzinfo=timezone.utc)
+        d = b.stockcurry_snapshot(html, now)
+        self.assertEqual(d["asOf"],"2026-11-23")
+        self.assertEqual((d["aboveCount"], d["atOrBelowCount"]), (44,57))
+        self.assertEqual((d["abovePct"], d["belowPct"]), (43.6,56.4))
+        self.assertIsNone(d["sourceUpdatedAt"])
+        self.assertTrue(d["sourceUrl"].startswith("https://stockcurry.com/"))
+        with self.assertRaises(ValueError):
+            b.stockcurry_snapshot(html.replace("&gt; SMA50","Unrelated"),now)
+        with self.assertRaises(ValueError):
+            b.stockcurry_snapshot(html.replace("43.56%","43.11%"),now)
+
     def test_published_baseline_matches_footnoted_source(self):
         out=json.loads((ROOT/"data/breadth.json").read_text(encoding="utf-8"))
         self.assertEqual(out["id"],"ndx-ma50-breadth")

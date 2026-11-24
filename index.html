@@ -533,6 +533,35 @@ body :is(h1,h2,h3,p,div,span,small,strong,button,a,table,th,td,time,summary,labe
 .oversold-metric>strong{font-size:clamp(11px,1.5vw,14px);line-height:1.3;font-weight:650;color:var(--ink);white-space:nowrap;font-variant-numeric:tabular-nums}
 .oversold-metric>strong.red{color:var(--red)}
 .oversold-metric>strong.green{color:var(--green)}
+
+/* Technical indicators: discrete zones, explicit observation dates. */
+.indicator-widget{margin-top:18px;padding-top:12px;border-top:1px solid var(--border);max-width:100%}
+.indicator-widget .indicator-heading{font-size:11px;line-height:1.5;font-weight:650;color:var(--muted);letter-spacing:.25px}
+.indicator-widget .indicator-value{display:block;margin:7px 0 3px;font:650 clamp(20px,2.6vw,27px)/1.2 system-ui,-apple-system,"Segoe UI",sans-serif;font-variant-numeric:tabular-nums;letter-spacing:-.45px;color:var(--ink)}
+.indicator-widget .indicator-state{font-size:11px;line-height:1.45;margin:3px 0 0;color:var(--muted)}
+.indicator-widget .indicator-value.green{color:var(--green)}
+.indicator-widget .indicator-value.red{color:var(--red)}
+.indicator-widget .indicator-value.amber{color:#a36c26}
+.indicator-track{position:relative;height:10px;margin:16px 0 7px;border-radius:99px;background:#d9dcda}
+.rsi-track{background:linear-gradient(90deg,#81ad9a 0%,#81ad9a 30%,#c7c9c8 30%,#c7c9c8 70%,#c66c73 70%,#c66c73 100%)}
+.vxn-track{background:linear-gradient(90deg,#81ad9a 0%,#81ad9a 33.333%,#c7c9c8 33.333%,#c7c9c8 50%,#dbb77e 50%,#dbb77e 66.667%,#c66c73 66.667%,#c66c73 100%)}
+.indicator-pointer{position:absolute;top:-4px;width:5px;height:18px;transform:translateX(-50%);background:var(--ink);border-radius:3px;box-shadow:0 0 0 1.5px #fff;display:none}
+.indicator-ticks{position:relative;height:17px;font-size:10px;color:var(--muted);font-variant-numeric:tabular-nums}
+.indicator-ticks span{position:absolute;transform:translateX(-50%);white-space:nowrap}
+.indicator-ticks span:first-child{transform:none}.indicator-ticks span:last-child{transform:translateX(-100%)}
+.indicator-labels{display:grid;grid-template-columns:30fr 40fr 30fr;gap:0;line-height:1.3;text-align:center;font-size:9px;color:var(--muted);margin:3px 0 5px}
+.vxn-labels{grid-template-columns:20fr 10fr 10fr 20fr;font-size:9px}
+.indicator-foot{font-size:10px;color:var(--muted);line-height:1.5;overflow-wrap:anywhere;margin-top:7px}
+.indicator-foot a{color:var(--muted);text-decoration:underline;text-underline-offset:2px}
+.oversold-card .oversold-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}
+.breadth-source{align-items:flex-start;flex-wrap:wrap;gap:4px 8px}
+.breadth-source a{white-space:nowrap}
+.breadth-freshness{font-size:10px;line-height:1.5;color:var(--muted);margin-top:4px}
+.breadth-freshness.stale{color:#a36c26;font-weight:600}
+.breadth-track.is-unavailable .breadth-positive,.breadth-track.is-unavailable .breadth-negative{background:transparent}
+@media(max-width:690px){.oversold-card .indicator-widget{max-width:360px}}
+@media(max-width:400px){.indicator-labels{font-size:8px}.indicator-ticks{font-size:9px}}
+
 .breadth-widget{margin-top:18px;padding-top:12px;border-top:1px solid var(--border)}
 .breadth-heading{font-size:10px;letter-spacing:.55px;text-transform:uppercase;font-weight:650;color:var(--muted);margin-bottom:8px}
 .breadth-numbers{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}
@@ -598,9 +627,19 @@ body :is(h1,h2,h3,p,div,span,small,strong,button,a,table,th,td,time,summary,labe
       </div>
       <div class="oversold-ticks"><span>0</span><span>25</span><span>50</span><span>75</span><span>100</span></div>
       <div class="oversold-metrics">
-        <div class="oversold-metric"><span>RSI(14)</span><strong id="oversold-raw-rsi">—</strong></div>
         <div class="oversold-metric"><span>MA20</span><strong id="oversold-ma20">—</strong></div>
         <div class="oversold-metric"><span>MA50</span><strong id="oversold-ma50">—</strong></div>
+      </div>
+      <div class="indicator-widget" aria-label="RSI(14) Nasdaq-100">
+        <div class="indicator-heading" title="Wilderův index relativní síly, vypočtený z denních závěrů NDX s periodou 14 seancí.">RSI(14) · relativní síla</div>
+        <strong id="oversold-raw-rsi" class="indicator-value">—</strong>
+        <div id="rsi-track" class="indicator-track rsi-track" role="img" aria-label="RSI od 0 do 100">
+          <div id="rsi-pointer" class="indicator-pointer"></div>
+        </div>
+        <div class="indicator-ticks" aria-hidden="true"><span style="left:0%">0</span><span style="left:30%">30</span><span style="left:50%">50</span><span style="left:70%">70</span><span style="left:100%">100</span></div>
+        <div class="indicator-labels" aria-hidden="true"><span>Přeprodaný</span><span>Neutrální</span><span>Překoupený</span></div>
+        <div id="rsi-state" class="indicator-state">Čeká na ověřený závěr</div>
+        <div id="rsi-date" class="indicator-foot">Denní RSI · perioda 14 seancí</div>
       </div>
       <div class="breadth-widget" aria-label="Šířka trhu Nasdaq-100 podle MA50">
         <div class="breadth-heading">Šířka trhu / MA50</div>
@@ -611,17 +650,18 @@ body :is(h1,h2,h3,p,div,span,small,strong,button,a,table,th,td,time,summary,labe
           </div>
           <div class="breadth-side breadth-right">
             <strong id="breadth-below" class="red">—</strong>
-            <span>Akcie pod MA50</span>
+            <span>Akcie na/pod MA50</span>
           </div>
         </div>
-        <div id="breadth-track" class="breadth-track" role="img" aria-label="Podíl způsobilých akciových tříd nad a pod padesátidenním průměrem">
+        <div id="breadth-track" class="breadth-track is-unavailable" role="img" aria-label="Podíl způsobilých akciových tříd nad a pod padesátidenním průměrem">
           <div id="breadth-positive" class="breadth-positive" style="width:0%"></div>
           <div class="breadth-negative"></div>
         </div>
         <div class="breadth-source">
           <span id="breadth-asof">Čeká na datový zdroj</span>
-          <a href="./data/breadth.json" target="_blank" rel="noopener noreferrer" title="Počet akciových tříd, datum, metodika a veřejný zdroj">Zdroj</a>
+          <a id="breadth-source-link" href="./data/breadth.json" target="_blank" rel="noopener noreferrer">Zdroj</a><a href="./data/breadth.json" target="_blank" rel="noopener noreferrer" title="Datový záznam a metodika">Data</a>
         </div>
+        <div id="breadth-freshness" class="breadth-freshness"></div>
       </div>
     </div>
     <div class="forecast forecast-down-card">
@@ -629,6 +669,18 @@ body :is(h1,h2,h3,p,div,span,small,strong,button,a,table,th,td,time,summary,labe
       <strong id="forecast-down" class="red">—</strong>
       <div id="forecast-down-points" class="forecast-points">—</div>
       <div id="forecast-down-reason" class="detail" title="Jde o dolní kvartil modelové koncové ceny za 1 a 3 měsíce, nikoli o skutečný nejhorší možný výsledek.">Odhad horšího a nejhoršího scénáře</div>
+      <div class="indicator-widget" aria-label="VXN index očekávané volatility Nasdaq-100">
+        <div class="indicator-heading" title="Cboe VXN: anualizovaná očekávaná volatilita NDX na příštích přibližně 30 dní, odvozená z cen opcí.">VXN · očekávaná volatilita</div>
+        <strong id="vxn-value" class="indicator-value">—</strong>
+        <div id="vxn-track" class="indicator-track vxn-track" role="img" aria-label="Orientační stupnice volatility od 0 do 60 a více">
+          <div id="vxn-pointer" class="indicator-pointer"></div>
+        </div>
+        <div class="indicator-ticks" aria-hidden="true"><span style="left:0%">0</span><span style="left:33.333%">20</span><span style="left:50%">30</span><span style="left:66.667%">40</span><span style="left:100%">60+</span></div>
+        <div class="indicator-labels vxn-labels" aria-hidden="true"><span>Nízká</span><span>Střední</span><span>Vyšší</span><span>Vysoká</span></div>
+        <div id="vxn-state" class="indicator-state">Čeká na ověřená data</div>
+        <div class="indicator-foot"><span id="vxn-date">30denní výhled volatility</span> · <a href="https://www.cboe.com/data/quotes/VXN/dashboard" target="_blank" rel="noopener noreferrer">Cboe</a></div>
+        <div class="indicator-foot" title="Hranice 20/30/40 jsou orientační klasifikace Pay &amp; Pray, nikoli oficiální pásma Cboe.">Anualizováno · směr pohybu neurčuje</div>
+      </div>
     </div>
   </div>
   <div style="margin-top:22px"><div class="mini-title">Nejbližší katalyzátor</div><div id="catalyst" class="empty">Zatím nezveřejněno</div></div></section>
@@ -1178,7 +1230,46 @@ const downsideTerminalPct=(annualVolPct,months)=>{
   const sigma=annualVolPct/100,years=months/12;
   return 100*(1-Math.exp(-0.5*sigma*sigma*years-RISK_Z25*sigma*Math.sqrt(years)));
 };
+function cashObservationDate(ndx){
+  const t=String(ndx?.asOf||'').trim();
+  const iso=t.match(/^(\d{4})-(\d{2})-(\d{2})\b/);
+  const cz=t.match(/^(\d{1,2})\.\s*(\d{1,2})\.\s*(\d{4})\b/);
+  const candidate=iso?iso[0]:(cz?cz[3]+'-'+cz[2].padStart(2,'0')+'-'+cz[1].padStart(2,'0'):'');
+  if(!candidate)return '';
+  const d=new Date(candidate+'T00:00:00Z');
+  return Number.isFinite(d.getTime())&&d.toISOString().slice(0,10)===candidate?candidate:'';
+}
+function rsiState(value){
+  return !Number.isFinite(value)||value<0||value>100?['Čeká na ověřený závěr','']:
+    value<30?['Přeprodaný trh','green']:
+    value>70?['Překoupený trh','red']:
+    value<50?['Mírná převaha poklesové dynamiky','']:
+    value>50?['Převaha růstové dynamiky','']:
+    ['Vyrovnaná dynamika',''];
+}
+function vxnState(value){
+  return !Number.isFinite(value)||value<=0?['Čeká na ověřená data','']:
+    value<20?['Nízká očekávaná volatilita','green']:
+    value<30?['Střední očekávaná volatilita','']:
+    value<40?['Zvýšená očekávaná volatilita','amber']:
+    ['Vysoký stres / očekávaná volatilita','red'];
+}
+function renderIndicator(id,value,asOf,ndx){
+  const isRsi=id==='rsi',valid=Number.isFinite(value)&&value>=0&&(isRsi?value<=100:value>0);
+  const valueId=isRsi?'oversold-raw-rsi':'vxn-value';
+  const el=$(valueId),pointer=$(id+'-pointer'),track=$(id+'-track');
+  const state=(isRsi?rsiState:vxnState)(valid?value:NaN);
+  set(valueId,valid?fmt(value,isRsi?1:2)+(isRsi?' / 100':''):'—');
+  if(el)el.className='indicator-value'+(state[1]?' '+state[1]:'');
+  if(pointer){pointer.style.display=valid?'block':'none';pointer.style.left=valid?Math.max(0,Math.min(100,value/(isRsi?100:60)*100))+'%':'0%'}
+  if(track)track.setAttribute('aria-label',valid?(isRsi?'RSI(14) ':'VXN ')+fmt(value,2)+'; '+state[0]:'Bez ověřených dat');
+  set(id+'-state',state[0]);
+  const cashDate=cashObservationDate(ndx),stale=valid&&cashDate&&asOf<cashDate;
+  set(id+'-date',valid?asOf+' · '+(stale?'Starší závěr · ':'')+(isRsi?'14 seancí (Wilder)':'30denní implikovaná volatilita'):'Data zatím nedostupná');
+}
+
 async function loadRiskModel(ndx){
+  renderIndicator('vxn',NaN,'',ndx);
   try{
     const response=await fetch('./data/risk-model.json?t='+Date.now(),{cache:'no-store'});
     if(!response.ok)throw new Error('risk inputs unavailable');
@@ -1189,7 +1280,10 @@ async function loadRiskModel(ndx){
     if(risk.schemaVersion!==1||risk.id!=='ndx-evidence-volatility-v1'||
        !Number.isFinite(volatility)||volatility<8||volatility>100||
        !Number.isFinite(observed)||age < -48*3600000||
-       age>7*86400000||spec.percentile!==25||
+       age>7*86400000)
+      throw new Error('missing, invalid or stale volatility snapshot');
+    renderIndicator('vxn',volatility,market.vxnAsOf,ndx);
+    if(spec.percentile!==25||
        !Array.isArray(spec.months)||spec.months[0]!==1||spec.months[1]!==3)
       throw new Error('missing, invalid or stale volatility snapshot');
     if(!Number.isFinite(ndx?.value)||ndx.value<=1000)throw new Error('cash NDX quote unavailable');
@@ -1238,8 +1332,7 @@ async function loadOversold(ndx){
       marker.title='Historická přeprodanost, vzorek '+t.referenceSessions+' seancí';
     }
     const plain=(x)=>Number.isFinite(x)?fmt(Math.abs(x),1)+' %':'—';
-    set('oversold-raw-rsi',fmt(rsi,1));
-    $('oversold-raw-rsi').className=rsi<30?'red':rsi>70?'green':'neutral';
+    renderIndicator('rsi',rsi,d.asOf,ndx);
     set('oversold-ma20',plain(d.ma20DistancePct));
     $('oversold-ma20').className=d.ma20DistancePct<0?'red':d.ma20DistancePct>0?'green':'neutral';
     $('oversold-ma20').title='NDX '+plain(d.ma20DistancePct)+(d.ma20DistancePct<0?' pod':' nad')+' 20denním průměrem';
@@ -1248,13 +1341,13 @@ async function loadOversold(ndx){
     $('oversold-ma50').title='NDX '+plain(d.ma50DistancePct)+(d.ma50DistancePct<0?' pod':' nad')+' 50denním průměrem';
     }catch(err){
     set('oversold-rsi','—');
-    set('oversold-raw-rsi','—');
+    renderIndicator('rsi',NaN,'',ndx);
     set('oversold-ma20','—');
     set('oversold-ma50','—');
     if(marker)marker.style.left='0%';
   }
 }
-async function loadBreadth(){
+async function loadBreadth(ndx){
   const bar=$('breadth-positive'),track=$('breadth-track');
   try {
     const response=await fetch('./data/breadth.json?t='+Date.now(),{cache:'no-store'});
@@ -1279,12 +1372,29 @@ async function loadBreadth(){
       d.aboveCount+' z '+eligible+' akciových tříd nad MA50; '+
       d.atOrBelowCount+' pod nebo na MA50; data '+d.asOf);
     set('breadth-asof',d.asOf+' · '+d.aboveCount+'/'+eligible+' nad MA50');
+    if(track)track.classList.remove('is-unavailable');
+    const source=$('breadth-source-link');
+    if(source){
+      const label=/StockCurry/i.test(d.source||'')?'StockCurry':/ChartVault/i.test(d.source||'')?'ChartVault':'Zdroj';
+      source.textContent=label;
+      source.href=typeof d.sourceUrl==='string'&&/^https:\/\//.test(d.sourceUrl)?d.sourceUrl:'./data/breadth.json';
+      source.title=d.source||'Datový zdroj';
+    }
+    const expected=cashObservationDate(ndx),stale=Boolean(expected&&d.asOf<expected);
+    const checked=d.checkedAtUtc?fmtShortPrague(d.checkedAtUtc):'';
+    const detail=$('breadth-freshness');
+    if(detail){
+      detail.className='breadth-freshness'+(stale?' stale':'');
+      detail.textContent=(stale?'Starší data · čeká na závěr '+expected:'Denní závěr; ne intradenní data')+
+        (checked?' · kontrola '+checked:'');
+    }
   } catch(err){
     set('breadth-above','—');
     set('breadth-below','—');
     set('breadth-asof','Šířka trhu: zdroj chybí nebo je zastaralý');
     if(bar)bar.style.width='0%';
-    if(track)track.setAttribute('aria-label','Neověřená šířka trhu');
+    if(track){track.setAttribute('aria-label','Neověřená šířka trhu');track.classList.add('is-unavailable')}
+    set('breadth-freshness','Novější ověřená data zatím nedostupná');
   }
 }
 async function load(){
@@ -1293,7 +1403,7 @@ async function load(){
     if(!response.ok)throw new Error('HTTP '+response.status);
     const report=await response.json();
     render(report);
-    await Promise.all([loadRiskModel(report.ndx||{}),loadOversold(report.ndx||{}),loadBreadth()]);
+    await Promise.all([loadRiskModel(report.ndx||{}),loadOversold(report.ndx||{}),loadBreadth(report.ndx||{})]);
   }catch(err){set('updated','Data nedostupná');}
 }
 $('refresh').addEventListener('click',()=>{

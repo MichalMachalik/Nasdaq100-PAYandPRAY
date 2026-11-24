@@ -81,6 +81,9 @@ const editorialFixtures=[{"input":"HPE Q4: tržby 14,55 mld. USD vs. kons. 14,43
 context.__editorialFixtures=editorialFixtures;
 vm.runInContext(`for(const f of __editorialFixtures){const got=narrativeParts(sentenceBreaks(f.input)).filter(p=>p.kind).map(p=>[protectNarrativeText(p.text).replace(/[\\u00a0\\u202f]/g,' '),p.kind]);if(JSON.stringify(got)!==JSON.stringify(f.colors))throw Error('Editorial color regression: '+f.input+' => '+JSON.stringify(got));}if(!sentenceBreaks(__editorialFixtures[0].input).includes('\\nUpr. EPS')||sentenceBreaks(__editorialFixtures[0].input).includes('upr.\\nEPS'))throw Error('Abbreviation split');if(!protectNarrativeText('Upr. EPS 1,43 USD').includes('Upr.\\u00a0EPS'))throw Error('Nonbreaking abbreviation');`,context);
 console.log('PASS: editorial HPE, abbreviations, directional percentages, points and neutral ranges');
+vm.runInContext("if(rsiState(42)[0]!=='Mírná převaha poklesové dynamiky'||rsiState(20)[1]!=='green'||rsiState(80)[1]!=='red'||vxnState(36.31)[1]!=='amber'||vxnState(45)[1]!=='red'||cashObservationDate({asOf:'23. 11. 2026 – závěr Nasdaq'})!=='2026-11-23')throw Error('Indicator gauge regression');",context);
+for(const id of ['rsi-pointer','rsi-track','rsi-state','rsi-date','vxn-value','vxn-pointer','vxn-track','vxn-state','vxn-date','breadth-source-link','breadth-freshness'])if(!nodes[id])throw Error('Missing indicator DOM target: '+id);
+console.log('PASS: RSI/VXN gauges, dated observation and breadth source controls');
 console.log('PASS: report renderer, macro, forecasts and DOM targets');
 '''
         harness = Path(directory)/'check.cjs'
