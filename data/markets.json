@@ -5,8 +5,8 @@
     "currencies": "https://tradingeconomics.com/currencies"
   },
   "timestampKind": "retrieval timestamp is separate from trading day",
-  "fetchedAtUtc": "2026-11-24T20:01:07Z",
-  "fetchedAtPrague": "24. 11. 2026 21:01",
+  "fetchedAtUtc": "2026-11-24T20:20:02Z",
+  "fetchedAtPrague": "24. 11. 2026 21:20",
   "quotes": [
     {
       "id": "WTI",
@@ -81,12 +81,12 @@
     {
       "id": "EUR/CZK",
       "unit": "EUR/CZK",
-      "price": 24.41,
-      "changePercent": -0.03,
+      "price": 24.4043,
+      "changePercent": -0.05,
       "quoteDate": "Nov/24",
       "quoteDateISO": "2026-11-24",
       "sourceUrl": "https://tradingeconomics.com/eurczk:cur",
-      "fetchedAtUtc": "2026-11-24T17:53:41.110890Z"
+      "fetchedAtUtc": "2026-11-24T20:20:02Z"
     },
     {
       "id": "USD/CZK",
