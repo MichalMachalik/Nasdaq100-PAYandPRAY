@@ -1,61 +1,19 @@
 {
-  "updatedAtPrague": "24. 11. 2026 16:00 CET",
+  "updatedAtPrague": "24. 11. 2026 17:00 CET",
   "marketStatus": "Cash NDX: trh otevřen.",
   "ndx": {
-    "value": 26217.91,
-    "changePercent": -1.97,
+    "value": 26039.78,
+    "changePercent": -2.64,
     "ath": 31361.37,
-    "asOf": "24. 11. 2026, 15:33:47 CET (Google Finance)"
+    "asOf": "24. 11. 2026, 16:51:53 CET (Google Finance)"
   },
   "sentiment": {
     "label": "Medvědí",
     "trend": "↘",
     "reason": "VXN 36,31 (23. 11., závěr); RSI14 41,99 (23. 11., poslední validovaný výpočet); MA50 breadth nedostupné (zdroj neověřen)."
   },
-  "driver": "SOX −5,95 % (15:33 CET); NVDA −5,36 % (15:49 CET). Po pondělním růstu pokračuje výprodej AI akcií.",
+  "driver": "SOX −8,95 % (16:51 CET); NVDA −7,85 % (16:49 CET). Pokles NDX se prohloubil z −1,97 % na −2,64 %.",
   "news": [
-    {
-      "eventKey": "tesla-spacex-merger-committee-directors-20261124",
-      "title": "TSLA/SPCX | Podle FT pět ředitelů vyjednává možnou akciovou fúzi; podmínky transakce nejsou dohodnuty.",
-      "time": "24. 11. 2026, 06:20 CET",
-      "publishedAtPrague": "24. 11. 2026, 06:20",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "earnings_corporate",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/legal/transactional/spacex-tesla-entrusts-five-directors-merger-talks-ft-reports-2026-11-24/",
-      "sourceLinks": [
-        {
-          "label": "Reuters – zpráva FT",
-          "url": "https://www.reuters.com/legal/transactional/spacex-tesla-entrusts-five-directors-merger-talks-ft-reports-2026-11-24/"
-        },
-        {
-          "label": "Financial Times",
-          "url": "https://www.ft.com/content/2585e45e-9133-4215-a2d8-e1275e1033b9"
-        }
-      ],
-      "ndxRelevant": true,
-      "importanceScore": 84
-    },
-    {
-      "title": "Fed Williams: očekává inflaci 3,5 % na konci 2026; návrat k 2% cíli v roce 2028. Přetrvávají proinflační rizika.",
-      "time": "23. 11. 2026 22:06 CET",
-      "publishedAtPrague": "23. 11. 2026, 22:06",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "macro",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/fed-has-work-do-lower-inflation-williams-says-2026-11-23/",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/business/fed-has-work-do-lower-inflation-williams-says-2026-11-23/"
-        }
-      ],
-      "eventKey": "fed-williams-bronx-inflation-20261123",
-      "ndxRelevant": true,
-      "importanceScore": 82
-    },
     {
       "title": "ADI Q4 | tržby 4,37 mld. USD vs. kons. Zacks 4,32 (beat 1,2 %); upr. EPS 4,06 USD vs. kons. 3,89 (beat 4,4 %). Q1: tržby 4,4 mld. USD; upr. EPS 3,82 vs. kons. 3,88 USD (miss 1,5 %). ADI −9,44 % (premarket 14:00).",
       "time": "24. 11. 2026 13:01 CET",
@@ -84,6 +42,159 @@
       "importanceScore": 80
     },
     {
+      "eventKey": "us-cb-consumer-confidence-nov-2026-20261124",
+      "title": "USA CB Consumer Confidence | listopad 103,3 vs. kons. Reuters 92,5 | říjen 91,9 | +11,4 b. Inflační očekávání na 12 měsíců 5,7 %.",
+      "publishedAtPrague": "24. 11. 2026, 16:00",
+      "category": "macro",
+      "source": "The Conference Board",
+      "url": "https://www.prnewswire.com/news-releases/us-consumer-confidence-surged-in-november-302949447.html",
+      "sourceLinks": [
+        {
+          "label": "The Conference Board",
+          "url": "https://www.prnewswire.com/news-releases/us-consumer-confidence-surged-in-november-302949447.html"
+        },
+        {
+          "label": "Reuters – konsenzus",
+          "url": "https://www.reuters.com/world/us/us-consumer-confidence-surges-highest-level-nearly-two-years-2026-11-24/"
+        }
+      ],
+      "importanceScore": 73,
+      "time": "24. 11. 2026, 16:00 CET",
+      "kind": "new",
+      "ndxRelevant": true,
+      "publicationTimeVerified": true
+    },
+    {
+      "eventKey": "tesla-spacex-merger-committee-directors-20261124",
+      "title": "TSLA/SPCX | Podle FT pět ředitelů vyjednává možnou akciovou fúzi; podmínky transakce nejsou dohodnuty.",
+      "time": "24. 11. 2026, 06:20 CET",
+      "publishedAtPrague": "24. 11. 2026, 06:20",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "earnings_corporate",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/legal/transactional/spacex-tesla-entrusts-five-directors-merger-talks-ft-reports-2026-11-24/",
+      "sourceLinks": [
+        {
+          "label": "Reuters – zpráva FT",
+          "url": "https://www.reuters.com/legal/transactional/spacex-tesla-entrusts-five-directors-merger-talks-ft-reports-2026-11-24/"
+        },
+        {
+          "label": "Financial Times",
+          "url": "https://www.ft.com/content/2585e45e-9133-4215-a2d8-e1275e1033b9"
+        }
+      ],
+      "ndxRelevant": true,
+      "importanceScore": 84
+    },
+    {
+      "title": "USA | Nasdaq Composite při otevření −1,43 %. SOX −5,95 % (15:33 CET), NVDA −5,36 % (15:49 CET).",
+      "time": "24. 11. 2026 11:52 CET",
+      "publishedAtPrague": "24. 11. 2026, 11:52",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "semiconductor_market",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/wall-st-futures-dip-chip-stocks-cool-after-nvidia-fueled-rally-2026-11-24/",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/wall-st-futures-dip-chip-stocks-cool-after-nvidia-fueled-rally-2026-11-24/"
+        },
+        {
+          "label": "Google Finance – NDX/SOX",
+          "url": "https://www.google.com/finance/quote/NDX:INDEXNASDAQ"
+        },
+        {
+          "label": "Google Finance – NVDA",
+          "url": "https://www.google.com/finance/quote/NVDA:NASDAQ"
+        }
+      ],
+      "eventKey": "us-chip-premarket-pullback-20261124",
+      "ndxRelevant": true,
+      "importanceScore": 72
+    },
+    {
+      "eventKey": "china-critical-mineral-export-ban-suspension-20261124",
+      "title": "Čína prodloužila pozastavení zákazu vývozu gallia, germania a antimonu do USA do 27. 1. 2027. Gallium a germanium se používají při výrobě polovodičů.",
+      "publishedAtPrague": "24. 11. 2026, 15:41",
+      "category": "ai_regulation",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/markets/commodities/china-extends-suspension-ban-us-bound-gallium-germanium-antimony-exports-2026-11-24/",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/markets/commodities/china-extends-suspension-ban-us-bound-gallium-germanium-antimony-exports-2026-11-24/"
+        }
+      ],
+      "importanceScore": 65,
+      "time": "24. 11. 2026, 15:41 CET",
+      "kind": "new",
+      "ndxRelevant": true,
+      "publicationTimeVerified": true
+    },
+    {
+      "title": "ANT −6,5 % na 82 USD v premarketu, pod IPO cenou 83 USD. AMZN a Alphabet patří mezi významné investory.",
+      "time": "24. 11. 2026 12:17 CET",
+      "publishedAtPrague": "24. 11. 2026, 12:17",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "ai_infrastructure",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/anthropic-breaks-below-83-ipo-price-debut-rally-unravels-2026-11-24/",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/anthropic-breaks-below-83-ipo-price-debut-rally-unravels-2026-11-24/"
+        },
+        {
+          "label": "Fortune – podíly AMZN a Alphabet",
+          "url": "https://fortune.com/2026/11/19/anthropic-ipo-amazon-google-stake-windfall-nonvoting/"
+        }
+      ],
+      "eventKey": "anthropic-below-ipo-price-20261124",
+      "ndxRelevant": true,
+      "importanceScore": 68
+    },
+    {
+      "title": "FedWatch: prosincové zvýšení sazeb plně započteno vs. 89 % v pátek; pravděpodobnost +50 bb přibližně 5 %. US10Y 4,94 %, US2Y 4,69 %.",
+      "time": "24. 11. 2026 02:29 CET",
+      "publishedAtPrague": "24. 11. 2026, 02:29",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "macro",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-24/",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-24/"
+        }
+      ],
+      "eventKey": "fed-december-hike-repricing-asia-20261124",
+      "ndxRelevant": true,
+      "importanceScore": 78
+    },
+    {
+      "title": "Fed Williams: očekává inflaci 3,5 % na konci 2026; návrat k 2% cíli v roce 2028. Přetrvávají proinflační rizika.",
+      "time": "23. 11. 2026 22:06 CET",
+      "publishedAtPrague": "23. 11. 2026, 22:06",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "macro",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/fed-has-work-do-lower-inflation-williams-says-2026-11-23/",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/fed-has-work-do-lower-inflation-williams-says-2026-11-23/"
+        }
+      ],
+      "eventKey": "fed-williams-bronx-inflation-20261123",
+      "ndxRelevant": true,
+      "importanceScore": 82
+    },
+    {
       "title": "META pozastavuje emisi akcií třídy C kvůli žalobě akcionářů; odklad programu prodeje akcií za 60 mld. USD určeného k financování AI investic.",
       "time": "23. 11. 2026 23:32 CET",
       "publishedAtPrague": "23. 11. 2026, 23:32",
@@ -109,25 +220,6 @@
       "eventKey": "meta-class-c-issuance-pause-20261123",
       "ndxRelevant": true,
       "importanceScore": 79
-    },
-    {
-      "title": "FedWatch: prosincové zvýšení sazeb plně započteno vs. 89 % v pátek; pravděpodobnost +50 bb přibližně 5 %. US10Y 4,94 %, US2Y 4,69 %.",
-      "time": "24. 11. 2026 02:29 CET",
-      "publishedAtPrague": "24. 11. 2026, 02:29",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "macro",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-24/",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-24/"
-        }
-      ],
-      "eventKey": "fed-december-hike-repricing-asia-20261124",
-      "ndxRelevant": true,
-      "importanceScore": 78
     },
     {
       "title": "USA: Megaspeed, partner NVDA v cloudové infrastruktuře, zařazen na Entity List. Dodávky amerických technologií vyžadují licenci.",
@@ -178,79 +270,6 @@
       "eventKey": "hpe-fy2026-q4-earnings-20261123",
       "ndxRelevant": true,
       "importanceScore": 76
-    },
-    {
-      "title": "USA | Nasdaq Composite při otevření −1,43 %. SOX −5,95 % (15:33 CET), NVDA −5,36 % (15:49 CET).",
-      "time": "24. 11. 2026 11:52 CET",
-      "publishedAtPrague": "24. 11. 2026, 11:52",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "semiconductor_market",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/wall-st-futures-dip-chip-stocks-cool-after-nvidia-fueled-rally-2026-11-24/",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/business/wall-st-futures-dip-chip-stocks-cool-after-nvidia-fueled-rally-2026-11-24/"
-        },
-        {
-          "label": "Google Finance – NDX/SOX",
-          "url": "https://www.google.com/finance/quote/NDX:INDEXNASDAQ"
-        },
-        {
-          "label": "Google Finance – NVDA",
-          "url": "https://www.google.com/finance/quote/NVDA:NASDAQ"
-        }
-      ],
-      "eventKey": "us-chip-premarket-pullback-20261124",
-      "ndxRelevant": true,
-      "importanceScore": 72
-    },
-    {
-      "title": "AMZN: kupuje technologii Decart Optimization Stack a přebírá tým pro Trainium a AI inference; cena nezveřejněna.",
-      "time": "23. 11. 2026 16:33 CET",
-      "publishedAtPrague": "23. 11. 2026, 16:33",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_infrastructure",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/retail-consumer/amazon-buy-decarts-ai-chip-optimization-tech-latest-ai-talent-grab-2026-11-23/",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/business/retail-consumer/amazon-buy-decarts-ai-chip-optimization-tech-latest-ai-talent-grab-2026-11-23/"
-        },
-        {
-          "label": "Amazon",
-          "url": "https://www.aboutamazon.com/news/company-news/amazon-decart-ai-optimization"
-        }
-      ],
-      "eventKey": "amazon-decart-optimization-stack-trainium-20261123",
-      "ndxRelevant": true,
-      "importanceScore": 69
-    },
-    {
-      "title": "ANT −6,5 % na 82 USD v premarketu, pod IPO cenou 83 USD. AMZN a Alphabet patří mezi významné investory.",
-      "time": "24. 11. 2026 12:17 CET",
-      "publishedAtPrague": "24. 11. 2026, 12:17",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_infrastructure",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/anthropic-breaks-below-83-ipo-price-debut-rally-unravels-2026-11-24/",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/business/anthropic-breaks-below-83-ipo-price-debut-rally-unravels-2026-11-24/"
-        },
-        {
-          "label": "Fortune – podíly AMZN a Alphabet",
-          "url": "https://fortune.com/2026/11/19/anthropic-ipo-amazon-google-stake-windfall-nonvoting/"
-        }
-      ],
-      "eventKey": "anthropic-below-ipo-price-20261124",
-      "ndxRelevant": true,
-      "importanceScore": 68
     },
     {
       "title": "Singapur pokračuje ve vyšetřování Megaspeed a s USA připravuje mechanismus výměny informací pro kontrolu exportu AI čipů.",
@@ -382,13 +401,13 @@
   "leaders": [
     {
       "ticker": "NVDA",
-      "changePercent": -5.36,
-      "impact": "vysoký – 15:49 CET"
+      "changePercent": -7.85,
+      "impact": "vysoký – 16:49 CET"
     },
     {
       "ticker": "MSFT",
-      "changePercent": 0.3,
-      "impact": "střední – 15:44 CET"
+      "changePercent": 0.56,
+      "impact": "střední – 16:43 CET"
     }
   ],
   "macro": "US10Y | 23. 11.: 4,92 % | 20. 11.: 4,92 % | 0 bb",
@@ -399,7 +418,7 @@
   },
   "forecast": {
     "athReturnPercent": 18,
-    "athReason": "Nutný růst 19,62 %. VXN 36,31 (23. 11., závěr); RSI14 41,99 (23. 11., poslední validovaný výpočet); MA50 breadth nedostupné (zdroj neověřen). Odhad zachován; bez nového dlouhodobého katalyzátoru.",
+    "athReason": "Nutný růst 20,44 %. VXN 36,31 (23. 11., závěr); RSI14 41,99 (23. 11., poslední validovaný výpočet); MA50 breadth nedostupné (zdroj neověřen). Odhad zachován; bez nového dlouhodobého katalyzátoru.",
     "downside": "−7 až −13 %",
     "downsideReason": "Modelový 25. percentil koncové ceny; VXN 36,31 (23. 11.).",
     "downsideModel": {
@@ -418,6 +437,24 @@
     "timePrague": "25. 11. 2026, 14:30 CET"
   },
   "archive": [
+    {
+      "time": "24. 11. 2026 17:00 CET",
+      "summary": "NDX 26 039,78 b. (−2,64 %, 16:51 CET); NVDA −7,85 % (16:49). CB Consumer Confidence 103,3 vs. kons. 92,5. VXN 36,31 (23. 11., závěr); RSI14 41,99 (23. 11., poslední validovaný výpočet); MA50 breadth nedostupné (zdroj neověřen). 17 kandidátů; 1 expirovaných/vyřazených. 10 JSON načteno. TE 9/9 prověřeno; EUR/CZK aktualizováno, 8 rozporných zachováno. Sazby/HDP potvrzeny; Nasdaq členství a CMC prověřeny, znaménka CMC nedoložena. FRED potvrdil VXN; Yahoo nedostupný pro futures, historické maximum futures a RSI. 7 skriptů bez cizích GitHub zdrojů; logy updaterů a Pages nedostupné.",
+      "sourceLinks": [
+        {
+          "label": "Google Finance – NDX",
+          "url": "https://www.google.com/finance/quote/NDX:INDEXNASDAQ"
+        },
+        {
+          "label": "Google Finance – NVDA",
+          "url": "https://www.google.com/finance/quote/NVDA:NASDAQ"
+        },
+        {
+          "label": "Reuters – CB konsenzus",
+          "url": "https://www.reuters.com/world/us/us-consumer-confidence-surges-highest-level-nearly-two-years-2026-11-24/"
+        }
+      ]
+    },
     {
       "time": "24. 11. 2026 16:00 CET",
       "summary": "NDX 26 217,91 b. (−1,97 %, 15:33 CET); NVDA −5,36 % (15:49). VXN 36,31 (23. 11., závěr); RSI14 41,99 (23. 11., poslední validovaný výpočet); MA50 breadth nedostupné (zdroj neověřen). 16 kandidátů, 1 expirovaných/vyřazených. 10 JSON načteno; 9 TE zdrojů prověřeno, Brent aktualizován, ostatní rozdílné snímky zachovány. Sazby a HDP bez nové publikace. Nasdaq a CMC prověřeny; znaménka CMC nedostupná. VXN a US10Y potvrzeny; model bez přepočtu. Yahoo chart nedostupný pro futures a RSI; 7 skriptů bez cizích GitHub URL. Logy updaterů a Pages nedostupné.",
@@ -3875,6 +3912,10 @@
     {
       "time": "24. 11. 2026 16:00 CET",
       "ndx": 26217.91
+    },
+    {
+      "time": "24. 11. 2026 17:00 CET",
+      "ndx": 26039.78
     }
   ],
   "sources": [
@@ -4809,6 +4850,18 @@
     {
       "name": "Reuters – Malajsie",
       "url": "https://www.reuters.com/business/media-telecom/us-chip-curbs-wont-impact-malaysias-china-ties-pm-says-2026-11-24/"
+    },
+    {
+      "name": "The Conference Board",
+      "url": "https://www.prnewswire.com/news-releases/us-consumer-confidence-surged-in-november-302949447.html"
+    },
+    {
+      "name": "Reuters – CB konsenzus",
+      "url": "https://www.reuters.com/world/us/us-consumer-confidence-surges-highest-level-nearly-two-years-2026-11-24/"
+    },
+    {
+      "name": "Reuters – Čína export",
+      "url": "https://www.reuters.com/markets/commodities/china-extends-suspension-ban-us-bound-gallium-germanium-antimony-exports-2026-11-24/"
     }
   ]
 }
