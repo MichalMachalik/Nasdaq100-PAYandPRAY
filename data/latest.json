@@ -1,18 +1,18 @@
 {
-  "updatedAtPrague": "24. 11. 2026 15:00 CET",
-  "marketStatus": "Cash NDX: trh uzavřen; závěr 23. 11. 2026.",
+  "updatedAtPrague": "24. 11. 2026 16:00 CET",
+  "marketStatus": "Cash NDX: trh otevřen.",
   "ndx": {
-    "value": 26746.1,
-    "changePercent": 6.86,
+    "value": 26217.91,
+    "changePercent": -1.97,
     "ath": 31361.37,
-    "asOf": "23. 11. 2026 – závěr Nasdaq"
+    "asOf": "24. 11. 2026, 15:33:47 CET (Google Finance)"
   },
   "sentiment": {
-    "label": "Neutrální",
-    "trend": "srovnání nedostupné",
-    "reason": "VXN 36,31 (23. 11.); RSI14 41,99 (23. 11.; poslední validovaný výpočet); MA50 breadth nedostupné (zdroj neověřen)."
+    "label": "Medvědí",
+    "trend": "↘",
+    "reason": "VXN 36,31 (23. 11., závěr); RSI14 41,99 (23. 11., poslední validovaný výpočet); MA50 breadth nedostupné (zdroj neověřen)."
   },
-  "driver": "NVDA −4,70 %, MU −6,17 % (14:01 CET). ADI −9,44 % (14:00); Q1 upr. EPS pod konsenzem.",
+  "driver": "SOX −5,95 % (15:33 CET); NVDA −5,36 % (15:49 CET). Po pondělním růstu pokračuje výprodej AI akcií.",
   "news": [
     {
       "eventKey": "tesla-spacex-merger-committee-directors-20261124",
@@ -20,7 +20,7 @@
       "time": "24. 11. 2026, 06:20 CET",
       "publishedAtPrague": "24. 11. 2026, 06:20",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "earnings_corporate",
       "source": "Reuters",
       "url": "https://www.reuters.com/legal/transactional/spacex-tesla-entrusts-five-directors-merger-talks-ft-reports-2026-11-24/",
@@ -180,7 +180,7 @@
       "importanceScore": 76
     },
     {
-      "title": "US premarket | NVDA −4,70 %, MU −6,17 %, INTC −6,07 % (14:01 CET).",
+      "title": "USA | Nasdaq Composite při otevření −1,43 %. SOX −5,95 % (15:33 CET), NVDA −5,36 % (15:49 CET).",
       "time": "24. 11. 2026 11:52 CET",
       "publishedAtPrague": "24. 11. 2026, 11:52",
       "publicationTimeVerified": true,
@@ -190,16 +190,16 @@
       "url": "https://www.reuters.com/business/wall-st-futures-dip-chip-stocks-cool-after-nvidia-fueled-rally-2026-11-24/",
       "sourceLinks": [
         {
-          "label": "Reuters – původní snímek",
+          "label": "Reuters",
           "url": "https://www.reuters.com/business/wall-st-futures-dip-chip-stocks-cool-after-nvidia-fueled-rally-2026-11-24/"
         },
         {
-          "label": "Reuters – NVDA 12:50",
-          "url": "https://www.reuters.com/business/retail-consumer/nvidia-slips-investors-assess-risks-surrounding-huangs-return-ceo-2026-11-24/"
+          "label": "Google Finance – NDX/SOX",
+          "url": "https://www.google.com/finance/quote/NDX:INDEXNASDAQ"
         },
         {
-          "label": "StockTitan – kotace 14:01",
-          "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-24-2026"
+          "label": "Google Finance – NVDA",
+          "url": "https://www.google.com/finance/quote/NVDA:NASDAQ"
         }
       ],
       "eventKey": "us-chip-premarket-pullback-20261124",
@@ -280,25 +280,6 @@
       "importanceScore": 66
     },
     {
-      "title": "US flash PMI listopad | Composite 54,6 vs. 55,9 (−1,3 b.); služby 54,7 vs. 56,1 (−1,4 b.); výroba 54,5 vs. 54,9 (−0,4 b.).",
-      "time": "23. 11. 2026, 15:50 CET",
-      "publishedAtPrague": "23. 11. 2026, 15:50",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "macro",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/us/us-business-activity-growth-eases-further-november-survey-shows-2026-11-23/",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/world/us/us-business-activity-growth-eases-further-november-survey-shows-2026-11-23/"
-        }
-      ],
-      "eventKey": "us-flash-pmi-nov-2026-20261123",
-      "ndxRelevant": true,
-      "importanceScore": 62
-    },
-    {
       "title": "Britská FCA upozorňuje na povinnost posoudit regulované finanční služby AI agentů. META spustila Muse v Británii 23. 11.",
       "time": "24. 11. 2026 12:01 CET",
       "publishedAtPrague": "24. 11. 2026, 12:01",
@@ -327,7 +308,7 @@
       "time": "24. 11. 2026, 04:16 CET",
       "publishedAtPrague": "24. 11. 2026, 04:16",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "ai_regulation",
       "source": "Reuters",
       "url": "https://www.reuters.com/business/media-telecom/us-chip-curbs-wont-impact-malaysias-china-ties-pm-says-2026-11-24/",
@@ -401,13 +382,13 @@
   "leaders": [
     {
       "ticker": "NVDA",
-      "changePercent": -4.7,
-      "impact": "vysoký – premarket 14:01 CET"
+      "changePercent": -5.36,
+      "impact": "vysoký – 15:49 CET"
     },
     {
-      "ticker": "MU",
-      "changePercent": -6.17,
-      "impact": "vysoký – premarket 14:01 CET"
+      "ticker": "MSFT",
+      "changePercent": 0.3,
+      "impact": "střední – 15:44 CET"
     }
   ],
   "macro": "US10Y | 23. 11.: 4,92 % | 20. 11.: 4,92 % | 0 bb",
@@ -418,7 +399,7 @@
   },
   "forecast": {
     "athReturnPercent": 18,
-    "athReason": "Nutný růst 17,26 %. VXN 36,31 (23. 11.); RSI14 41,99 (23. 11.; poslední validovaný výpočet); MA50 breadth nedostupné (zdroj neověřen).",
+    "athReason": "Nutný růst 19,62 %. VXN 36,31 (23. 11., závěr); RSI14 41,99 (23. 11., poslední validovaný výpočet); MA50 breadth nedostupné (zdroj neověřen). Odhad zachován; bez nového dlouhodobého katalyzátoru.",
     "downside": "−7 až −13 %",
     "downsideReason": "Modelový 25. percentil koncové ceny; VXN 36,31 (23. 11.).",
     "downsideModel": {
@@ -433,10 +414,28 @@
     }
   },
   "catalyst": {
-    "event": "ADI konferenční hovor; 25. 11. PCE a HDP USA (14:30 CET)",
-    "timePrague": "24. 11. 2026, 16:00 CET"
+    "event": "PCE a HDP USA",
+    "timePrague": "25. 11. 2026, 14:30 CET"
   },
   "archive": [
+    {
+      "time": "24. 11. 2026 16:00 CET",
+      "summary": "NDX 26 217,91 b. (−1,97 %, 15:33 CET); NVDA −5,36 % (15:49). VXN 36,31 (23. 11., závěr); RSI14 41,99 (23. 11., poslední validovaný výpočet); MA50 breadth nedostupné (zdroj neověřen). 16 kandidátů, 1 expirovaných/vyřazených. 10 JSON načteno; 9 TE zdrojů prověřeno, Brent aktualizován, ostatní rozdílné snímky zachovány. Sazby a HDP bez nové publikace. Nasdaq a CMC prověřeny; znaménka CMC nedostupná. VXN a US10Y potvrzeny; model bez přepočtu. Yahoo chart nedostupný pro futures a RSI; 7 skriptů bez cizích GitHub URL. Logy updaterů a Pages nedostupné.",
+      "sourceLinks": [
+        {
+          "label": "Google Finance – NDX",
+          "url": "https://www.google.com/finance/quote/NDX:INDEXNASDAQ"
+        },
+        {
+          "label": "Google Finance – NVDA",
+          "url": "https://www.google.com/finance/quote/NVDA:NASDAQ"
+        },
+        {
+          "label": "Reuters – otevření trhu",
+          "url": "https://www.reuters.com/business/wall-st-futures-dip-chip-stocks-cool-after-nvidia-fueled-rally-2026-11-24/"
+        }
+      ]
+    },
     {
       "time": "24. 11. 2026 15:00 CET",
       "summary": "NDX 26 746,10 b. (+6,86 %, 23. 11.). ADI Q1 upr. EPS 3,82 vs. kons. 3,88 USD; ADI −9,44 % (14:00). VXN 36,31 (23. 11.); RSI14 41,99 (23. 11.; poslední validovaný výpočet); MA50 breadth nedostupné (zdroj neověřen). 17 kandidátů, 3 expirované/vyřazené. 10 JSON načteno; 9 TE zdrojů prověřeno, EU Gas a USD/CZK aktualizovány, 7 nejednoznačných ponecháno. Fed/ECB/ČNB a HDP potvrzeny. Nasdaq členství a CMC zkontrolovány, znaménka CMC nedoložena. Yahoo nedostupný (NQ=F, historické maximum futures, RSI); 7 skriptů bez cizích GitHub URL. Logy updaterů a Pages nedostupné.",
@@ -3872,6 +3871,10 @@
     {
       "time": "23. 11. 2026 23:02 CET",
       "ndx": 26746.1
+    },
+    {
+      "time": "24. 11. 2026 16:00 CET",
+      "ndx": 26217.91
     }
   ],
   "sources": [
