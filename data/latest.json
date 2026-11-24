@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "23. 11. 2026 23:55 CET",
+  "updatedAtPrague": "24. 11. 2026 01:00 CET",
   "marketStatus": "Cash NDX: seance ukončena; závěr 23. 11. 2026.",
   "ndx": {
     "value": 26746.1,
@@ -9,8 +9,8 @@
   },
   "sentiment": {
     "label": "Neutrální",
-    "trend": "→ beze změny proti 23:02 CET",
-    "reason": "NDX +6,86 %; SOX +14,03 %; VXN 36,31 (23. 11., 22:15 CET); MA50 breadth 31,7 % (20. 11.). HPE Q1 výhled upr. EPS beat 25,0 %."
+    "trend": "↘ mírné zhoršení proti 23:55 CET",
+    "reason": "NDX +6,86 %; VXN 36,35 (23. 11.); MA50 breadth 31,7 % (20. 11.). META: odklad emise za 60 mld. USD; Megaspeed na Entity List."
   },
   "driver": "NVDA: obnovení mandátu CEO Jensena Huanga; NVDA +31,48 %, SOX +14,03 % (23. 11.).",
   "news": [
@@ -55,6 +55,56 @@
       "eventKey": "fed-williams-bronx-inflation-20261123",
       "ndxRelevant": true,
       "importanceScore": 82
+    },
+    {
+      "title": "META pozastavuje emisi akcií třídy C kvůli žalobě akcionářů; odklad programu prodeje akcií za 60 mld. USD určeného k financování AI investic.",
+      "time": "23. 11. 2026 23:32 CET",
+      "publishedAtPrague": "23. 11. 2026, 23:32",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "ai_infrastructure",
+      "source": "Reuters / MarketScreener",
+      "url": "https://www.marketscreener.com/news/meta-pauses-class-c-share-issuance-amid-shareholder-lawsuit-ce7851dadf8ff521",
+      "sourceLinks": [
+        {
+          "label": "Reuters / MarketScreener",
+          "url": "https://www.marketscreener.com/news/meta-pauses-class-c-share-issuance-amid-shareholder-lawsuit-ce7851dadf8ff521"
+        },
+        {
+          "label": "SEC – META 8-K",
+          "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026075541/meta-20261118.htm"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/legal/transactional/meta-pauses-class-c-share-issuance-amid-shareholder-lawsuit-2026-11-23/"
+        }
+      ],
+      "eventKey": "meta-class-c-issuance-pause-20261123",
+      "ndxRelevant": true,
+      "importanceScore": 79
+    },
+    {
+      "title": "USA: Megaspeed, partner NVDA v cloudové infrastruktuře, zařazen na Entity List. Dodávky amerických technologií vyžadují licenci.",
+      "time": "23. 11. 2026 22:55 CET",
+      "publishedAtPrague": "23. 11. 2026, 22:55",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "ai_regulation",
+      "source": "CBS News",
+      "url": "https://www.cbsnews.com/news/megaspeed-trade-blacklist-nvidia-jensen-huang/",
+      "sourceLinks": [
+        {
+          "label": "CBS News",
+          "url": "https://www.cbsnews.com/news/megaspeed-trade-blacklist-nvidia-jensen-huang/"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/us-blacklist-megaspeed-chip-firm-linked-nvidia-scandal-source-says-2026-11-23/"
+        }
+      ],
+      "eventKey": "us-megaspeed-entity-list-20261123",
+      "ndxRelevant": true,
+      "importanceScore": 77
     },
     {
       "title": "HPE Q4: tržby 14,55 mld. USD vs. kons. 14,43 (beat 0,8 %). Upr. EPS 1,43 USD vs. kons. 1,28 (beat 11,7 %). Cloud & AI +68,6 % y/y. Q1 výhled: střed tržeb 14,3 mld. USD vs. kons. 12,84 (beat 11,4 %); upr. EPS 1,35 vs. kons. 1,08 USD (beat 25,0 %).",
@@ -149,6 +199,25 @@
       "importanceScore": 62
     },
     {
+      "title": "Hedgeové fondy: týdenní ztráta přes 3 % do 20. 11.; Goldman Sachs eviduje pokles čisté akciové expozice na úrovně dubna 2025.",
+      "time": "23. 11. 2026, 09:24 CET",
+      "publishedAtPrague": "23. 11. 2026, 09:24",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "institutional_deleveraging",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/china/hedge-funds-post-worst-week-since-april-2025-sparks-defensive-shift-2026-11-23/",
+      "sourceLinks": [
+        {
+          "label": "Reuters – hedge funds / AI selloff",
+          "url": "https://www.reuters.com/world/china/hedge-funds-post-worst-week-since-april-2025-sparks-defensive-shift-2026-11-23/"
+        }
+      ],
+      "eventKey": "global-hedge-funds-deleveraging-ai-selloff-20261123",
+      "ndxRelevant": true,
+      "importanceScore": 68
+    },
+    {
       "title": "Odhad JPMorgan: AI CAPEX v roce 2027 téměř 1,4 bil. USD; Dell Q3 očekávaný růst tržeb 82,6 %.",
       "time": "23. 11. 2026 14:49 CET",
       "publishedAtPrague": "23. 11. 2026, 14:49",
@@ -187,25 +256,6 @@
       "importanceScore": 64
     },
     {
-      "title": "Hedgeové fondy: týdenní ztráta přes 3 % do 20. 11.; Goldman Sachs eviduje pokles čisté akciové expozice na úrovně dubna 2025.",
-      "time": "23. 11. 2026, 09:24 CET",
-      "publishedAtPrague": "23. 11. 2026, 09:24",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "institutional_deleveraging",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/china/hedge-funds-post-worst-week-since-april-2025-sparks-defensive-shift-2026-11-23/",
-      "sourceLinks": [
-        {
-          "label": "Reuters – hedge funds / AI selloff",
-          "url": "https://www.reuters.com/world/china/hedge-funds-post-worst-week-since-april-2025-sparks-defensive-shift-2026-11-23/"
-        }
-      ],
-      "eventKey": "global-hedge-funds-deleveraging-ai-selloff-20261123",
-      "ndxRelevant": true,
-      "importanceScore": 68
-    },
-    {
       "title": "Morgan Stanley: odhad růstu EPS 2027 +14 % vs. kons. +17 %; tržní ocenění odpovídá −6 %. Preferuje hyperscalery.",
       "time": "23. 11. 2026, 14:28 CET",
       "publishedAtPrague": "23. 11. 2026, 14:28",
@@ -223,25 +273,6 @@
       "eventKey": "morgan-stanley-tactical-bullish-2027-eps-20261123",
       "ndxRelevant": true,
       "importanceScore": 59
-    },
-    {
-      "title": "NQ futures: pondělní odraz téměř 3 % v časné seanci; S&P 500 futures +2 %.",
-      "time": "23. 11. 2026, 00:44 CET",
-      "publishedAtPrague": "23. 11. 2026, 00:44",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "market_rebound",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-22/",
-      "sourceLinks": [
-        {
-          "label": "Reuters – otevření futures",
-          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-22/"
-        }
-      ],
-      "eventKey": "nasdaq100-futures-monday-open-rebound-20261123",
-      "ndxRelevant": true,
-      "importanceScore": 72
     },
     {
       "title": "Tchaj-wan: od 24. 11. minimální margin ratio 120 % z 130 %; TSMC 23. 11. +1,5 %.",
@@ -283,7 +314,7 @@
   },
   "forecast": {
     "athReturnPercent": 18,
-    "athReason": "Nutný růst 17,26 %; NDX +6,86 %; HPE Cloud & AI +68,6 % y/y; Fed Williams očekává inflaci 3,5 % na konci 2026.",
+    "athReason": "Nutný růst 17,26 %; NDX +6,86 %; VXN 36,35 (23. 11.); META odklad emise za 60 mld. USD.",
     "downside": "−7 až −13 %",
     "downsideReason": "Modelový 25. percentil koncové ceny; poslední validovaný vstup VXN 35,68 (23. 11., 21:35 CET).",
     "downsideModel": {
@@ -302,6 +333,24 @@
     "timePrague": "24. 11. 2026, 13:00 CET"
   },
   "archive": [
+    {
+      "time": "24. 11. 2026 01:00 CET",
+      "summary": "NDX 26 746,10 b. (+6,86 %), závěr 23. 11. META: odklad emise za 60 mld. USD. Megaspeed na Entity List. 13 kandidátů, 1 expirovaných vyřazeno. Nasdaq seznam 101 a globální Top 10 zkontrolovány; TE 9/9 prověřeno, rozporné snímky ponechány. Sazby a HDP beze změny. ChartVault ověřen původní JSON, MA50 31,7 % k 20. 11.. Yahoo NDX, NQ a VXN historie a Treasury CSV nedostupné, futures maximum, RSI a model bez přepočtu. Treasury HTML potvrzuje US10Y 4,92 %. Pages přímé načtení nedostupné.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq NDX",
+          "url": "https://indexes.nasdaq.com/index/Overview/NDX"
+        },
+        {
+          "label": "SEC – META",
+          "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026075541/meta-20261118.htm"
+        },
+        {
+          "label": "CBS News – Megaspeed",
+          "url": "https://www.cbsnews.com/news/megaspeed-trade-blacklist-nvidia-jensen-huang/"
+        }
+      ]
+    },
     {
       "time": "23. 11. 2026 23:55 CET",
       "summary": "NDX 26 746,10 b. (+6,86 %), závěr 23. 11. HPE Q1: výhled tržeb beat 11,4 %, upr. EPS beat 25,0 % (střed pásma). Bez nové samostatné události. TE: 9 kontrol, 5 potvrzených, 4 rozporné snímky ponechány. ChartVault: MA50 31,7 % k 20. 11., ověřeno z původního JSON. Nasdaq 101 členů ověřeno. Top 10 potvrzen. Sazby a HDP beze změny. Yahoo historie a VXN JSON, Treasury CSV nedostupné; futures maximum, RSI a risk-model bez nového validovaného výpočtu. Pages přímé načtení nedostupné.",
