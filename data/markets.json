@@ -5,8 +5,8 @@
     "currencies": "https://tradingeconomics.com/currencies"
   },
   "timestampKind": "retrieval timestamp is separate from trading day",
-  "fetchedAtUtc": "2026-11-24T14:20:24Z",
-  "fetchedAtPrague": "24. 11. 2026 15:20",
+  "fetchedAtUtc": "2026-11-24T15:00:49Z",
+  "fetchedAtPrague": "24. 11. 2026 16:00",
   "quotes": [
     {
       "id": "WTI",
@@ -21,12 +21,12 @@
     {
       "id": "Brent",
       "unit": "USD/bbl",
-      "price": 88.815,
-      "changePercent": -0.62,
+      "price": 90.591,
+      "changePercent": 1.37,
       "quoteDate": "Nov/24",
       "quoteDateISO": "2026-11-24",
       "sourceUrl": "https://tradingeconomics.com/commodity/brent-crude-oil",
-      "fetchedAtUtc": "2026-11-24T06:07:51.147270Z"
+      "fetchedAtUtc": "2026-11-24T15:00:49Z"
     },
     {
       "id": "Natural Gas",
