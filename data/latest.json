@@ -1,19 +1,38 @@
 {
-  "updatedAtPrague": "24. 11. 2026 19:00 CET",
+  "updatedAtPrague": "24. 11. 2026 20:00 CET",
   "marketStatus": "Cash NDX: trh otevřen.",
   "ndx": {
-    "value": 26225.48,
-    "changePercent": -1.95,
+    "value": 26279.31,
+    "changePercent": -1.75,
     "ath": 31361.37,
-    "asOf": "24. 11. 2026, 18:51:48 CET (Google Finance)"
+    "asOf": "24. 11. 2026, 19:34:17 CET (Google Finance)"
   },
   "sentiment": {
     "label": "Medvědí",
     "trend": "↗",
     "reason": "MA50 breadth nedostupné (zdroj neověřen); RSI14 41,99 (2026-11-23, poslední validovaný výpočet); VXN 36,31 (2026-11-23, závěr)."
   },
-  "driver": "SOX −7,14 % (18:36 CET); NVDA −7,48 % (18:51 CET). NDX zmírňuje intradenní pokles. Přetrvává tlak na AI polovodiče.",
+  "driver": "SOX −7,06 % (19:34 CET, související kotace); NVDA −6,95 % (19:51 CET). NDX zmírňuje ztráty. Pokračuje tlak na AI polovodiče.",
   "news": [
+    {
+      "title": "NVDA | Schumer obvinil CEO Jensena Huanga z porušení exportních pravidel USA a požaduje zpřísnění legislativy. NVDA se bezprostředně nevyjádřila; veřejné slyšení v Senátu 3. 12.",
+      "time": "24. 11. 2026 19:46 CET",
+      "publishedAtPrague": "24. 11. 2026, 19:46",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "ai_regulation",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/china/schumer-accuses-nvidia-ceo-violating-us-export-control-law-2026-11-24/",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/china/schumer-accuses-nvidia-ceo-violating-us-export-control-law-2026-11-24/"
+        }
+      ],
+      "eventKey": "nvda-schumer-export-accusation-20261124",
+      "ndxRelevant": true,
+      "importanceScore": 83
+    },
     {
       "title": "USA | Reuters: USTR připravuje návrh dodatečných cel po šetření podle Section 301 vůči 16 obchodním partnerům včetně Číny, EU a Tchaj-wanu. Sazby zatím nezveřejněny.",
       "time": "24. 11. 2026, 17:19 CET",
@@ -291,6 +310,29 @@
       "importanceScore": 76
     },
     {
+      "title": "Britská FCA upozorňuje na povinnost posoudit regulované finanční služby AI agentů. META spustila Muse v Británii 23. 11.",
+      "time": "24. 11. 2026 12:01 CET",
+      "publishedAtPrague": "24. 11. 2026, 12:01",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "ai_regulation",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/finance/ai-agents-could-trigger-financial-regulation-tech-firms-uk-watchdog-says-2026-11-24/",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/finance/ai-agents-could-trigger-financial-regulation-tech-firms-uk-watchdog-says-2026-11-24/"
+        },
+        {
+          "label": "Meta",
+          "url": "https://about.fb.com/news/2026/11/introducing-muse-in-the-uk-a-personal-ai-agent-you-control/"
+        }
+      ],
+      "eventKey": "uk-fca-ai-agents-financial-services-20261124",
+      "ndxRelevant": true,
+      "importanceScore": 57
+    },
+    {
       "title": "Singapur pokračuje ve vyšetřování Megaspeed a s USA připravuje mechanismus výměny informací pro kontrolu exportu AI čipů.",
       "time": "24. 11. 2026 03:27 CET",
       "publishedAtPrague": "24. 11. 2026, 03:27",
@@ -316,29 +358,6 @@
       "eventKey": "singapore-wong-megaspeed-enforcement-20261124",
       "ndxRelevant": true,
       "importanceScore": 66
-    },
-    {
-      "title": "Britská FCA upozorňuje na povinnost posoudit regulované finanční služby AI agentů. META spustila Muse v Británii 23. 11.",
-      "time": "24. 11. 2026 12:01 CET",
-      "publishedAtPrague": "24. 11. 2026, 12:01",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_regulation",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/finance/ai-agents-could-trigger-financial-regulation-tech-firms-uk-watchdog-says-2026-11-24/",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/business/finance/ai-agents-could-trigger-financial-regulation-tech-firms-uk-watchdog-says-2026-11-24/"
-        },
-        {
-          "label": "Meta",
-          "url": "https://about.fb.com/news/2026/11/introducing-muse-in-the-uk-a-personal-ai-agent-you-control/"
-        }
-      ],
-      "eventKey": "uk-fca-ai-agents-financial-services-20261124",
-      "ndxRelevant": true,
-      "importanceScore": 57
     },
     {
       "eventKey": "malaysia-ai-chip-export-compliance-20261124",
@@ -379,25 +398,6 @@
       "importanceScore": 55
     },
     {
-      "title": "Japonsko flash PMI výroba | listopad 53,7 vs. říjen 53,3; +0,4 b. Exportní objednávky rostou díky poptávce po polovodičích a elektronice.",
-      "time": "24. 11. 2026 01:35 CET",
-      "publishedAtPrague": "24. 11. 2026, 01:35",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "macro",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/japans-factory-activity-expands-november-pmi-shows-2026-11-24/",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/business/japans-factory-activity-expands-november-pmi-shows-2026-11-24/"
-        }
-      ],
-      "eventKey": "japan-flash-pmi-nov-2026-20261124",
-      "ndxRelevant": true,
-      "importanceScore": 53
-    },
-    {
       "title": "SMTC Q3 | tržby 423 mil. USD vs. kons. 416,69 (beat 1,5 %). Upr. EPS 1,17 USD vs. kons. 1,13 (beat 3,5 %). Q4 výhled: tržby 480 mil. USD vs. kons. 449,34 (beat 6,8 %); upr. EPS 1,33 USD vs. kons. 1,29 (beat 3,1 %). Růst poptávky po síťových čipech pro AI datacentra.",
       "time": "23. 11. 2026, 22:05 CET",
       "publishedAtPrague": "23. 11. 2026, 22:05",
@@ -425,6 +425,25 @@
       "importanceScore": 56
     },
     {
+      "title": "Japonsko flash PMI výroba | listopad 53,7 vs. říjen 53,3; +0,4 b. Exportní objednávky rostou díky poptávce po polovodičích a elektronice.",
+      "time": "24. 11. 2026 01:35 CET",
+      "publishedAtPrague": "24. 11. 2026, 01:35",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "macro",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/japans-factory-activity-expands-november-pmi-shows-2026-11-24/",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/japans-factory-activity-expands-november-pmi-shows-2026-11-24/"
+        }
+      ],
+      "eventKey": "japan-flash-pmi-nov-2026-20261124",
+      "ndxRelevant": true,
+      "importanceScore": 53
+    },
+    {
       "title": "Evropské technologie −0,87 % (10:20 CET) po pondělním růstu přes 4 %. Infineon a ASM International ztrácejí přes 2 %.",
       "time": "24. 11. 2026 09:27 CET",
       "publishedAtPrague": "24. 11. 2026, 09:27",
@@ -447,13 +466,13 @@
   "leaders": [
     {
       "ticker": "NVDA",
-      "changePercent": -7.48,
-      "impact": "vysoký – 18:51 CET"
+      "changePercent": -6.95,
+      "impact": "vysoký – 19:51 CET"
     },
     {
       "ticker": "MSFT",
-      "changePercent": 1.13,
-      "impact": "střední – 18:51 CET"
+      "changePercent": 0.57,
+      "impact": "střední – 19:52 CET"
     }
   ],
   "macro": "US10Y | 23. 11.: 4,92 % | 20. 11.: 4,92 % | 0 bb",
@@ -464,7 +483,7 @@
   },
   "forecast": {
     "athReturnPercent": 18,
-    "athReason": "Nutný růst 19,58 %. MA50 breadth nedostupné (zdroj neověřen); RSI14 41,99 (2026-11-23, poslední validovaný výpočet); VXN 36,31 (2026-11-23, závěr). Odhad 18 % zachován; intradenní korekce ztrát, přetrvávající tlak na polovodiče.",
+    "athReason": "Nutný růst 19,34 %. MA50 breadth nedostupné (zdroj neověřen); RSI14 41,99 (2026-11-23, poslední validovaný výpočet); VXN 36,31 (2026-11-23, závěr). Odhad 18 % zachován; intradenní korekce ztrát, tlak na polovodiče a exportní riziko.",
     "downside": "−7 až −13 %",
     "downsideReason": "Modelový 25. percentil koncové ceny; VXN 36,31 (2026-11-23, závěr).",
     "downsideModel": {
@@ -483,6 +502,24 @@
     "timePrague": "25. 11. 2026, 14:30 CET"
   },
   "archive": [
+    {
+      "time": "24. 11. 2026 20:00 CET",
+      "summary": "NDX 26 279,31 b. (−1,75 %, 19:34 CET); NVDA −6,95 % (19:51). Reuters 19:46: Schumer obvinil CEO NVDA z porušení exportních pravidel. MA50 breadth nedostupné (zdroj neověřen); RSI14 41,99 (2026-11-23, poslední validovaný výpočet); VXN 36,31 (2026-11-23, závěr). 20 kandidátů; 10 JSON načteno. TE 9/9 kontrolováno, Gasoline aktualizován, rozporné snímky zachovány. Nasdaq 101 členů; CMC znaménka neověřena. FRED VXN a US Treasury potvrzeny; sazby/HDP bez nové hodnoty. Yahoo nedostupný pro futures, historické maximum futures a RSI. 7 skriptů bez cizích GitHub URL; logy updaterů neověřeny, Pages nedostupné.",
+      "sourceLinks": [
+        {
+          "label": "Google Finance – NDX",
+          "url": "https://www.google.com/finance/quote/NDX:INDEXNASDAQ"
+        },
+        {
+          "label": "Google Finance – NVDA",
+          "url": "https://www.google.com/finance/quote/NVDA:NASDAQ"
+        },
+        {
+          "label": "Reuters – NVDA",
+          "url": "https://www.reuters.com/world/china/schumer-accuses-nvidia-ceo-violating-us-export-control-law-2026-11-24/"
+        }
+      ]
+    },
     {
       "time": "24. 11. 2026 19:00 CET",
       "summary": "NDX 26 225,48 b. (−1,95 %, 18:51 CET); NVDA −7,48 %. MA50 breadth nedostupné (zdroj neověřen); RSI14 41,99 (2026-11-23, poslední validovaný výpočet); VXN 36,31 (2026-11-23, závěr). SMTC Q3 výsledky nově dohledány (23. 11., 22:05). 19 kandidátů; 0 vyřazeno. 10 JSON načteno. TE 9/9 kontrolováno; Gasoline, EUR/USD, USD/CZK aktualizovány, ostatní rozpory zachovány. Nasdaq 101 členů; CMC znaménka neověřena. FRED VXN a US Treasury potvrzeny; sazby a HDP beze změny. Yahoo nedostupný pro futures, historické maximum futures a RSI. 7 skriptů bez cizích GitHub URL; breadth zdroj neověřen, logy a Pages nedostupné.",
@@ -4006,6 +4043,10 @@
     {
       "time": "24. 11. 2026 19:00 CET",
       "ndx": 26225.48
+    },
+    {
+      "time": "24. 11. 2026 20:00 CET",
+      "ndx": 26279.31
     }
   ],
   "sources": [
@@ -4968,6 +5009,10 @@
     {
       "name": "Business Wire – SMTC čas",
       "url": "https://www.streetinsider.com/Business%2BWire/Semtech%2BAnnounces%2BThird%2BQuarter%2Bof%2BFiscal%2BYear%2B2027%2BResults/27387977.html"
+    },
+    {
+      "name": "Reuters – NVDA export",
+      "url": "https://www.reuters.com/world/china/schumer-accuses-nvidia-ceo-violating-us-export-control-law-2026-11-24/"
     }
   ]
 }
