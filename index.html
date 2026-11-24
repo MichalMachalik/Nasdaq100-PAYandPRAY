@@ -585,6 +585,49 @@ body :is(h1,h2,h3,p,div,span,small,strong,button,a,table,th,td,time,summary,labe
 @media(max-width:400px){.forecastgrid{column-gap:13px}
   .forecastgrid .forecast>strong{font-size:clamp(18px,5vw,22px)}
   .forecastgrid .forecast-points{font-size:13px}}
+
+/* Aligned outlook: separate forecasts and technical indicators. */
+.forecastgrid{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.forecastgrid>.forecast{grid-column:auto;grid-row:auto;min-width:0}
+.forecastgrid .label{min-height:34px;line-height:1.45}
+.forecastgrid .forecast>strong{font-size:25px;margin:7px 0 5px;letter-spacing:-.04em}
+.forecastgrid .forecast-points{font-size:15px}
+.forecastgrid .oversold-scale{margin-top:13px}
+.forecastgrid .oversold-ticks{margin-bottom:10px}
+.technicalgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:23px;padding-top:17px;border-top:1px solid var(--border)}
+.technicalgrid>.indicator-widget{display:flex;flex-direction:column;min-width:0;max-width:none;margin:0;padding:0;border:0}
+.technicalgrid .indicator-heading{min-height:32px;font-size:11px;line-height:1.4;letter-spacing:.35px;font-weight:650;text-transform:uppercase}
+.technicalgrid .indicator-value,.technicalgrid .breadth-side strong{font:650 23px/1.2 system-ui,-apple-system,"Segoe UI",sans-serif;font-variant-numeric:tabular-nums;letter-spacing:-.04em}
+.technicalgrid .indicator-value{margin:3px 0 0}
+.technicalgrid .breadth-numbers,.technicalgrid .vxn-value-row{display:flex;align-items:baseline;justify-content:space-between;gap:6px;min-height:31px;margin:3px 0 0}
+.technicalgrid .vxn-value-row .indicator-value{margin:0}
+.technicalgrid .indicator-change{font-size:11px;font-weight:650;font-variant-numeric:tabular-nums;white-space:nowrap}
+.technicalgrid .indicator-change.green{color:var(--green)}
+.technicalgrid .indicator-change.red{color:var(--red)}
+.technicalgrid .indicator-track,.technicalgrid .breadth-track{height:10px;margin:13px 0 7px}
+.technicalgrid .breadth-legend{display:flex;justify-content:space-between;gap:5px;font-size:10px;color:var(--muted);line-height:1.4;min-height:17px}
+.technicalgrid .indicator-labels{font-size:9px;line-height:1.35;margin:3px 0 3px}
+.technicalgrid .vxn-labels{grid-template-columns:repeat(4,minmax(0,1fr))}
+.technicalgrid .indicator-state{min-height:31px;margin:2px 0 0}
+.technicalgrid .indicator-foot,.technicalgrid .breadth-source{margin-top:5px;font-size:10px;line-height:1.5}
+.technicalgrid .breadth-source{justify-content:flex-start}
+.technicalgrid #breadth-asof{flex-basis:100%}
+.technicalgrid .breadth-freshness{line-height:1.45}
+@media(max-width:590px){
+  .forecastgrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+  .forecastgrid .oversold-card{grid-column:1/-1;grid-row:2}
+  .forecastgrid .oversold-card .oversold-scale,.forecastgrid .oversold-card .oversold-ticks,.forecastgrid .oversold-card .oversold-metrics{max-width:none}
+  .technicalgrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 16px}
+}
+@media(max-width:400px){
+  .forecastgrid{gap:14px}.forecastgrid .forecast>strong{font-size:22px}
+  .technicalgrid{grid-template-columns:1fr;gap:0}
+  .technicalgrid>.indicator-widget{padding:14px 0;border-bottom:1px solid var(--border)}
+  .technicalgrid>.indicator-widget:last-child{border-bottom:0;padding-bottom:0}
+  .technicalgrid .indicator-heading,.technicalgrid .indicator-state{min-height:0}
+  .technicalgrid .indicator-value,.technicalgrid .breadth-side strong{font-size:25px}
+}
+
 </style></head>
 <body><div class="wrap">
 <header class="header"><div class="brand"><svg class="aardvark-mark" viewBox="0 0 100 73" role="img" aria-label="Logo Aardvarkland" xmlns="http://www.w3.org/2000/svg">
@@ -630,6 +673,17 @@ body :is(h1,h2,h3,p,div,span,small,strong,button,a,table,th,td,time,summary,labe
         <div class="oversold-metric"><span>MA20</span><strong id="oversold-ma20">—</strong></div>
         <div class="oversold-metric"><span>MA50</span><strong id="oversold-ma50">—</strong></div>
       </div>
+
+    </div>
+    <div class="forecast forecast-down-card">
+      <div class="label">Rizikový scénář / 1–3 měsíce</div>
+      <strong id="forecast-down" class="red">—</strong>
+      <div id="forecast-down-points" class="forecast-points">—</div>
+      <div id="forecast-down-reason" class="detail" title="Jde o dolní kvartil modelové koncové ceny za 1 a 3 měsíce, nikoli o skutečný nejhorší možný výsledek.">Odhad horšího a nejhoršího scénáře</div>
+
+    </div>
+  </div>
+  <div class="technicalgrid" aria-label="Technické indikátory Nasdaq-100">
       <div class="indicator-widget" aria-label="RSI(14) Nasdaq-100">
         <div class="indicator-heading" title="Wilderův index relativní síly, vypočtený z denních závěrů NDX s periodou 14 seancí.">RSI(14) · relativní síla</div>
         <strong id="oversold-raw-rsi" class="indicator-value">—</strong>
@@ -641,47 +695,39 @@ body :is(h1,h2,h3,p,div,span,small,strong,button,a,table,th,td,time,summary,labe
         <div id="rsi-state" class="indicator-state">Čeká na ověřený závěr</div>
         <div id="rsi-date" class="indicator-foot">Denní RSI · perioda 14 seancí</div>
       </div>
-      <div class="breadth-widget" aria-label="Šířka trhu Nasdaq-100 podle MA50">
-        <div class="breadth-heading">Šířka trhu / MA50</div>
+      <div class="indicator-widget breadth-widget" aria-label="Šířka trhu Nasdaq-100 podle MA50">
+        <div class="indicator-heading">Šířka trhu · MA50</div>
         <div class="breadth-numbers">
           <div class="breadth-side breadth-left">
             <strong id="breadth-above" class="green">—</strong>
-            <span>Akcie nad MA50</span>
           </div>
           <div class="breadth-side breadth-right">
             <strong id="breadth-below" class="red">—</strong>
-            <span>Akcie na/pod MA50</span>
           </div>
         </div>
         <div id="breadth-track" class="breadth-track is-unavailable" role="img" aria-label="Podíl způsobilých akciových tříd nad a pod padesátidenním průměrem">
           <div id="breadth-positive" class="breadth-positive" style="width:0%"></div>
           <div class="breadth-negative"></div>
         </div>
+        <div class="breadth-legend"><span>Nad MA50</span><span>Na/pod MA50</span></div>
         <div class="breadth-source">
           <span id="breadth-asof">Čeká na datový zdroj</span>
           <a id="breadth-source-link" href="./data/breadth.json" target="_blank" rel="noopener noreferrer">Zdroj</a><a href="./data/breadth.json" target="_blank" rel="noopener noreferrer" title="Datový záznam a metodika">Data</a>
         </div>
         <div id="breadth-freshness" class="breadth-freshness"></div>
       </div>
-    </div>
-    <div class="forecast forecast-down-card">
-      <div class="label">Rizikový scénář / 1–3 měsíce</div>
-      <strong id="forecast-down" class="red">—</strong>
-      <div id="forecast-down-points" class="forecast-points">—</div>
-      <div id="forecast-down-reason" class="detail" title="Jde o dolní kvartil modelové koncové ceny za 1 a 3 měsíce, nikoli o skutečný nejhorší možný výsledek.">Odhad horšího a nejhoršího scénáře</div>
       <div class="indicator-widget" aria-label="VXN index očekávané volatility Nasdaq-100">
         <div class="indicator-heading" title="Cboe VXN: anualizovaná očekávaná volatilita NDX na příštích přibližně 30 dní, odvozená z cen opcí.">VXN · očekávaná volatilita</div>
-        <strong id="vxn-value" class="indicator-value">—</strong>
+        <div class="vxn-value-row"><strong id="vxn-value" class="indicator-value">—</strong><span id="vxn-change" class="indicator-change" hidden></span></div>
         <div id="vxn-track" class="indicator-track vxn-track" role="img" aria-label="Orientační stupnice volatility od 0 do 60 a více">
           <div id="vxn-pointer" class="indicator-pointer"></div>
         </div>
         <div class="indicator-ticks" aria-hidden="true"><span style="left:0%">0</span><span style="left:33.333%">20</span><span style="left:50%">30</span><span style="left:66.667%">40</span><span style="left:100%">60+</span></div>
         <div class="indicator-labels vxn-labels" aria-hidden="true"><span>Nízká</span><span>Střední</span><span>Vyšší</span><span>Vysoká</span></div>
         <div id="vxn-state" class="indicator-state">Čeká na ověřená data</div>
-        <div class="indicator-foot"><span id="vxn-date">30denní výhled volatility</span> · <a href="https://www.cboe.com/data/quotes/VXN/dashboard" target="_blank" rel="noopener noreferrer">Cboe</a></div>
-        <div class="indicator-foot" title="Hranice 20/30/40 jsou orientační klasifikace Pay &amp; Pray, nikoli oficiální pásma Cboe.">Anualizováno · směr pohybu neurčuje</div>
+        <div class="indicator-foot"><span id="vxn-date">30denní výhled volatility</span> · <a id="vxn-source-link" href="https://www.cboe.com/data/quotes/VXN/dashboard" target="_blank" rel="noopener noreferrer">Cboe</a></div>
+
       </div>
-    </div>
   </div>
   <div style="margin-top:22px"><div class="mini-title">Nejbližší katalyzátor</div><div id="catalyst" class="empty">Zatím nezveřejněno</div></div></section>
 <section class="section" id="top10-section"><h2 class="sectiontitle">Top 10 Nasdaq-100 <small>podle tržní kapitalizace</small></h2>
@@ -1270,6 +1316,7 @@ function renderIndicator(id,value,asOf,ndx){
 
 async function loadRiskModel(ndx){
   renderIndicator('vxn',NaN,'',ndx);
+  if($('vxn-change'))$('vxn-change').hidden=true;
   try{
     const response=await fetch('./data/risk-model.json?t='+Date.now(),{cache:'no-store'});
     if(!response.ok)throw new Error('risk inputs unavailable');
@@ -1283,6 +1330,18 @@ async function loadRiskModel(ndx){
        age>7*86400000)
       throw new Error('missing, invalid or stale volatility snapshot');
     renderIndicator('vxn',volatility,market.vxnAsOf,ndx);
+    const source=$('vxn-source-link'),change=$('vxn-change');
+    if(source){
+      const url=String(market.vxnSource||'');
+      const allowed=/^https:\/\/(?:www\.cboe\.com|fred\.stlouisfed\.org|finance\.yahoo\.com)\//i.test(url);
+      source.href=allowed?url:'https://www.cboe.com/data/quotes/VXN/dashboard';
+      source.textContent=allowed&&/fred\.stlouisfed\.org/i.test(url)?'FRED':allowed&&/finance\.yahoo\.com/i.test(url)?'Yahoo Finance':'Cboe';
+    }
+    if(change){
+      const delta=market.vxnChangePercent;
+      change.hidden=typeof delta!=='number'||!Number.isFinite(delta);
+      if(!change.hidden){change.textContent=fmt(Math.abs(delta),2)+' %';change.className='indicator-change '+(delta>0?'red':delta<0?'green':'');change.title='Denní změna VXN';}
+    }
     if(spec.percentile!==25||
        !Array.isArray(spec.months)||spec.months[0]!==1||spec.months[1]!==3)
       throw new Error('missing, invalid or stale volatility snapshot');
@@ -1375,7 +1434,7 @@ async function loadBreadth(ndx){
     if(track)track.classList.remove('is-unavailable');
     const source=$('breadth-source-link');
     if(source){
-      const label=/StockCurry/i.test(d.source||'')?'StockCurry':/ChartVault/i.test(d.source||'')?'ChartVault':'Zdroj';
+      const label=/StockCharts/i.test(d.source||'')?'StockCharts':/Nasdaq.*Yahoo/i.test(d.source||'')?'Nasdaq / Yahoo Finance':/StockCurry/i.test(d.source||'')?'StockCurry':'Zdroj';
       source.textContent=label;
       source.href=typeof d.sourceUrl==='string'&&/^https:\/\//.test(d.sourceUrl)?d.sourceUrl:'./data/breadth.json';
       source.title=d.source||'Datový zdroj';
