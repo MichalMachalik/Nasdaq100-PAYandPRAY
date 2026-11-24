@@ -1,21 +1,44 @@
 {
-  "updatedAtPrague": "24. 11. 2026 13:02 CET",
+  "updatedAtPrague": "24. 11. 2026 14:00 CET",
   "marketStatus": "Cash NDX: trh uzavřen; závěr 23. 11. 2026.",
   "ndx": {
     "value": 26746.1,
     "changePercent": 6.86,
     "ath": 31361.37,
-    "asOf": "23. 11. 2026 – závěr Nasdaq; Google Finance 22:50:28 CET (čas zveřejněné hodnoty)"
+    "asOf": "23. 11. 2026 – závěr Nasdaq"
   },
   "sentiment": {
     "label": "Neutrální",
-    "trend": "↘ mírné zhoršení – NVDA premarket −5,2 % vs. −4,4 %",
-    "reason": "VXN 36,31 (23. 11.); RSI14 41,99 (23. 11.; poslední výpočet); MA50 breadth nedostupné (zdroj neověřen)."
+    "trend": "↘ zhoršení – premarket čipů",
+    "reason": "VXN 36,31 (23. 11.); RSI14 41,99 (23. 11.; poslední validovaný výpočet); MA50 breadth nedostupné (zdroj neověřen)."
   },
-  "driver": "NVDA v premarketu −5,2 % na 156,40 USD (Reuters 12:50). Přetrvává regulatorní a governance riziko.",
+  "driver": "MU/AMD/MRVL v premarketu −3,9 až −6,4 %; NVDA −5,2 %. Obavy z návratnosti dluhově financovaného AI CAPEX.",
   "news": [
     {
-      "title": "US premarket: NVDA −5,2 % na 156,40 USD (Reuters 12:50); MU/AMD/MRVL −3,3 až −4,3 % (11:52).",
+      "title": "ADI Q4 | tržby 4,37 mld. USD vs. kons. Zacks 4,32 (beat 1,2 %); upr. EPS 4,06 USD vs. kons. 3,89 (beat 4,4 %). Q1 výhled: tržby 4,4 mld. USD, upr. EPS 3,82 USD. FY26 FCF 5,5 mld. USD.",
+      "time": "24. 11. 2026 13:01 CET",
+      "publishedAtPrague": "24. 11. 2026, 13:01",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "earnings_corporate",
+      "source": "Analog Devices / PRNewswire",
+      "url": "https://www.prnewswire.com/news-releases/analog-devices-reports-record-fourth-quarter-and-fiscal-2026-financial-results-302948778.html",
+      "sourceLinks": [
+        {
+          "label": "Analog Devices",
+          "url": "https://www.prnewswire.com/news-releases/analog-devices-reports-record-fourth-quarter-and-fiscal-2026-financial-results-302948778.html"
+        },
+        {
+          "label": "Zacks – konsenzus 20. 11.",
+          "url": "https://www.zacks.com/stock/news/3033225/adi-set-to-report-q4-earnings-whats-in-the-cards-for-the-stock"
+        }
+      ],
+      "eventKey": "adi-fy2026-q4-earnings-20261124",
+      "ndxRelevant": true,
+      "importanceScore": 80
+    },
+    {
+      "title": "US premarket | NVDA −5,2 %, MU/AMD/MRVL −3,9 až −6,4 %, CRWV −5,8 %, NBIS −6,1 % (Reuters; futures −1,64 % ve 13:04 CET).",
       "time": "24. 11. 2026 11:52 CET",
       "publishedAtPrague": "24. 11. 2026, 11:52",
       "publicationTimeVerified": true,
@@ -65,7 +88,7 @@
       "time": "24. 11. 2026 12:17 CET",
       "publishedAtPrague": "24. 11. 2026, 12:17",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "ai_infrastructure",
       "source": "Reuters",
       "url": "https://www.reuters.com/business/anthropic-breaks-below-83-ipo-price-debut-rally-unravels-2026-11-24/",
@@ -203,7 +226,7 @@
       "time": "24. 11. 2026 12:01 CET",
       "publishedAtPrague": "24. 11. 2026, 12:01",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "ai_regulation",
       "source": "Reuters",
       "url": "https://www.reuters.com/business/finance/ai-agents-could-trigger-financial-regulation-tech-firms-uk-watchdog-says-2026-11-24/",
@@ -291,25 +314,6 @@
       "importanceScore": 55
     },
     {
-      "title": "Japonsko flash PMI výroba | listopad 53,7 vs. říjen 53,3; +0,4 b. Exportní objednávky rostou díky poptávce po polovodičích a elektronice.",
-      "time": "24. 11. 2026 01:35 CET",
-      "publishedAtPrague": "24. 11. 2026, 01:35",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "macro",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/japans-factory-activity-expands-november-pmi-shows-2026-11-24/",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/business/japans-factory-activity-expands-november-pmi-shows-2026-11-24/"
-        }
-      ],
-      "eventKey": "japan-flash-pmi-nov-2026-20261124",
-      "ndxRelevant": true,
-      "importanceScore": 53
-    },
-    {
       "title": "US flash PMI listopad | Composite 54,6 vs. 55,9 (−1,3 b.); služby 54,7 vs. 56,1 (−1,4 b.); výroba 54,5 vs. 54,9 (−0,4 b.).",
       "time": "23. 11. 2026, 15:50 CET",
       "publishedAtPrague": "23. 11. 2026, 15:50",
@@ -329,6 +333,25 @@
       "importanceScore": 62
     },
     {
+      "title": "Japonsko flash PMI výroba | listopad 53,7 vs. říjen 53,3; +0,4 b. Exportní objednávky rostou díky poptávce po polovodičích a elektronice.",
+      "time": "24. 11. 2026 01:35 CET",
+      "publishedAtPrague": "24. 11. 2026, 01:35",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "macro",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/japans-factory-activity-expands-november-pmi-shows-2026-11-24/",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/japans-factory-activity-expands-november-pmi-shows-2026-11-24/"
+        }
+      ],
+      "eventKey": "japan-flash-pmi-nov-2026-20261124",
+      "ndxRelevant": true,
+      "importanceScore": 53
+    },
+    {
       "title": "Odhad JPMorgan: AI CAPEX v roce 2027 téměř 1,4 bil. USD; Dell Q3 očekávaný růst tržeb 82,6 %.",
       "time": "23. 11. 2026 14:49 CET",
       "publishedAtPrague": "23. 11. 2026, 14:49",
@@ -346,25 +369,6 @@
       "eventKey": "jpmorgan-ai-capex-2027-dell-hpe-results-preview-20261123",
       "ndxRelevant": true,
       "importanceScore": 62
-    },
-    {
-      "title": "ARM: René Haas prodloužil mandát CEO do roku 2033; NVDA jej oslovila při hledání nástupce Jensena Huanga.",
-      "time": "23. 11. 2026, 13:10 CET",
-      "publishedAtPrague": "23. 11. 2026, 13:10",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "semiconductor_leadership",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/arm-holdings-haas-extends-contract-lead-chip-firm-through-2033-2026-11-23/",
-      "sourceLinks": [
-        {
-          "label": "Reuters – ARM / NVDA",
-          "url": "https://www.reuters.com/business/arm-holdings-haas-extends-contract-lead-chip-firm-through-2033-2026-11-23/"
-        }
-      ],
-      "eventKey": "arm-haas-ceo-contract-through-2033-20261123",
-      "ndxRelevant": true,
-      "importanceScore": 64
     },
     {
       "title": "Evropské technologie −0,87 % (10:20 CET) po pondělním růstu přes 4 %. Infineon a ASM International ztrácejí přes 2 %.",
@@ -409,7 +413,7 @@
     {
       "ticker": "NVDA",
       "changePercent": -5.2,
-      "impact": "vysoký – premarket, Reuters 12:50 CET"
+      "impact": "vysoký – premarket, Reuters"
     }
   ],
   "macro": "US10Y | 23. 11.: 4,92 % | 20. 11.: 4,92 % | 0 bb",
@@ -420,7 +424,7 @@
   },
   "forecast": {
     "athReturnPercent": 18,
-    "athReason": "Nutný růst 17,26 %. VXN 36,31 (23. 11.); RSI14 41,99 (23. 11.; poslední výpočet); MA50 breadth nedostupné (zdroj neověřen).",
+    "athReason": "Nutný růst 17,26 %. VXN 36,31 (23. 11.); RSI14 41,99 (23. 11.; poslední validovaný výpočet); MA50 breadth nedostupné (zdroj neověřen).",
     "downside": "−7 až −13 %",
     "downsideReason": "Modelový 25. percentil koncové ceny; VXN 36,31 (23. 11.).",
     "downsideModel": {
@@ -435,10 +439,28 @@
     }
   },
   "catalyst": {
-    "event": "ADI Q4 – výsledky (plán 13:00; publikace zatím nepotvrzena); konferenční hovor 16:00",
+    "event": "ADI konferenční hovor; 25. 11. PCE a HDP USA (14:30 CET)",
     "timePrague": "24. 11. 2026, 16:00 CET"
   },
   "archive": [
+    {
+      "time": "24. 11. 2026 14:00 CET",
+      "summary": "NDX 26 746,10 b. (+6,86 %, 23. 11.). ADI Q4: tržby 4,37 mld. USD; upr. EPS 4,06 USD. VXN 36,31 (23. 11.); RSI14 41,99 (23. 11.; poslední validovaný výpočet); MA50 breadth nedostupné (zdroj neověřen). 18 kandidátů, 1 expirovaných. 10 JSON načteno, VXN a US10Y potvrzeny. TE 9/9 kontrola, bez jednoznačných nových dat; Top 10 a členství kontrolovány, znaménka CMC nedoložena. Yahoo nedostupný (futures, historické maximum, RSI); 7 skriptů bez cizích GitHub URL. Logy a Pages nedostupné.",
+      "sourceLinks": [
+        {
+          "label": "Analog Devices",
+          "url": "https://www.prnewswire.com/news-releases/analog-devices-reports-record-fourth-quarter-and-fiscal-2026-financial-results-302948778.html"
+        },
+        {
+          "label": "Reuters – premarket",
+          "url": "https://www.reuters.com/business/wall-st-futures-dip-chip-stocks-cool-after-nvidia-fueled-rally-2026-11-24/"
+        },
+        {
+          "label": "Investing.com – NDX",
+          "url": "https://www.investing.com/indices/nq-100-historical-data"
+        }
+      ]
+    },
     {
       "time": "24. 11. 2026 13:02 CET",
       "summary": "NDX 26 746,10 b. (+6,86 %, závěr 23. 11.). NVDA −5,2 % (premarket, Reuters 12:50); ANT −6,5 %. VXN 36,31 (23. 11.); RSI14 41,99 (23. 11.; poslední výpočet); MA50 breadth nedostupné (zdroj neověřen). 18 kandidátů, 0 vyřazeno. 10 JSON načteno. Nasdaq členství k 23. 11. a globální pořadí CMC kontrolováno; časy kotací Top 10 nedoloženy. TE 9/9 prověřeno, rozporné snímky zachovány. Sazby a HDP potvrzeny; VXN a US10Y ověřeny. Yahoo nedostupný: futures, maximum a RSI zachovány. 7 skriptů bez cizích GitHub URL; logy a Pages nedostupné.",
@@ -4744,6 +4766,18 @@
     {
       "name": "Reuters – FCA",
       "url": "https://www.reuters.com/business/finance/ai-agents-could-trigger-financial-regulation-tech-firms-uk-watchdog-says-2026-11-24/"
+    },
+    {
+      "name": "Analog Devices Q4 – PRNewswire",
+      "url": "https://www.prnewswire.com/news-releases/analog-devices-reports-record-fourth-quarter-and-fiscal-2026-financial-results-302948778.html"
+    },
+    {
+      "name": "Zacks – konsenzus ADI 20. 11.",
+      "url": "https://www.zacks.com/stock/news/3033225/adi-set-to-report-q4-earnings-whats-in-the-cards-for-the-stock"
+    },
+    {
+      "name": "BEA – harmonogram",
+      "url": "https://www.bea.gov/news/schedule"
     }
   ]
 }
