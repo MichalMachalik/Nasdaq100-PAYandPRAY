@@ -143,6 +143,10 @@ def main():
             raise ValueError("VXN source predates the published observation")
         if obs == market["vxnAsOf"] and abs(value-market["vxnPct"]) > 0.05:
             raise ValueError("VXN conflicts with previously published close")
+        if obs != market.get("vxnAsOf"):
+            # Daily series provide dates, not exact quote timestamps.
+            market.pop("vxnQuotedAtUtc", None)
+            market.pop("vxnVerificationSource", None)
         market.update(vxnPct=value, vxnAsOf=obs, vxnSource=source,
                       vxnQuoteKind="daily-close", vxnChangePercent=delta,
                       vxnPreviousClose=round(previous[1],2) if previous else None,
