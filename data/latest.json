@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "24. 11. 2026 14:00 CET",
+  "updatedAtPrague": "24. 11. 2026 15:00 CET",
   "marketStatus": "Cash NDX: trh uzavřen; závěr 23. 11. 2026.",
   "ndx": {
     "value": 26746.1,
@@ -9,121 +9,33 @@
   },
   "sentiment": {
     "label": "Neutrální",
-    "trend": "↘ zhoršení – premarket čipů",
+    "trend": "srovnání nedostupné",
     "reason": "VXN 36,31 (23. 11.); RSI14 41,99 (23. 11.; poslední validovaný výpočet); MA50 breadth nedostupné (zdroj neověřen)."
   },
-  "driver": "MU/AMD/MRVL v premarketu −3,9 až −6,4 %; NVDA −5,2 %. Obavy z návratnosti dluhově financovaného AI CAPEX.",
+  "driver": "NVDA −4,70 %, MU −6,17 % (14:01 CET). ADI −9,44 % (14:00); Q1 upr. EPS pod konsenzem.",
   "news": [
     {
-      "title": "ADI Q4 | tržby 4,37 mld. USD vs. kons. Zacks 4,32 (beat 1,2 %); upr. EPS 4,06 USD vs. kons. 3,89 (beat 4,4 %). Q1 výhled: tržby 4,4 mld. USD, upr. EPS 3,82 USD. FY26 FCF 5,5 mld. USD.",
-      "time": "24. 11. 2026 13:01 CET",
-      "publishedAtPrague": "24. 11. 2026, 13:01",
+      "eventKey": "tesla-spacex-merger-committee-directors-20261124",
+      "title": "TSLA/SPCX | Podle FT pět ředitelů vyjednává možnou akciovou fúzi; podmínky transakce nejsou dohodnuty.",
+      "time": "24. 11. 2026, 06:20 CET",
+      "publishedAtPrague": "24. 11. 2026, 06:20",
       "publicationTimeVerified": true,
       "kind": "new",
       "category": "earnings_corporate",
-      "source": "Analog Devices / PRNewswire",
-      "url": "https://www.prnewswire.com/news-releases/analog-devices-reports-record-fourth-quarter-and-fiscal-2026-financial-results-302948778.html",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/legal/transactional/spacex-tesla-entrusts-five-directors-merger-talks-ft-reports-2026-11-24/",
       "sourceLinks": [
         {
-          "label": "Analog Devices",
-          "url": "https://www.prnewswire.com/news-releases/analog-devices-reports-record-fourth-quarter-and-fiscal-2026-financial-results-302948778.html"
+          "label": "Reuters – zpráva FT",
+          "url": "https://www.reuters.com/legal/transactional/spacex-tesla-entrusts-five-directors-merger-talks-ft-reports-2026-11-24/"
         },
         {
-          "label": "Zacks – konsenzus 20. 11.",
-          "url": "https://www.zacks.com/stock/news/3033225/adi-set-to-report-q4-earnings-whats-in-the-cards-for-the-stock"
+          "label": "Financial Times",
+          "url": "https://www.ft.com/content/2585e45e-9133-4215-a2d8-e1275e1033b9"
         }
       ],
-      "eventKey": "adi-fy2026-q4-earnings-20261124",
       "ndxRelevant": true,
-      "importanceScore": 80
-    },
-    {
-      "title": "US premarket | NVDA −5,2 %, MU/AMD/MRVL −3,9 až −6,4 %, CRWV −5,8 %, NBIS −6,1 % (Reuters; futures −1,64 % ve 13:04 CET).",
-      "time": "24. 11. 2026 11:52 CET",
-      "publishedAtPrague": "24. 11. 2026, 11:52",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "semiconductor_market",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/wall-st-futures-dip-chip-stocks-cool-after-nvidia-fueled-rally-2026-11-24/",
-      "sourceLinks": [
-        {
-          "label": "Reuters – původní snímek",
-          "url": "https://www.reuters.com/business/wall-st-futures-dip-chip-stocks-cool-after-nvidia-fueled-rally-2026-11-24/"
-        },
-        {
-          "label": "Reuters – NVDA 12:50",
-          "url": "https://www.reuters.com/business/retail-consumer/nvidia-slips-investors-assess-risks-surrounding-huangs-return-ceo-2026-11-24/"
-        }
-      ],
-      "eventKey": "us-chip-premarket-pullback-20261124",
-      "ndxRelevant": true,
-      "importanceScore": 72
-    },
-    {
-      "title": "NVDA: Jensen Huang znovu CEO s okamžitou účinností.",
-      "time": "23. 11. 2026, 14:59 CET",
-      "publishedAtPrague": "23. 11. 2026, 14:59",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "earnings_corporate",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/technology/nvidia-reinstates-jensen-huang-ceo-2026-11-23/",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/technology/nvidia-reinstates-jensen-huang-ceo-2026-11-23/"
-        },
-        {
-          "label": "NVIDIA IR",
-          "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director"
-        }
-      ],
-      "eventKey": "nvda-jensen-huang-reinstated-ceo-20261123",
-      "ndxRelevant": true,
-      "importanceScore": 97
-    },
-    {
-      "title": "ANT −6,5 % na 82 USD v premarketu, pod IPO cenou 83 USD. AMZN a Alphabet patří mezi významné investory.",
-      "time": "24. 11. 2026 12:17 CET",
-      "publishedAtPrague": "24. 11. 2026, 12:17",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_infrastructure",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/anthropic-breaks-below-83-ipo-price-debut-rally-unravels-2026-11-24/",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/business/anthropic-breaks-below-83-ipo-price-debut-rally-unravels-2026-11-24/"
-        },
-        {
-          "label": "Fortune – podíly AMZN a Alphabet",
-          "url": "https://fortune.com/2026/11/19/anthropic-ipo-amazon-google-stake-windfall-nonvoting/"
-        }
-      ],
-      "eventKey": "anthropic-below-ipo-price-20261124",
-      "ndxRelevant": true,
-      "importanceScore": 68
-    },
-    {
-      "title": "FedWatch: prosincové zvýšení sazeb plně započteno vs. 89 % v pátek; pravděpodobnost +50 bb přibližně 5 %. US10Y 4,94 %, US2Y 4,69 %.",
-      "time": "24. 11. 2026 02:29 CET",
-      "publishedAtPrague": "24. 11. 2026, 02:29",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "macro",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-24/",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-24/"
-        }
-      ],
-      "eventKey": "fed-december-hike-repricing-asia-20261124",
-      "ndxRelevant": true,
-      "importanceScore": 78
+      "importanceScore": 84
     },
     {
       "title": "Fed Williams: očekává inflaci 3,5 % na konci 2026; návrat k 2% cíli v roce 2028. Přetrvávají proinflační rizika.",
@@ -143,6 +55,33 @@
       "eventKey": "fed-williams-bronx-inflation-20261123",
       "ndxRelevant": true,
       "importanceScore": 82
+    },
+    {
+      "title": "ADI Q4 | tržby 4,37 mld. USD vs. kons. Zacks 4,32 (beat 1,2 %); upr. EPS 4,06 USD vs. kons. 3,89 (beat 4,4 %). Q1: tržby 4,4 mld. USD; upr. EPS 3,82 vs. kons. 3,88 USD (miss 1,5 %). ADI −9,44 % (premarket 14:00).",
+      "time": "24. 11. 2026 13:01 CET",
+      "publishedAtPrague": "24. 11. 2026, 13:01",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "earnings_corporate",
+      "source": "Analog Devices / PRNewswire",
+      "url": "https://www.prnewswire.com/news-releases/analog-devices-reports-record-fourth-quarter-and-fiscal-2026-financial-results-302948778.html",
+      "sourceLinks": [
+        {
+          "label": "Analog Devices",
+          "url": "https://www.prnewswire.com/news-releases/analog-devices-reports-record-fourth-quarter-and-fiscal-2026-financial-results-302948778.html"
+        },
+        {
+          "label": "Zacks – konsenzus 20. 11.",
+          "url": "https://www.zacks.com/stock/news/3033225/adi-set-to-report-q4-earnings-whats-in-the-cards-for-the-stock"
+        },
+        {
+          "label": "Investor's Business Daily – Q1 konsenzus",
+          "url": "https://www.investors.com/news/technology/adi-stock-analog-devices-fiscal-q4-2026-report/"
+        }
+      ],
+      "eventKey": "adi-fy2026-q4-earnings-20261124",
+      "ndxRelevant": true,
+      "importanceScore": 80
     },
     {
       "title": "META pozastavuje emisi akcií třídy C kvůli žalobě akcionářů; odklad programu prodeje akcií za 60 mld. USD určeného k financování AI investic.",
@@ -170,6 +109,25 @@
       "eventKey": "meta-class-c-issuance-pause-20261123",
       "ndxRelevant": true,
       "importanceScore": 79
+    },
+    {
+      "title": "FedWatch: prosincové zvýšení sazeb plně započteno vs. 89 % v pátek; pravděpodobnost +50 bb přibližně 5 %. US10Y 4,94 %, US2Y 4,69 %.",
+      "time": "24. 11. 2026 02:29 CET",
+      "publishedAtPrague": "24. 11. 2026, 02:29",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "macro",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-24/",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-24/"
+        }
+      ],
+      "eventKey": "fed-december-hike-repricing-asia-20261124",
+      "ndxRelevant": true,
+      "importanceScore": 78
     },
     {
       "title": "USA: Megaspeed, partner NVDA v cloudové infrastruktuře, zařazen na Entity List. Dodávky amerických technologií vyžadují licenci.",
@@ -222,27 +180,77 @@
       "importanceScore": 76
     },
     {
-      "title": "Britská FCA upozorňuje na povinnost posoudit regulované finanční služby AI agentů. META spustila Muse v Británii 23. 11.",
-      "time": "24. 11. 2026 12:01 CET",
-      "publishedAtPrague": "24. 11. 2026, 12:01",
+      "title": "US premarket | NVDA −4,70 %, MU −6,17 %, INTC −6,07 % (14:01 CET).",
+      "time": "24. 11. 2026 11:52 CET",
+      "publishedAtPrague": "24. 11. 2026, 11:52",
       "publicationTimeVerified": true,
       "kind": "continuing",
-      "category": "ai_regulation",
+      "category": "semiconductor_market",
       "source": "Reuters",
-      "url": "https://www.reuters.com/business/finance/ai-agents-could-trigger-financial-regulation-tech-firms-uk-watchdog-says-2026-11-24/",
+      "url": "https://www.reuters.com/business/wall-st-futures-dip-chip-stocks-cool-after-nvidia-fueled-rally-2026-11-24/",
+      "sourceLinks": [
+        {
+          "label": "Reuters – původní snímek",
+          "url": "https://www.reuters.com/business/wall-st-futures-dip-chip-stocks-cool-after-nvidia-fueled-rally-2026-11-24/"
+        },
+        {
+          "label": "Reuters – NVDA 12:50",
+          "url": "https://www.reuters.com/business/retail-consumer/nvidia-slips-investors-assess-risks-surrounding-huangs-return-ceo-2026-11-24/"
+        },
+        {
+          "label": "StockTitan – kotace 14:01",
+          "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-24-2026"
+        }
+      ],
+      "eventKey": "us-chip-premarket-pullback-20261124",
+      "ndxRelevant": true,
+      "importanceScore": 72
+    },
+    {
+      "title": "AMZN: kupuje technologii Decart Optimization Stack a přebírá tým pro Trainium a AI inference; cena nezveřejněna.",
+      "time": "23. 11. 2026 16:33 CET",
+      "publishedAtPrague": "23. 11. 2026, 16:33",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "ai_infrastructure",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/retail-consumer/amazon-buy-decarts-ai-chip-optimization-tech-latest-ai-talent-grab-2026-11-23/",
       "sourceLinks": [
         {
           "label": "Reuters",
-          "url": "https://www.reuters.com/business/finance/ai-agents-could-trigger-financial-regulation-tech-firms-uk-watchdog-says-2026-11-24/"
+          "url": "https://www.reuters.com/business/retail-consumer/amazon-buy-decarts-ai-chip-optimization-tech-latest-ai-talent-grab-2026-11-23/"
         },
         {
-          "label": "Meta",
-          "url": "https://about.fb.com/news/2026/11/introducing-muse-in-the-uk-a-personal-ai-agent-you-control/"
+          "label": "Amazon",
+          "url": "https://www.aboutamazon.com/news/company-news/amazon-decart-ai-optimization"
         }
       ],
-      "eventKey": "uk-fca-ai-agents-financial-services-20261124",
+      "eventKey": "amazon-decart-optimization-stack-trainium-20261123",
       "ndxRelevant": true,
-      "importanceScore": 57
+      "importanceScore": 69
+    },
+    {
+      "title": "ANT −6,5 % na 82 USD v premarketu, pod IPO cenou 83 USD. AMZN a Alphabet patří mezi významné investory.",
+      "time": "24. 11. 2026 12:17 CET",
+      "publishedAtPrague": "24. 11. 2026, 12:17",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "ai_infrastructure",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/anthropic-breaks-below-83-ipo-price-debut-rally-unravels-2026-11-24/",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/anthropic-breaks-below-83-ipo-price-debut-rally-unravels-2026-11-24/"
+        },
+        {
+          "label": "Fortune – podíly AMZN a Alphabet",
+          "url": "https://fortune.com/2026/11/19/anthropic-ipo-amazon-google-stake-windfall-nonvoting/"
+        }
+      ],
+      "eventKey": "anthropic-below-ipo-price-20261124",
+      "ndxRelevant": true,
+      "importanceScore": 68
     },
     {
       "title": "Singapur pokračuje ve vyšetřování Megaspeed a s USA připravuje mechanismus výměny informací pro kontrolu exportu AI čipů.",
@@ -272,27 +280,65 @@
       "importanceScore": 66
     },
     {
-      "title": "AMZN: kupuje technologii Decart Optimization Stack a přebírá tým pro Trainium a AI inference; cena nezveřejněna.",
-      "time": "23. 11. 2026 16:33 CET",
-      "publishedAtPrague": "23. 11. 2026, 16:33",
+      "title": "US flash PMI listopad | Composite 54,6 vs. 55,9 (−1,3 b.); služby 54,7 vs. 56,1 (−1,4 b.); výroba 54,5 vs. 54,9 (−0,4 b.).",
+      "time": "23. 11. 2026, 15:50 CET",
+      "publishedAtPrague": "23. 11. 2026, 15:50",
       "publicationTimeVerified": true,
       "kind": "continuing",
-      "category": "ai_infrastructure",
+      "category": "macro",
       "source": "Reuters",
-      "url": "https://www.reuters.com/business/retail-consumer/amazon-buy-decarts-ai-chip-optimization-tech-latest-ai-talent-grab-2026-11-23/",
+      "url": "https://www.reuters.com/world/us/us-business-activity-growth-eases-further-november-survey-shows-2026-11-23/",
       "sourceLinks": [
         {
           "label": "Reuters",
-          "url": "https://www.reuters.com/business/retail-consumer/amazon-buy-decarts-ai-chip-optimization-tech-latest-ai-talent-grab-2026-11-23/"
-        },
-        {
-          "label": "Amazon",
-          "url": "https://www.aboutamazon.com/news/company-news/amazon-decart-ai-optimization"
+          "url": "https://www.reuters.com/world/us/us-business-activity-growth-eases-further-november-survey-shows-2026-11-23/"
         }
       ],
-      "eventKey": "amazon-decart-optimization-stack-trainium-20261123",
+      "eventKey": "us-flash-pmi-nov-2026-20261123",
       "ndxRelevant": true,
-      "importanceScore": 69
+      "importanceScore": 62
+    },
+    {
+      "title": "Britská FCA upozorňuje na povinnost posoudit regulované finanční služby AI agentů. META spustila Muse v Británii 23. 11.",
+      "time": "24. 11. 2026 12:01 CET",
+      "publishedAtPrague": "24. 11. 2026, 12:01",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "ai_regulation",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/finance/ai-agents-could-trigger-financial-regulation-tech-firms-uk-watchdog-says-2026-11-24/",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/finance/ai-agents-could-trigger-financial-regulation-tech-firms-uk-watchdog-says-2026-11-24/"
+        },
+        {
+          "label": "Meta",
+          "url": "https://about.fb.com/news/2026/11/introducing-muse-in-the-uk-a-personal-ai-agent-you-control/"
+        }
+      ],
+      "eventKey": "uk-fca-ai-agents-financial-services-20261124",
+      "ndxRelevant": true,
+      "importanceScore": 57
+    },
+    {
+      "eventKey": "malaysia-ai-chip-export-compliance-20261124",
+      "title": "Malajsie bude kontrolovat dodržování amerických exportních podmínek AI čipů u firem z USA; spolupráce s čínskými investory pokračuje.",
+      "time": "24. 11. 2026, 04:16 CET",
+      "publishedAtPrague": "24. 11. 2026, 04:16",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "ai_regulation",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/media-telecom/us-chip-curbs-wont-impact-malaysias-china-ties-pm-says-2026-11-24/",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/media-telecom/us-chip-curbs-wont-impact-malaysias-china-ties-pm-says-2026-11-24/"
+        }
+      ],
+      "ndxRelevant": true,
+      "importanceScore": 57
     },
     {
       "title": "Singapur Q3 HDP 6,1 % y/y vs. kons. 5,6 %. AI výroba a export zrychlují díky výstavbě datacenter; odhad růstu 2026 zvýšen na 6 % z 4,5–5,5 %.",
@@ -314,25 +360,6 @@
       "importanceScore": 55
     },
     {
-      "title": "US flash PMI listopad | Composite 54,6 vs. 55,9 (−1,3 b.); služby 54,7 vs. 56,1 (−1,4 b.); výroba 54,5 vs. 54,9 (−0,4 b.).",
-      "time": "23. 11. 2026, 15:50 CET",
-      "publishedAtPrague": "23. 11. 2026, 15:50",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "macro",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/us/us-business-activity-growth-eases-further-november-survey-shows-2026-11-23/",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/world/us/us-business-activity-growth-eases-further-november-survey-shows-2026-11-23/"
-        }
-      ],
-      "eventKey": "us-flash-pmi-nov-2026-20261123",
-      "ndxRelevant": true,
-      "importanceScore": 62
-    },
-    {
       "title": "Japonsko flash PMI výroba | listopad 53,7 vs. říjen 53,3; +0,4 b. Exportní objednávky rostou díky poptávce po polovodičích a elektronice.",
       "time": "24. 11. 2026 01:35 CET",
       "publishedAtPrague": "24. 11. 2026, 01:35",
@@ -352,25 +379,6 @@
       "importanceScore": 53
     },
     {
-      "title": "Odhad JPMorgan: AI CAPEX v roce 2027 téměř 1,4 bil. USD; Dell Q3 očekávaný růst tržeb 82,6 %.",
-      "time": "23. 11. 2026 14:49 CET",
-      "publishedAtPrague": "23. 11. 2026, 14:49",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_infrastructure",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/dell-hpe-results-put-ai-demand-test-after-tech-rout-2026-11-23/",
-      "sourceLinks": [
-        {
-          "label": "Reuters – AI CAPEX / DELL / HPE",
-          "url": "https://www.reuters.com/business/dell-hpe-results-put-ai-demand-test-after-tech-rout-2026-11-23/"
-        }
-      ],
-      "eventKey": "jpmorgan-ai-capex-2027-dell-hpe-results-preview-20261123",
-      "ndxRelevant": true,
-      "importanceScore": 62
-    },
-    {
       "title": "Evropské technologie −0,87 % (10:20 CET) po pondělním růstu přes 4 %. Infineon a ASM International ztrácejí přes 2 %.",
       "time": "24. 11. 2026 09:27 CET",
       "publishedAtPrague": "24. 11. 2026, 09:27",
@@ -388,32 +396,18 @@
       "eventKey": "europe-tech-rally-fades-20261124",
       "ndxRelevant": true,
       "importanceScore": 46
-    },
-    {
-      "title": "Morgan Stanley: odhad růstu EPS 2027 +14 % vs. kons. +17 %; tržní ocenění odpovídá −6 %. Preferuje hyperscalery.",
-      "time": "23. 11. 2026, 14:28 CET",
-      "publishedAtPrague": "23. 11. 2026, 14:28",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "institutional_outlook",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/morgan-stanley-turns-most-bullish-stocks-since-april-after-last-weeks-selloff-2026-11-23/",
-      "sourceLinks": [
-        {
-          "label": "Reuters – Morgan Stanley",
-          "url": "https://www.reuters.com/business/morgan-stanley-turns-most-bullish-stocks-since-april-after-last-weeks-selloff-2026-11-23/"
-        }
-      ],
-      "eventKey": "morgan-stanley-tactical-bullish-2027-eps-20261123",
-      "ndxRelevant": true,
-      "importanceScore": 59
     }
   ],
   "leaders": [
     {
       "ticker": "NVDA",
-      "changePercent": -5.2,
-      "impact": "vysoký – premarket, Reuters"
+      "changePercent": -4.7,
+      "impact": "vysoký – premarket 14:01 CET"
+    },
+    {
+      "ticker": "MU",
+      "changePercent": -6.17,
+      "impact": "vysoký – premarket 14:01 CET"
     }
   ],
   "macro": "US10Y | 23. 11.: 4,92 % | 20. 11.: 4,92 % | 0 bb",
@@ -443,6 +437,24 @@
     "timePrague": "24. 11. 2026, 16:00 CET"
   },
   "archive": [
+    {
+      "time": "24. 11. 2026 15:00 CET",
+      "summary": "NDX 26 746,10 b. (+6,86 %, 23. 11.). ADI Q1 upr. EPS 3,82 vs. kons. 3,88 USD; ADI −9,44 % (14:00). VXN 36,31 (23. 11.); RSI14 41,99 (23. 11.; poslední validovaný výpočet); MA50 breadth nedostupné (zdroj neověřen). 17 kandidátů, 3 expirované/vyřazené. 10 JSON načteno; 9 TE zdrojů prověřeno, EU Gas a USD/CZK aktualizovány, 7 nejednoznačných ponecháno. Fed/ECB/ČNB a HDP potvrzeny. Nasdaq členství a CMC zkontrolovány, znaménka CMC nedoložena. Yahoo nedostupný (NQ=F, historické maximum futures, RSI); 7 skriptů bez cizích GitHub URL. Logy updaterů a Pages nedostupné.",
+      "sourceLinks": [
+        {
+          "label": "YCharts – NDX",
+          "url": "https://ycharts.com/indices/%5ENDX/level"
+        },
+        {
+          "label": "IBD – ADI",
+          "url": "https://www.investors.com/news/technology/adi-stock-analog-devices-fiscal-q4-2026-report/"
+        },
+        {
+          "label": "StockTitan – premarket",
+          "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-24-2026"
+        }
+      ]
+    },
     {
       "time": "24. 11. 2026 14:00 CET",
       "summary": "NDX 26 746,10 b. (+6,86 %, 23. 11.). ADI Q4: tržby 4,37 mld. USD; upr. EPS 4,06 USD. VXN 36,31 (23. 11.); RSI14 41,99 (23. 11.; poslední validovaný výpočet); MA50 breadth nedostupné (zdroj neověřen). 18 kandidátů, 1 expirovaných. 10 JSON načteno, VXN a US10Y potvrzeny. TE 9/9 kontrola, bez jednoznačných nových dat; Top 10 a členství kontrolovány, znaménka CMC nedoložena. Yahoo nedostupný (futures, historické maximum, RSI); 7 skriptů bez cizích GitHub URL. Logy a Pages nedostupné.",
@@ -4778,6 +4790,22 @@
     {
       "name": "BEA – harmonogram",
       "url": "https://www.bea.gov/news/schedule"
+    },
+    {
+      "name": "StockTitan – premarket",
+      "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-24-2026"
+    },
+    {
+      "name": "Investor's Business Daily – ADI",
+      "url": "https://www.investors.com/news/technology/adi-stock-analog-devices-fiscal-q4-2026-report/"
+    },
+    {
+      "name": "Reuters – TSLA/SPCX",
+      "url": "https://www.reuters.com/legal/transactional/spacex-tesla-entrusts-five-directors-merger-talks-ft-reports-2026-11-24/"
+    },
+    {
+      "name": "Reuters – Malajsie",
+      "url": "https://www.reuters.com/business/media-telecom/us-chip-curbs-wont-impact-malaysias-china-ties-pm-says-2026-11-24/"
     }
   ]
 }
