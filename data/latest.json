@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "24. 11. 2026 23:01 CET",
+  "updatedAtPrague": "25. 11. 2026 00:01 CET",
   "marketStatus": "Cash NDX: závěr 24. 11. 2026, seance ukončena.",
   "ndx": {
     "value": 26214.17,
@@ -9,13 +9,13 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "↗",
+    "trend": "→",
     "reason": "MA50 breadth 42,6 % (2026-11-24, závěr); RSI14 39,24 (2026-11-24, závěr); VXN 36,31 (2026-11-23, starší závěr)."
   },
-  "driver": "SOX −7,88 %; NVDA −5,86 % (závěr 24. 11.). NDX zmírnil ztráty proti 21:39. DELL Q3: AI server backlog 132,3 mld. USD.",
+  "driver": "SOX −7,88 %; NVDA −5,86 % (závěr 24. 11.). DELL zvýšil výhled FY27 AI serverů na 78 z 74 mld. USD.",
   "news": [
     {
-      "title": "DELL Q3 | tržby 54,94 mld. USD vs. kons. 49,32 (beat 11,4 %); upr. EPS 9,45 USD vs. kons. 6,59 (beat 43,4 %). Q4 výhled tržeb 56,3 mld. USD; EPS 8,40 USD. AI server backlog 132,3 mld. USD; nové objednávky 60,2 mld. USD. FY27 AI servery 78 vs. původních 74 mld. USD.",
+      "title": "DELL Q3 | tržby 54,94 mld. USD vs. kons. 49,32 (beat 11,4 %); upr. EPS 9,45 USD vs. kons. 6,59 (beat 43,4 %). Q4 výhled tržeb 56,3 mld. USD; EPS 8,40 USD. AI server backlog 132,3 mld. USD; nové objednávky 60,2 mld. USD. FY27 AI servery 78 vs. původních 74 mld. USD. FY27 výhled tržeb 202 mld. USD vs. kons. 194,48 (beat 3,9 %).",
       "publishedAtPrague": "24. 11. 2026, 22:06",
       "category": "earnings",
       "source": "Reuters",
@@ -35,7 +35,7 @@
       "time": "24. 11. 2026 22:06 CET",
       "publicationTimeVerified": true,
       "ndxRelevant": true,
-      "kind": "new"
+      "kind": "continuing"
     },
     {
       "title": "NVDA | Schumer obvinil CEO Jensena Huanga z porušení exportních pravidel USA a požaduje zpřísnění legislativy. NVDA se bezprostředně nevyjádřila; veřejné slyšení v Senátu 3. 12.",
@@ -92,7 +92,7 @@
       "time": "24. 11. 2026 22:21 CET",
       "publicationTimeVerified": true,
       "ndxRelevant": true,
-      "kind": "new"
+      "kind": "continuing"
     },
     {
       "title": "ADI Q4 | tržby 4,37 mld. USD vs. kons. Zacks 4,32 (beat 1,2 %); upr. EPS 4,06 USD vs. kons. 3,89 (beat 4,4 %). Q1: tržby 4,4 mld. USD; upr. EPS 3,82 vs. kons. 3,88 USD (miss 1,5 %). ADI −9,44 % (premarket 14:00).",
@@ -145,6 +145,25 @@
       "publicationTimeVerified": true
     },
     {
+      "title": "NVDA | Bílý dům v prohlášení pro Reuters potvrdil podporu open-weight AI modelů; širší využití modelů rozšiřuje potenciální poptávku po GPU NVDA.",
+      "time": "24. 11. 2026 23:29 CET",
+      "publishedAtPrague": "24. 11. 2026, 23:29",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "ai_regulation",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/china/huangs-return-nvidia-brings-open-weight-ai-debate-forefront-washington-2026-11-24/",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/china/huangs-return-nvidia-brings-open-weight-ai-debate-forefront-washington-2026-11-24/"
+        }
+      ],
+      "eventKey": "white-house-open-weight-ai-support-20261124",
+      "ndxRelevant": true,
+      "importanceScore": 64
+    },
+    {
       "eventKey": "tesla-spacex-merger-committee-directors-20261124",
       "title": "TSLA/SPCX | Podle FT pět ředitelů vyjednává možnou akciovou fúzi; podmínky transakce nejsou dohodnuty.",
       "time": "24. 11. 2026, 06:20 CET",
@@ -188,7 +207,7 @@
       "time": "24. 11. 2026 22:00 CET",
       "publicationTimeVerified": true,
       "ndxRelevant": true,
-      "kind": "new"
+      "kind": "continuing"
     },
     {
       "title": "USA | Nasdaq Composite při otevření −1,43 %. SOX −5,95 % (15:33 CET), NVDA −5,36 % (15:49 CET).",
@@ -277,33 +296,6 @@
       "eventKey": "fed-december-hike-repricing-asia-20261124",
       "ndxRelevant": true,
       "importanceScore": 78
-    },
-    {
-      "title": "META pozastavuje emisi akcií třídy C kvůli žalobě akcionářů; odklad programu prodeje akcií za 60 mld. USD určeného k financování AI investic.",
-      "time": "23. 11. 2026 23:32 CET",
-      "publishedAtPrague": "23. 11. 2026, 23:32",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_infrastructure",
-      "source": "Reuters / MarketScreener",
-      "url": "https://www.marketscreener.com/news/meta-pauses-class-c-share-issuance-amid-shareholder-lawsuit-ce7851dadf8ff521",
-      "sourceLinks": [
-        {
-          "label": "Reuters / MarketScreener",
-          "url": "https://www.marketscreener.com/news/meta-pauses-class-c-share-issuance-amid-shareholder-lawsuit-ce7851dadf8ff521"
-        },
-        {
-          "label": "SEC – META 8-K",
-          "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026075541/meta-20261118.htm"
-        },
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/legal/transactional/meta-pauses-class-c-share-issuance-amid-shareholder-lawsuit-2026-11-23/"
-        }
-      ],
-      "eventKey": "meta-class-c-issuance-pause-20261123",
-      "ndxRelevant": true,
-      "importanceScore": 79
     },
     {
       "title": "Singapur pokračuje ve vyšetřování Megaspeed a s USA připravuje mechanismus výměny informací pro kontrolu exportu AI čipů.",
@@ -452,7 +444,7 @@
   },
   "forecast": {
     "athReturnPercent": 18,
-    "athReason": "Nutný růst 19,64 %. MA50 breadth 42,6 % (2026-11-24, závěr); RSI14 39,24 (2026-11-24, závěr); VXN 36,31 (2026-11-23, starší závěr). Odhad 18 % zachován; silné AI objednávky DELL, slabý SOX a exportní riziko.",
+    "athReason": "Nutný růst 19,64 %. MA50 breadth 42,6 % (2026-11-24, závěr); RSI14 39,24 (2026-11-24, závěr); VXN 36,31 (2026-11-23, starší závěr). Odhad 18 % zachován; silná AI poptávka DELL, slabý SOX a exportní riziko.",
     "downside": "−7 až −13 %",
     "downsideReason": "Modelový 25. percentil koncové ceny; VXN 36,31 (2026-11-23, starší závěr).",
     "downsideModel": {
@@ -471,6 +463,24 @@
     "timePrague": "25. 11. 2026 14:30 CET"
   },
   "archive": [
+    {
+      "time": "25. 11. 2026 00:01 CET",
+      "summary": "NDX 26 214,17 b. (−1,99 %, závěr 24. 11.); SOX −7,88 %. Bílý dům potvrdil podporu open-weight AI; DELL FY27 výhled tržeb 202 mld. USD vs. kons. 194,48. MA50 breadth 42,6 % (2026-11-24, závěr); RSI14 39,24 (2026-11-24, závěr); VXN 36,31 (2026-11-23, starší závěr). 19 kandidátů, 1 expirovaných vyřazeno. Ekonomika 6/6 ověřena; TE 9/9 zdrojů otevřeno, 7 rozdílných snímků zachováno. NQ=F poslední kotace 22:52, Yahoo nedostupný.",
+      "sourceLinks": [
+        {
+          "label": "Google Finance NDX",
+          "url": "https://www.google.com/finance/quote/NDX:INDEXNASDAQ"
+        },
+        {
+          "label": "Reuters – open-weight AI",
+          "url": "https://www.reuters.com/world/china/huangs-return-nvidia-brings-open-weight-ai-debate-forefront-washington-2026-11-24/"
+        },
+        {
+          "label": "Reuters – DELL",
+          "url": "https://www.reuters.com/business/dell-lifts-annual-forecasts-after-record-quarter-surging-ai-server-demand-2026-11-24/"
+        }
+      ]
+    },
     {
       "time": "24. 11. 2026 23:01 CET",
       "summary": "NDX 26 214,17 b. (−1,99 %, závěr 24. 11.); SOX −7,88 %. DELL Q3: AI objednávky 60,2 mld. USD, backlog 132,3 mld. USD. ASML: návrh MATCH Act. MA50 breadth 42,6 % (2026-11-24, závěr); RSI14 39,24 (2026-11-24, závěr); VXN 36,31 (2026-11-23, starší závěr). 19 kandidátů; všech 9 tržních řádků ověřeno v 22:02 dle logu, ekonomika 6/6; NQ=F kotace 21:52, Yahoo přímý přístup nedostupný.",
@@ -5076,6 +5086,10 @@
     {
       "name": "Investing.com – konsenzus",
       "url": "https://www.investing.com/news/transcripts/autodesk-shares-fall-despite-q3-earnings-beat-strong-guidance-5049017"
+    },
+    {
+      "name": "Reuters – open-weight AI",
+      "url": "https://www.reuters.com/world/china/huangs-return-nvidia-brings-open-weight-ai-debate-forefront-washington-2026-11-24/"
     }
   ]
 }
