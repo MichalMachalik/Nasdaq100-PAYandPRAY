@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Refresh verified market inputs for Pay & Pray's 1–3m NDX scenario.
 
-Uses Yahoo's unofficial ^VXN daily chart and Treasury's official daily rates CSV.
+Uses dated VXN daily closes from FRED (Cboe), or Yahoo Finance when fresher,
+and Treasury's official daily rates CSV.
 No subjective news scoring or made-up data. Each source keeps its own observation
 date; source outages retain the last verified value. This does NOT predict prices.
 """
@@ -16,6 +17,7 @@ from zoneinfo import ZoneInfo
 
 OUT = pathlib.Path("data/risk-model.json")
 VXN_URL = "https://query1.finance.yahoo.com/v8/finance/chart/%5EVXN?range=1mo&interval=1d"
+FRED_VXN_URL = "https://fred.stlouisfed.org/graph/fredgraph.csv?id=VXNCLS"
 TREASURY_URL = ("https://home.treasury.gov/resource-center/data-chart-center/"
                 "interest-rates/daily-treasury-rates.csv/{year}/all"
                 "?type=daily_treasury_yield_curve&field_tdr_date_value={year}&page&_format=csv")
@@ -27,7 +29,7 @@ def fetch(url):
     with urllib.request.urlopen(req, timeout=23) as response:
         return response.read().decode("utf-8-sig")
 
-def parse_vxn(payload, now):
+def vxn_observations(payload, now):
     result = payload["chart"]["result"][0]
     symbol = result.get("meta", {}).get("symbol")
     if symbol != "^VXN":
@@ -42,13 +44,62 @@ def parse_vxn(payload, now):
         if not math.isfinite(val) or not 8 <= val <= 100:
             continue
         obs = datetime.fromtimestamp(int(tick), ZoneInfo("America/New_York")).date()
-        age = (now.date() - obs).days
-        if 0 <= age <= 7:
+        local = now.astimezone(ZoneInfo("America/New_York"))
+        age = (local.date() - obs).days
+        if 0 <= age <= 14 and (obs < local.date() or (local.hour, local.minute) >= (16, 30)):
             vals.append((obs.isoformat(), val))
     if not vals:
+        raise ValueError("No dated ^VXN observations")
+    return sorted(dict(vals).items())
+
+def parse_vxn(payload, now):
+    obs_date, val = vxn_observations(payload, now)[-1]
+    if not 0 <= (now.date()-date.fromisoformat(obs_date)).days <= 7:
         raise ValueError("No dated ^VXN observations in past 7 calendar days")
-    obs_date, val = max(vals)
     return obs_date, round(val, 2)
+
+def parse_fred_vxn(text, now):
+    rows = {}
+    for row in csv.DictReader(io.StringIO(text)):
+        try:
+            obs = date.fromisoformat(row.get("observation_date") or row.get("DATE") or "")
+            val = float(row["VXNCLS"])
+            if 0 <= (now.date()-obs).days <= 14 and math.isfinite(val) and 8 <= val <= 100:
+                rows[obs.isoformat()] = val
+        except (TypeError, ValueError, KeyError):
+            continue
+    if not rows:
+        raise ValueError("FRED VXNCLS: no valid dated observation")
+    return sorted(rows.items())
+
+def current_vxn(now):
+    feeds = []
+    try:
+        feeds.append((parse_fred_vxn(fetch(FRED_VXN_URL), now),
+                      "https://fred.stlouisfed.org/series/VXNCLS"))
+    except Exception as exc:
+        print("FRED VXN unavailable:", exc)
+    try:
+        feeds.append((vxn_observations(json.loads(fetch(VXN_URL)), now),
+                      "https://finance.yahoo.com/quote/%5EVXN/"))
+    except Exception as exc:
+        print("Yahoo Finance VXN unavailable:", exc)
+    if not feeds:
+        raise ValueError("No valid VXN feed")
+    # Prefer official source on equal observation dates; never substitute an older
+    # official close for a newer verified close. Conflicting same-day values fail closed.
+    feeds.sort(key=lambda f: (f[0][-1][0], "fred.stlouisfed.org" in f[1]), reverse=True)
+    rows, source = feeds[0]
+    obs, val = rows[-1]
+    if not 0 <= (now.date()-date.fromisoformat(obs)).days <= 7:
+        raise ValueError("Stale VXN close")
+    for other, _ in feeds[1:]:
+        same = dict(other).get(obs)
+        if same is not None and abs(same-val) > 0.05:
+            raise ValueError("VXN sources disagree on same-day close")
+    previous = rows[-2] if len(rows)>1 else None
+    delta = round((round(val,2)/round(previous[1],2)-1)*100,2) if previous else None
+    return obs, round(val,2), source, delta, previous
 
 def parse_treasury(text, now):
     reader = csv.DictReader(io.StringIO(text))
@@ -87,17 +138,18 @@ def main():
     outcomes, failures, checked = [], [], []
     checked_at = now.isoformat().replace("+00:00", "Z")
     try:
-        obs, value = parse_vxn(json.loads(fetch(VXN_URL)), now)
+        obs, value, source, delta, previous = current_vxn(now)
         if obs < market["vxnAsOf"]:
             raise ValueError("VXN source predates the published observation")
-        if obs >= market["vxnAsOf"]:
-            if obs != market["vxnAsOf"] or value != market["vxnPct"]:
-                market.update(vxnPct=value, vxnAsOf=obs,
-                              vxnSource="https://finance.yahoo.com/quote/%5EVXN/",
-                              vxnRetrievedAtUtc=now.isoformat().replace("+00:00", "Z"))
-                outcomes.append(f"VXN {obs}: {value:.2f}%")
-            market["vxnCheckedAtUtc"] = checked_at
-            checked.append("VXN")
+        if obs == market["vxnAsOf"] and abs(value-market["vxnPct"]) > 0.05:
+            raise ValueError("VXN conflicts with previously published close")
+        market.update(vxnPct=value, vxnAsOf=obs, vxnSource=source,
+                      vxnQuoteKind="daily-close", vxnChangePercent=delta,
+                      vxnPreviousClose=round(previous[1],2) if previous else None,
+                      vxnPreviousCloseAsOf=previous[0] if previous else None,
+                      vxnRetrievedAtUtc=checked_at, vxnCheckedAtUtc=checked_at)
+        outcomes.append(f"VXN {obs}: {value:.2f}")
+        checked.append("VXN")
     except Exception as exc:
         failures.append(f"VXN: {exc}")
     try:
