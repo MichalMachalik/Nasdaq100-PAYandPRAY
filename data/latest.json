@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "24. 11. 2026 10:00 CET",
+  "updatedAtPrague": "24. 11. 2026 11:00 CET",
   "marketStatus": "Cash NDX: trh uzavřen; závěr 23. 11. 2026.",
   "ndx": {
     "value": 26746.1,
@@ -9,10 +9,10 @@
   },
   "sentiment": {
     "label": "Neutrální",
-    "trend": "srovnání nedostupné – aktuální srovnatelná futures kotace nedostupná",
-    "reason": "VXN 36,31 (23. 11.); RSI14 41,99 (23. 11.) (poslední výpočet); MA50 breadth nedostupné (zdroj neověřen)."
+    "trend": "srovnání nedostupné",
+    "reason": "VXN 36,31 (23. 11.); RSI14 41,99 (23. 11.; poslední výpočet); MA50 breadth nedostupné (zdroj neověřen)."
   },
-  "driver": "Evropské technologie −0,3 % (09:10 CET) po pondělním růstu přes 4 %; NVDA +31,48 % (23. 11.).",
+  "driver": "Evropské technologie −0,87 % (10:20 CET) po pondělním růstu přes 4 %; Infineon a ASM International přes −2 %.",
   "news": [
     {
       "title": "NVDA: Jensen Huang znovu CEO s okamžitou účinností.",
@@ -245,11 +245,11 @@
       "importanceScore": 55
     },
     {
-      "title": "Evropský technologický index −0,3 % v 09:10 CET po pondělním růstu přes 4 % po návratu CEO NVDA.",
+      "title": "Evropské technologie −0,87 % (10:20 CET) po pondělním růstu přes 4 %. Infineon a ASM International ztrácejí přes 2 %.",
       "time": "24. 11. 2026 09:27 CET",
       "publishedAtPrague": "24. 11. 2026, 09:27",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "semiconductor_market",
       "source": "Reuters",
       "url": "https://www.reuters.com/markets/europe/europes-stoxx-600-subdued-after-ai-driven-rally-2026-11-24/",
@@ -379,7 +379,7 @@
   },
   "forecast": {
     "athReturnPercent": 18,
-    "athReason": "Nutný růst 17,26 %. VXN 36,31 (23. 11.); RSI14 41,99 (23. 11.) (poslední výpočet); MA50 breadth nedostupné (zdroj neověřen).",
+    "athReason": "Nutný růst 17,26 %. VXN 36,31 (23. 11.); RSI14 41,99 (23. 11.; poslední výpočet); MA50 breadth nedostupné (zdroj neověřen).",
     "downside": "−7 až −13 %",
     "downsideReason": "Modelový 25. percentil koncové ceny; VXN 36,31 (23. 11.).",
     "downsideModel": {
@@ -398,6 +398,24 @@
     "timePrague": "24. 11. 2026, 13:00 CET"
   },
   "archive": [
+    {
+      "time": "24. 11. 2026 11:00 CET",
+      "summary": "NDX 26 746,10 b. (+6,86 %, závěr 23. 11.). Evropské technologie −0,87 % (10:20 CET). VXN 36,31 (23. 11.); RSI14 41,99 (23. 11.; poslední výpočet); MA50 breadth nedostupné (zdroj neověřen). Bez nové kvalifikované události; 16 kandidátů, 0 vyřazeno. 10 JSON načteno; Nasdaq 101 členů k 23. 11., globální Top 10 ověřen. TE 9/9 kontrolováno, USD/CZK obnoveno, osm hodnot zachováno pro nejednotná data nebo nedoložené datum. Sazby a HDP potvrzeny; VXN a US10Y potvrzeny. Yahoo NQ=F, futures maximum a historie RSI nedostupné; poslední výpočty zachovány. Breadth neověřeno. 7 skriptů bez cizích GitHub zdrojů; poslední Pages 10:22 CET.",
+      "sourceLinks": [
+        {
+          "label": "Google Finance NDX",
+          "url": "https://www.google.com/finance/quote/NDX:INDEXNASDAQ"
+        },
+        {
+          "label": "Reuters – evropské technologie",
+          "url": "https://www.reuters.com/markets/europe/europes-stoxx-600-subdued-after-ai-driven-rally-2026-11-24/"
+        },
+        {
+          "label": "Investing.com VXN",
+          "url": "https://se.investing.com/indices/cboe-nasdaq-100-voltility-historical-data"
+        }
+      ]
+    },
     {
       "time": "24. 11. 2026 10:00 CET",
       "summary": "NDX 26 746,10 b. (+6,86 %, závěr 23. 11.). Evropské technologie −0,3 % (09:10 CET). VXN 36,31 (23. 11.); RSI14 41,99 (23. 11.) (poslední výpočet); MA50 breadth 43,6 % (23. 11.). 16 kandidátů; 2 vyřazeno. 10 JSON načteno; TE 9/9 kontrolováno, EUR/CZK aktualizováno, 8 rozporných hodnot zachováno. Sazby a HDP potvrzeny. Nasdaq členství k 20. 11.; Top 10 zachováno. Yahoo kotace a historie nedostupné; futures, historické maximum futures a RSI bez přepočtu. VXN potvrzen YCharts, FRED k 20. 11.; Cboe bez číselné kotace. Sedm skriptů bez cizích GitHub URL; logy a Pages nedostupné.",
@@ -4613,6 +4631,18 @@
     {
       "name": "Reuters – evropské technologie",
       "url": "https://www.reuters.com/markets/europe/europes-stoxx-600-subdued-after-ai-driven-rally-2026-11-24/"
+    },
+    {
+      "name": "Investing.com VXN",
+      "url": "https://se.investing.com/indices/cboe-nasdaq-100-voltility-historical-data"
+    },
+    {
+      "name": "CompaniesMarketCap",
+      "url": "https://companiesmarketcap.com/"
+    },
+    {
+      "name": "Trading Economics USD/CZK",
+      "url": "https://tradingeconomics.com/czech-republic/currency"
     }
   ]
 }
