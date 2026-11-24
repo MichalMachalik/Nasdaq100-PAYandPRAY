@@ -4,7 +4,6 @@ on:
   push:
     paths:
       - "scripts/update_risk_model.py"
-      - "data/risk-model.json"
       - "tests/test_risk_model.py"
       - ".github/workflows/risk-model.yml"
   schedule:
@@ -17,28 +16,41 @@ concurrency:
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
         with:
           persist-credentials: true
-      - name: Test model mathematics and timestamp validation
-        run: python -m unittest discover -s tests -p test_risk_model.py -v
-      - name: Refresh verified VXN and Treasury observations
-        run: python scripts/update_risk_model.py
-      - name: Publish sources without overwriting news report
+      - name: Validate, refresh and publish against latest branch
+        env:
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+        shell: bash
         run: |
-          if git diff --quiet -- data/risk-model.json; then
-            echo "Evidence sources unchanged."
-            exit 0
-          fi
+          set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/risk-model.json
-          git commit -m "Refresh observed Nasdaq-100 volatility and Treasury risk inputs"
-          for attempt in 1 2 3; do
-            git pull --rebase origin "${{ github.event.repository.default_branch }}"
-            if git push; then exit 0; fi
+          # Other hourly writers can update main while this job is fetching data.
+          # Recompute on the latest committed snapshot, rather than merge stale JSON.
+          # Never force-push or bypass observation-date/source validation.
+          for attempt in 1 2 3 4; do
+            echo "Refresh attempt $attempt"
+            git fetch --no-tags --depth=1 origin "$DEFAULT_BRANCH"
+            git checkout --detach FETCH_HEAD
+            python -m unittest discover -s tests -p test_risk_model.py -v
+            python scripts/update_risk_model.py
+            if git diff --quiet -- data/risk-model.json; then
+              echo "Verified data unchanged."
+              exit 0
+            fi
+            git add -- data/risk-model.json
+            git commit -m "Refresh observed Nasdaq-100 volatility and Treasury risk inputs"
+            if git push origin "HEAD:refs/heads/$DEFAULT_BRANCH"; then
+              exit 0
+            fi
+            if [ "$attempt" -lt 4 ]; then
+              echo "Publication failed; reload latest branch and revalidate before retrying."
+              sleep "$((attempt * 3))"
+            fi
           done
+          echo "::error::Could not publish verified data after four attempts; existing remote data retained."
           exit 1
-
