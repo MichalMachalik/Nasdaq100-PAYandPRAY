@@ -5,18 +5,18 @@
     "currencies": "https://tradingeconomics.com/currencies"
   },
   "timestampKind": "retrieval timestamp is separate from trading day",
-  "fetchedAtUtc": "2026-11-24T04:00:05Z",
-  "fetchedAtPrague": "24. 11. 2026 05:00",
+  "fetchedAtUtc": "2026-11-24T04:21:24Z",
+  "fetchedAtPrague": "24. 11. 2026 05:21",
   "quotes": [
     {
       "id": "WTI",
       "unit": "USD/bbl",
-      "price": 80.25,
-      "changePercent": -3.79,
-      "quoteDate": "Nov/23",
-      "quoteDateISO": "2026-11-23",
+      "price": 79.787,
+      "changePercent": -0.48,
+      "quoteDate": "Nov/24",
+      "quoteDateISO": "2026-11-24",
       "sourceUrl": "https://tradingeconomics.com/commodity/crude-oil",
-      "fetchedAtUtc": "2026-11-23T22:55:52Z"
+      "fetchedAtUtc": "2026-11-24T04:21:24Z"
     },
     {
       "id": "Brent",
