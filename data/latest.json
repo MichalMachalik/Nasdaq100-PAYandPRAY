@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "25. 11. 2026 11:56 CET",
+  "updatedAtPrague": "25. 11. 2026 13:04 CET",
   "marketStatus": "Cash NDX: závěr 24. 11. 2026, seance ukončena.",
   "ndx": {
     "value": 26214.17,
@@ -12,8 +12,27 @@
     "trend": "↘",
     "reason": "MA50 breadth 42,6 % (2026-11-24, závěr); RSI14 39,24 (2026-11-24, závěr); VXN 36,42 (2026-11-24, závěr)."
   },
-  "driver": "SOX −7,88 % (24. 11.). VIX futures v backwardation; zvýšené krátkodobé riziko. Tlak na financování a návratnost AI investic.",
+  "driver": "SOX −7,9 % (24. 11.). Výprodej AI akcií, riziko nových amerických cel a návratnost dluhově financovaných AI investic.",
   "news": [
+    {
+      "title": "FedWatch | Reuters: futures oceňují pravděpodobnost zvýšení sazeb v prosinci na 97 %, dalšího zvýšení v lednu na 63 %.",
+      "time": "25. 11. 2026, 11:08",
+      "publishedAtPrague": "25. 11. 2026, 11:08",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "macro",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/nasdaq-futures-slide-over-2-fresh-us-tariff-concerns-inflation-data-focus-2026-11-25/",
+      "eventKey": "fed-dec-jan-market-pricing-20261125",
+      "ndxRelevant": true,
+      "importanceScore": 78,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/nasdaq-futures-slide-over-2-fresh-us-tariff-concerns-inflation-data-focus-2026-11-25/"
+        }
+      ]
+    },
     {
       "title": "AI financování | Pětileté CDS CRWV 1 314 bb, ORCL 356 bb, SoftBank 501 bb. CDS Alphabet, SpaceX, CoreWeave a Oracle na rekordních úrovních dle S&P Global Market Intelligence.",
       "time": "25. 11. 2026, 04:26",
@@ -74,6 +93,25 @@
       "publicationTimeVerified": true,
       "ndxRelevant": true,
       "kind": "continuing"
+    },
+    {
+      "title": "TSLA | EU odložila jednání o celoevropském schválení FSD z 1. 12. na 15. 12. dle Evropské komise.",
+      "time": "25. 11. 2026, 11:46",
+      "publishedAtPrague": "25. 11. 2026, 11:46",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "ai_regulation",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/autos-transportation/eu-postpones-discussion-approve-teslas-self-driving-tech-2026-11-25/",
+      "eventKey": "tsla-eu-fsd-meeting-delay-20261125",
+      "ndxRelevant": true,
+      "importanceScore": 65,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/autos-transportation/eu-postpones-discussion-approve-teslas-self-driving-tech-2026-11-25/"
+        }
+      ]
     },
     {
       "title": "NVDA | Reuters: čínské úvěrové záznamy uvádějí až 764 AI serverů a modulů za 270 mil. USD a síťové vybavení za 31 mil. USD u firem spojených s bývalou majitelkou Megaspeed.",
@@ -171,33 +209,6 @@
       "importanceScore": 70
     },
     {
-      "title": "ADI Q4 | tržby 4,37 mld. USD vs. kons. Zacks 4,32 (beat 1,2 %); upr. EPS 4,06 USD vs. kons. 3,89 (beat 4,4 %). Q1: tržby 4,4 mld. USD; upr. EPS 3,82 vs. kons. 3,88 USD (miss 1,5 %). ADI −9,44 % (premarket 14:00).",
-      "time": "24. 11. 2026 13:01 CET",
-      "publishedAtPrague": "24. 11. 2026, 13:01",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "earnings_corporate",
-      "source": "Analog Devices / PRNewswire",
-      "url": "https://www.prnewswire.com/news-releases/analog-devices-reports-record-fourth-quarter-and-fiscal-2026-financial-results-302948778.html",
-      "sourceLinks": [
-        {
-          "label": "Analog Devices",
-          "url": "https://www.prnewswire.com/news-releases/analog-devices-reports-record-fourth-quarter-and-fiscal-2026-financial-results-302948778.html"
-        },
-        {
-          "label": "Zacks – konsenzus 20. 11.",
-          "url": "https://www.zacks.com/stock/news/3033225/adi-set-to-report-q4-earnings-whats-in-the-cards-for-the-stock"
-        },
-        {
-          "label": "Investor's Business Daily – Q1 konsenzus",
-          "url": "https://www.investors.com/news/technology/adi-stock-analog-devices-fiscal-q4-2026-report/"
-        }
-      ],
-      "eventKey": "adi-fy2026-q4-earnings-20261124",
-      "ndxRelevant": true,
-      "importanceScore": 80
-    },
-    {
       "eventKey": "us-cb-consumer-confidence-nov-2026-20261124",
       "title": "USA CB Consumer Confidence | listopad 103,3 vs. kons. Reuters 92,5 | říjen 91,9 | +11,4 b. Inflační očekávání na 12 měsíců 5,7 %.",
       "publishedAtPrague": "24. 11. 2026, 16:00",
@@ -240,29 +251,6 @@
       "importanceScore": 64
     },
     {
-      "title": "ADSK Q3 | tržby 2,16 mld. USD vs. kons. 2,13 (beat 1,4 %); upr. EPS 3,20 USD vs. kons. 3,07 (beat 4,2 %). Q4 střed výhledu tržeb 2,2275 mld. USD vs. kons. 2,211 (beat 0,7 %); upr. EPS 3,235 vs. kons. 3,20 USD (beat 1,1 %).",
-      "publishedAtPrague": "24. 11. 2026, 22:00",
-      "category": "earnings",
-      "source": "Autodesk / PRNewswire",
-      "url": "https://www.prnewswire.com/news-releases/autodesk-inc-announces-fiscal-2027-third-quarter-results-302949762.html",
-      "sourceLinks": [
-        {
-          "label": "Autodesk",
-          "url": "https://www.prnewswire.com/news-releases/autodesk-inc-announces-fiscal-2027-third-quarter-results-302949762.html"
-        },
-        {
-          "label": "Investing.com – konsenzus",
-          "url": "https://www.investing.com/news/transcripts/autodesk-shares-fall-despite-q3-earnings-beat-strong-guidance-5049017"
-        }
-      ],
-      "eventKey": "adsk-fy2027-q3-earnings-20261124",
-      "importanceScore": 62,
-      "time": "24. 11. 2026 22:00 CET",
-      "publicationTimeVerified": true,
-      "ndxRelevant": true,
-      "kind": "continuing"
-    },
-    {
       "title": "WDAY Q3 | tržby 2,705 mld. USD vs. kons. 2,69 (beat 0,6 %); upr. EPS 2,82 USD vs. kons. 2,74 (beat 2,9 %). AI nové ACV téměř 150 mil. USD, více než 3× y/y. Backlog 27,548 mld. USD vs. kons. 28,66 (miss 3,9 %). Q4 výhled předplatného 2,60 mld. USD.",
       "time": "24. 11. 2026 22:01 CET",
       "publishedAtPrague": "24. 11. 2026, 22:01",
@@ -290,6 +278,29 @@
       "importanceScore": 61
     },
     {
+      "title": "ADSK Q3 | tržby 2,16 mld. USD vs. kons. 2,13 (beat 1,4 %); upr. EPS 3,20 USD vs. kons. 3,07 (beat 4,2 %). Q4 střed výhledu tržeb 2,2275 mld. USD vs. kons. 2,211 (beat 0,7 %); upr. EPS 3,235 vs. kons. 3,20 USD (beat 1,1 %).",
+      "publishedAtPrague": "24. 11. 2026, 22:00",
+      "category": "earnings",
+      "source": "Autodesk / PRNewswire",
+      "url": "https://www.prnewswire.com/news-releases/autodesk-inc-announces-fiscal-2027-third-quarter-results-302949762.html",
+      "sourceLinks": [
+        {
+          "label": "Autodesk",
+          "url": "https://www.prnewswire.com/news-releases/autodesk-inc-announces-fiscal-2027-third-quarter-results-302949762.html"
+        },
+        {
+          "label": "Investing.com – konsenzus",
+          "url": "https://www.investing.com/news/transcripts/autodesk-shares-fall-despite-q3-earnings-beat-strong-guidance-5049017"
+        }
+      ],
+      "eventKey": "adsk-fy2027-q3-earnings-20261124",
+      "importanceScore": 62,
+      "time": "24. 11. 2026 22:00 CET",
+      "publicationTimeVerified": true,
+      "ndxRelevant": true,
+      "kind": "continuing"
+    },
+    {
       "eventKey": "china-critical-mineral-export-ban-suspension-20261124",
       "title": "Čína prodloužila pozastavení zákazu vývozu gallia, germania a antimonu do USA do 27. 1. 2027. Gallium a germanium se používají při výrobě polovodičů.",
       "publishedAtPrague": "24. 11. 2026, 15:41",
@@ -307,52 +318,6 @@
       "kind": "continuing",
       "ndxRelevant": true,
       "publicationTimeVerified": true
-    },
-    {
-      "title": "ANT −6,5 % na 82 USD v premarketu, pod IPO cenou 83 USD. AMZN a Alphabet patří mezi významné investory.",
-      "time": "24. 11. 2026 12:17 CET",
-      "publishedAtPrague": "24. 11. 2026, 12:17",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_infrastructure",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/anthropic-breaks-below-83-ipo-price-debut-rally-unravels-2026-11-24/",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/business/anthropic-breaks-below-83-ipo-price-debut-rally-unravels-2026-11-24/"
-        },
-        {
-          "label": "Fortune – podíly AMZN a Alphabet",
-          "url": "https://fortune.com/2026/11/19/anthropic-ipo-amazon-google-stake-windfall-nonvoting/"
-        }
-      ],
-      "eventKey": "anthropic-below-ipo-price-20261124",
-      "ndxRelevant": true,
-      "importanceScore": 68
-    },
-    {
-      "title": "Britská FCA upozorňuje na povinnost posoudit regulované finanční služby AI agentů. META spustila Muse v Británii 23. 11.",
-      "time": "24. 11. 2026 12:01 CET",
-      "publishedAtPrague": "24. 11. 2026, 12:01",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_regulation",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/finance/ai-agents-could-trigger-financial-regulation-tech-firms-uk-watchdog-says-2026-11-24/",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/business/finance/ai-agents-could-trigger-financial-regulation-tech-firms-uk-watchdog-says-2026-11-24/"
-        },
-        {
-          "label": "Meta",
-          "url": "https://about.fb.com/news/2026/11/introducing-muse-in-the-uk-a-personal-ai-agent-you-control/"
-        }
-      ],
-      "eventKey": "uk-fca-ai-agents-financial-services-20261124",
-      "ndxRelevant": true,
-      "importanceScore": 57
     },
     {
       "title": "HPQ Q4 | tržby 16,0 mld. USD vs. kons. 15,42 (beat 3,8 %); upr. EPS 0,83 vs. kons. 0,75 USD (beat 10,7 %), včetně 0,15 USD celních refundací. AI PC téměř 60 % dodávek; tlak nákladů na paměti a úložiště. Q1 výhled upr. EPS 0,66–0,76 USD vs. kons. 0,71.",
@@ -376,44 +341,6 @@
       "eventKey": "hpq-fy2026-q4-earnings-20261124",
       "ndxRelevant": true,
       "importanceScore": 48
-    },
-    {
-      "title": "FedWatch | Reuters: futures oceňují pravděpodobnost zvýšení sazeb v prosinci na 97 %, dalšího zvýšení v lednu na 63 %.",
-      "time": "25. 11. 2026, 11:08",
-      "publishedAtPrague": "25. 11. 2026, 11:08",
-      "publicationTimeVerified": true,
-      "kind": "new",
-      "category": "macro",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/nasdaq-futures-slide-over-2-fresh-us-tariff-concerns-inflation-data-focus-2026-11-25/",
-      "eventKey": "fed-dec-jan-market-pricing-20261125",
-      "ndxRelevant": true,
-      "importanceScore": 78,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/business/nasdaq-futures-slide-over-2-fresh-us-tariff-concerns-inflation-data-focus-2026-11-25/"
-        }
-      ]
-    },
-    {
-      "title": "TSLA | EU odložila jednání o celoevropském schválení FSD z 1. 12. na 15. 12. dle Evropské komise.",
-      "time": "25. 11. 2026, 11:46",
-      "publishedAtPrague": "25. 11. 2026, 11:46",
-      "publicationTimeVerified": true,
-      "kind": "new",
-      "category": "ai_regulation",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/autos-transportation/eu-postpones-discussion-approve-teslas-self-driving-tech-2026-11-25/",
-      "eventKey": "tsla-eu-fsd-meeting-delay-20261125",
-      "ndxRelevant": true,
-      "importanceScore": 65,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/business/autos-transportation/eu-postpones-discussion-approve-teslas-self-driving-tech-2026-11-25/"
-        }
-      ]
     }
   ],
   "leaders": [
@@ -436,7 +363,7 @@
   },
   "forecast": {
     "athReturnPercent": 18,
-    "athReason": "Nutný růst 19,64 %. MA50 breadth 42,6 % (2026-11-24, závěr); RSI14 39,24 (2026-11-24, závěr); VXN 36,42 (2026-11-24, závěr). Odhad 18 % zachován; slabý SOX a riziko financování AI.",
+    "athReason": "Nutný růst 19,64 %. MA50 breadth 42,6 % (2026-11-24, závěr); RSI14 39,24 (2026-11-24, závěr); VXN 36,42 (2026-11-24, závěr). Odhad 18 % zachován; tlak na AI akcie před PCE.",
     "downside": "−7 až −13 %",
     "downsideReason": "Modelový 25. percentil koncové ceny; VXN 36,42 (2026-11-24, závěr).",
     "downsideModel": {
@@ -455,6 +382,24 @@
     "timePrague": "25. 11. 2026 14:30 CET"
   },
   "archive": [
+    {
+      "time": "25. 11. 2026 13:04 CET",
+      "summary": "NDX 26 214,17 b. (−1,99 %, závěr 24. 11.). MA50 breadth 42,6 % (2026-11-24, závěr); RSI14 39,24 (2026-11-24, závěr); VXN 36,42 (2026-11-24, závěr). NQZ26 −2,82 % (12:38). Bez zásadní nové kvalifikované události. Ekonomika 6/6 ověřena; přímý Yahoo NQ=F HTTP 429, kontrola ostatních bloků vyžaduje obnovu.",
+      "sourceLinks": [
+        {
+          "label": "Yahoo Finance NDX",
+          "url": "https://finance.yahoo.com/quote/%5ENDX/history/"
+        },
+        {
+          "label": "Google Finance NQZ26",
+          "url": "https://www.google.com/finance/quote/NQZ26:CME_EMINIS"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/nasdaq-futures-slide-over-2-fresh-us-tariff-concerns-inflation-data-focus-2026-11-25/"
+        }
+      ]
+    },
     {
       "time": "25. 11. 2026 11:56 CET",
       "summary": "NDX 26 214,17 b. (−1,99 %, závěr 24. 11.). MA50 breadth 42,6 % (2026-11-24, závěr); RSI14 39,24 (2026-11-24, závěr); VXN 36,42 (2026-11-24, závěr). Ekonomika 6/6 ověřena. NQ=F kotace 25. 11. 2026 10:55; přímý Yahoo HTTP 429. FedWatch: 97 % prosincové zvýšení sazeb; TSLA FSD jednání EU odloženo na 15. 12.",
