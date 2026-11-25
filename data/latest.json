@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "25. 11. 2026 00:01 CET",
+  "updatedAtPrague": "25. 11. 2026 01:01 CET",
   "marketStatus": "Cash NDX: závěr 24. 11. 2026, seance ukončena.",
   "ndx": {
     "value": 26214.17,
@@ -12,7 +12,7 @@
     "trend": "→",
     "reason": "MA50 breadth 42,6 % (2026-11-24, závěr); RSI14 39,24 (2026-11-24, závěr); VXN 36,31 (2026-11-23, starší závěr)."
   },
-  "driver": "SOX −7,88 %; NVDA −5,86 % (závěr 24. 11.). DELL zvýšil výhled FY27 AI serverů na 78 z 74 mld. USD.",
+  "driver": "SOX −7,88 %; NVDA −5,86 % (závěr 24. 11.). DELL FY27 AI servery 78 vs. původních 74 mld. USD.",
   "news": [
     {
       "title": "DELL Q3 | tržby 54,94 mld. USD vs. kons. 49,32 (beat 11,4 %); upr. EPS 9,45 USD vs. kons. 6,59 (beat 43,4 %). Q4 výhled tržeb 56,3 mld. USD; EPS 8,40 USD. AI server backlog 132,3 mld. USD; nové objednávky 60,2 mld. USD. FY27 AI servery 78 vs. původních 74 mld. USD. FY27 výhled tržeb 202 mld. USD vs. kons. 194,48 (beat 3,9 %).",
@@ -149,7 +149,7 @@
       "time": "24. 11. 2026 23:29 CET",
       "publishedAtPrague": "24. 11. 2026, 23:29",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "ai_regulation",
       "source": "Reuters",
       "url": "https://www.reuters.com/world/china/huangs-return-nvidia-brings-open-weight-ai-debate-forefront-washington-2026-11-24/",
@@ -325,6 +325,29 @@
       "importanceScore": 66
     },
     {
+      "title": "HPQ Q4 | tržby 16,0 mld. USD vs. kons. 15,42 (beat 3,8 %); upr. EPS 0,83 vs. kons. 0,75 USD (beat 10,7 %), včetně 0,15 USD celních refundací. AI PC téměř 60 % dodávek; tlak nákladů na paměti a úložiště. Q1 výhled upr. EPS 0,66–0,76 USD vs. kons. 0,71.",
+      "time": "24. 11. 2026 22:15 CET",
+      "publishedAtPrague": "24. 11. 2026, 22:15",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "earnings",
+      "source": "HP Inc. / GlobeNewswire",
+      "url": "https://www.globenewswire.com/news-release/2026/11/24/3409888/0/en/hp-inc-reports-fiscal-2026-full-year-and-fourth-quarter-results-announces-dividend-increase.html",
+      "sourceLinks": [
+        {
+          "label": "HP Inc. / GlobeNewswire",
+          "url": "https://www.globenewswire.com/news-release/2026/11/24/3409888/0/en/hp-inc-reports-fiscal-2026-full-year-and-fourth-quarter-results-announces-dividend-increase.html"
+        },
+        {
+          "label": "WSJ – konsenzus",
+          "url": "https://www.wsj.com/business/earnings/hp-offers-prudent-guidance-amid-rising-memory-costs-37c67b9d"
+        }
+      ],
+      "eventKey": "hpq-fy2026-q4-earnings-20261124",
+      "ndxRelevant": true,
+      "importanceScore": 48
+    },
+    {
       "title": "Britská FCA upozorňuje na povinnost posoudit regulované finanční služby AI agentů. META spustila Muse v Británii 23. 11.",
       "time": "24. 11. 2026 12:01 CET",
       "publishedAtPrague": "24. 11. 2026, 12:01",
@@ -463,6 +486,24 @@
     "timePrague": "25. 11. 2026 14:30 CET"
   },
   "archive": [
+    {
+      "time": "25. 11. 2026 01:01 CET",
+      "summary": "NDX 26 214,17 b. (−1,99 %, závěr 24. 11.); SOX −7,88 %. HPQ: AI PC téměř 60 % dodávek; tlak nákladů pamětí a úložišť. MA50 breadth 42,6 % (2026-11-24, závěr); RSI14 39,24 (2026-11-24, závěr); VXN 36,31 (2026-11-23, starší závěr). Ekonomika 6/6 ověřena; kontroly 00:02: TE 9/9, Top 10, členství, futures maximum, RSI, breadth, VXN a Treasury. NQ=F kotace 24. 11. 22:59, Yahoo 429. 20 kandidátů, 0 expirovaných vyřazeno.",
+      "sourceLinks": [
+        {
+          "label": "Google Finance NDX",
+          "url": "https://www.google.com/finance/quote/NDX:INDEXNASDAQ"
+        },
+        {
+          "label": "HP Inc. / GlobeNewswire",
+          "url": "https://www.globenewswire.com/news-release/2026/11/24/3409888/0/en/hp-inc-reports-fiscal-2026-full-year-and-fourth-quarter-results-announces-dividend-increase.html"
+        },
+        {
+          "label": "FRED VXN",
+          "url": "https://fred.stlouisfed.org/series/VXNCLS"
+        }
+      ]
+    },
     {
       "time": "25. 11. 2026 00:01 CET",
       "summary": "NDX 26 214,17 b. (−1,99 %, závěr 24. 11.); SOX −7,88 %. Bílý dům potvrdil podporu open-weight AI; DELL FY27 výhled tržeb 202 mld. USD vs. kons. 194,48. MA50 breadth 42,6 % (2026-11-24, závěr); RSI14 39,24 (2026-11-24, závěr); VXN 36,31 (2026-11-23, starší závěr). 19 kandidátů, 1 expirovaných vyřazeno. Ekonomika 6/6 ověřena; TE 9/9 zdrojů otevřeno, 7 rozdílných snímků zachováno. NQ=F poslední kotace 22:52, Yahoo nedostupný.",
@@ -5090,6 +5131,14 @@
     {
       "name": "Reuters – open-weight AI",
       "url": "https://www.reuters.com/world/china/huangs-return-nvidia-brings-open-weight-ai-debate-forefront-washington-2026-11-24/"
+    },
+    {
+      "name": "HP Inc. – Q4 FY26",
+      "url": "https://www.globenewswire.com/news-release/2026/11/24/3409888/0/en/hp-inc-reports-fiscal-2026-full-year-and-fourth-quarter-results-announces-dividend-increase.html"
+    },
+    {
+      "name": "WSJ – HPQ konsenzus",
+      "url": "https://www.wsj.com/business/earnings/hp-offers-prudent-guidance-amid-rising-memory-costs-37c67b9d"
     }
   ]
 }
