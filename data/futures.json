@@ -5,12 +5,12 @@
   "source": "Yahoo Finance chart (unofficial)",
   "sourceUrl": "https://finance.yahoo.com/quote/NQ=F/",
   "quoteField": "regularMarketPrice",
-  "price": 25527.75,
-  "changePercent": -2.85,
-  "quotedAtUtc": "2026-11-25T12:54:30Z",
-  "quotedAtPrague": "25. 11. 2026 13:54",
-  "fetchedAtUtc": "2026-11-25T13:04:32.834595Z",
-  "checkedAtUtc": "2026-11-25T13:04:32.834595Z",
+  "price": 25561.75,
+  "changePercent": -2.72,
+  "quotedAtUtc": "2026-11-25T13:26:15Z",
+  "quotedAtPrague": "25. 11. 2026 14:26",
+  "fetchedAtUtc": "2026-11-25T13:36:16.384362Z",
+  "checkedAtUtc": "2026-11-25T13:36:16.384362Z",
   "quoteStatus": "delayed",
   "delayed": true
 }
