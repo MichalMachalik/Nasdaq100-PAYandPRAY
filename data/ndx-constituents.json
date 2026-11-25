@@ -2,7 +2,7 @@
   "index": "NDX",
   "sourceUrl": "https://api.nasdaq.com/api/quote/list-type/nasdaq100",
   "sourceDate": "2026-11-24",
-  "checkedAtUtc": "2026-11-25T09:05:08.270900Z",
+  "checkedAtUtc": "2026-11-25T09:46:46.846036Z",
   "symbols": [
     "AAPL",
     "ABNB",
