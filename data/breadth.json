@@ -16,7 +16,7 @@
   "methodology": "Current Nasdaq-100 securities (not point-in-time members); provider's end-of-day percentage above own 50-session SMA and reported security denominator. Integer count reconstructed from the rounded percentage. Different providers may use different pricing histories and basket rules.",
   "feedStatus": "published",
   "constituentsSourceUrl": "https://api.nasdaq.com/api/quote/list-type/nasdaq100",
-  "constituentsCheckedAtUtc": "2026-11-25T21:57:01.605265Z",
+  "constituentsCheckedAtUtc": "2026-11-25T22:59:20.837890Z",
   "collectedAtUtc": "2026-11-25T21:05:31.165785Z",
-  "checkedAtUtc": "2026-11-25T21:57:11.696293Z"
+  "checkedAtUtc": "2026-11-25T22:59:30.278432Z"
 }
