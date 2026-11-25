@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "25. 11. 2026 13:04 CET",
+  "updatedAtPrague": "25. 11. 2026 14:03 CET",
   "marketStatus": "Cash NDX: závěr 24. 11. 2026, seance ukončena.",
   "ndx": {
     "value": 26214.17,
@@ -12,7 +12,7 @@
     "trend": "↘",
     "reason": "MA50 breadth 42,6 % (2026-11-24, závěr); RSI14 39,24 (2026-11-24, závěr); VXN 36,42 (2026-11-24, závěr)."
   },
-  "driver": "SOX −7,9 % (24. 11.). Výprodej AI akcií, riziko nových amerických cel a návratnost dluhově financovaných AI investic.",
+  "driver": "Výprodej polovodičů před PCE; riziko nových amerických cel a návratnost dluhově financovaných AI investic.",
   "news": [
     {
       "title": "FedWatch | Reuters: futures oceňují pravděpodobnost zvýšení sazeb v prosinci na 97 %, dalšího zvýšení v lednu na 63 %.",
@@ -251,6 +251,29 @@
       "importanceScore": 64
     },
     {
+      "title": "ADSK Q3 | tržby 2,16 mld. USD vs. kons. 2,13 (beat 1,4 %); upr. EPS 3,20 USD vs. kons. 3,07 (beat 4,2 %). Q4 střed výhledu tržeb 2,2275 mld. USD vs. kons. 2,211 (beat 0,7 %); upr. EPS 3,235 vs. kons. 3,20 USD (beat 1,1 %).",
+      "publishedAtPrague": "24. 11. 2026, 22:00",
+      "category": "earnings",
+      "source": "Autodesk / PRNewswire",
+      "url": "https://www.prnewswire.com/news-releases/autodesk-inc-announces-fiscal-2027-third-quarter-results-302949762.html",
+      "sourceLinks": [
+        {
+          "label": "Autodesk",
+          "url": "https://www.prnewswire.com/news-releases/autodesk-inc-announces-fiscal-2027-third-quarter-results-302949762.html"
+        },
+        {
+          "label": "Investing.com – konsenzus",
+          "url": "https://www.investing.com/news/transcripts/autodesk-shares-fall-despite-q3-earnings-beat-strong-guidance-5049017"
+        }
+      ],
+      "eventKey": "adsk-fy2027-q3-earnings-20261124",
+      "importanceScore": 62,
+      "time": "24. 11. 2026 22:00 CET",
+      "publicationTimeVerified": true,
+      "ndxRelevant": true,
+      "kind": "continuing"
+    },
+    {
       "title": "WDAY Q3 | tržby 2,705 mld. USD vs. kons. 2,69 (beat 0,6 %); upr. EPS 2,82 USD vs. kons. 2,74 (beat 2,9 %). AI nové ACV téměř 150 mil. USD, více než 3× y/y. Backlog 27,548 mld. USD vs. kons. 28,66 (miss 3,9 %). Q4 výhled předplatného 2,60 mld. USD.",
       "time": "24. 11. 2026 22:01 CET",
       "publishedAtPrague": "24. 11. 2026, 22:01",
@@ -276,29 +299,6 @@
       "eventKey": "wday-fy2027-q3-earnings-20261124",
       "ndxRelevant": true,
       "importanceScore": 61
-    },
-    {
-      "title": "ADSK Q3 | tržby 2,16 mld. USD vs. kons. 2,13 (beat 1,4 %); upr. EPS 3,20 USD vs. kons. 3,07 (beat 4,2 %). Q4 střed výhledu tržeb 2,2275 mld. USD vs. kons. 2,211 (beat 0,7 %); upr. EPS 3,235 vs. kons. 3,20 USD (beat 1,1 %).",
-      "publishedAtPrague": "24. 11. 2026, 22:00",
-      "category": "earnings",
-      "source": "Autodesk / PRNewswire",
-      "url": "https://www.prnewswire.com/news-releases/autodesk-inc-announces-fiscal-2027-third-quarter-results-302949762.html",
-      "sourceLinks": [
-        {
-          "label": "Autodesk",
-          "url": "https://www.prnewswire.com/news-releases/autodesk-inc-announces-fiscal-2027-third-quarter-results-302949762.html"
-        },
-        {
-          "label": "Investing.com – konsenzus",
-          "url": "https://www.investing.com/news/transcripts/autodesk-shares-fall-despite-q3-earnings-beat-strong-guidance-5049017"
-        }
-      ],
-      "eventKey": "adsk-fy2027-q3-earnings-20261124",
-      "importanceScore": 62,
-      "time": "24. 11. 2026 22:00 CET",
-      "publicationTimeVerified": true,
-      "ndxRelevant": true,
-      "kind": "continuing"
     },
     {
       "eventKey": "china-critical-mineral-export-ban-suspension-20261124",
@@ -341,6 +341,25 @@
       "eventKey": "hpq-fy2026-q4-earnings-20261124",
       "ndxRelevant": true,
       "importanceScore": 48
+    },
+    {
+      "title": "TSLA/SPCX | Scénář JPMorgan: případná fúze může otevřít SpaceX cestu do S&P 500 a vyvolat pasivní nákupy přibližně 10 % volně obchodovaných akcií SPCX.",
+      "time": "24. 11. 2026, 17:29",
+      "publishedAtPrague": "24. 11. 2026, 17:29",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "corporate",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/legal/government/possible-tesla-merger-could-aid-spacexs-sp-500-entry-jp-morgan-says-2026-11-24/",
+      "eventKey": "tsla-spcx-jpm-index-eligibility-scenario-20261124",
+      "ndxRelevant": true,
+      "importanceScore": 45,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/legal/government/possible-tesla-merger-could-aid-spacexs-sp-500-entry-jp-morgan-says-2026-11-24/"
+        }
+      ]
     }
   ],
   "leaders": [
@@ -363,7 +382,7 @@
   },
   "forecast": {
     "athReturnPercent": 18,
-    "athReason": "Nutný růst 19,64 %. MA50 breadth 42,6 % (2026-11-24, závěr); RSI14 39,24 (2026-11-24, závěr); VXN 36,42 (2026-11-24, závěr). Odhad 18 % zachován; tlak na AI akcie před PCE.",
+    "athReason": "Nutný růst 19,64 %. MA50 breadth 42,6 % (2026-11-24, závěr); RSI14 39,24 (2026-11-24, závěr); VXN 36,42 (2026-11-24, závěr). Odhad 18 % zachován před PCE.",
     "downside": "−7 až −13 %",
     "downsideReason": "Modelový 25. percentil koncové ceny; VXN 36,42 (2026-11-24, závěr).",
     "downsideModel": {
@@ -382,6 +401,24 @@
     "timePrague": "25. 11. 2026 14:30 CET"
   },
   "archive": [
+    {
+      "time": "25. 11. 2026 14:03 CET",
+      "summary": "NDX 26 214,17 b. (−1,99 %, závěr 24. 11.). MA50 breadth 42,6 % (2026-11-24, závěr); RSI14 39,24 (2026-11-24, závěr); VXN 36,42 (2026-11-24, závěr). NQZ26 −2,90 % (13:34). JPMorgan: scénář fúze TSLA/SPCX. Ekonomika 6/6 ověřena. Yahoo NQ=F HTTP 429; poslední kotace 12:55 vyžaduje obnovu.",
+      "sourceLinks": [
+        {
+          "label": "Investing.com NDX",
+          "url": "https://www.investing.com/indices/nq-100-historical-data"
+        },
+        {
+          "label": "Google Finance NQZ26",
+          "url": "https://www.google.com/finance/quote/NQZ26:CME_EMINIS?hl=en"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/legal/government/possible-tesla-merger-could-aid-spacexs-sp-500-entry-jp-morgan-says-2026-11-24/"
+        }
+      ]
+    },
     {
       "time": "25. 11. 2026 13:04 CET",
       "summary": "NDX 26 214,17 b. (−1,99 %, závěr 24. 11.). MA50 breadth 42,6 % (2026-11-24, závěr); RSI14 39,24 (2026-11-24, závěr); VXN 36,42 (2026-11-24, závěr). NQZ26 −2,82 % (12:38). Bez zásadní nové kvalifikované události. Ekonomika 6/6 ověřena; přímý Yahoo NQ=F HTTP 429, kontrola ostatních bloků vyžaduje obnovu.",
@@ -5287,6 +5324,10 @@
     {
       "name": "Reuters – VIX futures",
       "url": "https://www.reuters.com/business/buy-stock-dip-options-market-signals-say-wait-2026-11-25/"
+    },
+    {
+      "name": "Reuters",
+      "url": "https://www.reuters.com/legal/government/possible-tesla-merger-could-aid-spacexs-sp-500-entry-jp-morgan-says-2026-11-24/"
     }
   ]
 }
