@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "25. 11. 2026 08:59 CET",
+  "updatedAtPrague": "25. 11. 2026 10:03 CET",
   "marketStatus": "Cash NDX: závěr 24. 11. 2026, seance ukončena.",
   "ndx": {
     "value": 26214.17,
@@ -221,33 +221,6 @@
       "importanceScore": 64
     },
     {
-      "title": "WDAY Q3 | tržby 2,705 mld. USD vs. kons. 2,69 (beat 0,6 %); upr. EPS 2,82 USD vs. kons. 2,74 (beat 2,9 %). AI nové ACV téměř 150 mil. USD, více než 3× y/y. Backlog 27,548 mld. USD vs. kons. 28,66 (miss 3,9 %). Q4 výhled předplatného 2,60 mld. USD.",
-      "time": "24. 11. 2026 22:01 CET",
-      "publishedAtPrague": "24. 11. 2026, 22:01",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "earnings",
-      "source": "Workday / PRNewswire",
-      "url": "https://www.prnewswire.com/news-releases/workday-announces-fiscal-2027-third-quarter-financial-results-302949793.html",
-      "sourceLinks": [
-        {
-          "label": "Workday",
-          "url": "https://www.prnewswire.com/news-releases/workday-announces-fiscal-2027-third-quarter-financial-results-302949793.html"
-        },
-        {
-          "label": "WSJ – konsenzus",
-          "url": "https://www.wsj.com/business/earnings/workday-raises-full-year-subscription-outlook-after-sales-rise-625a54e3"
-        },
-        {
-          "label": "Barron's – backlog",
-          "url": "https://www.barrons.com/articles/workday-earnings-stock-price-23ed29a7"
-        }
-      ],
-      "eventKey": "wday-fy2027-q3-earnings-20261124",
-      "ndxRelevant": true,
-      "importanceScore": 61
-    },
-    {
       "title": "ADSK Q3 | tržby 2,16 mld. USD vs. kons. 2,13 (beat 1,4 %); upr. EPS 3,20 USD vs. kons. 3,07 (beat 4,2 %). Q4 střed výhledu tržeb 2,2275 mld. USD vs. kons. 2,211 (beat 0,7 %); upr. EPS 3,235 vs. kons. 3,20 USD (beat 1,1 %).",
       "publishedAtPrague": "24. 11. 2026, 22:00",
       "category": "earnings",
@@ -296,6 +269,33 @@
       "eventKey": "us-chip-premarket-pullback-20261124",
       "ndxRelevant": true,
       "importanceScore": 72
+    },
+    {
+      "title": "WDAY Q3 | tržby 2,705 mld. USD vs. kons. 2,69 (beat 0,6 %); upr. EPS 2,82 USD vs. kons. 2,74 (beat 2,9 %). AI nové ACV téměř 150 mil. USD, více než 3× y/y. Backlog 27,548 mld. USD vs. kons. 28,66 (miss 3,9 %). Q4 výhled předplatného 2,60 mld. USD.",
+      "time": "24. 11. 2026 22:01 CET",
+      "publishedAtPrague": "24. 11. 2026, 22:01",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "earnings",
+      "source": "Workday / PRNewswire",
+      "url": "https://www.prnewswire.com/news-releases/workday-announces-fiscal-2027-third-quarter-financial-results-302949793.html",
+      "sourceLinks": [
+        {
+          "label": "Workday",
+          "url": "https://www.prnewswire.com/news-releases/workday-announces-fiscal-2027-third-quarter-financial-results-302949793.html"
+        },
+        {
+          "label": "WSJ – konsenzus",
+          "url": "https://www.wsj.com/business/earnings/workday-raises-full-year-subscription-outlook-after-sales-rise-625a54e3"
+        },
+        {
+          "label": "Barron's – backlog",
+          "url": "https://www.barrons.com/articles/workday-earnings-stock-price-23ed29a7"
+        }
+      ],
+      "eventKey": "wday-fy2027-q3-earnings-20261124",
+      "ndxRelevant": true,
+      "importanceScore": 61
     },
     {
       "eventKey": "china-critical-mineral-export-ban-suspension-20261124",
@@ -384,25 +384,6 @@
       "eventKey": "hpq-fy2026-q4-earnings-20261124",
       "ndxRelevant": true,
       "importanceScore": 48
-    },
-    {
-      "title": "Evropské technologie −0,87 % (10:20 CET) po pondělním růstu přes 4 %. Infineon a ASM International ztrácejí přes 2 %.",
-      "time": "24. 11. 2026 09:27 CET",
-      "publishedAtPrague": "24. 11. 2026, 09:27",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "semiconductor_market",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/markets/europe/europes-stoxx-600-subdued-after-ai-driven-rally-2026-11-24/",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/markets/europe/europes-stoxx-600-subdued-after-ai-driven-rally-2026-11-24/"
-        }
-      ],
-      "eventKey": "europe-tech-rally-fades-20261124",
-      "ndxRelevant": true,
-      "importanceScore": 46
     }
   ],
   "leaders": [
@@ -444,6 +425,24 @@
     "timePrague": "25. 11. 2026 14:30 CET"
   },
   "archive": [
+    {
+      "time": "25. 11. 2026 10:03 CET",
+      "summary": "NDX 26 214,17 b. (−1,99 %, závěr 24. 11.). Bez zásadních nových událostí; pokračuje výprodej čipů. MA50 breadth 42,6 % (2026-11-24, závěr); RSI14 39,24 (2026-11-24, závěr); VXN 36,42 (2026-11-24, závěr). Ekonomika 6/6 ověřena; sedm updaterů doloženo logy 09:00, TE 9/9. NQ=F kotace 08:49 překročila 65 min; přímý Yahoo HTTP 429. NQZ26 samostatně −1,51 % v 09:39.",
+      "sourceLinks": [
+        {
+          "label": "YCharts NDX",
+          "url": "https://ycharts.com/indices/%5ENDX/level"
+        },
+        {
+          "label": "Reuters – globální trhy",
+          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-25/"
+        },
+        {
+          "label": "Google Finance NQZ26",
+          "url": "https://www.google.com/finance/quote/NQZ26:CME_EMINIS"
+        }
+      ]
+    },
     {
       "time": "25. 11. 2026 08:59 CET",
       "summary": "NDX 26 214,17 b. (−1,99 %, závěr 24. 11.). Bez zásadních nových událostí; pokračuje výprodej asijských čipů. MA50 breadth 42,6 % (2026-11-24, závěr); RSI14 39,24 (2026-11-24, závěr); VXN 36,42 (2026-11-24, závěr). Ekonomika 6/6 zdrojově prověřena; kontroly sedmi updaterů doloženy logy 08:04, TE 9/9. NQ=F kotace 25. 11. 2026 07:53; přímý Yahoo HTTP 429.",
