@@ -1,18 +1,18 @@
 {
-  "updatedAtPrague": "25. 11. 2026 18:01 CET",
+  "updatedAtPrague": "25. 11. 2026 18:57 CET",
   "marketStatus": "Cash NDX: otevřeno, intradenní seance 25. 11. 2026.",
   "ndx": {
-    "value": 25066.11,
-    "changePercent": -4.38,
+    "value": 25616.23,
+    "changePercent": -2.28,
     "ath": 31361.37,
-    "asOf": "25. 11. 2026, 17:42:47 CET"
+    "asOf": "25. 11. 2026, 18:48:57 CET"
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "↘",
+    "trend": "↗",
     "reason": "MA50 breadth 42,6 % (2026-11-24, závěr); RSI14 39,24 (2026-11-24, závěr); VXN 36,42 (2026-11-24, závěr)."
   },
-  "driver": "Výprodej čipů a AI infrastruktury pokračuje. NVDA a MSFT prohlubují ztráty. Vyšší náklady financování a přetrvávající inflace zatěžují valuace.",
+  "driver": "Cash NDX zmírnil intradenní ztrátu z 4,38 % na 2,28 %. NVDA a MSFT omezují pokles; náklady AI infrastruktury, inflace a návrh cel zatěžují valuace.",
   "news": [
     {
       "title": "USA | návrh cel vůči 14 obchodním partnerům včetně EU, Tchaj-wanu a Číny; pro Čínu až 20 %. Mexiko a Norsko zatím vyloučeny.",
@@ -65,7 +65,7 @@
       "category": "ai_regulation",
       "time": "25. 11. 2026, 17:29",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "source": "Reuters",
       "ndxRelevant": true,
       "sourceLinks": [
@@ -107,7 +107,7 @@
       "category": "ai_regulation",
       "time": "25. 11. 2026, 17:31",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "source": "Reuters",
       "ndxRelevant": true,
       "sourceLinks": [
@@ -411,16 +411,16 @@
   "leaders": [
     {
       "ticker": "NVDA",
-      "changePercent": -8.66,
-      "impact": "negativní; 17:46 CET"
+      "changePercent": -6.85,
+      "impact": "negativní; 18:44 CET"
     },
     {
       "ticker": "MSFT",
-      "changePercent": -3.39,
-      "impact": "negativní; 17:33 CET"
+      "changePercent": -1.57,
+      "impact": "negativní; 18:48 CET"
     }
   ],
-  "macro": "Core PCE | říjen: 3,3 % y/y | září: 3,1 % | +0,2 p. b.",
+  "macro": "US10Y | 24. 11.: 4,91 % | 23. 11.: 4,92 % | −1 bb",
   "regulation": null,
   "technical": {
     "support": null,
@@ -428,7 +428,7 @@
   },
   "forecast": {
     "athReturnPercent": 16,
-    "athReason": "Potřebný růst 25,11 %. Odhad beze změny; přetrvává kreditní, inflační a celní riziko.",
+    "athReason": "Potřebný růst 22,43 %. Odhad beze změny; přetrvává kreditní, inflační a celní riziko.",
     "downside": "−7 až −13 %",
     "downsideReason": "Modelový 25. percentil koncové ceny; VXN 36,42 (2026-11-24, závěr).",
     "downsideModel": {
@@ -447,6 +447,24 @@
     "timePrague": "25. 11. 2026 20:00 CET"
   },
   "archive": [
+    {
+      "time": "25. 11. 2026 18:57 CET",
+      "summary": "Cash NDX 25 616,23 b. (−2,28 %, 18:48 CET); NVDA −6,85 % (18:44), MSFT −1,57 % (18:48). Ztráty zmírnily. Bez nových kvalifikovaných událostí. Odhad návratu na maximum 16 %.",
+      "sourceLinks": [
+        {
+          "label": "Google Finance NDX",
+          "url": "https://www.google.com/finance/quote/NDX:INDEXNASDAQ?hl=en"
+        },
+        {
+          "label": "Google Finance NVDA",
+          "url": "https://www.google.com/finance/quote/NVDA:NASDAQ"
+        },
+        {
+          "label": "Google Finance MSFT",
+          "url": "https://www.google.com/finance/quote/MSFT:NASDAQ"
+        }
+      ]
+    },
     {
       "time": "25. 11. 2026 18:01 CET",
       "summary": "NDX 25 066,11 b. (−4,38 %, 17:42 CET). NVDA −8,66 % (17:46). Senátor Booker žádá NVDA o dokumentaci k návratu CEO a exportním pravidlům. Odhad návratu na maximum 16 %.",
@@ -4412,6 +4430,10 @@
     {
       "time": "25. 11. 2026 18:01 CET",
       "ndx": 25066.11
+    },
+    {
+      "time": "25. 11. 2026 18:57 CET",
+      "ndx": 25616.23
     }
   ],
   "sources": [
