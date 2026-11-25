@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "25. 11. 2026 04:00 CET",
+  "updatedAtPrague": "25. 11. 2026 05:04 CET",
   "marketStatus": "Cash NDX: závěr 24. 11. 2026, seance ukončena.",
   "ndx": {
     "value": 26214.17,
@@ -10,7 +10,7 @@
   "sentiment": {
     "label": "Medvědí",
     "trend": "→",
-    "reason": "MA50 breadth 42,6 % (2026-11-24, závěr); RSI14 39,24 (2026-11-24, závěr); VXN 36,31 (2026-11-23, starší závěr)."
+    "reason": "MA50 breadth 42,6 % (2026-11-24, závěr); RSI14 39,24 (2026-11-24, závěr); VXN 36,42 (2026-11-24, závěr)."
   },
   "driver": "SOX −7,88 %; NVDA −5,86 % (závěr 24. 11.). KOSPI až −5,3 %, Tchaj-wan až −5,1 % (Reuters 25. 11., 02:50).",
   "news": [
@@ -233,7 +233,7 @@
       "time": "24. 11. 2026 22:01 CET",
       "publishedAtPrague": "24. 11. 2026, 22:01",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "earnings",
       "source": "Workday / PRNewswire",
       "url": "https://www.prnewswire.com/news-releases/workday-announces-fiscal-2027-third-quarter-financial-results-302949793.html",
@@ -325,29 +325,6 @@
       "importanceScore": 68
     },
     {
-      "title": "Britská FCA upozorňuje na povinnost posoudit regulované finanční služby AI agentů. META spustila Muse v Británii 23. 11.",
-      "time": "24. 11. 2026 12:01 CET",
-      "publishedAtPrague": "24. 11. 2026, 12:01",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_regulation",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/finance/ai-agents-could-trigger-financial-regulation-tech-firms-uk-watchdog-says-2026-11-24/",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/business/finance/ai-agents-could-trigger-financial-regulation-tech-firms-uk-watchdog-says-2026-11-24/"
-        },
-        {
-          "label": "Meta",
-          "url": "https://about.fb.com/news/2026/11/introducing-muse-in-the-uk-a-personal-ai-agent-you-control/"
-        }
-      ],
-      "eventKey": "uk-fca-ai-agents-financial-services-20261124",
-      "ndxRelevant": true,
-      "importanceScore": 57
-    },
-    {
       "title": "HPQ Q4 | tržby 16,0 mld. USD vs. kons. 15,42 (beat 3,8 %); upr. EPS 0,83 vs. kons. 0,75 USD (beat 10,7 %), včetně 0,15 USD celních refundací. AI PC téměř 60 % dodávek; tlak nákladů na paměti a úložiště. Q1 výhled upr. EPS 0,66–0,76 USD vs. kons. 0,71.",
       "time": "24. 11. 2026 22:15 CET",
       "publishedAtPrague": "24. 11. 2026, 22:15",
@@ -371,21 +348,25 @@
       "importanceScore": 48
     },
     {
-      "eventKey": "malaysia-ai-chip-export-compliance-20261124",
-      "title": "Malajsie bude kontrolovat dodržování amerických exportních podmínek AI čipů u firem z USA; spolupráce s čínskými investory pokračuje.",
-      "time": "24. 11. 2026, 04:16 CET",
-      "publishedAtPrague": "24. 11. 2026, 04:16",
+      "title": "Britská FCA upozorňuje na povinnost posoudit regulované finanční služby AI agentů. META spustila Muse v Británii 23. 11.",
+      "time": "24. 11. 2026 12:01 CET",
+      "publishedAtPrague": "24. 11. 2026, 12:01",
       "publicationTimeVerified": true,
       "kind": "continuing",
       "category": "ai_regulation",
       "source": "Reuters",
-      "url": "https://www.reuters.com/business/media-telecom/us-chip-curbs-wont-impact-malaysias-china-ties-pm-says-2026-11-24/",
+      "url": "https://www.reuters.com/business/finance/ai-agents-could-trigger-financial-regulation-tech-firms-uk-watchdog-says-2026-11-24/",
       "sourceLinks": [
         {
           "label": "Reuters",
-          "url": "https://www.reuters.com/business/media-telecom/us-chip-curbs-wont-impact-malaysias-china-ties-pm-says-2026-11-24/"
+          "url": "https://www.reuters.com/business/finance/ai-agents-could-trigger-financial-regulation-tech-firms-uk-watchdog-says-2026-11-24/"
+        },
+        {
+          "label": "Meta",
+          "url": "https://about.fb.com/news/2026/11/introducing-muse-in-the-uk-a-personal-ai-agent-you-control/"
         }
       ],
+      "eventKey": "uk-fca-ai-agents-financial-services-20261124",
       "ndxRelevant": true,
       "importanceScore": 57
     },
@@ -429,25 +410,43 @@
   },
   "forecast": {
     "athReturnPercent": 18,
-    "athReason": "Nutný růst 19,64 %. MA50 breadth 42,6 % (2026-11-24, závěr); RSI14 39,24 (2026-11-24, závěr); VXN 36,31 (2026-11-23, starší závěr). Odhad 18 % zachován; slabý SOX a exportní riziko.",
+    "athReason": "Nutný růst 19,64 %. MA50 breadth 42,6 % (2026-11-24, závěr); RSI14 39,24 (2026-11-24, závěr); VXN 36,42 (2026-11-24, závěr). Odhad 18 % zachován; slabý SOX a exportní riziko.",
     "downside": "−7 až −13 %",
-    "downsideReason": "Modelový 25. percentil koncové ceny; VXN 36,31 (2026-11-23, starší závěr).",
+    "downsideReason": "Modelový 25. percentil koncové ceny; VXN 36,42 (2026-11-24, závěr).",
     "downsideModel": {
       "id": "ndx-evidence-volatility-v1",
       "dataFile": "data/risk-model.json",
-      "vxnAsOf": "2026-11-23",
+      "vxnAsOf": "2026-11-24",
       "cashNdxReferenceAsOf": "2026-11-20",
       "modelQuantile": 0.25,
-      "month1Pct": 7.34,
-      "month3Pct": 12.97,
+      "month1Pct": 7.36,
+      "month3Pct": 13.01,
       "warning": "Modelová 25% hladina koncové ceny při nulovém očekávaném jednoduchém výnosu a konstantní opční volatilitě; nikoli empiricky kalibrovaná pravděpodobnost ani záruka."
     }
   },
   "catalyst": {
-    "event": "USA HDP Q3 (druhý odhad) a PCE říjen",
+    "event": "USA HDP Q3 (druhý odhad), podnikové zisky a PCE říjen",
     "timePrague": "25. 11. 2026 14:30 CET"
   },
   "archive": [
+    {
+      "time": "25. 11. 2026 05:04 CET",
+      "summary": "NDX 26 214,17 b. (−1,99 %, závěr 24. 11.). Bez zásadních nových kvalifikovaných zpráv. MA50 breadth 42,6 % (2026-11-24, závěr); RSI14 39,24 (2026-11-24, závěr); VXN 36,42 (2026-11-24, závěr). Sedm zdrojových kontrol doloženo logy 04:01; NQ=F kotace 04:34, kontrola 04:44; TE 9/9; ekonomika 6/6.",
+      "sourceLinks": [
+        {
+          "label": "YCharts NDX",
+          "url": "https://ycharts.com/indices/%5ENDX/level"
+        },
+        {
+          "label": "YCharts VXN",
+          "url": "https://ycharts.com/indices/%5EVXN/level"
+        },
+        {
+          "label": "Reuters Asie",
+          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-25/"
+        }
+      ]
+    },
     {
       "time": "25. 11. 2026 04:00 CET",
       "summary": "NDX 26 214,17 b. (−1,99 %, závěr 24. 11.); WDAY Q3 tržby 2,705 mld. USD, upr. EPS 2,82 USD. MA50 breadth 42,6 % (2026-11-24, závěr); RSI14 39,24 (2026-11-24, závěr); VXN 36,31 (2026-11-23, starší závěr). Ekonomika 6/6; TE 9/9 kontrola 03:34; sedm zdrojových kontrol z 03:03 doloženo logy. NQ=F kotace 25. 11. 2026 02:52, Yahoo 429; překročen limit 65 minut.",
