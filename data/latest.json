@@ -1,18 +1,18 @@
 {
-  "updatedAtPrague": "25. 11. 2026 16:00 CET",
+  "updatedAtPrague": "25. 11. 2026 17:04 CET",
   "marketStatus": "Cash NDX: otevřeno, intradenní seance 25. 11. 2026.",
   "ndx": {
-    "value": 25051.54,
-    "changePercent": -4.44,
+    "value": 25091.46,
+    "changePercent": -4.28,
     "ath": 31361.37,
-    "asOf": "25. 11. 2026, intradenní; ověřeno 16:00 CET (čas kotace neuveden)"
+    "asOf": "25. 11. 2026, 16:54:54 CET"
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "↘",
+    "trend": "→",
     "reason": "MA50 breadth 42,6 % (2026-11-24, závěr); RSI14 39,24 (2026-11-24, závěr); VXN 36,42 (2026-11-24, závěr)."
   },
-  "driver": "Výprodej AI akcií po otevření cash trhu. Core PCE 3,3 % y/y, silnější HDP a návrh cel zvyšují riziko vyšších sazeb a tlaku na marže.",
+  "driver": "Výprodej AI akcií pokračuje. Výnos dluhopisů CRWV splatných v říjnu 2031 dosáhl 17,91 %. Náklady financování AI infrastruktury a návrh amerických cel zvyšují tlak na valuace.",
   "news": [
     {
       "title": "USA | návrh cel vůči 14 obchodním partnerům včetně EU, Tchaj-wanu a Číny; pro Čínu až 20 %. Mexiko a Norsko zatím vyloučeny.",
@@ -57,48 +57,6 @@
       ]
     },
     {
-      "title": "USA HDP Q3 | 4,3 % SAAR vs. kons. 3,5 %; předběžně 3,4 %. Revize +0,9 p. b. Růst investic a spotřeby.",
-      "time": "25. 11. 2026, 14:30",
-      "publishedAtPrague": "25. 11. 2026, 14:30",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "macro",
-      "source": "BEA",
-      "url": "https://www.bea.gov/news/2026/gdp-second-estimate-and-corporate-profits-3rd-quarter-2026",
-      "eventKey": "us-gdp-q3-second-20261125",
-      "ndxRelevant": true,
-      "importanceScore": 75,
-      "sourceLinks": [
-        {
-          "label": "BEA",
-          "url": "https://www.bea.gov/news/2026/gdp-second-estimate-and-corporate-profits-3rd-quarter-2026"
-        },
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/business/nasdaq-futures-slide-over-2-fresh-us-tariff-concerns-inflation-data-focus-2026-11-25/"
-        }
-      ]
-    },
-    {
-      "title": "FedWatch | Reuters: futures oceňují pravděpodobnost zvýšení sazeb v prosinci na 97 %, dalšího zvýšení v lednu na 63 %.",
-      "time": "25. 11. 2026, 11:08",
-      "publishedAtPrague": "25. 11. 2026, 11:08",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "macro",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/nasdaq-futures-slide-over-2-fresh-us-tariff-concerns-inflation-data-focus-2026-11-25/",
-      "eventKey": "fed-dec-jan-market-pricing-20261125",
-      "ndxRelevant": true,
-      "importanceScore": 78,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/business/nasdaq-futures-slide-over-2-fresh-us-tariff-concerns-inflation-data-focus-2026-11-25/"
-        }
-      ]
-    },
-    {
       "title": "AI financování | Pětileté CDS CRWV 1 314 bb, ORCL 356 bb, SoftBank 501 bb. CDS Alphabet, SpaceX, CoreWeave a Oracle na rekordních úrovních dle S&P Global Market Intelligence.",
       "time": "25. 11. 2026, 04:26",
       "publishedAtPrague": "25. 11. 2026, 04:26",
@@ -114,25 +72,10 @@
         {
           "label": "Reuters",
           "url": "https://www.reuters.com/business/media-telecom/global-markets-ai-cds-urgent-2026-11-25/"
-        }
-      ]
-    },
-    {
-      "title": "ASML | Nizozemská vláda usiluje o zablokování amerického návrhu MATCH Act, který by zpřísnil omezení exportu DUV litografie do Číny. Čína má tvořit přibližně 20 % letošních tržeb ASML.",
-      "time": "25. 11. 2026, 09:35",
-      "publishedAtPrague": "25. 11. 2026, 09:35",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_regulation",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/china/dutch-government-working-prevent-passing-us-match-bill-minister-says-2026-11-25/",
-      "eventKey": "asml-dutch-government-match-act-20261125",
-      "ndxRelevant": true,
-      "importanceScore": 74,
-      "sourceLinks": [
+        },
         {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/world/china/dutch-government-working-prevent-passing-us-match-bill-minister-says-2026-11-25/"
+          "label": "Investing.com – dluhopisy CRWV",
+          "url": "https://www.investing.com/news/stock-market-news/coreweave-bonds-plunge-as-2031-yield-surges-to-1791-shares-drop-10-5051151"
         }
       ]
     },
@@ -160,21 +103,82 @@
       "kind": "continuing"
     },
     {
-      "title": "TSLA | EU odložila jednání o celoevropském schválení FSD z 1. 12. na 15. 12. dle Evropské komise.",
-      "time": "25. 11. 2026, 11:46",
-      "publishedAtPrague": "25. 11. 2026, 11:46",
+      "title": "NVDA | Schumer obvinil CEO Jensena Huanga z porušení exportních pravidel USA a požaduje zpřísnění legislativy. NVDA se bezprostředně nevyjádřila; veřejné slyšení v Senátu 3. 12.",
+      "time": "24. 11. 2026 19:46 CET",
+      "publishedAtPrague": "24. 11. 2026, 19:46",
       "publicationTimeVerified": true,
       "kind": "continuing",
       "category": "ai_regulation",
       "source": "Reuters",
-      "url": "https://www.reuters.com/business/autos-transportation/eu-postpones-discussion-approve-teslas-self-driving-tech-2026-11-25/",
-      "eventKey": "tsla-eu-fsd-meeting-delay-20261125",
-      "ndxRelevant": true,
-      "importanceScore": 65,
+      "url": "https://www.reuters.com/world/china/schumer-accuses-nvidia-ceo-violating-us-export-control-law-2026-11-24/",
       "sourceLinks": [
         {
           "label": "Reuters",
-          "url": "https://www.reuters.com/business/autos-transportation/eu-postpones-discussion-approve-teslas-self-driving-tech-2026-11-25/"
+          "url": "https://www.reuters.com/world/china/schumer-accuses-nvidia-ceo-violating-us-export-control-law-2026-11-24/"
+        }
+      ],
+      "eventKey": "nvda-schumer-export-accusation-20261124",
+      "ndxRelevant": true,
+      "importanceScore": 83
+    },
+    {
+      "title": "FedWatch | Reuters: futures oceňují pravděpodobnost zvýšení sazeb v prosinci na 97 %, dalšího zvýšení v lednu na 63 %.",
+      "time": "25. 11. 2026, 11:08",
+      "publishedAtPrague": "25. 11. 2026, 11:08",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "macro",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/nasdaq-futures-slide-over-2-fresh-us-tariff-concerns-inflation-data-focus-2026-11-25/",
+      "eventKey": "fed-dec-jan-market-pricing-20261125",
+      "ndxRelevant": true,
+      "importanceScore": 78,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/nasdaq-futures-slide-over-2-fresh-us-tariff-concerns-inflation-data-focus-2026-11-25/"
+        }
+      ]
+    },
+    {
+      "title": "USA HDP Q3 | 4,3 % SAAR vs. kons. 3,5 %; předběžně 3,4 %. Revize +0,9 p. b. Růst investic a spotřeby.",
+      "time": "25. 11. 2026, 14:30",
+      "publishedAtPrague": "25. 11. 2026, 14:30",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "macro",
+      "source": "BEA",
+      "url": "https://www.bea.gov/news/2026/gdp-second-estimate-and-corporate-profits-3rd-quarter-2026",
+      "eventKey": "us-gdp-q3-second-20261125",
+      "ndxRelevant": true,
+      "importanceScore": 75,
+      "sourceLinks": [
+        {
+          "label": "BEA",
+          "url": "https://www.bea.gov/news/2026/gdp-second-estimate-and-corporate-profits-3rd-quarter-2026"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/nasdaq-futures-slide-over-2-fresh-us-tariff-concerns-inflation-data-focus-2026-11-25/"
+        }
+      ]
+    },
+    {
+      "title": "ASML | Nizozemská vláda usiluje o zablokování amerického návrhu MATCH Act, který by zpřísnil omezení exportu DUV litografie do Číny. Čína má tvořit přibližně 20 % letošních tržeb ASML.",
+      "time": "25. 11. 2026, 09:35",
+      "publishedAtPrague": "25. 11. 2026, 09:35",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "ai_regulation",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/china/dutch-government-working-prevent-passing-us-match-bill-minister-says-2026-11-25/",
+      "eventKey": "asml-dutch-government-match-act-20261125",
+      "ndxRelevant": true,
+      "importanceScore": 74,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/china/dutch-government-working-prevent-passing-us-match-bill-minister-says-2026-11-25/"
         }
       ]
     },
@@ -198,44 +202,6 @@
       ]
     },
     {
-      "title": "NVDA | Schumer obvinil CEO Jensena Huanga z porušení exportních pravidel USA a požaduje zpřísnění legislativy. NVDA se bezprostředně nevyjádřila; veřejné slyšení v Senátu 3. 12.",
-      "time": "24. 11. 2026 19:46 CET",
-      "publishedAtPrague": "24. 11. 2026, 19:46",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_regulation",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/china/schumer-accuses-nvidia-ceo-violating-us-export-control-law-2026-11-24/",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/world/china/schumer-accuses-nvidia-ceo-violating-us-export-control-law-2026-11-24/"
-        }
-      ],
-      "eventKey": "nvda-schumer-export-accusation-20261124",
-      "ndxRelevant": true,
-      "importanceScore": 83
-    },
-    {
-      "title": "VIX futures | Krátkodobé kontrakty nad vzdálenějšími (backwardation). Reuters: zvýšené krátkodobé riziko při výprodeji AI akcií.",
-      "time": "25. 11. 2026, 11:03",
-      "publishedAtPrague": "25. 11. 2026, 11:03",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "market_risk",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/buy-stock-dip-options-market-signals-say-wait-2026-11-25/",
-      "eventKey": "vix-futures-backwardation-ai-selloff-20261125",
-      "ndxRelevant": true,
-      "importanceScore": 61,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/business/buy-stock-dip-options-market-signals-say-wait-2026-11-25/"
-        }
-      ]
-    },
-    {
       "title": "Asie | KOSPI až −6,4 %, TAIEX až −8,6 %, MSCI Asia-Pacific ex-Japan −3,2 %. Výprodej čipových trhů pokračuje; riziko nových amerických cel.",
       "time": "25. 11. 2026, 02:50 CET",
       "publishedAtPrague": "25. 11. 2026, 02:50",
@@ -255,21 +221,21 @@
       "importanceScore": 70
     },
     {
-      "title": "USA jobless claims | 189 tis. vs. kons. 200 tis.; předchozí 202 tis. (−13 tis.).",
-      "time": "25. 11. 2026, 14:46",
-      "publishedAtPrague": "25. 11. 2026, 14:46",
+      "title": "TSLA | EU odložila jednání o celoevropském schválení FSD z 1. 12. na 15. 12. dle Evropské komise.",
+      "time": "25. 11. 2026, 11:46",
+      "publishedAtPrague": "25. 11. 2026, 11:46",
       "publicationTimeVerified": true,
       "kind": "continuing",
-      "category": "macro",
+      "category": "ai_regulation",
       "source": "Reuters",
-      "url": "https://www.reuters.com/world/us/us-weekly-jobless-claims-fall-more-than-expected-2026-11-25/",
-      "eventKey": "us-jobless-claims-20261121",
+      "url": "https://www.reuters.com/business/autos-transportation/eu-postpones-discussion-approve-teslas-self-driving-tech-2026-11-25/",
+      "eventKey": "tsla-eu-fsd-meeting-delay-20261125",
       "ndxRelevant": true,
-      "importanceScore": 55,
+      "importanceScore": 65,
       "sourceLinks": [
         {
           "label": "Reuters",
-          "url": "https://www.reuters.com/world/us/us-weekly-jobless-claims-fall-more-than-expected-2026-11-25/"
+          "url": "https://www.reuters.com/business/autos-transportation/eu-postpones-discussion-approve-teslas-self-driving-tech-2026-11-25/"
         }
       ]
     },
@@ -291,6 +257,48 @@
       "eventKey": "white-house-open-weight-ai-support-20261124",
       "ndxRelevant": true,
       "importanceScore": 64
+    },
+    {
+      "title": "ADSK Q3 | tržby 2,16 mld. USD vs. kons. 2,13 (beat 1,4 %); upr. EPS 3,20 USD vs. kons. 3,07 (beat 4,2 %). Q4 střed výhledu tržeb 2,2275 mld. USD vs. kons. 2,211 (beat 0,7 %); upr. EPS 3,235 vs. kons. 3,20 USD (beat 1,1 %).",
+      "publishedAtPrague": "24. 11. 2026, 22:00",
+      "category": "earnings",
+      "source": "Autodesk / PRNewswire",
+      "url": "https://www.prnewswire.com/news-releases/autodesk-inc-announces-fiscal-2027-third-quarter-results-302949762.html",
+      "sourceLinks": [
+        {
+          "label": "Autodesk",
+          "url": "https://www.prnewswire.com/news-releases/autodesk-inc-announces-fiscal-2027-third-quarter-results-302949762.html"
+        },
+        {
+          "label": "Investing.com – konsenzus",
+          "url": "https://www.investing.com/news/transcripts/autodesk-shares-fall-despite-q3-earnings-beat-strong-guidance-5049017"
+        }
+      ],
+      "eventKey": "adsk-fy2027-q3-earnings-20261124",
+      "importanceScore": 62,
+      "time": "24. 11. 2026 22:00 CET",
+      "publicationTimeVerified": true,
+      "ndxRelevant": true,
+      "kind": "continuing"
+    },
+    {
+      "title": "VIX futures | Krátkodobé kontrakty nad vzdálenějšími (backwardation). Reuters: zvýšené krátkodobé riziko při výprodeji AI akcií.",
+      "time": "25. 11. 2026, 11:03",
+      "publishedAtPrague": "25. 11. 2026, 11:03",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "market_risk",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/buy-stock-dip-options-market-signals-say-wait-2026-11-25/",
+      "eventKey": "vix-futures-backwardation-ai-selloff-20261125",
+      "ndxRelevant": true,
+      "importanceScore": 61,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/buy-stock-dip-options-market-signals-say-wait-2026-11-25/"
+        }
+      ]
     },
     {
       "title": "WDAY Q3 | tržby 2,705 mld. USD vs. kons. 2,69 (beat 0,6 %); upr. EPS 2,82 USD vs. kons. 2,74 (beat 2,9 %). AI nové ACV téměř 150 mil. USD, více než 3× y/y. Backlog 27,548 mld. USD vs. kons. 28,66 (miss 3,9 %). Q4 výhled předplatného 2,60 mld. USD.",
@@ -320,27 +328,23 @@
       "importanceScore": 61
     },
     {
-      "title": "ADSK Q3 | tržby 2,16 mld. USD vs. kons. 2,13 (beat 1,4 %); upr. EPS 3,20 USD vs. kons. 3,07 (beat 4,2 %). Q4 střed výhledu tržeb 2,2275 mld. USD vs. kons. 2,211 (beat 0,7 %); upr. EPS 3,235 vs. kons. 3,20 USD (beat 1,1 %).",
-      "publishedAtPrague": "24. 11. 2026, 22:00",
-      "category": "earnings",
-      "source": "Autodesk / PRNewswire",
-      "url": "https://www.prnewswire.com/news-releases/autodesk-inc-announces-fiscal-2027-third-quarter-results-302949762.html",
+      "title": "USA jobless claims | 189 tis. vs. kons. 200 tis.; předchozí 202 tis. (−13 tis.).",
+      "time": "25. 11. 2026, 14:46",
+      "publishedAtPrague": "25. 11. 2026, 14:46",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "macro",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/us/us-weekly-jobless-claims-fall-more-than-expected-2026-11-25/",
+      "eventKey": "us-jobless-claims-20261121",
+      "ndxRelevant": true,
+      "importanceScore": 55,
       "sourceLinks": [
         {
-          "label": "Autodesk",
-          "url": "https://www.prnewswire.com/news-releases/autodesk-inc-announces-fiscal-2027-third-quarter-results-302949762.html"
-        },
-        {
-          "label": "Investing.com – konsenzus",
-          "url": "https://www.investing.com/news/transcripts/autodesk-shares-fall-despite-q3-earnings-beat-strong-guidance-5049017"
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/us/us-weekly-jobless-claims-fall-more-than-expected-2026-11-25/"
         }
-      ],
-      "eventKey": "adsk-fy2027-q3-earnings-20261124",
-      "importanceScore": 62,
-      "time": "24. 11. 2026 22:00 CET",
-      "publicationTimeVerified": true,
-      "ndxRelevant": true,
-      "kind": "continuing"
+      ]
     },
     {
       "title": "HPQ Q4 | tržby 16,0 mld. USD vs. kons. 15,42 (beat 3,8 %); upr. EPS 0,83 vs. kons. 0,75 USD (beat 10,7 %), včetně 0,15 USD celních refundací. AI PC téměř 60 % dodávek; tlak nákladů na paměti a úložiště. Q1 výhled upr. EPS 0,66–0,76 USD vs. kons. 0,71.",
@@ -388,13 +392,13 @@
   "leaders": [
     {
       "ticker": "NVDA",
-      "changePercent": -8.75,
-      "impact": "negativní; 15:36 CET"
+      "changePercent": -7.31,
+      "impact": "negativní; 16:37 CET"
     },
     {
       "ticker": "MSFT",
-      "changePercent": -2.04,
-      "impact": "negativní; 15:30 CET"
+      "changePercent": -2.8,
+      "impact": "negativní; 16:35 CET"
     }
   ],
   "macro": "Core PCE | říjen: 3,3 % y/y | září: 3,1 % | +0,2 p. b.",
@@ -405,7 +409,7 @@
   },
   "forecast": {
     "athReturnPercent": 16,
-    "athReason": "Potřebný růst 25,19 %. Odhad 17 → 16 % po prohloubení výprodeje AI akcií a růstu vzdálenosti od maxima.",
+    "athReason": "Potřebný růst 24,99 %. Odhad beze změny; trvá kreditní, inflační a celní riziko.",
     "downside": "−7 až −13 %",
     "downsideReason": "Modelový 25. percentil koncové ceny; VXN 36,42 (2026-11-24, závěr).",
     "downsideModel": {
@@ -424,6 +428,24 @@
     "timePrague": "25. 11. 2026 20:00 CET"
   },
   "archive": [
+    {
+      "time": "25. 11. 2026 17:04 CET",
+      "summary": "NDX 25 091,46 b. (−4,28 %, 16:54 CET). NVDA −7,31 % (16:37). CRWV: výnos dluhopisu 2031 17,91 %. Přetrvává tlak na financování AI. Odhad návratu na maximum 16 %.",
+      "sourceLinks": [
+        {
+          "label": "Google Finance NDX",
+          "url": "https://www.google.com/finance/quote/NDX:INDEXNASDAQ"
+        },
+        {
+          "label": "Google Finance NVDA",
+          "url": "https://www.google.com/finance/quote/NVDA:NASDAQ"
+        },
+        {
+          "label": "Investing.com – CRWV",
+          "url": "https://www.investing.com/news/stock-market-news/coreweave-bonds-plunge-as-2031-yield-surges-to-1791-shares-drop-10-5051151"
+        }
+      ]
+    },
     {
       "time": "25. 11. 2026 16:00 CET",
       "summary": "NDX 25 051,54 b. (−4,44 %, intradenní, kontrola 16:00). MA50 breadth 42,6 % (2026-11-24, závěr); RSI14 39,24 (2026-11-24, závěr); VXN 36,42 (2026-11-24, závěr). NVDA −8,75 % v 15:36. Pokračuje výprodej AI akcií. HDP USA Q3 2,3 % y/y, revize potvrzena. Odhad návratu na maximum 16 %.",
@@ -4345,6 +4367,10 @@
     {
       "time": "25. 11. 2026 16:00 CET",
       "ndx": 25051.54
+    },
+    {
+      "time": "25. 11. 2026 17:04 CET",
+      "ndx": 25091.46
     }
   ],
   "sources": [
@@ -5415,6 +5441,18 @@
     {
       "name": "FRED GDPC1",
       "url": "https://fred.stlouisfed.org/series/GDPC1"
+    },
+    {
+      "name": "Investing.com – CRWV dluhopisy",
+      "url": "https://www.investing.com/news/stock-market-news/coreweave-bonds-plunge-as-2031-yield-surges-to-1791-shares-drop-10-5051151"
+    },
+    {
+      "name": "Reuters – AI financování",
+      "url": "https://www.reuters.com/business/ai-stocks-slide-fears-over-infrastructure-buildout-costs-2026-11-25/"
+    },
+    {
+      "name": "Reuters – PCE",
+      "url": "https://www.reuters.com/business/us-inflation-rises-further-october-2026-11-25/"
     }
   ]
 }
