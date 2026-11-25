@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "25. 11. 2026 08:02 CET",
+  "updatedAtPrague": "25. 11. 2026 08:59 CET",
   "marketStatus": "Cash NDX: závěr 24. 11. 2026, seance ukončena.",
   "ndx": {
     "value": 26214.17,
@@ -12,7 +12,7 @@
     "trend": "→",
     "reason": "MA50 breadth 42,6 % (2026-11-24, závěr); RSI14 39,24 (2026-11-24, závěr); VXN 36,42 (2026-11-24, závěr)."
   },
-  "driver": "SOX −7,88 % (24. 11.); KOSPI až −6,4 %, TAIEX až −8,6 % (25. 11.). Kreditní riziko financování AI infrastruktury: CRWV CDS 1 314 bb, ORCL 356 bb.",
+  "driver": "SOX −7,88 % (24. 11.). Výprodej asijských polovodičů pokračuje; riziko nových amerických cel a financování AI infrastruktury.",
   "news": [
     {
       "title": "AI financování | Pětileté CDS CRWV 1 314 bb, ORCL 356 bb, SoftBank 501 bb. CDS Alphabet, SpaceX, CoreWeave a Oracle na rekordních úrovních dle S&P Global Market Intelligence.",
@@ -61,7 +61,7 @@
       "time": "25. 11. 2026, 07:13",
       "publishedAtPrague": "25. 11. 2026, 07:13",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "ai_regulation",
       "source": "Reuters",
       "url": "https://www.reuters.com/business/finance/alice-huang-linked-firms-listed-270-million-ai-servers-china-records-show-2026-11-25/",
@@ -221,6 +221,33 @@
       "importanceScore": 64
     },
     {
+      "title": "WDAY Q3 | tržby 2,705 mld. USD vs. kons. 2,69 (beat 0,6 %); upr. EPS 2,82 USD vs. kons. 2,74 (beat 2,9 %). AI nové ACV téměř 150 mil. USD, více než 3× y/y. Backlog 27,548 mld. USD vs. kons. 28,66 (miss 3,9 %). Q4 výhled předplatného 2,60 mld. USD.",
+      "time": "24. 11. 2026 22:01 CET",
+      "publishedAtPrague": "24. 11. 2026, 22:01",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "earnings",
+      "source": "Workday / PRNewswire",
+      "url": "https://www.prnewswire.com/news-releases/workday-announces-fiscal-2027-third-quarter-financial-results-302949793.html",
+      "sourceLinks": [
+        {
+          "label": "Workday",
+          "url": "https://www.prnewswire.com/news-releases/workday-announces-fiscal-2027-third-quarter-financial-results-302949793.html"
+        },
+        {
+          "label": "WSJ – konsenzus",
+          "url": "https://www.wsj.com/business/earnings/workday-raises-full-year-subscription-outlook-after-sales-rise-625a54e3"
+        },
+        {
+          "label": "Barron's – backlog",
+          "url": "https://www.barrons.com/articles/workday-earnings-stock-price-23ed29a7"
+        }
+      ],
+      "eventKey": "wday-fy2027-q3-earnings-20261124",
+      "ndxRelevant": true,
+      "importanceScore": 61
+    },
+    {
       "title": "ADSK Q3 | tržby 2,16 mld. USD vs. kons. 2,13 (beat 1,4 %); upr. EPS 3,20 USD vs. kons. 3,07 (beat 4,2 %). Q4 střed výhledu tržeb 2,2275 mld. USD vs. kons. 2,211 (beat 0,7 %); upr. EPS 3,235 vs. kons. 3,20 USD (beat 1,1 %).",
       "publishedAtPrague": "24. 11. 2026, 22:00",
       "category": "earnings",
@@ -271,33 +298,6 @@
       "importanceScore": 72
     },
     {
-      "title": "WDAY Q3 | tržby 2,705 mld. USD vs. kons. 2,69 (beat 0,6 %); upr. EPS 2,82 USD vs. kons. 2,74 (beat 2,9 %). AI nové ACV téměř 150 mil. USD, více než 3× y/y. Backlog 27,548 mld. USD vs. kons. 28,66 (miss 3,9 %). Q4 výhled předplatného 2,60 mld. USD.",
-      "time": "24. 11. 2026 22:01 CET",
-      "publishedAtPrague": "24. 11. 2026, 22:01",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "earnings",
-      "source": "Workday / PRNewswire",
-      "url": "https://www.prnewswire.com/news-releases/workday-announces-fiscal-2027-third-quarter-financial-results-302949793.html",
-      "sourceLinks": [
-        {
-          "label": "Workday",
-          "url": "https://www.prnewswire.com/news-releases/workday-announces-fiscal-2027-third-quarter-financial-results-302949793.html"
-        },
-        {
-          "label": "WSJ – konsenzus",
-          "url": "https://www.wsj.com/business/earnings/workday-raises-full-year-subscription-outlook-after-sales-rise-625a54e3"
-        },
-        {
-          "label": "Barron's – backlog",
-          "url": "https://www.barrons.com/articles/workday-earnings-stock-price-23ed29a7"
-        }
-      ],
-      "eventKey": "wday-fy2027-q3-earnings-20261124",
-      "ndxRelevant": true,
-      "importanceScore": 61
-    },
-    {
       "eventKey": "china-critical-mineral-export-ban-suspension-20261124",
       "title": "Čína prodloužila pozastavení zákazu vývozu gallia, germania a antimonu do USA do 27. 1. 2027. Gallium a germanium se používají při výrobě polovodičů.",
       "publishedAtPrague": "24. 11. 2026, 15:41",
@@ -340,29 +340,6 @@
       "importanceScore": 68
     },
     {
-      "title": "HPQ Q4 | tržby 16,0 mld. USD vs. kons. 15,42 (beat 3,8 %); upr. EPS 0,83 vs. kons. 0,75 USD (beat 10,7 %), včetně 0,15 USD celních refundací. AI PC téměř 60 % dodávek; tlak nákladů na paměti a úložiště. Q1 výhled upr. EPS 0,66–0,76 USD vs. kons. 0,71.",
-      "time": "24. 11. 2026 22:15 CET",
-      "publishedAtPrague": "24. 11. 2026, 22:15",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "earnings",
-      "source": "HP Inc. / GlobeNewswire",
-      "url": "https://www.globenewswire.com/news-release/2026/11/24/3409888/0/en/hp-inc-reports-fiscal-2026-full-year-and-fourth-quarter-results-announces-dividend-increase.html",
-      "sourceLinks": [
-        {
-          "label": "HP Inc. / GlobeNewswire",
-          "url": "https://www.globenewswire.com/news-release/2026/11/24/3409888/0/en/hp-inc-reports-fiscal-2026-full-year-and-fourth-quarter-results-announces-dividend-increase.html"
-        },
-        {
-          "label": "WSJ – konsenzus",
-          "url": "https://www.wsj.com/business/earnings/hp-offers-prudent-guidance-amid-rising-memory-costs-37c67b9d"
-        }
-      ],
-      "eventKey": "hpq-fy2026-q4-earnings-20261124",
-      "ndxRelevant": true,
-      "importanceScore": 48
-    },
-    {
       "title": "Britská FCA upozorňuje na povinnost posoudit regulované finanční služby AI agentů. META spustila Muse v Británii 23. 11.",
       "time": "24. 11. 2026 12:01 CET",
       "publishedAtPrague": "24. 11. 2026, 12:01",
@@ -384,6 +361,29 @@
       "eventKey": "uk-fca-ai-agents-financial-services-20261124",
       "ndxRelevant": true,
       "importanceScore": 57
+    },
+    {
+      "title": "HPQ Q4 | tržby 16,0 mld. USD vs. kons. 15,42 (beat 3,8 %); upr. EPS 0,83 vs. kons. 0,75 USD (beat 10,7 %), včetně 0,15 USD celních refundací. AI PC téměř 60 % dodávek; tlak nákladů na paměti a úložiště. Q1 výhled upr. EPS 0,66–0,76 USD vs. kons. 0,71.",
+      "time": "24. 11. 2026 22:15 CET",
+      "publishedAtPrague": "24. 11. 2026, 22:15",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "earnings",
+      "source": "HP Inc. / GlobeNewswire",
+      "url": "https://www.globenewswire.com/news-release/2026/11/24/3409888/0/en/hp-inc-reports-fiscal-2026-full-year-and-fourth-quarter-results-announces-dividend-increase.html",
+      "sourceLinks": [
+        {
+          "label": "HP Inc. / GlobeNewswire",
+          "url": "https://www.globenewswire.com/news-release/2026/11/24/3409888/0/en/hp-inc-reports-fiscal-2026-full-year-and-fourth-quarter-results-announces-dividend-increase.html"
+        },
+        {
+          "label": "WSJ – konsenzus",
+          "url": "https://www.wsj.com/business/earnings/hp-offers-prudent-guidance-amid-rising-memory-costs-37c67b9d"
+        }
+      ],
+      "eventKey": "hpq-fy2026-q4-earnings-20261124",
+      "ndxRelevant": true,
+      "importanceScore": 48
     },
     {
       "title": "Evropské technologie −0,87 % (10:20 CET) po pondělním růstu přes 4 %. Infineon a ASM International ztrácejí přes 2 %.",
@@ -444,6 +444,24 @@
     "timePrague": "25. 11. 2026 14:30 CET"
   },
   "archive": [
+    {
+      "time": "25. 11. 2026 08:59 CET",
+      "summary": "NDX 26 214,17 b. (−1,99 %, závěr 24. 11.). Bez zásadních nových událostí; pokračuje výprodej asijských čipů. MA50 breadth 42,6 % (2026-11-24, závěr); RSI14 39,24 (2026-11-24, závěr); VXN 36,42 (2026-11-24, závěr). Ekonomika 6/6 zdrojově prověřena; kontroly sedmi updaterů doloženy logy 08:04, TE 9/9. NQ=F kotace 25. 11. 2026 07:53; přímý Yahoo HTTP 429.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq NDX",
+          "url": "https://indexes.nasdaqomx.com/Index/Overview/NDX"
+        },
+        {
+          "label": "Reuters – globální trhy",
+          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-25/"
+        },
+        {
+          "label": "BEA – kalendář",
+          "url": "https://www.bea.gov/news/schedule"
+        }
+      ]
+    },
     {
       "time": "25. 11. 2026 08:02 CET",
       "summary": "NDX 26 214,17 b. (−1,99 %, závěr 24. 11.). Reuters 07:13: čínské financování AI serverů za 270 mil. USD u firem spojených s Megaspeed. MA50 breadth 42,6 % (2026-11-24, závěr); RSI14 39,24 (2026-11-24, závěr); VXN 36,42 (2026-11-24, závěr). Ekonomika 6/6 ověřena; NQ=F kotace 25. 11. 2026 06:54, stáří 68 min; Yahoo HTTP 429 při přímé kontrole. Sedm updaterů doloženo logy 07:04; TE 9/9.",
