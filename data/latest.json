@@ -376,6 +376,44 @@
       "eventKey": "hpq-fy2026-q4-earnings-20261124",
       "ndxRelevant": true,
       "importanceScore": 48
+    },
+    {
+      "title": "FedWatch | Reuters: futures oceňují pravděpodobnost zvýšení sazeb v prosinci na 97 %, dalšího zvýšení v lednu na 63 %.",
+      "time": "25. 11. 2026, 11:08",
+      "publishedAtPrague": "25. 11. 2026, 11:08",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "macro",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/nasdaq-futures-slide-over-2-fresh-us-tariff-concerns-inflation-data-focus-2026-11-25/",
+      "eventKey": "fed-dec-jan-market-pricing-20261125",
+      "ndxRelevant": true,
+      "importanceScore": 78,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/nasdaq-futures-slide-over-2-fresh-us-tariff-concerns-inflation-data-focus-2026-11-25/"
+        }
+      ]
+    },
+    {
+      "title": "TSLA | EU odložila jednání o celoevropském schválení FSD z 1. 12. na 15. 12. dle Evropské komise.",
+      "time": "25. 11. 2026, 11:46",
+      "publishedAtPrague": "25. 11. 2026, 11:46",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "ai_regulation",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/autos-transportation/eu-postpones-discussion-approve-teslas-self-driving-tech-2026-11-25/",
+      "eventKey": "tsla-eu-fsd-meeting-delay-20261125",
+      "ndxRelevant": true,
+      "importanceScore": 65,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/autos-transportation/eu-postpones-discussion-approve-teslas-self-driving-tech-2026-11-25/"
+        }
+      ]
     }
   ],
   "leaders": [
@@ -419,19 +457,19 @@
   "archive": [
     {
       "time": "25. 11. 2026 11:56 CET",
-      "summary": "NDX 26 214,17 b. (−1,99 %, závěr 24. 11.). VIX futures v backwardation. NQZ26 −2,50 % v 11:40 CET. MA50 breadth 42,6 % (2026-11-24, závěr); RSI14 39,24 (2026-11-24, závěr); VXN 36,42 (2026-11-24, závěr). Ekonomika 6/6 ověřena. NQ=F kotace 25. 11. 2026 10:55; přímý Yahoo HTTP 429.",
+      "summary": "NDX 26 214,17 b. (−1,99 %, závěr 24. 11.). MA50 breadth 42,6 % (2026-11-24, závěr); RSI14 39,24 (2026-11-24, závěr); VXN 36,42 (2026-11-24, závěr). Ekonomika 6/6 ověřena. NQ=F kotace 25. 11. 2026 10:55; přímý Yahoo HTTP 429. FedWatch: 97 % prosincové zvýšení sazeb; TSLA FSD jednání EU odloženo na 15. 12.",
       "sourceLinks": [
         {
           "label": "Google Finance NDX",
           "url": "https://www.google.com/finance/quote/NDX:INDEXNASDAQ"
         },
         {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/business/buy-stock-dip-options-market-signals-say-wait-2026-11-25/"
+          "label": "Reuters – FedWatch",
+          "url": "https://www.reuters.com/business/nasdaq-futures-slide-over-2-fresh-us-tariff-concerns-inflation-data-focus-2026-11-25/"
         },
         {
-          "label": "Google Finance NQZ26",
-          "url": "https://www.google.com/finance/quote/NQZ26:CME_EMINIS"
+          "label": "Reuters – TSLA",
+          "url": "https://www.reuters.com/business/autos-transportation/eu-postpones-discussion-approve-teslas-self-driving-tech-2026-11-25/"
         }
       ]
     },
