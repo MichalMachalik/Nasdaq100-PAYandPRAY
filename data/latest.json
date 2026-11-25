@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "25. 11. 2026 10:03 CET",
+  "updatedAtPrague": "25. 11. 2026 11:03 CET",
   "marketStatus": "Cash NDX: závěr 24. 11. 2026, seance ukončena.",
   "ndx": {
     "value": 26214.17,
@@ -9,10 +9,10 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→",
+    "trend": "↘",
     "reason": "MA50 breadth 42,6 % (2026-11-24, závěr); RSI14 39,24 (2026-11-24, závěr); VXN 36,42 (2026-11-24, závěr)."
   },
-  "driver": "SOX −7,88 % (24. 11.). Výprodej asijských polovodičů pokračuje; riziko nových amerických cel a financování AI infrastruktury.",
+  "driver": "SOX −7,88 % (24. 11.). Pokračující výprodej polovodičů a tlak na návratnost investic do AI; riziko nových amerických cel.",
   "news": [
     {
       "title": "AI financování | Pětileté CDS CRWV 1 314 bb, ORCL 356 bb, SoftBank 501 bb. CDS Alphabet, SpaceX, CoreWeave a Oracle na rekordních úrovních dle S&P Global Market Intelligence.",
@@ -30,6 +30,25 @@
         {
           "label": "Reuters",
           "url": "https://www.reuters.com/business/media-telecom/global-markets-ai-cds-urgent-2026-11-25/"
+        }
+      ]
+    },
+    {
+      "title": "ASML | Nizozemská vláda usiluje o zablokování amerického návrhu MATCH Act, který by zpřísnil omezení exportu DUV litografie do Číny. Čína má tvořit přibližně 20 % letošních tržeb ASML.",
+      "time": "25. 11. 2026, 09:35",
+      "publishedAtPrague": "25. 11. 2026, 09:35",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "ai_regulation",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/china/dutch-government-working-prevent-passing-us-match-bill-minister-says-2026-11-25/",
+      "eventKey": "asml-dutch-government-match-act-20261125",
+      "ndxRelevant": true,
+      "importanceScore": 74,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/china/dutch-government-working-prevent-passing-us-match-bill-minister-says-2026-11-25/"
         }
       ]
     },
@@ -131,25 +150,6 @@
       "eventKey": "asia-chip-market-selloff-20261125",
       "ndxRelevant": true,
       "importanceScore": 70
-    },
-    {
-      "title": "ASML | Nizozemští poslanci vyzvali vládu k odporu proti americkému návrhu MATCH Act, který by zpřísnil export litografie do Číny. Čína má letos tvořit přibližně 20 % tržeb ASML.",
-      "publishedAtPrague": "24. 11. 2026, 22:21",
-      "category": "ai_regulation",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/china/dutch-lawmakers-urge-government-resist-us-match-bill-targeting-asml-2026-11-24/",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/world/china/dutch-lawmakers-urge-government-resist-us-match-bill-targeting-asml-2026-11-24/"
-        }
-      ],
-      "eventKey": "asml-dutch-match-act-resistance-20261124",
-      "importanceScore": 73,
-      "time": "24. 11. 2026 22:21 CET",
-      "publicationTimeVerified": true,
-      "ndxRelevant": true,
-      "kind": "continuing"
     },
     {
       "title": "ADI Q4 | tržby 4,37 mld. USD vs. kons. Zacks 4,32 (beat 1,2 %); upr. EPS 4,06 USD vs. kons. 3,89 (beat 4,4 %). Q1: tržby 4,4 mld. USD; upr. EPS 3,82 vs. kons. 3,88 USD (miss 1,5 %). ADI −9,44 % (premarket 14:00).",
@@ -425,6 +425,24 @@
     "timePrague": "25. 11. 2026 14:30 CET"
   },
   "archive": [
+    {
+      "time": "25. 11. 2026 11:03 CET",
+      "summary": "NDX 26 214,17 b. (−1,99 %, závěr 24. 11.). Nizozemská vláda odmítá návrh MATCH Act; Čína přibližně 20 % tržeb ASML. MA50 breadth 42,6 % (2026-11-24, závěr); RSI14 39,24 (2026-11-24, závěr); VXN 36,42 (2026-11-24, závěr). Ekonomika 6/6 ověřena, TE 9/9 z 10:05. NQ=F poslední kotace 09:55, nad limitem 65 min; přímý Yahoo HTTP 429. NQZ26 samostatně −2,24 % v 10:29.",
+      "sourceLinks": [
+        {
+          "label": "YCharts NDX",
+          "url": "https://ycharts.com/indices/%5ENDX/level"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/china/dutch-government-working-prevent-passing-us-match-bill-minister-says-2026-11-25/"
+        },
+        {
+          "label": "Google Finance NQZ26",
+          "url": "https://www.google.com/finance/quote/NQZ26:CME_EMINIS"
+        }
+      ]
+    },
     {
       "time": "25. 11. 2026 10:03 CET",
       "summary": "NDX 26 214,17 b. (−1,99 %, závěr 24. 11.). Bez zásadních nových událostí; pokračuje výprodej čipů. MA50 breadth 42,6 % (2026-11-24, závěr); RSI14 39,24 (2026-11-24, závěr); VXN 36,42 (2026-11-24, závěr). Ekonomika 6/6 ověřena; sedm updaterů doloženo logy 09:00, TE 9/9. NQ=F kotace 08:49 překročila 65 min; přímý Yahoo HTTP 429. NQZ26 samostatně −1,51 % v 09:39.",
@@ -5268,6 +5286,10 @@
     {
       "name": "Investing.com VXN",
       "url": "https://www.investing.com/indices/cboe-nasdaq-100-voltility-historical-data"
+    },
+    {
+      "name": "Reuters – MATCH Act",
+      "url": "https://www.reuters.com/world/china/dutch-government-working-prevent-passing-us-match-bill-minister-says-2026-11-25/"
     }
   ]
 }
