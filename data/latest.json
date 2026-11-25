@@ -1,19 +1,42 @@
 {
-  "updatedAtPrague": "25. 11. 2026 21:03 CET",
-  "marketStatus": "Cash NDX: otevřeno, intradenní seance 25. 11. 2026.",
+  "updatedAtPrague": "25. 11. 2026 22:04 CET",
+  "marketStatus": "Cash NDX: uzavřeno. Předběžný časovaný snímek po závěru 25. 11.; konečný závěr dosud nepotvrzen.",
   "ndx": {
-    "value": 26010.82,
-    "changePercent": -0.78,
+    "value": 26046.9,
+    "changePercent": -0.64,
     "ath": 31361.37,
-    "asOf": "25. 11. 2026, 20:56:09 CET"
+    "asOf": "25. 11. 2026, 22:00:22 CET"
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "↗",
-    "reason": "MA50 breadth 42,6 % (2026-11-24, závěr; rozpor nové kontroly). RSI14 39,24 (2026-11-24, závěr). VXN 36,42 (2026-11-24, závěr)."
+    "trend": "→",
+    "reason": "MA50 breadth 42,6 % (2026-11-24; starší závěr, rozpor kontroly). RSI14 39,24 (2026-11-24; starší závěr). VXN 36,42 (2026-11-24; starší závěr)."
   },
-  "driver": "NDX zmírnil denní ztrátu z 1,38 % na 0,78 %. Fed Beige Book uvádí pokračující růst a přetrvávající inflaci; kreditní riziko AI zůstává.",
+  "driver": "NDX zmírnil denní ztrátu; čipové akcie zůstávají pod tlakem. S&P Global zařadila rating NVDA AA na CreditWatch Negative.",
   "news": [
+    {
+      "title": "NVDA | S&P Global potvrdila rating AA, ale zařadila jej na CreditWatch Negative kvůli rizikům vedení a správy společnosti.",
+      "time": "25. 11. 2026, 19:56",
+      "publishedAtPrague": "25. 11. 2026, 19:56",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "company",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/sp-global-places-nvidia-rating-creditwatch-negative-rising-management-governance-2026-11-25/",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/sp-global-places-nvidia-rating-creditwatch-negative-rising-management-governance-2026-11-25/"
+        },
+        {
+          "label": "S&P Global Ratings",
+          "url": "https://spratings.spglobal.com/ratings/en/regulatory/ratings-actions"
+        }
+      ],
+      "eventKey": "nvda-sp-creditwatch-negative-20261125",
+      "ndxRelevant": true,
+      "importanceScore": 82
+    },
     {
       "title": "USA | návrh cel vůči 14 obchodním partnerům včetně EU, Tchaj-wanu a Číny; pro Čínu až 20 %. Mexiko a Norsko zatím vyloučeny.",
       "time": "25. 11. 2026, 14:15",
@@ -30,6 +53,25 @@
         {
           "label": "Reuters",
           "url": "https://www.reuters.com/world/china/us-proposes-new-tariffs-14-trading-partners-fight-excess-factory-capacity-2026-11-25/"
+        }
+      ]
+    },
+    {
+      "title": "Fed Beige Book | většina regionů hlásí mírný až střední růst, zaměstnanost vzrostla a inflační tlaky přetrvávají. Pro prosincové FOMC trvá riziko vyšších sazeb.",
+      "time": "25. 11. 2026, 20:19",
+      "publishedAtPrague": "25. 11. 2026, 20:19",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "macro",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/fed-survey-shows-continued-growth-sticky-inflation-recent-weeks-2026-11-25/",
+      "eventKey": "fed-beige-book-20261125",
+      "ndxRelevant": true,
+      "importanceScore": 78,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/fed-survey-shows-continued-growth-sticky-inflation-recent-weeks-2026-11-25/"
         }
       ]
     },
@@ -53,25 +95,6 @@
         {
           "label": "Reuters",
           "url": "https://www.reuters.com/business/nasdaq-futures-slide-over-2-fresh-us-tariff-concerns-inflation-data-focus-2026-11-25/"
-        }
-      ]
-    },
-    {
-      "title": "Fed Beige Book | většina regionů hlásí mírný až střední růst, zaměstnanost vzrostla a inflační tlaky přetrvávají. Pro prosincové FOMC trvá riziko vyšších sazeb.",
-      "time": "25. 11. 2026, 20:19",
-      "publishedAtPrague": "25. 11. 2026, 20:19",
-      "publicationTimeVerified": true,
-      "kind": "new",
-      "category": "macro",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/fed-survey-shows-continued-growth-sticky-inflation-recent-weeks-2026-11-25/",
-      "eventKey": "fed-beige-book-20261125",
-      "ndxRelevant": true,
-      "importanceScore": 78,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/business/fed-survey-shows-continued-growth-sticky-inflation-recent-weeks-2026-11-25/"
         }
       ]
     },
@@ -240,6 +263,25 @@
       "kind": "continuing"
     },
     {
+      "title": "TSLA | EU odložila jednání o celoevropském schválení FSD z 1. 12. na 15. 12. dle Evropské komise.",
+      "time": "25. 11. 2026, 11:46",
+      "publishedAtPrague": "25. 11. 2026, 11:46",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "ai_regulation",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/autos-transportation/eu-postpones-discussion-approve-teslas-self-driving-tech-2026-11-25/",
+      "eventKey": "tsla-eu-fsd-meeting-delay-20261125",
+      "ndxRelevant": true,
+      "importanceScore": 65,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/autos-transportation/eu-postpones-discussion-approve-teslas-self-driving-tech-2026-11-25/"
+        }
+      ]
+    },
+    {
       "title": "NVDA | Reuters: čínské úvěrové záznamy uvádějí až 764 AI serverů a modulů za 270 mil. USD a síťové vybavení za 31 mil. USD u firem spojených s bývalou majitelkou Megaspeed.",
       "time": "25. 11. 2026, 07:13",
       "publishedAtPrague": "25. 11. 2026, 07:13",
@@ -259,21 +301,21 @@
       ]
     },
     {
-      "title": "TSLA | EU odložila jednání o celoevropském schválení FSD z 1. 12. na 15. 12. dle Evropské komise.",
-      "time": "25. 11. 2026, 11:46",
-      "publishedAtPrague": "25. 11. 2026, 11:46",
+      "title": "VIX futures | Krátkodobé kontrakty nad vzdálenějšími (backwardation). Reuters: zvýšené krátkodobé riziko při výprodeji AI akcií.",
+      "time": "25. 11. 2026, 11:03",
+      "publishedAtPrague": "25. 11. 2026, 11:03",
       "publicationTimeVerified": true,
       "kind": "continuing",
-      "category": "ai_regulation",
+      "category": "market_risk",
       "source": "Reuters",
-      "url": "https://www.reuters.com/business/autos-transportation/eu-postpones-discussion-approve-teslas-self-driving-tech-2026-11-25/",
-      "eventKey": "tsla-eu-fsd-meeting-delay-20261125",
+      "url": "https://www.reuters.com/business/buy-stock-dip-options-market-signals-say-wait-2026-11-25/",
+      "eventKey": "vix-futures-backwardation-ai-selloff-20261125",
       "ndxRelevant": true,
-      "importanceScore": 65,
+      "importanceScore": 61,
       "sourceLinks": [
         {
           "label": "Reuters",
-          "url": "https://www.reuters.com/business/autos-transportation/eu-postpones-discussion-approve-teslas-self-driving-tech-2026-11-25/"
+          "url": "https://www.reuters.com/business/buy-stock-dip-options-market-signals-say-wait-2026-11-25/"
         }
       ]
     },
@@ -295,25 +337,6 @@
       "eventKey": "asia-chip-market-selloff-20261125",
       "ndxRelevant": true,
       "importanceScore": 70
-    },
-    {
-      "title": "VIX futures | Krátkodobé kontrakty nad vzdálenějšími (backwardation). Reuters: zvýšené krátkodobé riziko při výprodeji AI akcií.",
-      "time": "25. 11. 2026, 11:03",
-      "publishedAtPrague": "25. 11. 2026, 11:03",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "market_risk",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/buy-stock-dip-options-market-signals-say-wait-2026-11-25/",
-      "eventKey": "vix-futures-backwardation-ai-selloff-20261125",
-      "ndxRelevant": true,
-      "importanceScore": 61,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/business/buy-stock-dip-options-market-signals-say-wait-2026-11-25/"
-        }
-      ]
     },
     {
       "title": "USA jobless claims | 189 tis. vs. kons. 200 tis.; předchozí 202 tis. (−13 tis.).",
@@ -354,56 +377,6 @@
       "importanceScore": 64
     },
     {
-      "title": "ADSK Q3 | tržby 2,16 mld. USD vs. kons. 2,13 (beat 1,4 %); upr. EPS 3,20 USD vs. kons. 3,07 (beat 4,2 %). Q4 střed výhledu tržeb 2,2275 mld. USD vs. kons. 2,211 (beat 0,7 %); upr. EPS 3,235 vs. kons. 3,20 USD (beat 1,1 %).",
-      "publishedAtPrague": "24. 11. 2026, 22:00",
-      "category": "earnings",
-      "source": "Autodesk / PRNewswire",
-      "url": "https://www.prnewswire.com/news-releases/autodesk-inc-announces-fiscal-2027-third-quarter-results-302949762.html",
-      "sourceLinks": [
-        {
-          "label": "Autodesk",
-          "url": "https://www.prnewswire.com/news-releases/autodesk-inc-announces-fiscal-2027-third-quarter-results-302949762.html"
-        },
-        {
-          "label": "Investing.com – konsenzus",
-          "url": "https://www.investing.com/news/transcripts/autodesk-shares-fall-despite-q3-earnings-beat-strong-guidance-5049017"
-        }
-      ],
-      "eventKey": "adsk-fy2027-q3-earnings-20261124",
-      "importanceScore": 62,
-      "time": "24. 11. 2026 22:00 CET",
-      "publicationTimeVerified": true,
-      "ndxRelevant": true,
-      "kind": "continuing"
-    },
-    {
-      "title": "WDAY Q3 | tržby 2,705 mld. USD vs. kons. 2,69 (beat 0,6 %); upr. EPS 2,82 USD vs. kons. 2,74 (beat 2,9 %). AI nové ACV téměř 150 mil. USD, více než 3× y/y. Backlog 27,548 mld. USD vs. kons. 28,66 (miss 3,9 %). Q4 výhled předplatného 2,60 mld. USD.",
-      "time": "24. 11. 2026 22:01 CET",
-      "publishedAtPrague": "24. 11. 2026, 22:01",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "earnings",
-      "source": "Workday / PRNewswire",
-      "url": "https://www.prnewswire.com/news-releases/workday-announces-fiscal-2027-third-quarter-financial-results-302949793.html",
-      "sourceLinks": [
-        {
-          "label": "Workday",
-          "url": "https://www.prnewswire.com/news-releases/workday-announces-fiscal-2027-third-quarter-financial-results-302949793.html"
-        },
-        {
-          "label": "WSJ – konsenzus",
-          "url": "https://www.wsj.com/business/earnings/workday-raises-full-year-subscription-outlook-after-sales-rise-625a54e3"
-        },
-        {
-          "label": "Barron's – backlog",
-          "url": "https://www.barrons.com/articles/workday-earnings-stock-price-23ed29a7"
-        }
-      ],
-      "eventKey": "wday-fy2027-q3-earnings-20261124",
-      "ndxRelevant": true,
-      "importanceScore": 61
-    },
-    {
       "title": "HPQ Q4 | tržby 16,0 mld. USD vs. kons. 15,42 (beat 3,8 %); upr. EPS 0,83 vs. kons. 0,75 USD (beat 10,7 %), včetně 0,15 USD celních refundací. AI PC téměř 60 % dodávek; tlak nákladů na paměti a úložiště. Q1 výhled upr. EPS 0,66–0,76 USD vs. kons. 0,71.",
       "time": "24. 11. 2026 22:15 CET",
       "publishedAtPrague": "24. 11. 2026, 22:15",
@@ -430,13 +403,13 @@
   "leaders": [
     {
       "ticker": "NVDA",
-      "changePercent": -4.65,
-      "impact": "negativní; 20:42 CET"
+      "changePercent": -4.87,
+      "impact": "negativní; 21:41 CET"
     },
     {
       "ticker": "MSFT",
-      "changePercent": -0.89,
-      "impact": "negativní; 20:39 CET"
+      "changePercent": -1.38,
+      "impact": "negativní; 21:42 CET"
     }
   ],
   "macro": "US10Y | 24. 11.: 4,91 % | 23. 11.: 4,92 % | −1 bb",
@@ -447,7 +420,7 @@
   },
   "forecast": {
     "athReturnPercent": 16,
-    "athReason": "Potřebný růst 20,57 %. Odhad beze změny; přetrvávající inflační a kreditní riziko.",
+    "athReason": "Potřebný růst 20,40 %. Odhad beze změny; inflační a kreditní riziko.",
     "downside": "−7 až −13 %",
     "downsideReason": "Modelový 25. percentil koncové ceny; VXN 36,42 (2026-11-24, závěr).",
     "downsideModel": {
@@ -462,10 +435,28 @@
     }
   },
   "catalyst": {
-    "event": "Závěr cash NDX; 26. 11. Thanksgiving, 27. 11. zkrácená seance do 19:00 CET",
-    "timePrague": "25. 11. 2026 22:00 CET"
+    "event": "Otevření cash trhu po Thanksgiving; zkrácená seance do 19:00 CET",
+    "timePrague": "27. 11. 2026 15:30 CET"
   },
   "archive": [
+    {
+      "time": "25. 11. 2026 22:04 CET",
+      "summary": "NDX 26 046,90 b., −0,64 % (22:00:22; předběžný snímek). S&P Global: NVDA AA na CreditWatch Negative. Breadth: rozpor kontroly, zachována poslední hodnota.",
+      "sourceLinks": [
+        {
+          "label": "Google Finance NDX",
+          "url": "https://www.google.com/finance/quote/NDX:INDEXNASDAQ"
+        },
+        {
+          "label": "Nasdaq NDX",
+          "url": "https://indexes.nasdaq.com/Index/Overview/NDX"
+        },
+        {
+          "label": "S&P Global",
+          "url": "https://spratings.spglobal.com/ratings/en/regulatory/ratings-actions"
+        }
+      ]
+    },
     {
       "time": "25. 11. 2026 21:03 CET",
       "summary": "NDX 26 010,82 b., −0,78 % (20:56). Fed Beige Book: pokračující růst a přetrvávající inflace. Breadth: rozpor zdroje, zachována poslední hodnota.",
@@ -5599,6 +5590,18 @@
     {
       "name": "Nasdaq – obchodní hodiny",
       "url": "https://www.nasdaq.com/market-activity/stock-market-holiday-schedule?mod=article_inline"
+    },
+    {
+      "name": "ratings",
+      "url": "https://www.reuters.com/business/sp-global-places-nvidia-rating-creditwatch-negative-rising-management-governance-2026-11-25/"
+    },
+    {
+      "name": "sp",
+      "url": "https://spratings.spglobal.com/ratings/en/regulatory/ratings-actions"
+    },
+    {
+      "name": "calendar",
+      "url": "https://www.nasdaq.com/market-activity/stock-market-holiday-schedule"
     }
   ]
 }
