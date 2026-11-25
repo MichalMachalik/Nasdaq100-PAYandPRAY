@@ -1,6 +1,6 @@
 {
   "updatedAtPrague": "25. 11. 2026 22:04 CET",
-  "marketStatus": "Cash NDX: uzavřeno. Předběžný časovaný snímek po závěru 25. 11.; konečný závěr dosud nepotvrzen.",
+  "marketStatus": "Cash NDX: uzavřeno, závěr 25. 11. 2026 potvrzen časovanou kotací a denní řadou.",
   "ndx": {
     "value": 26046.9,
     "changePercent": -0.64,
@@ -10,7 +10,7 @@
   "sentiment": {
     "label": "Medvědí",
     "trend": "→",
-    "reason": "MA50 breadth 42,6 % (2026-11-24; starší závěr, rozpor kontroly). RSI14 39,24 (2026-11-24; starší závěr). VXN 36,42 (2026-11-24; starší závěr)."
+    "reason": "MA50 breadth 43,6 % (2026-11-25, závěr). RSI14 38,39 (2026-11-25, závěr). VXN 36,42 (2026-11-24, starší závěr)."
   },
   "driver": "NDX zmírnil denní ztrátu; čipové akcie zůstávají pod tlakem. S&P Global zařadila rating NVDA AA na CreditWatch Negative.",
   "news": [
@@ -403,13 +403,13 @@
   "leaders": [
     {
       "ticker": "NVDA",
-      "changePercent": -4.87,
-      "impact": "negativní; 21:41 CET"
+      "changePercent": -3.91,
+      "impact": "negativní; závěr 22:00 CET"
     },
     {
       "ticker": "MSFT",
-      "changePercent": -1.38,
-      "impact": "negativní; 21:42 CET"
+      "changePercent": -1.25,
+      "impact": "negativní; závěr 22:00 CET"
     }
   ],
   "macro": "US10Y | 24. 11.: 4,91 % | 23. 11.: 4,92 % | −1 bb",
@@ -4488,6 +4488,10 @@
     {
       "time": "25. 11. 2026 21:03 CET",
       "ndx": 26010.82
+    },
+    {
+      "time": "2026-11-25",
+      "ndx": 26046.9
     }
   ],
   "sources": [
