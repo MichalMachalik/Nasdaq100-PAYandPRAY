@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "25. 11. 2026 11:03 CET",
+  "updatedAtPrague": "25. 11. 2026 11:56 CET",
   "marketStatus": "Cash NDX: závěr 24. 11. 2026, seance ukončena.",
   "ndx": {
     "value": 26214.17,
@@ -12,7 +12,7 @@
     "trend": "↘",
     "reason": "MA50 breadth 42,6 % (2026-11-24, závěr); RSI14 39,24 (2026-11-24, závěr); VXN 36,42 (2026-11-24, závěr)."
   },
-  "driver": "SOX −7,88 % (24. 11.). Pokračující výprodej polovodičů a tlak na návratnost investic do AI; riziko nových amerických cel.",
+  "driver": "SOX −7,88 % (24. 11.). VIX futures v backwardation; zvýšené krátkodobé riziko. Tlak na financování a návratnost AI investic.",
   "news": [
     {
       "title": "AI financování | Pětileté CDS CRWV 1 314 bb, ORCL 356 bb, SoftBank 501 bb. CDS Alphabet, SpaceX, CoreWeave a Oracle na rekordních úrovních dle S&P Global Market Intelligence.",
@@ -38,7 +38,7 @@
       "time": "25. 11. 2026, 09:35",
       "publishedAtPrague": "25. 11. 2026, 09:35",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "ai_regulation",
       "source": "Reuters",
       "url": "https://www.reuters.com/world/china/dutch-government-working-prevent-passing-us-match-bill-minister-says-2026-11-25/",
@@ -131,6 +131,25 @@
       "eventKey": "us-section301-excess-capacity-tariff-proposal-20261124",
       "ndxRelevant": true,
       "importanceScore": 84
+    },
+    {
+      "title": "VIX futures | Krátkodobé kontrakty nad vzdálenějšími (backwardation). Reuters: zvýšené krátkodobé riziko při výprodeji AI akcií.",
+      "time": "25. 11. 2026, 11:03",
+      "publishedAtPrague": "25. 11. 2026, 11:03",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "market_risk",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/buy-stock-dip-options-market-signals-say-wait-2026-11-25/",
+      "eventKey": "vix-futures-backwardation-ai-selloff-20261125",
+      "ndxRelevant": true,
+      "importanceScore": 61,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/buy-stock-dip-options-market-signals-say-wait-2026-11-25/"
+        }
+      ]
     },
     {
       "title": "Asie | KOSPI až −6,4 %, TAIEX až −8,6 %, MSCI Asia-Pacific ex-Japan −3,2 %. Výprodej čipových trhů pokračuje; riziko nových amerických cel.",
@@ -242,33 +261,6 @@
       "publicationTimeVerified": true,
       "ndxRelevant": true,
       "kind": "continuing"
-    },
-    {
-      "title": "USA | Nasdaq Composite při otevření −1,43 %. SOX −5,95 % (15:33 CET), NVDA −5,36 % (15:49 CET).",
-      "time": "24. 11. 2026 11:52 CET",
-      "publishedAtPrague": "24. 11. 2026, 11:52",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "semiconductor_market",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/wall-st-futures-dip-chip-stocks-cool-after-nvidia-fueled-rally-2026-11-24/",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/business/wall-st-futures-dip-chip-stocks-cool-after-nvidia-fueled-rally-2026-11-24/"
-        },
-        {
-          "label": "Google Finance – NDX/SOX",
-          "url": "https://www.google.com/finance/quote/NDX:INDEXNASDAQ"
-        },
-        {
-          "label": "Google Finance – NVDA",
-          "url": "https://www.google.com/finance/quote/NVDA:NASDAQ"
-        }
-      ],
-      "eventKey": "us-chip-premarket-pullback-20261124",
-      "ndxRelevant": true,
-      "importanceScore": 72
     },
     {
       "title": "WDAY Q3 | tržby 2,705 mld. USD vs. kons. 2,69 (beat 0,6 %); upr. EPS 2,82 USD vs. kons. 2,74 (beat 2,9 %). AI nové ACV téměř 150 mil. USD, více než 3× y/y. Backlog 27,548 mld. USD vs. kons. 28,66 (miss 3,9 %). Q4 výhled předplatného 2,60 mld. USD.",
@@ -425,6 +417,24 @@
     "timePrague": "25. 11. 2026 14:30 CET"
   },
   "archive": [
+    {
+      "time": "25. 11. 2026 11:56 CET",
+      "summary": "NDX 26 214,17 b. (−1,99 %, závěr 24. 11.). VIX futures v backwardation. NQZ26 −2,50 % v 11:40 CET. MA50 breadth 42,6 % (2026-11-24, závěr); RSI14 39,24 (2026-11-24, závěr); VXN 36,42 (2026-11-24, závěr). Ekonomika 6/6 ověřena. NQ=F kotace 25. 11. 2026 10:55; přímý Yahoo HTTP 429.",
+      "sourceLinks": [
+        {
+          "label": "Google Finance NDX",
+          "url": "https://www.google.com/finance/quote/NDX:INDEXNASDAQ"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/buy-stock-dip-options-market-signals-say-wait-2026-11-25/"
+        },
+        {
+          "label": "Google Finance NQZ26",
+          "url": "https://www.google.com/finance/quote/NQZ26:CME_EMINIS"
+        }
+      ]
+    },
     {
       "time": "25. 11. 2026 11:03 CET",
       "summary": "NDX 26 214,17 b. (−1,99 %, závěr 24. 11.). Nizozemská vláda odmítá návrh MATCH Act; Čína přibližně 20 % tržeb ASML. MA50 breadth 42,6 % (2026-11-24, závěr); RSI14 39,24 (2026-11-24, závěr); VXN 36,42 (2026-11-24, závěr). Ekonomika 6/6 ověřena, TE 9/9 z 10:05. NQ=F poslední kotace 09:55, nad limitem 65 min; přímý Yahoo HTTP 429. NQZ26 samostatně −2,24 % v 10:29.",
@@ -5290,6 +5300,10 @@
     {
       "name": "Reuters – MATCH Act",
       "url": "https://www.reuters.com/world/china/dutch-government-working-prevent-passing-us-match-bill-minister-says-2026-11-25/"
+    },
+    {
+      "name": "Reuters – VIX futures",
+      "url": "https://www.reuters.com/business/buy-stock-dip-options-market-signals-say-wait-2026-11-25/"
     }
   ]
 }
