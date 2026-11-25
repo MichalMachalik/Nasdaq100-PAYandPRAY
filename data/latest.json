@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "25. 11. 2026 22:55 CET",
+  "updatedAtPrague": "25. 11. 2026 23:58 CET",
   "marketStatus": "Cash NDX: uzavřeno, závěr 25. 11. 2026.",
   "ndx": {
     "value": 26046.9,
@@ -12,14 +12,14 @@
     "trend": "→",
     "reason": "MA50 breadth 43,6 % (2026-11-25, závěr). RSI14 38,39 (2026-11-25, závěr). VXN 36,42 (2026-11-24, starší závěr)."
   },
-  "driver": "NDX od denního minima +4,31 %. NVDA −3,91 %; přetrvává kreditní riziko AI infrastruktury.",
+  "driver": "NDX −0,64 % na závěru; GOOGL −2,1 %, NVDA −3,91 %. Tlak na financování AI infrastruktury.",
   "news": [
     {
       "title": "NVDA | S&P Global potvrdila rating AA, ale zařadila jej na CreditWatch Negative kvůli rizikům vedení a správy společnosti.",
       "time": "25. 11. 2026, 19:56",
       "publishedAtPrague": "25. 11. 2026, 19:56",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "company",
       "source": "Reuters",
       "url": "https://www.reuters.com/business/sp-global-places-nvidia-rating-creditwatch-negative-rising-management-governance-2026-11-25/",
@@ -84,7 +84,7 @@
       "time": "25. 11. 2026, 20:19",
       "publishedAtPrague": "25. 11. 2026, 20:19",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "macro",
       "source": "Reuters",
       "url": "https://www.reuters.com/business/fed-survey-shows-continued-growth-sticky-inflation-recent-weeks-2026-11-25/",
@@ -333,25 +333,6 @@
           "url": "https://www.reuters.com/world/us/us-weekly-jobless-claims-fall-more-than-expected-2026-11-25/"
         }
       ]
-    },
-    {
-      "title": "NVDA | Bílý dům v prohlášení pro Reuters potvrdil podporu open-weight AI modelů; širší využití modelů rozšiřuje potenciální poptávku po GPU NVDA.",
-      "time": "24. 11. 2026 23:29 CET",
-      "publishedAtPrague": "24. 11. 2026, 23:29",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_regulation",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/china/huangs-return-nvidia-brings-open-weight-ai-debate-forefront-washington-2026-11-24/",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/world/china/huangs-return-nvidia-brings-open-weight-ai-debate-forefront-washington-2026-11-24/"
-        }
-      ],
-      "eventKey": "white-house-open-weight-ai-support-20261124",
-      "ndxRelevant": true,
-      "importanceScore": 64
     }
   ],
   "leaders": [
@@ -393,6 +374,24 @@
     "timePrague": "27. 11. 2026 15:30 CET"
   },
   "archive": [
+    {
+      "time": "25. 11. 2026 23:58 CET",
+      "summary": "NDX 26 046,90 b., −0,64 % (závěr 25. 11.). GOOGL −2,1 %, AVGO beze změny na závěru. US10Y 4,85 %, −6 bb. Bez nového zásadního katalyzátoru.",
+      "sourceLinks": [
+        {
+          "label": "YCharts NDX",
+          "url": "https://ycharts.com/indices/%5ENDX/level"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/ai-stocks-slide-fears-over-infrastructure-buildout-costs-2026-11-25/"
+        },
+        {
+          "label": "U.S. Treasury",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+        }
+      ]
+    },
     {
       "time": "25. 11. 2026 22:55 CET",
       "summary": "NDX 26 046,90 b., −0,64 % (závěr 25. 11.). US10Y 4,85 %, −6 bb; VXN 36,42 (24. 11.). Bez zásadních novinek.",
