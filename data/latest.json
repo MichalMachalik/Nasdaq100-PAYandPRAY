@@ -1,6 +1,6 @@
 {
-  "updatedAtPrague": "25. 11. 2026 14:03 CET",
-  "marketStatus": "Cash NDX: závěr 24. 11. 2026, seance ukončena.",
+  "updatedAtPrague": "25. 11. 2026 14:55 CET",
+  "marketStatus": "Cash NDX: závěr 24. 11. 2026, před otevřením 25. 11. v 15:30 CET.",
   "ndx": {
     "value": 26214.17,
     "changePercent": -1.99,
@@ -12,14 +12,79 @@
     "trend": "↘",
     "reason": "MA50 breadth 42,6 % (2026-11-24, závěr); RSI14 39,24 (2026-11-24, závěr); VXN 36,42 (2026-11-24, závěr)."
   },
-  "driver": "Výprodej polovodičů před PCE; riziko nových amerických cel a návratnost dluhově financovaných AI investic.",
+  "driver": "PCE 3,8 % y/y a HDP nad konsenzem posilují scénář vyšších sazeb. USA navrhly nová cla vůči 14 partnerům.",
   "news": [
+    {
+      "title": "USA | návrh cel vůči 14 obchodním partnerům včetně EU, Tchaj-wanu a Číny; pro Čínu až 20 %. Mexiko a Norsko zatím vyloučeny.",
+      "time": "25. 11. 2026, 14:15",
+      "publishedAtPrague": "25. 11. 2026, 14:15",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "macro",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/china/us-proposes-new-tariffs-14-trading-partners-fight-excess-factory-capacity-2026-11-25/",
+      "eventKey": "us-section301-excess-capacity-tariff-proposal-20261125",
+      "ndxRelevant": true,
+      "importanceScore": 90,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/china/us-proposes-new-tariffs-14-trading-partners-fight-excess-factory-capacity-2026-11-25/"
+        }
+      ]
+    },
+    {
+      "title": "USA PCE říjen | 0,3 % m/m vs. kons. 0,3 %; 3,8 % y/y vs. kons. 3,8 %. Core PCE 3,3 % y/y vs. září 3,1 %; 0,3 % m/m.",
+      "time": "25. 11. 2026, 14:30",
+      "publishedAtPrague": "25. 11. 2026, 14:30",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "macro",
+      "source": "BEA",
+      "url": "https://www.bea.gov/sites/default/files/2026-11/pi1026.pdf",
+      "eventKey": "us-pce-oct-2026-20261125",
+      "ndxRelevant": true,
+      "importanceScore": 87,
+      "sourceLinks": [
+        {
+          "label": "BEA",
+          "url": "https://www.bea.gov/sites/default/files/2026-11/pi1026.pdf"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/nasdaq-futures-slide-over-2-fresh-us-tariff-concerns-inflation-data-focus-2026-11-25/"
+        }
+      ]
+    },
+    {
+      "title": "USA HDP Q3 | 4,3 % SAAR vs. kons. 3,5 %; předběžně 3,4 %. Revize +0,9 p. b. Růst investic a spotřeby.",
+      "time": "25. 11. 2026, 14:30",
+      "publishedAtPrague": "25. 11. 2026, 14:30",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "macro",
+      "source": "BEA",
+      "url": "https://www.bea.gov/news/2026/gdp-second-estimate-and-corporate-profits-3rd-quarter-2026",
+      "eventKey": "us-gdp-q3-second-20261125",
+      "ndxRelevant": true,
+      "importanceScore": 75,
+      "sourceLinks": [
+        {
+          "label": "BEA",
+          "url": "https://www.bea.gov/news/2026/gdp-second-estimate-and-corporate-profits-3rd-quarter-2026"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/nasdaq-futures-slide-over-2-fresh-us-tariff-concerns-inflation-data-focus-2026-11-25/"
+        }
+      ]
+    },
     {
       "title": "FedWatch | Reuters: futures oceňují pravděpodobnost zvýšení sazeb v prosinci na 97 %, dalšího zvýšení v lednu na 63 %.",
       "time": "25. 11. 2026, 11:08",
       "publishedAtPrague": "25. 11. 2026, 11:08",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "macro",
       "source": "Reuters",
       "url": "https://www.reuters.com/business/nasdaq-futures-slide-over-2-fresh-us-tariff-concerns-inflation-data-focus-2026-11-25/",
@@ -99,7 +164,7 @@
       "time": "25. 11. 2026, 11:46",
       "publishedAtPrague": "25. 11. 2026, 11:46",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "ai_regulation",
       "source": "Reuters",
       "url": "https://www.reuters.com/business/autos-transportation/eu-postpones-discussion-approve-teslas-self-driving-tech-2026-11-25/",
@@ -152,30 +217,11 @@
       "importanceScore": 83
     },
     {
-      "title": "USA | Reuters: USTR připravuje návrh dodatečných cel po šetření podle Section 301 vůči 16 obchodním partnerům včetně Číny, EU a Tchaj-wanu. Sazby zatím nezveřejněny.",
-      "time": "24. 11. 2026, 17:19 CET",
-      "publishedAtPrague": "24. 11. 2026, 17:19",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "macro",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/us/trump-administration-set-unveil-new-tariffs-after-probe-on-excess-factory-2026-11-24/",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/world/us/trump-administration-set-unveil-new-tariffs-after-probe-on-excess-factory-2026-11-24/"
-        }
-      ],
-      "eventKey": "us-section301-excess-capacity-tariff-proposal-20261124",
-      "ndxRelevant": true,
-      "importanceScore": 84
-    },
-    {
       "title": "VIX futures | Krátkodobé kontrakty nad vzdálenějšími (backwardation). Reuters: zvýšené krátkodobé riziko při výprodeji AI akcií.",
       "time": "25. 11. 2026, 11:03",
       "publishedAtPrague": "25. 11. 2026, 11:03",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "market_risk",
       "source": "Reuters",
       "url": "https://www.reuters.com/business/buy-stock-dip-options-market-signals-say-wait-2026-11-25/",
@@ -207,6 +253,25 @@
       "eventKey": "asia-chip-market-selloff-20261125",
       "ndxRelevant": true,
       "importanceScore": 70
+    },
+    {
+      "title": "USA jobless claims | 189 tis. vs. kons. 200 tis.; předchozí 202 tis. (−13 tis.).",
+      "time": "25. 11. 2026, 14:46",
+      "publishedAtPrague": "25. 11. 2026, 14:46",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "macro",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/us/us-weekly-jobless-claims-fall-more-than-expected-2026-11-25/",
+      "eventKey": "us-jobless-claims-20261121",
+      "ndxRelevant": true,
+      "importanceScore": 55,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/us/us-weekly-jobless-claims-fall-more-than-expected-2026-11-25/"
+        }
+      ]
     },
     {
       "eventKey": "us-cb-consumer-confidence-nov-2026-20261124",
@@ -347,7 +412,7 @@
       "time": "24. 11. 2026, 17:29",
       "publishedAtPrague": "24. 11. 2026, 17:29",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "corporate",
       "source": "Reuters",
       "url": "https://www.reuters.com/legal/government/possible-tesla-merger-could-aid-spacexs-sp-500-entry-jp-morgan-says-2026-11-24/",
@@ -374,15 +439,15 @@
       "impact": "pozitivní; závěr 24. 11."
     }
   ],
-  "macro": "US10Y | 24. 11.: 4,91 % | 23. 11.: 4,92 % | −1 bb",
+  "macro": "Core PCE | říjen: 3,3 % y/y | září: 3,1 % | +0,2 p. b.",
   "regulation": null,
   "technical": {
     "support": null,
     "resistance": null
   },
   "forecast": {
-    "athReturnPercent": 18,
-    "athReason": "Nutný růst 19,64 %. MA50 breadth 42,6 % (2026-11-24, závěr); RSI14 39,24 (2026-11-24, závěr); VXN 36,42 (2026-11-24, závěr). Odhad 18 % zachován před PCE.",
+    "athReturnPercent": 17,
+    "athReason": "Potřebný růst 19,64 %. Odhad snížen z 18 % na 17 % po růstu core PCE, silnějším HDP a návrhu nových cel.",
     "downside": "−7 až −13 %",
     "downsideReason": "Modelový 25. percentil koncové ceny; VXN 36,42 (2026-11-24, závěr).",
     "downsideModel": {
@@ -397,10 +462,28 @@
     }
   },
   "catalyst": {
-    "event": "USA HDP Q3 (druhý odhad), podnikové zisky a PCE říjen",
-    "timePrague": "25. 11. 2026 14:30 CET"
+    "event": "Fed Beige Book",
+    "timePrague": "25. 11. 2026 20:00 CET"
   },
   "archive": [
+    {
+      "time": "25. 11. 2026 14:55 CET",
+      "summary": "NDX 26 214,17 b. (−1,99 %, závěr 24. 11.). MA50 breadth 42,6 % (2026-11-24, závěr); RSI14 39,24 (2026-11-24, závěr); VXN 36,42 (2026-11-24, závěr). PCE 3,8 % y/y; core 3,3 %; HDP 4,3 % SAAR vs. kons. 3,5 %. Návrh cel vůči 14 partnerům. Odhad návratu na maximum 17 %. HDP USA y/y po revizi zatím nepotvrzen.",
+      "sourceLinks": [
+        {
+          "label": "BEA PCE",
+          "url": "https://www.bea.gov/sites/default/files/2026-11/pi1026.pdf"
+        },
+        {
+          "label": "BEA HDP",
+          "url": "https://www.bea.gov/news/2026/gdp-second-estimate-and-corporate-profits-3rd-quarter-2026"
+        },
+        {
+          "label": "Reuters cla",
+          "url": "https://www.reuters.com/world/china/us-proposes-new-tariffs-14-trading-partners-fight-excess-factory-capacity-2026-11-25/"
+        }
+      ]
+    },
     {
       "time": "25. 11. 2026 14:03 CET",
       "summary": "NDX 26 214,17 b. (−1,99 %, závěr 24. 11.). MA50 breadth 42,6 % (2026-11-24, závěr); RSI14 39,24 (2026-11-24, závěr); VXN 36,42 (2026-11-24, závěr). NQZ26 −2,90 % (13:34). JPMorgan: scénář fúze TSLA/SPCX. Ekonomika 6/6 ověřena. Yahoo NQ=F HTTP 429; poslední kotace 12:55 vyžaduje obnovu.",
@@ -5328,6 +5411,22 @@
     {
       "name": "Reuters",
       "url": "https://www.reuters.com/legal/government/possible-tesla-merger-could-aid-spacexs-sp-500-entry-jp-morgan-says-2026-11-24/"
+    },
+    {
+      "name": "BEA PCE",
+      "url": "https://www.bea.gov/sites/default/files/2026-11/pi1026.pdf"
+    },
+    {
+      "name": "BEA HDP",
+      "url": "https://www.bea.gov/news/2026/gdp-second-estimate-and-corporate-profits-3rd-quarter-2026"
+    },
+    {
+      "name": "Reuters cla",
+      "url": "https://www.reuters.com/world/china/us-proposes-new-tariffs-14-trading-partners-fight-excess-factory-capacity-2026-11-25/"
+    },
+    {
+      "name": "Reuters futures",
+      "url": "https://www.reuters.com/business/nasdaq-futures-slide-over-2-fresh-us-tariff-concerns-inflation-data-focus-2026-11-25/"
     }
   ]
 }
