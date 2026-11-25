@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "25. 11. 2026 06:03 CET",
+  "updatedAtPrague": "25. 11. 2026 07:02 CET",
   "marketStatus": "Cash NDX: závěr 24. 11. 2026, seance ukončena.",
   "ndx": {
     "value": 26214.17,
@@ -9,10 +9,10 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "↘",
+    "trend": "→",
     "reason": "MA50 breadth 42,6 % (2026-11-24, závěr); RSI14 39,24 (2026-11-24, závěr); VXN 36,42 (2026-11-24, závěr)."
   },
-  "driver": "SOX −7,88 %; NVDA −5,86 % (závěr 24. 11.). KOSPI až −6,4 %, TAIEX až −8,6 % (Reuters 25. 11.); riziko nových amerických cel.",
+  "driver": "SOX −7,88 %; NVDA −5,86 % (závěr 24. 11.). KOSPI až −6,4 %, TAIEX až −8,6 % (25. 11.); riziko nových amerických cel.",
   "news": [
     {
       "title": "DELL Q3 | tržby 54,94 mld. USD vs. kons. 49,32 (beat 11,4 %); upr. EPS 9,45 USD vs. kons. 6,59 (beat 43,4 %). Q4 výhled tržeb 56,3 mld. USD; EPS 8,40 USD. AI server backlog 132,3 mld. USD; nové objednávky 60,2 mld. USD. FY27 AI servery 78 vs. původních 74 mld. USD. FY27 výhled tržeb 202 mld. USD vs. kons. 194,48 (beat 3,9 %).",
@@ -38,25 +38,6 @@
       "kind": "continuing"
     },
     {
-      "title": "NVDA | Schumer obvinil CEO Jensena Huanga z porušení exportních pravidel USA a požaduje zpřísnění legislativy. NVDA se bezprostředně nevyjádřila; veřejné slyšení v Senátu 3. 12.",
-      "time": "24. 11. 2026 19:46 CET",
-      "publishedAtPrague": "24. 11. 2026, 19:46",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_regulation",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/china/schumer-accuses-nvidia-ceo-violating-us-export-control-law-2026-11-24/",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/world/china/schumer-accuses-nvidia-ceo-violating-us-export-control-law-2026-11-24/"
-        }
-      ],
-      "eventKey": "nvda-schumer-export-accusation-20261124",
-      "ndxRelevant": true,
-      "importanceScore": 83
-    },
-    {
       "title": "USA | Reuters: USTR připravuje návrh dodatečných cel po šetření podle Section 301 vůči 16 obchodním partnerům včetně Číny, EU a Tchaj-wanu. Sazby zatím nezveřejněny.",
       "time": "24. 11. 2026, 17:19 CET",
       "publishedAtPrague": "24. 11. 2026, 17:19",
@@ -76,42 +57,23 @@
       "importanceScore": 84
     },
     {
-      "title": "Asie | KOSPI až −6,4 %, TAIEX až −8,6 %, MSCI Asia-Pacific ex-Japan −3,2 %. Výprodej čipových trhů pokračuje; riziko nových amerických cel.",
-      "time": "25. 11. 2026, 02:50 CET",
-      "publishedAtPrague": "25. 11. 2026, 02:50",
+      "title": "NVDA | Schumer obvinil CEO Jensena Huanga z porušení exportních pravidel USA a požaduje zpřísnění legislativy. NVDA se bezprostředně nevyjádřila; veřejné slyšení v Senátu 3. 12.",
+      "time": "24. 11. 2026 19:46 CET",
+      "publishedAtPrague": "24. 11. 2026, 19:46",
       "publicationTimeVerified": true,
       "kind": "continuing",
-      "category": "semiconductor_market",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-25/",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-25/"
-        }
-      ],
-      "eventKey": "asia-chip-market-selloff-20261125",
-      "ndxRelevant": true,
-      "importanceScore": 70
-    },
-    {
-      "title": "ASML | Nizozemští poslanci vyzvali vládu k odporu proti americkému návrhu MATCH Act, který by zpřísnil export litografie do Číny. Čína má letos tvořit přibližně 20 % tržeb ASML.",
-      "publishedAtPrague": "24. 11. 2026, 22:21",
       "category": "ai_regulation",
       "source": "Reuters",
-      "url": "https://www.reuters.com/world/china/dutch-lawmakers-urge-government-resist-us-match-bill-targeting-asml-2026-11-24/",
+      "url": "https://www.reuters.com/world/china/schumer-accuses-nvidia-ceo-violating-us-export-control-law-2026-11-24/",
       "sourceLinks": [
         {
           "label": "Reuters",
-          "url": "https://www.reuters.com/world/china/dutch-lawmakers-urge-government-resist-us-match-bill-targeting-asml-2026-11-24/"
+          "url": "https://www.reuters.com/world/china/schumer-accuses-nvidia-ceo-violating-us-export-control-law-2026-11-24/"
         }
       ],
-      "eventKey": "asml-dutch-match-act-resistance-20261124",
-      "importanceScore": 73,
-      "time": "24. 11. 2026 22:21 CET",
-      "publicationTimeVerified": true,
+      "eventKey": "nvda-schumer-export-accusation-20261124",
       "ndxRelevant": true,
-      "kind": "continuing"
+      "importanceScore": 83
     },
     {
       "title": "ADI Q4 | tržby 4,37 mld. USD vs. kons. Zacks 4,32 (beat 1,2 %); upr. EPS 4,06 USD vs. kons. 3,89 (beat 4,4 %). Q1: tržby 4,4 mld. USD; upr. EPS 3,82 vs. kons. 3,88 USD (miss 1,5 %). ADI −9,44 % (premarket 14:00).",
@@ -141,6 +103,25 @@
       "importanceScore": 80
     },
     {
+      "title": "ASML | Nizozemští poslanci vyzvali vládu k odporu proti americkému návrhu MATCH Act, který by zpřísnil export litografie do Číny. Čína má letos tvořit přibližně 20 % tržeb ASML.",
+      "publishedAtPrague": "24. 11. 2026, 22:21",
+      "category": "ai_regulation",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/china/dutch-lawmakers-urge-government-resist-us-match-bill-targeting-asml-2026-11-24/",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/china/dutch-lawmakers-urge-government-resist-us-match-bill-targeting-asml-2026-11-24/"
+        }
+      ],
+      "eventKey": "asml-dutch-match-act-resistance-20261124",
+      "importanceScore": 73,
+      "time": "24. 11. 2026 22:21 CET",
+      "publicationTimeVerified": true,
+      "ndxRelevant": true,
+      "kind": "continuing"
+    },
+    {
       "eventKey": "us-cb-consumer-confidence-nov-2026-20261124",
       "title": "USA CB Consumer Confidence | listopad 103,3 vs. kons. Reuters 92,5 | říjen 91,9 | +11,4 b. Inflační očekávání na 12 měsíců 5,7 %.",
       "publishedAtPrague": "24. 11. 2026, 16:00",
@@ -164,27 +145,92 @@
       "publicationTimeVerified": true
     },
     {
-      "eventKey": "tesla-spacex-merger-committee-directors-20261124",
-      "title": "TSLA/SPCX | Podle FT pět ředitelů vyjednává možnou akciovou fúzi; podmínky transakce nejsou dohodnuty.",
-      "time": "24. 11. 2026, 06:20 CET",
-      "publishedAtPrague": "24. 11. 2026, 06:20",
+      "title": "USA | Nasdaq Composite při otevření −1,43 %. SOX −5,95 % (15:33 CET), NVDA −5,36 % (15:49 CET).",
+      "time": "24. 11. 2026 11:52 CET",
+      "publishedAtPrague": "24. 11. 2026, 11:52",
       "publicationTimeVerified": true,
       "kind": "continuing",
-      "category": "earnings_corporate",
+      "category": "semiconductor_market",
       "source": "Reuters",
-      "url": "https://www.reuters.com/legal/transactional/spacex-tesla-entrusts-five-directors-merger-talks-ft-reports-2026-11-24/",
+      "url": "https://www.reuters.com/business/wall-st-futures-dip-chip-stocks-cool-after-nvidia-fueled-rally-2026-11-24/",
       "sourceLinks": [
         {
-          "label": "Reuters – zpráva FT",
-          "url": "https://www.reuters.com/legal/transactional/spacex-tesla-entrusts-five-directors-merger-talks-ft-reports-2026-11-24/"
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/wall-st-futures-dip-chip-stocks-cool-after-nvidia-fueled-rally-2026-11-24/"
         },
         {
-          "label": "Financial Times",
-          "url": "https://www.ft.com/content/2585e45e-9133-4215-a2d8-e1275e1033b9"
+          "label": "Google Finance – NDX/SOX",
+          "url": "https://www.google.com/finance/quote/NDX:INDEXNASDAQ"
+        },
+        {
+          "label": "Google Finance – NVDA",
+          "url": "https://www.google.com/finance/quote/NVDA:NASDAQ"
         }
       ],
+      "eventKey": "us-chip-premarket-pullback-20261124",
       "ndxRelevant": true,
-      "importanceScore": 84
+      "importanceScore": 72
+    },
+    {
+      "title": "Asie | KOSPI až −6,4 %, TAIEX až −8,6 %, MSCI Asia-Pacific ex-Japan −3,2 %. Výprodej čipových trhů pokračuje; riziko nových amerických cel.",
+      "time": "25. 11. 2026, 02:50 CET",
+      "publishedAtPrague": "25. 11. 2026, 02:50",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "semiconductor_market",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-25/",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-25/"
+        }
+      ],
+      "eventKey": "asia-chip-market-selloff-20261125",
+      "ndxRelevant": true,
+      "importanceScore": 70
+    },
+    {
+      "title": "ANT −6,5 % na 82 USD v premarketu, pod IPO cenou 83 USD. AMZN a Alphabet patří mezi významné investory.",
+      "time": "24. 11. 2026 12:17 CET",
+      "publishedAtPrague": "24. 11. 2026, 12:17",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "ai_infrastructure",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/anthropic-breaks-below-83-ipo-price-debut-rally-unravels-2026-11-24/",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/anthropic-breaks-below-83-ipo-price-debut-rally-unravels-2026-11-24/"
+        },
+        {
+          "label": "Fortune – podíly AMZN a Alphabet",
+          "url": "https://fortune.com/2026/11/19/anthropic-ipo-amazon-google-stake-windfall-nonvoting/"
+        }
+      ],
+      "eventKey": "anthropic-below-ipo-price-20261124",
+      "ndxRelevant": true,
+      "importanceScore": 68
+    },
+    {
+      "eventKey": "china-critical-mineral-export-ban-suspension-20261124",
+      "title": "Čína prodloužila pozastavení zákazu vývozu gallia, germania a antimonu do USA do 27. 1. 2027. Gallium a germanium se používají při výrobě polovodičů.",
+      "publishedAtPrague": "24. 11. 2026, 15:41",
+      "category": "ai_regulation",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/markets/commodities/china-extends-suspension-ban-us-bound-gallium-germanium-antimony-exports-2026-11-24/",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/markets/commodities/china-extends-suspension-ban-us-bound-gallium-germanium-antimony-exports-2026-11-24/"
+        }
+      ],
+      "importanceScore": 65,
+      "time": "24. 11. 2026, 15:41 CET",
+      "kind": "continuing",
+      "ndxRelevant": true,
+      "publicationTimeVerified": true
     },
     {
       "title": "NVDA | Bílý dům v prohlášení pro Reuters potvrdil podporu open-weight AI modelů; širší využití modelů rozšiřuje potenciální poptávku po GPU NVDA.",
@@ -229,33 +275,6 @@
       "kind": "continuing"
     },
     {
-      "title": "USA | Nasdaq Composite při otevření −1,43 %. SOX −5,95 % (15:33 CET), NVDA −5,36 % (15:49 CET).",
-      "time": "24. 11. 2026 11:52 CET",
-      "publishedAtPrague": "24. 11. 2026, 11:52",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "semiconductor_market",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/wall-st-futures-dip-chip-stocks-cool-after-nvidia-fueled-rally-2026-11-24/",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/business/wall-st-futures-dip-chip-stocks-cool-after-nvidia-fueled-rally-2026-11-24/"
-        },
-        {
-          "label": "Google Finance – NDX/SOX",
-          "url": "https://www.google.com/finance/quote/NDX:INDEXNASDAQ"
-        },
-        {
-          "label": "Google Finance – NVDA",
-          "url": "https://www.google.com/finance/quote/NVDA:NASDAQ"
-        }
-      ],
-      "eventKey": "us-chip-premarket-pullback-20261124",
-      "ndxRelevant": true,
-      "importanceScore": 72
-    },
-    {
       "title": "WDAY Q3 | tržby 2,705 mld. USD vs. kons. 2,69 (beat 0,6 %); upr. EPS 2,82 USD vs. kons. 2,74 (beat 2,9 %). AI nové ACV téměř 150 mil. USD, více než 3× y/y. Backlog 27,548 mld. USD vs. kons. 28,66 (miss 3,9 %). Q4 výhled předplatného 2,60 mld. USD.",
       "time": "24. 11. 2026 22:01 CET",
       "publishedAtPrague": "24. 11. 2026, 22:01",
@@ -281,48 +300,6 @@
       "eventKey": "wday-fy2027-q3-earnings-20261124",
       "ndxRelevant": true,
       "importanceScore": 61
-    },
-    {
-      "eventKey": "china-critical-mineral-export-ban-suspension-20261124",
-      "title": "Čína prodloužila pozastavení zákazu vývozu gallia, germania a antimonu do USA do 27. 1. 2027. Gallium a germanium se používají při výrobě polovodičů.",
-      "publishedAtPrague": "24. 11. 2026, 15:41",
-      "category": "ai_regulation",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/markets/commodities/china-extends-suspension-ban-us-bound-gallium-germanium-antimony-exports-2026-11-24/",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/markets/commodities/china-extends-suspension-ban-us-bound-gallium-germanium-antimony-exports-2026-11-24/"
-        }
-      ],
-      "importanceScore": 65,
-      "time": "24. 11. 2026, 15:41 CET",
-      "kind": "continuing",
-      "ndxRelevant": true,
-      "publicationTimeVerified": true
-    },
-    {
-      "title": "ANT −6,5 % na 82 USD v premarketu, pod IPO cenou 83 USD. AMZN a Alphabet patří mezi významné investory.",
-      "time": "24. 11. 2026 12:17 CET",
-      "publishedAtPrague": "24. 11. 2026, 12:17",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_infrastructure",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/anthropic-breaks-below-83-ipo-price-debut-rally-unravels-2026-11-24/",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/business/anthropic-breaks-below-83-ipo-price-debut-rally-unravels-2026-11-24/"
-        },
-        {
-          "label": "Fortune – podíly AMZN a Alphabet",
-          "url": "https://fortune.com/2026/11/19/anthropic-ipo-amazon-google-stake-windfall-nonvoting/"
-        }
-      ],
-      "eventKey": "anthropic-below-ipo-price-20261124",
-      "ndxRelevant": true,
-      "importanceScore": 68
     },
     {
       "title": "Britská FCA upozorňuje na povinnost posoudit regulované finanční služby AI agentů. META spustila Muse v Británii 23. 11.",
@@ -429,6 +406,24 @@
     "timePrague": "25. 11. 2026 14:30 CET"
   },
   "archive": [
+    {
+      "time": "25. 11. 2026 07:02 CET",
+      "summary": "NDX 26 214,17 b. (−1,99 %, závěr 24. 11.). Bez zásadních novinek; pokračuje výprodej polovodičů v Asii. MA50 breadth 42,6 % (2026-11-24, závěr); RSI14 39,24 (2026-11-24, závěr); VXN 36,42 (2026-11-24, závěr). Ekonomika 6/6 ověřena. NQ=F kotace 05:55, přímý Yahoo zdroj nedostupný; ostatní kontroly doloženy v 06:05.",
+      "sourceLinks": [
+        {
+          "label": "Investing.com NDX",
+          "url": "https://www.investing.com/indices/nq-100-historical-data"
+        },
+        {
+          "label": "Reuters Asie",
+          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-25/"
+        },
+        {
+          "label": "GitHub Actions – zdrojové kontroly",
+          "url": "https://github.com/MichalMachalik/Nasdaq100-PAYandPRAY/actions/runs/45551086931"
+        }
+      ]
+    },
     {
       "time": "25. 11. 2026 06:03 CET",
       "summary": "NDX 26 214,17 b. (−1,99 %, závěr 24. 11.). KOSPI až −6,4 %, TAIEX až −8,6 %. MA50 breadth 42,6 % (2026-11-24, závěr); RSI14 39,24 (2026-11-24, závěr); VXN 36,42 (2026-11-24, závěr). Sedm zdrojových kontrol doloženo logy 05:32; NQ=F kotace 05:22, kontrola 05:32; TE 9/9; ekonomika 6/6 v 06:03.",
