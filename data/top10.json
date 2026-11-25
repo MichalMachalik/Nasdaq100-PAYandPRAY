@@ -3,7 +3,7 @@
   "sourceUrl": "https://companiesmarketcap.com/",
   "market": "Nasdaq-100",
   "currency": "USD",
-  "fetchedAtUtc": "2026-11-25T10:58:00.165028Z",
+  "fetchedAtUtc": "2026-11-25T10:58:41.950252Z",
   "fetchedAtPrague": "25. 11. 2026 11:58",
   "timestampKind": "retrieval; quote time not supplied by source",
   "constituentsSourceUrl": "https://api.nasdaq.com/api/quote/list-type/nasdaq100",
