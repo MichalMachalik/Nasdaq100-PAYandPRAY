@@ -1,18 +1,18 @@
 {
-  "updatedAtPrague": "25. 11. 2026 19:56 CET",
+  "updatedAtPrague": "25. 11. 2026 21:03 CET",
   "marketStatus": "Cash NDX: otevřeno, intradenní seance 25. 11. 2026.",
   "ndx": {
-    "value": 25851.83,
-    "changePercent": -1.38,
+    "value": 26010.82,
+    "changePercent": -0.78,
     "ath": 31361.37,
-    "asOf": "25. 11. 2026, 19:30:02 CET"
+    "asOf": "25. 11. 2026, 20:56:09 CET"
   },
   "sentiment": {
     "label": "Medvědí",
     "trend": "↗",
-    "reason": "MA50 breadth 42,6 % (2026-11-24, závěr); RSI14 39,24 (2026-11-24, závěr); VXN 36,42 (2026-11-24, závěr)."
+    "reason": "MA50 breadth 42,6 % (2026-11-24, závěr; rozpor nové kontroly). RSI14 39,24 (2026-11-24, závěr). VXN 36,42 (2026-11-24, závěr)."
   },
-  "driver": "NDX zmírnil ztrátu z 2,28 % na 1,38 %. Pokles NVDA a MSFT se zmenšil; kreditní a valuační riziko AI přetrvává.",
+  "driver": "NDX zmírnil denní ztrátu z 1,38 % na 0,78 %. Fed Beige Book uvádí pokračující růst a přetrvávající inflaci; kreditní riziko AI zůstává.",
   "news": [
     {
       "title": "USA | návrh cel vůči 14 obchodním partnerům včetně EU, Tchaj-wanu a Číny; pro Čínu až 20 %. Mexiko a Norsko zatím vyloučeny.",
@@ -57,6 +57,25 @@
       ]
     },
     {
+      "title": "Fed Beige Book | většina regionů hlásí mírný až střední růst, zaměstnanost vzrostla a inflační tlaky přetrvávají. Pro prosincové FOMC trvá riziko vyšších sazeb.",
+      "time": "25. 11. 2026, 20:19",
+      "publishedAtPrague": "25. 11. 2026, 20:19",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "macro",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/fed-survey-shows-continued-growth-sticky-inflation-recent-weeks-2026-11-25/",
+      "eventKey": "fed-beige-book-20261125",
+      "ndxRelevant": true,
+      "importanceScore": 78,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/fed-survey-shows-continued-growth-sticky-inflation-recent-weeks-2026-11-25/"
+        }
+      ]
+    },
+    {
       "title": "NVDA | Senátor Booker požaduje dokumentaci k návratu CEO, komunikaci s administrativou a internímu vyšetřování exportních pravidel. Antitrustový dohled se rozšiřuje.",
       "publishedAtPrague": "25. 11. 2026, 17:29",
       "eventKey": "nvda-booker-antitrust-letter-20261125",
@@ -80,7 +99,7 @@
       "time": "25. 11. 2026, 17:13",
       "publishedAtPrague": "25. 11. 2026, 17:13",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "market_risk",
       "source": "Reuters / LSEG",
       "url": "https://www.reuters.com/business/anthropics-slide-tests-wall-streets-lofty-bets-future-ai-profits-2026-11-25/",
@@ -411,13 +430,13 @@
   "leaders": [
     {
       "ticker": "NVDA",
-      "changePercent": -4.63,
-      "impact": "negativní; 19:48 CET"
+      "changePercent": -4.65,
+      "impact": "negativní; 20:42 CET"
     },
     {
       "ticker": "MSFT",
-      "changePercent": -1.38,
-      "impact": "negativní; 19:24 CET"
+      "changePercent": -0.89,
+      "impact": "negativní; 20:39 CET"
     }
   ],
   "macro": "US10Y | 24. 11.: 4,91 % | 23. 11.: 4,92 % | −1 bb",
@@ -428,7 +447,7 @@
   },
   "forecast": {
     "athReturnPercent": 16,
-    "athReason": "Potřebný růst 21,31 %. Odhad beze změny; přetrvává kreditní, inflační a celní riziko.",
+    "athReason": "Potřebný růst 20,57 %. Odhad beze změny; přetrvávající inflační a kreditní riziko.",
     "downside": "−7 až −13 %",
     "downsideReason": "Modelový 25. percentil koncové ceny; VXN 36,42 (2026-11-24, závěr).",
     "downsideModel": {
@@ -443,10 +462,28 @@
     }
   },
   "catalyst": {
-    "event": "Fed Beige Book",
-    "timePrague": "25. 11. 2026 20:00 CET"
+    "event": "Závěr cash NDX; 26. 11. Thanksgiving, 27. 11. zkrácená seance do 19:00 CET",
+    "timePrague": "25. 11. 2026 22:00 CET"
   },
   "archive": [
+    {
+      "time": "25. 11. 2026 21:03 CET",
+      "summary": "NDX 26 010,82 b., −0,78 % (20:56). Fed Beige Book: pokračující růst a přetrvávající inflace. Breadth: rozpor zdroje, zachována poslední hodnota.",
+      "sourceLinks": [
+        {
+          "label": "Google Finance NDX",
+          "url": "https://www.google.com/finance/quote/NDX:INDEXNASDAQ"
+        },
+        {
+          "label": "Reuters / Beige Book",
+          "url": "https://www.reuters.com/business/fed-survey-shows-continued-growth-sticky-inflation-recent-weeks-2026-11-25/"
+        },
+        {
+          "label": "StockCurry",
+          "url": "https://stockcurry.com/index_timeline.php?index=Nasdaq100&view=percent"
+        }
+      ]
+    },
     {
       "time": "25. 11. 2026 19:56 CET",
       "summary": "NDX 25 851,83 b., −1,38 % (19:30). NVDA −4,63 % (19:48). Reuters/LSEG: 37 z 60 titulů s růstem odhadů EPS za 3 měsíce cenově oslabilo.",
@@ -4456,6 +4493,10 @@
     {
       "time": "25. 11. 2026 19:56 CET",
       "ndx": 25851.83
+    },
+    {
+      "time": "25. 11. 2026 21:03 CET",
+      "ndx": 26010.82
     }
   ],
   "sources": [
@@ -5550,6 +5591,14 @@
     {
       "name": "Reuters / LSEG",
       "url": "https://www.reuters.com/business/anthropics-slide-tests-wall-streets-lofty-bets-future-ai-profits-2026-11-25/"
+    },
+    {
+      "name": "Reuters – Beige Book",
+      "url": "https://www.reuters.com/business/fed-survey-shows-continued-growth-sticky-inflation-recent-weeks-2026-11-25/"
+    },
+    {
+      "name": "Nasdaq – obchodní hodiny",
+      "url": "https://www.nasdaq.com/market-activity/stock-market-holiday-schedule?mod=article_inline"
     }
   ]
 }
