@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "25. 11. 2026 03:01 CET",
+  "updatedAtPrague": "25. 11. 2026 04:00 CET",
   "marketStatus": "Cash NDX: závěr 24. 11. 2026, seance ukončena.",
   "ndx": {
     "value": 26214.17,
@@ -12,7 +12,7 @@
     "trend": "→",
     "reason": "MA50 breadth 42,6 % (2026-11-24, závěr); RSI14 39,24 (2026-11-24, závěr); VXN 36,31 (2026-11-23, starší závěr)."
   },
-  "driver": "SOX −7,88 %; NVDA −5,86 % (závěr 24. 11.). KOSPI až −5,3 %, Tchaj-wan až −5,1 % (25. 11., Reuters 02:50).",
+  "driver": "SOX −7,88 %; NVDA −5,86 % (závěr 24. 11.). KOSPI až −5,3 %, Tchaj-wan až −5,1 % (Reuters 25. 11., 02:50).",
   "news": [
     {
       "title": "DELL Q3 | tržby 54,94 mld. USD vs. kons. 49,32 (beat 11,4 %); upr. EPS 9,45 USD vs. kons. 6,59 (beat 43,4 %). Q4 výhled tržeb 56,3 mld. USD; EPS 8,40 USD. AI server backlog 132,3 mld. USD; nové objednávky 60,2 mld. USD. FY27 AI servery 78 vs. původních 74 mld. USD. FY27 výhled tržeb 202 mld. USD vs. kons. 194,48 (beat 3,9 %).",
@@ -80,7 +80,7 @@
       "time": "25. 11. 2026, 02:50 CET",
       "publishedAtPrague": "25. 11. 2026, 02:50",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "semiconductor_market",
       "source": "Reuters",
       "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-25/",
@@ -164,25 +164,6 @@
       "publicationTimeVerified": true
     },
     {
-      "title": "NVDA | Bílý dům v prohlášení pro Reuters potvrdil podporu open-weight AI modelů; širší využití modelů rozšiřuje potenciální poptávku po GPU NVDA.",
-      "time": "24. 11. 2026 23:29 CET",
-      "publishedAtPrague": "24. 11. 2026, 23:29",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_regulation",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/china/huangs-return-nvidia-brings-open-weight-ai-debate-forefront-washington-2026-11-24/",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/world/china/huangs-return-nvidia-brings-open-weight-ai-debate-forefront-washington-2026-11-24/"
-        }
-      ],
-      "eventKey": "white-house-open-weight-ai-support-20261124",
-      "ndxRelevant": true,
-      "importanceScore": 64
-    },
-    {
       "eventKey": "tesla-spacex-merger-committee-directors-20261124",
       "title": "TSLA/SPCX | Podle FT pět ředitelů vyjednává možnou akciovou fúzi; podmínky transakce nejsou dohodnuty.",
       "time": "24. 11. 2026, 06:20 CET",
@@ -206,6 +187,25 @@
       "importanceScore": 84
     },
     {
+      "title": "NVDA | Bílý dům v prohlášení pro Reuters potvrdil podporu open-weight AI modelů; širší využití modelů rozšiřuje potenciální poptávku po GPU NVDA.",
+      "time": "24. 11. 2026 23:29 CET",
+      "publishedAtPrague": "24. 11. 2026, 23:29",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "ai_regulation",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/china/huangs-return-nvidia-brings-open-weight-ai-debate-forefront-washington-2026-11-24/",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/china/huangs-return-nvidia-brings-open-weight-ai-debate-forefront-washington-2026-11-24/"
+        }
+      ],
+      "eventKey": "white-house-open-weight-ai-support-20261124",
+      "ndxRelevant": true,
+      "importanceScore": 64
+    },
+    {
       "title": "ADSK Q3 | tržby 2,16 mld. USD vs. kons. 2,13 (beat 1,4 %); upr. EPS 3,20 USD vs. kons. 3,07 (beat 4,2 %). Q4 střed výhledu tržeb 2,2275 mld. USD vs. kons. 2,211 (beat 0,7 %); upr. EPS 3,235 vs. kons. 3,20 USD (beat 1,1 %).",
       "publishedAtPrague": "24. 11. 2026, 22:00",
       "category": "earnings",
@@ -227,6 +227,33 @@
       "publicationTimeVerified": true,
       "ndxRelevant": true,
       "kind": "continuing"
+    },
+    {
+      "title": "WDAY Q3 | tržby 2,705 mld. USD vs. kons. 2,69 (beat 0,6 %); upr. EPS 2,82 USD vs. kons. 2,74 (beat 2,9 %). AI nové ACV téměř 150 mil. USD, více než 3× y/y. Backlog 27,548 mld. USD vs. kons. 28,66 (miss 3,9 %). Q4 výhled předplatného 2,60 mld. USD.",
+      "time": "24. 11. 2026 22:01 CET",
+      "publishedAtPrague": "24. 11. 2026, 22:01",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "earnings",
+      "source": "Workday / PRNewswire",
+      "url": "https://www.prnewswire.com/news-releases/workday-announces-fiscal-2027-third-quarter-financial-results-302949793.html",
+      "sourceLinks": [
+        {
+          "label": "Workday",
+          "url": "https://www.prnewswire.com/news-releases/workday-announces-fiscal-2027-third-quarter-financial-results-302949793.html"
+        },
+        {
+          "label": "WSJ – konsenzus",
+          "url": "https://www.wsj.com/business/earnings/workday-raises-full-year-subscription-outlook-after-sales-rise-625a54e3"
+        },
+        {
+          "label": "Barron's – backlog",
+          "url": "https://www.barrons.com/articles/workday-earnings-stock-price-23ed29a7"
+        }
+      ],
+      "eventKey": "wday-fy2027-q3-earnings-20261124",
+      "ndxRelevant": true,
+      "importanceScore": 61
     },
     {
       "title": "USA | Nasdaq Composite při otevření −1,43 %. SOX −5,95 % (15:33 CET), NVDA −5,36 % (15:49 CET).",
@@ -298,31 +325,27 @@
       "importanceScore": 68
     },
     {
-      "title": "Singapur pokračuje ve vyšetřování Megaspeed a s USA připravuje mechanismus výměny informací pro kontrolu exportu AI čipů.",
-      "time": "24. 11. 2026 03:27 CET",
-      "publishedAtPrague": "24. 11. 2026, 03:27",
+      "title": "Britská FCA upozorňuje na povinnost posoudit regulované finanční služby AI agentů. META spustila Muse v Británii 23. 11.",
+      "time": "24. 11. 2026 12:01 CET",
+      "publishedAtPrague": "24. 11. 2026, 12:01",
       "publicationTimeVerified": true,
       "kind": "continuing",
       "category": "ai_regulation",
       "source": "Reuters",
-      "url": "https://www.reuters.com/world/singapore-investigating-nvidia-linked-megaspeed-after-us-blacklisting-2026-11-24/",
+      "url": "https://www.reuters.com/business/finance/ai-agents-could-trigger-financial-regulation-tech-firms-uk-watchdog-says-2026-11-24/",
       "sourceLinks": [
         {
           "label": "Reuters",
-          "url": "https://www.reuters.com/world/singapore-investigating-nvidia-linked-megaspeed-after-us-blacklisting-2026-11-24/"
+          "url": "https://www.reuters.com/business/finance/ai-agents-could-trigger-financial-regulation-tech-firms-uk-watchdog-says-2026-11-24/"
         },
         {
-          "label": "Singapur – úřad premiéra",
-          "url": "https://www.pmo.gov.sg/newsroom/pm-lawrence-wong-at-the-q-a-segment-of-the-joint-press-conference-with-australia-pm-anthony-albanese-in-canberra-australia-nov-2026/"
-        },
-        {
-          "label": "The Straits Times",
-          "url": "https://www.straitstimes.com/singapore/spore-working-with-us-on-chip-export-enforcement-as-megaspeed-probe-continues-pm-wong"
+          "label": "Meta",
+          "url": "https://about.fb.com/news/2026/11/introducing-muse-in-the-uk-a-personal-ai-agent-you-control/"
         }
       ],
-      "eventKey": "singapore-wong-megaspeed-enforcement-20261124",
+      "eventKey": "uk-fca-ai-agents-financial-services-20261124",
       "ndxRelevant": true,
-      "importanceScore": 66
+      "importanceScore": 57
     },
     {
       "title": "HPQ Q4 | tržby 16,0 mld. USD vs. kons. 15,42 (beat 3,8 %); upr. EPS 0,83 vs. kons. 0,75 USD (beat 10,7 %), včetně 0,15 USD celních refundací. AI PC téměř 60 % dodávek; tlak nákladů na paměti a úložiště. Q1 výhled upr. EPS 0,66–0,76 USD vs. kons. 0,71.",
@@ -346,29 +369,6 @@
       "eventKey": "hpq-fy2026-q4-earnings-20261124",
       "ndxRelevant": true,
       "importanceScore": 48
-    },
-    {
-      "title": "Britská FCA upozorňuje na povinnost posoudit regulované finanční služby AI agentů. META spustila Muse v Británii 23. 11.",
-      "time": "24. 11. 2026 12:01 CET",
-      "publishedAtPrague": "24. 11. 2026, 12:01",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_regulation",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/finance/ai-agents-could-trigger-financial-regulation-tech-firms-uk-watchdog-says-2026-11-24/",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/business/finance/ai-agents-could-trigger-financial-regulation-tech-firms-uk-watchdog-says-2026-11-24/"
-        },
-        {
-          "label": "Meta",
-          "url": "https://about.fb.com/news/2026/11/introducing-muse-in-the-uk-a-personal-ai-agent-you-control/"
-        }
-      ],
-      "eventKey": "uk-fca-ai-agents-financial-services-20261124",
-      "ndxRelevant": true,
-      "importanceScore": 57
     },
     {
       "eventKey": "malaysia-ai-chip-export-compliance-20261124",
@@ -448,6 +448,24 @@
     "timePrague": "25. 11. 2026 14:30 CET"
   },
   "archive": [
+    {
+      "time": "25. 11. 2026 04:00 CET",
+      "summary": "NDX 26 214,17 b. (−1,99 %, závěr 24. 11.); WDAY Q3 tržby 2,705 mld. USD, upr. EPS 2,82 USD. MA50 breadth 42,6 % (2026-11-24, závěr); RSI14 39,24 (2026-11-24, závěr); VXN 36,31 (2026-11-23, starší závěr). Ekonomika 6/6; TE 9/9 kontrola 03:34; sedm zdrojových kontrol z 03:03 doloženo logy. NQ=F kotace 25. 11. 2026 02:52, Yahoo 429; překročen limit 65 minut.",
+      "sourceLinks": [
+        {
+          "label": "Google Finance NDX",
+          "url": "https://www.google.com/finance/quote/NDX:INDEXNASDAQ"
+        },
+        {
+          "label": "Workday Q3",
+          "url": "https://www.prnewswire.com/news-releases/workday-announces-fiscal-2027-third-quarter-financial-results-302949793.html"
+        },
+        {
+          "label": "FRED VXN",
+          "url": "https://fred.stlouisfed.org/series/VXNCLS"
+        }
+      ]
+    },
     {
       "time": "25. 11. 2026 03:01 CET",
       "summary": "NDX 26 214,17 b. (−1,99 %, závěr 24. 11.); KOSPI až −5,3 %, Tchaj-wan až −5,1 %. MA50 breadth 42,6 % (2026-11-24, závěr); RSI14 39,24 (2026-11-24, závěr); VXN 36,31 (2026-11-23, starší závěr). Ekonomika 6/6; sedm zdrojových kontrol z 02:03 doloženo logy, TE 9/9. NQ=F kotace 25. 11. 2026 01:52, Yahoo 429; vyžaduje obnovení.",
@@ -5141,6 +5159,18 @@
     {
       "name": "Reuters – Asie",
       "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-25/"
+    },
+    {
+      "name": "Workday Q3",
+      "url": "https://www.prnewswire.com/news-releases/workday-announces-fiscal-2027-third-quarter-financial-results-302949793.html"
+    },
+    {
+      "name": "WSJ – WDAY konsenzus",
+      "url": "https://www.wsj.com/business/earnings/workday-raises-full-year-subscription-outlook-after-sales-rise-625a54e3"
+    },
+    {
+      "name": "Barron's – WDAY backlog",
+      "url": "https://www.barrons.com/articles/workday-earnings-stock-price-23ed29a7"
     }
   ]
 }
