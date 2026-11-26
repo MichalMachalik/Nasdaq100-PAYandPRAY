@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "26. 11. 2026 09:01 CET",
+  "updatedAtPrague": "26. 11. 2026 09:59 CET",
   "marketStatus": "Cash NDX: uzavřeno, Thanksgiving 26. 11.; závěr 25. 11. 2026.",
   "ndx": {
     "value": 26046.9,
@@ -12,7 +12,7 @@
     "trend": "→",
     "reason": "MA50 breadth 43,6 % (2026-11-25, závěr). RSI14 38,39 (2026-11-25, závěr). VXN 38,53 (2026-11-25, závěr)."
   },
-  "driver": "NVDA: pozastavení dodávek AI serverů do čtyř zemí jihovýchodní Asie podle FT. Reuters: čínské AI modely ohrožuje nedostupnost zahraničního výpočetního výkonu.",
+  "driver": "NVDA: omezení dodávek AI serverů do jihovýchodní Asie. Evropské technologické akcie 26. 11. ráno přibližně +2 %.",
   "news": [
     {
       "title": "NVDA | Podle FT pozastavila dodávky serverů s vlastními čipy do Malajsie, Singapuru, Thajska a Indonésie. Nové americké exportní licence platí od minulého týdne; délka přerušení neznámá.",
@@ -38,7 +38,7 @@
       "time": "26. 11. 2026, 08:19",
       "publishedAtPrague": "26. 11. 2026, 08:19",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "ai_regulation",
       "source": "Reuters",
       "url": "https://www.reuters.com/world/china/us-chip-curbs-distillation-crackdown-threaten-chinese-ai-model-development-2026-11-26/",
@@ -49,6 +49,25 @@
         {
           "label": "Reuters",
           "url": "https://www.reuters.com/world/china/us-chip-curbs-distillation-crackdown-threaten-chinese-ai-model-development-2026-11-26/"
+        }
+      ]
+    },
+    {
+      "title": "USA | návrh cel vůči 14 obchodním partnerům včetně EU, Tchaj-wanu a Číny; pro Čínu až 20 %. Mexiko a Norsko zatím vyloučeny.",
+      "time": "25. 11. 2026, 14:15",
+      "publishedAtPrague": "25. 11. 2026, 14:15",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "macro",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/china/us-proposes-new-tariffs-14-trading-partners-fight-excess-factory-capacity-2026-11-25/",
+      "eventKey": "us-section301-excess-capacity-tariff-proposal-20261125",
+      "ndxRelevant": true,
+      "importanceScore": 90,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/china/us-proposes-new-tariffs-14-trading-partners-fight-excess-factory-capacity-2026-11-25/"
         }
       ]
     },
@@ -74,25 +93,6 @@
       "eventKey": "nvda-sp-creditwatch-negative-20261125",
       "ndxRelevant": true,
       "importanceScore": 82
-    },
-    {
-      "title": "USA | návrh cel vůči 14 obchodním partnerům včetně EU, Tchaj-wanu a Číny; pro Čínu až 20 %. Mexiko a Norsko zatím vyloučeny.",
-      "time": "25. 11. 2026, 14:15",
-      "publishedAtPrague": "25. 11. 2026, 14:15",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "macro",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/china/us-proposes-new-tariffs-14-trading-partners-fight-excess-factory-capacity-2026-11-25/",
-      "eventKey": "us-section301-excess-capacity-tariff-proposal-20261125",
-      "ndxRelevant": true,
-      "importanceScore": 90,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/world/china/us-proposes-new-tariffs-14-trading-partners-fight-excess-factory-capacity-2026-11-25/"
-        }
-      ]
     },
     {
       "title": "USA PCE říjen | 0,3 % m/m vs. kons. 0,3 %; 3,8 % y/y vs. kons. 3,8 %. Core PCE 3,3 % y/y vs. září 3,1 %; 0,3 % m/m.",
@@ -152,6 +152,25 @@
         {
           "label": "Reuters",
           "url": "https://www.reuters.com/legal/government/nvidia-faces-questions-top-senate-antitrust-democrat-2026-11-25/"
+        }
+      ]
+    },
+    {
+      "title": "Evropa | STOXX Europe 600 +1,4 % v 09:15 CET, technologický sektor přibližně +2 %, Infineon a Soitec přibližně +4 %. Reuters: očekávání stropu amerických cel na EU 15 %.",
+      "time": "26. 11. 2026, 09:32",
+      "publishedAtPrague": "26. 11. 2026, 09:32",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "market",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/finance/european-stocks-rally-tech-banks-rebound-tariff-fears-ease-2026-11-26/",
+      "eventKey": "europe-tech-rebound-tariff-expectations-20261126",
+      "ndxRelevant": true,
+      "importanceScore": 58,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/finance/european-stocks-rally-tech-banks-rebound-tariff-fears-ease-2026-11-26/"
         }
       ]
     },
@@ -293,21 +312,21 @@
       ]
     },
     {
-      "title": "ASML | Nizozemská vláda usiluje o zablokování amerického návrhu MATCH Act, který by zpřísnil omezení exportu DUV litografie do Číny. Čína má tvořit přibližně 20 % letošních tržeb ASML.",
-      "time": "25. 11. 2026, 09:35",
-      "publishedAtPrague": "25. 11. 2026, 09:35",
+      "title": "SPCX | FCC schválila nasazení až 1 mil. družic Starmind pro orbitální AI výpočty. Zahájení do listopadu 2033; 100 tis. do listopadu 2035.",
+      "time": "25. 11. 2026, 17:57",
+      "publishedAtPrague": "25. 11. 2026, 17:57",
       "publicationTimeVerified": true,
       "kind": "continuing",
-      "category": "ai_regulation",
+      "category": "ai_infrastructure",
       "source": "Reuters",
-      "url": "https://www.reuters.com/world/china/dutch-government-working-prevent-passing-us-match-bill-minister-says-2026-11-25/",
-      "eventKey": "asml-dutch-government-match-act-20261125",
+      "url": "https://www.reuters.com/business/media-telecom/us-authorizes-spacex-deploy-1-million-satellites-data-centers-space-2026-11-25/",
+      "eventKey": "spcx-fcc-starmind-license-20261125",
       "ndxRelevant": true,
-      "importanceScore": 74,
+      "importanceScore": 62,
       "sourceLinks": [
         {
           "label": "Reuters",
-          "url": "https://www.reuters.com/world/china/dutch-government-working-prevent-passing-us-match-bill-minister-says-2026-11-25/"
+          "url": "https://www.reuters.com/business/media-telecom/us-authorizes-spacex-deploy-1-million-satellites-data-centers-space-2026-11-25/"
         }
       ]
     },
@@ -327,25 +346,6 @@
         {
           "label": "Reuters",
           "url": "https://www.reuters.com/world/asia-pacific/air-cargo-demand-ai-data-centres-shows-no-sign-slowing-sats-ceo-says-2026-11-26/"
-        }
-      ]
-    },
-    {
-      "title": "SPCX | FCC schválila nasazení až 1 mil. družic Starmind pro orbitální AI výpočty. Zahájení do listopadu 2033; 100 tis. do listopadu 2035.",
-      "time": "25. 11. 2026, 17:57",
-      "publishedAtPrague": "25. 11. 2026, 17:57",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_infrastructure",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/media-telecom/us-authorizes-spacex-deploy-1-million-satellites-data-centers-space-2026-11-25/",
-      "eventKey": "spcx-fcc-starmind-license-20261125",
-      "ndxRelevant": true,
-      "importanceScore": 62,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/business/media-telecom/us-authorizes-spacex-deploy-1-million-satellites-data-centers-space-2026-11-25/"
         }
       ]
     },
@@ -427,7 +427,7 @@
   },
   "forecast": {
     "athReturnPercent": 16,
-    "athReason": "Potřebný růst 20,40 %. Odhad beze změny; inflační a kreditní riziko.",
+    "athReason": "Potřebný růst 20,40 %. Odhad beze změny; inflační a exportní riziko.",
     "downside": "−8 až −14 %",
     "downsideReason": "Modelový 25. percentil koncové ceny; VXN 38,53 (2026-11-25, závěr).",
     "downsideModel": {
@@ -446,6 +446,24 @@
     "timePrague": "27. 11. 2026 15:30 CET"
   },
   "archive": [
+    {
+      "time": "26. 11. 2026 09:59 CET",
+      "summary": "NDX 26 046,90 b. (−0,64 %; závěr 25. 11.). Evropské technologie přibližně +2 % (26. 11., 09:15 CET). US10Y 4,85 % (25. 11.).",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq NDX",
+          "url": "https://indexes.nasdaq.com/Index/Overview/NDX"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/finance/european-stocks-rally-tech-banks-rebound-tariff-fears-ease-2026-11-26/"
+        },
+        {
+          "label": "US Treasury",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value_month=202611"
+        }
+      ]
+    },
     {
       "time": "26. 11. 2026 09:01 CET",
       "summary": "NDX 26 046,90 b. (−0,64 %; závěr 25. 11.). Reuters: exportní licence ohrožují harmonogram Z.AI a Moonshot. US10Y 4,85 % (25. 11.).",
@@ -5843,6 +5861,10 @@
     {
       "name": "Reuters – čínské AI modely / exportní omezení",
       "url": "https://www.reuters.com/world/china/us-chip-curbs-distillation-crackdown-threaten-chinese-ai-model-development-2026-11-26/"
+    },
+    {
+      "name": "Reuters – evropské technologie",
+      "url": "https://www.reuters.com/business/finance/european-stocks-rally-tech-banks-rebound-tariff-fears-ease-2026-11-26/"
     }
   ]
 }
