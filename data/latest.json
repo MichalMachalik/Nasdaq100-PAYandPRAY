@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "26. 11. 2026 08:00 CET",
+  "updatedAtPrague": "26. 11. 2026 09:01 CET",
   "marketStatus": "Cash NDX: uzavřeno, Thanksgiving 26. 11.; závěr 25. 11. 2026.",
   "ndx": {
     "value": 26046.9,
@@ -12,14 +12,14 @@
     "trend": "→",
     "reason": "MA50 breadth 43,6 % (2026-11-25, závěr). RSI14 38,39 (2026-11-25, závěr). VXN 38,53 (2026-11-25, závěr)."
   },
-  "driver": "NVDA: pozastavení dodávek AI serverů do čtyř zemí jihovýchodní Asie podle FT; riziko odkladu tržeb kvůli exportním licencím.",
+  "driver": "NVDA: pozastavení dodávek AI serverů do čtyř zemí jihovýchodní Asie podle FT. Reuters: čínské AI modely ohrožuje nedostupnost zahraničního výpočetního výkonu.",
   "news": [
     {
       "title": "NVDA | Podle FT pozastavila dodávky serverů s vlastními čipy do Malajsie, Singapuru, Thajska a Indonésie. Nové americké exportní licence platí od minulého týdne; délka přerušení neznámá.",
       "time": "26. 11. 2026, 06:09",
       "publishedAtPrague": "26. 11. 2026, 06:09",
       "publicationTimeVerified": true,
-      "kind": "Nově dohledáno",
+      "kind": "continuing",
       "category": "ai_regulation",
       "source": "Reuters / FT",
       "url": "https://www.reuters.com/world/asia-pacific/nvidia-halts-chip-shipments-southeast-asia-ft-reports-2026-11-26/",
@@ -30,6 +30,25 @@
         {
           "label": "Reuters (zpráva FT)",
           "url": "https://www.reuters.com/world/asia-pacific/nvidia-halts-chip-shipments-southeast-asia-ft-reports-2026-11-26/"
+        }
+      ]
+    },
+    {
+      "title": "AI export | Reuters: Z.AI může odložit GLM-5.5 do Q1 2027 nebo později. Moonshot očekává při ztrátě zahraničního výpočetního výkonu prodloužení cyklu modelů z 6 na 12+ měsíců. Omezení přístupu k čipům NVDA platí od 19. 11.",
+      "time": "26. 11. 2026, 08:19",
+      "publishedAtPrague": "26. 11. 2026, 08:19",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "ai_regulation",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/china/us-chip-curbs-distillation-crackdown-threaten-chinese-ai-model-development-2026-11-26/",
+      "eventKey": "china-ai-model-delays-compute-restrictions-20261126",
+      "ndxRelevant": true,
+      "importanceScore": 76,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/china/us-chip-curbs-distillation-crackdown-threaten-chinese-ai-model-development-2026-11-26/"
         }
       ]
     },
@@ -194,25 +213,6 @@
       ]
     },
     {
-      "title": "NVDA | Reuters: DOJ neprovedlo formální vyšetřování CEO před jeho návratem; vyšetřování zákazníků NVDA pokračovala.",
-      "time": "25. 11. 2026, 18:30",
-      "publishedAtPrague": "25. 11. 2026, 18:30",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "company",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/us-justice-department-did-not-open-probe-into-jensen-huang-before-reinstatement-2026-11-25/",
-      "eventKey": "nvda-doj-no-formal-probe-before-return-20261125",
-      "ndxRelevant": true,
-      "importanceScore": 70,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/business/us-justice-department-did-not-open-probe-into-jensen-huang-before-reinstatement-2026-11-25/"
-        }
-      ]
-    },
-    {
       "title": "USA HDP Q3 | 4,3 % SAAR vs. kons. 3,5 %; předběžně 3,4 %. Revize +0,9 p. b. Růst investic a spotřeby.",
       "time": "25. 11. 2026, 14:30",
       "publishedAtPrague": "25. 11. 2026, 14:30",
@@ -232,6 +232,25 @@
         {
           "label": "Reuters",
           "url": "https://www.reuters.com/business/nasdaq-futures-slide-over-2-fresh-us-tariff-concerns-inflation-data-focus-2026-11-25/"
+        }
+      ]
+    },
+    {
+      "title": "NVDA | Reuters: DOJ neprovedlo formální vyšetřování CEO před jeho návratem; vyšetřování zákazníků NVDA pokračovala.",
+      "time": "25. 11. 2026, 18:30",
+      "publishedAtPrague": "25. 11. 2026, 18:30",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "company",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/us-justice-department-did-not-open-probe-into-jensen-huang-before-reinstatement-2026-11-25/",
+      "eventKey": "nvda-doj-no-formal-probe-before-return-20261125",
+      "ndxRelevant": true,
+      "importanceScore": 70,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/us-justice-department-did-not-open-probe-into-jensen-huang-before-reinstatement-2026-11-25/"
         }
       ]
     },
@@ -386,25 +405,6 @@
           "url": "https://www.reuters.com/world/us/us-weekly-jobless-claims-fall-more-than-expected-2026-11-25/"
         }
       ]
-    },
-    {
-      "title": "AAPL | Apple celosvětově odstranil AI aplikaci Talkie od MiniMax z App Store po zprávách o rizicích pro nezletilé.",
-      "time": "26. 11. 2026, 06:13",
-      "publishedAtPrague": "26. 11. 2026, 06:13",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_regulation",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/retail-consumer/apple-pulls-minimax-ai-chatbot-app-store-over-child-safety-concerns-2026-11-26/",
-      "eventKey": "aapl-minimax-talkie-appstore-removal-20261126",
-      "ndxRelevant": true,
-      "importanceScore": 40,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/business/retail-consumer/apple-pulls-minimax-ai-chatbot-app-store-over-child-safety-concerns-2026-11-26/"
-        }
-      ]
     }
   ],
   "leaders": [
@@ -446,6 +446,24 @@
     "timePrague": "27. 11. 2026 15:30 CET"
   },
   "archive": [
+    {
+      "time": "26. 11. 2026 09:01 CET",
+      "summary": "NDX 26 046,90 b. (−0,64 %; závěr 25. 11.). Reuters: exportní licence ohrožují harmonogram Z.AI a Moonshot. US10Y 4,85 % (25. 11.).",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq NDX",
+          "url": "https://indexes.nasdaqomx.com/Index/Overview/NDX"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/china/us-chip-curbs-distillation-crackdown-threaten-chinese-ai-model-development-2026-11-26/"
+        },
+        {
+          "label": "US Treasury",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value_month=202611"
+        }
+      ]
+    },
     {
       "time": "26. 11. 2026 08:00 CET",
       "summary": "NDX 26 046,90 b. (−0,64 %; závěr 25. 11.). NVDA: FT hlásí pozastavení dodávek AI serverů do čtyř zemí jihovýchodní Asie. US10Y 4,85 % (25. 11.).",
@@ -5821,6 +5839,10 @@
     {
       "name": "Reuters (zpráva FT)",
       "url": "https://www.reuters.com/world/asia-pacific/nvidia-halts-chip-shipments-southeast-asia-ft-reports-2026-11-26/"
+    },
+    {
+      "name": "Reuters – čínské AI modely / exportní omezení",
+      "url": "https://www.reuters.com/world/china/us-chip-curbs-distillation-crackdown-threaten-chinese-ai-model-development-2026-11-26/"
     }
   ]
 }
