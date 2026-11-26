@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "26. 11. 2026 17:05 CET",
+  "updatedAtPrague": "26. 11. 2026 17:58 CET",
   "marketStatus": "Cash NDX: uzavřeno, Thanksgiving 26. 11.; závěr 25. 11. 2026.",
   "ndx": {
     "value": 26046.9,
@@ -12,7 +12,7 @@
     "trend": "→",
     "reason": "MA50 breadth 43,6 % (2026-11-25, závěr). RSI14 38,39 (2026-11-25, závěr). VXN 38,53 (2026-11-25, závěr)."
   },
-  "driver": "Exportní licence USA omezují dodávky AI serverů do jihovýchodní Asie. BoE upozorňuje na kreditní riziko financování AI; emise hyperscalerů mají překročit 305 mld. USD.",
+  "driver": "Exportní licence USA omezují dodávky AI serverů do jihovýchodní Asie. Fitch očekává zpomalení investic do datacenter; Moody’s ponechává rating NVDA Aa1.",
   "news": [
     {
       "title": "BoE | Emise dluhopisů hyperscalerů mají v roce 2026 překročit 305 mld. USD (8 % globálních investičních emisí). Složitější a vzájemně provázané financování AI zvyšuje riziko šíření kreditního stresu.",
@@ -175,25 +175,6 @@
       ]
     },
     {
-      "title": "NVDA | Senátor Booker požaduje dokumentaci k návratu CEO, komunikaci s administrativou a internímu vyšetřování exportních pravidel. Antitrustový dohled se rozšiřuje.",
-      "publishedAtPrague": "25. 11. 2026, 17:29",
-      "eventKey": "nvda-booker-antitrust-letter-20261125",
-      "importanceScore": 80,
-      "url": "https://www.reuters.com/legal/government/nvidia-faces-questions-top-senate-antitrust-democrat-2026-11-25/",
-      "category": "ai_regulation",
-      "time": "25. 11. 2026, 17:29",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "source": "Reuters",
-      "ndxRelevant": true,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/legal/government/nvidia-faces-questions-top-senate-antitrust-democrat-2026-11-25/"
-        }
-      ]
-    },
-    {
       "title": "Asie | Nikkei +1,6 %, KOSPI +1,9 %. Futures implikují 98% pravděpodobnost zvýšení sazeb Fedu o 25 bb v prosinci.",
       "time": "26. 11. 2026, 02:35",
       "publishedAtPrague": "26. 11. 2026, 02:35",
@@ -232,25 +213,6 @@
       ]
     },
     {
-      "title": "NDX | Reuters/LSEG: z 60 společností s růstem odhadů forward EPS za 3 měsíce jich 37 cenově oslabilo. Medián forward P/E 25 nejdražších titulů 38× vs. 18× u zbývajících ziskových firem.",
-      "time": "25. 11. 2026, 17:13",
-      "publishedAtPrague": "25. 11. 2026, 17:13",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "market_risk",
-      "source": "Reuters / LSEG",
-      "url": "https://www.reuters.com/business/anthropics-slide-tests-wall-streets-lofty-bets-future-ai-profits-2026-11-25/",
-      "eventKey": "ndx-lseg-valuation-dispersion-20261125",
-      "ndxRelevant": true,
-      "importanceScore": 74,
-      "sourceLinks": [
-        {
-          "label": "Reuters / LSEG",
-          "url": "https://www.reuters.com/business/anthropics-slide-tests-wall-streets-lofty-bets-future-ai-profits-2026-11-25/"
-        }
-      ]
-    },
-    {
       "title": "Tchaj-wan | vláda očekává zachování dohodnutého amerického cla 15 %. Polovodiče mají přednostní zacházení dle memoranda; samostatná cla podle Section 232 dosud neoznámena.",
       "time": "26. 11. 2026, 00:31",
       "publishedAtPrague": "26. 11. 2026, 00:31",
@@ -266,6 +228,25 @@
         {
           "label": "Reuters",
           "url": "https://www.reuters.com/world/asia-pacific/taiwan-says-it-is-confident-keeping-previously-agreed-tariffs-with-us-2026-11-25/"
+        }
+      ]
+    },
+    {
+      "title": "NVDA | Moody’s ponechává rating Aa1 a stabilní výhled. Návrat CEO snižuje krátkodobou nejistotu vedení; regulatorní a governance rizika přetrvávají.",
+      "time": "25. 11. 2026, 23:18",
+      "publishedAtPrague": "25. 11. 2026, 23:18",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "corporate",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/moodys-says-nvidias-huang-reinstatement-eases-uncertainty-ratings-unchanged-2026-11-25/",
+      "eventKey": "nvda-moodys-rating-unchanged-20261125",
+      "ndxRelevant": true,
+      "importanceScore": 65,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/moodys-says-nvidias-huang-reinstatement-eases-uncertainty-ratings-unchanged-2026-11-25/"
         }
       ]
     },
@@ -289,30 +270,11 @@
       ]
     },
     {
-      "title": "NVDA | WSJ: američtí činitelé informovali Kongres, že nemají důkazy o řízení sledování CEO čínskou rozvědkou.",
-      "publishedAtPrague": "25. 11. 2026, 17:31",
-      "eventKey": "nvda-us-officials-no-evidence-china-spying-20261125",
-      "importanceScore": 70,
-      "url": "https://www.reuters.com/technology/us-finds-no-evidence-china-directed-executive-spy-nvidia-ceo-wsj-reports-2026-11-25/",
-      "category": "ai_regulation",
-      "time": "25. 11. 2026, 17:31",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "source": "Reuters",
-      "ndxRelevant": true,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/technology/us-finds-no-evidence-china-directed-executive-spy-nvidia-ceo-wsj-reports-2026-11-25/"
-        }
-      ]
-    },
-    {
       "title": "Singapur | Odmítá návrh USTR na clo až 20 % (10 % při reciproční dohodě). Efektivní sazba na export do USA by podle vlády vzrostla ze 7,8 % na 10,3 %.",
       "time": "26. 11. 2026, 05:11",
       "publishedAtPrague": "26. 11. 2026, 05:11",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "trade",
       "source": "Reuters",
       "url": "https://www.reuters.com/markets/asia/singapore-very-disappointed-over-new-tariffs-urges-us-reconsider-2026-11-26/",
@@ -323,25 +285,6 @@
         {
           "label": "Reuters",
           "url": "https://www.reuters.com/markets/asia/singapore-very-disappointed-over-new-tariffs-urges-us-reconsider-2026-11-26/"
-        }
-      ]
-    },
-    {
-      "title": "SPCX | FCC schválila nasazení až 1 mil. družic Starmind pro orbitální AI výpočty. Zahájení do listopadu 2033; 100 tis. do listopadu 2035.",
-      "time": "25. 11. 2026, 17:57",
-      "publishedAtPrague": "25. 11. 2026, 17:57",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_infrastructure",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/media-telecom/us-authorizes-spacex-deploy-1-million-satellites-data-centers-space-2026-11-25/",
-      "eventKey": "spcx-fcc-starmind-license-20261125",
-      "ndxRelevant": true,
-      "importanceScore": 62,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/business/media-telecom/us-authorizes-spacex-deploy-1-million-satellites-data-centers-space-2026-11-25/"
         }
       ]
     },
@@ -427,6 +370,24 @@
     "timePrague": "27. 11. 2026 15:30 CET"
   },
   "archive": [
+    {
+      "time": "26. 11. 2026 17:58 CET",
+      "summary": "NDX 26 046,90 b. (−0,64 %, závěr 25. 11.). Moody’s ponechává rating NVDA Aa1, stabilní výhled. Exportní omezení zatěžují financování AI infrastruktury.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq NDX",
+          "url": "https://indexes.nasdaq.com/index/Overview/NDX"
+        },
+        {
+          "label": "Reuters – Moody’s",
+          "url": "https://www.reuters.com/business/moodys-says-nvidias-huang-reinstatement-eases-uncertainty-ratings-unchanged-2026-11-25/"
+        },
+        {
+          "label": "Reuters – Fitch",
+          "url": "https://www.reuters.com/world/asia-pacific/us-chip-curbs-will-slow-asia-data-center-investment-fitch-says-2026-11-26/"
+        }
+      ]
+    },
     {
       "time": "26. 11. 2026 17:05 CET",
       "summary": "NDX 26 046,90 b. (−0,64 %, závěr 25. 11.). Singapur odmítá návrh amerického cla až 20 %; pokračují rizika exportu AI serverů.",
@@ -6008,6 +5969,10 @@
     {
       "name": "Reuters – Singapur, návrh cel",
       "url": "https://www.reuters.com/markets/asia/singapore-very-disappointed-over-new-tariffs-urges-us-reconsider-2026-11-26/"
+    },
+    {
+      "name": "Reuters – Moody’s NVDA",
+      "url": "https://www.reuters.com/business/moodys-says-nvidias-huang-reinstatement-eases-uncertainty-ratings-unchanged-2026-11-25/"
     }
   ]
 }
