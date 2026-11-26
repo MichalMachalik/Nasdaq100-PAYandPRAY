@@ -1,6 +1,6 @@
 {
-  "updatedAtPrague": "25. 11. 2026 23:58 CET",
-  "marketStatus": "Cash NDX: uzavřeno, závěr 25. 11. 2026.",
+  "updatedAtPrague": "26. 11. 2026 01:02 CET",
+  "marketStatus": "Cash NDX: uzavřeno, Thanksgiving 26. 11.; závěr 25. 11. 2026.",
   "ndx": {
     "value": 26046.9,
     "changePercent": -0.64,
@@ -12,7 +12,7 @@
     "trend": "→",
     "reason": "MA50 breadth 43,6 % (2026-11-25, závěr). RSI14 38,39 (2026-11-25, závěr). VXN 36,42 (2026-11-24, starší závěr)."
   },
-  "driver": "NDX −0,64 % na závěru; GOOGL −2,1 %, NVDA −3,91 %. Tlak na financování AI infrastruktury.",
+  "driver": "Kreditní riziko AI infrastruktury: výnos dluhopisů CRWV 2031 téměř 18 %. Tchaj-wan očekává zachování dohodnutého cla 15 %.",
   "news": [
     {
       "title": "NVDA | S&P Global potvrdila rating AA, ale zařadila jej na CreditWatch Negative kvůli rizikům vedení a správy společnosti.",
@@ -137,6 +137,25 @@
       ]
     },
     {
+      "title": "Tchaj-wan | vláda očekává zachování dohodnutého amerického cla 15 %. Polovodiče mají přednostní zacházení dle memoranda; samostatná cla podle Section 232 dosud neoznámena.",
+      "time": "26. 11. 2026, 00:31",
+      "publishedAtPrague": "26. 11. 2026, 00:31",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "trade",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/asia-pacific/taiwan-says-it-is-confident-keeping-previously-agreed-tariffs-with-us-2026-11-25/",
+      "eventKey": "taiwan-us-tariff-response-20261126",
+      "ndxRelevant": true,
+      "importanceScore": 65,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/asia-pacific/taiwan-says-it-is-confident-keeping-previously-agreed-tariffs-with-us-2026-11-25/"
+        }
+      ]
+    },
+    {
       "title": "USA HDP Q3 | 4,3 % SAAR vs. kons. 3,5 %; předběžně 3,4 %. Revize +0,9 p. b. Růst investic a spotřeby.",
       "time": "25. 11. 2026, 14:30",
       "publishedAtPrague": "25. 11. 2026, 14:30",
@@ -160,25 +179,6 @@
       ]
     },
     {
-      "title": "NVDA | WSJ: američtí činitelé informovali Kongres, že nemají důkazy o řízení sledování CEO čínskou rozvědkou.",
-      "publishedAtPrague": "25. 11. 2026, 17:31",
-      "eventKey": "nvda-us-officials-no-evidence-china-spying-20261125",
-      "importanceScore": 70,
-      "url": "https://www.reuters.com/technology/us-finds-no-evidence-china-directed-executive-spy-nvidia-ceo-wsj-reports-2026-11-25/",
-      "category": "ai_regulation",
-      "time": "25. 11. 2026, 17:31",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "source": "Reuters",
-      "ndxRelevant": true,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/technology/us-finds-no-evidence-china-directed-executive-spy-nvidia-ceo-wsj-reports-2026-11-25/"
-        }
-      ]
-    },
-    {
       "title": "FedWatch | Reuters: futures oceňují pravděpodobnost zvýšení sazeb v prosinci na 97 %, dalšího zvýšení v lednu na 63 %.",
       "time": "25. 11. 2026, 11:08",
       "publishedAtPrague": "25. 11. 2026, 11:08",
@@ -194,6 +194,25 @@
         {
           "label": "Reuters",
           "url": "https://www.reuters.com/business/nasdaq-futures-slide-over-2-fresh-us-tariff-concerns-inflation-data-focus-2026-11-25/"
+        }
+      ]
+    },
+    {
+      "title": "NVDA | WSJ: američtí činitelé informovali Kongres, že nemají důkazy o řízení sledování CEO čínskou rozvědkou.",
+      "publishedAtPrague": "25. 11. 2026, 17:31",
+      "eventKey": "nvda-us-officials-no-evidence-china-spying-20261125",
+      "importanceScore": 70,
+      "url": "https://www.reuters.com/technology/us-finds-no-evidence-china-directed-executive-spy-nvidia-ceo-wsj-reports-2026-11-25/",
+      "category": "ai_regulation",
+      "time": "25. 11. 2026, 17:31",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "source": "Reuters",
+      "ndxRelevant": true,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/technology/us-finds-no-evidence-china-directed-executive-spy-nvidia-ceo-wsj-reports-2026-11-25/"
         }
       ]
     },
@@ -339,12 +358,12 @@
     {
       "ticker": "NVDA",
       "changePercent": -3.91,
-      "impact": "negativní; závěr 22:00 CET"
+      "impact": "negativní; závěr 25. 11."
     },
     {
-      "ticker": "MSFT",
-      "changePercent": -1.25,
-      "impact": "negativní; závěr 22:00 CET"
+      "ticker": "AMZN",
+      "changePercent": -3.12,
+      "impact": "negativní; závěr 25. 11."
     }
   ],
   "macro": "US10Y | 25. 11.: 4,85 % | 24. 11.: 4,91 % | −6 bb",
@@ -374,6 +393,24 @@
     "timePrague": "27. 11. 2026 15:30 CET"
   },
   "archive": [
+    {
+      "time": "26. 11. 2026 01:02 CET",
+      "summary": "NDX 26 046,90 b., −0,64 % (závěr 25. 11.). Tchaj-wan očekává zachování amerického cla 15 %. US10Y 4,85 %, −6 bb.",
+      "sourceLinks": [
+        {
+          "label": "Yahoo Finance NDX",
+          "url": "https://finance.yahoo.com/quote/%5ENDX/history/"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/asia-pacific/taiwan-says-it-is-confident-keeping-previously-agreed-tariffs-with-us-2026-11-25/"
+        },
+        {
+          "label": "U.S. Treasury",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+        }
+      ]
+    },
     {
       "time": "25. 11. 2026 23:58 CET",
       "summary": "NDX 26 046,90 b., −0,64 % (závěr 25. 11.). GOOGL −2,1 %, AVGO beze změny na závěru. US10Y 4,85 %, −6 bb. Bez nového zásadního katalyzátoru.",
@@ -5577,6 +5614,10 @@
     {
       "name": "calendar",
       "url": "https://www.nasdaq.com/market-activity/stock-market-holiday-schedule"
+    },
+    {
+      "name": "Reuters – Tchaj-wan, cla",
+      "url": "https://www.reuters.com/world/asia-pacific/taiwan-says-it-is-confident-keeping-previously-agreed-tariffs-with-us-2026-11-25/"
     }
   ]
 }
