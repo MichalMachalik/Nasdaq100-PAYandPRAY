@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "26. 11. 2026 03:00 CET",
+  "updatedAtPrague": "26. 11. 2026 04:04 CET",
   "marketStatus": "Cash NDX: uzavřeno, Thanksgiving 26. 11.; závěr 25. 11. 2026.",
   "ndx": {
     "value": 26046.9,
@@ -12,7 +12,7 @@
     "trend": "→",
     "reason": "MA50 breadth 43,6 % (2026-11-25, závěr). RSI14 38,39 (2026-11-25, závěr). VXN 38,53 (2026-11-25, závěr)."
   },
-  "driver": "Návrh amerických cel vůči 14 partnerům. Core PCE 3,3 % y/y. VXN 38,53; tlak na valuace AI.",
+  "driver": "Návrh amerických cel vůči 14 partnerům. Core PCE 3,3 % y/y. Kreditní riziko a tlak na valuace AI.",
   "news": [
     {
       "title": "NVDA | S&P Global potvrdila rating AA, ale zařadila jej na CreditWatch Negative kvůli rizikům vedení a správy společnosti.",
@@ -412,6 +412,24 @@
     "timePrague": "27. 11. 2026 15:30 CET"
   },
   "archive": [
+    {
+      "time": "26. 11. 2026 04:04 CET",
+      "summary": "NDX 26 046,90 b. (−0,64 %, závěr 25. 11.). Bez zásadních novinek. VXN 38,53 (+5,79 %), US10Y 4,85 % (−6 bb). Všech šest ekonomických údajů ověřeno. NQ futures: nová časovaná kotace nedoložena, zachován předchozí snímek.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq NDX",
+          "url": "https://indexes.nasdaqomx.com/Index/Overview/NDX"
+        },
+        {
+          "label": "Investing.com VXN",
+          "url": "https://ca.investing.com/indices/cboe-nasdaq-100-voltility-historical-data"
+        },
+        {
+          "label": "US Treasury",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+        }
+      ]
+    },
     {
       "time": "26. 11. 2026 03:00 CET",
       "summary": "NDX 26 046,90 b. (závěr 25. 11.). VXN 38,53, +5,79 %. Nikkei +1,6 %, KOSPI +1,9 %; futures implikují 98% pravděpodobnost zvýšení FFR o 25 bb v prosinci.",
