@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "26. 11. 2026 04:56 CET",
+  "updatedAtPrague": "26. 11. 2026 06:03 CET",
   "marketStatus": "Cash NDX: uzavřeno, Thanksgiving 26. 11.; závěr 25. 11. 2026.",
   "ndx": {
     "value": 26046.9,
@@ -12,27 +12,8 @@
     "trend": "→",
     "reason": "MA50 breadth 43,6 % (2026-11-25, závěr). RSI14 38,39 (2026-11-25, závěr). VXN 38,53 (2026-11-25, závěr)."
   },
-  "driver": "Návrh amerických cel vůči 14 partnerům. Kreditní riziko a tlak na návratnost AI investic.",
+  "driver": "Návrh amerických cel vůči 14 partnerům. Kreditní riziko AI infrastruktury; přeprava serverů a čipů podle SATS nadále roste.",
   "news": [
-    {
-      "title": "USA | návrh cel vůči 14 obchodním partnerům včetně EU, Tchaj-wanu a Číny; pro Čínu až 20 %. Mexiko a Norsko zatím vyloučeny.",
-      "time": "25. 11. 2026, 14:15",
-      "publishedAtPrague": "25. 11. 2026, 14:15",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "macro",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/china/us-proposes-new-tariffs-14-trading-partners-fight-excess-factory-capacity-2026-11-25/",
-      "eventKey": "us-section301-excess-capacity-tariff-proposal-20261125",
-      "ndxRelevant": true,
-      "importanceScore": 90,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/world/china/us-proposes-new-tariffs-14-trading-partners-fight-excess-factory-capacity-2026-11-25/"
-        }
-      ]
-    },
     {
       "title": "NVDA | S&P Global potvrdila rating AA, ale zařadila jej na CreditWatch Negative kvůli rizikům vedení a správy společnosti.",
       "time": "25. 11. 2026, 19:56",
@@ -55,6 +36,25 @@
       "eventKey": "nvda-sp-creditwatch-negative-20261125",
       "ndxRelevant": true,
       "importanceScore": 82
+    },
+    {
+      "title": "USA | návrh cel vůči 14 obchodním partnerům včetně EU, Tchaj-wanu a Číny; pro Čínu až 20 %. Mexiko a Norsko zatím vyloučeny.",
+      "time": "25. 11. 2026, 14:15",
+      "publishedAtPrague": "25. 11. 2026, 14:15",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "macro",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/china/us-proposes-new-tariffs-14-trading-partners-fight-excess-factory-capacity-2026-11-25/",
+      "eventKey": "us-section301-excess-capacity-tariff-proposal-20261125",
+      "ndxRelevant": true,
+      "importanceScore": 90,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/china/us-proposes-new-tariffs-14-trading-partners-fight-excess-factory-capacity-2026-11-25/"
+        }
+      ]
     },
     {
       "title": "USA PCE říjen | 0,3 % m/m vs. kons. 0,3 %; 3,8 % y/y vs. kons. 3,8 %. Core PCE 3,3 % y/y vs. září 3,1 %; 0,3 % m/m.",
@@ -274,6 +274,25 @@
       ]
     },
     {
+      "title": "AI infrastruktura | SATS hlásí pokračující poptávku po letecké přepravě serverů a čipů, včetně dodávek pro americká datacentra. Q3 objem nákladu +8 % vs. globálně +5,3 %.",
+      "time": "26. 11. 2026, 03:33",
+      "publishedAtPrague": "26. 11. 2026, 03:33",
+      "publicationTimeVerified": true,
+      "kind": "Nově dohledáno",
+      "category": "ai_infrastructure",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/asia-pacific/air-cargo-demand-ai-data-centres-shows-no-sign-slowing-sats-ceo-says-2026-11-26/",
+      "eventKey": "sats-ai-cargo-demand-20261126",
+      "ndxRelevant": true,
+      "importanceScore": 53,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/asia-pacific/air-cargo-demand-ai-data-centres-shows-no-sign-slowing-sats-ceo-says-2026-11-26/"
+        }
+      ]
+    },
+    {
       "title": "NVDA | Reuters: čínské úvěrové záznamy uvádějí až 764 AI serverů a modulů za 270 mil. USD a síťové vybavení za 31 mil. USD u firem spojených s bývalou majitelkou Megaspeed.",
       "time": "25. 11. 2026, 07:13",
       "publishedAtPrague": "25. 11. 2026, 07:13",
@@ -389,6 +408,24 @@
     "timePrague": "27. 11. 2026 15:30 CET"
   },
   "archive": [
+    {
+      "time": "26. 11. 2026 06:03 CET",
+      "summary": "NDX 26 046,90 b. (−0,64 %, závěr 25. 11.). SATS: trvá poptávka po přepravě AI serverů a čipů. VXN 38,53, US10Y 4,85 %.",
+      "sourceLinks": [
+        {
+          "label": "YCharts NDX",
+          "url": "https://ycharts.com/indices/%5ENDX/level"
+        },
+        {
+          "label": "Reuters SATS",
+          "url": "https://www.reuters.com/world/asia-pacific/air-cargo-demand-ai-data-centres-shows-no-sign-slowing-sats-ceo-says-2026-11-26/"
+        },
+        {
+          "label": "US Treasury",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value_month=202611"
+        }
+      ]
+    },
     {
       "time": "26. 11. 2026 04:56 CET",
       "summary": "NDX 26 046,90 b. (−0,64 %, závěr 25. 11.). Bez zásadních novinek. VXN 38,53, US10Y 4,85 %. Ekonomika 6/6 ověřena. Futures: nová kotace přímo nedoložena, poslední 26. 11. 2026 03:54.",
@@ -5694,6 +5731,10 @@
     {
       "name": "Reuters",
       "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-26/"
+    },
+    {
+      "name": "Reuters – SATS AI logistika",
+      "url": "https://www.reuters.com/world/asia-pacific/air-cargo-demand-ai-data-centres-shows-no-sign-slowing-sats-ceo-says-2026-11-26/"
     }
   ]
 }
