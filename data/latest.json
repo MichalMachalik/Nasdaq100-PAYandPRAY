@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "26. 11. 2026 20:59 CET",
+  "updatedAtPrague": "26. 11. 2026 21:55 CET",
   "marketStatus": "Cash NDX: uzavřeno, Thanksgiving 26. 11.; závěr 25. 11. 2026.",
   "ndx": {
     "value": 26046.9,
@@ -366,6 +366,24 @@
     "timePrague": "27. 11. 2026 15:30 CET"
   },
   "archive": [
+    {
+      "time": "26. 11. 2026 21:55 CET",
+      "summary": "NDX 26 046,90 b. (−0,64 %, závěr 25. 11.). Bez zásadních novinek; ekonomika 6/6. Breadth: zdroj stále uvádí 45/101 místo 44/101; původní hodnota zachována.",
+      "sourceLinks": [
+        {
+          "label": "Yahoo Finance – NDX",
+          "url": "https://finance.yahoo.com/quote/%5ENDX/history/"
+        },
+        {
+          "label": "StockCurry – MA50 breadth",
+          "url": "https://stockcurry.com/index_timeline.php?index=Nasdaq100&view=percent"
+        },
+        {
+          "label": "Reuters – Fitch",
+          "url": "https://www.reuters.com/world/asia-pacific/us-chip-curbs-will-slow-asia-data-center-investment-fitch-says-2026-11-26/"
+        }
+      ]
+    },
     {
       "time": "26. 11. 2026 20:59 CET",
       "summary": "NDX 26 046,90 b. (−0,64 %, závěr 25. 11.). Bez zásadních novinek; ekonomika 6/6. Breadth: konflikt 44/101 vs. 45/101; původní hodnota zachována.",
