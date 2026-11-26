@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "26. 11. 2026 13:05 CET",
+  "updatedAtPrague": "26. 11. 2026 14:00 CET",
   "marketStatus": "Cash NDX: uzavřeno, Thanksgiving 26. 11.; závěr 25. 11. 2026.",
   "ndx": {
     "value": 26046.9,
@@ -12,7 +12,7 @@
     "trend": "→",
     "reason": "MA50 breadth 43,6 % (2026-11-25, závěr). RSI14 38,39 (2026-11-25, závěr). VXN 38,53 (2026-11-25, závěr)."
   },
-  "driver": "Fitch: nové exportní licence USA zvyšují riziko odkladu financování AI datacenter v Asii. MATCH Act: návrh rozšíření exportních omezení na spojence USA.",
+  "driver": "Exportní licence USA omezují dodávky serverů NVDA do čtyř států jihovýchodní Asie; Fitch očekává odklady financování a tržeb datacenter.",
   "news": [
     {
       "title": "NVDA | Podle FT pozastavila dodávky serverů s vlastními čipy do Malajsie, Singapuru, Thajska a Indonésie. Nové americké exportní licence platí od minulého týdne; délka přerušení neznámá.",
@@ -38,7 +38,7 @@
       "time": "26. 11. 2026, 12:18",
       "publishedAtPrague": "26. 11. 2026, 12:18",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "ai_infrastructure",
       "source": "Reuters",
       "url": "https://www.reuters.com/world/asia-pacific/us-chip-curbs-will-slow-asia-data-center-investment-fitch-says-2026-11-26/",
@@ -95,7 +95,7 @@
       "time": "26. 11. 2026, 12:32",
       "publishedAtPrague": "26. 11. 2026, 12:32",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "ai_regulation",
       "source": "Reuters",
       "url": "https://www.reuters.com/business/dutch-minister-says-us-chip-curbs-bill-would-hurt-europe-2026-11-26/",
@@ -217,25 +217,6 @@
       ]
     },
     {
-      "title": "Asie | Nikkei +1,6 %, KOSPI +1,9 %. Futures implikují 98% pravděpodobnost zvýšení sazeb Fedu o 25 bb v prosinci.",
-      "time": "26. 11. 2026, 02:35",
-      "publishedAtPrague": "26. 11. 2026, 02:35",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "market",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-26/",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-26/"
-        }
-      ],
-      "eventKey": "asia-market-rebound-fed-pricing-20261126",
-      "ndxRelevant": true,
-      "importanceScore": 66
-    },
-    {
       "title": "Evropa | STOXX Europe 600 +1,4 % v 09:15 CET, technologický sektor přibližně +2 %, Infineon a Soitec přibližně +4 %. Reuters: očekávání stropu amerických cel na EU 15 %.",
       "time": "26. 11. 2026, 09:32",
       "publishedAtPrague": "26. 11. 2026, 09:32",
@@ -253,6 +234,25 @@
           "url": "https://www.reuters.com/business/finance/european-stocks-rally-tech-banks-rebound-tariff-fears-ease-2026-11-26/"
         }
       ]
+    },
+    {
+      "title": "Asie | Nikkei +1,6 %, KOSPI +1,9 %. Futures implikují 98% pravděpodobnost zvýšení sazeb Fedu o 25 bb v prosinci.",
+      "time": "26. 11. 2026, 02:35",
+      "publishedAtPrague": "26. 11. 2026, 02:35",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "market",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-26/",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-26/"
+        }
+      ],
+      "eventKey": "asia-market-rebound-fed-pricing-20261126",
+      "ndxRelevant": true,
+      "importanceScore": 66
     },
     {
       "title": "NDX | Reuters/LSEG: z 60 společností s růstem odhadů forward EPS za 3 měsíce jich 37 cenově oslabilo. Medián forward P/E 25 nejdražších titulů 38× vs. 18× u zbývajících ziskových firem.",
@@ -390,6 +390,29 @@
           "url": "https://www.reuters.com/world/asia-pacific/air-cargo-demand-ai-data-centres-shows-no-sign-slowing-sats-ceo-says-2026-11-26/"
         }
       ]
+    },
+    {
+      "title": "NVDA / Kioxia | Prototyp GB200 NVL72 se 144 SSD XD8 dosáhl 1,1 PB hrubé kapacity. SCADA a Storage-Next umožňují zpracování až 2 bil. vektorů; ověření technické proveditelnosti.",
+      "time": "26. 11. 2026, 05:19",
+      "publishedAtPrague": "26. 11. 2026, 05:19",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "ai_infrastructure",
+      "source": "Kioxia / Business Wire",
+      "url": "https://finance.yahoo.com/technology/ai/articles/kioxia-nvidia-collaborate-expand-effective-041900475.html",
+      "eventKey": "nvda-kioxia-scada-ssd-poc-20261126",
+      "ndxRelevant": true,
+      "importanceScore": 49,
+      "sourceLinks": [
+        {
+          "label": "Kioxia",
+          "url": "https://www.kioxia.com/en-jp/business/news/2026/20261126-1.html"
+        },
+        {
+          "label": "Business Wire / Yahoo Finance",
+          "url": "https://finance.yahoo.com/technology/ai/articles/kioxia-nvidia-collaborate-expand-effective-041900475.html"
+        }
+      ]
     }
   ],
   "leaders": [
@@ -431,6 +454,24 @@
     "timePrague": "27. 11. 2026 15:30 CET"
   },
   "archive": [
+    {
+      "time": "26. 11. 2026 14:00 CET",
+      "summary": "NDX 26 046,90 b. (25. 11.), −0,64 %. Nově dohledáno: NVDA/Kioxia testují rozšíření efektivní paměti GPU pomocí SSD. Exportní omezení zůstávají rizikem.",
+      "sourceLinks": [
+        {
+          "label": "Yahoo Finance – NDX",
+          "url": "https://finance.yahoo.com/quote/%5ENDX/history/"
+        },
+        {
+          "label": "Kioxia",
+          "url": "https://www.kioxia.com/en-jp/business/news/2026/20261126-1.html"
+        },
+        {
+          "label": "Reuters – export čipů",
+          "url": "https://www.reuters.com/world/asia-pacific/nvidia-halts-chip-shipments-southeast-asia-ft-reports-2026-11-26/"
+        }
+      ]
+    },
     {
       "time": "26. 11. 2026 13:05 CET",
       "summary": "NDX 26 046,90 b. (25. 11.), −0,64 %. Fitch očekává zpomalení investic do asijských datacenter a přísnější financování. Nizozemsko odmítá návrh MATCH Act.",
@@ -5924,6 +5965,10 @@
     {
       "name": "Reuters – MATCH Act",
       "url": "https://www.reuters.com/business/dutch-minister-says-us-chip-curbs-bill-would-hurt-europe-2026-11-26/"
+    },
+    {
+      "name": "Kioxia",
+      "url": "https://www.kioxia.com/en-jp/business/news/2026/20261126-1.html"
     }
   ]
 }
