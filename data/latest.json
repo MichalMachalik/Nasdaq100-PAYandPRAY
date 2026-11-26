@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "26. 11. 2026 17:58 CET",
+  "updatedAtPrague": "26. 11. 2026 18:57 CET",
   "marketStatus": "Cash NDX: uzavřeno, Thanksgiving 26. 11.; závěr 25. 11. 2026.",
   "ndx": {
     "value": 26046.9,
@@ -12,7 +12,7 @@
     "trend": "→",
     "reason": "MA50 breadth 43,6 % (2026-11-25, závěr). RSI14 38,39 (2026-11-25, závěr). VXN 38,53 (2026-11-25, závěr)."
   },
-  "driver": "Exportní licence USA omezují dodávky AI serverů do jihovýchodní Asie. Fitch očekává zpomalení investic do datacenter; Moody’s ponechává rating NVDA Aa1.",
+  "driver": "Exportní licence USA omezují dodávky AI serverů do jihovýchodní Asie. Fitch očekává zpomalení investic do datacenter.",
   "news": [
     {
       "title": "BoE | Emise dluhopisů hyperscalerů mají v roce 2026 překročit 305 mld. USD (8 % globálních investičních emisí). Složitější a vzájemně provázané financování AI zvyšuje riziko šíření kreditního stresu.",
@@ -251,25 +251,6 @@
       ]
     },
     {
-      "title": "NVDA | Reuters: DOJ neprovedlo formální vyšetřování CEO před jeho návratem; vyšetřování zákazníků NVDA pokračovala.",
-      "time": "25. 11. 2026, 18:30",
-      "publishedAtPrague": "25. 11. 2026, 18:30",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "company",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/us-justice-department-did-not-open-probe-into-jensen-huang-before-reinstatement-2026-11-25/",
-      "eventKey": "nvda-doj-no-formal-probe-before-return-20261125",
-      "ndxRelevant": true,
-      "importanceScore": 70,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/business/us-justice-department-did-not-open-probe-into-jensen-huang-before-reinstatement-2026-11-25/"
-        }
-      ]
-    },
-    {
       "title": "Singapur | Odmítá návrh USTR na clo až 20 % (10 % při reciproční dohodě). Efektivní sazba na export do USA by podle vlády vzrostla ze 7,8 % na 10,3 %.",
       "time": "26. 11. 2026, 05:11",
       "publishedAtPrague": "26. 11. 2026, 05:11",
@@ -329,6 +310,25 @@
           "url": "https://finance.yahoo.com/technology/ai/articles/kioxia-nvidia-collaborate-expand-effective-041900475.html"
         }
       ]
+    },
+    {
+      "title": "Jižní Korea | BOK zvýšila sazbu o 25 bb na 3,25 %. Výhled HDP 2026 zvýšila z 3,3 na 3,9 %, 2027 z 2,9 na 4,1 %; hlavním faktorem je růst poptávky po polovodičích.",
+      "time": "26. 11. 2026, 02:05",
+      "publishedAtPrague": "26. 11. 2026, 02:05",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "macro",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/markets/asia/south-koreas-central-bank-resumes-tightening-with-quarter-point-hike-2026-11-26/",
+      "eventKey": "bok-rate-hike-chip-export-growth-20261126",
+      "ndxRelevant": true,
+      "importanceScore": 52,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/markets/asia/south-koreas-central-bank-resumes-tightening-with-quarter-point-hike-2026-11-26/"
+        }
+      ]
     }
   ],
   "leaders": [
@@ -370,6 +370,24 @@
     "timePrague": "27. 11. 2026 15:30 CET"
   },
   "archive": [
+    {
+      "time": "26. 11. 2026 18:57 CET",
+      "summary": "NDX 26 046,90 b. (−0,64 %, závěr 25. 11.). BOK +25 bb na 3,25 %, růst výhledu HDP díky polovodičům. Cash trh uzavřen; ověřeny zdroje a platnost zpráv.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq NDX",
+          "url": "https://indexes.nasdaq.com/index/Overview/NDX"
+        },
+        {
+          "label": "Reuters – BOK",
+          "url": "https://www.reuters.com/markets/asia/south-koreas-central-bank-resumes-tightening-with-quarter-point-hike-2026-11-26/"
+        },
+        {
+          "label": "Reuters – Fitch",
+          "url": "https://www.reuters.com/world/asia-pacific/us-chip-curbs-will-slow-asia-data-center-investment-fitch-says-2026-11-26/"
+        }
+      ]
+    },
     {
       "time": "26. 11. 2026 17:58 CET",
       "summary": "NDX 26 046,90 b. (−0,64 %, závěr 25. 11.). Moody’s ponechává rating NVDA Aa1, stabilní výhled. Exportní omezení zatěžují financování AI infrastruktury.",
@@ -5973,6 +5991,10 @@
     {
       "name": "Reuters – Moody’s NVDA",
       "url": "https://www.reuters.com/business/moodys-says-nvidias-huang-reinstatement-eases-uncertainty-ratings-unchanged-2026-11-25/"
+    },
+    {
+      "name": "Reuters – BOK",
+      "url": "https://www.reuters.com/markets/asia/south-koreas-central-bank-resumes-tightening-with-quarter-point-hike-2026-11-26/"
     }
   ]
 }
