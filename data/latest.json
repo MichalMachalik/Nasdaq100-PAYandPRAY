@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "26. 11. 2026 14:58 CET",
+  "updatedAtPrague": "26. 11. 2026 16:01 CET",
   "marketStatus": "Cash NDX: uzavřeno, Thanksgiving 26. 11.; závěr 25. 11. 2026.",
   "ndx": {
     "value": 26046.9,
@@ -12,14 +12,14 @@
     "trend": "→",
     "reason": "MA50 breadth 43,6 % (2026-11-25, závěr). RSI14 38,39 (2026-11-25, závěr). VXN 38,53 (2026-11-25, závěr)."
   },
-  "driver": "BoE varuje před přenosem kreditního stresu v AI sektoru; emise dluhopisů hyperscalerů mají v roce 2026 překročit 305 mld. USD. Exportní omezení zvyšují riziko odkladů datacenter.",
+  "driver": "Exportní licence USA omezují dodávky AI serverů do jihovýchodní Asie. BoE upozorňuje na kreditní riziko financování AI; emise hyperscalerů mají překročit 305 mld. USD.",
   "news": [
     {
       "title": "BoE | Emise dluhopisů hyperscalerů mají v roce 2026 překročit 305 mld. USD (8 % globálních investičních emisí). Složitější a vzájemně provázané financování AI zvyšuje riziko šíření kreditního stresu.",
       "time": "26. 11. 2026, 12:28",
       "publishedAtPrague": "26. 11. 2026, 12:28",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "ai_infrastructure",
       "source": "The Guardian / BoE",
       "url": "https://www.theguardian.com/business/live/2026/nov/26/nvidia-chip-shipments-south-east-asia-stock-dentists-live-updates?page=with:block-6b0811ad8f08e0351893df42",
@@ -308,25 +308,6 @@
       ]
     },
     {
-      "title": "AI infrastruktura | SATS hlásí pokračující poptávku po letecké přepravě serverů a čipů, včetně dodávek pro americká datacentra. Q3 objem nákladu +8 % vs. globálně +5,3 %.",
-      "time": "26. 11. 2026, 03:33",
-      "publishedAtPrague": "26. 11. 2026, 03:33",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_infrastructure",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/asia-pacific/air-cargo-demand-ai-data-centres-shows-no-sign-slowing-sats-ceo-says-2026-11-26/",
-      "eventKey": "sats-ai-cargo-demand-20261126",
-      "ndxRelevant": true,
-      "importanceScore": 53,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/world/asia-pacific/air-cargo-demand-ai-data-centres-shows-no-sign-slowing-sats-ceo-says-2026-11-26/"
-        }
-      ]
-    },
-    {
       "title": "SPCX | FCC schválila nasazení až 1 mil. družic Starmind pro orbitální AI výpočty. Zahájení do listopadu 2033; 100 tis. do listopadu 2035.",
       "time": "25. 11. 2026, 17:57",
       "publishedAtPrague": "25. 11. 2026, 17:57",
@@ -342,6 +323,25 @@
         {
           "label": "Reuters",
           "url": "https://www.reuters.com/business/media-telecom/us-authorizes-spacex-deploy-1-million-satellites-data-centers-space-2026-11-25/"
+        }
+      ]
+    },
+    {
+      "title": "AI infrastruktura | SATS hlásí pokračující poptávku po letecké přepravě serverů a čipů, včetně dodávek pro americká datacentra. Q3 objem nákladu +8 % vs. globálně +5,3 %.",
+      "time": "26. 11. 2026, 03:33",
+      "publishedAtPrague": "26. 11. 2026, 03:33",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "ai_infrastructure",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/asia-pacific/air-cargo-demand-ai-data-centres-shows-no-sign-slowing-sats-ceo-says-2026-11-26/",
+      "eventKey": "sats-ai-cargo-demand-20261126",
+      "ndxRelevant": true,
+      "importanceScore": 53,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/asia-pacific/air-cargo-demand-ai-data-centres-shows-no-sign-slowing-sats-ceo-says-2026-11-26/"
         }
       ]
     },
@@ -408,6 +408,24 @@
     "timePrague": "27. 11. 2026 15:30 CET"
   },
   "archive": [
+    {
+      "time": "26. 11. 2026 16:01 CET",
+      "summary": "Bez zásadních novinek. NDX 26 046,90 (−0,64 %, závěr 25. 11.); VXN 38,53 (+5,79 %). Exportní licence USA omezují dodávky AI serverů do jihovýchodní Asie.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq NDX",
+          "url": "https://indexes.nasdaqomx.com/Index/History/NDX"
+        },
+        {
+          "label": "VXN – Investing.com",
+          "url": "https://www.investing.com/indices/cboe-nasdaq-100-voltility-historical-data"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/asia-pacific/nvidia-halts-chip-shipments-southeast-asia-ft-reports-2026-11-26/"
+        }
+      ]
+    },
     {
       "time": "26. 11. 2026 14:58 CET",
       "summary": "NDX 26 046,90 b. (25. 11.), −0,64 %. BoE očekává emise dluhopisů hyperscalerů přes 305 mld. USD v roce 2026; rostoucí kreditní provázanost AI. Cash trh uzavřen.",
@@ -5949,6 +5967,10 @@
     {
       "name": "The Guardian – BoE",
       "url": "https://www.theguardian.com/business/live/2026/nov/26/nvidia-chip-shipments-south-east-asia-stock-dentists-live-updates?page=with:block-6b0811ad8f08e0351893df42"
+    },
+    {
+      "name": "Nasdaq NDX",
+      "url": "https://indexes.nasdaqomx.com/Index/History/NDX"
     }
   ]
 }
