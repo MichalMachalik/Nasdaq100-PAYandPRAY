@@ -34,6 +34,16 @@ class BreadthTest(unittest.TestCase):
         with self.assertRaises(ValueError):
             b.stockcurry_snapshot(html.replace("43.56%","43.11%"),now)
 
+    def test_holiday_row_never_overrides_validated_cash_session(self):
+        html = """<table><tr><th>Date</th><th>Total Stocks</th><th>&gt; SMA50</th></tr>
+        <tr><td>2026-11-26</td><td>101</td><td>44.55%</td></tr>
+        <tr><td>2026-11-25</td><td>101</td><td>43.56%</td></tr></table>"""
+        now = datetime(2026,11,26,22,tzinfo=timezone.utc)
+        d = b.stockcurry_snapshot(html, now, "2026-11-25")
+        self.assertEqual((d["asOf"], d["aboveCount"]), ("2026-11-25", 44))
+        with self.assertRaises(ValueError):
+            b.stockcurry_snapshot(html, now, "2026-11-24")
+
     def test_stale_and_bad_coverage_rejected(self):
         html = """<table><tr><th>Date</th><th>Total Stocks</th><th>&gt; SMA50</th></tr>
         <tr><td>2026-11-23</td><td>101</td><td>43.56%</td></tr></table>"""

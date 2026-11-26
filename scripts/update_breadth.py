@@ -46,31 +46,20 @@ class TimelineParser(HTMLParser):
             self.cell = None
 
 def expected_cash_date(now):
-    """Use a dated, validated cash-index observation; don't infer a holiday close."""
-    dates = []
+    """Use only the validated completed cash session from the RSI updater."""
     try:
         d = json.loads((OUT.parent / "oversold.json").read_text(encoding="utf-8"))
-        if d.get("instrument") == "^NDX" and d.get("schemaVersion") == 1:
-            if isinstance(d.get("ndxClose"), (int, float)) and d["ndxClose"] > 1000:
-                dates.append(date.fromisoformat(d["asOf"]))
+        if d.get("instrument") != "^NDX" or d.get("schemaVersion") != 1:
+            return ""
+        if not isinstance(d.get("ndxClose"), (int, float)) or d["ndxClose"] <= 1000:
+            return ""
+        observed = date.fromisoformat(d["asOf"])
+        local = now.astimezone(NY)
+        if 0 <= (local.date()-observed).days <= 7:
+            return observed.isoformat()
     except (OSError, ValueError, KeyError, TypeError):
         pass
-    try:
-        d = json.loads((OUT.parent / "latest.json").read_text(encoding="utf-8"))["ndx"]
-        if isinstance(d.get("value"), (int, float)) and d["value"] > 1000:
-            raw = str(d.get("asOf", ""))
-            m = re.match(r"^(\d{1,2})\.\s*(\d{1,2})\.\s*(\d{4})\b", raw)
-            if m:
-                day, month, year = map(int, m.groups())
-                dates.append(date(year, month, day))
-            elif re.match(r"^\d{4}-\d{2}-\d{2}\b", raw):
-                dates.append(date.fromisoformat(raw[:10]))
-    except (OSError, ValueError, KeyError, TypeError):
-        pass
-    local = now.astimezone(NY)
-    dates = [x for x in dates if 0 <= (local.date()-x).days <= 7
-             and (x != local.date() or local.hour >= 16)]
-    return max(dates).isoformat() if dates else ""
+    return ""
 
 def stockcurry_snapshot(html, now, expected=""):
     parser = TimelineParser()
@@ -94,7 +83,9 @@ def stockcurry_snapshot(html, now, expected=""):
             continue
         if not 0 <= (local.date()-day).days <= 7:
             continue
-        if day == local.date() and local.hour < 16:
+        if expected and ds != expected:
+            continue
+        if not expected and day == local.date() and local.hour < 16:
             continue
         if not re.fullmatch(r"\d{2,3}", count) or not re.fullmatch(r"\d{1,3}(?:\.\d{1,4})?%", percent):
             continue
@@ -146,6 +137,8 @@ def main():
     now = datetime.now(timezone.utc)
     previous = json.loads(OUT.read_text(encoding="utf-8")) if OUT.exists() else {}
     expected = expected_cash_date(now)
+    if not expected:
+        raise ValueError("No validated completed cash session; retain prior breadth")
     # Short retries for transient origin timeouts; never substitute another basket.
     import time
     for attempt in range(3):
