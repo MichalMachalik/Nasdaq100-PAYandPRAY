@@ -9,9 +9,9 @@
     "ndxClose": 25028.98,
     "ndxCloseAsOf": "2026-11-20",
     "ndxAth": 31361.37,
-    "vxnPct": 36.42,
-    "vxnAsOf": "2026-11-24",
-    "vxnSource": "https://fred.stlouisfed.org/series/VXNCLS",
+    "vxnPct": 38.53,
+    "vxnAsOf": "2026-11-25",
+    "vxnSource": "https://www.google.com/finance/quote/VXN:INDEXCBOE",
     "treasury2yPct": 4.61,
     "treasury10yPct": 4.85,
     "treasury30yPct": 5.24,
@@ -34,14 +34,16 @@
     "citadelNasdaqForwardPE": 19.1,
     "citadelNasdaqForwardPEAsOf": "2026-11-04",
     "citadelSource": "https://www.citadelsecurities.com/news-and-insights/global-market-intelligence/november-the-setup-improves/?series=global-market-intelligence",
-    "vxnCheckedAtUtc": "2026-11-26T01:07:14.252590Z",
-    "treasuryCheckedAtUtc": "2026-11-26T01:07:14.252590Z",
-    "vxnRetrievedAtUtc": "2026-11-26T01:07:14.252590Z",
+    "vxnCheckedAtUtc": "2026-11-26T01:18:56.991Z",
+    "treasuryCheckedAtUtc": "2026-11-26T01:18:56.991Z",
+    "vxnRetrievedAtUtc": "2026-11-26T01:18:56.991Z",
     "treasuryRetrievedAtUtc": "2026-11-25T21:18:33Z",
-    "vxnChangePercent": 0.3,
-    "vxnPreviousClose": 36.31,
-    "vxnPreviousCloseAsOf": "2026-11-23",
-    "vxnQuoteKind": "daily-close"
+    "vxnChangePercent": 5.79,
+    "vxnPreviousClose": 36.42,
+    "vxnPreviousCloseAsOf": "2026-11-24",
+    "vxnQuoteKind": "daily-close",
+    "vxnVerificationSource": "https://www.investing.com/indices/cboe-nasdaq-100-voltility-historical-data",
+    "vxnQuotedAtUtc": "2026-11-25T21:15:01Z"
   },
   "earnings": [
     {
@@ -146,5 +148,5 @@
     ],
     "stalePolicy": "If VXN update is unavailable or older than 7 calendar days, keep the report's last authored scenario and display a stale-data warning. Never relabel an old VXN figure as current."
   },
-  "checkedAtUtc": "2026-11-26T01:07:14.252590Z"
+  "checkedAtUtc": "2026-11-26T01:18:56.991Z"
 }
