@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "26. 11. 2026 09:59 CET",
+  "updatedAtPrague": "26. 11. 2026 10:59 CET",
   "marketStatus": "Cash NDX: uzavřeno, Thanksgiving 26. 11.; závěr 25. 11. 2026.",
   "ndx": {
     "value": 26046.9,
@@ -12,7 +12,7 @@
     "trend": "→",
     "reason": "MA50 breadth 43,6 % (2026-11-25, závěr). RSI14 38,39 (2026-11-25, závěr). VXN 38,53 (2026-11-25, závěr)."
   },
-  "driver": "NVDA: omezení dodávek AI serverů do jihovýchodní Asie. Evropské technologické akcie 26. 11. ráno přibližně +2 %.",
+  "driver": "AI financování: SoftBank 5Y CDS 534,6 bb, přes +20 bb. NVDA: omezení dodávek AI serverů do jihovýchodní Asie.",
   "news": [
     {
       "title": "NVDA | Podle FT pozastavila dodávky serverů s vlastními čipy do Malajsie, Singapuru, Thajska a Indonésie. Nové americké exportní licence platí od minulého týdne; délka přerušení neznámá.",
@@ -30,6 +30,25 @@
         {
           "label": "Reuters (zpráva FT)",
           "url": "https://www.reuters.com/world/asia-pacific/nvidia-halts-chip-shipments-southeast-asia-ft-reports-2026-11-26/"
+        }
+      ]
+    },
+    {
+      "title": "AI financování | SoftBank: 5Y CDS 534,6 bb, růst přes 20 bb na čtyřleté maximum. Expozice vůči OpenAI a riziko návratnosti AI infrastruktury.",
+      "time": "26. 11. 2026, 09:12",
+      "publishedAtPrague": "26. 11. 2026, 09:12",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "ai_infrastructure",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/media-telecom/investors-see-rising-risk-softbank-default-pressure-grows-ai-bets-2026-11-26/",
+      "eventKey": "softbank-ai-cds-20261126",
+      "ndxRelevant": true,
+      "importanceScore": 76,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/media-telecom/investors-see-rising-risk-softbank-default-pressure-grows-ai-bets-2026-11-26/"
         }
       ]
     },
@@ -156,25 +175,6 @@
       ]
     },
     {
-      "title": "Evropa | STOXX Europe 600 +1,4 % v 09:15 CET, technologický sektor přibližně +2 %, Infineon a Soitec přibližně +4 %. Reuters: očekávání stropu amerických cel na EU 15 %.",
-      "time": "26. 11. 2026, 09:32",
-      "publishedAtPrague": "26. 11. 2026, 09:32",
-      "publicationTimeVerified": true,
-      "kind": "new",
-      "category": "market",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/finance/european-stocks-rally-tech-banks-rebound-tariff-fears-ease-2026-11-26/",
-      "eventKey": "europe-tech-rebound-tariff-expectations-20261126",
-      "ndxRelevant": true,
-      "importanceScore": 58,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/business/finance/european-stocks-rally-tech-banks-rebound-tariff-fears-ease-2026-11-26/"
-        }
-      ]
-    },
-    {
       "title": "Asie | Nikkei +1,6 %, KOSPI +1,9 %. Futures implikují 98% pravděpodobnost zvýšení sazeb Fedu o 25 bb v prosinci.",
       "time": "26. 11. 2026, 02:35",
       "publishedAtPrague": "26. 11. 2026, 02:35",
@@ -192,6 +192,25 @@
       "eventKey": "asia-market-rebound-fed-pricing-20261126",
       "ndxRelevant": true,
       "importanceScore": 66
+    },
+    {
+      "title": "Evropa | STOXX Europe 600 +1,4 % v 09:15 CET, technologický sektor přibližně +2 %, Infineon a Soitec přibližně +4 %. Reuters: očekávání stropu amerických cel na EU 15 %.",
+      "time": "26. 11. 2026, 09:32",
+      "publishedAtPrague": "26. 11. 2026, 09:32",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "market",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/finance/european-stocks-rally-tech-banks-rebound-tariff-fears-ease-2026-11-26/",
+      "eventKey": "europe-tech-rebound-tariff-expectations-20261126",
+      "ndxRelevant": true,
+      "importanceScore": 58,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/finance/european-stocks-rally-tech-banks-rebound-tariff-fears-ease-2026-11-26/"
+        }
+      ]
     },
     {
       "title": "NDX | Reuters/LSEG: z 60 společností s růstem odhadů forward EPS za 3 měsíce jich 37 cenově oslabilo. Medián forward P/E 25 nejdražších titulů 38× vs. 18× u zbývajících ziskových firem.",
@@ -255,25 +274,6 @@
       ]
     },
     {
-      "title": "NVDA | Reuters: DOJ neprovedlo formální vyšetřování CEO před jeho návratem; vyšetřování zákazníků NVDA pokračovala.",
-      "time": "25. 11. 2026, 18:30",
-      "publishedAtPrague": "25. 11. 2026, 18:30",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "company",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/us-justice-department-did-not-open-probe-into-jensen-huang-before-reinstatement-2026-11-25/",
-      "eventKey": "nvda-doj-no-formal-probe-before-return-20261125",
-      "ndxRelevant": true,
-      "importanceScore": 70,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/business/us-justice-department-did-not-open-probe-into-jensen-huang-before-reinstatement-2026-11-25/"
-        }
-      ]
-    },
-    {
       "title": "FedWatch | Reuters: futures oceňují pravděpodobnost zvýšení sazeb v prosinci na 97 %, dalšího zvýšení v lednu na 63 %.",
       "time": "25. 11. 2026, 11:08",
       "publishedAtPrague": "25. 11. 2026, 11:08",
@@ -289,6 +289,25 @@
         {
           "label": "Reuters",
           "url": "https://www.reuters.com/business/nasdaq-futures-slide-over-2-fresh-us-tariff-concerns-inflation-data-focus-2026-11-25/"
+        }
+      ]
+    },
+    {
+      "title": "NVDA | Reuters: DOJ neprovedlo formální vyšetřování CEO před jeho návratem; vyšetřování zákazníků NVDA pokračovala.",
+      "time": "25. 11. 2026, 18:30",
+      "publishedAtPrague": "25. 11. 2026, 18:30",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "company",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/us-justice-department-did-not-open-probe-into-jensen-huang-before-reinstatement-2026-11-25/",
+      "eventKey": "nvda-doj-no-formal-probe-before-return-20261125",
+      "ndxRelevant": true,
+      "importanceScore": 70,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/us-justice-department-did-not-open-probe-into-jensen-huang-before-reinstatement-2026-11-25/"
         }
       ]
     },
@@ -312,25 +331,6 @@
       ]
     },
     {
-      "title": "SPCX | FCC schválila nasazení až 1 mil. družic Starmind pro orbitální AI výpočty. Zahájení do listopadu 2033; 100 tis. do listopadu 2035.",
-      "time": "25. 11. 2026, 17:57",
-      "publishedAtPrague": "25. 11. 2026, 17:57",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_infrastructure",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/media-telecom/us-authorizes-spacex-deploy-1-million-satellites-data-centers-space-2026-11-25/",
-      "eventKey": "spcx-fcc-starmind-license-20261125",
-      "ndxRelevant": true,
-      "importanceScore": 62,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/business/media-telecom/us-authorizes-spacex-deploy-1-million-satellites-data-centers-space-2026-11-25/"
-        }
-      ]
-    },
-    {
       "title": "AI infrastruktura | SATS hlásí pokračující poptávku po letecké přepravě serverů a čipů, včetně dodávek pro americká datacentra. Q3 objem nákladu +8 % vs. globálně +5,3 %.",
       "time": "26. 11. 2026, 03:33",
       "publishedAtPrague": "26. 11. 2026, 03:33",
@@ -346,6 +346,25 @@
         {
           "label": "Reuters",
           "url": "https://www.reuters.com/world/asia-pacific/air-cargo-demand-ai-data-centres-shows-no-sign-slowing-sats-ceo-says-2026-11-26/"
+        }
+      ]
+    },
+    {
+      "title": "SPCX | FCC schválila nasazení až 1 mil. družic Starmind pro orbitální AI výpočty. Zahájení do listopadu 2033; 100 tis. do listopadu 2035.",
+      "time": "25. 11. 2026, 17:57",
+      "publishedAtPrague": "25. 11. 2026, 17:57",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "ai_infrastructure",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/media-telecom/us-authorizes-spacex-deploy-1-million-satellites-data-centers-space-2026-11-25/",
+      "eventKey": "spcx-fcc-starmind-license-20261125",
+      "ndxRelevant": true,
+      "importanceScore": 62,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/media-telecom/us-authorizes-spacex-deploy-1-million-satellites-data-centers-space-2026-11-25/"
         }
       ]
     },
@@ -386,25 +405,6 @@
           "url": "https://www.reuters.com/business/buy-stock-dip-options-market-signals-say-wait-2026-11-25/"
         }
       ]
-    },
-    {
-      "title": "USA jobless claims | 189 tis. vs. kons. 200 tis.; předchozí 202 tis. (−13 tis.).",
-      "time": "25. 11. 2026, 14:46",
-      "publishedAtPrague": "25. 11. 2026, 14:46",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "macro",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/us/us-weekly-jobless-claims-fall-more-than-expected-2026-11-25/",
-      "eventKey": "us-jobless-claims-20261121",
-      "ndxRelevant": true,
-      "importanceScore": 55,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/world/us/us-weekly-jobless-claims-fall-more-than-expected-2026-11-25/"
-        }
-      ]
     }
   ],
   "leaders": [
@@ -427,7 +427,7 @@
   },
   "forecast": {
     "athReturnPercent": 16,
-    "athReason": "Potřebný růst 20,40 %. Odhad beze změny; inflační a exportní riziko.",
+    "athReason": "Potřebný růst 20,40 %. Odhad beze změny; kreditní, inflační a exportní riziko.",
     "downside": "−8 až −14 %",
     "downsideReason": "Modelový 25. percentil koncové ceny; VXN 38,53 (2026-11-25, závěr).",
     "downsideModel": {
@@ -446,6 +446,24 @@
     "timePrague": "27. 11. 2026 15:30 CET"
   },
   "archive": [
+    {
+      "time": "26. 11. 2026 10:59 CET",
+      "summary": "NDX 26 046,90 b. (25. 11.), −0,64 %. VXN 38,53. SoftBank 5Y CDS 534,6 bb; zvýšené kreditní riziko AI investic.",
+      "sourceLinks": [
+        {
+          "label": "Yahoo Finance NDX",
+          "url": "https://it.finance.yahoo.com/quote/%5ENDX/history/"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/media-telecom/investors-see-rising-risk-softbank-default-pressure-grows-ai-bets-2026-11-26/"
+        },
+        {
+          "label": "VXN",
+          "url": "https://www.investing.com/indices/cboe-nasdaq-100-voltility-historical-data"
+        }
+      ]
+    },
     {
       "time": "26. 11. 2026 09:59 CET",
       "summary": "NDX 26 046,90 b. (−0,64 %; závěr 25. 11.). Evropské technologie přibližně +2 % (26. 11., 09:15 CET). US10Y 4,85 % (25. 11.).",
@@ -4317,6 +4335,10 @@
   ],
   "history": [
     {
+      "time": "26. 11. 2026 10:59 CET",
+      "ndx": 26046.9
+    },
+    {
       "time": "2026-11-09",
       "ndx": 27907.63
     },
@@ -5865,6 +5887,14 @@
     {
       "name": "Reuters – evropské technologie",
       "url": "https://www.reuters.com/business/finance/european-stocks-rally-tech-banks-rebound-tariff-fears-ease-2026-11-26/"
+    },
+    {
+      "name": "Yahoo Finance NDX",
+      "url": "https://it.finance.yahoo.com/quote/%5ENDX/history/"
+    },
+    {
+      "name": "Reuters",
+      "url": "https://www.reuters.com/business/media-telecom/investors-see-rising-risk-softbank-default-pressure-grows-ai-bets-2026-11-26/"
     }
   ]
 }
