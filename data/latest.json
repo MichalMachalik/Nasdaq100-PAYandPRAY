@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "26. 11. 2026 07:00 CET",
+  "updatedAtPrague": "26. 11. 2026 08:00 CET",
   "marketStatus": "Cash NDX: uzavřeno, Thanksgiving 26. 11.; závěr 25. 11. 2026.",
   "ndx": {
     "value": 26046.9,
@@ -12,8 +12,27 @@
     "trend": "→",
     "reason": "MA50 breadth 43,6 % (2026-11-25, závěr). RSI14 38,39 (2026-11-25, závěr). VXN 38,53 (2026-11-25, závěr)."
   },
-  "driver": "Core PCE 3,3 % y/y, návrh amerických cel a kreditní riziko AI infrastruktury.",
+  "driver": "NVDA: pozastavení dodávek AI serverů do čtyř zemí jihovýchodní Asie podle FT; riziko odkladu tržeb kvůli exportním licencím.",
   "news": [
+    {
+      "title": "NVDA | Podle FT pozastavila dodávky serverů s vlastními čipy do Malajsie, Singapuru, Thajska a Indonésie. Nové americké exportní licence platí od minulého týdne; délka přerušení neznámá.",
+      "time": "26. 11. 2026, 06:09",
+      "publishedAtPrague": "26. 11. 2026, 06:09",
+      "publicationTimeVerified": true,
+      "kind": "Nově dohledáno",
+      "category": "ai_regulation",
+      "source": "Reuters / FT",
+      "url": "https://www.reuters.com/world/asia-pacific/nvidia-halts-chip-shipments-southeast-asia-ft-reports-2026-11-26/",
+      "eventKey": "nvda-southeast-asia-server-shipment-halt-20261126",
+      "ndxRelevant": true,
+      "importanceScore": 88,
+      "sourceLinks": [
+        {
+          "label": "Reuters (zpráva FT)",
+          "url": "https://www.reuters.com/world/asia-pacific/nvidia-halts-chip-shipments-southeast-asia-ft-reports-2026-11-26/"
+        }
+      ]
+    },
     {
       "title": "NVDA | S&P Global potvrdila rating AA, ale zařadila jej na CreditWatch Negative kvůli rizikům vedení a správy společnosti.",
       "time": "25. 11. 2026, 19:56",
@@ -297,7 +316,7 @@
       "time": "25. 11. 2026, 17:57",
       "publishedAtPrague": "25. 11. 2026, 17:57",
       "publicationTimeVerified": true,
-      "kind": "Nově dohledáno",
+      "kind": "continuing",
       "category": "ai_infrastructure",
       "source": "Reuters",
       "url": "https://www.reuters.com/business/media-telecom/us-authorizes-spacex-deploy-1-million-satellites-data-centers-space-2026-11-25/",
@@ -327,25 +346,6 @@
         {
           "label": "Reuters",
           "url": "https://www.reuters.com/business/autos-transportation/eu-postpones-discussion-approve-teslas-self-driving-tech-2026-11-25/"
-        }
-      ]
-    },
-    {
-      "title": "NVDA | Reuters: čínské úvěrové záznamy uvádějí až 764 AI serverů a modulů za 270 mil. USD a síťové vybavení za 31 mil. USD u firem spojených s bývalou majitelkou Megaspeed.",
-      "time": "25. 11. 2026, 07:13",
-      "publishedAtPrague": "25. 11. 2026, 07:13",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_regulation",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/finance/alice-huang-linked-firms-listed-270-million-ai-servers-china-records-show-2026-11-25/",
-      "eventKey": "nvda-megaspeed-china-ai-server-financing-records-20261125",
-      "ndxRelevant": true,
-      "importanceScore": 70,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/business/finance/alice-huang-linked-firms-listed-270-million-ai-servers-china-records-show-2026-11-25/"
         }
       ]
     },
@@ -392,7 +392,7 @@
       "time": "26. 11. 2026, 06:13",
       "publishedAtPrague": "26. 11. 2026, 06:13",
       "publicationTimeVerified": true,
-      "kind": "NOVÉ",
+      "kind": "continuing",
       "category": "ai_regulation",
       "source": "Reuters",
       "url": "https://www.reuters.com/business/retail-consumer/apple-pulls-minimax-ai-chatbot-app-store-over-child-safety-concerns-2026-11-26/",
@@ -446,6 +446,24 @@
     "timePrague": "27. 11. 2026 15:30 CET"
   },
   "archive": [
+    {
+      "time": "26. 11. 2026 08:00 CET",
+      "summary": "NDX 26 046,90 b. (−0,64 %; závěr 25. 11.). NVDA: FT hlásí pozastavení dodávek AI serverů do čtyř zemí jihovýchodní Asie. US10Y 4,85 % (25. 11.).",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq NDX",
+          "url": "https://indexes.nasdaq.com/Index/Overview/NDX"
+        },
+        {
+          "label": "Reuters (zpráva FT)",
+          "url": "https://www.reuters.com/world/asia-pacific/nvidia-halts-chip-shipments-southeast-asia-ft-reports-2026-11-26/"
+        },
+        {
+          "label": "US Treasury",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+        }
+      ]
+    },
     {
       "time": "26. 11. 2026 07:00 CET",
       "summary": "NDX 26 046,90 b. (−0,64 %, závěr 25. 11.). AAPL odstranil Talkie; FCC povolila SPCX až 1 mil. orbitálních AI družic.",
@@ -5799,6 +5817,10 @@
     {
       "name": "Reuters – SpaceX / FCC",
       "url": "https://www.reuters.com/business/media-telecom/us-authorizes-spacex-deploy-1-million-satellites-data-centers-space-2026-11-25/"
+    },
+    {
+      "name": "Reuters (zpráva FT)",
+      "url": "https://www.reuters.com/world/asia-pacific/nvidia-halts-chip-shipments-southeast-asia-ft-reports-2026-11-26/"
     }
   ]
 }
