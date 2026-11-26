@@ -7,98 +7,98 @@
     "currencies": "https://tradingeconomics.com/currencies"
   },
   "timestampKind": "retrieval timestamp is separate from trading day",
-  "fetchedAtUtc": "2026-11-26T07:00:44.497815Z",
-  "fetchedAtPrague": "26. 11. 2026 08:00",
+  "fetchedAtUtc": "2026-11-26T08:03:56.527523Z",
+  "fetchedAtPrague": "26. 11. 2026 09:03",
   "quotes": [
     {
       "id": "WTI",
       "unit": "USD/bbl",
-      "price": 84.034,
-      "changePercent": 0.42,
+      "price": 83.828,
+      "changePercent": 0.18,
       "quoteDate": "Nov/26",
       "quoteDateISO": "2026-11-26",
       "sourceUrl": "https://tradingeconomics.com/commodity/crude-oil",
-      "fetchedAtUtc": "2026-11-26T07:00:44.497815Z"
+      "fetchedAtUtc": "2026-11-26T08:03:56.527523Z"
     },
     {
       "id": "Brent",
       "unit": "USD/bbl",
-      "price": 94.823,
-      "changePercent": 0.23,
+      "price": 94.512,
+      "changePercent": -0.1,
       "quoteDate": "Nov/26",
       "quoteDateISO": "2026-11-26",
       "sourceUrl": "https://tradingeconomics.com/commodity/brent-crude-oil",
-      "fetchedAtUtc": "2026-11-26T07:00:44.497815Z"
+      "fetchedAtUtc": "2026-11-26T08:03:56.527523Z"
     },
     {
       "id": "Natural Gas",
       "unit": "USD/MMBtu",
-      "price": 3.5907,
-      "changePercent": -1.84,
+      "price": 3.6248,
+      "changePercent": -0.91,
       "quoteDate": "Nov/26",
       "quoteDateISO": "2026-11-26",
       "sourceUrl": "https://tradingeconomics.com/commodity/natural-gas",
-      "fetchedAtUtc": "2026-11-26T07:00:44.497815Z"
+      "fetchedAtUtc": "2026-11-26T08:03:56.527523Z"
     },
     {
       "id": "Gasoline",
       "unit": "USD/gal",
-      "price": 2.416,
-      "changePercent": -1.08,
+      "price": 2.4199,
+      "changePercent": -0.92,
       "quoteDate": "Nov/26",
       "quoteDateISO": "2026-11-26",
       "sourceUrl": "https://tradingeconomics.com/commodity/gasoline",
-      "fetchedAtUtc": "2026-11-26T07:00:44.497815Z"
+      "fetchedAtUtc": "2026-11-26T08:03:56.527523Z"
     },
     {
       "id": "EU Gas",
       "unit": "EUR/MWh",
-      "price": 88.42,
-      "changePercent": 1.56,
+      "price": 88.52,
+      "changePercent": 1.68,
       "quoteDate": "Nov/26",
       "quoteDateISO": "2026-11-26",
       "sourceUrl": "https://tradingeconomics.com/commodity/eu-natural-gas",
-      "fetchedAtUtc": "2026-11-26T07:00:44.497815Z"
+      "fetchedAtUtc": "2026-11-26T08:03:56.527523Z"
     },
     {
       "id": "Gold",
       "unit": "USD/oz",
-      "price": 3569.37,
-      "changePercent": -0.54,
+      "price": 3568.2,
+      "changePercent": -0.57,
       "quoteDate": "Nov/26",
       "quoteDateISO": "2026-11-26",
       "sourceUrl": "https://tradingeconomics.com/commodity/gold",
-      "fetchedAtUtc": "2026-11-26T07:00:44.497815Z"
+      "fetchedAtUtc": "2026-11-26T08:03:56.527523Z"
     },
     {
       "id": "EUR/USD",
       "unit": "EUR/USD",
-      "price": 1.09649,
-      "changePercent": -0.08,
+      "price": 1.09748,
+      "changePercent": 0.01,
       "quoteDate": "Nov/26",
       "quoteDateISO": "2026-11-26",
       "sourceUrl": "https://tradingeconomics.com/euro-area/currency",
-      "fetchedAtUtc": "2026-11-26T07:00:44.497815Z"
+      "fetchedAtUtc": "2026-11-26T08:03:56.527523Z"
     },
     {
       "id": "EUR/CZK",
       "unit": "EUR/CZK",
-      "price": 24.4191,
-      "changePercent": 0.0,
+      "price": 24.4239,
+      "changePercent": 0.02,
       "quoteDate": "Nov/26",
       "quoteDateISO": "2026-11-26",
       "sourceUrl": "https://tradingeconomics.com/eurczk:cur",
-      "fetchedAtUtc": "2026-11-26T07:00:44.497815Z"
+      "fetchedAtUtc": "2026-11-26T08:03:56.527523Z"
     },
     {
       "id": "USD/CZK",
       "unit": "USD/CZK",
-      "price": 22.2677,
-      "changePercent": 0.08,
+      "price": 22.2549,
+      "changePercent": 0.01,
       "quoteDate": "Nov/26",
       "quoteDateISO": "2026-11-26",
       "sourceUrl": "https://tradingeconomics.com/czech-republic/currency",
-      "fetchedAtUtc": "2026-11-26T07:00:44.497815Z"
+      "fetchedAtUtc": "2026-11-26T08:03:56.527523Z"
     }
   ]
 }
