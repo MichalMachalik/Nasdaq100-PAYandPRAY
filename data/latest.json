@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "26. 11. 2026 01:02 CET",
+  "updatedAtPrague": "26. 11. 2026 02:04 CET",
   "marketStatus": "Cash NDX: uzavřeno, Thanksgiving 26. 11.; závěr 25. 11. 2026.",
   "ndx": {
     "value": 26046.9,
@@ -12,7 +12,7 @@
     "trend": "→",
     "reason": "MA50 breadth 43,6 % (2026-11-25, závěr). RSI14 38,39 (2026-11-25, závěr). VXN 36,42 (2026-11-24, starší závěr)."
   },
-  "driver": "Kreditní riziko AI infrastruktury: výnos dluhopisů CRWV 2031 téměř 18 %. Tchaj-wan očekává zachování dohodnutého cla 15 %.",
+  "driver": "Návrh amerických cel vůči 14 partnerům. Core PCE 3,3 % y/y; přetrvává tlak na valuace AI.",
   "news": [
     {
       "title": "NVDA | S&P Global potvrdila rating AA, ale zařadila jej na CreditWatch Negative kvůli rizikům vedení a správy společnosti.",
@@ -141,7 +141,7 @@
       "time": "26. 11. 2026, 00:31",
       "publishedAtPrague": "26. 11. 2026, 00:31",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "trade",
       "source": "Reuters",
       "url": "https://www.reuters.com/world/asia-pacific/taiwan-says-it-is-confident-keeping-previously-agreed-tariffs-with-us-2026-11-25/",
@@ -175,6 +175,25 @@
         {
           "label": "Reuters",
           "url": "https://www.reuters.com/business/nasdaq-futures-slide-over-2-fresh-us-tariff-concerns-inflation-data-focus-2026-11-25/"
+        }
+      ]
+    },
+    {
+      "title": "NVDA | Reuters: DOJ neprovedlo formální vyšetřování CEO před jeho návratem; vyšetřování zákazníků NVDA pokračovala.",
+      "time": "25. 11. 2026, 18:30",
+      "publishedAtPrague": "25. 11. 2026, 18:30",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "company",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/us-justice-department-did-not-open-probe-into-jensen-huang-before-reinstatement-2026-11-25/",
+      "eventKey": "nvda-doj-no-formal-probe-before-return-20261125",
+      "ndxRelevant": true,
+      "importanceScore": 70,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/us-justice-department-did-not-open-probe-into-jensen-huang-before-reinstatement-2026-11-25/"
         }
       ]
     },
@@ -259,25 +278,6 @@
       ]
     },
     {
-      "title": "TSLA | EU odložila jednání o celoevropském schválení FSD z 1. 12. na 15. 12. dle Evropské komise.",
-      "time": "25. 11. 2026, 11:46",
-      "publishedAtPrague": "25. 11. 2026, 11:46",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_regulation",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/autos-transportation/eu-postpones-discussion-approve-teslas-self-driving-tech-2026-11-25/",
-      "eventKey": "tsla-eu-fsd-meeting-delay-20261125",
-      "ndxRelevant": true,
-      "importanceScore": 65,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/business/autos-transportation/eu-postpones-discussion-approve-teslas-self-driving-tech-2026-11-25/"
-        }
-      ]
-    },
-    {
       "title": "NVDA | Reuters: čínské úvěrové záznamy uvádějí až 764 AI serverů a modulů za 270 mil. USD a síťové vybavení za 31 mil. USD u firem spojených s bývalou majitelkou Megaspeed.",
       "time": "25. 11. 2026, 07:13",
       "publishedAtPrague": "25. 11. 2026, 07:13",
@@ -293,6 +293,25 @@
         {
           "label": "Reuters",
           "url": "https://www.reuters.com/business/finance/alice-huang-linked-firms-listed-270-million-ai-servers-china-records-show-2026-11-25/"
+        }
+      ]
+    },
+    {
+      "title": "TSLA | EU odložila jednání o celoevropském schválení FSD z 1. 12. na 15. 12. dle Evropské komise.",
+      "time": "25. 11. 2026, 11:46",
+      "publishedAtPrague": "25. 11. 2026, 11:46",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "ai_regulation",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/autos-transportation/eu-postpones-discussion-approve-teslas-self-driving-tech-2026-11-25/",
+      "eventKey": "tsla-eu-fsd-meeting-delay-20261125",
+      "ndxRelevant": true,
+      "importanceScore": 65,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/autos-transportation/eu-postpones-discussion-approve-teslas-self-driving-tech-2026-11-25/"
         }
       ]
     },
@@ -393,6 +412,24 @@
     "timePrague": "27. 11. 2026 15:30 CET"
   },
   "archive": [
+    {
+      "time": "26. 11. 2026 02:04 CET",
+      "summary": "NDX 26 046,90 b., −0,64 % (závěr 25. 11.). Bez zásadních nových událostí od poslední kontroly. US10Y 4,85 %, −6 bb; core PCE 3,3 % y/y.",
+      "sourceLinks": [
+        {
+          "label": "Investing.com NDX",
+          "url": "https://www.investing.com/indices/nq-100-historical-data"
+        },
+        {
+          "label": "Reuters – PCE",
+          "url": "https://www.reuters.com/business/us-inflation-rises-further-october-2026-11-25/"
+        },
+        {
+          "label": "U.S. Treasury",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value_month=202611"
+        }
+      ]
+    },
     {
       "time": "26. 11. 2026 01:02 CET",
       "summary": "NDX 26 046,90 b., −0,64 % (závěr 25. 11.). Tchaj-wan očekává zachování amerického cla 15 %. US10Y 4,85 %, −6 bb.",
@@ -5618,6 +5655,10 @@
     {
       "name": "Reuters – Tchaj-wan, cla",
       "url": "https://www.reuters.com/world/asia-pacific/taiwan-says-it-is-confident-keeping-previously-agreed-tariffs-with-us-2026-11-25/"
+    },
+    {
+      "name": "Reuters – DOJ / NVDA",
+      "url": "https://www.reuters.com/business/us-justice-department-did-not-open-probe-into-jensen-huang-before-reinstatement-2026-11-25/"
     }
   ]
 }
