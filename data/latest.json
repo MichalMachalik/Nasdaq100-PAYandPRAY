@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "26. 11. 2026 18:57 CET",
+  "updatedAtPrague": "26. 11. 2026 20:03 CET",
   "marketStatus": "Cash NDX: uzavřeno, Thanksgiving 26. 11.; závěr 25. 11. 2026.",
   "ndx": {
     "value": 26046.9,
@@ -95,25 +95,6 @@
       ]
     },
     {
-      "title": "ASML | Nizozemsko, EK, Německo a Francie usilují o zablokování návrhu MATCH Act v USA. ASML očekává přibližně 20 % letošních tržeb z Číny; návrh by zpřísnil export výrobního zařízení.",
-      "time": "26. 11. 2026, 12:32",
-      "publishedAtPrague": "26. 11. 2026, 12:32",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_regulation",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/dutch-minister-says-us-chip-curbs-bill-would-hurt-europe-2026-11-26/",
-      "eventKey": "asml-dutch-match-act-opposition-20261126",
-      "ndxRelevant": true,
-      "importanceScore": 70,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/business/dutch-minister-says-us-chip-curbs-bill-would-hurt-europe-2026-11-26/"
-        }
-      ]
-    },
-    {
       "title": "AI export | Reuters: Z.AI může odložit GLM-5.5 do Q1 2027 nebo později. Moonshot očekává při ztrátě zahraničního výpočetního výkonu prodloužení cyklu modelů z 6 na 12+ měsíců. Omezení přístupu k čipům NVDA platí od 19. 11.",
       "time": "26. 11. 2026, 08:19",
       "publishedAtPrague": "26. 11. 2026, 08:19",
@@ -133,27 +114,23 @@
       ]
     },
     {
-      "title": "NVDA | S&P Global potvrdila rating AA, ale zařadila jej na CreditWatch Negative kvůli rizikům vedení a správy společnosti.",
-      "time": "25. 11. 2026, 19:56",
-      "publishedAtPrague": "25. 11. 2026, 19:56",
+      "title": "ASML | Nizozemsko, EK, Německo a Francie usilují o zablokování návrhu MATCH Act v USA. ASML očekává přibližně 20 % letošních tržeb z Číny; návrh by zpřísnil export výrobního zařízení.",
+      "time": "26. 11. 2026, 12:32",
+      "publishedAtPrague": "26. 11. 2026, 12:32",
       "publicationTimeVerified": true,
       "kind": "continuing",
-      "category": "company",
+      "category": "ai_regulation",
       "source": "Reuters",
-      "url": "https://www.reuters.com/business/sp-global-places-nvidia-rating-creditwatch-negative-rising-management-governance-2026-11-25/",
+      "url": "https://www.reuters.com/business/dutch-minister-says-us-chip-curbs-bill-would-hurt-europe-2026-11-26/",
+      "eventKey": "asml-dutch-match-act-opposition-20261126",
+      "ndxRelevant": true,
+      "importanceScore": 70,
       "sourceLinks": [
         {
           "label": "Reuters",
-          "url": "https://www.reuters.com/business/sp-global-places-nvidia-rating-creditwatch-negative-rising-management-governance-2026-11-25/"
-        },
-        {
-          "label": "S&P Global Ratings",
-          "url": "https://spratings.spglobal.com/ratings/en/regulatory/ratings-actions"
+          "url": "https://www.reuters.com/business/dutch-minister-says-us-chip-curbs-bill-would-hurt-europe-2026-11-26/"
         }
-      ],
-      "eventKey": "nvda-sp-creditwatch-negative-20261125",
-      "ndxRelevant": true,
-      "importanceScore": 82
+      ]
     },
     {
       "title": "Fed Beige Book | většina regionů hlásí mírný až střední růst, zaměstnanost vzrostla a inflační tlaky přetrvávají. Pro prosincové FOMC trvá riziko vyšších sazeb.",
@@ -192,6 +169,25 @@
       "eventKey": "asia-market-rebound-fed-pricing-20261126",
       "ndxRelevant": true,
       "importanceScore": 66
+    },
+    {
+      "title": "META | Nizozemské organizace žádají soud o zastavení prodeje AI brýlí kvůli ochraně soukromí. Požadované penále až 100 mil. EUR na žalovaného. Rozhodnutí nejpozději 24. 12.",
+      "time": "26. 11. 2026, 12:44",
+      "publishedAtPrague": "26. 11. 2026, 12:44",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "ai_regulation",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/legal/government/dutch-groups-ask-court-halt-meta-smart-glasses-sales-over-privacy-concerns-2026-11-26/",
+      "eventKey": "meta-dutch-smart-glasses-lawsuit-20261126",
+      "ndxRelevant": true,
+      "importanceScore": 55,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/legal/government/dutch-groups-ask-court-halt-meta-smart-glasses-sales-over-privacy-concerns-2026-11-26/"
+        }
+      ]
     },
     {
       "title": "Evropa | STOXX Europe 600 +1,4 % v 09:15 CET, technologický sektor přibližně +2 %, Infineon a Soitec přibližně +4 %. Reuters: očekávání stropu amerických cel na EU 15 %.",
@@ -289,6 +285,25 @@
       ]
     },
     {
+      "title": "Jižní Korea | BOK zvýšila sazbu o 25 bb na 3,25 %. Výhled HDP 2026 zvýšila z 3,3 na 3,9 %, 2027 z 2,9 na 4,1 %; hlavním faktorem je růst poptávky po polovodičích.",
+      "time": "26. 11. 2026, 02:05",
+      "publishedAtPrague": "26. 11. 2026, 02:05",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "macro",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/markets/asia/south-koreas-central-bank-resumes-tightening-with-quarter-point-hike-2026-11-26/",
+      "eventKey": "bok-rate-hike-chip-export-growth-20261126",
+      "ndxRelevant": true,
+      "importanceScore": 52,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/markets/asia/south-koreas-central-bank-resumes-tightening-with-quarter-point-hike-2026-11-26/"
+        }
+      ]
+    },
+    {
       "title": "NVDA / Kioxia | Prototyp GB200 NVL72 se 144 SSD XD8 dosáhl 1,1 PB hrubé kapacity. SCADA a Storage-Next umožňují zpracování až 2 bil. vektorů; ověření technické proveditelnosti.",
       "time": "26. 11. 2026, 05:19",
       "publishedAtPrague": "26. 11. 2026, 05:19",
@@ -312,21 +327,21 @@
       ]
     },
     {
-      "title": "Jižní Korea | BOK zvýšila sazbu o 25 bb na 3,25 %. Výhled HDP 2026 zvýšila z 3,3 na 3,9 %, 2027 z 2,9 na 4,1 %; hlavním faktorem je růst poptávky po polovodičích.",
-      "time": "26. 11. 2026, 02:05",
-      "publishedAtPrague": "26. 11. 2026, 02:05",
+      "title": "SPCX | Musk rozšířil příslib daru na dvě akcie pro každé dítě v USA; odhadovaná hodnota 18 mld. USD. Jedna akcie od společnosti, jedna od Muska po skončení lock-upu v červnu 2027.",
+      "time": "26. 11. 2026, 05:15",
+      "publishedAtPrague": "26. 11. 2026, 05:15",
       "publicationTimeVerified": true,
       "kind": "new",
-      "category": "macro",
+      "category": "company",
       "source": "Reuters",
-      "url": "https://www.reuters.com/markets/asia/south-koreas-central-bank-resumes-tightening-with-quarter-point-hike-2026-11-26/",
-      "eventKey": "bok-rate-hike-chip-export-growth-20261126",
+      "url": "https://www.reuters.com/business/media-telecom/musk-says-every-child-us-will-get-two-spacex-shares-2026-11-26/",
+      "eventKey": "spcx-musk-share-gift-20261126",
       "ndxRelevant": true,
-      "importanceScore": 52,
+      "importanceScore": 45,
       "sourceLinks": [
         {
           "label": "Reuters",
-          "url": "https://www.reuters.com/markets/asia/south-koreas-central-bank-resumes-tightening-with-quarter-point-hike-2026-11-26/"
+          "url": "https://www.reuters.com/business/media-telecom/musk-says-every-child-us-will-get-two-spacex-shares-2026-11-26/"
         }
       ]
     }
@@ -370,6 +385,20 @@
     "timePrague": "27. 11. 2026 15:30 CET"
   },
   "archive": [
+    {
+      "time": "26. 11. 2026 20:03 CET",
+      "summary": "NDX 26 046,90 b. (−0,64 %, závěr 25. 11.). META: návrh na zastavení prodeje AI brýlí v Nizozemsku. Ekonomika ověřena 6/6, ostatní bloky vyžadují novou hodinovou kontrolu.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq NDX",
+          "url": "https://indexes.nasdaq.com/index/Overview/NDX"
+        },
+        {
+          "label": "Reuters – META",
+          "url": "https://www.reuters.com/legal/government/dutch-groups-ask-court-halt-meta-smart-glasses-sales-over-privacy-concerns-2026-11-26/"
+        }
+      ]
+    },
     {
       "time": "26. 11. 2026 18:57 CET",
       "summary": "NDX 26 046,90 b. (−0,64 %, závěr 25. 11.). BOK +25 bb na 3,25 %, růst výhledu HDP díky polovodičům. Cash trh uzavřen; ověřeny zdroje a platnost zpráv.",
