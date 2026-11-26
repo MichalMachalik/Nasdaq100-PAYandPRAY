@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "26. 11. 2026 21:55 CET",
+  "updatedAtPrague": "26. 11. 2026 22:58 CET",
   "marketStatus": "Cash NDX: uzavřeno, Thanksgiving 26. 11.; závěr 25. 11. 2026.",
   "ndx": {
     "value": 26046.9,
@@ -12,10 +12,10 @@
     "trend": "→",
     "reason": "MA50 breadth 43,6 % (2026-11-25, poslední ověřená hodnota; konflikt zdroje). RSI14 38,39 (2026-11-25, závěr). VXN 38,53 (2026-11-25, závěr)."
   },
-  "driver": "Podle FT NVDA pozastavila dodávky AI serverů do čtyř zemí jihovýchodní Asie. Fitch očekává zpomalení investic do datacenter po zpřísnění exportních licencí.",
+  "driver": "Podle FT pozastavily banky financování projektu Aolani přibližně za 500 mil. USD. Exportní licence omezují dodávky AI serverů do čtyř zemí jihovýchodní Asie.",
   "news": [
     {
-      "title": "NVDA | Podle FT pozastavila dodávky serverů s vlastními čipy do Malajsie, Singapuru, Thajska a Indonésie. Nové americké exportní licence platí od minulého týdne; délka přerušení neznámá.",
+      "title": "NVDA | Podle FT pozastaveny dodávky AI serverů do čtyř zemí jihovýchodní Asie. Banky pozastavily financování projektu Aolani v objemu přibližně 500 mil. USD.",
       "time": "26. 11. 2026, 06:09",
       "publishedAtPrague": "26. 11. 2026, 06:09",
       "publicationTimeVerified": true,
@@ -30,6 +30,10 @@
         {
           "label": "Reuters (zpráva FT)",
           "url": "https://www.reuters.com/world/asia-pacific/nvidia-halts-chip-shipments-southeast-asia-ft-reports-2026-11-26/"
+        },
+        {
+          "label": "Financial Times",
+          "url": "https://www.ft.com/content/7838a715-07d4-4605-aa60-21f5af2b2370"
         }
       ]
     },
@@ -366,6 +370,24 @@
     "timePrague": "27. 11. 2026 15:30 CET"
   },
   "archive": [
+    {
+      "time": "26. 11. 2026 22:58 CET",
+      "summary": "NDX 26 046,90 b. (−0,64 %, závěr 25. 11.). Bez zásadních nových událostí. FT: pozastavené financování Aolani přibližně 500 mil. USD. Breadth: přetrvává konflikt 44/101 a 45/101.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq NDX",
+          "url": "https://indexes.nasdaqomx.com/Index/History/NDX"
+        },
+        {
+          "label": "Financial Times",
+          "url": "https://www.ft.com/content/7838a715-07d4-4605-aa60-21f5af2b2370"
+        },
+        {
+          "label": "StockCurry",
+          "url": "https://stockcurry.com/index_timeline.php?index=Nasdaq100&view=percent"
+        }
+      ]
+    },
     {
       "time": "26. 11. 2026 21:55 CET",
       "summary": "NDX 26 046,90 b. (−0,64 %, závěr 25. 11.). Bez zásadních novinek; ekonomika 6/6. Breadth: zdroj stále uvádí 45/101 místo 44/101; původní hodnota zachována.",
@@ -6041,6 +6063,10 @@
     {
       "name": "Reuters – BOK",
       "url": "https://www.reuters.com/markets/asia/south-koreas-central-bank-resumes-tightening-with-quarter-point-hike-2026-11-26/"
+    },
+    {
+      "name": "Financial Times – export AI serverů",
+      "url": "https://www.ft.com/content/7838a715-07d4-4605-aa60-21f5af2b2370"
     }
   ]
 }
