@@ -1,6 +1,6 @@
 {
-  "updatedAtPrague": "26. 11. 2026 22:58 CET",
-  "marketStatus": "Cash NDX: uzavřeno, Thanksgiving 26. 11.; závěr 25. 11. 2026.",
+  "updatedAtPrague": "27. 11. 2026 00:20 CET",
+  "marketStatus": "Cash NDX: uzavřeno; závěr 25. 11. 2026. Dne 27. 11. zkrácená seance 15:30–19:00 CET.",
   "ndx": {
     "value": 26046.9,
     "changePercent": -0.64,
@@ -10,7 +10,7 @@
   "sentiment": {
     "label": "Medvědí",
     "trend": "→",
-    "reason": "MA50 breadth 43,6 % (2026-11-25, poslední ověřená hodnota; konflikt zdroje). RSI14 38,39 (2026-11-25, závěr). VXN 38,53 (2026-11-25, závěr)."
+    "reason": "MA50 breadth 43,6 % (2026-11-25, poslední dříve ověřená hodnota; konflikt zdroje). RSI14 38,39 (2026-11-25, závěr). VXN 38,53 (2026-11-25, závěr)."
   },
   "driver": "Podle FT pozastavily banky financování projektu Aolani přibližně za 500 mil. USD. Exportní licence omezují dodávky AI serverů do čtyř zemí jihovýchodní Asie.",
   "news": [
@@ -171,25 +171,6 @@
         {
           "label": "Reuters",
           "url": "https://www.reuters.com/world/asia-pacific/taiwan-says-it-is-confident-keeping-previously-agreed-tariffs-with-us-2026-11-25/"
-        }
-      ]
-    },
-    {
-      "title": "NVDA | Moody’s ponechává rating Aa1 a stabilní výhled. Návrat CEO snižuje krátkodobou nejistotu vedení; regulatorní a governance rizika přetrvávají.",
-      "time": "25. 11. 2026, 23:18",
-      "publishedAtPrague": "25. 11. 2026, 23:18",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "corporate",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/moodys-says-nvidias-huang-reinstatement-eases-uncertainty-ratings-unchanged-2026-11-25/",
-      "eventKey": "nvda-moodys-rating-unchanged-20261125",
-      "ndxRelevant": true,
-      "importanceScore": 65,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/business/moodys-says-nvidias-huang-reinstatement-eases-uncertainty-ratings-unchanged-2026-11-25/"
         }
       ]
     },
@@ -370,6 +351,24 @@
     "timePrague": "27. 11. 2026 15:30 CET"
   },
   "archive": [
+    {
+      "time": "27. 11. 2026 00:20 CET",
+      "summary": "NDX 26 046,90 b. (−0,64 %, závěr 25. 11.). Bez nové kvalifikované zprávy při kontrole. Breadth: konflikt 44/101 a 45/101 trvá. NQ=F: čerstvá kotace po sváteční přestávce nedoložena.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq NDX",
+          "url": "https://indexes.nasdaqomx.com/Index/History/NDX"
+        },
+        {
+          "label": "StockCurry",
+          "url": "https://stockcurry.com/index_timeline.php?index=Nasdaq100&view=percent"
+        },
+        {
+          "label": "MarketWatch NQZ26",
+          "url": "https://www.marketwatch.com/investing/future/nqz26"
+        }
+      ]
+    },
     {
       "time": "26. 11. 2026 22:58 CET",
       "summary": "NDX 26 046,90 b. (−0,64 %, závěr 25. 11.). Bez zásadních nových událostí. FT: pozastavené financování Aolani přibližně 500 mil. USD. Breadth: přetrvává konflikt 44/101 a 45/101.",
