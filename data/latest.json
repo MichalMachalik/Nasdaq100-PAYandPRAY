@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "26. 11. 2026 02:04 CET",
+  "updatedAtPrague": "26. 11. 2026 03:00 CET",
   "marketStatus": "Cash NDX: uzavřeno, Thanksgiving 26. 11.; závěr 25. 11. 2026.",
   "ndx": {
     "value": 26046.9,
@@ -12,7 +12,7 @@
     "trend": "→",
     "reason": "MA50 breadth 43,6 % (2026-11-25, závěr). RSI14 38,39 (2026-11-25, závěr). VXN 38,53 (2026-11-25, závěr)."
   },
-  "driver": "Návrh amerických cel vůči 14 partnerům. Core PCE 3,3 % y/y; přetrvává tlak na valuace AI.",
+  "driver": "Návrh amerických cel vůči 14 partnerům. Core PCE 3,3 % y/y. VXN 38,53; tlak na valuace AI.",
   "news": [
     {
       "title": "NVDA | S&P Global potvrdila rating AA, ale zařadila jej na CreditWatch Negative kvůli rizikům vedení a správy společnosti.",
@@ -118,6 +118,25 @@
       ]
     },
     {
+      "title": "Asie | Nikkei +1,6 %, KOSPI +1,9 %. Futures implikují 98% pravděpodobnost zvýšení sazeb Fedu o 25 bb v prosinci.",
+      "time": "26. 11. 2026, 02:35",
+      "publishedAtPrague": "26. 11. 2026, 02:35",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "market",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-26/",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-26/"
+        }
+      ],
+      "eventKey": "asia-market-rebound-fed-pricing-20261126",
+      "ndxRelevant": true,
+      "importanceScore": 66
+    },
+    {
       "title": "NDX | Reuters/LSEG: z 60 společností s růstem odhadů forward EPS za 3 měsíce jich 37 cenově oslabilo. Medián forward P/E 25 nejdražších titulů 38× vs. 18× u zbývajících ziskových firem.",
       "time": "25. 11. 2026, 17:13",
       "publishedAtPrague": "25. 11. 2026, 17:13",
@@ -198,25 +217,6 @@
       ]
     },
     {
-      "title": "FedWatch | Reuters: futures oceňují pravděpodobnost zvýšení sazeb v prosinci na 97 %, dalšího zvýšení v lednu na 63 %.",
-      "time": "25. 11. 2026, 11:08",
-      "publishedAtPrague": "25. 11. 2026, 11:08",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "macro",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/nasdaq-futures-slide-over-2-fresh-us-tariff-concerns-inflation-data-focus-2026-11-25/",
-      "eventKey": "fed-dec-jan-market-pricing-20261125",
-      "ndxRelevant": true,
-      "importanceScore": 78,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/business/nasdaq-futures-slide-over-2-fresh-us-tariff-concerns-inflation-data-focus-2026-11-25/"
-        }
-      ]
-    },
-    {
       "title": "NVDA | WSJ: američtí činitelé informovali Kongres, že nemají důkazy o řízení sledování CEO čínskou rozvědkou.",
       "publishedAtPrague": "25. 11. 2026, 17:31",
       "eventKey": "nvda-us-officials-no-evidence-china-spying-20261125",
@@ -232,6 +232,25 @@
         {
           "label": "Reuters",
           "url": "https://www.reuters.com/technology/us-finds-no-evidence-china-directed-executive-spy-nvidia-ceo-wsj-reports-2026-11-25/"
+        }
+      ]
+    },
+    {
+      "title": "FedWatch | Reuters: futures oceňují pravděpodobnost zvýšení sazeb v prosinci na 97 %, dalšího zvýšení v lednu na 63 %.",
+      "time": "25. 11. 2026, 11:08",
+      "publishedAtPrague": "25. 11. 2026, 11:08",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "macro",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/nasdaq-futures-slide-over-2-fresh-us-tariff-concerns-inflation-data-focus-2026-11-25/",
+      "eventKey": "fed-dec-jan-market-pricing-20261125",
+      "ndxRelevant": true,
+      "importanceScore": 78,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/nasdaq-futures-slide-over-2-fresh-us-tariff-concerns-inflation-data-focus-2026-11-25/"
         }
       ]
     },
@@ -278,25 +297,6 @@
       ]
     },
     {
-      "title": "NVDA | Reuters: čínské úvěrové záznamy uvádějí až 764 AI serverů a modulů za 270 mil. USD a síťové vybavení za 31 mil. USD u firem spojených s bývalou majitelkou Megaspeed.",
-      "time": "25. 11. 2026, 07:13",
-      "publishedAtPrague": "25. 11. 2026, 07:13",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_regulation",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/finance/alice-huang-linked-firms-listed-270-million-ai-servers-china-records-show-2026-11-25/",
-      "eventKey": "nvda-megaspeed-china-ai-server-financing-records-20261125",
-      "ndxRelevant": true,
-      "importanceScore": 70,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/business/finance/alice-huang-linked-firms-listed-270-million-ai-servers-china-records-show-2026-11-25/"
-        }
-      ]
-    },
-    {
       "title": "TSLA | EU odložila jednání o celoevropském schválení FSD z 1. 12. na 15. 12. dle Evropské komise.",
       "time": "25. 11. 2026, 11:46",
       "publishedAtPrague": "25. 11. 2026, 11:46",
@@ -316,23 +316,23 @@
       ]
     },
     {
-      "title": "Asie | KOSPI až −6,4 %, TAIEX až −8,6 %, MSCI Asia-Pacific ex-Japan −3,2 %. Výprodej čipových trhů pokračuje; riziko nových amerických cel.",
-      "time": "25. 11. 2026, 02:50 CET",
-      "publishedAtPrague": "25. 11. 2026, 02:50",
+      "title": "NVDA | Reuters: čínské úvěrové záznamy uvádějí až 764 AI serverů a modulů za 270 mil. USD a síťové vybavení za 31 mil. USD u firem spojených s bývalou majitelkou Megaspeed.",
+      "time": "25. 11. 2026, 07:13",
+      "publishedAtPrague": "25. 11. 2026, 07:13",
       "publicationTimeVerified": true,
       "kind": "continuing",
-      "category": "semiconductor_market",
+      "category": "ai_regulation",
       "source": "Reuters",
-      "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-25/",
+      "url": "https://www.reuters.com/business/finance/alice-huang-linked-firms-listed-270-million-ai-servers-china-records-show-2026-11-25/",
+      "eventKey": "nvda-megaspeed-china-ai-server-financing-records-20261125",
+      "ndxRelevant": true,
+      "importanceScore": 70,
       "sourceLinks": [
         {
           "label": "Reuters",
-          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-25/"
+          "url": "https://www.reuters.com/business/finance/alice-huang-linked-firms-listed-270-million-ai-servers-china-records-show-2026-11-25/"
         }
-      ],
-      "eventKey": "asia-chip-market-selloff-20261125",
-      "ndxRelevant": true,
-      "importanceScore": 70
+      ]
     },
     {
       "title": "VIX futures | Krátkodobé kontrakty nad vzdálenějšími (backwardation). Reuters: zvýšené krátkodobé riziko při výprodeji AI akcií.",
@@ -394,16 +394,16 @@
   "forecast": {
     "athReturnPercent": 16,
     "athReason": "Potřebný růst 20,40 %. Odhad beze změny; inflační a kreditní riziko.",
-    "downside": "−7 až −13 %",
-    "downsideReason": "Modelový 25. percentil koncové ceny; VXN 36,42 (2026-11-24, závěr).",
+    "downside": "−8 až −14 %",
+    "downsideReason": "Modelový 25. percentil koncové ceny; VXN 38,53 (2026-11-25, závěr).",
     "downsideModel": {
       "id": "ndx-evidence-volatility-v1",
       "dataFile": "data/risk-model.json",
-      "vxnAsOf": "2026-11-24",
+      "vxnAsOf": "2026-11-25",
       "cashNdxReferenceAsOf": "2026-11-25",
       "modelQuantile": 0.25,
-      "month1Pct": 7.36,
-      "month3Pct": 13.01,
+      "month1Pct": 7.8,
+      "month3Pct": 13.8,
       "warning": "Modelová 25% hladina koncové ceny při nulovém očekávaném jednoduchém výnosu a konstantní opční volatilitě; nikoli empiricky kalibrovaná pravděpodobnost ani záruka."
     }
   },
@@ -412,6 +412,24 @@
     "timePrague": "27. 11. 2026 15:30 CET"
   },
   "archive": [
+    {
+      "time": "26. 11. 2026 03:00 CET",
+      "summary": "NDX 26 046,90 b. (závěr 25. 11.). VXN 38,53, +5,79 %. Nikkei +1,6 %, KOSPI +1,9 %; futures implikují 98% pravděpodobnost zvýšení FFR o 25 bb v prosinci.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq NDX",
+          "url": "https://indexes.nasdaqomx.com/Index/Overview/NDX"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-26/"
+        },
+        {
+          "label": "Investing.com VXN",
+          "url": "https://www.investing.com/indices/cboe-nasdaq-100-voltility-historical-data"
+        }
+      ]
+    },
     {
       "time": "26. 11. 2026 02:04 CET",
       "summary": "NDX 26 046,90 b., −0,64 % (závěr 25. 11.). Bez zásadních nových událostí od poslední kontroly. US10Y 4,85 %, −6 bb; core PCE 3,3 % y/y.",
@@ -5659,6 +5677,10 @@
     {
       "name": "Reuters – DOJ / NVDA",
       "url": "https://www.reuters.com/business/us-justice-department-did-not-open-probe-into-jensen-huang-before-reinstatement-2026-11-25/"
+    },
+    {
+      "name": "Reuters",
+      "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-26/"
     }
   ]
 }
