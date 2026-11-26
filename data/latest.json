@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "26. 11. 2026 06:03 CET",
+  "updatedAtPrague": "26. 11. 2026 07:00 CET",
   "marketStatus": "Cash NDX: uzavřeno, Thanksgiving 26. 11.; závěr 25. 11. 2026.",
   "ndx": {
     "value": 26046.9,
@@ -12,7 +12,7 @@
     "trend": "→",
     "reason": "MA50 breadth 43,6 % (2026-11-25, závěr). RSI14 38,39 (2026-11-25, závěr). VXN 38,53 (2026-11-25, závěr)."
   },
-  "driver": "Návrh amerických cel vůči 14 partnerům. Kreditní riziko AI infrastruktury; přeprava serverů a čipů podle SATS nadále roste.",
+  "driver": "Core PCE 3,3 % y/y, návrh amerických cel a kreditní riziko AI infrastruktury.",
   "news": [
     {
       "title": "NVDA | S&P Global potvrdila rating AA, ale zařadila jej na CreditWatch Negative kvůli rizikům vedení a správy společnosti.",
@@ -217,25 +217,6 @@
       ]
     },
     {
-      "title": "NVDA | WSJ: američtí činitelé informovali Kongres, že nemají důkazy o řízení sledování CEO čínskou rozvědkou.",
-      "publishedAtPrague": "25. 11. 2026, 17:31",
-      "eventKey": "nvda-us-officials-no-evidence-china-spying-20261125",
-      "importanceScore": 70,
-      "url": "https://www.reuters.com/technology/us-finds-no-evidence-china-directed-executive-spy-nvidia-ceo-wsj-reports-2026-11-25/",
-      "category": "ai_regulation",
-      "time": "25. 11. 2026, 17:31",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "source": "Reuters",
-      "ndxRelevant": true,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/technology/us-finds-no-evidence-china-directed-executive-spy-nvidia-ceo-wsj-reports-2026-11-25/"
-        }
-      ]
-    },
-    {
       "title": "FedWatch | Reuters: futures oceňují pravděpodobnost zvýšení sazeb v prosinci na 97 %, dalšího zvýšení v lednu na 63 %.",
       "time": "25. 11. 2026, 11:08",
       "publishedAtPrague": "25. 11. 2026, 11:08",
@@ -251,6 +232,25 @@
         {
           "label": "Reuters",
           "url": "https://www.reuters.com/business/nasdaq-futures-slide-over-2-fresh-us-tariff-concerns-inflation-data-focus-2026-11-25/"
+        }
+      ]
+    },
+    {
+      "title": "NVDA | WSJ: američtí činitelé informovali Kongres, že nemají důkazy o řízení sledování CEO čínskou rozvědkou.",
+      "publishedAtPrague": "25. 11. 2026, 17:31",
+      "eventKey": "nvda-us-officials-no-evidence-china-spying-20261125",
+      "importanceScore": 70,
+      "url": "https://www.reuters.com/technology/us-finds-no-evidence-china-directed-executive-spy-nvidia-ceo-wsj-reports-2026-11-25/",
+      "category": "ai_regulation",
+      "time": "25. 11. 2026, 17:31",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "source": "Reuters",
+      "ndxRelevant": true,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/technology/us-finds-no-evidence-china-directed-executive-spy-nvidia-ceo-wsj-reports-2026-11-25/"
         }
       ]
     },
@@ -278,7 +278,7 @@
       "time": "26. 11. 2026, 03:33",
       "publishedAtPrague": "26. 11. 2026, 03:33",
       "publicationTimeVerified": true,
-      "kind": "Nově dohledáno",
+      "kind": "continuing",
       "category": "ai_infrastructure",
       "source": "Reuters",
       "url": "https://www.reuters.com/world/asia-pacific/air-cargo-demand-ai-data-centres-shows-no-sign-slowing-sats-ceo-says-2026-11-26/",
@@ -293,21 +293,21 @@
       ]
     },
     {
-      "title": "NVDA | Reuters: čínské úvěrové záznamy uvádějí až 764 AI serverů a modulů za 270 mil. USD a síťové vybavení za 31 mil. USD u firem spojených s bývalou majitelkou Megaspeed.",
-      "time": "25. 11. 2026, 07:13",
-      "publishedAtPrague": "25. 11. 2026, 07:13",
+      "title": "SPCX | FCC schválila nasazení až 1 mil. družic Starmind pro orbitální AI výpočty. Zahájení do listopadu 2033; 100 tis. do listopadu 2035.",
+      "time": "25. 11. 2026, 17:57",
+      "publishedAtPrague": "25. 11. 2026, 17:57",
       "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_regulation",
+      "kind": "Nově dohledáno",
+      "category": "ai_infrastructure",
       "source": "Reuters",
-      "url": "https://www.reuters.com/business/finance/alice-huang-linked-firms-listed-270-million-ai-servers-china-records-show-2026-11-25/",
-      "eventKey": "nvda-megaspeed-china-ai-server-financing-records-20261125",
+      "url": "https://www.reuters.com/business/media-telecom/us-authorizes-spacex-deploy-1-million-satellites-data-centers-space-2026-11-25/",
+      "eventKey": "spcx-fcc-starmind-license-20261125",
       "ndxRelevant": true,
-      "importanceScore": 70,
+      "importanceScore": 62,
       "sourceLinks": [
         {
           "label": "Reuters",
-          "url": "https://www.reuters.com/business/finance/alice-huang-linked-firms-listed-270-million-ai-servers-china-records-show-2026-11-25/"
+          "url": "https://www.reuters.com/business/media-telecom/us-authorizes-spacex-deploy-1-million-satellites-data-centers-space-2026-11-25/"
         }
       ]
     },
@@ -327,6 +327,25 @@
         {
           "label": "Reuters",
           "url": "https://www.reuters.com/business/autos-transportation/eu-postpones-discussion-approve-teslas-self-driving-tech-2026-11-25/"
+        }
+      ]
+    },
+    {
+      "title": "NVDA | Reuters: čínské úvěrové záznamy uvádějí až 764 AI serverů a modulů za 270 mil. USD a síťové vybavení za 31 mil. USD u firem spojených s bývalou majitelkou Megaspeed.",
+      "time": "25. 11. 2026, 07:13",
+      "publishedAtPrague": "25. 11. 2026, 07:13",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "ai_regulation",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/finance/alice-huang-linked-firms-listed-270-million-ai-servers-china-records-show-2026-11-25/",
+      "eventKey": "nvda-megaspeed-china-ai-server-financing-records-20261125",
+      "ndxRelevant": true,
+      "importanceScore": 70,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/finance/alice-huang-linked-firms-listed-270-million-ai-servers-china-records-show-2026-11-25/"
         }
       ]
     },
@@ -365,6 +384,25 @@
         {
           "label": "Reuters",
           "url": "https://www.reuters.com/world/us/us-weekly-jobless-claims-fall-more-than-expected-2026-11-25/"
+        }
+      ]
+    },
+    {
+      "title": "AAPL | Apple celosvětově odstranil AI aplikaci Talkie od MiniMax z App Store po zprávách o rizicích pro nezletilé.",
+      "time": "26. 11. 2026, 06:13",
+      "publishedAtPrague": "26. 11. 2026, 06:13",
+      "publicationTimeVerified": true,
+      "kind": "NOVÉ",
+      "category": "ai_regulation",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/retail-consumer/apple-pulls-minimax-ai-chatbot-app-store-over-child-safety-concerns-2026-11-26/",
+      "eventKey": "aapl-minimax-talkie-appstore-removal-20261126",
+      "ndxRelevant": true,
+      "importanceScore": 40,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/retail-consumer/apple-pulls-minimax-ai-chatbot-app-store-over-child-safety-concerns-2026-11-26/"
         }
       ]
     }
@@ -408,6 +446,24 @@
     "timePrague": "27. 11. 2026 15:30 CET"
   },
   "archive": [
+    {
+      "time": "26. 11. 2026 07:00 CET",
+      "summary": "NDX 26 046,90 b. (−0,64 %, závěr 25. 11.). AAPL odstranil Talkie; FCC povolila SPCX až 1 mil. orbitálních AI družic.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq NDX",
+          "url": "https://indexes.nasdaqomx.com/Index/Overview/NDX"
+        },
+        {
+          "label": "Reuters AAPL",
+          "url": "https://www.reuters.com/business/retail-consumer/apple-pulls-minimax-ai-chatbot-app-store-over-child-safety-concerns-2026-11-26/"
+        },
+        {
+          "label": "Reuters SPCX",
+          "url": "https://www.reuters.com/business/media-telecom/us-authorizes-spacex-deploy-1-million-satellites-data-centers-space-2026-11-25/"
+        }
+      ]
+    },
     {
       "time": "26. 11. 2026 06:03 CET",
       "summary": "NDX 26 046,90 b. (−0,64 %, závěr 25. 11.). SATS: trvá poptávka po přepravě AI serverů a čipů. VXN 38,53, US10Y 4,85 %.",
@@ -5735,6 +5791,14 @@
     {
       "name": "Reuters – SATS AI logistika",
       "url": "https://www.reuters.com/world/asia-pacific/air-cargo-demand-ai-data-centres-shows-no-sign-slowing-sats-ceo-says-2026-11-26/"
+    },
+    {
+      "name": "Reuters – Apple / Talkie",
+      "url": "https://www.reuters.com/business/retail-consumer/apple-pulls-minimax-ai-chatbot-app-store-over-child-safety-concerns-2026-11-26/"
+    },
+    {
+      "name": "Reuters – SpaceX / FCC",
+      "url": "https://www.reuters.com/business/media-telecom/us-authorizes-spacex-deploy-1-million-satellites-data-centers-space-2026-11-25/"
     }
   ]
 }
