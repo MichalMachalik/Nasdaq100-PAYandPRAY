@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "26. 11. 2026 16:01 CET",
+  "updatedAtPrague": "26. 11. 2026 17:05 CET",
   "marketStatus": "Cash NDX: uzavřeno, Thanksgiving 26. 11.; závěr 25. 11. 2026.",
   "ndx": {
     "value": 26046.9,
@@ -95,25 +95,6 @@
       ]
     },
     {
-      "title": "AI export | Reuters: Z.AI může odložit GLM-5.5 do Q1 2027 nebo později. Moonshot očekává při ztrátě zahraničního výpočetního výkonu prodloužení cyklu modelů z 6 na 12+ měsíců. Omezení přístupu k čipům NVDA platí od 19. 11.",
-      "time": "26. 11. 2026, 08:19",
-      "publishedAtPrague": "26. 11. 2026, 08:19",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_regulation",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/china/us-chip-curbs-distillation-crackdown-threaten-chinese-ai-model-development-2026-11-26/",
-      "eventKey": "china-ai-model-delays-compute-restrictions-20261126",
-      "ndxRelevant": true,
-      "importanceScore": 76,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/world/china/us-chip-curbs-distillation-crackdown-threaten-chinese-ai-model-development-2026-11-26/"
-        }
-      ]
-    },
-    {
       "title": "ASML | Nizozemsko, EK, Německo a Francie usilují o zablokování návrhu MATCH Act v USA. ASML očekává přibližně 20 % letošních tržeb z Číny; návrh by zpřísnil export výrobního zařízení.",
       "time": "26. 11. 2026, 12:32",
       "publishedAtPrague": "26. 11. 2026, 12:32",
@@ -129,6 +110,25 @@
         {
           "label": "Reuters",
           "url": "https://www.reuters.com/business/dutch-minister-says-us-chip-curbs-bill-would-hurt-europe-2026-11-26/"
+        }
+      ]
+    },
+    {
+      "title": "AI export | Reuters: Z.AI může odložit GLM-5.5 do Q1 2027 nebo později. Moonshot očekává při ztrátě zahraničního výpočetního výkonu prodloužení cyklu modelů z 6 na 12+ měsíců. Omezení přístupu k čipům NVDA platí od 19. 11.",
+      "time": "26. 11. 2026, 08:19",
+      "publishedAtPrague": "26. 11. 2026, 08:19",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "ai_regulation",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/china/us-chip-curbs-distillation-crackdown-threaten-chinese-ai-model-development-2026-11-26/",
+      "eventKey": "china-ai-model-delays-compute-restrictions-20261126",
+      "ndxRelevant": true,
+      "importanceScore": 76,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/china/us-chip-curbs-distillation-crackdown-threaten-chinese-ai-model-development-2026-11-26/"
         }
       ]
     },
@@ -308,6 +308,25 @@
       ]
     },
     {
+      "title": "Singapur | Odmítá návrh USTR na clo až 20 % (10 % při reciproční dohodě). Efektivní sazba na export do USA by podle vlády vzrostla ze 7,8 % na 10,3 %.",
+      "time": "26. 11. 2026, 05:11",
+      "publishedAtPrague": "26. 11. 2026, 05:11",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "trade",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/markets/asia/singapore-very-disappointed-over-new-tariffs-urges-us-reconsider-2026-11-26/",
+      "eventKey": "singapore-ustr-tariff-response-20261126",
+      "ndxRelevant": true,
+      "importanceScore": 53,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/markets/asia/singapore-very-disappointed-over-new-tariffs-urges-us-reconsider-2026-11-26/"
+        }
+      ]
+    },
+    {
       "title": "SPCX | FCC schválila nasazení až 1 mil. družic Starmind pro orbitální AI výpočty. Zahájení do listopadu 2033; 100 tis. do listopadu 2035.",
       "time": "25. 11. 2026, 17:57",
       "publishedAtPrague": "25. 11. 2026, 17:57",
@@ -408,6 +427,20 @@
     "timePrague": "27. 11. 2026 15:30 CET"
   },
   "archive": [
+    {
+      "time": "26. 11. 2026 17:05 CET",
+      "summary": "NDX 26 046,90 b. (−0,64 %, závěr 25. 11.). Singapur odmítá návrh amerického cla až 20 %; pokračují rizika exportu AI serverů.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq NDX",
+          "url": "https://indexes.nasdaqomx.com/Index/History/NDX"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/markets/asia/singapore-very-disappointed-over-new-tariffs-urges-us-reconsider-2026-11-26/"
+        }
+      ]
+    },
     {
       "time": "26. 11. 2026 16:01 CET",
       "summary": "Bez zásadních novinek. NDX 26 046,90 (−0,64 %, závěr 25. 11.); VXN 38,53 (+5,79 %). Exportní licence USA omezují dodávky AI serverů do jihovýchodní Asie.",
@@ -5971,6 +6004,10 @@
     {
       "name": "Nasdaq NDX",
       "url": "https://indexes.nasdaqomx.com/Index/History/NDX"
+    },
+    {
+      "name": "Reuters – Singapur, návrh cel",
+      "url": "https://www.reuters.com/markets/asia/singapore-very-disappointed-over-new-tariffs-urges-us-reconsider-2026-11-26/"
     }
   ]
 }
