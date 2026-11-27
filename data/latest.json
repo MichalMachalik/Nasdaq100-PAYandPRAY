@@ -1,18 +1,18 @@
 {
-  "updatedAtPrague": "27. 11. 2026 17:56 CET",
-  "marketStatus": "Cash NDX: otevřeno; zkrácená seance do 19:00 CET.",
+  "updatedAtPrague": "27. 11. 2026 19:03 CET",
+  "marketStatus": "Cash NDX: uzavřeno od 19:00 CET; závěr 27. 11. dosud nepotvrzen.",
   "ndx": {
-    "value": 26497.73,
-    "changePercent": 1.73,
+    "value": 26576.11,
+    "changePercent": 2.03,
     "ath": 31361.37,
-    "asOf": "27. 11. 2026, 17:28:27 CET"
+    "asOf": "27. 11. 2026, 18:37:23 CET"
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→ intradenní stabilizace; širší srovnání nedostupné",
-    "reason": "MA50 breadth 43,6 % (2026-11-25; konflikt zdroje, poslední úspěšná kontrola 26. 11. 18:58). RSI14 38,39 (2026-11-25, závěr). VXN 38,53 (2026-11-25, závěr)."
+    "trend": "↗ intradenní zlepšení; nový závěr nedostupný",
+    "reason": "MA50 breadth 43,6 % (2026-11-25; poslední úspěšná kontrola 26. 11. 18:58, konflikt zdroje). RSI14 38,39 (2026-11-25, závěr). VXN 38,53 (2026-11-25, závěr). Závěr 27. 11. dosud nepotvrzen."
   },
-  "driver": "MU a MRVL přes +2 %, SOX +1,3 % podle Reuters. AMZN +4,08 % (17:03), NVDA −0,91 % (17:18).",
+  "driver": "AMZN +4,24 % (18:35), NVDA −0,21 % (18:49). Adobe Analytics: online tržby USA na Thanksgiving +10,4 % y/y.",
   "news": [
     {
       "title": "NVDA | Bloomberg: dokumenty čínských úřadů dokládají Blackwell GB300 v datacentru v Šanghaji. Zařízení sloužilo jako zástava úvěru 96 mil. CNY; exportní riziko.",
@@ -76,7 +76,7 @@
       "time": "27. 11. 2026, 14:44",
       "publishedAtPrague": "27. 11. 2026, 14:44",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "semiconductors",
       "source": "Reuters",
       "url": "https://www.reuters.com/world/asia-pacific/taiwans-economy-expected-grow-its-fastest-rate-nearly-50-years-due-ai-demand-2026-11-27/",
@@ -297,7 +297,7 @@
       ]
     },
     {
-      "title": "Black Friday | NRF odhaduje růst svátečních maloobchodních tržeb o 4,2 % y/y; inflace 3,8 %. UBS upozorňuje na riziko slabších výdajů za elektroniku po korekci akcií.",
+      "title": "Black Friday | Adobe Analytics: online tržby USA na Thanksgiving 7,1 mld. USD, +10,4 % y/y. Odhad Black Friday 12,9 mld. USD, +9,2 % y/y.",
       "time": "27. 11. 2026, 01:03",
       "publishedAtPrague": "27. 11. 2026, 01:03",
       "publicationTimeVerified": true,
@@ -319,14 +319,14 @@
   "leaders": [
     {
       "ticker": "AMZN",
-      "changePercent": 4.08,
-      "impact": "Pozitivní; 27. 11. 17:03 CET",
+      "changePercent": 4.24,
+      "impact": "Pozitivní; 27. 11. 18:35 CET",
       "sourceUrl": "https://www.investing.com/equities/amazon-com-inc"
     },
     {
       "ticker": "NVDA",
-      "changePercent": -0.91,
-      "impact": "Negativní; 27. 11. 17:18 CET",
+      "changePercent": -0.21,
+      "impact": "Negativní; 27. 11. 18:49 CET",
       "sourceUrl": "https://www.investing.com/equities/nvidia-corp"
     }
   ],
@@ -338,14 +338,14 @@
   },
   "forecast": {
     "athReturnPercent": 16,
-    "athReason": "Potřebný růst 18,35 %. Odhad beze změny; FFR a export AI čipů zůstávají rizikem.",
+    "athReason": "Potřebný růst 18,01 %. Odhad beze změny; FFR a export AI čipů zůstávají rizikem.",
     "downside": "−8 až −14 %",
     "downsideReason": "Modelový 25. percentil koncové ceny; VXN 38,53 (2026-11-25, závěr).",
     "downsideModel": {
       "id": "ndx-evidence-volatility-v1",
       "dataFile": "data/risk-model.json",
       "vxnAsOf": "2026-11-25",
-      "cashNdxReferenceAsOf": "2026-11-25",
+      "cashNdxReferenceAsOf": "2026-11-20",
       "modelQuantile": 0.25,
       "month1Pct": 7.8,
       "month3Pct": 13.8,
@@ -353,10 +353,28 @@
     }
   },
   "catalyst": {
-    "event": "Závěr zkrácené cash seance",
-    "timePrague": "27. 11. 2026 19:00 CET"
+    "event": "JOLTS (říjen)",
+    "timePrague": "01. 12. 2026 16:00 CET"
   },
   "archive": [
+    {
+      "time": "27. 11. 2026 19:03 CET",
+      "summary": "NDX 26 576,11 b. (+2,03 %, 18:37); závěr 27. 11. nepotvrzen. Adobe: Thanksgiving online 7,1 mld. USD (+10,4 % y/y). Breadth: zachováno 43,6 %, konflikt zdroje. Yahoo NQ=F HTTP 429.",
+      "sourceLinks": [
+        {
+          "label": "Investing.com – NDX",
+          "url": "https://www.investing.com/indices/nq-100"
+        },
+        {
+          "label": "Reuters – Adobe Analytics",
+          "url": "https://www.reuters.com/business/retail-consumer/cautious-consumers-gear-up-black-friday-inflation-woes-bite-2026-11-27/"
+        },
+        {
+          "label": "FRED – VXN",
+          "url": "https://fred.stlouisfed.org/series/VXNCLS"
+        }
+      ]
+    },
     {
       "time": "27. 11. 2026 17:56 CET",
       "summary": "NDX 26 497,73 b. (+1,73 %, 17:28). Reuters: SOX +1,3 %; Tchaj-wan zvýšil odhad HDP 2026 na 13,28 %. Breadth: konflikt stejné seance; zachováno 43,6 %. Yahoo NQ=F HTTP 429.",
@@ -5220,6 +5238,10 @@
     {
       "time": "27. 11. 2026 17:28 CET",
       "ndx": 26497.73
+    },
+    {
+      "time": "27. 11. 2026 18:37 CET",
+      "ndx": 26576.11
     }
   ],
   "sources": [
