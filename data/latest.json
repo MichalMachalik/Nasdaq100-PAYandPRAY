@@ -1,18 +1,18 @@
 {
-  "updatedAtPrague": "27. 11. 2026 19:03 CET",
-  "marketStatus": "Cash NDX: uzavřeno od 19:00 CET; závěr 27. 11. dosud nepotvrzen.",
+  "updatedAtPrague": "27. 11. 2026 19:58 CET",
+  "marketStatus": "Cash NDX: uzavřeno, závěr 27. 11. 2026 v 19:00 CET.",
   "ndx": {
-    "value": 26576.11,
-    "changePercent": 2.03,
+    "value": 26726.39,
+    "changePercent": 2.61,
     "ath": 31361.37,
-    "asOf": "27. 11. 2026, 18:37:23 CET"
+    "asOf": "27. 11. 2026, 19:00 CET (závěr)"
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "↗ intradenní zlepšení; nový závěr nedostupný",
-    "reason": "MA50 breadth 43,6 % (2026-11-25; poslední úspěšná kontrola 26. 11. 18:58, konflikt zdroje). RSI14 38,39 (2026-11-25, závěr). VXN 38,53 (2026-11-25, závěr). Závěr 27. 11. dosud nepotvrzen."
+    "trend": "↗ zlepšení ceny a čipového sektoru; denní breadth dosud nedostupný",
+    "reason": "MA50 breadth 43,6 % (2026-11-25; starší závěr, konflikt zdroje). RSI14 38,39 (2026-11-25; starší závěr). VXN 38,53 (2026-11-25; starší závěr). SOX +4,7 % (27. 11.)."
   },
-  "driver": "AMZN +4,24 % (18:35), NVDA −0,21 % (18:49). Adobe Analytics: online tržby USA na Thanksgiving +10,4 % y/y.",
+  "driver": "SOX +4,7 %; MU +7,6 %, NVDA +0,8 % (27. 11., závěr). Reuters: návrat poptávky po AI akciích po předchozích výprodejích.",
   "news": [
     {
       "title": "NVDA | Bloomberg: dokumenty čínských úřadů dokládají Blackwell GB300 v datacentru v Šanghaji. Zařízení sloužilo jako zástava úvěru 96 mil. CNY; exportní riziko.",
@@ -175,25 +175,6 @@
       ]
     },
     {
-      "title": "Evropské technologie +2,3 %; ASML, ASM International a Infineon +3,8 až +4,5 %. STOXX 600 +0,9 % (09:12 CET).",
-      "time": "27. 11. 2026, 09:25",
-      "publishedAtPrague": "27. 11. 2026, 09:25",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "semiconductors",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/markets/europe/european-stocks-extend-recovery-tech-miners-advance-2026-11-27/",
-      "eventKey": "europe-tech-semiconductor-recovery-20261127",
-      "ndxRelevant": true,
-      "importanceScore": 58,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/markets/europe/european-stocks-extend-recovery-tech-miners-advance-2026-11-27/"
-        }
-      ]
-    },
-    {
       "title": "Čína | Vláda chce posílit stabilizační roli Central Huijin. CSI300 +4,2 %, čipový index +19 %. Pozitivní sektorový impuls pro AI akcie.",
       "time": "27. 11. 2026, 07:32",
       "publishedAtPrague": "27. 11. 2026, 07:32",
@@ -217,6 +198,25 @@
       ]
     },
     {
+      "title": "Evropské technologie +2,3 %; ASML, ASM International a Infineon +3,8 až +4,5 %. STOXX 600 +0,9 % (09:12 CET).",
+      "time": "27. 11. 2026, 09:25",
+      "publishedAtPrague": "27. 11. 2026, 09:25",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "semiconductors",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/markets/europe/european-stocks-extend-recovery-tech-miners-advance-2026-11-27/",
+      "eventKey": "europe-tech-semiconductor-recovery-20261127",
+      "ndxRelevant": true,
+      "importanceScore": 58,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/markets/europe/european-stocks-extend-recovery-tech-miners-advance-2026-11-27/"
+        }
+      ]
+    },
+    {
       "title": "JERA | Podle Nikkei jedná s META, AMZN, MSFT, Alphabet a Anthropic o výstavbě datacenter u elektráren v oblasti Tokia.",
       "time": "26. 11. 2026, 23:13",
       "publishedAtPrague": "26. 11. 2026, 23:13",
@@ -232,6 +232,25 @@
         {
           "label": "Reuters",
           "url": "https://www.reuters.com/world/asia-pacific/japans-jera-enters-talks-with-anthropic-meta-build-data-centres-nikkei-reports-2026-11-26/"
+        }
+      ]
+    },
+    {
+      "title": "PLTR | Polsko podepsalo pětiletou smlouvu za 300 mil. USD.",
+      "time": "27. 11. 2026, 14:08",
+      "publishedAtPrague": "27. 11. 2026, 14:08",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "company",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/technology/poland-signs-contract-with-palantir-worth-300-mln-over-5-years-2026-11-27/",
+      "eventKey": "pltr-poland-contract-20261127",
+      "ndxRelevant": true,
+      "importanceScore": 53,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/technology/poland-signs-contract-with-palantir-worth-300-mln-over-5-years-2026-11-27/"
         }
       ]
     },
@@ -318,16 +337,16 @@
   ],
   "leaders": [
     {
-      "ticker": "AMZN",
-      "changePercent": 4.24,
-      "impact": "Pozitivní; 27. 11. 18:35 CET",
-      "sourceUrl": "https://www.investing.com/equities/amazon-com-inc"
+      "ticker": "MU",
+      "changePercent": 7.6,
+      "impact": "Pozitivní; závěr 27. 11.",
+      "sourceUrl": "https://www.reuters.com/business/wall-st-futures-surge-investors-return-holiday-2026-11-27/"
     },
     {
       "ticker": "NVDA",
-      "changePercent": -0.21,
-      "impact": "Negativní; 27. 11. 18:49 CET",
-      "sourceUrl": "https://www.investing.com/equities/nvidia-corp"
+      "changePercent": 0.8,
+      "impact": "Pozitivní; závěr 27. 11.",
+      "sourceUrl": "https://www.reuters.com/business/wall-st-futures-surge-investors-return-holiday-2026-11-27/"
     }
   ],
   "macro": "US10Y | 25. 11.: 4,85 % | 24. 11.: 4,91 % | −6 bb",
@@ -338,9 +357,9 @@
   },
   "forecast": {
     "athReturnPercent": 16,
-    "athReason": "Potřebný růst 18,01 %. Odhad beze změny; FFR a export AI čipů zůstávají rizikem.",
+    "athReason": "Potřebný růst 17,34 %. Odhad beze změny; FFR a export AI čipů zůstávají rizikem.",
     "downside": "−8 až −14 %",
-    "downsideReason": "Modelový 25. percentil koncové ceny; VXN 38,53 (2026-11-25, závěr).",
+    "downsideReason": "Modelový 25. percentil koncové ceny; VXN 38,53 (2026-11-25; starší závěr).",
     "downsideModel": {
       "id": "ndx-evidence-volatility-v1",
       "dataFile": "data/risk-model.json",
@@ -357,6 +376,24 @@
     "timePrague": "01. 12. 2026 16:00 CET"
   },
   "archive": [
+    {
+      "time": "27. 11. 2026 19:58 CET",
+      "summary": "NDX 26 726,39 b. (+2,61 %, závěr 27. 11.). SOX +4,7 %, MU +7,6 %, NVDA +0,8 %. PLTR: polská smlouva 300 mil. USD / 5 let. Breadth, RSI a VXN: závěr 25. 11.; nový denní snímek nedostupný.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq – NDX",
+          "url": "https://indexes.nasdaqomx.com/Index/Overview/NDX"
+        },
+        {
+          "label": "Reuters – závěr",
+          "url": "https://www.reuters.com/business/wall-st-futures-surge-investors-return-holiday-2026-11-27/"
+        },
+        {
+          "label": "Reuters – PLTR",
+          "url": "https://www.reuters.com/technology/poland-signs-contract-with-palantir-worth-300-mln-over-5-years-2026-11-27/"
+        }
+      ]
+    },
     {
       "time": "27. 11. 2026 19:03 CET",
       "summary": "NDX 26 576,11 b. (+2,03 %, 18:37); závěr 27. 11. nepotvrzen. Adobe: Thanksgiving online 7,1 mld. USD (+10,4 % y/y). Breadth: zachováno 43,6 %, konflikt zdroje. Yahoo NQ=F HTTP 429.",
@@ -5242,6 +5279,10 @@
     {
       "time": "27. 11. 2026 18:37 CET",
       "ndx": 26576.11
+    },
+    {
+      "time": "27. 11. 2026 19:00 CET",
+      "ndx": 26726.39
     }
   ],
   "sources": [
@@ -6524,6 +6565,10 @@
     {
       "name": "Reuters – Tchaj-wan",
       "url": "https://www.reuters.com/world/asia-pacific/taiwans-economy-expected-grow-its-fastest-rate-nearly-50-years-due-ai-demand-2026-11-27/"
+    },
+    {
+      "name": "Reuters – PLTR",
+      "url": "https://www.reuters.com/technology/poland-signs-contract-with-palantir-worth-300-mln-over-5-years-2026-11-27/"
     }
   ]
 }
