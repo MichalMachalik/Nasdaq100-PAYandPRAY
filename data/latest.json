@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "27. 11. 2026 11:03 CET",
+  "updatedAtPrague": "27. 11. 2026 12:03 CET",
   "marketStatus": "Cash NDX: uzavřeno; závěr 25. 11. 2026. Dnes 15:30–19:00 CET.",
   "ndx": {
     "value": 26046.9,
@@ -10,26 +10,87 @@
   "sentiment": {
     "label": "Medvědí",
     "trend": "srovnání nedostupné",
-    "reason": "MA50 breadth 43,6 % (2026-11-25, poslední ověřená hodnota; konflikt zdroje). RSI14 38,39 (2026-11-25, závěr). VXN 38,53 (2026-11-25, závěr)."
+    "reason": "MA50 breadth 43,6 % (2026-11-25; konflikt zdroje). RSI14 38,39 (2026-11-25, závěr). VXN 38,53 (2026-11-25, závěr)."
   },
-  "driver": "Oživení AI akcií v premarketu: NVDA +4,7 %, AVGO +4,7 % (10:23 CET, Reuters). Rizika financování AI a prosincového zvýšení sazeb Fedu přetrvávají.",
+  "driver": "LSEG Lipper: technologické fondy −7,57 mld. USD za týden do 25. 11. Oživení čipových akcií v premarketu při pokračujícím riziku financování AI.",
   "news": [
     {
-      "title": "AI čipy | Reuters: odhad listopadového exportu Jižní Koreje +96,8 % y/y vs. říjen +93,9 %. Export čipů za prvních 20 dní +294,4 % y/y; poptávka po pamětech pro AI.",
-      "time": "27. 11. 2026, 06:03",
-      "publishedAtPrague": "27. 11. 2026, 06:03",
+      "title": "BoE | Emise dluhopisů hyperscalerů mají v roce 2026 překročit 305 mld. USD (8 % globálních investičních emisí). Složitější a vzájemně provázané financování AI zvyšuje riziko šíření kreditního stresu.",
+      "time": "26. 11. 2026, 12:28",
+      "publishedAtPrague": "26. 11. 2026, 12:28",
       "publicationTimeVerified": true,
       "kind": "continuing",
-      "category": "macro",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/asia-pacific/south-korea-november-exports-seen-posting-fastest-growth-over-50-years-ai-chip-2026-11-27/",
-      "eventKey": "korea-november-export-poll-ai-memory-20261127",
+      "category": "ai_infrastructure",
+      "source": "The Guardian / BoE",
+      "url": "https://www.theguardian.com/business/live/2026/nov/26/nvidia-chip-shipments-south-east-asia-stock-dentists-live-updates?page=with:block-6b0811ad8f08e0351893df42",
+      "eventKey": "boe-fsr-ai-financing-20261126",
       "ndxRelevant": true,
-      "importanceScore": 65,
+      "importanceScore": 81,
+      "sourceLinks": [
+        {
+          "label": "BoE – Financial Stability Report",
+          "url": "https://www.bankofengland.co.uk/financial-stability-report/2026/november-2026"
+        },
+        {
+          "label": "The Guardian – časovaný záznam",
+          "url": "https://www.theguardian.com/business/live/2026/nov/26/nvidia-chip-shipments-south-east-asia-stock-dentists-live-updates?page=with:block-6b0811ad8f08e0351893df42"
+        }
+      ]
+    },
+    {
+      "title": "AI infrastruktura | Fitch očekává zpomalení investic do datacenter v Asii po zpřísnění exportních licencí USA od 19. 11. Nejvyšší riziko nesou zadlužení poskytovatelé GPU; nejisté dodávky čipů mohou zpozdit financování a tržby.",
+      "time": "26. 11. 2026, 12:18",
+      "publishedAtPrague": "26. 11. 2026, 12:18",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "ai_infrastructure",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/asia-pacific/us-chip-curbs-will-slow-asia-data-center-investment-fitch-says-2026-11-26/",
+      "eventKey": "fitch-asian-data-center-credit-chip-curbs-20261126",
+      "ndxRelevant": true,
+      "importanceScore": 75,
       "sourceLinks": [
         {
           "label": "Reuters",
-          "url": "https://www.reuters.com/world/asia-pacific/south-korea-november-exports-seen-posting-fastest-growth-over-50-years-ai-chip-2026-11-27/"
+          "url": "https://www.reuters.com/world/asia-pacific/us-chip-curbs-will-slow-asia-data-center-investment-fitch-says-2026-11-26/"
+        }
+      ]
+    },
+    {
+      "title": "ASML | Nizozemsko, EK, Německo a Francie usilují o zablokování návrhu MATCH Act v USA. ASML očekává přibližně 20 % letošních tržeb z Číny; návrh by zpřísnil export výrobního zařízení.",
+      "time": "26. 11. 2026, 12:32",
+      "publishedAtPrague": "26. 11. 2026, 12:32",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "ai_regulation",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/dutch-minister-says-us-chip-curbs-bill-would-hurt-europe-2026-11-26/",
+      "eventKey": "asml-dutch-match-act-opposition-20261126",
+      "ndxRelevant": true,
+      "importanceScore": 70,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/dutch-minister-says-us-chip-curbs-bill-would-hurt-europe-2026-11-26/"
+        }
+      ]
+    },
+    {
+      "title": "Fondy | LSEG Lipper: týden do 25. 11. globální akciové fondy −22,73 mld. USD, americké −30,57 mld. USD, technologické −7,57 mld. USD. Globální odliv nejvyšší za 14 měsíců.",
+      "time": "27. 11. 2026, 10:42",
+      "publishedAtPrague": "27. 11. 2026, 10:42",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "market",
+      "source": "Reuters / LSEG Lipper",
+      "url": "https://www.reuters.com/world/china/global-markets-flows-graphic-2026-11-27/",
+      "eventKey": "lipper-equity-fund-outflows-week-20261125",
+      "ndxRelevant": true,
+      "importanceScore": 68,
+      "sourceLinks": [
+        {
+          "label": "Reuters / LSEG Lipper",
+          "url": "https://www.reuters.com/world/china/global-markets-flows-graphic-2026-11-27/"
         }
       ]
     },
@@ -57,48 +118,6 @@
       ]
     },
     {
-      "title": "BoE | Emise dluhopisů hyperscalerů mají v roce 2026 překročit 305 mld. USD (8 % globálních investičních emisí). Složitější a vzájemně provázané financování AI zvyšuje riziko šíření kreditního stresu.",
-      "time": "26. 11. 2026, 12:28",
-      "publishedAtPrague": "26. 11. 2026, 12:28",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_infrastructure",
-      "source": "The Guardian / BoE",
-      "url": "https://www.theguardian.com/business/live/2026/nov/26/nvidia-chip-shipments-south-east-asia-stock-dentists-live-updates?page=with:block-6b0811ad8f08e0351893df42",
-      "eventKey": "boe-fsr-ai-financing-20261126",
-      "ndxRelevant": true,
-      "importanceScore": 81,
-      "sourceLinks": [
-        {
-          "label": "BoE – Financial Stability Report",
-          "url": "https://www.bankofengland.co.uk/financial-stability-report/2026/november-2026"
-        },
-        {
-          "label": "The Guardian – časovaný záznam",
-          "url": "https://www.theguardian.com/business/live/2026/nov/26/nvidia-chip-shipments-south-east-asia-stock-dentists-live-updates?page=with:block-6b0811ad8f08e0351893df42"
-        }
-      ]
-    },
-    {
-      "title": "Evropské technologie +2,3 %; ASML, ASM International a Infineon +3,8 až +4,5 %. STOXX 600 +0,9 % (09:12 CET).",
-      "time": "27. 11. 2026, 09:25",
-      "publishedAtPrague": "27. 11. 2026, 09:25",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "semiconductors",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/markets/europe/european-stocks-extend-recovery-tech-miners-advance-2026-11-27/",
-      "eventKey": "europe-tech-semiconductor-recovery-20261127",
-      "ndxRelevant": true,
-      "importanceScore": 58,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/markets/europe/european-stocks-extend-recovery-tech-miners-advance-2026-11-27/"
-        }
-      ]
-    },
-    {
       "title": "JERA | Podle Nikkei jedná s META, AMZN, MSFT, Alphabet a Anthropic o výstavbě datacenter u elektráren v oblasti Tokia.",
       "time": "26. 11. 2026, 23:13",
       "publishedAtPrague": "26. 11. 2026, 23:13",
@@ -118,21 +137,59 @@
       ]
     },
     {
-      "title": "AI infrastruktura | Fitch očekává zpomalení investic do datacenter v Asii po zpřísnění exportních licencí USA od 19. 11. Nejvyšší riziko nesou zadlužení poskytovatelé GPU; nejisté dodávky čipů mohou zpozdit financování a tržby.",
-      "time": "26. 11. 2026, 12:18",
-      "publishedAtPrague": "26. 11. 2026, 12:18",
+      "title": "AI čipy | Reuters: odhad listopadového exportu Jižní Koreje +96,8 % y/y vs. říjen +93,9 %. Export čipů za prvních 20 dní +294,4 % y/y; poptávka po pamětech pro AI.",
+      "time": "27. 11. 2026, 06:03",
+      "publishedAtPrague": "27. 11. 2026, 06:03",
       "publicationTimeVerified": true,
       "kind": "continuing",
-      "category": "ai_infrastructure",
+      "category": "macro",
       "source": "Reuters",
-      "url": "https://www.reuters.com/world/asia-pacific/us-chip-curbs-will-slow-asia-data-center-investment-fitch-says-2026-11-26/",
-      "eventKey": "fitch-asian-data-center-credit-chip-curbs-20261126",
+      "url": "https://www.reuters.com/world/asia-pacific/south-korea-november-exports-seen-posting-fastest-growth-over-50-years-ai-chip-2026-11-27/",
+      "eventKey": "korea-november-export-poll-ai-memory-20261127",
       "ndxRelevant": true,
-      "importanceScore": 75,
+      "importanceScore": 65,
       "sourceLinks": [
         {
           "label": "Reuters",
-          "url": "https://www.reuters.com/world/asia-pacific/us-chip-curbs-will-slow-asia-data-center-investment-fitch-says-2026-11-26/"
+          "url": "https://www.reuters.com/world/asia-pacific/south-korea-november-exports-seen-posting-fastest-growth-over-50-years-ai-chip-2026-11-27/"
+        }
+      ]
+    },
+    {
+      "title": "TSLA | Návrh programu EK připouští hlasování o schválení FSD v EU 15. 12. Nutný souhlas nejméně 15 států reprezentujících 65 % obyvatel EU.",
+      "time": "26. 11. 2026, 16:55",
+      "publishedAtPrague": "26. 11. 2026, 16:55",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "ai_regulation",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/technology/eu-may-vote-authorising-tesla-assisted-driving-system-dec-15-meeting-2026-11-26/",
+      "eventKey": "tesla-eu-fsd-possible-vote-20261126",
+      "ndxRelevant": true,
+      "importanceScore": 61,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/technology/eu-may-vote-authorising-tesla-assisted-driving-system-dec-15-meeting-2026-11-26/"
+        }
+      ]
+    },
+    {
+      "title": "Evropské technologie +2,3 %; ASML, ASM International a Infineon +3,8 až +4,5 %. STOXX 600 +0,9 % (09:12 CET).",
+      "time": "27. 11. 2026, 09:25",
+      "publishedAtPrague": "27. 11. 2026, 09:25",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "semiconductors",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/markets/europe/european-stocks-extend-recovery-tech-miners-advance-2026-11-27/",
+      "eventKey": "europe-tech-semiconductor-recovery-20261127",
+      "ndxRelevant": true,
+      "importanceScore": 58,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/markets/europe/european-stocks-extend-recovery-tech-miners-advance-2026-11-27/"
         }
       ]
     },
@@ -160,25 +217,6 @@
       ]
     },
     {
-      "title": "ASML | Nizozemsko, EK, Německo a Francie usilují o zablokování návrhu MATCH Act v USA. ASML očekává přibližně 20 % letošních tržeb z Číny; návrh by zpřísnil export výrobního zařízení.",
-      "time": "26. 11. 2026, 12:32",
-      "publishedAtPrague": "26. 11. 2026, 12:32",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_regulation",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/dutch-minister-says-us-chip-curbs-bill-would-hurt-europe-2026-11-26/",
-      "eventKey": "asml-dutch-match-act-opposition-20261126",
-      "ndxRelevant": true,
-      "importanceScore": 70,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/business/dutch-minister-says-us-chip-curbs-bill-would-hurt-europe-2026-11-26/"
-        }
-      ]
-    },
-    {
       "title": "Ropa | Brent 96,19 USD/bbl (02:40 CET), poblíž listopadového maxima. Omezené dodávky z Perského zálivu zvyšují riziko nákladové inflace.",
       "publishedAtPrague": "27. 11. 2026, 02:55",
       "eventKey": "brent-supply-risk-20261127",
@@ -194,44 +232,6 @@
         {
           "label": "Reuters",
           "url": "https://www.reuters.com/business/energy/brent-trades-near-months-high-mideast-conflict-threatens-supply-2026-11-27/"
-        }
-      ]
-    },
-    {
-      "title": "TSLA | Návrh programu EK připouští hlasování o schválení FSD v EU 15. 12. Nutný souhlas nejméně 15 států reprezentujících 65 % obyvatel EU.",
-      "time": "26. 11. 2026, 16:55",
-      "publishedAtPrague": "26. 11. 2026, 16:55",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_regulation",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/technology/eu-may-vote-authorising-tesla-assisted-driving-system-dec-15-meeting-2026-11-26/",
-      "eventKey": "tesla-eu-fsd-possible-vote-20261126",
-      "ndxRelevant": true,
-      "importanceScore": 61,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/technology/eu-may-vote-authorising-tesla-assisted-driving-system-dec-15-meeting-2026-11-26/"
-        }
-      ]
-    },
-    {
-      "title": "Black Friday | NRF odhaduje růst svátečních maloobchodních tržeb o 4,2 % y/y; inflace 3,8 %. UBS upozorňuje na riziko slabších výdajů za elektroniku po korekci akcií.",
-      "time": "27. 11. 2026, 01:03",
-      "publishedAtPrague": "27. 11. 2026, 01:03",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "macro",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/retail-consumer/cautious-consumers-gear-up-black-friday-inflation-woes-bite-2026-11-27/",
-      "eventKey": "us-holiday-retail-demand-black-friday-20261127",
-      "ndxRelevant": true,
-      "importanceScore": 52,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/business/retail-consumer/cautious-consumers-gear-up-black-friday-inflation-woes-bite-2026-11-27/"
         }
       ]
     },
@@ -255,21 +255,21 @@
       ]
     },
     {
-      "title": "NVDA | Weimob plánuje nasadit přibližně 5 000 exportně kompatibilních GPU RTX PRO 5500 pro multimodální AI.",
-      "publishedAtPrague": "26. 11. 2026, 12:00",
-      "eventKey": "weimob-nvidia-gpu-cluster-20261126",
-      "category": "ai",
-      "importanceScore": 49,
-      "url": "https://www.reuters.com/world/asia-pacific/chinas-weimob-plans-own-gpu-cluster-with-nvidias-rtx-pro-5500-2026-11-26/",
-      "time": "26. 11. 2026, 12:00",
+      "title": "Black Friday | NRF odhaduje růst svátečních maloobchodních tržeb o 4,2 % y/y; inflace 3,8 %. UBS upozorňuje na riziko slabších výdajů za elektroniku po korekci akcií.",
+      "time": "27. 11. 2026, 01:03",
+      "publishedAtPrague": "27. 11. 2026, 01:03",
       "publicationTimeVerified": true,
       "kind": "continuing",
-      "ndxRelevant": true,
+      "category": "macro",
       "source": "Reuters",
+      "url": "https://www.reuters.com/business/retail-consumer/cautious-consumers-gear-up-black-friday-inflation-woes-bite-2026-11-27/",
+      "eventKey": "us-holiday-retail-demand-black-friday-20261127",
+      "ndxRelevant": true,
+      "importanceScore": 52,
       "sourceLinks": [
         {
           "label": "Reuters",
-          "url": "https://www.reuters.com/world/asia-pacific/chinas-weimob-plans-own-gpu-cluster-with-nvidias-rtx-pro-5500-2026-11-26/"
+          "url": "https://www.reuters.com/business/retail-consumer/cautious-consumers-gear-up-black-friday-inflation-woes-bite-2026-11-27/"
         }
       ]
     }
@@ -313,6 +313,24 @@
     "timePrague": "27. 11. 2026 15:30 CET"
   },
   "archive": [
+    {
+      "time": "27. 11. 2026 12:03 CET",
+      "summary": "NDX 26 046,90 b. (−0,64 %, 25. 11.). Technologické fondy −7,57 mld. USD za týden do 25. 11. US10Y 4,85 % (25. 11.). Breadth: konflikt stejné seance; původní hodnota zachována.",
+      "sourceLinks": [
+        {
+          "label": "NDX",
+          "url": "https://www.investing.com/indices/nq-100-historical-data"
+        },
+        {
+          "label": "Reuters / LSEG Lipper",
+          "url": "https://www.reuters.com/world/china/global-markets-flows-graphic-2026-11-27/"
+        },
+        {
+          "label": "US Treasury",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value_month=202611"
+        }
+      ]
+    },
     {
       "time": "27. 11. 2026 11:03 CET",
       "summary": "NDX 26 046,90 b. (−0,64 %, 25. 11.). NVDA a AVGO +4,7 % v premarketu. US10Y 4,85 % (25. 11.). Kontrola breadth: konflikt zdroje; zachován poslední ověřený závěr.",
@@ -6284,6 +6302,10 @@
     {
       "name": "Reuters – evropské technologie",
       "url": "https://www.reuters.com/markets/europe/european-stocks-extend-recovery-tech-miners-advance-2026-11-27/"
+    },
+    {
+      "name": "Reuters / LSEG Lipper – týdenní toky fondů",
+      "url": "https://www.reuters.com/world/china/global-markets-flows-graphic-2026-11-27/"
     }
   ]
 }
