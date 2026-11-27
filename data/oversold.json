@@ -31,5 +31,5 @@
   "methodology": "Cash NDX daily Wilder RSI(14): below 20 extremely oversold, 20–30 oversold. This indicates past selling pressure, not a reversal guarantee, forecast or instruction to trade. technicalOversold.score (0–100) is the average lower-tail percentile for RSI14, MA20 gap, and 5d return over 252 earlier sessions; not a percentage of decline completed. MA50 level, NDX distance and 5-session MA50 slope are an independent medium-term trend context, not scored twice.",
   "isProviderSnapshot": false,
   "collectedAtUtc": "2026-11-25T21:05:29.357797Z",
-  "checkedAtUtc": "2026-11-27T20:15:54.813673Z"
+  "checkedAtUtc": "2026-11-27T20:56:35.894262Z"
 }
