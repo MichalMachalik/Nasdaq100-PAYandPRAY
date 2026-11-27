@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "27. 11. 2026 01:58 CET",
+  "updatedAtPrague": "27. 11. 2026 03:02 CET",
   "marketStatus": "Cash NDX: uzavřeno; závěr 25. 11. 2026. Dnes 15:30–19:00 CET.",
   "ndx": {
     "value": 26046.9,
@@ -12,14 +12,33 @@
     "trend": "srovnání nedostupné",
     "reason": "MA50 breadth 43,6 % (2026-11-25, poslední ověřená hodnota; konflikt zdroje). RSI14 38,39 (2026-11-25, závěr). VXN 38,53 (2026-11-25, závěr)."
   },
-  "driver": "Fitch očekává zpomalení asijských investic do datacenter. Exportní licence zvyšují riziko zpoždění dodávek čipů a financování projektů.",
+  "driver": "Reuters: trh téměř plně započítává zvýšení FFR o 25 bb dne 9. 12. Vyšší diskontní sazby zvyšují tlak na ocenění růstových akcií.",
   "news": [
+    {
+      "title": "FX / Fed | DXY 103,81; pondělní maximum 104,53 (22 měsíců). Reuters: trh téměř plně započítává zvýšení sazby o 25 bb dne 9. 12.",
+      "publishedAtPrague": "27. 11. 2026, 02:03",
+      "eventKey": "dollar-fed-tightening-ai-volatility-20261127",
+      "category": "macro",
+      "importanceScore": 68,
+      "url": "https://www.reuters.com/world/africa/dollar-lingers-near-22-month-peak-ai-worries-simmer-2026-11-27/",
+      "time": "27. 11. 2026, 02:03",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "ndxRelevant": true,
+      "source": "Reuters",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/africa/dollar-lingers-near-22-month-peak-ai-worries-simmer-2026-11-27/"
+        }
+      ]
+    },
     {
       "title": "BoE | Emise dluhopisů hyperscalerů mají v roce 2026 překročit 305 mld. USD (8 % globálních investičních emisí). Složitější a vzájemně provázané financování AI zvyšuje riziko šíření kreditního stresu.",
       "time": "26. 11. 2026, 12:28",
       "publishedAtPrague": "26. 11. 2026, 12:28",
       "publicationTimeVerified": true,
-      "kind": "continuing",
+      "kind": "ongoing",
       "category": "ai_infrastructure",
       "source": "The Guardian / BoE",
       "url": "https://www.theguardian.com/business/live/2026/nov/26/nvidia-chip-shipments-south-east-asia-stock-dentists-live-updates?page=with:block-6b0811ad8f08e0351893df42",
@@ -42,7 +61,7 @@
       "time": "26. 11. 2026, 23:13",
       "publishedAtPrague": "26. 11. 2026, 23:13",
       "publicationTimeVerified": true,
-      "kind": "continuing",
+      "kind": "ongoing",
       "category": "ai_infrastructure",
       "source": "Reuters (Nikkei)",
       "url": "https://www.reuters.com/world/asia-pacific/japans-jera-enters-talks-with-anthropic-meta-build-data-centres-nikkei-reports-2026-11-26/",
@@ -61,7 +80,7 @@
       "time": "26. 11. 2026, 06:09",
       "publishedAtPrague": "26. 11. 2026, 06:09",
       "publicationTimeVerified": true,
-      "kind": "continuing",
+      "kind": "ongoing",
       "category": "ai_regulation",
       "source": "Reuters / FT",
       "url": "https://www.reuters.com/world/asia-pacific/nvidia-halts-chip-shipments-southeast-asia-ft-reports-2026-11-26/",
@@ -84,7 +103,7 @@
       "time": "26. 11. 2026, 12:18",
       "publishedAtPrague": "26. 11. 2026, 12:18",
       "publicationTimeVerified": true,
-      "kind": "continuing",
+      "kind": "ongoing",
       "category": "ai_infrastructure",
       "source": "Reuters",
       "url": "https://www.reuters.com/world/asia-pacific/us-chip-curbs-will-slow-asia-data-center-investment-fitch-says-2026-11-26/",
@@ -103,7 +122,7 @@
       "time": "26. 11. 2026, 09:12",
       "publishedAtPrague": "26. 11. 2026, 09:12",
       "publicationTimeVerified": true,
-      "kind": "continuing",
+      "kind": "ongoing",
       "category": "ai_infrastructure",
       "source": "Reuters",
       "url": "https://www.reuters.com/business/media-telecom/investors-see-rising-risk-softbank-default-pressure-grows-ai-bets-2026-11-26/",
@@ -122,7 +141,7 @@
       "time": "26. 11. 2026, 08:19",
       "publishedAtPrague": "26. 11. 2026, 08:19",
       "publicationTimeVerified": true,
-      "kind": "continuing",
+      "kind": "ongoing",
       "category": "ai_regulation",
       "source": "Reuters",
       "url": "https://www.reuters.com/world/china/us-chip-curbs-distillation-crackdown-threaten-chinese-ai-model-development-2026-11-26/",
@@ -137,11 +156,30 @@
       ]
     },
     {
+      "title": "Ropa | Brent 96,19 USD/bbl (02:40 CET), poblíž listopadového maxima. Omezené dodávky z Perského zálivu zvyšují riziko nákladové inflace.",
+      "publishedAtPrague": "27. 11. 2026, 02:55",
+      "eventKey": "brent-supply-risk-20261127",
+      "category": "macro",
+      "importanceScore": 55,
+      "url": "https://www.reuters.com/business/energy/brent-trades-near-months-high-mideast-conflict-threatens-supply-2026-11-27/",
+      "time": "27. 11. 2026, 02:55",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "ndxRelevant": true,
+      "source": "Reuters",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/energy/brent-trades-near-months-high-mideast-conflict-threatens-supply-2026-11-27/"
+        }
+      ]
+    },
+    {
       "title": "ASML | Nizozemsko, EK, Německo a Francie usilují o zablokování návrhu MATCH Act v USA. ASML očekává přibližně 20 % letošních tržeb z Číny; návrh by zpřísnil export výrobního zařízení.",
       "time": "26. 11. 2026, 12:32",
       "publishedAtPrague": "26. 11. 2026, 12:32",
       "publicationTimeVerified": true,
-      "kind": "continuing",
+      "kind": "ongoing",
       "category": "ai_regulation",
       "source": "Reuters",
       "url": "https://www.reuters.com/business/dutch-minister-says-us-chip-curbs-bill-would-hurt-europe-2026-11-26/",
@@ -160,7 +198,7 @@
       "time": "27. 11. 2026, 01:03",
       "publishedAtPrague": "27. 11. 2026, 01:03",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "ongoing",
       "category": "macro",
       "source": "Reuters",
       "url": "https://www.reuters.com/business/retail-consumer/cautious-consumers-gear-up-black-friday-inflation-woes-bite-2026-11-27/",
@@ -175,49 +213,11 @@
       ]
     },
     {
-      "title": "Asie | Nikkei +1,6 %, KOSPI +1,9 %. Futures implikují 98% pravděpodobnost zvýšení sazeb Fedu o 25 bb v prosinci.",
-      "time": "26. 11. 2026, 02:35",
-      "publishedAtPrague": "26. 11. 2026, 02:35",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "market",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-26/",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-26/"
-        }
-      ],
-      "eventKey": "asia-market-rebound-fed-pricing-20261126",
-      "ndxRelevant": true,
-      "importanceScore": 66
-    },
-    {
-      "title": "META | Nizozemské organizace žádají soud o zastavení prodeje AI brýlí kvůli ochraně soukromí. Požadované penále až 100 mil. EUR na žalovaného. Rozhodnutí nejpozději 24. 12.",
-      "time": "26. 11. 2026, 12:44",
-      "publishedAtPrague": "26. 11. 2026, 12:44",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_regulation",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/legal/government/dutch-groups-ask-court-halt-meta-smart-glasses-sales-over-privacy-concerns-2026-11-26/",
-      "eventKey": "meta-dutch-smart-glasses-lawsuit-20261126",
-      "ndxRelevant": true,
-      "importanceScore": 55,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/legal/government/dutch-groups-ask-court-halt-meta-smart-glasses-sales-over-privacy-concerns-2026-11-26/"
-        }
-      ]
-    },
-    {
       "title": "Evropa | STOXX Europe 600 +1,4 % v 09:15 CET, technologický sektor přibližně +2 %, Infineon a Soitec přibližně +4 %. Reuters: očekávání stropu amerických cel na EU 15 %.",
       "time": "26. 11. 2026, 09:32",
       "publishedAtPrague": "26. 11. 2026, 09:32",
       "publicationTimeVerified": true,
-      "kind": "continuing",
+      "kind": "ongoing",
       "category": "market",
       "source": "Reuters",
       "url": "https://www.reuters.com/business/finance/european-stocks-rally-tech-banks-rebound-tariff-fears-ease-2026-11-26/",
@@ -232,11 +232,49 @@
       ]
     },
     {
+      "title": "META | Nizozemské organizace žádají soud o zastavení prodeje AI brýlí kvůli ochraně soukromí. Požadované penále až 100 mil. EUR na žalovaného. Rozhodnutí nejpozději 24. 12.",
+      "time": "26. 11. 2026, 12:44",
+      "publishedAtPrague": "26. 11. 2026, 12:44",
+      "publicationTimeVerified": true,
+      "kind": "ongoing",
+      "category": "ai_regulation",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/legal/government/dutch-groups-ask-court-halt-meta-smart-glasses-sales-over-privacy-concerns-2026-11-26/",
+      "eventKey": "meta-dutch-smart-glasses-lawsuit-20261126",
+      "ndxRelevant": true,
+      "importanceScore": 55,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/legal/government/dutch-groups-ask-court-halt-meta-smart-glasses-sales-over-privacy-concerns-2026-11-26/"
+        }
+      ]
+    },
+    {
+      "title": "NVDA | Weimob plánuje nasadit přibližně 5 000 exportně kompatibilních GPU RTX PRO 5500 pro multimodální AI.",
+      "publishedAtPrague": "26. 11. 2026, 12:00",
+      "eventKey": "weimob-nvidia-gpu-cluster-20261126",
+      "category": "ai",
+      "importanceScore": 49,
+      "url": "https://www.reuters.com/world/asia-pacific/chinas-weimob-plans-own-gpu-cluster-with-nvidias-rtx-pro-5500-2026-11-26/",
+      "time": "26. 11. 2026, 12:00",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "ndxRelevant": true,
+      "source": "Reuters",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/asia-pacific/chinas-weimob-plans-own-gpu-cluster-with-nvidias-rtx-pro-5500-2026-11-26/"
+        }
+      ]
+    },
+    {
       "title": "Singapur | Odmítá návrh USTR na clo až 20 % (10 % při reciproční dohodě). Efektivní sazba na export do USA by podle vlády vzrostla ze 7,8 % na 10,3 %.",
       "time": "26. 11. 2026, 05:11",
       "publishedAtPrague": "26. 11. 2026, 05:11",
       "publicationTimeVerified": true,
-      "kind": "continuing",
+      "kind": "ongoing",
       "category": "trade",
       "source": "Reuters",
       "url": "https://www.reuters.com/markets/asia/singapore-very-disappointed-over-new-tariffs-urges-us-reconsider-2026-11-26/",
@@ -255,7 +293,7 @@
       "time": "26. 11. 2026, 03:33",
       "publishedAtPrague": "26. 11. 2026, 03:33",
       "publicationTimeVerified": true,
-      "kind": "continuing",
+      "kind": "ongoing",
       "category": "ai_infrastructure",
       "source": "Reuters",
       "url": "https://www.reuters.com/world/asia-pacific/air-cargo-demand-ai-data-centres-shows-no-sign-slowing-sats-ceo-says-2026-11-26/",
@@ -270,30 +308,11 @@
       ]
     },
     {
-      "title": "Jižní Korea | BOK zvýšila sazbu o 25 bb na 3,25 %. Výhled HDP 2026 zvýšila z 3,3 na 3,9 %, 2027 z 2,9 na 4,1 %; hlavním faktorem je růst poptávky po polovodičích.",
-      "time": "26. 11. 2026, 02:05",
-      "publishedAtPrague": "26. 11. 2026, 02:05",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "macro",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/markets/asia/south-koreas-central-bank-resumes-tightening-with-quarter-point-hike-2026-11-26/",
-      "eventKey": "bok-rate-hike-chip-export-growth-20261126",
-      "ndxRelevant": true,
-      "importanceScore": 52,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/markets/asia/south-koreas-central-bank-resumes-tightening-with-quarter-point-hike-2026-11-26/"
-        }
-      ]
-    },
-    {
       "title": "NVDA / Kioxia | Prototyp GB200 NVL72 se 144 SSD XD8 dosáhl 1,1 PB hrubé kapacity. SCADA a Storage-Next umožňují zpracování až 2 bil. vektorů; ověření technické proveditelnosti.",
       "time": "26. 11. 2026, 05:19",
       "publishedAtPrague": "26. 11. 2026, 05:19",
       "publicationTimeVerified": true,
-      "kind": "continuing",
+      "kind": "ongoing",
       "category": "ai_infrastructure",
       "source": "Kioxia / Business Wire",
       "url": "https://finance.yahoo.com/technology/ai/articles/kioxia-nvidia-collaborate-expand-effective-041900475.html",
@@ -316,7 +335,7 @@
       "time": "26. 11. 2026, 05:15",
       "publishedAtPrague": "26. 11. 2026, 05:15",
       "publicationTimeVerified": true,
-      "kind": "continuing",
+      "kind": "ongoing",
       "category": "company",
       "source": "Reuters",
       "url": "https://www.reuters.com/business/media-telecom/musk-says-every-child-us-will-get-two-spacex-shares-2026-11-26/",
@@ -370,6 +389,24 @@
     "timePrague": "27. 11. 2026 15:30 CET"
   },
   "archive": [
+    {
+      "time": "27. 11. 2026 03:02 CET",
+      "summary": "NDX 26 046,90 b. (25. 11., −0,64 %). NQZ26 26 414,50 b. (+1,20 %, 02:28). Fed: trh téměř plně započítává prosincové zvýšení o 25 bb.",
+      "sourceLinks": [
+        {
+          "label": "NDX",
+          "url": "https://www.investing.com/indices/nq-100-historical-data"
+        },
+        {
+          "label": "Reuters / Fed",
+          "url": "https://www.reuters.com/world/africa/dollar-lingers-near-22-month-peak-ai-worries-simmer-2026-11-27/"
+        },
+        {
+          "label": "WSJ / CME NQZ26",
+          "url": "https://www.wsj.com/market-data/quotes/futures/NQZ26"
+        }
+      ]
+    },
     {
       "time": "27. 11. 2026 01:58 CET",
       "summary": "NDX 26 046,90 b. (−0,64 %, závěr 25. 11.). NRF odhaduje sváteční maloobchodní tržby +4,2 % y/y. MA50 breadth: konflikt 44/101 vs. 45/101 přetrvává.",
@@ -6129,6 +6166,10 @@
     {
       "name": "Reuters – Black Friday",
       "url": "https://www.reuters.com/business/retail-consumer/cautious-consumers-gear-up-black-friday-inflation-woes-bite-2026-11-27/"
+    },
+    {
+      "name": "Reuters / Fed",
+      "url": "https://www.reuters.com/world/africa/dollar-lingers-near-22-month-peak-ai-worries-simmer-2026-11-27/"
     }
   ]
 }
