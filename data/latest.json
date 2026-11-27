@@ -1,25 +1,44 @@
 {
-  "updatedAtPrague": "27. 11. 2026 15:57 CET",
+  "updatedAtPrague": "27. 11. 2026 17:04 CET",
   "marketStatus": "Cash NDX: otevřeno; zkrácená seance do 19:00 CET.",
   "ndx": {
-    "value": 26264.89,
-    "changePercent": 0.84,
+    "value": 26508.74,
+    "changePercent": 1.77,
     "ath": 31361.37,
-    "asOf": "27. 11. 2026, 15:39:46 CET"
+    "asOf": "27. 11. 2026, 17:02:32 CET"
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "srovnání nedostupné",
-    "reason": "MA50 breadth 43,6 % (2026-11-25; konflikt zdroje, kontrola 26. 11. 18:58). RSI14 38,39 (2026-11-25, závěr). VXN 38,53 (2026-11-25, závěr)."
+    "trend": "↗ zlepšení intradenní ceny; širší srovnání nedostupné",
+    "reason": "MA50 breadth 43,6 % (2026-11-25; konflikt zdroje, poslední úspěšná kontrola 26. 11. 18:58). RSI14 38,39 (2026-11-25, závěr). VXN 38,53 (2026-11-25, závěr)."
   },
-  "driver": "NDX po kladném otevření část růstu odevzdal. NVDA −2,23 % v 15:49 CET. Návrh MATCH Act představuje exportní riziko pro ASML.",
+  "driver": "NDX +1,77 % v 17:02 CET. AMZN +3,95 % v 16:59; NVDA −1,58 % v 16:28. Bloomberg: Blackwell v čínském datacentru, exportní riziko.",
   "news": [
+    {
+      "title": "NVDA | Bloomberg: dokumenty čínských úřadů dokládají Blackwell GB300 v datacentru v Šanghaji. Zařízení sloužilo jako zástava úvěru 96 mil. CNY; exportní riziko.",
+      "time": "27. 11. 2026, 12:45",
+      "publishedAtPrague": "27. 11. 2026, 12:45",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "ai_regulation",
+      "source": "Bloomberg",
+      "url": "https://news.bloomberglaw.com/private-equity/nvidia-blackwell-chips-turn-up-at-china-site-tied-to-alice-huang",
+      "eventKey": "nvda-blackwell-shanghai-collateral-20261127",
+      "ndxRelevant": true,
+      "importanceScore": 85,
+      "sourceLinks": [
+        {
+          "label": "Bloomberg",
+          "url": "https://news.bloomberglaw.com/private-equity/nvidia-blackwell-chips-turn-up-at-china-site-tied-to-alice-huang"
+        }
+      ]
+    },
     {
       "title": "ASML | Nizozemsko chce na G20 14.–15. 12. jednat s USA o návrhu MATCH Act. Návrh zpřísňuje export zařízení pro výrobu čipů do Číny.",
       "time": "27. 11. 2026, 15:07",
       "publishedAtPrague": "27. 11. 2026, 15:07",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "ai_regulation",
       "source": "Reuters",
       "url": "https://www.reuters.com/technology/dutch-pm-discuss-match-act-chipmaking-export-controls-with-trump-g20-2026-11-27/",
@@ -30,25 +49,6 @@
         {
           "label": "Reuters",
           "url": "https://www.reuters.com/technology/dutch-pm-discuss-match-act-chipmaking-export-controls-with-trump-g20-2026-11-27/"
-        }
-      ]
-    },
-    {
-      "title": "USA | Říjnový deficit obchodu se zbožím 149,5 mld. USD vs. kons. 133 mld. USD, +10,7 % m/m. Import 365,3 mld. USD; poptávka po AI infrastruktuře podporuje dovoz.",
-      "time": "27. 11. 2026, 14:44",
-      "publishedAtPrague": "27. 11. 2026, 14:44",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "macro",
-      "source": "Reuters / Census Bureau",
-      "url": "https://www.reuters.com/business/us-goods-trade-deficit-widens-sharply-october-2026-11-27/",
-      "eventKey": "us-october-goods-trade-deficit-20261127",
-      "ndxRelevant": true,
-      "importanceScore": 65,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/business/us-goods-trade-deficit-widens-sharply-october-2026-11-27/"
         }
       ]
     },
@@ -68,48 +68,6 @@
         {
           "label": "Reuters / LSEG Lipper",
           "url": "https://www.reuters.com/world/china/global-markets-flows-graphic-2026-11-27/"
-        }
-      ]
-    },
-    {
-      "title": "NFP | LSEG: kons. listopad +90 tis. vs. říjen +165 tis.; nezaměstnanost kons. 4,1 %. Publikace 4. 12. před FOMC 8.–9. 12.",
-      "time": "27. 11. 2026, 12:02",
-      "publishedAtPrague": "27. 11. 2026, 12:02",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "macro",
-      "source": "Reuters / LSEG",
-      "url": "https://www.reuters.com/business/wall-st-week-ahead-sliding-stock-market-confronts-jobs-data-rate-view-next-tests-2026-11-27/",
-      "eventKey": "lseg-november-payrolls-consensus-20261127",
-      "ndxRelevant": true,
-      "importanceScore": 60,
-      "sourceLinks": [
-        {
-          "label": "Reuters / LSEG",
-          "url": "https://www.reuters.com/business/wall-st-week-ahead-sliding-stock-market-confronts-jobs-data-rate-view-next-tests-2026-11-27/"
-        },
-        {
-          "label": "BLS – kalendář",
-          "url": "https://www.bls.gov/schedule/2026/12_sched.htm"
-        }
-      ]
-    },
-    {
-      "title": "AI čipy | Reuters: odhad listopadového exportu Jižní Koreje +96,8 % y/y vs. říjen +93,9 %. Export čipů za prvních 20 dní +294,4 % y/y; poptávka po pamětech pro AI.",
-      "time": "27. 11. 2026, 06:03",
-      "publishedAtPrague": "27. 11. 2026, 06:03",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "macro",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/asia-pacific/south-korea-november-exports-seen-posting-fastest-growth-over-50-years-ai-chip-2026-11-27/",
-      "eventKey": "korea-november-export-poll-ai-memory-20261127",
-      "ndxRelevant": true,
-      "importanceScore": 65,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/world/asia-pacific/south-korea-november-exports-seen-posting-fastest-growth-over-50-years-ai-chip-2026-11-27/"
         }
       ]
     },
@@ -137,21 +95,82 @@
       ]
     },
     {
-      "title": "Evropské technologie +2,3 %; ASML, ASM International a Infineon +3,8 až +4,5 %. STOXX 600 +0,9 % (09:12 CET).",
-      "time": "27. 11. 2026, 09:25",
-      "publishedAtPrague": "27. 11. 2026, 09:25",
+      "title": "JERA | Podle Nikkei jedná s META, AMZN, MSFT, Alphabet a Anthropic o výstavbě datacenter u elektráren v oblasti Tokia.",
+      "time": "26. 11. 2026, 23:13",
+      "publishedAtPrague": "26. 11. 2026, 23:13",
       "publicationTimeVerified": true,
       "kind": "continuing",
-      "category": "semiconductors",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/markets/europe/european-stocks-extend-recovery-tech-miners-advance-2026-11-27/",
-      "eventKey": "europe-tech-semiconductor-recovery-20261127",
+      "category": "ai_infrastructure",
+      "source": "Reuters (Nikkei)",
+      "url": "https://www.reuters.com/world/asia-pacific/japans-jera-enters-talks-with-anthropic-meta-build-data-centres-nikkei-reports-2026-11-26/",
+      "eventKey": "jera-hyperscaler-data-center-talks-20261126",
       "ndxRelevant": true,
-      "importanceScore": 58,
+      "importanceScore": 67,
       "sourceLinks": [
         {
           "label": "Reuters",
-          "url": "https://www.reuters.com/markets/europe/european-stocks-extend-recovery-tech-miners-advance-2026-11-27/"
+          "url": "https://www.reuters.com/world/asia-pacific/japans-jera-enters-talks-with-anthropic-meta-build-data-centres-nikkei-reports-2026-11-26/"
+        }
+      ]
+    },
+    {
+      "title": "USA | Říjnový deficit obchodu se zbožím 149,5 mld. USD vs. kons. 133 mld. USD, +10,7 % m/m. Import 365,3 mld. USD; poptávka po AI infrastruktuře podporuje dovoz.",
+      "time": "27. 11. 2026, 14:44",
+      "publishedAtPrague": "27. 11. 2026, 14:44",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "macro",
+      "source": "Reuters / Census Bureau",
+      "url": "https://www.reuters.com/business/us-goods-trade-deficit-widens-sharply-october-2026-11-27/",
+      "eventKey": "us-october-goods-trade-deficit-20261127",
+      "ndxRelevant": true,
+      "importanceScore": 65,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/us-goods-trade-deficit-widens-sharply-october-2026-11-27/"
+        }
+      ]
+    },
+    {
+      "title": "AI čipy | Reuters: odhad listopadového exportu Jižní Koreje +96,8 % y/y vs. říjen +93,9 %. Export čipů za prvních 20 dní +294,4 % y/y; poptávka po pamětech pro AI.",
+      "time": "27. 11. 2026, 06:03",
+      "publishedAtPrague": "27. 11. 2026, 06:03",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "macro",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/asia-pacific/south-korea-november-exports-seen-posting-fastest-growth-over-50-years-ai-chip-2026-11-27/",
+      "eventKey": "korea-november-export-poll-ai-memory-20261127",
+      "ndxRelevant": true,
+      "importanceScore": 65,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/asia-pacific/south-korea-november-exports-seen-posting-fastest-growth-over-50-years-ai-chip-2026-11-27/"
+        }
+      ]
+    },
+    {
+      "title": "NFP | LSEG: kons. listopad +90 tis. vs. říjen +165 tis.; nezaměstnanost kons. 4,1 %. Publikace 4. 12. před FOMC 8.–9. 12.",
+      "time": "27. 11. 2026, 12:02",
+      "publishedAtPrague": "27. 11. 2026, 12:02",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "macro",
+      "source": "Reuters / LSEG",
+      "url": "https://www.reuters.com/business/wall-st-week-ahead-sliding-stock-market-confronts-jobs-data-rate-view-next-tests-2026-11-27/",
+      "eventKey": "lseg-november-payrolls-consensus-20261127",
+      "ndxRelevant": true,
+      "importanceScore": 60,
+      "sourceLinks": [
+        {
+          "label": "Reuters / LSEG",
+          "url": "https://www.reuters.com/business/wall-st-week-ahead-sliding-stock-market-confronts-jobs-data-rate-view-next-tests-2026-11-27/"
+        },
+        {
+          "label": "BLS – kalendář",
+          "url": "https://www.bls.gov/schedule/2026/12_sched.htm"
         }
       ]
     },
@@ -179,40 +198,21 @@
       ]
     },
     {
-      "title": "JERA | Podle Nikkei jedná s META, AMZN, MSFT, Alphabet a Anthropic o výstavbě datacenter u elektráren v oblasti Tokia.",
-      "time": "26. 11. 2026, 23:13",
-      "publishedAtPrague": "26. 11. 2026, 23:13",
+      "title": "Evropské technologie +2,3 %; ASML, ASM International a Infineon +3,8 až +4,5 %. STOXX 600 +0,9 % (09:12 CET).",
+      "time": "27. 11. 2026, 09:25",
+      "publishedAtPrague": "27. 11. 2026, 09:25",
       "publicationTimeVerified": true,
       "kind": "continuing",
-      "category": "ai_infrastructure",
-      "source": "Reuters (Nikkei)",
-      "url": "https://www.reuters.com/world/asia-pacific/japans-jera-enters-talks-with-anthropic-meta-build-data-centres-nikkei-reports-2026-11-26/",
-      "eventKey": "jera-hyperscaler-data-center-talks-20261126",
-      "ndxRelevant": true,
-      "importanceScore": 67,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/world/asia-pacific/japans-jera-enters-talks-with-anthropic-meta-build-data-centres-nikkei-reports-2026-11-26/"
-        }
-      ]
-    },
-    {
-      "title": "AAPL | Chilský úřad FNE navrhuje pokutu 80 mil. USD a otevření iOS alternativní distribuci aplikací a platbám.",
-      "time": "27. 11. 2026, 15:32",
-      "publishedAtPrague": "27. 11. 2026, 15:32",
-      "publicationTimeVerified": true,
-      "kind": "new",
-      "category": "regulation",
+      "category": "semiconductors",
       "source": "Reuters",
-      "url": "https://www.reuters.com/legal/litigation/chiles-antitrust-authority-seeks-80-million-apple-fine-over-ios-2026-11-27/",
-      "eventKey": "apple-chile-fne-antitrust-20261127",
+      "url": "https://www.reuters.com/markets/europe/european-stocks-extend-recovery-tech-miners-advance-2026-11-27/",
+      "eventKey": "europe-tech-semiconductor-recovery-20261127",
       "ndxRelevant": true,
-      "importanceScore": 48,
+      "importanceScore": 58,
       "sourceLinks": [
         {
           "label": "Reuters",
-          "url": "https://www.reuters.com/legal/litigation/chiles-antitrust-authority-seeks-80-million-apple-fine-over-ios-2026-11-27/"
+          "url": "https://www.reuters.com/markets/europe/european-stocks-extend-recovery-tech-miners-advance-2026-11-27/"
         }
       ]
     },
@@ -259,25 +259,6 @@
       ]
     },
     {
-      "title": "TSLA | Návrh programu EK připouští hlasování o schválení FSD v EU 15. 12. Nutný souhlas nejméně 15 států reprezentujících 65 % obyvatel EU.",
-      "time": "26. 11. 2026, 16:55",
-      "publishedAtPrague": "26. 11. 2026, 16:55",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_regulation",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/technology/eu-may-vote-authorising-tesla-assisted-driving-system-dec-15-meeting-2026-11-26/",
-      "eventKey": "tesla-eu-fsd-possible-vote-20261126",
-      "ndxRelevant": true,
-      "importanceScore": 61,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/technology/eu-may-vote-authorising-tesla-assisted-driving-system-dec-15-meeting-2026-11-26/"
-        }
-      ]
-    },
-    {
       "title": "Black Friday | NRF odhaduje růst svátečních maloobchodních tržeb o 4,2 % y/y; inflace 3,8 %. UBS upozorňuje na riziko slabších výdajů za elektroniku po korekci akcií.",
       "time": "27. 11. 2026, 01:03",
       "publishedAtPrague": "27. 11. 2026, 01:03",
@@ -295,13 +276,38 @@
           "url": "https://www.reuters.com/business/retail-consumer/cautious-consumers-gear-up-black-friday-inflation-woes-bite-2026-11-27/"
         }
       ]
+    },
+    {
+      "title": "AAPL | Chilský úřad FNE navrhuje pokutu 80 mil. USD a otevření iOS alternativní distribuci aplikací a platbám.",
+      "time": "27. 11. 2026, 15:32",
+      "publishedAtPrague": "27. 11. 2026, 15:32",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "regulation",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/legal/litigation/chiles-antitrust-authority-seeks-80-million-apple-fine-over-ios-2026-11-27/",
+      "eventKey": "apple-chile-fne-antitrust-20261127",
+      "ndxRelevant": true,
+      "importanceScore": 48,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/legal/litigation/chiles-antitrust-authority-seeks-80-million-apple-fine-over-ios-2026-11-27/"
+        }
+      ]
     }
   ],
   "leaders": [
     {
+      "ticker": "AMZN",
+      "changePercent": 3.95,
+      "impact": "Pozitivní; 27. 11. 16:59 CET",
+      "sourceUrl": "https://www.investing.com/equities/amazon-com-inc"
+    },
+    {
       "ticker": "NVDA",
-      "changePercent": -2.23,
-      "impact": "Negativní; 27. 11. 15:49 CET",
+      "changePercent": -1.58,
+      "impact": "Negativní; 27. 11. 16:28 CET",
       "sourceUrl": "https://www.investing.com/equities/nvidia-corp"
     }
   ],
@@ -313,7 +319,7 @@
   },
   "forecast": {
     "athReturnPercent": 16,
-    "athReason": "Potřebný růst 19,41 %. Odhad beze změny; přetrvává riziko zpřísnění FFR a financování AI.",
+    "athReason": "Potřebný růst 18,31 %. Odhad beze změny; přetrvává riziko zpřísnění FFR a exportu AI čipů.",
     "downside": "−8 až −14 %",
     "downsideReason": "Modelový 25. percentil koncové ceny; VXN 38,53 (2026-11-25, závěr).",
     "downsideModel": {
@@ -332,6 +338,24 @@
     "timePrague": "27. 11. 2026 19:00 CET"
   },
   "archive": [
+    {
+      "time": "27. 11. 2026 17:04 CET",
+      "summary": "NDX 26 508,74 b. (+1,77 %, 17:02). AMZN +3,95 % (16:59). Bloomberg: Blackwell v Šanghaji. Breadth: konflikt stejné seance; zachováno 43,6 %. Yahoo NQ=F HTTP 429.",
+      "sourceLinks": [
+        {
+          "label": "Investing.com – NDX",
+          "url": "https://www.investing.com/indices/nq-100"
+        },
+        {
+          "label": "Investing.com – AMZN",
+          "url": "https://www.investing.com/equities/amazon-com-inc"
+        },
+        {
+          "label": "Bloomberg",
+          "url": "https://news.bloomberglaw.com/private-equity/nvidia-blackwell-chips-turn-up-at-china-site-tied-to-alice-huang"
+        }
+      ]
+    },
     {
       "time": "27. 11. 2026 15:57 CET",
       "summary": "NDX 26 264,89 b. (+0,84 %, 15:39). NVDA −2,23 % (15:49). ASML: jednání o návrhu MATCH Act na G20. Breadth: původní hodnota zachována; konflikt stejné seance.",
@@ -5151,6 +5175,10 @@
     {
       "time": "2026-11-25",
       "ndx": 26046.9
+    },
+    {
+      "time": "27. 11. 2026 17:02 CET",
+      "ndx": 26508.74
     }
   ],
   "sources": [
@@ -6421,6 +6449,14 @@
     {
       "name": "Reuters – Apple FNE",
       "url": "https://www.reuters.com/legal/litigation/chiles-antitrust-authority-seeks-80-million-apple-fine-over-ios-2026-11-27/"
+    },
+    {
+      "name": "Investing.com – AMZN",
+      "url": "https://www.investing.com/equities/amazon-com-inc"
+    },
+    {
+      "name": "Bloomberg – Blackwell",
+      "url": "https://news.bloomberglaw.com/private-equity/nvidia-blackwell-chips-turn-up-at-china-site-tied-to-alice-huang"
     }
   ]
 }
