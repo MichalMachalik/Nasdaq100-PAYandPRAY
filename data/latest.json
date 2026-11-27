@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "27. 11. 2026 05:05 CET",
+  "updatedAtPrague": "27. 11. 2026 06:25 CET",
   "marketStatus": "Cash NDX: uzavřeno; závěr 25. 11. 2026. Dnes 15:30–19:00 CET.",
   "ndx": {
     "value": 26046.9,
@@ -76,29 +76,6 @@
         {
           "label": "Reuters",
           "url": "https://www.reuters.com/world/asia-pacific/japans-jera-enters-talks-with-anthropic-meta-build-data-centres-nikkei-reports-2026-11-26/"
-        }
-      ]
-    },
-    {
-      "title": "NVDA | Podle FT pozastaveny dodávky AI serverů do čtyř zemí jihovýchodní Asie. Banky pozastavily financování projektu Aolani v objemu přibližně 500 mil. USD.",
-      "time": "26. 11. 2026, 06:09",
-      "publishedAtPrague": "26. 11. 2026, 06:09",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_regulation",
-      "source": "Reuters / FT",
-      "url": "https://www.reuters.com/world/asia-pacific/nvidia-halts-chip-shipments-southeast-asia-ft-reports-2026-11-26/",
-      "eventKey": "nvda-southeast-asia-server-shipment-halt-20261126",
-      "ndxRelevant": true,
-      "importanceScore": 88,
-      "sourceLinks": [
-        {
-          "label": "Reuters (zpráva FT)",
-          "url": "https://www.reuters.com/world/asia-pacific/nvidia-halts-chip-shipments-southeast-asia-ft-reports-2026-11-26/"
-        },
-        {
-          "label": "Financial Times",
-          "url": "https://www.ft.com/content/7838a715-07d4-4605-aa60-21f5af2b2370"
         }
       ]
     },
@@ -291,67 +268,6 @@
           "url": "https://www.reuters.com/world/asia-pacific/chinas-weimob-plans-own-gpu-cluster-with-nvidias-rtx-pro-5500-2026-11-26/"
         }
       ]
-    },
-    {
-      "title": "Singapur | Odmítá návrh USTR na clo až 20 % (10 % při reciproční dohodě). Efektivní sazba na export do USA by podle vlády vzrostla ze 7,8 % na 10,3 %.",
-      "time": "26. 11. 2026, 05:11",
-      "publishedAtPrague": "26. 11. 2026, 05:11",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "trade",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/markets/asia/singapore-very-disappointed-over-new-tariffs-urges-us-reconsider-2026-11-26/",
-      "eventKey": "singapore-ustr-tariff-response-20261126",
-      "ndxRelevant": true,
-      "importanceScore": 53,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/markets/asia/singapore-very-disappointed-over-new-tariffs-urges-us-reconsider-2026-11-26/"
-        }
-      ]
-    },
-    {
-      "title": "NVDA / Kioxia | Prototyp GB200 NVL72 se 144 SSD XD8 dosáhl 1,1 PB hrubé kapacity. SCADA a Storage-Next umožňují zpracování až 2 bil. vektorů; ověření technické proveditelnosti.",
-      "time": "26. 11. 2026, 05:19",
-      "publishedAtPrague": "26. 11. 2026, 05:19",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_infrastructure",
-      "source": "Kioxia / Business Wire",
-      "url": "https://finance.yahoo.com/technology/ai/articles/kioxia-nvidia-collaborate-expand-effective-041900475.html",
-      "eventKey": "nvda-kioxia-scada-ssd-poc-20261126",
-      "ndxRelevant": true,
-      "importanceScore": 49,
-      "sourceLinks": [
-        {
-          "label": "Kioxia",
-          "url": "https://www.kioxia.com/en-jp/business/news/2026/20261126-1.html"
-        },
-        {
-          "label": "Business Wire / Yahoo Finance",
-          "url": "https://finance.yahoo.com/technology/ai/articles/kioxia-nvidia-collaborate-expand-effective-041900475.html"
-        }
-      ]
-    },
-    {
-      "title": "SPCX | Musk rozšířil příslib daru na dvě akcie pro každé dítě v USA; odhadovaná hodnota 18 mld. USD. Jedna akcie od společnosti, jedna od Muska po skončení lock-upu v červnu 2027.",
-      "time": "26. 11. 2026, 05:15",
-      "publishedAtPrague": "26. 11. 2026, 05:15",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "company",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/media-telecom/musk-says-every-child-us-will-get-two-spacex-shares-2026-11-26/",
-      "eventKey": "spcx-musk-share-gift-20261126",
-      "ndxRelevant": true,
-      "importanceScore": 45,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/business/media-telecom/musk-says-every-child-us-will-get-two-spacex-shares-2026-11-26/"
-        }
-      ]
     }
   ],
   "leaders": [
@@ -393,6 +309,24 @@
     "timePrague": "27. 11. 2026 15:30 CET"
   },
   "archive": [
+    {
+      "time": "27. 11. 2026 06:25 CET",
+      "summary": "NDX 26 046,90 b. (25. 11., −0,64 %). Bez nové zásadní kvalifikované zprávy. Fed: tržní odhad prosincového zvýšení o 25 bb 99 % (Reuters). US10Y 4,85 % (25. 11.).",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq NDX",
+          "url": "https://indexes.nasdaqomx.com/Index/Overview/NDX"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-27/"
+        },
+        {
+          "label": "US Treasury",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value_month=202611"
+        }
+      ]
+    },
     {
       "time": "27. 11. 2026 05:05 CET",
       "summary": "NDX 26 046,90 b. (25. 11., −0,64 %). Bez zásadních novinek. Fed: tržní odhad prosincového zvýšení o 25 bb 99 %. US10Y 4,85 % (25. 11.). Breadth: konflikt 44/101 vs. 45/101.",
