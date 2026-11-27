@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "27. 11. 2026 23:22 CET",
+  "updatedAtPrague": "27. 11. 2026 23:29 CET",
   "marketStatus": "Cash NDX: uzavřeno, závěr 27. 11. 2026 v 19:00 CET.",
   "ndx": {
     "value": 26726.39,
@@ -414,6 +414,24 @@
     "timePrague": "01. 12. 2026 16:00 CET"
   },
   "archive": [
+    {
+      "time": "27. 11. 2026 23:29 CET",
+      "summary": "NDX 26 726,39 b. (+2,61 %, závěr 27. 11.); US10Y 4,94 % (+9 bb); VXN 38,53 (25. 11., starší závěr). Bez nových kvalifikovaných zpráv. Sedm updaterů dokončeno; kontrola VXN bez novějšího závěru.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq – NDX",
+          "url": "https://indexes.nasdaqomx.com/Index/Overview/NDX"
+        },
+        {
+          "label": "FRED – VXN",
+          "url": "https://fred.stlouisfed.org/series/VXNCLS"
+        },
+        {
+          "label": "US Treasury",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+        }
+      ]
+    },
     {
       "time": "27. 11. 2026 23:22 CET",
       "summary": "NDX 26 726,39 b. (+2,61 %, závěr 27. 11.); MA50 breadth 47,5 %, RSI14 43,73 (27. 11.); VXN 38,53 (25. 11., starší závěr). TSLA: návrh akvizice EMAG; cena nezveřejněna.",
