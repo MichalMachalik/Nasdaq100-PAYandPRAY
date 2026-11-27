@@ -1,25 +1,44 @@
 {
-  "updatedAtPrague": "27. 11. 2026 14:55 CET",
-  "marketStatus": "Cash NDX: uzavřeno; závěr 25. 11. 2026. Dnes 15:30–19:00 CET.",
+  "updatedAtPrague": "27. 11. 2026 15:57 CET",
+  "marketStatus": "Cash NDX: otevřeno; zkrácená seance do 19:00 CET.",
   "ndx": {
-    "value": 26046.9,
-    "changePercent": -0.64,
+    "value": 26264.89,
+    "changePercent": 0.84,
     "ath": 31361.37,
-    "asOf": "25. 11. 2026, 22:00 CET"
+    "asOf": "27. 11. 2026, 15:39:46 CET"
   },
   "sentiment": {
     "label": "Medvědí",
     "trend": "srovnání nedostupné",
     "reason": "MA50 breadth 43,6 % (2026-11-25; konflikt zdroje, kontrola 26. 11. 18:58). RSI14 38,39 (2026-11-25, závěr). VXN 38,53 (2026-11-25, závěr)."
   },
-  "driver": "AI akcie v premarketu rostou; obavy z nákladů a financování AI přetrvávají. Říjnový deficit obchodu USA se zbožím překonal konsenzus.",
+  "driver": "NDX po kladném otevření část růstu odevzdal. NVDA −2,23 % v 15:49 CET. Návrh MATCH Act představuje exportní riziko pro ASML.",
   "news": [
+    {
+      "title": "ASML | Nizozemsko chce na G20 14.–15. 12. jednat s USA o návrhu MATCH Act. Návrh zpřísňuje export zařízení pro výrobu čipů do Číny.",
+      "time": "27. 11. 2026, 15:07",
+      "publishedAtPrague": "27. 11. 2026, 15:07",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "ai_regulation",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/technology/dutch-pm-discuss-match-act-chipmaking-export-controls-with-trump-g20-2026-11-27/",
+      "eventKey": "match-act-netherlands-g20-20261127",
+      "ndxRelevant": true,
+      "importanceScore": 78,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/technology/dutch-pm-discuss-match-act-chipmaking-export-controls-with-trump-g20-2026-11-27/"
+        }
+      ]
+    },
     {
       "title": "USA | Říjnový deficit obchodu se zbožím 149,5 mld. USD vs. kons. 133 mld. USD, +10,7 % m/m. Import 365,3 mld. USD; poptávka po AI infrastruktuře podporuje dovoz.",
       "time": "27. 11. 2026, 14:44",
       "publishedAtPrague": "27. 11. 2026, 14:44",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "macro",
       "source": "Reuters / Census Bureau",
       "url": "https://www.reuters.com/business/us-goods-trade-deficit-widens-sharply-october-2026-11-27/",
@@ -179,6 +198,25 @@
       ]
     },
     {
+      "title": "AAPL | Chilský úřad FNE navrhuje pokutu 80 mil. USD a otevření iOS alternativní distribuci aplikací a platbám.",
+      "time": "27. 11. 2026, 15:32",
+      "publishedAtPrague": "27. 11. 2026, 15:32",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "regulation",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/legal/litigation/chiles-antitrust-authority-seeks-80-million-apple-fine-over-ios-2026-11-27/",
+      "eventKey": "apple-chile-fne-antitrust-20261127",
+      "ndxRelevant": true,
+      "importanceScore": 48,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/legal/litigation/chiles-antitrust-authority-seeks-80-million-apple-fine-over-ios-2026-11-27/"
+        }
+      ]
+    },
+    {
       "title": "Asie a USA | Nikkei +1,9 %, jihokorejský trh +3,9 %. NVDA +2,3 %, AVGO +3,6 % v premarketu (27. 11., aktualizace Reuters).",
       "time": "27. 11. 2026, 06:33",
       "publishedAtPrague": "27. 11. 2026, 06:33",
@@ -262,13 +300,9 @@
   "leaders": [
     {
       "ticker": "NVDA",
-      "changePercent": 2.3,
-      "impact": "Premarket; Reuters 27. 11."
-    },
-    {
-      "ticker": "AVGO",
-      "changePercent": 3.6,
-      "impact": "Premarket; Reuters 27. 11."
+      "changePercent": -2.23,
+      "impact": "Negativní; 27. 11. 15:49 CET",
+      "sourceUrl": "https://www.investing.com/equities/nvidia-corp"
     }
   ],
   "macro": "US10Y | 25. 11.: 4,85 % | 24. 11.: 4,91 % | −6 bb",
@@ -279,7 +313,7 @@
   },
   "forecast": {
     "athReturnPercent": 16,
-    "athReason": "Potřebný růst 20,40 %. Odhad beze změny; riziko zpřísnění FFR a financování AI.",
+    "athReason": "Potřebný růst 19,41 %. Odhad beze změny; přetrvává riziko zpřísnění FFR a financování AI.",
     "downside": "−8 až −14 %",
     "downsideReason": "Modelový 25. percentil koncové ceny; VXN 38,53 (2026-11-25, závěr).",
     "downsideModel": {
@@ -294,10 +328,28 @@
     }
   },
   "catalyst": {
-    "event": "Otevření cash trhu po Thanksgiving; zkrácená seance do 19:00 CET",
-    "timePrague": "27. 11. 2026 15:30 CET"
+    "event": "Závěr zkrácené cash seance",
+    "timePrague": "27. 11. 2026 19:00 CET"
   },
   "archive": [
+    {
+      "time": "27. 11. 2026 15:57 CET",
+      "summary": "NDX 26 264,89 b. (+0,84 %, 15:39). NVDA −2,23 % (15:49). ASML: jednání o návrhu MATCH Act na G20. Breadth: původní hodnota zachována; konflikt stejné seance.",
+      "sourceLinks": [
+        {
+          "label": "Investing.com – NDX",
+          "url": "https://www.investing.com/indices/nq-100"
+        },
+        {
+          "label": "Investing.com – NVDA",
+          "url": "https://www.investing.com/equities/nvidia-corp"
+        },
+        {
+          "label": "Reuters – MATCH Act",
+          "url": "https://www.reuters.com/technology/dutch-pm-discuss-match-act-chipmaking-export-controls-with-trump-g20-2026-11-27/"
+        }
+      ]
+    },
     {
       "time": "27. 11. 2026 14:55 CET",
       "summary": "NDX 26 046,90 b. (−0,64 %, 25. 11.). USA: deficit obchodu se zbožím 149,5 mld. USD vs. kons. 133 mld. USD. NVDA +2,3 %, AVGO +3,6 % premarket. Breadth: původní hodnota zachována; konflikt zdroje.",
@@ -6361,6 +6413,14 @@
     {
       "name": "Reuters – obchodní bilance USA",
       "url": "https://www.reuters.com/business/us-goods-trade-deficit-widens-sharply-october-2026-11-27/"
+    },
+    {
+      "name": "Reuters – MATCH Act",
+      "url": "https://www.reuters.com/technology/dutch-pm-discuss-match-act-chipmaking-export-controls-with-trump-g20-2026-11-27/"
+    },
+    {
+      "name": "Reuters – Apple FNE",
+      "url": "https://www.reuters.com/legal/litigation/chiles-antitrust-authority-seeks-80-million-apple-fine-over-ios-2026-11-27/"
     }
   ]
 }
