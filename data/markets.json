@@ -7,98 +7,98 @@
     "currencies": "https://tradingeconomics.com/currencies"
   },
   "timestampKind": "retrieval timestamp is separate from trading day",
-  "fetchedAtUtc": "2026-11-27T16:05:26.081520Z",
-  "fetchedAtPrague": "27. 11. 2026 17:05",
+  "fetchedAtUtc": "2026-11-27T16:57:48.692812Z",
+  "fetchedAtPrague": "27. 11. 2026 17:57",
   "quotes": [
     {
       "id": "WTI",
       "unit": "USD/bbl",
-      "price": 83.395,
-      "changePercent": -1.81,
+      "price": 82.794,
+      "changePercent": -2.51,
       "quoteDate": "Nov/27",
       "quoteDateISO": "2026-11-27",
       "sourceUrl": "https://tradingeconomics.com/commodity/crude-oil",
-      "fetchedAtUtc": "2026-11-27T16:05:26.081520Z"
+      "fetchedAtUtc": "2026-11-27T16:57:48.692812Z"
     },
     {
       "id": "Brent",
       "unit": "USD/bbl",
-      "price": 94.688,
-      "changePercent": -1.76,
+      "price": 93.971,
+      "changePercent": -2.51,
       "quoteDate": "Nov/27",
       "quoteDateISO": "2026-11-27",
       "sourceUrl": "https://tradingeconomics.com/commodity/brent-crude-oil",
-      "fetchedAtUtc": "2026-11-27T16:05:26.081520Z"
+      "fetchedAtUtc": "2026-11-27T16:57:48.692812Z"
     },
     {
       "id": "Natural Gas",
       "unit": "USD/MMBtu",
-      "price": 3.5016,
-      "changePercent": -2.48,
+      "price": 3.511,
+      "changePercent": -2.22,
       "quoteDate": "Nov/27",
       "quoteDateISO": "2026-11-27",
       "sourceUrl": "https://tradingeconomics.com/commodity/natural-gas",
-      "fetchedAtUtc": "2026-11-27T16:05:26.081520Z"
+      "fetchedAtUtc": "2026-11-27T16:57:48.692812Z"
     },
     {
       "id": "Gasoline",
       "unit": "USD/gal",
-      "price": 2.4447,
-      "changePercent": 0.17,
+      "price": 2.4486,
+      "changePercent": 0.33,
       "quoteDate": "Nov/27",
       "quoteDateISO": "2026-11-27",
       "sourceUrl": "https://tradingeconomics.com/commodity/gasoline",
-      "fetchedAtUtc": "2026-11-27T16:05:26.081520Z"
+      "fetchedAtUtc": "2026-11-27T16:57:48.692812Z"
     },
     {
       "id": "EU Gas",
       "unit": "EUR/MWh",
-      "price": 83.16,
-      "changePercent": -5.06,
+      "price": 84.77,
+      "changePercent": -3.23,
       "quoteDate": "Nov/27",
       "quoteDateISO": "2026-11-27",
       "sourceUrl": "https://tradingeconomics.com/commodity/eu-natural-gas",
-      "fetchedAtUtc": "2026-11-27T16:05:26.081520Z"
+      "fetchedAtUtc": "2026-11-27T16:57:48.692812Z"
     },
     {
       "id": "Gold",
       "unit": "USD/oz",
-      "price": 3623.14,
-      "changePercent": 1.57,
+      "price": 3636.68,
+      "changePercent": 1.95,
       "quoteDate": "Nov/27",
       "quoteDateISO": "2026-11-27",
       "sourceUrl": "https://tradingeconomics.com/commodity/gold",
-      "fetchedAtUtc": "2026-11-27T16:05:26.081520Z"
+      "fetchedAtUtc": "2026-11-27T16:57:48.692812Z"
     },
     {
       "id": "EUR/USD",
       "unit": "EUR/USD",
-      "price": 1.09376,
-      "changePercent": -0.29,
+      "price": 1.09388,
+      "changePercent": -0.28,
       "quoteDate": "Nov/27",
       "quoteDateISO": "2026-11-27",
       "sourceUrl": "https://tradingeconomics.com/euro-area/currency",
-      "fetchedAtUtc": "2026-11-27T16:05:26.081520Z"
+      "fetchedAtUtc": "2026-11-27T16:57:48.692812Z"
     },
     {
       "id": "EUR/CZK",
       "unit": "EUR/CZK",
-      "price": 24.4216,
-      "changePercent": -0.13,
+      "price": 24.4255,
+      "changePercent": -0.12,
       "quoteDate": "Nov/27",
       "quoteDateISO": "2026-11-27",
       "sourceUrl": "https://tradingeconomics.com/eurczk:cur",
-      "fetchedAtUtc": "2026-11-27T16:05:26.081520Z"
+      "fetchedAtUtc": "2026-11-27T16:57:48.692812Z"
     },
     {
       "id": "USD/CZK",
       "unit": "USD/CZK",
-      "price": 22.3295,
+      "price": 22.3291,
       "changePercent": 0.14,
       "quoteDate": "Nov/27",
       "quoteDateISO": "2026-11-27",
       "sourceUrl": "https://tradingeconomics.com/czech-republic/currency",
-      "fetchedAtUtc": "2026-11-27T16:05:26.081520Z"
+      "fetchedAtUtc": "2026-11-27T16:57:48.692812Z"
     }
   ]
 }
