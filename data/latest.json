@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "27. 11. 2026 13:58 CET",
+  "updatedAtPrague": "27. 11. 2026 14:55 CET",
   "marketStatus": "Cash NDX: uzavřeno; závěr 25. 11. 2026. Dnes 15:30–19:00 CET.",
   "ndx": {
     "value": 26046.9,
@@ -10,10 +10,29 @@
   "sentiment": {
     "label": "Medvědí",
     "trend": "srovnání nedostupné",
-    "reason": "MA50 breadth 43,6 % (2026-11-25; konflikt zdroje). RSI14 38,39 (2026-11-25, závěr). VXN 38,53 (2026-11-25, závěr)."
+    "reason": "MA50 breadth 43,6 % (2026-11-25; konflikt zdroje, kontrola 26. 11. 18:58). RSI14 38,39 (2026-11-25, závěr). VXN 38,53 (2026-11-25, závěr)."
   },
-  "driver": "Peking posílí stabilizační roli Central Huijin. Čínský čipový index +19 %; americké AI akcie v premarketu rostou. Riziko vyšších FFR přetrvává.",
+  "driver": "AI akcie v premarketu rostou; obavy z nákladů a financování AI přetrvávají. Říjnový deficit obchodu USA se zbožím překonal konsenzus.",
   "news": [
+    {
+      "title": "USA | Říjnový deficit obchodu se zbožím 149,5 mld. USD vs. kons. 133 mld. USD, +10,7 % m/m. Import 365,3 mld. USD; poptávka po AI infrastruktuře podporuje dovoz.",
+      "time": "27. 11. 2026, 14:44",
+      "publishedAtPrague": "27. 11. 2026, 14:44",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "macro",
+      "source": "Reuters / Census Bureau",
+      "url": "https://www.reuters.com/business/us-goods-trade-deficit-widens-sharply-october-2026-11-27/",
+      "eventKey": "us-october-goods-trade-deficit-20261127",
+      "ndxRelevant": true,
+      "importanceScore": 65,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/us-goods-trade-deficit-widens-sharply-october-2026-11-27/"
+        }
+      ]
+    },
     {
       "title": "Fondy | LSEG Lipper: týden do 25. 11. globální akciové fondy −22,73 mld. USD, americké −30,57 mld. USD, technologické −7,57 mld. USD. Globální odliv nejvyšší za 14 měsíců.",
       "time": "27. 11. 2026, 10:42",
@@ -99,29 +118,6 @@
       ]
     },
     {
-      "title": "Čína | Vláda chce posílit stabilizační roli Central Huijin. CSI300 +4,2 %, čipový index +19 %. Pozitivní sektorový impuls pro AI akcie.",
-      "time": "27. 11. 2026, 07:32",
-      "publishedAtPrague": "27. 11. 2026, 07:32",
-      "publicationTimeVerified": true,
-      "kind": "new",
-      "category": "market",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/china-strengthen-defense-against-imported-risks-capital-markets-2026-11-27/",
-      "eventKey": "china-state-market-support-20261127",
-      "ndxRelevant": true,
-      "importanceScore": 60,
-      "sourceLinks": [
-        {
-          "label": "Reuters – rozhodnutí",
-          "url": "https://www.reuters.com/world/china-strengthen-defense-against-imported-risks-capital-markets-2026-11-27/"
-        },
-        {
-          "label": "Reuters – reakce trhu",
-          "url": "https://www.reuters.com/markets/europe/china-stocks-shoot-up-after-beijing-vows-support-2026-11-27/"
-        }
-      ]
-    },
-    {
       "title": "Evropské technologie +2,3 %; ASML, ASM International a Infineon +3,8 až +4,5 %. STOXX 600 +0,9 % (09:12 CET).",
       "time": "27. 11. 2026, 09:25",
       "publishedAtPrague": "27. 11. 2026, 09:25",
@@ -137,6 +133,29 @@
         {
           "label": "Reuters",
           "url": "https://www.reuters.com/markets/europe/european-stocks-extend-recovery-tech-miners-advance-2026-11-27/"
+        }
+      ]
+    },
+    {
+      "title": "Čína | Vláda chce posílit stabilizační roli Central Huijin. CSI300 +4,2 %, čipový index +19 %. Pozitivní sektorový impuls pro AI akcie.",
+      "time": "27. 11. 2026, 07:32",
+      "publishedAtPrague": "27. 11. 2026, 07:32",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "market",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/china-strengthen-defense-against-imported-risks-capital-markets-2026-11-27/",
+      "eventKey": "china-state-market-support-20261127",
+      "ndxRelevant": true,
+      "importanceScore": 60,
+      "sourceLinks": [
+        {
+          "label": "Reuters – rozhodnutí",
+          "url": "https://www.reuters.com/world/china-strengthen-defense-against-imported-risks-capital-markets-2026-11-27/"
+        },
+        {
+          "label": "Reuters – reakce trhu",
+          "url": "https://www.reuters.com/markets/europe/china-stocks-shoot-up-after-beijing-vows-support-2026-11-27/"
         }
       ]
     },
@@ -160,7 +179,7 @@
       ]
     },
     {
-      "title": "Asie a USA | Nikkei +1,9 %, jihokorejský trh +3,9 %. NVDA +3,6 %, AVGO +3,4 % v premarketu (27. 11., aktualizace Reuters).",
+      "title": "Asie a USA | Nikkei +1,9 %, jihokorejský trh +3,9 %. NVDA +2,3 %, AVGO +3,6 % v premarketu (27. 11., aktualizace Reuters).",
       "time": "27. 11. 2026, 06:33",
       "publishedAtPrague": "27. 11. 2026, 06:33",
       "publicationTimeVerified": true,
@@ -243,12 +262,12 @@
   "leaders": [
     {
       "ticker": "NVDA",
-      "changePercent": 3.6,
+      "changePercent": 2.3,
       "impact": "Premarket; Reuters 27. 11."
     },
     {
       "ticker": "AVGO",
-      "changePercent": 3.4,
+      "changePercent": 3.6,
       "impact": "Premarket; Reuters 27. 11."
     }
   ],
@@ -279,6 +298,24 @@
     "timePrague": "27. 11. 2026 15:30 CET"
   },
   "archive": [
+    {
+      "time": "27. 11. 2026 14:55 CET",
+      "summary": "NDX 26 046,90 b. (−0,64 %, 25. 11.). USA: deficit obchodu se zbožím 149,5 mld. USD vs. kons. 133 mld. USD. NVDA +2,3 %, AVGO +3,6 % premarket. Breadth: původní hodnota zachována; konflikt zdroje.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq NDX",
+          "url": "https://indexes.nasdaq.com/index/Overview/NDX"
+        },
+        {
+          "label": "Reuters – obchodní bilance",
+          "url": "https://www.reuters.com/business/us-goods-trade-deficit-widens-sharply-october-2026-11-27/"
+        },
+        {
+          "label": "Reuters – premarket",
+          "url": "https://www.reuters.com/business/wall-st-futures-surge-investors-return-holiday-2026-11-27/"
+        }
+      ]
+    },
     {
       "time": "27. 11. 2026 13:58 CET",
       "summary": "NDX 26 046,90 b. (−0,64 %, 25. 11.). Čína: posílení stabilizační role Central Huijin; čipový index +19 %. NVDA +3,6 % premarket. Breadth: konflikt stejné seance; původní hodnota zachována.",
@@ -6320,6 +6357,10 @@
     {
       "name": "Reuters – Čína",
       "url": "https://www.reuters.com/world/china-strengthen-defense-against-imported-risks-capital-markets-2026-11-27/"
+    },
+    {
+      "name": "Reuters – obchodní bilance USA",
+      "url": "https://www.reuters.com/business/us-goods-trade-deficit-widens-sharply-october-2026-11-27/"
     }
   ]
 }
