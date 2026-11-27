@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "27. 11. 2026 20:59 CET",
+  "updatedAtPrague": "27. 11. 2026 21:55 CET",
   "marketStatus": "Cash NDX: uzavřeno, závěr 27. 11. 2026 v 19:00 CET.",
   "ndx": {
     "value": 26726.39,
@@ -9,30 +9,11 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→ beze změny od poslední kontroly závěru; nová denní breadth nedostupná",
-    "reason": "MA50 breadth 43,6 % (2026-11-25; starší závěr; konflikt zdroje). RSI14 38,39 (2026-11-25; starší závěr). VXN 38,53 (2026-11-25; starší závěr). US10Y 4,94 % (27. 11.; +9 bb)."
+    "trend": "→ beze změny od poslední kontroly závěru",
+    "reason": "MA50 breadth 43,6 % (2026-11-25; starší závěr). RSI14 38,39 (2026-11-25; starší závěr). VXN 38,53 (2026-11-25; starší závěr). US10Y 4,94 % (27. 11.; +9 bb)."
   },
   "driver": "SOX +4,7 %; MU +7,6 %, NVDA +0,8 % (27. 11., závěr). Reuters: návrat poptávky po AI akciích po předchozích výprodejích.",
   "news": [
-    {
-      "title": "AAPL | Podle FT podala OpenAI proti Apple protižalobu kvůli údajnému odcizení obchodního tajemství a omezování přístupu k dodavatelům hardwaru.",
-      "time": "27. 11. 2026, 19:28",
-      "publishedAtPrague": "27. 11. 2026, 19:28",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "regulation",
-      "source": "Reuters (FT)",
-      "url": "https://www.reuters.com/technology/openai-countersues-apple-stealing-trade-secrets-ft-reports-2026-11-27/",
-      "eventKey": "openai-apple-counterclaim-20261127",
-      "ndxRelevant": true,
-      "importanceScore": 68,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/technology/openai-countersues-apple-stealing-trade-secrets-ft-reports-2026-11-27/"
-        }
-      ]
-    },
     {
       "title": "NVDA | Bloomberg: dokumenty čínských úřadů dokládají Blackwell GB300 v datacentru v Šanghaji. Zařízení sloužilo jako zástava úvěru 96 mil. CNY; exportní riziko.",
       "time": "27. 11. 2026, 12:45",
@@ -68,6 +49,25 @@
         {
           "label": "Reuters",
           "url": "https://www.reuters.com/technology/dutch-pm-discuss-match-act-chipmaking-export-controls-with-trump-g20-2026-11-27/"
+        }
+      ]
+    },
+    {
+      "title": "AAPL | Podle FT podala OpenAI proti Apple protižalobu kvůli údajnému odcizení obchodního tajemství a omezování přístupu k dodavatelům hardwaru.",
+      "time": "27. 11. 2026, 19:28",
+      "publishedAtPrague": "27. 11. 2026, 19:28",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "regulation",
+      "source": "Reuters (FT)",
+      "url": "https://www.reuters.com/technology/openai-countersues-apple-stealing-trade-secrets-ft-reports-2026-11-27/",
+      "eventKey": "openai-apple-counterclaim-20261127",
+      "ndxRelevant": true,
+      "importanceScore": 68,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/technology/openai-countersues-apple-stealing-trade-secrets-ft-reports-2026-11-27/"
         }
       ]
     },
@@ -194,6 +194,25 @@
       ]
     },
     {
+      "title": "Evropské technologie +2,3 %; ASML, ASM International a Infineon +3,8 až +4,5 %. STOXX 600 +0,9 % (09:12 CET).",
+      "time": "27. 11. 2026, 09:25",
+      "publishedAtPrague": "27. 11. 2026, 09:25",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "semiconductors",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/markets/europe/european-stocks-extend-recovery-tech-miners-advance-2026-11-27/",
+      "eventKey": "europe-tech-semiconductor-recovery-20261127",
+      "ndxRelevant": true,
+      "importanceScore": 58,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/markets/europe/european-stocks-extend-recovery-tech-miners-advance-2026-11-27/"
+        }
+      ]
+    },
+    {
       "title": "Čína | Vláda chce posílit stabilizační roli Central Huijin. CSI300 +4,2 %, čipový index +19 %. Pozitivní sektorový impuls pro AI akcie.",
       "time": "27. 11. 2026, 07:32",
       "publishedAtPrague": "27. 11. 2026, 07:32",
@@ -213,25 +232,6 @@
         {
           "label": "Reuters – reakce trhu",
           "url": "https://www.reuters.com/markets/europe/china-stocks-shoot-up-after-beijing-vows-support-2026-11-27/"
-        }
-      ]
-    },
-    {
-      "title": "Evropské technologie +2,3 %; ASML, ASM International a Infineon +3,8 až +4,5 %. STOXX 600 +0,9 % (09:12 CET).",
-      "time": "27. 11. 2026, 09:25",
-      "publishedAtPrague": "27. 11. 2026, 09:25",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "semiconductors",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/markets/europe/european-stocks-extend-recovery-tech-miners-advance-2026-11-27/",
-      "eventKey": "europe-tech-semiconductor-recovery-20261127",
-      "ndxRelevant": true,
-      "importanceScore": 58,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/markets/europe/european-stocks-extend-recovery-tech-miners-advance-2026-11-27/"
         }
       ]
     },
@@ -335,6 +335,25 @@
       ]
     },
     {
+      "title": "Cloud One | Reuters: kybernetický incident v cloudové platformě USAF využívající služby MSFT, AMZN, Oracle a Alphabet. Migrace aplikací pozastavena.",
+      "time": "27. 11. 2026, 12:01",
+      "publishedAtPrague": "27. 11. 2026, 12:01",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "company",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/hackers-breach-us-air-force-flagship-cloud-one-computing-platform-2026-11-27/",
+      "eventKey": "usaf-cloud-one-breach-20261127",
+      "ndxRelevant": true,
+      "importanceScore": 45,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/hackers-breach-us-air-force-flagship-cloud-one-computing-platform-2026-11-27/"
+        }
+      ]
+    },
+    {
       "title": "Black Friday | Adobe Analytics: online tržby USA na Thanksgiving 7,1 mld. USD, +10,4 % y/y. Odhad Black Friday 12,9 mld. USD, +9,2 % y/y.",
       "time": "27. 11. 2026, 01:03",
       "publishedAtPrague": "27. 11. 2026, 01:03",
@@ -395,6 +414,24 @@
     "timePrague": "01. 12. 2026 16:00 CET"
   },
   "archive": [
+    {
+      "time": "27. 11. 2026 21:55 CET",
+      "summary": "NDX 26 726,39 b. (+2,61 %, závěr 27. 11.). US10Y 4,94 % (+9 bb vs. 25. 11.). Reuters: incident Cloud One; migrace aplikací pozastavena. Breadth konflikt; RSI a VXN za 27. 11. nedostupné.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq – NDX",
+          "url": "https://indexes.nasdaqomx.com/Index/Overview/NDX"
+        },
+        {
+          "label": "US Treasury",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+        },
+        {
+          "label": "Reuters – Cloud One",
+          "url": "https://www.reuters.com/world/hackers-breach-us-air-force-flagship-cloud-one-computing-platform-2026-11-27/"
+        }
+      ]
+    },
     {
       "time": "27. 11. 2026 20:59 CET",
       "summary": "NDX 26 726,39 b. (+2,61 %, závěr 27. 11.); US10Y 4,94 % (+9 bb vs. 25. 11.). VXN 38,53 (25. 11.). Bez nových kvalifikovaných zpráv. Breadth konflikt; denní RSI a VXN za 27. 11. nedostupné.",
@@ -6610,6 +6647,10 @@
     {
       "name": "Reuters – OpenAI / AAPL",
       "url": "https://www.reuters.com/technology/openai-countersues-apple-stealing-trade-secrets-ft-reports-2026-11-27/"
+    },
+    {
+      "name": "Reuters – Cloud One",
+      "url": "https://www.reuters.com/world/hackers-breach-us-air-force-flagship-cloud-one-computing-platform-2026-11-27/"
     }
   ]
 }
