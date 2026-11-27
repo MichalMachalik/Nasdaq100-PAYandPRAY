@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "27. 11. 2026 12:03 CET",
+  "updatedAtPrague": "27. 11. 2026 13:03 CET",
   "marketStatus": "Cash NDX: uzavřeno; závěr 25. 11. 2026. Dnes 15:30–19:00 CET.",
   "ndx": {
     "value": 26046.9,
@@ -12,75 +12,14 @@
     "trend": "srovnání nedostupné",
     "reason": "MA50 breadth 43,6 % (2026-11-25; konflikt zdroje). RSI14 38,39 (2026-11-25, závěr). VXN 38,53 (2026-11-25, závěr)."
   },
-  "driver": "LSEG Lipper: technologické fondy −7,57 mld. USD za týden do 25. 11. Oživení čipových akcií v premarketu při pokračujícím riziku financování AI.",
+  "driver": "NFP za listopad: kons. +90 tis. vs. říjen +165 tis.; nezaměstnanost kons. 4,1 %. Riziko dalšího zpřísnění FFR při silnější zaměstnanosti.",
   "news": [
-    {
-      "title": "BoE | Emise dluhopisů hyperscalerů mají v roce 2026 překročit 305 mld. USD (8 % globálních investičních emisí). Složitější a vzájemně provázané financování AI zvyšuje riziko šíření kreditního stresu.",
-      "time": "26. 11. 2026, 12:28",
-      "publishedAtPrague": "26. 11. 2026, 12:28",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_infrastructure",
-      "source": "The Guardian / BoE",
-      "url": "https://www.theguardian.com/business/live/2026/nov/26/nvidia-chip-shipments-south-east-asia-stock-dentists-live-updates?page=with:block-6b0811ad8f08e0351893df42",
-      "eventKey": "boe-fsr-ai-financing-20261126",
-      "ndxRelevant": true,
-      "importanceScore": 81,
-      "sourceLinks": [
-        {
-          "label": "BoE – Financial Stability Report",
-          "url": "https://www.bankofengland.co.uk/financial-stability-report/2026/november-2026"
-        },
-        {
-          "label": "The Guardian – časovaný záznam",
-          "url": "https://www.theguardian.com/business/live/2026/nov/26/nvidia-chip-shipments-south-east-asia-stock-dentists-live-updates?page=with:block-6b0811ad8f08e0351893df42"
-        }
-      ]
-    },
-    {
-      "title": "AI infrastruktura | Fitch očekává zpomalení investic do datacenter v Asii po zpřísnění exportních licencí USA od 19. 11. Nejvyšší riziko nesou zadlužení poskytovatelé GPU; nejisté dodávky čipů mohou zpozdit financování a tržby.",
-      "time": "26. 11. 2026, 12:18",
-      "publishedAtPrague": "26. 11. 2026, 12:18",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_infrastructure",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/asia-pacific/us-chip-curbs-will-slow-asia-data-center-investment-fitch-says-2026-11-26/",
-      "eventKey": "fitch-asian-data-center-credit-chip-curbs-20261126",
-      "ndxRelevant": true,
-      "importanceScore": 75,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/world/asia-pacific/us-chip-curbs-will-slow-asia-data-center-investment-fitch-says-2026-11-26/"
-        }
-      ]
-    },
-    {
-      "title": "ASML | Nizozemsko, EK, Německo a Francie usilují o zablokování návrhu MATCH Act v USA. ASML očekává přibližně 20 % letošních tržeb z Číny; návrh by zpřísnil export výrobního zařízení.",
-      "time": "26. 11. 2026, 12:32",
-      "publishedAtPrague": "26. 11. 2026, 12:32",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_regulation",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/dutch-minister-says-us-chip-curbs-bill-would-hurt-europe-2026-11-26/",
-      "eventKey": "asml-dutch-match-act-opposition-20261126",
-      "ndxRelevant": true,
-      "importanceScore": 70,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/business/dutch-minister-says-us-chip-curbs-bill-would-hurt-europe-2026-11-26/"
-        }
-      ]
-    },
     {
       "title": "Fondy | LSEG Lipper: týden do 25. 11. globální akciové fondy −22,73 mld. USD, americké −30,57 mld. USD, technologické −7,57 mld. USD. Globální odliv nejvyšší za 14 měsíců.",
       "time": "27. 11. 2026, 10:42",
       "publishedAtPrague": "27. 11. 2026, 10:42",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "market",
       "source": "Reuters / LSEG Lipper",
       "url": "https://www.reuters.com/world/china/global-markets-flows-graphic-2026-11-27/",
@@ -91,6 +30,48 @@
         {
           "label": "Reuters / LSEG Lipper",
           "url": "https://www.reuters.com/world/china/global-markets-flows-graphic-2026-11-27/"
+        }
+      ]
+    },
+    {
+      "title": "NFP | LSEG: kons. listopad +90 tis. vs. říjen +165 tis.; nezaměstnanost kons. 4,1 %. Publikace 4. 12. před FOMC 8.–9. 12.",
+      "time": "27. 11. 2026, 12:02",
+      "publishedAtPrague": "27. 11. 2026, 12:02",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "macro",
+      "source": "Reuters / LSEG",
+      "url": "https://www.reuters.com/business/wall-st-week-ahead-sliding-stock-market-confronts-jobs-data-rate-view-next-tests-2026-11-27/",
+      "eventKey": "lseg-november-payrolls-consensus-20261127",
+      "ndxRelevant": true,
+      "importanceScore": 60,
+      "sourceLinks": [
+        {
+          "label": "Reuters / LSEG",
+          "url": "https://www.reuters.com/business/wall-st-week-ahead-sliding-stock-market-confronts-jobs-data-rate-view-next-tests-2026-11-27/"
+        },
+        {
+          "label": "BLS – kalendář",
+          "url": "https://www.bls.gov/schedule/2026/12_sched.htm"
+        }
+      ]
+    },
+    {
+      "title": "AI čipy | Reuters: odhad listopadového exportu Jižní Koreje +96,8 % y/y vs. říjen +93,9 %. Export čipů za prvních 20 dní +294,4 % y/y; poptávka po pamětech pro AI.",
+      "time": "27. 11. 2026, 06:03",
+      "publishedAtPrague": "27. 11. 2026, 06:03",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "macro",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/asia-pacific/south-korea-november-exports-seen-posting-fastest-growth-over-50-years-ai-chip-2026-11-27/",
+      "eventKey": "korea-november-export-poll-ai-memory-20261127",
+      "ndxRelevant": true,
+      "importanceScore": 65,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/asia-pacific/south-korea-november-exports-seen-posting-fastest-growth-over-50-years-ai-chip-2026-11-27/"
         }
       ]
     },
@@ -118,63 +99,6 @@
       ]
     },
     {
-      "title": "JERA | Podle Nikkei jedná s META, AMZN, MSFT, Alphabet a Anthropic o výstavbě datacenter u elektráren v oblasti Tokia.",
-      "time": "26. 11. 2026, 23:13",
-      "publishedAtPrague": "26. 11. 2026, 23:13",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_infrastructure",
-      "source": "Reuters (Nikkei)",
-      "url": "https://www.reuters.com/world/asia-pacific/japans-jera-enters-talks-with-anthropic-meta-build-data-centres-nikkei-reports-2026-11-26/",
-      "eventKey": "jera-hyperscaler-data-center-talks-20261126",
-      "ndxRelevant": true,
-      "importanceScore": 67,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/world/asia-pacific/japans-jera-enters-talks-with-anthropic-meta-build-data-centres-nikkei-reports-2026-11-26/"
-        }
-      ]
-    },
-    {
-      "title": "AI čipy | Reuters: odhad listopadového exportu Jižní Koreje +96,8 % y/y vs. říjen +93,9 %. Export čipů za prvních 20 dní +294,4 % y/y; poptávka po pamětech pro AI.",
-      "time": "27. 11. 2026, 06:03",
-      "publishedAtPrague": "27. 11. 2026, 06:03",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "macro",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/asia-pacific/south-korea-november-exports-seen-posting-fastest-growth-over-50-years-ai-chip-2026-11-27/",
-      "eventKey": "korea-november-export-poll-ai-memory-20261127",
-      "ndxRelevant": true,
-      "importanceScore": 65,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/world/asia-pacific/south-korea-november-exports-seen-posting-fastest-growth-over-50-years-ai-chip-2026-11-27/"
-        }
-      ]
-    },
-    {
-      "title": "TSLA | Návrh programu EK připouští hlasování o schválení FSD v EU 15. 12. Nutný souhlas nejméně 15 států reprezentujících 65 % obyvatel EU.",
-      "time": "26. 11. 2026, 16:55",
-      "publishedAtPrague": "26. 11. 2026, 16:55",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_regulation",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/technology/eu-may-vote-authorising-tesla-assisted-driving-system-dec-15-meeting-2026-11-26/",
-      "eventKey": "tesla-eu-fsd-possible-vote-20261126",
-      "ndxRelevant": true,
-      "importanceScore": 61,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/technology/eu-may-vote-authorising-tesla-assisted-driving-system-dec-15-meeting-2026-11-26/"
-        }
-      ]
-    },
-    {
       "title": "Evropské technologie +2,3 %; ASML, ASM International a Infineon +3,8 až +4,5 %. STOXX 600 +0,9 % (09:12 CET).",
       "time": "27. 11. 2026, 09:25",
       "publishedAtPrague": "27. 11. 2026, 09:25",
@@ -190,6 +114,25 @@
         {
           "label": "Reuters",
           "url": "https://www.reuters.com/markets/europe/european-stocks-extend-recovery-tech-miners-advance-2026-11-27/"
+        }
+      ]
+    },
+    {
+      "title": "JERA | Podle Nikkei jedná s META, AMZN, MSFT, Alphabet a Anthropic o výstavbě datacenter u elektráren v oblasti Tokia.",
+      "time": "26. 11. 2026, 23:13",
+      "publishedAtPrague": "26. 11. 2026, 23:13",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "ai_infrastructure",
+      "source": "Reuters (Nikkei)",
+      "url": "https://www.reuters.com/world/asia-pacific/japans-jera-enters-talks-with-anthropic-meta-build-data-centres-nikkei-reports-2026-11-26/",
+      "eventKey": "jera-hyperscaler-data-center-talks-20261126",
+      "ndxRelevant": true,
+      "importanceScore": 67,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/asia-pacific/japans-jera-enters-talks-with-anthropic-meta-build-data-centres-nikkei-reports-2026-11-26/"
         }
       ]
     },
@@ -236,21 +179,21 @@
       ]
     },
     {
-      "title": "META | Nizozemské organizace žádají soud o zastavení prodeje AI brýlí kvůli ochraně soukromí. Požadované penále až 100 mil. EUR na žalovaného. Rozhodnutí nejpozději 24. 12.",
-      "time": "26. 11. 2026, 12:44",
-      "publishedAtPrague": "26. 11. 2026, 12:44",
+      "title": "TSLA | Návrh programu EK připouští hlasování o schválení FSD v EU 15. 12. Nutný souhlas nejméně 15 států reprezentujících 65 % obyvatel EU.",
+      "time": "26. 11. 2026, 16:55",
+      "publishedAtPrague": "26. 11. 2026, 16:55",
       "publicationTimeVerified": true,
       "kind": "continuing",
       "category": "ai_regulation",
       "source": "Reuters",
-      "url": "https://www.reuters.com/legal/government/dutch-groups-ask-court-halt-meta-smart-glasses-sales-over-privacy-concerns-2026-11-26/",
-      "eventKey": "meta-dutch-smart-glasses-lawsuit-20261126",
+      "url": "https://www.reuters.com/technology/eu-may-vote-authorising-tesla-assisted-driving-system-dec-15-meeting-2026-11-26/",
+      "eventKey": "tesla-eu-fsd-possible-vote-20261126",
       "ndxRelevant": true,
-      "importanceScore": 55,
+      "importanceScore": 61,
       "sourceLinks": [
         {
           "label": "Reuters",
-          "url": "https://www.reuters.com/legal/government/dutch-groups-ask-court-halt-meta-smart-glasses-sales-over-privacy-concerns-2026-11-26/"
+          "url": "https://www.reuters.com/technology/eu-may-vote-authorising-tesla-assisted-driving-system-dec-15-meeting-2026-11-26/"
         }
       ]
     },
@@ -274,18 +217,7 @@
       ]
     }
   ],
-  "leaders": [
-    {
-      "ticker": "NVDA",
-      "changePercent": 4.7,
-      "impact": "pozitivní; premarket 27. 11., 10:23 CET (Reuters)"
-    },
-    {
-      "ticker": "AVGO",
-      "changePercent": 4.7,
-      "impact": "pozitivní; premarket 27. 11., 10:23 CET (Reuters)"
-    }
-  ],
+  "leaders": [],
   "macro": "US10Y | 25. 11.: 4,85 % | 24. 11.: 4,91 % | −6 bb",
   "regulation": null,
   "technical": {
@@ -294,7 +226,7 @@
   },
   "forecast": {
     "athReturnPercent": 16,
-    "athReason": "Potřebný růst 20,40 %. Odhad beze změny; kreditní, inflační a exportní riziko.",
+    "athReason": "Potřebný růst 20,40 %. Odhad beze změny; riziko zpřísnění FFR a financování AI.",
     "downside": "−8 až −14 %",
     "downsideReason": "Modelový 25. percentil koncové ceny; VXN 38,53 (2026-11-25, závěr).",
     "downsideModel": {
@@ -313,6 +245,24 @@
     "timePrague": "27. 11. 2026 15:30 CET"
   },
   "archive": [
+    {
+      "time": "27. 11. 2026 13:03 CET",
+      "summary": "NDX 26 046,90 b. (−0,64 %, 25. 11.). NFP kons. +90 tis. vs. říjen +165 tis. US10Y 4,85 % (25. 11.).",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq NDX",
+          "url": "https://indexes.nasdaq.com/index/Overview/NDX"
+        },
+        {
+          "label": "Reuters / LSEG",
+          "url": "https://www.reuters.com/business/wall-st-week-ahead-sliding-stock-market-confronts-jobs-data-rate-view-next-tests-2026-11-27/"
+        },
+        {
+          "label": "US Treasury",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value_month=202611"
+        }
+      ]
+    },
     {
       "time": "27. 11. 2026 12:03 CET",
       "summary": "NDX 26 046,90 b. (−0,64 %, 25. 11.). Technologické fondy −7,57 mld. USD za týden do 25. 11. US10Y 4,85 % (25. 11.). Breadth: konflikt stejné seance; původní hodnota zachována.",
@@ -6306,6 +6256,14 @@
     {
       "name": "Reuters / LSEG Lipper – týdenní toky fondů",
       "url": "https://www.reuters.com/world/china/global-markets-flows-graphic-2026-11-27/"
+    },
+    {
+      "name": "Reuters / LSEG – listopadový konsenzus NFP",
+      "url": "https://www.reuters.com/business/wall-st-week-ahead-sliding-stock-market-confronts-jobs-data-rate-view-next-tests-2026-11-27/"
+    },
+    {
+      "name": "BLS – prosincový kalendář",
+      "url": "https://www.bls.gov/schedule/2026/12_sched.htm"
     }
   ]
 }
