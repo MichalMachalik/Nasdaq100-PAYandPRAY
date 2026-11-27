@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "27. 11. 2026 06:25 CET",
+  "updatedAtPrague": "27. 11. 2026 06:26 CET",
   "marketStatus": "Cash NDX: uzavřeno; závěr 25. 11. 2026. Dnes 15:30–19:00 CET.",
   "ndx": {
     "value": 26046.9,
@@ -14,6 +14,25 @@
   },
   "driver": "Tržní odhad prosincového zvýšení FFR o 25 bb: 99 % (Reuters 27. 11.). Vyšší diskontní sazby zatěžují ocenění růstových akcií.",
   "news": [
+    {
+      "title": "AI čipy | Reuters: odhad listopadového exportu Jižní Koreje +96,8 % y/y vs. říjen +93,9 %. Export čipů za prvních 20 dní +294,4 % y/y; poptávka po pamětech pro AI.",
+      "time": "27. 11. 2026, 06:03",
+      "publishedAtPrague": "27. 11. 2026, 06:03",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "macro",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/asia-pacific/south-korea-november-exports-seen-posting-fastest-growth-over-50-years-ai-chip-2026-11-27/",
+      "eventKey": "korea-november-export-poll-ai-memory-20261127",
+      "ndxRelevant": true,
+      "importanceScore": 65,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/asia-pacific/south-korea-november-exports-seen-posting-fastest-growth-over-50-years-ai-chip-2026-11-27/"
+        }
+      ]
+    },
     {
       "title": "FX / Fed | Reuters: pravděpodobnost prosincového zvýšení FFR o 25 bb dosahuje 99 %. DXY 103,8, měsíčně +1,8 % (27. 11., report 03:01).",
       "publishedAtPrague": "27. 11. 2026, 02:03",
@@ -213,25 +232,6 @@
       ]
     },
     {
-      "title": "META | Nizozemské organizace žádají soud o zastavení prodeje AI brýlí kvůli ochraně soukromí. Požadované penále až 100 mil. EUR na žalovaného. Rozhodnutí nejpozději 24. 12.",
-      "time": "26. 11. 2026, 12:44",
-      "publishedAtPrague": "26. 11. 2026, 12:44",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_regulation",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/legal/government/dutch-groups-ask-court-halt-meta-smart-glasses-sales-over-privacy-concerns-2026-11-26/",
-      "eventKey": "meta-dutch-smart-glasses-lawsuit-20261126",
-      "ndxRelevant": true,
-      "importanceScore": 55,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/legal/government/dutch-groups-ask-court-halt-meta-smart-glasses-sales-over-privacy-concerns-2026-11-26/"
-        }
-      ]
-    },
-    {
       "title": "Evropa | STOXX Europe 600 +1,4 % v 09:15 CET, technologický sektor přibližně +2 %, Infineon a Soitec přibližně +4 %. Reuters: očekávání stropu amerických cel na EU 15 %.",
       "time": "26. 11. 2026, 09:32",
       "publishedAtPrague": "26. 11. 2026, 09:32",
@@ -247,6 +247,25 @@
         {
           "label": "Reuters",
           "url": "https://www.reuters.com/business/finance/european-stocks-rally-tech-banks-rebound-tariff-fears-ease-2026-11-26/"
+        }
+      ]
+    },
+    {
+      "title": "META | Nizozemské organizace žádají soud o zastavení prodeje AI brýlí kvůli ochraně soukromí. Požadované penále až 100 mil. EUR na žalovaného. Rozhodnutí nejpozději 24. 12.",
+      "time": "26. 11. 2026, 12:44",
+      "publishedAtPrague": "26. 11. 2026, 12:44",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "ai_regulation",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/legal/government/dutch-groups-ask-court-halt-meta-smart-glasses-sales-over-privacy-concerns-2026-11-26/",
+      "eventKey": "meta-dutch-smart-glasses-lawsuit-20261126",
+      "ndxRelevant": true,
+      "importanceScore": 55,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/legal/government/dutch-groups-ask-court-halt-meta-smart-glasses-sales-over-privacy-concerns-2026-11-26/"
         }
       ]
     },
@@ -309,6 +328,24 @@
     "timePrague": "27. 11. 2026 15:30 CET"
   },
   "archive": [
+    {
+      "time": "27. 11. 2026 06:26 CET",
+      "summary": "NDX 26 046,90 b. (25. 11., −0,64 %). Odhad exportu Jižní Koreje +96,8 % y/y; čipy za prvních 20 dní +294,4 %. US10Y 4,85 % (25. 11.).",
+      "sourceLinks": [
+        {
+          "label": "Investing.com NDX",
+          "url": "https://www.investing.com/indices/nq-100-historical-data"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/asia-pacific/south-korea-november-exports-seen-posting-fastest-growth-over-50-years-ai-chip-2026-11-27/"
+        },
+        {
+          "label": "US Treasury",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value_month=202611"
+        }
+      ]
+    },
     {
       "time": "27. 11. 2026 06:25 CET",
       "summary": "NDX 26 046,90 b. (25. 11., −0,64 %). Bez nové zásadní kvalifikované zprávy. Fed: tržní odhad prosincového zvýšení o 25 bb 99 % (Reuters). US10Y 4,85 % (25. 11.).",
@@ -6152,6 +6189,10 @@
     {
       "name": "Reuters – TSLA FSD",
       "url": "https://www.reuters.com/technology/eu-may-vote-authorising-tesla-assisted-driving-system-dec-15-meeting-2026-11-26/"
+    },
+    {
+      "name": "Reuters – korejský export AI čipů",
+      "url": "https://www.reuters.com/world/asia-pacific/south-korea-november-exports-seen-posting-fastest-growth-over-50-years-ai-chip-2026-11-27/"
     }
   ]
 }
