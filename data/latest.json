@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "27. 11. 2026 21:55 CET",
+  "updatedAtPrague": "27. 11. 2026 23:22 CET",
   "marketStatus": "Cash NDX: uzavřeno, závěr 27. 11. 2026 v 19:00 CET.",
   "ndx": {
     "value": 26726.39,
@@ -236,25 +236,6 @@
       ]
     },
     {
-      "title": "JERA | Podle Nikkei jedná s META, AMZN, MSFT, Alphabet a Anthropic o výstavbě datacenter u elektráren v oblasti Tokia.",
-      "time": "26. 11. 2026, 23:13",
-      "publishedAtPrague": "26. 11. 2026, 23:13",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_infrastructure",
-      "source": "Reuters (Nikkei)",
-      "url": "https://www.reuters.com/world/asia-pacific/japans-jera-enters-talks-with-anthropic-meta-build-data-centres-nikkei-reports-2026-11-26/",
-      "eventKey": "jera-hyperscaler-data-center-talks-20261126",
-      "ndxRelevant": true,
-      "importanceScore": 67,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/world/asia-pacific/japans-jera-enters-talks-with-anthropic-meta-build-data-centres-nikkei-reports-2026-11-26/"
-        }
-      ]
-    },
-    {
       "title": "PLTR | Polsko podepsalo pětiletou smlouvu za 300 mil. USD.",
       "time": "27. 11. 2026, 14:08",
       "publishedAtPrague": "27. 11. 2026, 14:08",
@@ -331,6 +312,25 @@
         {
           "label": "Reuters",
           "url": "https://www.reuters.com/business/energy/brent-trades-near-months-high-mideast-conflict-threatens-supply-2026-11-27/"
+        }
+      ]
+    },
+    {
+      "title": "TSLA | Tesla předložila německému antimonopolnímu úřadu plán převzetí EMAG, dodavatele výrobních zařízení a komponent pro humanoidní roboty. Cena transakce nezveřejněna.",
+      "time": "27. 11. 2026, 10:24",
+      "publishedAtPrague": "27. 11. 2026, 10:24",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "corporate",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/tesla-plans-acquire-german-manufacturing-systems-group-emag-2026-11-27/",
+      "eventKey": "tsla-emag-acquisition-20261127",
+      "ndxRelevant": true,
+      "importanceScore": 48,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/tesla-plans-acquire-german-manufacturing-systems-group-emag-2026-11-27/"
         }
       ]
     },
@@ -414,6 +414,24 @@
     "timePrague": "01. 12. 2026 16:00 CET"
   },
   "archive": [
+    {
+      "time": "27. 11. 2026 23:22 CET",
+      "summary": "NDX 26 726,39 b. (+2,61 %, závěr 27. 11.); MA50 breadth 47,5 %, RSI14 43,73 (27. 11.); VXN 38,53 (25. 11., starší závěr). TSLA: návrh akvizice EMAG; cena nezveřejněna.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq – NDX",
+          "url": "https://indexes.nasdaqomx.com/Index/Overview/NDX"
+        },
+        {
+          "label": "FRED – VXN",
+          "url": "https://fred.stlouisfed.org/series/VXNCLS"
+        },
+        {
+          "label": "Reuters – TSLA",
+          "url": "https://www.reuters.com/world/tesla-plans-acquire-german-manufacturing-systems-group-emag-2026-11-27/"
+        }
+      ]
+    },
     {
       "time": "27. 11. 2026 21:55 CET",
       "summary": "NDX 26 726,39 b. (+2,61 %, závěr 27. 11.). US10Y 4,94 % (+9 bb vs. 25. 11.). Reuters: incident Cloud One; migrace aplikací pozastavena. Breadth konflikt; RSI a VXN za 27. 11. nedostupné.",
@@ -6651,6 +6669,10 @@
     {
       "name": "Reuters – Cloud One",
       "url": "https://www.reuters.com/world/hackers-breach-us-air-force-flagship-cloud-one-computing-platform-2026-11-27/"
+    },
+    {
+      "name": "Reuters – TSLA / EMAG",
+      "url": "https://www.reuters.com/world/tesla-plans-acquire-german-manufacturing-systems-group-emag-2026-11-27/"
     }
   ]
 }
