@@ -1,6 +1,6 @@
 {
-  "updatedAtPrague": "27. 11. 2026 00:20 CET",
-  "marketStatus": "Cash NDX: uzavřeno; závěr 25. 11. 2026. Dne 27. 11. zkrácená seance 15:30–19:00 CET.",
+  "updatedAtPrague": "27. 11. 2026 01:01 CET",
+  "marketStatus": "Cash NDX: uzavřeno; závěr 25. 11. 2026. Dnes 15:30–19:00 CET.",
   "ndx": {
     "value": 26046.9,
     "changePercent": -0.64,
@@ -9,11 +9,53 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "→",
-    "reason": "MA50 breadth 43,6 % (2026-11-25, poslední dříve ověřená hodnota; konflikt zdroje). RSI14 38,39 (2026-11-25, závěr). VXN 38,53 (2026-11-25, závěr)."
+    "trend": "srovnání nedostupné",
+    "reason": "MA50 breadth 43,6 % (2026-11-25, poslední ověřená hodnota; konflikt zdroje). RSI14 38,39 (2026-11-25, závěr). VXN 38,53 (2026-11-25, závěr)."
   },
-  "driver": "Podle FT pozastavily banky financování projektu Aolani přibližně za 500 mil. USD. Exportní licence omezují dodávky AI serverů do čtyř zemí jihovýchodní Asie.",
+  "driver": "Fitch očekává zpomalení asijských investic do datacenter. Exportní licence zvyšují riziko zpoždění dodávek čipů a financování projektů.",
   "news": [
+    {
+      "title": "BoE | Emise dluhopisů hyperscalerů mají v roce 2026 překročit 305 mld. USD (8 % globálních investičních emisí). Složitější a vzájemně provázané financování AI zvyšuje riziko šíření kreditního stresu.",
+      "time": "26. 11. 2026, 12:28",
+      "publishedAtPrague": "26. 11. 2026, 12:28",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "ai_infrastructure",
+      "source": "The Guardian / BoE",
+      "url": "https://www.theguardian.com/business/live/2026/nov/26/nvidia-chip-shipments-south-east-asia-stock-dentists-live-updates?page=with:block-6b0811ad8f08e0351893df42",
+      "eventKey": "boe-fsr-ai-financing-20261126",
+      "ndxRelevant": true,
+      "importanceScore": 81,
+      "sourceLinks": [
+        {
+          "label": "BoE – Financial Stability Report",
+          "url": "https://www.bankofengland.co.uk/financial-stability-report/2026/november-2026"
+        },
+        {
+          "label": "The Guardian – časovaný záznam",
+          "url": "https://www.theguardian.com/business/live/2026/nov/26/nvidia-chip-shipments-south-east-asia-stock-dentists-live-updates?page=with:block-6b0811ad8f08e0351893df42"
+        }
+      ]
+    },
+    {
+      "title": "JERA | Podle Nikkei jedná s META, AMZN, MSFT, Alphabet a Anthropic o výstavbě datacenter u elektráren v oblasti Tokia.",
+      "time": "26. 11. 2026, 23:13",
+      "publishedAtPrague": "26. 11. 2026, 23:13",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "ai_infrastructure",
+      "source": "Reuters (Nikkei)",
+      "url": "https://www.reuters.com/world/asia-pacific/japans-jera-enters-talks-with-anthropic-meta-build-data-centres-nikkei-reports-2026-11-26/",
+      "eventKey": "jera-hyperscaler-data-center-talks-20261126",
+      "ndxRelevant": true,
+      "importanceScore": 67,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/asia-pacific/japans-jera-enters-talks-with-anthropic-meta-build-data-centres-nikkei-reports-2026-11-26/"
+        }
+      ]
+    },
     {
       "title": "NVDA | Podle FT pozastaveny dodávky AI serverů do čtyř zemí jihovýchodní Asie. Banky pozastavily financování projektu Aolani v objemu přibližně 500 mil. USD.",
       "time": "26. 11. 2026, 06:09",
@@ -38,25 +80,21 @@
       ]
     },
     {
-      "title": "BoE | Emise dluhopisů hyperscalerů mají v roce 2026 překročit 305 mld. USD (8 % globálních investičních emisí). Složitější a vzájemně provázané financování AI zvyšuje riziko šíření kreditního stresu.",
-      "time": "26. 11. 2026, 12:28",
-      "publishedAtPrague": "26. 11. 2026, 12:28",
+      "title": "AI infrastruktura | Fitch očekává zpomalení investic do datacenter v Asii po zpřísnění exportních licencí USA od 19. 11. Nejvyšší riziko nesou zadlužení poskytovatelé GPU; nejisté dodávky čipů mohou zpozdit financování a tržby.",
+      "time": "26. 11. 2026, 12:18",
+      "publishedAtPrague": "26. 11. 2026, 12:18",
       "publicationTimeVerified": true,
       "kind": "continuing",
       "category": "ai_infrastructure",
-      "source": "The Guardian / BoE",
-      "url": "https://www.theguardian.com/business/live/2026/nov/26/nvidia-chip-shipments-south-east-asia-stock-dentists-live-updates?page=with:block-6b0811ad8f08e0351893df42",
-      "eventKey": "boe-fsr-ai-financing-20261126",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/asia-pacific/us-chip-curbs-will-slow-asia-data-center-investment-fitch-says-2026-11-26/",
+      "eventKey": "fitch-asian-data-center-credit-chip-curbs-20261126",
       "ndxRelevant": true,
-      "importanceScore": 81,
+      "importanceScore": 75,
       "sourceLinks": [
         {
-          "label": "BoE – Financial Stability Report",
-          "url": "https://www.bankofengland.co.uk/financial-stability-report/2026/november-2026"
-        },
-        {
-          "label": "The Guardian – časovaný záznam",
-          "url": "https://www.theguardian.com/business/live/2026/nov/26/nvidia-chip-shipments-south-east-asia-stock-dentists-live-updates?page=with:block-6b0811ad8f08e0351893df42"
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/asia-pacific/us-chip-curbs-will-slow-asia-data-center-investment-fitch-says-2026-11-26/"
         }
       ]
     },
@@ -99,25 +137,6 @@
       ]
     },
     {
-      "title": "AI infrastruktura | Fitch očekává zpomalení investic do datacenter v Asii po zpřísnění exportních licencí USA od 19. 11. Nejvyšší riziko nesou zadlužení poskytovatelé GPU; nejisté dodávky čipů mohou zpozdit financování a tržby.",
-      "time": "26. 11. 2026, 12:18",
-      "publishedAtPrague": "26. 11. 2026, 12:18",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_infrastructure",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/asia-pacific/us-chip-curbs-will-slow-asia-data-center-investment-fitch-says-2026-11-26/",
-      "eventKey": "fitch-asian-data-center-credit-chip-curbs-20261126",
-      "ndxRelevant": true,
-      "importanceScore": 75,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/world/asia-pacific/us-chip-curbs-will-slow-asia-data-center-investment-fitch-says-2026-11-26/"
-        }
-      ]
-    },
-    {
       "title": "ASML | Nizozemsko, EK, Německo a Francie usilují o zablokování návrhu MATCH Act v USA. ASML očekává přibližně 20 % letošních tržeb z Číny; návrh by zpřísnil export výrobního zařízení.",
       "time": "26. 11. 2026, 12:32",
       "publishedAtPrague": "26. 11. 2026, 12:32",
@@ -156,21 +175,21 @@
       "importanceScore": 66
     },
     {
-      "title": "Tchaj-wan | vláda očekává zachování dohodnutého amerického cla 15 %. Polovodiče mají přednostní zacházení dle memoranda; samostatná cla podle Section 232 dosud neoznámena.",
-      "time": "26. 11. 2026, 00:31",
-      "publishedAtPrague": "26. 11. 2026, 00:31",
+      "title": "META | Nizozemské organizace žádají soud o zastavení prodeje AI brýlí kvůli ochraně soukromí. Požadované penále až 100 mil. EUR na žalovaného. Rozhodnutí nejpozději 24. 12.",
+      "time": "26. 11. 2026, 12:44",
+      "publishedAtPrague": "26. 11. 2026, 12:44",
       "publicationTimeVerified": true,
       "kind": "continuing",
-      "category": "trade",
+      "category": "ai_regulation",
       "source": "Reuters",
-      "url": "https://www.reuters.com/world/asia-pacific/taiwan-says-it-is-confident-keeping-previously-agreed-tariffs-with-us-2026-11-25/",
-      "eventKey": "taiwan-us-tariff-response-20261126",
+      "url": "https://www.reuters.com/legal/government/dutch-groups-ask-court-halt-meta-smart-glasses-sales-over-privacy-concerns-2026-11-26/",
+      "eventKey": "meta-dutch-smart-glasses-lawsuit-20261126",
       "ndxRelevant": true,
-      "importanceScore": 65,
+      "importanceScore": 55,
       "sourceLinks": [
         {
           "label": "Reuters",
-          "url": "https://www.reuters.com/world/asia-pacific/taiwan-says-it-is-confident-keeping-previously-agreed-tariffs-with-us-2026-11-25/"
+          "url": "https://www.reuters.com/legal/government/dutch-groups-ask-court-halt-meta-smart-glasses-sales-over-privacy-concerns-2026-11-26/"
         }
       ]
     },
@@ -190,25 +209,6 @@
         {
           "label": "Reuters",
           "url": "https://www.reuters.com/business/finance/european-stocks-rally-tech-banks-rebound-tariff-fears-ease-2026-11-26/"
-        }
-      ]
-    },
-    {
-      "title": "META | Nizozemské organizace žádají soud o zastavení prodeje AI brýlí kvůli ochraně soukromí. Požadované penále až 100 mil. EUR na žalovaného. Rozhodnutí nejpozději 24. 12.",
-      "time": "26. 11. 2026, 12:44",
-      "publishedAtPrague": "26. 11. 2026, 12:44",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_regulation",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/legal/government/dutch-groups-ask-court-halt-meta-smart-glasses-sales-over-privacy-concerns-2026-11-26/",
-      "eventKey": "meta-dutch-smart-glasses-lawsuit-20261126",
-      "ndxRelevant": true,
-      "importanceScore": 55,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/legal/government/dutch-groups-ask-court-halt-meta-smart-glasses-sales-over-privacy-concerns-2026-11-26/"
         }
       ]
     },
@@ -251,25 +251,6 @@
       ]
     },
     {
-      "title": "Jižní Korea | BOK zvýšila sazbu o 25 bb na 3,25 %. Výhled HDP 2026 zvýšila z 3,3 na 3,9 %, 2027 z 2,9 na 4,1 %; hlavním faktorem je růst poptávky po polovodičích.",
-      "time": "26. 11. 2026, 02:05",
-      "publishedAtPrague": "26. 11. 2026, 02:05",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "macro",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/markets/asia/south-koreas-central-bank-resumes-tightening-with-quarter-point-hike-2026-11-26/",
-      "eventKey": "bok-rate-hike-chip-export-growth-20261126",
-      "ndxRelevant": true,
-      "importanceScore": 52,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/markets/asia/south-koreas-central-bank-resumes-tightening-with-quarter-point-hike-2026-11-26/"
-        }
-      ]
-    },
-    {
       "title": "NVDA / Kioxia | Prototyp GB200 NVL72 se 144 SSD XD8 dosáhl 1,1 PB hrubé kapacity. SCADA a Storage-Next umožňují zpracování až 2 bil. vektorů; ověření technické proveditelnosti.",
       "time": "26. 11. 2026, 05:19",
       "publishedAtPrague": "26. 11. 2026, 05:19",
@@ -289,6 +270,25 @@
         {
           "label": "Business Wire / Yahoo Finance",
           "url": "https://finance.yahoo.com/technology/ai/articles/kioxia-nvidia-collaborate-expand-effective-041900475.html"
+        }
+      ]
+    },
+    {
+      "title": "Jižní Korea | BOK zvýšila sazbu o 25 bb na 3,25 %. Výhled HDP 2026 zvýšila z 3,3 na 3,9 %, 2027 z 2,9 na 4,1 %; hlavním faktorem je růst poptávky po polovodičích.",
+      "time": "26. 11. 2026, 02:05",
+      "publishedAtPrague": "26. 11. 2026, 02:05",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "macro",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/markets/asia/south-koreas-central-bank-resumes-tightening-with-quarter-point-hike-2026-11-26/",
+      "eventKey": "bok-rate-hike-chip-export-growth-20261126",
+      "ndxRelevant": true,
+      "importanceScore": 52,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/markets/asia/south-koreas-central-bank-resumes-tightening-with-quarter-point-hike-2026-11-26/"
         }
       ]
     },
@@ -351,6 +351,24 @@
     "timePrague": "27. 11. 2026 15:30 CET"
   },
   "archive": [
+    {
+      "time": "27. 11. 2026 01:01 CET",
+      "summary": "NDX 26 046,90 b. (−0,64 %, závěr 25. 11.). Bez zásadních novinek. NQZ26 po sváteční přestávce 26 236,00 b. (+0,52 %, 00:48 CET). Breadth: konflikt 44/101 a 45/101 trvá.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq NDX",
+          "url": "https://indexes.nasdaqomx.com/Index/History/NDX"
+        },
+        {
+          "label": "WSJ NQZ26",
+          "url": "https://www.wsj.com/market-data/quotes/futures/NQZ26"
+        },
+        {
+          "label": "StockCurry",
+          "url": "https://stockcurry.com/index_timeline.php?index=Nasdaq100&view=percent"
+        }
+      ]
+    },
     {
       "time": "27. 11. 2026 00:20 CET",
       "summary": "NDX 26 046,90 b. (−0,64 %, závěr 25. 11.). Bez nové kvalifikované zprávy při kontrole. Breadth: konflikt 44/101 a 45/101 trvá. NQ=F: čerstvá kotace po sváteční přestávce nedoložena.",
@@ -6066,6 +6084,10 @@
     {
       "name": "Financial Times – export AI serverů",
       "url": "https://www.ft.com/content/7838a715-07d4-4605-aa60-21f5af2b2370"
+    },
+    {
+      "name": "Reuters – JERA",
+      "url": "https://www.reuters.com/world/asia-pacific/japans-jera-enters-talks-with-anthropic-meta-build-data-centres-nikkei-reports-2026-11-26/"
     }
   ]
 }
