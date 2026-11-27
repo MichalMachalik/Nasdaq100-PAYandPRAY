@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "27. 11. 2026 09:05 CET",
+  "updatedAtPrague": "27. 11. 2026 09:56 CET",
   "marketStatus": "Cash NDX: uzavřeno; závěr 25. 11. 2026. Dnes 15:30–19:00 CET.",
   "ndx": {
     "value": 26046.9,
@@ -12,7 +12,7 @@
     "trend": "srovnání nedostupné",
     "reason": "MA50 breadth 43,6 % (2026-11-25, poslední ověřená hodnota; konflikt zdroje). RSI14 38,39 (2026-11-25, závěr). VXN 38,53 (2026-11-25, závěr)."
   },
-  "driver": "Asijské technologie korigují listopadové ztráty. Trh nadále očekává prosincové zvýšení sazeb Fedu; exportní omezení AI čipů a náklady financování zůstávají rizikem.",
+  "driver": "Oživení čipového sektoru; evropské technologie +2,3 %. Trh očekává prosincové zvýšení sazeb Fedu; rizika financování AI a exportních licencí přetrvávají.",
   "news": [
     {
       "title": "AI čipy | Reuters: odhad listopadového exportu Jižní Koreje +96,8 % y/y vs. říjen +93,9 %. Export čipů za prvních 20 dní +294,4 % y/y; poptávka po pamětech pro AI.",
@@ -80,6 +80,25 @@
       ]
     },
     {
+      "title": "Evropské technologie +2,3 %; ASML, ASM International a Infineon +3,8 až +4,5 %. STOXX 600 +0,9 % (09:12 CET).",
+      "time": "27. 11. 2026, 09:25",
+      "publishedAtPrague": "27. 11. 2026, 09:25",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "semiconductors",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/markets/europe/european-stocks-extend-recovery-tech-miners-advance-2026-11-27/",
+      "eventKey": "europe-tech-semiconductor-recovery-20261127",
+      "ndxRelevant": true,
+      "importanceScore": 58,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/markets/europe/european-stocks-extend-recovery-tech-miners-advance-2026-11-27/"
+        }
+      ]
+    },
+    {
       "title": "JERA | Podle Nikkei jedná s META, AMZN, MSFT, Alphabet a Anthropic o výstavbě datacenter u elektráren v oblasti Tokia.",
       "time": "26. 11. 2026, 23:13",
       "publishedAtPrague": "26. 11. 2026, 23:13",
@@ -137,25 +156,6 @@
         {
           "label": "Reuters – americké futures",
           "url": "https://www.reuters.com/business/wall-st-futures-surge-investors-return-holiday-2026-11-27/"
-        }
-      ]
-    },
-    {
-      "title": "AI financování | SoftBank: 5Y CDS 534,6 bb, růst přes 20 bb na čtyřleté maximum. Expozice vůči OpenAI a riziko návratnosti AI infrastruktury.",
-      "time": "26. 11. 2026, 09:12",
-      "publishedAtPrague": "26. 11. 2026, 09:12",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_infrastructure",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/media-telecom/investors-see-rising-risk-softbank-default-pressure-grows-ai-bets-2026-11-26/",
-      "eventKey": "softbank-ai-cds-20261126",
-      "ndxRelevant": true,
-      "importanceScore": 76,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/business/media-telecom/investors-see-rising-risk-softbank-default-pressure-grows-ai-bets-2026-11-26/"
         }
       ]
     },
@@ -255,25 +255,6 @@
       ]
     },
     {
-      "title": "Evropa | STOXX Europe 600 +1,4 % v 09:15 CET, technologický sektor přibližně +2 %, Infineon a Soitec přibližně +4 %. Reuters: očekávání stropu amerických cel na EU 15 %.",
-      "time": "26. 11. 2026, 09:32",
-      "publishedAtPrague": "26. 11. 2026, 09:32",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "market",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/finance/european-stocks-rally-tech-banks-rebound-tariff-fears-ease-2026-11-26/",
-      "eventKey": "europe-tech-rebound-tariff-expectations-20261126",
-      "ndxRelevant": true,
-      "importanceScore": 58,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/business/finance/european-stocks-rally-tech-banks-rebound-tariff-fears-ease-2026-11-26/"
-        }
-      ]
-    },
-    {
       "title": "NVDA | Weimob plánuje nasadit přibližně 5 000 exportně kompatibilních GPU RTX PRO 5500 pro multimodální AI.",
       "publishedAtPrague": "26. 11. 2026, 12:00",
       "eventKey": "weimob-nvidia-gpu-cluster-20261126",
@@ -332,6 +313,24 @@
     "timePrague": "27. 11. 2026 15:30 CET"
   },
   "archive": [
+    {
+      "time": "27. 11. 2026 09:56 CET",
+      "summary": "NDX 26 046,90 b. (25. 11., −0,64 %). Evropské technologie +2,3 %; čipové akcie +3,8 až +4,5 %. US10Y 4,85 % (25. 11.). Breadth: konflikt stejné seance, původní hodnota zachována.",
+      "sourceLinks": [
+        {
+          "label": "Investing.com NDX",
+          "url": "https://www.investing.com/indices/nq-100-historical-data"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/markets/europe/european-stocks-extend-recovery-tech-miners-advance-2026-11-27/"
+        },
+        {
+          "label": "US Treasury",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value_month=202611"
+        }
+      ]
+    },
     {
       "time": "27. 11. 2026 09:05 CET",
       "summary": "NDX 26 046,90 b. (25. 11., −0,64 %). Bez nové zásadní události; Reuters potvrzuje růst amerických futures a 99% tržní pravděpodobnost prosincového zvýšení sazeb. US10Y 4,85 % (25. 11.).",
@@ -6263,6 +6262,10 @@
     {
       "name": "Reuters – americké futures",
       "url": "https://www.reuters.com/business/wall-st-futures-surge-investors-return-holiday-2026-11-27/"
+    },
+    {
+      "name": "Reuters – evropské technologie",
+      "url": "https://www.reuters.com/markets/europe/european-stocks-extend-recovery-tech-miners-advance-2026-11-27/"
     }
   ]
 }
