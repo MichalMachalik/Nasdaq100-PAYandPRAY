@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "27. 11. 2026 04:04 CET",
+  "updatedAtPrague": "27. 11. 2026 05:05 CET",
   "marketStatus": "Cash NDX: uzavřeno; závěr 25. 11. 2026. Dnes 15:30–19:00 CET.",
   "ndx": {
     "value": 26046.9,
@@ -12,7 +12,7 @@
     "trend": "srovnání nedostupné",
     "reason": "MA50 breadth 43,6 % (2026-11-25, poslední ověřená hodnota; konflikt zdroje). RSI14 38,39 (2026-11-25, závěr). VXN 38,53 (2026-11-25, závěr)."
   },
-  "driver": "Tržní odhad zvýšení FFR o 25 bb v prosinci: 99 % podle Reuters. Vyšší diskontní sazby omezují ocenění růstových akcií.",
+  "driver": "Tržní odhad prosincového zvýšení FFR o 25 bb: 99 % (Reuters 27. 11.). Vyšší diskontní sazby zatěžují ocenění růstových akcií.",
   "news": [
     {
       "title": "FX / Fed | Reuters: pravděpodobnost prosincového zvýšení FFR o 25 bb dosahuje 99 %. DXY 103,8, měsíčně +1,8 % (27. 11., report 03:01).",
@@ -202,7 +202,7 @@
       "time": "26. 11. 2026, 16:55",
       "publishedAtPrague": "26. 11. 2026, 16:55",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "ai_regulation",
       "source": "Reuters",
       "url": "https://www.reuters.com/technology/eu-may-vote-authorising-tesla-assisted-driving-system-dec-15-meeting-2026-11-26/",
@@ -366,7 +366,7 @@
       "impact": "negativní; závěr 25. 11."
     }
   ],
-  "macro": "US10Y | 27. 11. 03:01 (report): 4,8918 % | 25. 11.: 4,85 % | +4,2 bb",
+  "macro": "US10Y | 25. 11.: 4,85 % | 24. 11.: 4,91 % | −6 bb",
   "regulation": null,
   "technical": {
     "support": null,
@@ -393,6 +393,24 @@
     "timePrague": "27. 11. 2026 15:30 CET"
   },
   "archive": [
+    {
+      "time": "27. 11. 2026 05:05 CET",
+      "summary": "NDX 26 046,90 b. (25. 11., −0,64 %). Bez zásadních novinek. Fed: tržní odhad prosincového zvýšení o 25 bb 99 %. US10Y 4,85 % (25. 11.). Breadth: konflikt 44/101 vs. 45/101.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq NDX",
+          "url": "https://indexes.nasdaqomx.com/Index/Overview/NDX"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-27/"
+        },
+        {
+          "label": "US Treasury",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value_month=202611"
+        }
+      ]
+    },
     {
       "time": "27. 11. 2026 04:04 CET",
       "summary": "NDX 26 046,90 b. (25. 11., −0,64 %). NQZ26 26 645,75 b. (+2,09 %, 03:41). TSLA: možné hlasování EU o FSD 15. 12. Breadth: konflikt 44/101 vs. 45/101.",
