@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "27. 11. 2026 01:01 CET",
+  "updatedAtPrague": "27. 11. 2026 01:58 CET",
   "marketStatus": "Cash NDX: uzavřeno; závěr 25. 11. 2026. Dnes 15:30–19:00 CET.",
   "ndx": {
     "value": 26046.9,
@@ -156,6 +156,25 @@
       ]
     },
     {
+      "title": "Black Friday | NRF odhaduje růst svátečních maloobchodních tržeb o 4,2 % y/y; inflace 3,8 %. UBS upozorňuje na riziko slabších výdajů za elektroniku po korekci akcií.",
+      "time": "27. 11. 2026, 01:03",
+      "publishedAtPrague": "27. 11. 2026, 01:03",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "macro",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/retail-consumer/cautious-consumers-gear-up-black-friday-inflation-woes-bite-2026-11-27/",
+      "eventKey": "us-holiday-retail-demand-black-friday-20261127",
+      "ndxRelevant": true,
+      "importanceScore": 52,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/retail-consumer/cautious-consumers-gear-up-black-friday-inflation-woes-bite-2026-11-27/"
+        }
+      ]
+    },
+    {
       "title": "Asie | Nikkei +1,6 %, KOSPI +1,9 %. Futures implikují 98% pravděpodobnost zvýšení sazeb Fedu o 25 bb v prosinci.",
       "time": "26. 11. 2026, 02:35",
       "publishedAtPrague": "26. 11. 2026, 02:35",
@@ -251,6 +270,25 @@
       ]
     },
     {
+      "title": "Jižní Korea | BOK zvýšila sazbu o 25 bb na 3,25 %. Výhled HDP 2026 zvýšila z 3,3 na 3,9 %, 2027 z 2,9 na 4,1 %; hlavním faktorem je růst poptávky po polovodičích.",
+      "time": "26. 11. 2026, 02:05",
+      "publishedAtPrague": "26. 11. 2026, 02:05",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "macro",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/markets/asia/south-koreas-central-bank-resumes-tightening-with-quarter-point-hike-2026-11-26/",
+      "eventKey": "bok-rate-hike-chip-export-growth-20261126",
+      "ndxRelevant": true,
+      "importanceScore": 52,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/markets/asia/south-koreas-central-bank-resumes-tightening-with-quarter-point-hike-2026-11-26/"
+        }
+      ]
+    },
+    {
       "title": "NVDA / Kioxia | Prototyp GB200 NVL72 se 144 SSD XD8 dosáhl 1,1 PB hrubé kapacity. SCADA a Storage-Next umožňují zpracování až 2 bil. vektorů; ověření technické proveditelnosti.",
       "time": "26. 11. 2026, 05:19",
       "publishedAtPrague": "26. 11. 2026, 05:19",
@@ -270,25 +308,6 @@
         {
           "label": "Business Wire / Yahoo Finance",
           "url": "https://finance.yahoo.com/technology/ai/articles/kioxia-nvidia-collaborate-expand-effective-041900475.html"
-        }
-      ]
-    },
-    {
-      "title": "Jižní Korea | BOK zvýšila sazbu o 25 bb na 3,25 %. Výhled HDP 2026 zvýšila z 3,3 na 3,9 %, 2027 z 2,9 na 4,1 %; hlavním faktorem je růst poptávky po polovodičích.",
-      "time": "26. 11. 2026, 02:05",
-      "publishedAtPrague": "26. 11. 2026, 02:05",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "macro",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/markets/asia/south-koreas-central-bank-resumes-tightening-with-quarter-point-hike-2026-11-26/",
-      "eventKey": "bok-rate-hike-chip-export-growth-20261126",
-      "ndxRelevant": true,
-      "importanceScore": 52,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/markets/asia/south-koreas-central-bank-resumes-tightening-with-quarter-point-hike-2026-11-26/"
         }
       ]
     },
@@ -351,6 +370,24 @@
     "timePrague": "27. 11. 2026 15:30 CET"
   },
   "archive": [
+    {
+      "time": "27. 11. 2026 01:58 CET",
+      "summary": "NDX 26 046,90 b. (−0,64 %, závěr 25. 11.). NRF odhaduje sváteční maloobchodní tržby +4,2 % y/y. MA50 breadth: konflikt 44/101 vs. 45/101 přetrvává.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq NDX",
+          "url": "https://indexes.nasdaq.com/index/Overview/NDX"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/retail-consumer/cautious-consumers-gear-up-black-friday-inflation-woes-bite-2026-11-27/"
+        },
+        {
+          "label": "StockCurry",
+          "url": "https://stockcurry.com/index_timeline.php?index=Nasdaq100&view=percent"
+        }
+      ]
+    },
     {
       "time": "27. 11. 2026 01:01 CET",
       "summary": "NDX 26 046,90 b. (−0,64 %, závěr 25. 11.). Bez zásadních novinek. NQZ26 po sváteční přestávce 26 236,00 b. (+0,52 %, 00:48 CET). Breadth: konflikt 44/101 a 45/101 trvá.",
@@ -6088,6 +6125,10 @@
     {
       "name": "Reuters – JERA",
       "url": "https://www.reuters.com/world/asia-pacific/japans-jera-enters-talks-with-anthropic-meta-build-data-centres-nikkei-reports-2026-11-26/"
+    },
+    {
+      "name": "Reuters – Black Friday",
+      "url": "https://www.reuters.com/business/retail-consumer/cautious-consumers-gear-up-black-friday-inflation-woes-bite-2026-11-27/"
     }
   ]
 }
