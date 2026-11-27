@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "27. 11. 2026 07:05 CET",
+  "updatedAtPrague": "27. 11. 2026 08:04 CET",
   "marketStatus": "Cash NDX: uzavřeno; závěr 25. 11. 2026. Dnes 15:30–19:00 CET.",
   "ndx": {
     "value": 26046.9,
@@ -12,7 +12,7 @@
     "trend": "srovnání nedostupné",
     "reason": "MA50 breadth 43,6 % (2026-11-25, poslední ověřená hodnota; konflikt zdroje). RSI14 38,39 (2026-11-25, závěr). VXN 38,53 (2026-11-25, závěr)."
   },
-  "driver": "Asijské akcie korigují listopadové ztráty. Exportní omezení AI čipů a vyšší náklady financování zůstávají rizikem pro ocenění růstových akcií.",
+  "driver": "Asijské akcie korigují listopadové ztráty. Exportní omezení AI čipů a náklady financování zůstávají rizikem pro růstové akcie.",
   "news": [
     {
       "title": "BoE | Emise dluhopisů hyperscalerů mají v roce 2026 překročit 305 mld. USD (8 % globálních investičních emisí). Složitější a vzájemně provázané financování AI zvyšuje riziko šíření kreditního stresu.",
@@ -217,7 +217,7 @@
       "time": "27. 11. 2026, 06:33",
       "publishedAtPrague": "27. 11. 2026, 06:33",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "market",
       "source": "Reuters",
       "url": "https://www.reuters.com/markets/europe/global-markets-view-europe-2026-11-27/",
@@ -347,6 +347,24 @@
     "timePrague": "27. 11. 2026 15:30 CET"
   },
   "archive": [
+    {
+      "time": "27. 11. 2026 08:04 CET",
+      "summary": "NDX 26 046,90 b. (25. 11., −0,64 %). Bez zásadních novinek od minulé kontroly. Asijské technologie korigují ztráty; US10Y 4,85 % (25. 11.).",
+      "sourceLinks": [
+        {
+          "label": "YCharts NDX",
+          "url": "https://ycharts.com/indices/%5ENDX/level"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/markets/europe/global-markets-view-europe-2026-11-27/"
+        },
+        {
+          "label": "US Treasury",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+        }
+      ]
+    },
     {
       "time": "27. 11. 2026 07:05 CET",
       "summary": "NDX 26 046,90 b. (25. 11., −0,64 %). Nikkei +1,9 %, jihokorejské akcie +3,9 % (Reuters 06:33). US10Y 4,85 % (25. 11.).",
