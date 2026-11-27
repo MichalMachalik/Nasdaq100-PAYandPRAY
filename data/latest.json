@@ -1,6 +1,6 @@
 {
-  "updatedAtPrague": "27. 11. 2026 23:29 CET",
-  "marketStatus": "Cash NDX: uzavřeno, závěr 27. 11. 2026 v 19:00 CET.",
+  "updatedAtPrague": "28. 11. 2026 00:04 CET",
+  "marketStatus": "Cash NDX: víkend, uzavřeno. Poslední závěr 27. 11. 2026 v 19:00 CET.",
   "ndx": {
     "value": 26726.39,
     "changePercent": 2.61,
@@ -12,7 +12,7 @@
     "trend": "→ beze změny od poslední kontroly závěru",
     "reason": "MA50 breadth 47,5 % (2026-11-27). RSI14 43,73 (2026-11-27). VXN 38,53 (2026-11-25; starší závěr). US10Y 4,94 % (27. 11.; +9 bb)."
   },
-  "driver": "SOX +4,7 %; MU +7,6 %, NVDA +0,8 % (27. 11., závěr). Reuters: návrat poptávky po AI akciích po předchozích výprodejích.",
+  "driver": "SOX +4,7 %; MU +7,6 %, NVDA +0,8 % (27. 11., závěr). Návrat poptávky po AI akciích po předchozích výprodejích.",
   "news": [
     {
       "title": "NVDA | Bloomberg: dokumenty čínských úřadů dokládají Blackwell GB300 v datacentru v Šanghaji. Zařízení sloužilo jako zástava úvěru 96 mil. CNY; exportní riziko.",
@@ -194,25 +194,6 @@
       ]
     },
     {
-      "title": "Evropské technologie +2,3 %; ASML, ASM International a Infineon +3,8 až +4,5 %. STOXX 600 +0,9 % (09:12 CET).",
-      "time": "27. 11. 2026, 09:25",
-      "publishedAtPrague": "27. 11. 2026, 09:25",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "semiconductors",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/markets/europe/european-stocks-extend-recovery-tech-miners-advance-2026-11-27/",
-      "eventKey": "europe-tech-semiconductor-recovery-20261127",
-      "ndxRelevant": true,
-      "importanceScore": 58,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/markets/europe/european-stocks-extend-recovery-tech-miners-advance-2026-11-27/"
-        }
-      ]
-    },
-    {
       "title": "Čína | Vláda chce posílit stabilizační roli Central Huijin. CSI300 +4,2 %, čipový index +19 %. Pozitivní sektorový impuls pro AI akcie.",
       "time": "27. 11. 2026, 07:32",
       "publishedAtPrague": "27. 11. 2026, 07:32",
@@ -251,6 +232,25 @@
         {
           "label": "Reuters",
           "url": "https://www.reuters.com/technology/poland-signs-contract-with-palantir-worth-300-mln-over-5-years-2026-11-27/"
+        }
+      ]
+    },
+    {
+      "title": "Evropské technologie +2,3 %; ASML, ASM International a Infineon +3,8 až +4,5 %. STOXX 600 +0,9 % (09:12 CET).",
+      "time": "27. 11. 2026, 09:25",
+      "publishedAtPrague": "27. 11. 2026, 09:25",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "semiconductors",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/markets/europe/european-stocks-extend-recovery-tech-miners-advance-2026-11-27/",
+      "eventKey": "europe-tech-semiconductor-recovery-20261127",
+      "ndxRelevant": true,
+      "importanceScore": 58,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/markets/europe/european-stocks-extend-recovery-tech-miners-advance-2026-11-27/"
         }
       ]
     },
@@ -320,7 +320,7 @@
       "time": "27. 11. 2026, 10:24",
       "publishedAtPrague": "27. 11. 2026, 10:24",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "corporate",
       "source": "Reuters",
       "url": "https://www.reuters.com/world/tesla-plans-acquire-german-manufacturing-systems-group-emag-2026-11-27/",
@@ -339,7 +339,7 @@
       "time": "27. 11. 2026, 12:01",
       "publishedAtPrague": "27. 11. 2026, 12:01",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "company",
       "source": "Reuters",
       "url": "https://www.reuters.com/world/hackers-breach-us-air-force-flagship-cloud-one-computing-platform-2026-11-27/",
@@ -414,6 +414,24 @@
     "timePrague": "01. 12. 2026 16:00 CET"
   },
   "archive": [
+    {
+      "time": "28. 11. 2026 00:04 CET",
+      "summary": "NDX 26 726,39 b. (+2,61 %, závěr 27. 11.); US10Y 4,94 % (+9 bb); VXN 38,53 (25. 11., starší závěr). Bez nových kvalifikovaných zpráv. Ekonomika 6/6; nové denní potvrzení VXN nedostupné.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq – NDX",
+          "url": "https://indexes.nasdaqomx.com/Index/Overview/NDX"
+        },
+        {
+          "label": "FRED – VXN",
+          "url": "https://fred.stlouisfed.org/series/VXNCLS"
+        },
+        {
+          "label": "US Treasury",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+        }
+      ]
+    },
     {
       "time": "27. 11. 2026 23:29 CET",
       "summary": "NDX 26 726,39 b. (+2,61 %, závěr 27. 11.); US10Y 4,94 % (+9 bb); VXN 38,53 (25. 11., starší závěr). Bez nových kvalifikovaných zpráv. Sedm updaterů dokončeno; kontrola VXN bez novějšího závěru.",
