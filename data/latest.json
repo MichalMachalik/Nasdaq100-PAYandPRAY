@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "27. 11. 2026 19:58 CET",
+  "updatedAtPrague": "27. 11. 2026 20:59 CET",
   "marketStatus": "Cash NDX: uzavřeno, závěr 27. 11. 2026 v 19:00 CET.",
   "ndx": {
     "value": 26726.39,
@@ -9,8 +9,8 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "↗ zlepšení ceny a čipového sektoru; denní breadth dosud nedostupný",
-    "reason": "MA50 breadth 43,6 % (2026-11-25; starší závěr, konflikt zdroje). RSI14 38,39 (2026-11-25; starší závěr). VXN 38,53 (2026-11-25; starší závěr). SOX +4,7 % (27. 11.)."
+    "trend": "→ beze změny od poslední kontroly závěru; nová denní breadth nedostupná",
+    "reason": "MA50 breadth 43,6 % (2026-11-25; starší závěr; konflikt zdroje). RSI14 38,39 (2026-11-25; starší závěr). VXN 38,53 (2026-11-25; starší závěr). US10Y 4,94 % (27. 11.; +9 bb)."
   },
   "driver": "SOX +4,7 %; MU +7,6 %, NVDA +0,8 % (27. 11., závěr). Reuters: návrat poptávky po AI akciích po předchozích výprodejích.",
   "news": [
@@ -19,7 +19,7 @@
       "time": "27. 11. 2026, 19:28",
       "publishedAtPrague": "27. 11. 2026, 19:28",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "regulation",
       "source": "Reuters (FT)",
       "url": "https://www.reuters.com/technology/openai-countersues-apple-stealing-trade-secrets-ft-reports-2026-11-27/",
@@ -259,7 +259,7 @@
       "time": "27. 11. 2026, 14:08",
       "publishedAtPrague": "27. 11. 2026, 14:08",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "company",
       "source": "Reuters",
       "url": "https://www.reuters.com/technology/poland-signs-contract-with-palantir-worth-300-mln-over-5-years-2026-11-27/",
@@ -368,7 +368,7 @@
       "sourceUrl": "https://www.reuters.com/business/wall-st-futures-surge-investors-return-holiday-2026-11-27/"
     }
   ],
-  "macro": "US10Y | 25. 11.: 4,85 % | 24. 11.: 4,91 % | −6 bb",
+  "macro": "US10Y | 27. 11.: 4,94 % | 25. 11.: 4,85 % | +9 bb",
   "regulation": null,
   "technical": {
     "support": null,
@@ -376,7 +376,7 @@
   },
   "forecast": {
     "athReturnPercent": 16,
-    "athReason": "Potřebný růst 17,34 %. Odhad beze změny; FFR a export AI čipů zůstávají rizikem.",
+    "athReason": "Potřebný růst 17,34 %. Odhad beze změny; FFR, US10Y a export AI čipů zůstávají rizikem.",
     "downside": "−8 až −14 %",
     "downsideReason": "Modelový 25. percentil koncové ceny; VXN 38,53 (2026-11-25; starší závěr).",
     "downsideModel": {
@@ -395,6 +395,24 @@
     "timePrague": "01. 12. 2026 16:00 CET"
   },
   "archive": [
+    {
+      "time": "27. 11. 2026 20:59 CET",
+      "summary": "NDX 26 726,39 b. (+2,61 %, závěr 27. 11.); US10Y 4,94 % (+9 bb vs. 25. 11.). VXN 38,53 (25. 11.). Bez nových kvalifikovaných zpráv. Breadth konflikt; denní RSI a VXN za 27. 11. nedostupné.",
+      "sourceLinks": [
+        {
+          "label": "Yahoo Finance – NDX",
+          "url": "https://finance.yahoo.com/quote/%5ENDX/history/"
+        },
+        {
+          "label": "US Treasury",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+        },
+        {
+          "label": "FRED – VXN",
+          "url": "https://fred.stlouisfed.org/series/VXNCLS"
+        }
+      ]
+    },
     {
       "time": "27. 11. 2026 19:58 CET",
       "summary": "NDX 26 726,39 b. (+2,61 %, závěr 27. 11.). SOX +4,7 %, MU +7,6 %, NVDA +0,8 %. OpenAI podle FT podala protižalobu proti AAPL. Breadth, RSI a VXN: závěr 25. 11.",
