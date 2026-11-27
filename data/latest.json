@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "27. 11. 2026 13:03 CET",
+  "updatedAtPrague": "27. 11. 2026 13:58 CET",
   "marketStatus": "Cash NDX: uzavřeno; závěr 25. 11. 2026. Dnes 15:30–19:00 CET.",
   "ndx": {
     "value": 26046.9,
@@ -12,7 +12,7 @@
     "trend": "srovnání nedostupné",
     "reason": "MA50 breadth 43,6 % (2026-11-25; konflikt zdroje). RSI14 38,39 (2026-11-25, závěr). VXN 38,53 (2026-11-25, závěr)."
   },
-  "driver": "NFP za listopad: kons. +90 tis. vs. říjen +165 tis.; nezaměstnanost kons. 4,1 %. Riziko dalšího zpřísnění FFR při silnější zaměstnanosti.",
+  "driver": "Peking posílí stabilizační roli Central Huijin. Čínský čipový index +19 %; americké AI akcie v premarketu rostou. Riziko vyšších FFR přetrvává.",
   "news": [
     {
       "title": "Fondy | LSEG Lipper: týden do 25. 11. globální akciové fondy −22,73 mld. USD, americké −30,57 mld. USD, technologické −7,57 mld. USD. Globální odliv nejvyšší za 14 měsíců.",
@@ -38,7 +38,7 @@
       "time": "27. 11. 2026, 12:02",
       "publishedAtPrague": "27. 11. 2026, 12:02",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "macro",
       "source": "Reuters / LSEG",
       "url": "https://www.reuters.com/business/wall-st-week-ahead-sliding-stock-market-confronts-jobs-data-rate-view-next-tests-2026-11-27/",
@@ -99,6 +99,29 @@
       ]
     },
     {
+      "title": "Čína | Vláda chce posílit stabilizační roli Central Huijin. CSI300 +4,2 %, čipový index +19 %. Pozitivní sektorový impuls pro AI akcie.",
+      "time": "27. 11. 2026, 07:32",
+      "publishedAtPrague": "27. 11. 2026, 07:32",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "market",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/china-strengthen-defense-against-imported-risks-capital-markets-2026-11-27/",
+      "eventKey": "china-state-market-support-20261127",
+      "ndxRelevant": true,
+      "importanceScore": 60,
+      "sourceLinks": [
+        {
+          "label": "Reuters – rozhodnutí",
+          "url": "https://www.reuters.com/world/china-strengthen-defense-against-imported-risks-capital-markets-2026-11-27/"
+        },
+        {
+          "label": "Reuters – reakce trhu",
+          "url": "https://www.reuters.com/markets/europe/china-stocks-shoot-up-after-beijing-vows-support-2026-11-27/"
+        }
+      ]
+    },
+    {
       "title": "Evropské technologie +2,3 %; ASML, ASM International a Infineon +3,8 až +4,5 %. STOXX 600 +0,9 % (09:12 CET).",
       "time": "27. 11. 2026, 09:25",
       "publishedAtPrague": "27. 11. 2026, 09:25",
@@ -137,7 +160,7 @@
       ]
     },
     {
-      "title": "Asie a USA | Nikkei +1,9 %, jihokorejský trh +3,9 %. NVDA a AVGO v americkém premarketu +4,7 % (27. 11., 10:23 CET).",
+      "title": "Asie a USA | Nikkei +1,9 %, jihokorejský trh +3,9 %. NVDA +3,6 %, AVGO +3,4 % v premarketu (27. 11., aktualizace Reuters).",
       "time": "27. 11. 2026, 06:33",
       "publishedAtPrague": "27. 11. 2026, 06:33",
       "publicationTimeVerified": true,
@@ -217,7 +240,18 @@
       ]
     }
   ],
-  "leaders": [],
+  "leaders": [
+    {
+      "ticker": "NVDA",
+      "changePercent": 3.6,
+      "impact": "Premarket; Reuters 27. 11."
+    },
+    {
+      "ticker": "AVGO",
+      "changePercent": 3.4,
+      "impact": "Premarket; Reuters 27. 11."
+    }
+  ],
   "macro": "US10Y | 25. 11.: 4,85 % | 24. 11.: 4,91 % | −6 bb",
   "regulation": null,
   "technical": {
@@ -245,6 +279,24 @@
     "timePrague": "27. 11. 2026 15:30 CET"
   },
   "archive": [
+    {
+      "time": "27. 11. 2026 13:58 CET",
+      "summary": "NDX 26 046,90 b. (−0,64 %, 25. 11.). Čína: posílení stabilizační role Central Huijin; čipový index +19 %. NVDA +3,6 % premarket. Breadth: konflikt stejné seance; původní hodnota zachována.",
+      "sourceLinks": [
+        {
+          "label": "Nasdaq NDX",
+          "url": "https://indexes.nasdaq.com/index/Overview/NDX"
+        },
+        {
+          "label": "Reuters – Čína",
+          "url": "https://www.reuters.com/markets/europe/china-stocks-shoot-up-after-beijing-vows-support-2026-11-27/"
+        },
+        {
+          "label": "Reuters – premarket",
+          "url": "https://www.reuters.com/business/wall-st-futures-surge-investors-return-holiday-2026-11-27/"
+        }
+      ]
+    },
     {
       "time": "27. 11. 2026 13:03 CET",
       "summary": "NDX 26 046,90 b. (−0,64 %, 25. 11.). NFP kons. +90 tis. vs. říjen +165 tis. US10Y 4,85 % (25. 11.).",
@@ -6264,6 +6316,10 @@
     {
       "name": "BLS – prosincový kalendář",
       "url": "https://www.bls.gov/schedule/2026/12_sched.htm"
+    },
+    {
+      "name": "Reuters – Čína",
+      "url": "https://www.reuters.com/world/china-strengthen-defense-against-imported-risks-capital-markets-2026-11-27/"
     }
   ]
 }
