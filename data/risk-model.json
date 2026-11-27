@@ -34,9 +34,9 @@
     "citadelNasdaqForwardPE": 19.1,
     "citadelNasdaqForwardPEAsOf": "2026-11-04",
     "citadelSource": "https://www.citadelsecurities.com/news-and-insights/global-market-intelligence/november-the-setup-improves/?series=global-market-intelligence",
-    "vxnCheckedAtUtc": "2026-11-27T22:30:42.105367Z",
-    "treasuryCheckedAtUtc": "2026-11-27T22:30:42.105367Z",
-    "vxnRetrievedAtUtc": "2026-11-27T22:30:42.105367Z",
+    "vxnCheckedAtUtc": "2026-11-27T22:58:24.881255Z",
+    "treasuryCheckedAtUtc": "2026-11-27T22:58:24.881255Z",
+    "vxnRetrievedAtUtc": "2026-11-27T22:58:24.881255Z",
     "treasuryRetrievedAtUtc": "2026-11-27T19:59:08Z",
     "vxnChangePercent": 5.79,
     "vxnPreviousClose": 36.42,
@@ -148,5 +148,5 @@
     ],
     "stalePolicy": "If VXN update is unavailable or older than 7 calendar days, keep the report's last authored scenario and display a stale-data warning. Never relabel an old VXN figure as current."
   },
-  "checkedAtUtc": "2026-11-27T22:30:42.105367Z"
+  "checkedAtUtc": "2026-11-27T22:58:24.881255Z"
 }
