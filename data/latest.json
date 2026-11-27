@@ -15,6 +15,25 @@
   "driver": "SOX +4,7 %; MU +7,6 %, NVDA +0,8 % (27. 11., závěr). Reuters: návrat poptávky po AI akciích po předchozích výprodejích.",
   "news": [
     {
+      "title": "AAPL | Podle FT podala OpenAI proti Apple protižalobu kvůli údajnému odcizení obchodního tajemství a omezování přístupu k dodavatelům hardwaru.",
+      "time": "27. 11. 2026, 19:28",
+      "publishedAtPrague": "27. 11. 2026, 19:28",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "regulation",
+      "source": "Reuters (FT)",
+      "url": "https://www.reuters.com/technology/openai-countersues-apple-stealing-trade-secrets-ft-reports-2026-11-27/",
+      "eventKey": "openai-apple-counterclaim-20261127",
+      "ndxRelevant": true,
+      "importanceScore": 68,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/technology/openai-countersues-apple-stealing-trade-secrets-ft-reports-2026-11-27/"
+        }
+      ]
+    },
+    {
       "title": "NVDA | Bloomberg: dokumenty čínských úřadů dokládají Blackwell GB300 v datacentru v Šanghaji. Zařízení sloužilo jako zástava úvěru 96 mil. CNY; exportní riziko.",
       "time": "27. 11. 2026, 12:45",
       "publishedAtPrague": "27. 11. 2026, 12:45",
@@ -378,7 +397,7 @@
   "archive": [
     {
       "time": "27. 11. 2026 19:58 CET",
-      "summary": "NDX 26 726,39 b. (+2,61 %, závěr 27. 11.). SOX +4,7 %, MU +7,6 %, NVDA +0,8 %. PLTR: polská smlouva 300 mil. USD / 5 let. Breadth, RSI a VXN: závěr 25. 11.; nový denní snímek nedostupný.",
+      "summary": "NDX 26 726,39 b. (+2,61 %, závěr 27. 11.). SOX +4,7 %, MU +7,6 %, NVDA +0,8 %. OpenAI podle FT podala protižalobu proti AAPL. Breadth, RSI a VXN: závěr 25. 11.",
       "sourceLinks": [
         {
           "label": "Nasdaq – NDX",
@@ -389,8 +408,8 @@
           "url": "https://www.reuters.com/business/wall-st-futures-surge-investors-return-holiday-2026-11-27/"
         },
         {
-          "label": "Reuters – PLTR",
-          "url": "https://www.reuters.com/technology/poland-signs-contract-with-palantir-worth-300-mln-over-5-years-2026-11-27/"
+          "label": "Reuters – AAPL",
+          "url": "https://www.reuters.com/technology/openai-countersues-apple-stealing-trade-secrets-ft-reports-2026-11-27/"
         }
       ]
     },
@@ -6569,6 +6588,10 @@
     {
       "name": "Reuters – PLTR",
       "url": "https://www.reuters.com/technology/poland-signs-contract-with-palantir-worth-300-mln-over-5-years-2026-11-27/"
+    },
+    {
+      "name": "Reuters – OpenAI / AAPL",
+      "url": "https://www.reuters.com/technology/openai-countersues-apple-stealing-trade-secrets-ft-reports-2026-11-27/"
     }
   ]
 }
