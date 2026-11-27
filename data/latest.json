@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "27. 11. 2026 06:26 CET",
+  "updatedAtPrague": "27. 11. 2026 07:05 CET",
   "marketStatus": "Cash NDX: uzavřeno; závěr 25. 11. 2026. Dnes 15:30–19:00 CET.",
   "ndx": {
     "value": 26046.9,
@@ -12,50 +12,8 @@
     "trend": "srovnání nedostupné",
     "reason": "MA50 breadth 43,6 % (2026-11-25, poslední ověřená hodnota; konflikt zdroje). RSI14 38,39 (2026-11-25, závěr). VXN 38,53 (2026-11-25, závěr)."
   },
-  "driver": "Tržní odhad prosincového zvýšení FFR o 25 bb: 99 % (Reuters 27. 11.). Vyšší diskontní sazby zatěžují ocenění růstových akcií.",
+  "driver": "Asijské akcie korigují listopadové ztráty. Exportní omezení AI čipů a vyšší náklady financování zůstávají rizikem pro ocenění růstových akcií.",
   "news": [
-    {
-      "title": "AI čipy | Reuters: odhad listopadového exportu Jižní Koreje +96,8 % y/y vs. říjen +93,9 %. Export čipů za prvních 20 dní +294,4 % y/y; poptávka po pamětech pro AI.",
-      "time": "27. 11. 2026, 06:03",
-      "publishedAtPrague": "27. 11. 2026, 06:03",
-      "publicationTimeVerified": true,
-      "kind": "new",
-      "category": "macro",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/asia-pacific/south-korea-november-exports-seen-posting-fastest-growth-over-50-years-ai-chip-2026-11-27/",
-      "eventKey": "korea-november-export-poll-ai-memory-20261127",
-      "ndxRelevant": true,
-      "importanceScore": 65,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/world/asia-pacific/south-korea-november-exports-seen-posting-fastest-growth-over-50-years-ai-chip-2026-11-27/"
-        }
-      ]
-    },
-    {
-      "title": "FX / Fed | Reuters: pravděpodobnost prosincového zvýšení FFR o 25 bb dosahuje 99 %. DXY 103,8, měsíčně +1,8 % (27. 11., report 03:01).",
-      "publishedAtPrague": "27. 11. 2026, 02:03",
-      "eventKey": "dollar-fed-tightening-ai-volatility-20261127",
-      "category": "macro",
-      "importanceScore": 68,
-      "url": "https://www.reuters.com/world/africa/dollar-lingers-near-22-month-peak-ai-worries-simmer-2026-11-27/",
-      "time": "27. 11. 2026, 02:03",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "ndxRelevant": true,
-      "source": "Reuters",
-      "sourceLinks": [
-        {
-          "label": "Reuters / FX",
-          "url": "https://www.reuters.com/world/africa/dollar-lingers-near-22-month-peak-ai-worries-simmer-2026-11-27/"
-        },
-        {
-          "label": "Reuters / trhy",
-          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-27/"
-        }
-      ]
-    },
     {
       "title": "BoE | Emise dluhopisů hyperscalerů mají v roce 2026 překročit 305 mld. USD (8 % globálních investičních emisí). Složitější a vzájemně provázané financování AI zvyšuje riziko šíření kreditního stresu.",
       "time": "26. 11. 2026, 12:28",
@@ -76,44 +34,6 @@
         {
           "label": "The Guardian – časovaný záznam",
           "url": "https://www.theguardian.com/business/live/2026/nov/26/nvidia-chip-shipments-south-east-asia-stock-dentists-live-updates?page=with:block-6b0811ad8f08e0351893df42"
-        }
-      ]
-    },
-    {
-      "title": "JERA | Podle Nikkei jedná s META, AMZN, MSFT, Alphabet a Anthropic o výstavbě datacenter u elektráren v oblasti Tokia.",
-      "time": "26. 11. 2026, 23:13",
-      "publishedAtPrague": "26. 11. 2026, 23:13",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_infrastructure",
-      "source": "Reuters (Nikkei)",
-      "url": "https://www.reuters.com/world/asia-pacific/japans-jera-enters-talks-with-anthropic-meta-build-data-centres-nikkei-reports-2026-11-26/",
-      "eventKey": "jera-hyperscaler-data-center-talks-20261126",
-      "ndxRelevant": true,
-      "importanceScore": 67,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/world/asia-pacific/japans-jera-enters-talks-with-anthropic-meta-build-data-centres-nikkei-reports-2026-11-26/"
-        }
-      ]
-    },
-    {
-      "title": "AI infrastruktura | Fitch očekává zpomalení investic do datacenter v Asii po zpřísnění exportních licencí USA od 19. 11. Nejvyšší riziko nesou zadlužení poskytovatelé GPU; nejisté dodávky čipů mohou zpozdit financování a tržby.",
-      "time": "26. 11. 2026, 12:18",
-      "publishedAtPrague": "26. 11. 2026, 12:18",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_infrastructure",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/asia-pacific/us-chip-curbs-will-slow-asia-data-center-investment-fitch-says-2026-11-26/",
-      "eventKey": "fitch-asian-data-center-credit-chip-curbs-20261126",
-      "ndxRelevant": true,
-      "importanceScore": 75,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/world/asia-pacific/us-chip-curbs-will-slow-asia-data-center-investment-fitch-says-2026-11-26/"
         }
       ]
     },
@@ -156,21 +76,21 @@
       ]
     },
     {
-      "title": "Ropa | Brent 96,19 USD/bbl (02:40 CET), poblíž listopadového maxima. Omezené dodávky z Perského zálivu zvyšují riziko nákladové inflace.",
-      "publishedAtPrague": "27. 11. 2026, 02:55",
-      "eventKey": "brent-supply-risk-20261127",
-      "category": "macro",
-      "importanceScore": 55,
-      "url": "https://www.reuters.com/business/energy/brent-trades-near-months-high-mideast-conflict-threatens-supply-2026-11-27/",
-      "time": "27. 11. 2026, 02:55",
+      "title": "AI infrastruktura | Fitch očekává zpomalení investic do datacenter v Asii po zpřísnění exportních licencí USA od 19. 11. Nejvyšší riziko nesou zadlužení poskytovatelé GPU; nejisté dodávky čipů mohou zpozdit financování a tržby.",
+      "time": "26. 11. 2026, 12:18",
+      "publishedAtPrague": "26. 11. 2026, 12:18",
       "publicationTimeVerified": true,
       "kind": "continuing",
-      "ndxRelevant": true,
+      "category": "ai_infrastructure",
       "source": "Reuters",
+      "url": "https://www.reuters.com/world/asia-pacific/us-chip-curbs-will-slow-asia-data-center-investment-fitch-says-2026-11-26/",
+      "eventKey": "fitch-asian-data-center-credit-chip-curbs-20261126",
+      "ndxRelevant": true,
+      "importanceScore": 75,
       "sourceLinks": [
         {
           "label": "Reuters",
-          "url": "https://www.reuters.com/business/energy/brent-trades-near-months-high-mideast-conflict-threatens-supply-2026-11-27/"
+          "url": "https://www.reuters.com/world/asia-pacific/us-chip-curbs-will-slow-asia-data-center-investment-fitch-says-2026-11-26/"
         }
       ]
     },
@@ -194,6 +114,67 @@
       ]
     },
     {
+      "title": "FX / Fed | Reuters: pravděpodobnost prosincového zvýšení FFR o 25 bb dosahuje 99 %. DXY 103,8, měsíčně +1,8 % (27. 11., report 03:01).",
+      "publishedAtPrague": "27. 11. 2026, 02:03",
+      "eventKey": "dollar-fed-tightening-ai-volatility-20261127",
+      "category": "macro",
+      "importanceScore": 68,
+      "url": "https://www.reuters.com/world/africa/dollar-lingers-near-22-month-peak-ai-worries-simmer-2026-11-27/",
+      "time": "27. 11. 2026, 02:03",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "ndxRelevant": true,
+      "source": "Reuters",
+      "sourceLinks": [
+        {
+          "label": "Reuters / FX",
+          "url": "https://www.reuters.com/world/africa/dollar-lingers-near-22-month-peak-ai-worries-simmer-2026-11-27/"
+        },
+        {
+          "label": "Reuters / trhy",
+          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-27/"
+        }
+      ]
+    },
+    {
+      "title": "JERA | Podle Nikkei jedná s META, AMZN, MSFT, Alphabet a Anthropic o výstavbě datacenter u elektráren v oblasti Tokia.",
+      "time": "26. 11. 2026, 23:13",
+      "publishedAtPrague": "26. 11. 2026, 23:13",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "ai_infrastructure",
+      "source": "Reuters (Nikkei)",
+      "url": "https://www.reuters.com/world/asia-pacific/japans-jera-enters-talks-with-anthropic-meta-build-data-centres-nikkei-reports-2026-11-26/",
+      "eventKey": "jera-hyperscaler-data-center-talks-20261126",
+      "ndxRelevant": true,
+      "importanceScore": 67,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/asia-pacific/japans-jera-enters-talks-with-anthropic-meta-build-data-centres-nikkei-reports-2026-11-26/"
+        }
+      ]
+    },
+    {
+      "title": "AI čipy | Reuters: odhad listopadového exportu Jižní Koreje +96,8 % y/y vs. říjen +93,9 %. Export čipů za prvních 20 dní +294,4 % y/y; poptávka po pamětech pro AI.",
+      "time": "27. 11. 2026, 06:03",
+      "publishedAtPrague": "27. 11. 2026, 06:03",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "macro",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/asia-pacific/south-korea-november-exports-seen-posting-fastest-growth-over-50-years-ai-chip-2026-11-27/",
+      "eventKey": "korea-november-export-poll-ai-memory-20261127",
+      "ndxRelevant": true,
+      "importanceScore": 65,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/asia-pacific/south-korea-november-exports-seen-posting-fastest-growth-over-50-years-ai-chip-2026-11-27/"
+        }
+      ]
+    },
+    {
       "title": "TSLA | Návrh programu EK připouští hlasování o schválení FSD v EU 15. 12. Nutný souhlas nejméně 15 států reprezentujících 65 % obyvatel EU.",
       "time": "26. 11. 2026, 16:55",
       "publishedAtPrague": "26. 11. 2026, 16:55",
@@ -209,25 +190,6 @@
         {
           "label": "Reuters",
           "url": "https://www.reuters.com/technology/eu-may-vote-authorising-tesla-assisted-driving-system-dec-15-meeting-2026-11-26/"
-        }
-      ]
-    },
-    {
-      "title": "Black Friday | NRF odhaduje růst svátečních maloobchodních tržeb o 4,2 % y/y; inflace 3,8 %. UBS upozorňuje na riziko slabších výdajů za elektroniku po korekci akcií.",
-      "time": "27. 11. 2026, 01:03",
-      "publishedAtPrague": "27. 11. 2026, 01:03",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "macro",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/retail-consumer/cautious-consumers-gear-up-black-friday-inflation-woes-bite-2026-11-27/",
-      "eventKey": "us-holiday-retail-demand-black-friday-20261127",
-      "ndxRelevant": true,
-      "importanceScore": 52,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/business/retail-consumer/cautious-consumers-gear-up-black-friday-inflation-woes-bite-2026-11-27/"
         }
       ]
     },
@@ -251,6 +213,44 @@
       ]
     },
     {
+      "title": "Asie | Nikkei +1,9 %, jihokorejský trh +3,9 %. Technologický sektor po listopadové korekci obnovuje část ztrát.",
+      "time": "27. 11. 2026, 06:33",
+      "publishedAtPrague": "27. 11. 2026, 06:33",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "market",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/markets/europe/global-markets-view-europe-2026-11-27/",
+      "eventKey": "asia-tech-risk-rebound-20261127",
+      "ndxRelevant": true,
+      "importanceScore": 55,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/markets/europe/global-markets-view-europe-2026-11-27/"
+        }
+      ]
+    },
+    {
+      "title": "Ropa | Brent 96,19 USD/bbl (02:40 CET), poblíž listopadového maxima. Omezené dodávky z Perského zálivu zvyšují riziko nákladové inflace.",
+      "publishedAtPrague": "27. 11. 2026, 02:55",
+      "eventKey": "brent-supply-risk-20261127",
+      "category": "macro",
+      "importanceScore": 55,
+      "url": "https://www.reuters.com/business/energy/brent-trades-near-months-high-mideast-conflict-threatens-supply-2026-11-27/",
+      "time": "27. 11. 2026, 02:55",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "ndxRelevant": true,
+      "source": "Reuters",
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/energy/brent-trades-near-months-high-mideast-conflict-threatens-supply-2026-11-27/"
+        }
+      ]
+    },
+    {
       "title": "META | Nizozemské organizace žádají soud o zastavení prodeje AI brýlí kvůli ochraně soukromí. Požadované penále až 100 mil. EUR na žalovaného. Rozhodnutí nejpozději 24. 12.",
       "time": "26. 11. 2026, 12:44",
       "publishedAtPrague": "26. 11. 2026, 12:44",
@@ -266,6 +266,25 @@
         {
           "label": "Reuters",
           "url": "https://www.reuters.com/legal/government/dutch-groups-ask-court-halt-meta-smart-glasses-sales-over-privacy-concerns-2026-11-26/"
+        }
+      ]
+    },
+    {
+      "title": "Black Friday | NRF odhaduje růst svátečních maloobchodních tržeb o 4,2 % y/y; inflace 3,8 %. UBS upozorňuje na riziko slabších výdajů za elektroniku po korekci akcií.",
+      "time": "27. 11. 2026, 01:03",
+      "publishedAtPrague": "27. 11. 2026, 01:03",
+      "publicationTimeVerified": true,
+      "kind": "continuing",
+      "category": "macro",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/retail-consumer/cautious-consumers-gear-up-black-friday-inflation-woes-bite-2026-11-27/",
+      "eventKey": "us-holiday-retail-demand-black-friday-20261127",
+      "ndxRelevant": true,
+      "importanceScore": 52,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/retail-consumer/cautious-consumers-gear-up-black-friday-inflation-woes-bite-2026-11-27/"
         }
       ]
     },
@@ -328,6 +347,24 @@
     "timePrague": "27. 11. 2026 15:30 CET"
   },
   "archive": [
+    {
+      "time": "27. 11. 2026 07:05 CET",
+      "summary": "NDX 26 046,90 b. (25. 11., −0,64 %). Nikkei +1,9 %, jihokorejské akcie +3,9 % (Reuters 06:33). US10Y 4,85 % (25. 11.).",
+      "sourceLinks": [
+        {
+          "label": "Investing.com NDX",
+          "url": "https://www.investing.com/indices/nq-100-historical-data"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/markets/europe/global-markets-view-europe-2026-11-27/"
+        },
+        {
+          "label": "US Treasury",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value_month=202611"
+        }
+      ]
+    },
     {
       "time": "27. 11. 2026 06:26 CET",
       "summary": "NDX 26 046,90 b. (25. 11., −0,64 %). Odhad exportu Jižní Koreje +96,8 % y/y; čipy za prvních 20 dní +294,4 %. US10Y 4,85 % (25. 11.).",
@@ -6193,6 +6230,14 @@
     {
       "name": "Reuters – korejský export AI čipů",
       "url": "https://www.reuters.com/world/asia-pacific/south-korea-november-exports-seen-posting-fastest-growth-over-50-years-ai-chip-2026-11-27/"
+    },
+    {
+      "name": "Reuters",
+      "url": "https://www.reuters.com/markets/europe/global-markets-view-europe-2026-11-27/"
+    },
+    {
+      "name": "Nasdaq – obchodní kalendář",
+      "url": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ETA2026-69"
     }
   ]
 }
