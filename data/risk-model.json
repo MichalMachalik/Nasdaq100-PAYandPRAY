@@ -12,10 +12,10 @@
     "vxnPct": 38.53,
     "vxnAsOf": "2026-11-25",
     "vxnSource": "https://fred.stlouisfed.org/series/VXNCLS",
-    "treasury2yPct": 4.61,
-    "treasury10yPct": 4.85,
-    "treasury30yPct": 5.24,
-    "treasuryAsOf": "2026-11-25",
+    "treasury2yPct": 4.69,
+    "treasury10yPct": 4.94,
+    "treasury30yPct": 5.33,
+    "treasuryAsOf": "2026-11-27",
     "treasurySource": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026",
     "fedLowerPct": 3.75,
     "fedUpperPct": 4,
@@ -34,10 +34,10 @@
     "citadelNasdaqForwardPE": 19.1,
     "citadelNasdaqForwardPEAsOf": "2026-11-04",
     "citadelSource": "https://www.citadelsecurities.com/news-and-insights/global-market-intelligence/november-the-setup-improves/?series=global-market-intelligence",
-    "vxnCheckedAtUtc": "2026-11-27T19:01:26.480290Z",
-    "treasuryCheckedAtUtc": "2026-11-27T19:01:26.480290Z",
-    "vxnRetrievedAtUtc": "2026-11-27T19:01:26.480290Z",
-    "treasuryRetrievedAtUtc": "2026-11-25T21:18:33Z",
+    "vxnCheckedAtUtc": "2026-11-27T19:59:08Z",
+    "treasuryCheckedAtUtc": "2026-11-27T19:59:08Z",
+    "vxnRetrievedAtUtc": "2026-11-27T19:59:08Z",
+    "treasuryRetrievedAtUtc": "2026-11-27T19:59:08Z",
     "vxnChangePercent": 5.79,
     "vxnPreviousClose": 36.42,
     "vxnPreviousCloseAsOf": "2026-11-24",
@@ -148,5 +148,5 @@
     ],
     "stalePolicy": "If VXN update is unavailable or older than 7 calendar days, keep the report's last authored scenario and display a stale-data warning. Never relabel an old VXN figure as current."
   },
-  "checkedAtUtc": "2026-11-27T19:01:26.480290Z"
+  "checkedAtUtc": "2026-11-27T19:59:08Z"
 }
