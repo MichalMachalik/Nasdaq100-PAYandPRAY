@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "27. 11. 2026 09:56 CET",
+  "updatedAtPrague": "27. 11. 2026 11:03 CET",
   "marketStatus": "Cash NDX: uzavřeno; závěr 25. 11. 2026. Dnes 15:30–19:00 CET.",
   "ndx": {
     "value": 26046.9,
@@ -12,7 +12,7 @@
     "trend": "srovnání nedostupné",
     "reason": "MA50 breadth 43,6 % (2026-11-25, poslední ověřená hodnota; konflikt zdroje). RSI14 38,39 (2026-11-25, závěr). VXN 38,53 (2026-11-25, závěr)."
   },
-  "driver": "Oživení čipového sektoru; evropské technologie +2,3 %. Trh očekává prosincové zvýšení sazeb Fedu; rizika financování AI a exportních licencí přetrvávají.",
+  "driver": "Oživení AI akcií v premarketu: NVDA +4,7 %, AVGO +4,7 % (10:23 CET, Reuters). Rizika financování AI a prosincového zvýšení sazeb Fedu přetrvávají.",
   "news": [
     {
       "title": "AI čipy | Reuters: odhad listopadového exportu Jižní Koreje +96,8 % y/y vs. říjen +93,9 %. Export čipů za prvních 20 dní +294,4 % y/y; poptávka po pamětech pro AI.",
@@ -84,7 +84,7 @@
       "time": "27. 11. 2026, 09:25",
       "publishedAtPrague": "27. 11. 2026, 09:25",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "semiconductors",
       "source": "Reuters",
       "url": "https://www.reuters.com/markets/europe/european-stocks-extend-recovery-tech-miners-advance-2026-11-27/",
@@ -137,7 +137,7 @@
       ]
     },
     {
-      "title": "Asie | Nikkei +1,9 %, jihokorejský trh +3,9 %. Technologický sektor po listopadové korekci obnovuje část ztrát.",
+      "title": "Asie a USA | Nikkei +1,9 %, jihokorejský trh +3,9 %. NVDA a AVGO v americkém premarketu +4,7 % (27. 11., 10:23 CET).",
       "time": "27. 11. 2026, 06:33",
       "publishedAtPrague": "27. 11. 2026, 06:33",
       "publicationTimeVerified": true,
@@ -154,7 +154,7 @@
           "url": "https://www.reuters.com/markets/europe/global-markets-view-europe-2026-11-27/"
         },
         {
-          "label": "Reuters – americké futures",
+          "label": "Reuters – americký premarket",
           "url": "https://www.reuters.com/business/wall-st-futures-surge-investors-return-holiday-2026-11-27/"
         }
       ]
@@ -277,13 +277,13 @@
   "leaders": [
     {
       "ticker": "NVDA",
-      "changePercent": -3.91,
-      "impact": "negativní; závěr 25. 11."
+      "changePercent": 4.7,
+      "impact": "pozitivní; premarket 27. 11., 10:23 CET (Reuters)"
     },
     {
-      "ticker": "AMZN",
-      "changePercent": -3.12,
-      "impact": "negativní; závěr 25. 11."
+      "ticker": "AVGO",
+      "changePercent": 4.7,
+      "impact": "pozitivní; premarket 27. 11., 10:23 CET (Reuters)"
     }
   ],
   "macro": "US10Y | 25. 11.: 4,85 % | 24. 11.: 4,91 % | −6 bb",
@@ -313,6 +313,24 @@
     "timePrague": "27. 11. 2026 15:30 CET"
   },
   "archive": [
+    {
+      "time": "27. 11. 2026 11:03 CET",
+      "summary": "NDX 26 046,90 b. (−0,64 %, 25. 11.). NVDA a AVGO +4,7 % v premarketu. US10Y 4,85 % (25. 11.). Kontrola breadth: konflikt zdroje; zachován poslední ověřený závěr.",
+      "sourceLinks": [
+        {
+          "label": "NDX – YCharts",
+          "url": "https://ycharts.com/indices/%5ENDX/level"
+        },
+        {
+          "label": "Reuters – premarket",
+          "url": "https://www.reuters.com/business/wall-st-futures-surge-investors-return-holiday-2026-11-27/"
+        },
+        {
+          "label": "US Treasury",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+        }
+      ]
+    },
     {
       "time": "27. 11. 2026 09:56 CET",
       "summary": "NDX 26 046,90 b. (25. 11., −0,64 %). Evropské technologie +2,3 %; čipové akcie +3,8 až +4,5 %. US10Y 4,85 % (25. 11.). Breadth: konflikt stejné seance, původní hodnota zachována.",
