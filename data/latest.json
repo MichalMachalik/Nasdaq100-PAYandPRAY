@@ -34,25 +34,6 @@
       ]
     },
     {
-      "title": "ASML | Nizozemsko chce na G20 14.–15. 12. jednat s USA o návrhu MATCH Act. Návrh zpřísňuje export zařízení pro výrobu čipů do Číny.",
-      "time": "27. 11. 2026, 15:07",
-      "publishedAtPrague": "27. 11. 2026, 15:07",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_regulation",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/technology/dutch-pm-discuss-match-act-chipmaking-export-controls-with-trump-g20-2026-11-27/",
-      "eventKey": "match-act-netherlands-g20-20261127",
-      "ndxRelevant": true,
-      "importanceScore": 78,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/technology/dutch-pm-discuss-match-act-chipmaking-export-controls-with-trump-g20-2026-11-27/"
-        }
-      ]
-    },
-    {
       "title": "AAPL | Podle FT podala OpenAI proti Apple protižalobu kvůli údajnému odcizení obchodního tajemství a omezování přístupu k dodavatelům hardwaru.",
       "time": "27. 11. 2026, 19:28",
       "publishedAtPrague": "27. 11. 2026, 19:28",
@@ -72,7 +53,7 @@
       ]
     },
     {
-      "title": "AMZN / ADBE | Black Friday: online tržby USA do 18:30 ET 9,7 mld. USD (+12,8 % y/y); Adobe odhaduje celkem 13–13,4 mld. USD vs. zářijový odhad 12,9 mld. USD.",
+      "title": "AMZN / ADBE | Black Friday: konečné online tržby USA 13,1 mld. USD (+11,1 % y/y) vs. původní odhad Adobe 12,9 mld. USD. Konečný údaj zveřejněn 28. 11., 15:07 CET.",
       "time": "28. 11. 2026, 01:06",
       "publishedAtPrague": "28. 11. 2026, 01:06",
       "publicationTimeVerified": true,
@@ -87,6 +68,10 @@
         {
           "label": "Reuters",
           "url": "https://www.reuters.com/business/retail-consumer/us-black-friday-online-sales-cross-13-billion-adobe-says-2026-11-28/"
+        },
+        {
+          "label": "Reuters – konečný údaj",
+          "url": "https://www.reuters.com/business/retail-consumer/black-friday-online-shopping-rises-131-billion-us-adobe-analytics-data-shows-2026-11-28/"
         }
       ]
     },
