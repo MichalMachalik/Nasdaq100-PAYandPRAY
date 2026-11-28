@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "28. 11. 2026 12:04 CET",
+  "updatedAtPrague": "28. 11. 2026 13:03 CET",
   "marketStatus": "Cash NDX: víkend, uzavřeno. Poslední závěr 27. 11. 2026.",
   "ndx": {
     "value": 26726.39,
@@ -30,25 +30,6 @@
         {
           "label": "Reuters",
           "url": "https://www.reuters.com/business/media-telecom/musk-says-google-is-interested-renting-more-computing-capacity-spacex-2026-11-28/"
-        }
-      ]
-    },
-    {
-      "title": "NVDA | Bloomberg: dokumenty čínských úřadů dokládají Blackwell GB300 v datacentru v Šanghaji. Zařízení sloužilo jako zástava úvěru 96 mil. CNY; exportní riziko.",
-      "time": "27. 11. 2026, 12:45",
-      "publishedAtPrague": "27. 11. 2026, 12:45",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "ai_regulation",
-      "source": "Bloomberg",
-      "url": "https://news.bloomberglaw.com/private-equity/nvidia-blackwell-chips-turn-up-at-china-site-tied-to-alice-huang",
-      "eventKey": "nvda-blackwell-shanghai-collateral-20261127",
-      "ndxRelevant": true,
-      "importanceScore": 85,
-      "sourceLinks": [
-        {
-          "label": "Bloomberg",
-          "url": "https://news.bloomberglaw.com/private-equity/nvidia-blackwell-chips-turn-up-at-china-site-tied-to-alice-huang"
         }
       ]
     },
@@ -227,6 +208,24 @@
     "timePrague": "01. 12. 2026 16:00 CET"
   },
   "archive": [
+    {
+      "time": "28. 11. 2026 13:03 CET",
+      "summary": "NDX 26 726,39 b. (+2,61 %, závěr 27. 11.). Bez nových kvalifikovaných zpráv. Kontrola 7/7 updaterů, TE 9/9, ekonomika 6/6. Referenční NDX risk-modelu z 20. 11.",
+      "sourceLinks": [
+        {
+          "label": "Investing – NDX",
+          "url": "https://www.investing.com/indices/nq-100-historical-data"
+        },
+        {
+          "label": "US Treasury",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+        },
+        {
+          "label": "Reuters – závěr trhu",
+          "url": "https://www.reuters.com/business/wall-st-futures-surge-investors-return-holiday-2026-11-27/"
+        }
+      ]
+    },
     {
       "time": "28. 11. 2026 12:04 CET",
       "summary": "NDX 26 726,39 b. (+2,61 %, závěr 27. 11.). Bez nových kvalifikovaných zpráv. Ekonomika ověřena 6/6. Předchozí kontrola sedmi updaterů 10:57 CET překročila 65 minut; nová kontrola vyžádána. Referenční NDX risk-modelu z 20. 11.",
