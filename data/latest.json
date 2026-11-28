@@ -1,11 +1,11 @@
 {
-  "updatedAtPrague": "28. 11. 2026 10:55 CET",
+  "updatedAtPrague": "28. 11. 2026 12:04 CET",
   "marketStatus": "Cash NDX: víkend, uzavřeno. Poslední závěr 27. 11. 2026.",
   "ndx": {
     "value": 26726.39,
     "changePercent": 2.61,
     "ath": 31361.37,
-    "asOf": "27. 11. 2026, 19:00 CET (závěr)"
+    "asOf": "27. 11. 2026, 19:00 CET (závěr seance)"
   },
   "sentiment": {
     "label": "Medvědí",
@@ -19,7 +19,7 @@
       "time": "28. 11. 2026, 10:18",
       "publishedAtPrague": "28. 11. 2026, 10:18",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "ai_infrastructure",
       "source": "Reuters",
       "url": "https://www.reuters.com/business/media-telecom/musk-says-google-is-interested-renting-more-computing-capacity-spacex-2026-11-28/",
@@ -148,29 +148,6 @@
       ]
     },
     {
-      "title": "NFP | LSEG: kons. listopad +90 tis. vs. říjen +165 tis.; nezaměstnanost kons. 4,1 %. Publikace 4. 12. před FOMC 8.–9. 12.",
-      "time": "27. 11. 2026, 12:02",
-      "publishedAtPrague": "27. 11. 2026, 12:02",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "macro",
-      "source": "Reuters / LSEG",
-      "url": "https://www.reuters.com/business/wall-st-week-ahead-sliding-stock-market-confronts-jobs-data-rate-view-next-tests-2026-11-27/",
-      "eventKey": "lseg-november-payrolls-consensus-20261127",
-      "ndxRelevant": true,
-      "importanceScore": 60,
-      "sourceLinks": [
-        {
-          "label": "Reuters / LSEG",
-          "url": "https://www.reuters.com/business/wall-st-week-ahead-sliding-stock-market-confronts-jobs-data-rate-view-next-tests-2026-11-27/"
-        },
-        {
-          "label": "BLS – kalendář",
-          "url": "https://www.bls.gov/schedule/2026/12_sched.htm"
-        }
-      ]
-    },
-    {
       "title": "PLTR | Polsko podepsalo pětiletou smlouvu za 300 mil. USD.",
       "time": "27. 11. 2026, 14:08",
       "publishedAtPrague": "27. 11. 2026, 14:08",
@@ -205,25 +182,6 @@
         {
           "label": "Reuters",
           "url": "https://www.reuters.com/legal/litigation/chiles-antitrust-authority-seeks-80-million-apple-fine-over-ios-2026-11-27/"
-        }
-      ]
-    },
-    {
-      "title": "Cloud One | Reuters: kybernetický incident v cloudové platformě USAF využívající služby MSFT, AMZN, Oracle a Alphabet. Migrace aplikací pozastavena.",
-      "time": "27. 11. 2026, 12:01",
-      "publishedAtPrague": "27. 11. 2026, 12:01",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "company",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/hackers-breach-us-air-force-flagship-cloud-one-computing-platform-2026-11-27/",
-      "eventKey": "usaf-cloud-one-breach-20261127",
-      "ndxRelevant": true,
-      "importanceScore": 45,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/world/hackers-breach-us-air-force-flagship-cloud-one-computing-platform-2026-11-27/"
         }
       ]
     }
@@ -269,6 +227,24 @@
     "timePrague": "01. 12. 2026 16:00 CET"
   },
   "archive": [
+    {
+      "time": "28. 11. 2026 12:04 CET",
+      "summary": "NDX 26 726,39 b. (+2,61 %, závěr 27. 11.). Bez nových kvalifikovaných zpráv. Ekonomika ověřena 6/6. Předchozí kontrola sedmi updaterů 10:57 CET překročila 65 minut; nová kontrola vyžádána. Referenční NDX risk-modelu z 20. 11.",
+      "sourceLinks": [
+        {
+          "label": "Investing – NDX",
+          "url": "https://www.investing.com/indices/nq-100-historical-data"
+        },
+        {
+          "label": "US Treasury",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+        },
+        {
+          "label": "Yahoo Finance – VXN",
+          "url": "https://finance.yahoo.com/quote/%5EVXN/components/"
+        }
+      ]
+    },
     {
       "time": "28. 11. 2026 10:55 CET",
       "summary": "NDX 26 726,39 b. (+2,61 %, závěr 27. 11.). GOOGL/SPCX: Musk uvedl zájem o další AI kapacitu; nová smlouva nepotvrzena. VXN 33,34 (27. 11.). Kontroly 7/7, TE 9/9, ekonomika 6/6; referenční NDX risk-modelu z 20. 11.",
