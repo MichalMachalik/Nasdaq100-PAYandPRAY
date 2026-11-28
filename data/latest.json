@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "28. 11. 2026 07:02 CET",
+  "updatedAtPrague": "28. 11. 2026 08:02 CET",
   "marketStatus": "Cash NDX: víkend, uzavřeno. Poslední závěr 27. 11. 2026.",
   "ndx": {
     "value": 26726.39,
@@ -190,29 +190,6 @@
       ]
     },
     {
-      "title": "Čína | Vláda chce posílit stabilizační roli Central Huijin. CSI300 +4,2 %, čipový index +19 %. Pozitivní sektorový impuls pro AI akcie.",
-      "time": "27. 11. 2026, 07:32",
-      "publishedAtPrague": "27. 11. 2026, 07:32",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "market",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/china-strengthen-defense-against-imported-risks-capital-markets-2026-11-27/",
-      "eventKey": "china-state-market-support-20261127",
-      "ndxRelevant": true,
-      "importanceScore": 60,
-      "sourceLinks": [
-        {
-          "label": "Reuters – rozhodnutí",
-          "url": "https://www.reuters.com/world/china-strengthen-defense-against-imported-risks-capital-markets-2026-11-27/"
-        },
-        {
-          "label": "Reuters – reakce trhu",
-          "url": "https://www.reuters.com/markets/europe/china-stocks-shoot-up-after-beijing-vows-support-2026-11-27/"
-        }
-      ]
-    },
-    {
       "title": "PLTR | Polsko podepsalo pětiletou smlouvu za 300 mil. USD.",
       "time": "27. 11. 2026, 14:08",
       "publishedAtPrague": "27. 11. 2026, 14:08",
@@ -330,6 +307,24 @@
     "timePrague": "01. 12. 2026 16:00 CET"
   },
   "archive": [
+    {
+      "time": "28. 11. 2026 08:02 CET",
+      "summary": "NDX 26 726,39 b. (+2,61 %, závěr 27. 11.). Bez nových kvalifikovaných zpráv. MA50 breadth 47,5 %, RSI14 43,73, VXN 33,34 (27. 11.). US10Y 4,94 % (+9 bb). Kontroly 7/7, TE 9/9, ekonomika 6/6; referenční NDX risk-modelu z 2026-11-20.",
+      "sourceLinks": [
+        {
+          "label": "Yahoo Finance – NDX",
+          "url": "https://it.finance.yahoo.com/quote/%255ENDX/history/"
+        },
+        {
+          "label": "YCharts – VXN",
+          "url": "https://ycharts.com/indices/%5EVXN/level"
+        },
+        {
+          "label": "US Treasury",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+        }
+      ]
+    },
     {
       "time": "28. 11. 2026 07:02 CET",
       "summary": "NDX 26 726,39 b. (+2,61 %, závěr 27. 11.). Bez nových kvalifikovaných zpráv. MA50 breadth 47,5 %, RSI14 43,73, VXN 33,34 (27. 11.). US10Y 4,94 % (+9 bb). Kontroly 7/7, TE 9/9; referenční NDX risk-modelu z 2026-11-20.",
@@ -6759,6 +6754,10 @@
     {
       "name": "Cboe – VXN",
       "url": "https://www.cboe.com/data/quotes/vxn/metrics"
+    },
+    {
+      "name": "Yahoo Finance – NDX",
+      "url": "https://it.finance.yahoo.com/quote/%255ENDX/history/"
     }
   ]
 }
