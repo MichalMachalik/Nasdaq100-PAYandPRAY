@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "28. 11. 2026 04:02 CET",
+  "updatedAtPrague": "28. 11. 2026 05:00 CET",
   "marketStatus": "Cash NDX: víkend, uzavřeno. Poslední závěr 27. 11. 2026.",
   "ndx": {
     "value": 26726.39,
@@ -9,10 +9,10 @@
   },
   "sentiment": {
     "label": "Medvědí",
-    "trend": "↗ nižší potvrzený VXN; bez nové cash seance",
+    "trend": "→ beze změny; bez nové cash seance",
     "reason": "MA50 breadth 47,5 % (2026-11-27). RSI14 43,73 (2026-11-27). VXN 33,34 (2026-11-27). US10Y 4,94 % (27. 11.; +9 bb)."
   },
-  "driver": "SOX +4,7 %; MU +7,6 %, NVDA +0,8 % (27. 11., závěr). Návrat poptávky po AI akciích po předchozích výprodejích.",
+  "driver": "SOX +4,7 %; MU +7,6 %, NVDA +0,8 % (27. 11., závěr). Nákupy AI akcií po předchozích výprodejích.",
   "news": [
     {
       "title": "NVDA | Bloomberg: dokumenty čínských úřadů dokládají Blackwell GB300 v datacentru v Šanghaji. Zařízení sloužilo jako zástava úvěru 96 mil. CNY; exportní riziko.",
@@ -372,6 +372,24 @@
     "timePrague": "01. 12. 2026 16:00 CET"
   },
   "archive": [
+    {
+      "time": "28. 11. 2026 05:00 CET",
+      "summary": "NDX 26 726,39 b. (+2,61 %, závěr 27. 11.). Bez nových kvalifikovaných zpráv. MA50 breadth 47,5 %, RSI14 43,73, VXN 33,34 (27. 11.). US10Y 4,94 % (+9 bb). Sedm updaterů, devět instrumentů TE a šest oficiálních makroindikátorů ověřeno; referenční NDX risk-modelu z 20. 11.",
+      "sourceLinks": [
+        {
+          "label": "Yahoo Finance – NDX",
+          "url": "https://finance.yahoo.com/quote/%5ENDX/history/"
+        },
+        {
+          "label": "YCharts – VXN",
+          "url": "https://ycharts.com/indices/%5EVXN/level"
+        },
+        {
+          "label": "US Treasury",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+        }
+      ]
+    },
     {
       "time": "28. 11. 2026 04:02 CET",
       "summary": "NDX 26 726,39 b. (+2,61 %, závěr 27. 11.). Bez nových kvalifikovaných zpráv. VXN 33,34 (27. 11.; −13,47 %), nový modelový scénář −7 až −12 %. US10Y 4,94 % (+9 bb). Sedm updaterů, devět instrumentů TE a šest oficiálních makroindikátorů ověřeno; referenční NDX risk-modelu z 20. 11.",
