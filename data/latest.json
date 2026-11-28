@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "28. 11. 2026 08:02 CET",
+  "updatedAtPrague": "28. 11. 2026 09:01 CET",
   "marketStatus": "Cash NDX: víkend, uzavřeno. Poslední závěr 27. 11. 2026.",
   "ndx": {
     "value": 26726.39,
@@ -307,6 +307,24 @@
     "timePrague": "01. 12. 2026 16:00 CET"
   },
   "archive": [
+    {
+      "time": "28. 11. 2026 09:01 CET",
+      "summary": "NDX 26 726,39 b. (+2,61 %, závěr 27. 11.). Bez nových kvalifikovaných zpráv. MA50 breadth 47,5 %, RSI14 43,73, VXN 33,34 (27. 11.). US10Y 4,94 % (+9 bb). Kontroly 7/7, TE 9/9, ekonomika 6/6; referenční NDX risk-modelu z 2026-11-20.",
+      "sourceLinks": [
+        {
+          "label": "Yahoo Finance – NDX",
+          "url": "https://finance.yahoo.com/quote/%5ENDX/history/"
+        },
+        {
+          "label": "YCharts – VXN",
+          "url": "https://ycharts.com/indices/%5EVXN/level"
+        },
+        {
+          "label": "US Treasury",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+        }
+      ]
+    },
     {
       "time": "28. 11. 2026 08:02 CET",
       "summary": "NDX 26 726,39 b. (+2,61 %, závěr 27. 11.). Bez nových kvalifikovaných zpráv. MA50 breadth 47,5 %, RSI14 43,73, VXN 33,34 (27. 11.). US10Y 4,94 % (+9 bb). Kontroly 7/7, TE 9/9, ekonomika 6/6; referenční NDX risk-modelu z 2026-11-20.",
