@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "28. 11. 2026 02:04 CET",
+  "updatedAtPrague": "28. 11. 2026 03:02 CET",
   "marketStatus": "Cash NDX: víkend, uzavřeno. Poslední závěr 27. 11. 2026.",
   "ndx": {
     "value": 26726.39,
@@ -76,7 +76,7 @@
       "time": "28. 11. 2026, 01:06",
       "publishedAtPrague": "28. 11. 2026, 01:06",
       "publicationTimeVerified": true,
-      "kind": "new",
+      "kind": "continuing",
       "category": "macro",
       "source": "Reuters",
       "url": "https://www.reuters.com/business/retail-consumer/us-black-friday-online-sales-cross-13-billion-adobe-says-2026-11-28/",
@@ -293,25 +293,6 @@
       ]
     },
     {
-      "title": "Ropa | Brent 96,19 USD/bbl (02:40 CET), poblíž listopadového maxima. Omezené dodávky z Perského zálivu zvyšují riziko nákladové inflace.",
-      "publishedAtPrague": "27. 11. 2026, 02:55",
-      "eventKey": "brent-supply-risk-20261127",
-      "category": "macro",
-      "importanceScore": 55,
-      "url": "https://www.reuters.com/business/energy/brent-trades-near-months-high-mideast-conflict-threatens-supply-2026-11-27/",
-      "time": "27. 11. 2026, 02:55",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "ndxRelevant": true,
-      "source": "Reuters",
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/business/energy/brent-trades-near-months-high-mideast-conflict-threatens-supply-2026-11-27/"
-        }
-      ]
-    },
-    {
       "title": "TSLA | Tesla předložila německému antimonopolnímu úřadu plán převzetí EMAG, dodavatele výrobních zařízení a komponent pro humanoidní roboty. Cena transakce nezveřejněna.",
       "time": "27. 11. 2026, 10:24",
       "publishedAtPrague": "27. 11. 2026, 10:24",
@@ -391,6 +372,24 @@
     "timePrague": "01. 12. 2026 16:00 CET"
   },
   "archive": [
+    {
+      "time": "28. 11. 2026 03:02 CET",
+      "summary": "NDX 26 726,39 b. (+2,61 %, závěr 27. 11.). Bez nových kvalifikovaných zpráv. US10Y 4,94 % (+9 bb); VXN 38,53 (25. 11., starší závěr). Sedm updaterů a devět instrumentů TE ověřeno 02:05–02:06 CET; šest makroindikátorů znovu ověřeno.",
+      "sourceLinks": [
+        {
+          "label": "Yahoo Finance – NDX",
+          "url": "https://finance.yahoo.com/quote/%5ENDX/history/"
+        },
+        {
+          "label": "FRED – VXN",
+          "url": "https://fred.stlouisfed.org/series/VXNCLS"
+        },
+        {
+          "label": "US Treasury",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+        }
+      ]
+    },
     {
       "time": "28. 11. 2026 02:04 CET",
       "summary": "NDX 26 726,39 b. (+2,61 %, závěr 27. 11.). Black Friday: online tržby USA 9,7 mld. USD (+12,8 % y/y) do 18:30 ET. VXN 38,53 (25. 11., starší závěr); páteční údaj YCharts 33,34 zatím bez potvrzení denní řadou. Kontroly sedmi updaterů a devíti instrumentů TE z 01:25, ekonomika ověřena 6/6.",
