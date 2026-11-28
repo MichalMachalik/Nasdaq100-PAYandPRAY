@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "28. 11. 2026 09:56 CET",
+  "updatedAtPrague": "28. 11. 2026 10:55 CET",
   "marketStatus": "Cash NDX: víkend, uzavřeno. Poslední závěr 27. 11. 2026.",
   "ndx": {
     "value": 26726.39,
@@ -14,6 +14,25 @@
   },
   "driver": "SOX +4,7 %; MU +7,6 %, NVDA +0,8 % (27. 11., závěr). Nákupy AI akcií po předchozích výprodejích.",
   "news": [
+    {
+      "title": "GOOGL / SPCX | Musk uvedl zájem Google o další výpočetní kapacitu SpaceX; nová smlouva nepotvrzena. Stávající kontrakt: 920 mil. USD měsíčně, přibližně 110 tis. GPU NVDA.",
+      "time": "28. 11. 2026, 10:18",
+      "publishedAtPrague": "28. 11. 2026, 10:18",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "ai_infrastructure",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/media-telecom/musk-says-google-is-interested-renting-more-computing-capacity-spacex-2026-11-28/",
+      "eventKey": "google-spacex-compute-interest-20261128",
+      "ndxRelevant": true,
+      "importanceScore": 73,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/media-telecom/musk-says-google-is-interested-renting-more-computing-capacity-spacex-2026-11-28/"
+        }
+      ]
+    },
     {
       "title": "NVDA | Bloomberg: dokumenty čínských úřadů dokládají Blackwell GB300 v datacentru v Šanghaji. Zařízení sloužilo jako zástava úvěru 96 mil. CNY; exportní riziko.",
       "time": "27. 11. 2026, 12:45",
@@ -125,25 +144,6 @@
         {
           "label": "Reuters",
           "url": "https://www.reuters.com/world/asia-pacific/taiwans-economy-expected-grow-its-fastest-rate-nearly-50-years-due-ai-demand-2026-11-27/"
-        }
-      ]
-    },
-    {
-      "title": "Fondy | LSEG Lipper: týden do 25. 11. globální akciové fondy −22,73 mld. USD, americké −30,57 mld. USD, technologické −7,57 mld. USD. Globální odliv nejvyšší za 14 měsíců.",
-      "time": "27. 11. 2026, 10:42",
-      "publishedAtPrague": "27. 11. 2026, 10:42",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "market",
-      "source": "Reuters / LSEG Lipper",
-      "url": "https://www.reuters.com/world/china/global-markets-flows-graphic-2026-11-27/",
-      "eventKey": "lipper-equity-fund-outflows-week-20261125",
-      "ndxRelevant": true,
-      "importanceScore": 68,
-      "sourceLinks": [
-        {
-          "label": "Reuters / LSEG Lipper",
-          "url": "https://www.reuters.com/world/china/global-markets-flows-graphic-2026-11-27/"
         }
       ]
     },
@@ -269,6 +269,24 @@
     "timePrague": "01. 12. 2026 16:00 CET"
   },
   "archive": [
+    {
+      "time": "28. 11. 2026 10:55 CET",
+      "summary": "NDX 26 726,39 b. (+2,61 %, závěr 27. 11.). GOOGL/SPCX: Musk uvedl zájem o další AI kapacitu; nová smlouva nepotvrzena. VXN 33,34 (27. 11.). Kontroly 7/7, TE 9/9, ekonomika 6/6; referenční NDX risk-modelu z 20. 11.",
+      "sourceLinks": [
+        {
+          "label": "Yahoo Finance – NDX",
+          "url": "https://finance.yahoo.com/quote/%5ENDX/history/"
+        },
+        {
+          "label": "Reuters – GOOGL/SPCX",
+          "url": "https://www.reuters.com/business/media-telecom/musk-says-google-is-interested-renting-more-computing-capacity-spacex-2026-11-28/"
+        },
+        {
+          "label": "YCharts – VXN",
+          "url": "https://ycharts.com/indices/%5EVXN/level"
+        }
+      ]
+    },
     {
       "time": "28. 11. 2026 09:56 CET",
       "summary": "NDX 26 726,39 b. (+2,61 %, závěr 27. 11.). Bez nových kvalifikovaných zpráv. MA50 breadth 47,5 %, RSI14 43,73, VXN 33,34 (27. 11.). US10Y 4,94 % (+9 bb). Kontroly 7/7, TE 9/9, ekonomika 6/6; referenční NDX risk-modelu z 2026-11-20.",
@@ -6756,6 +6774,10 @@
     {
       "name": "Yahoo Finance – NDX",
       "url": "https://it.finance.yahoo.com/quote/%255ENDX/history/"
+    },
+    {
+      "name": "Reuters – GOOGL/SPCX",
+      "url": "https://www.reuters.com/business/media-telecom/musk-says-google-is-interested-renting-more-computing-capacity-spacex-2026-11-28/"
     }
   ]
 }
