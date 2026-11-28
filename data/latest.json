@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "28. 11. 2026 05:55 CET",
+  "updatedAtPrague": "28. 11. 2026 07:02 CET",
   "marketStatus": "Cash NDX: víkend, uzavřeno. Poslední závěr 27. 11. 2026.",
   "ndx": {
     "value": 26726.39,
@@ -251,29 +251,6 @@
       ]
     },
     {
-      "title": "Asie a USA | Nikkei +1,9 %, jihokorejský trh +3,9 %. NVDA +2,3 %, AVGO +3,6 % v premarketu (27. 11., aktualizace Reuters).",
-      "time": "27. 11. 2026, 06:33",
-      "publishedAtPrague": "27. 11. 2026, 06:33",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "market",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/markets/europe/global-markets-view-europe-2026-11-27/",
-      "eventKey": "asia-tech-risk-rebound-20261127",
-      "ndxRelevant": true,
-      "importanceScore": 55,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/markets/europe/global-markets-view-europe-2026-11-27/"
-        },
-        {
-          "label": "Reuters – americký premarket",
-          "url": "https://www.reuters.com/business/wall-st-futures-surge-investors-return-holiday-2026-11-27/"
-        }
-      ]
-    },
-    {
       "title": "TSLA | Tesla předložila německému antimonopolnímu úřadu plán převzetí EMAG, dodavatele výrobních zařízení a komponent pro humanoidní roboty. Cena transakce nezveřejněna.",
       "time": "27. 11. 2026, 10:24",
       "publishedAtPrague": "27. 11. 2026, 10:24",
@@ -353,6 +330,24 @@
     "timePrague": "01. 12. 2026 16:00 CET"
   },
   "archive": [
+    {
+      "time": "28. 11. 2026 07:02 CET",
+      "summary": "NDX 26 726,39 b. (+2,61 %, závěr 27. 11.). Bez nových kvalifikovaných zpráv. MA50 breadth 47,5 %, RSI14 43,73, VXN 33,34 (27. 11.). US10Y 4,94 % (+9 bb). Kontroly 7/7, TE 9/9; referenční NDX risk-modelu z 2026-11-20.",
+      "sourceLinks": [
+        {
+          "label": "Yahoo Finance – NDX",
+          "url": "https://finance.yahoo.com/quote/%5ENDX/history/"
+        },
+        {
+          "label": "Cboe – VXN",
+          "url": "https://www.cboe.com/data/quotes/vxn/metrics"
+        },
+        {
+          "label": "US Treasury",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+        }
+      ]
+    },
     {
       "time": "28. 11. 2026 05:55 CET",
       "summary": "NDX 26 726,39 b. (+2,61 %, závěr 27. 11.). Bez nových kvalifikovaných zpráv. MA50 breadth 47,5 %, RSI14 43,73, VXN 33,34 (27. 11.). US10Y 4,94 % (+9 bb). 7/7 updaterů, 9/9 TE, šest makroindikátorů ověřeno; referenční NDX risk-modelu z 20. 11.",
@@ -6760,6 +6755,10 @@
     {
       "name": "Reuters – Adobe Black Friday",
       "url": "https://www.reuters.com/business/retail-consumer/us-black-friday-online-sales-cross-13-billion-adobe-says-2026-11-28/"
+    },
+    {
+      "name": "Cboe – VXN",
+      "url": "https://www.cboe.com/data/quotes/vxn/metrics"
     }
   ]
 }
