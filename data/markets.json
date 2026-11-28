@@ -7,8 +7,8 @@
     "currencies": "https://tradingeconomics.com/currencies"
   },
   "timestampKind": "retrieval timestamp is separate from trading day",
-  "fetchedAtUtc": "2026-11-28T12:56:37.108777Z",
-  "fetchedAtPrague": "28. 11. 2026 13:56",
+  "fetchedAtUtc": "2026-11-28T13:20:20.444748Z",
+  "fetchedAtPrague": "28. 11. 2026 14:20",
   "quotes": [
     {
       "id": "WTI",
@@ -18,7 +18,7 @@
       "quoteDate": "Nov/27",
       "quoteDateISO": "2026-11-27",
       "sourceUrl": "https://tradingeconomics.com/commodity/crude-oil",
-      "fetchedAtUtc": "2026-11-28T12:56:37.108777Z"
+      "fetchedAtUtc": "2026-11-28T13:20:20.444748Z"
     },
     {
       "id": "Brent",
@@ -28,7 +28,7 @@
       "quoteDate": "Nov/27",
       "quoteDateISO": "2026-11-27",
       "sourceUrl": "https://tradingeconomics.com/commodity/brent-crude-oil",
-      "fetchedAtUtc": "2026-11-28T12:56:37.108777Z"
+      "fetchedAtUtc": "2026-11-28T13:20:20.444748Z"
     },
     {
       "id": "Natural Gas",
@@ -38,7 +38,7 @@
       "quoteDate": "Nov/27",
       "quoteDateISO": "2026-11-27",
       "sourceUrl": "https://tradingeconomics.com/commodity/natural-gas",
-      "fetchedAtUtc": "2026-11-28T12:56:37.108777Z"
+      "fetchedAtUtc": "2026-11-28T13:20:20.444748Z"
     },
     {
       "id": "Gasoline",
@@ -48,7 +48,7 @@
       "quoteDate": "Nov/27",
       "quoteDateISO": "2026-11-27",
       "sourceUrl": "https://tradingeconomics.com/commodity/gasoline",
-      "fetchedAtUtc": "2026-11-28T12:56:37.108777Z"
+      "fetchedAtUtc": "2026-11-28T13:20:20.444748Z"
     },
     {
       "id": "EU Gas",
@@ -58,7 +58,7 @@
       "quoteDate": "Nov/27",
       "quoteDateISO": "2026-11-27",
       "sourceUrl": "https://tradingeconomics.com/commodity/eu-natural-gas",
-      "fetchedAtUtc": "2026-11-28T12:56:37.108777Z"
+      "fetchedAtUtc": "2026-11-28T13:20:20.444748Z"
     },
     {
       "id": "Gold",
@@ -68,7 +68,7 @@
       "quoteDate": "Nov/27",
       "quoteDateISO": "2026-11-27",
       "sourceUrl": "https://tradingeconomics.com/commodity/gold",
-      "fetchedAtUtc": "2026-11-28T12:56:37.108777Z"
+      "fetchedAtUtc": "2026-11-28T13:20:20.444748Z"
     },
     {
       "id": "EUR/USD",
@@ -78,7 +78,7 @@
       "quoteDate": "Nov/27",
       "quoteDateISO": "2026-11-27",
       "sourceUrl": "https://tradingeconomics.com/euro-area/currency",
-      "fetchedAtUtc": "2026-11-28T12:56:37.108777Z"
+      "fetchedAtUtc": "2026-11-28T13:20:20.444748Z"
     },
     {
       "id": "EUR/CZK",
@@ -88,7 +88,7 @@
       "quoteDate": "Nov/27",
       "quoteDateISO": "2026-11-27",
       "sourceUrl": "https://tradingeconomics.com/eurczk:cur",
-      "fetchedAtUtc": "2026-11-28T12:56:37.108777Z"
+      "fetchedAtUtc": "2026-11-28T13:20:20.444748Z"
     },
     {
       "id": "USD/CZK",
@@ -98,7 +98,7 @@
       "quoteDate": "Nov/27",
       "quoteDateISO": "2026-11-27",
       "sourceUrl": "https://tradingeconomics.com/czech-republic/currency",
-      "fetchedAtUtc": "2026-11-28T12:56:37.108777Z"
+      "fetchedAtUtc": "2026-11-28T13:20:20.444748Z"
     }
   ]
 }
