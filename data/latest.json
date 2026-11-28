@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "28. 11. 2026 13:03 CET",
+  "updatedAtPrague": "28. 11. 2026 13:55 CET",
   "marketStatus": "Cash NDX: víkend, uzavřeno. Poslední závěr 27. 11. 2026.",
   "ndx": {
     "value": 26726.39,
@@ -208,6 +208,24 @@
     "timePrague": "01. 12. 2026 16:00 CET"
   },
   "archive": [
+    {
+      "time": "28. 11. 2026 13:55 CET",
+      "summary": "NDX 26 726,39 b. (+2,61 %, závěr 27. 11.). Bez nových kvalifikovaných zpráv. Kontrola 7/7 updaterů 13:14 CET, TE 9/9, ekonomika 6/6. Referenční NDX risk-modelu z 20. 11.",
+      "sourceLinks": [
+        {
+          "label": "Investing – NDX",
+          "url": "https://www.investing.com/indices/nq-100-historical-data"
+        },
+        {
+          "label": "US Treasury",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+        },
+        {
+          "label": "YCharts – VXN",
+          "url": "https://ycharts.com/indices/%5EVXN/level"
+        }
+      ]
+    },
     {
       "time": "28. 11. 2026 13:03 CET",
       "summary": "NDX 26 726,39 b. (+2,61 %, závěr 27. 11.). Bez nových kvalifikovaných zpráv. Kontrola 7/7 updaterů, TE 9/9, ekonomika 6/6. Referenční NDX risk-modelu z 20. 11.",
