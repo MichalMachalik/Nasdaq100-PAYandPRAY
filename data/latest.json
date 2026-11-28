@@ -1,6 +1,6 @@
 {
-  "updatedAtPrague": "28. 11. 2026 00:58 CET",
-  "marketStatus": "Cash NDX: víkend, uzavřeno. Poslední závěr 27. 11. 2026 v 19:00 CET.",
+  "updatedAtPrague": "28. 11. 2026 02:04 CET",
+  "marketStatus": "Cash NDX: víkend, uzavřeno. Poslední závěr 27. 11. 2026.",
   "ndx": {
     "value": 26726.39,
     "changePercent": 2.61,
@@ -68,6 +68,25 @@
         {
           "label": "Reuters",
           "url": "https://www.reuters.com/technology/openai-countersues-apple-stealing-trade-secrets-ft-reports-2026-11-27/"
+        }
+      ]
+    },
+    {
+      "title": "AMZN / ADBE | Black Friday: online tržby USA do 18:30 ET 9,7 mld. USD (+12,8 % y/y); Adobe odhaduje celkem 13–13,4 mld. USD vs. zářijový odhad 12,9 mld. USD.",
+      "time": "28. 11. 2026, 01:06",
+      "publishedAtPrague": "28. 11. 2026, 01:06",
+      "publicationTimeVerified": true,
+      "kind": "new",
+      "category": "macro",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/retail-consumer/us-black-friday-online-sales-cross-13-billion-adobe-says-2026-11-28/",
+      "eventKey": "adobe-black-friday-online-spending-20261127",
+      "ndxRelevant": true,
+      "importanceScore": 60,
+      "sourceLinks": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/retail-consumer/us-black-friday-online-sales-cross-13-billion-adobe-says-2026-11-28/"
         }
       ]
     },
@@ -171,25 +190,21 @@
       ]
     },
     {
-      "title": "FX / Fed | Reuters: pravděpodobnost prosincového zvýšení FFR o 25 bb dosahuje 99 %. DXY 103,8, měsíčně +1,8 % (27. 11., report 03:01).",
-      "publishedAtPrague": "27. 11. 2026, 02:03",
-      "eventKey": "dollar-fed-tightening-ai-volatility-20261127",
-      "category": "macro",
-      "importanceScore": 68,
-      "url": "https://www.reuters.com/world/africa/dollar-lingers-near-22-month-peak-ai-worries-simmer-2026-11-27/",
-      "time": "27. 11. 2026, 02:03",
+      "title": "Evropské technologie +2,3 %; ASML, ASM International a Infineon +3,8 až +4,5 %. STOXX 600 +0,9 % (09:12 CET).",
+      "time": "27. 11. 2026, 09:25",
+      "publishedAtPrague": "27. 11. 2026, 09:25",
       "publicationTimeVerified": true,
       "kind": "continuing",
-      "ndxRelevant": true,
+      "category": "semiconductors",
       "source": "Reuters",
+      "url": "https://www.reuters.com/markets/europe/european-stocks-extend-recovery-tech-miners-advance-2026-11-27/",
+      "eventKey": "europe-tech-semiconductor-recovery-20261127",
+      "ndxRelevant": true,
+      "importanceScore": 58,
       "sourceLinks": [
         {
-          "label": "Reuters / FX",
-          "url": "https://www.reuters.com/world/africa/dollar-lingers-near-22-month-peak-ai-worries-simmer-2026-11-27/"
-        },
-        {
-          "label": "Reuters / trhy",
-          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-27/"
+          "label": "Reuters",
+          "url": "https://www.reuters.com/markets/europe/european-stocks-extend-recovery-tech-miners-advance-2026-11-27/"
         }
       ]
     },
@@ -232,25 +247,6 @@
         {
           "label": "Reuters",
           "url": "https://www.reuters.com/technology/poland-signs-contract-with-palantir-worth-300-mln-over-5-years-2026-11-27/"
-        }
-      ]
-    },
-    {
-      "title": "Evropské technologie +2,3 %; ASML, ASM International a Infineon +3,8 až +4,5 %. STOXX 600 +0,9 % (09:12 CET).",
-      "time": "27. 11. 2026, 09:25",
-      "publishedAtPrague": "27. 11. 2026, 09:25",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "semiconductors",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/markets/europe/european-stocks-extend-recovery-tech-miners-advance-2026-11-27/",
-      "eventKey": "europe-tech-semiconductor-recovery-20261127",
-      "ndxRelevant": true,
-      "importanceScore": 58,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/markets/europe/european-stocks-extend-recovery-tech-miners-advance-2026-11-27/"
         }
       ]
     },
@@ -395,6 +391,24 @@
     "timePrague": "01. 12. 2026 16:00 CET"
   },
   "archive": [
+    {
+      "time": "28. 11. 2026 02:04 CET",
+      "summary": "NDX 26 726,39 b. (+2,61 %, závěr 27. 11.). Black Friday: online tržby USA 9,7 mld. USD (+12,8 % y/y) do 18:30 ET. VXN 38,53 (25. 11., starší závěr); páteční údaj YCharts 33,34 zatím bez potvrzení denní řadou. Kontroly sedmi updaterů a devíti instrumentů TE z 01:25, ekonomika ověřena 6/6.",
+      "sourceLinks": [
+        {
+          "label": "Yahoo Finance – NDX",
+          "url": "https://finance.yahoo.com/quote/%5ENDX/history/"
+        },
+        {
+          "label": "Reuters – Adobe",
+          "url": "https://www.reuters.com/business/retail-consumer/us-black-friday-online-sales-cross-13-billion-adobe-says-2026-11-28/"
+        },
+        {
+          "label": "YCharts – VXN",
+          "url": "https://ycharts.com/indices/%5EVXN/level"
+        }
+      ]
+    },
     {
       "time": "28. 11. 2026 00:58 CET",
       "summary": "NDX 26 726,39 b. (+2,61 %, závěr 27. 11.); US10Y 4,94 % (+9 bb); VXN 38,53 (25. 11., starší závěr). Bez nových kvalifikovaných zpráv. Ekonomika ověřena 6/6; páteční VXN bez potvrzeného denního závěru.",
@@ -6708,6 +6722,10 @@
     {
       "name": "Reuters – TSLA / EMAG",
       "url": "https://www.reuters.com/world/tesla-plans-acquire-german-manufacturing-systems-group-emag-2026-11-27/"
+    },
+    {
+      "name": "Reuters – Adobe Black Friday",
+      "url": "https://www.reuters.com/business/retail-consumer/us-black-friday-online-sales-cross-13-billion-adobe-says-2026-11-28/"
     }
   ]
 }
