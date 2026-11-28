@@ -1,5 +1,5 @@
 {
-  "updatedAtPrague": "28. 11. 2026 13:55 CET",
+  "updatedAtPrague": "28. 11. 2026 14:55 CET",
   "marketStatus": "Cash NDX: víkend, uzavřeno. Poslední závěr 27. 11. 2026.",
   "ndx": {
     "value": 26726.39,
@@ -91,44 +91,6 @@
       ]
     },
     {
-      "title": "USA | Říjnový deficit obchodu se zbožím 149,5 mld. USD vs. kons. 133 mld. USD, +10,7 % m/m. Import 365,3 mld. USD; poptávka po AI infrastruktuře podporuje dovoz.",
-      "time": "27. 11. 2026, 14:44",
-      "publishedAtPrague": "27. 11. 2026, 14:44",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "macro",
-      "source": "Reuters / Census Bureau",
-      "url": "https://www.reuters.com/business/us-goods-trade-deficit-widens-sharply-october-2026-11-27/",
-      "eventKey": "us-october-goods-trade-deficit-20261127",
-      "ndxRelevant": true,
-      "importanceScore": 65,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/business/us-goods-trade-deficit-widens-sharply-october-2026-11-27/"
-        }
-      ]
-    },
-    {
-      "title": "Tchaj-wan | Odhad HDP 2026 +13,28 % y/y vs. 11,05 %; 2027 +6,51 % vs. 6,04 %. Poptávka po AI čipech podporuje dodavatelský řetězec NVDA a AAPL.",
-      "time": "27. 11. 2026, 14:44",
-      "publishedAtPrague": "27. 11. 2026, 14:44",
-      "publicationTimeVerified": true,
-      "kind": "continuing",
-      "category": "semiconductors",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/asia-pacific/taiwans-economy-expected-grow-its-fastest-rate-nearly-50-years-due-ai-demand-2026-11-27/",
-      "eventKey": "taiwan-gdp-ai-demand-20261127",
-      "ndxRelevant": true,
-      "importanceScore": 65,
-      "sourceLinks": [
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/world/asia-pacific/taiwans-economy-expected-grow-its-fastest-rate-nearly-50-years-due-ai-demand-2026-11-27/"
-        }
-      ]
-    },
-    {
       "title": "AAPL | Chilský úřad FNE navrhuje pokutu 80 mil. USD a otevření iOS alternativní distribuci aplikací a platbám.",
       "time": "27. 11. 2026, 15:32",
       "publishedAtPrague": "27. 11. 2026, 15:32",
@@ -189,6 +151,24 @@
     "timePrague": "01. 12. 2026 16:00 CET"
   },
   "archive": [
+    {
+      "time": "28. 11. 2026 14:55 CET",
+      "summary": "NDX 26 726,39 b. (+2,61 %, závěr 27. 11.). Bez nových kvalifikovaných zpráv. Zdrojová kontrola 7/7 updaterů 14:20 CET, TE 9/9, ekonomika 6/6. 5 platných kandidátů. Referenční NDX risk-modelu z 20. 11.",
+      "sourceLinks": [
+        {
+          "label": "Investing – NDX",
+          "url": "https://www.investing.com/indices/nq-100-historical-data"
+        },
+        {
+          "label": "US Treasury",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+        },
+        {
+          "label": "Reuters – závěr",
+          "url": "https://www.reuters.com/business/wall-st-futures-surge-investors-return-holiday-2026-11-27/"
+        }
+      ]
+    },
     {
       "time": "28. 11. 2026 13:55 CET",
       "summary": "NDX 26 726,39 b. (+2,61 %, závěr 27. 11.). Bez nových kvalifikovaných zpráv. Kontrola 7/7 updaterů 13:14 CET, TE 9/9, ekonomika 6/6. Referenční NDX risk-modelu z 20. 11.",
